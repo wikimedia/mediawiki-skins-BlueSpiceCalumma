@@ -1,0 +1,71 @@
+body.mediawiki{
+	//background-color, background-image
+	background-color: white;
+}
+.bs-banner{
+	height: @banner-top-height;
+	position: fixed;
+	z-index: 9;
+	top: 0;
+	width: 100%;
+}
+
+body.mediawiki .wrapper{
+	box-sizing: border-box;
+	height: 100%;
+	position: relative;
+	margin-top: @menu-top-height + @banner-top-height;
+	font-family: @wrapper-font-family;
+	font-weight: @wrapper-font-weight;
+}
+
+.bs-content.container {
+	//background-color, background-image
+	padding-top: 1em;
+	height: 100%;
+	max-width: 980px;
+	z-index: 8;
+}
+
+.dropdown {
+	cursor: pointer;
+}
+
+
+//bs-panel
+aside .bs-panel.panel-default {
+	.panel-heading .bs-panel-title {
+		height: 32px;
+		display: inline-felex;
+		justify-content: space-between;
+		width: 100%;
+
+		a.tool{
+			width: 32px;
+			&:empty {
+				display: none;
+			}
+		}
+		a.tool:empty ~ a.title {
+			width: 100%;
+		}
+		a.title {
+			width: calc( ~"100% - 32px" );
+			float: right;
+			display: inline-block;
+			text-align: left;
+			span.title{
+				background-color: transparent;
+				display: block;
+				height: auto;
+			}
+		}
+		&:hover{
+			background-color: transparent;
+		}
+	}
+}
+
+.panel-default .panel-heading .badge {
+	margin: 0px 5px 0px 5px;
+}

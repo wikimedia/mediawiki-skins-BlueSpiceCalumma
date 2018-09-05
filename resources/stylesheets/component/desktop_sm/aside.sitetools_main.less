@@ -1,0 +1,122 @@
+body{
+	.sidebar-toggle[data-toggle~="sitetools-main-collapse"]{
+			display: none;
+	}
+	.sidebar-toggle[data-toggle~="sitetools-main-sticky"]{
+		position: fixed;
+		padding: 1em;
+		right: 300px;
+		top: @menu-top-height + @banner-top-height;
+		transition: right .3s;
+		z-index: 11;
+		i.sitetools-main-sticky::before{
+			font-family: 'entypo';
+			content: "\e9f6";
+			font-style: normal;
+			font-size: 1.2em;
+			line-height: 1.8em;
+			text-align: center;
+			color: @sitetools-sticky-btn-color;
+			background-color: @sitetools-sticky-btn-bg-color;
+			float: left;
+			height: 32px;
+			width: 32px;
+			border-radius: 16px;
+			padding: 0;
+		}
+		&:hover{
+			text-decoration: none;
+			i.sitetools-main-sticky::before{
+				background-color: @sitetools-sticky-btn-bg-color-hover;
+			}
+		}
+		&:focus{
+			text-decoration: none;
+		}
+	}
+}
+
+body.sitetools-main-sticky {
+	.sidebar-toggle[data-toggle~="sitetools-main-sticky"]{
+		i.sitetools-main-sticky::before{
+			background-color: @sitetools-sticky-btn-bg-color-active;
+		}
+		&:hover{
+			text-decoration: none;
+			i.sitetools-main-sticky::before{
+				background-color: @sitetools-sticky-btn-bg-color-hover;
+			}
+		}
+	}
+}
+
+body.sitetools-main-collapse{
+	.sidebar-toggle[data-toggle~="sitetools-main-sticky"]{
+			display: none;
+	}
+	.sidebar-toggle[data-toggle~="sitetools-main-collapse"]{
+		display: block;
+		position: fixed;
+		padding: 1em;
+		right: 0px;
+		top: @menu-top-height + @banner-top-height;
+		transition: right .3s;
+		z-index: 11;
+		i.sitetools-main-collapse::before{
+			font-family: 'bs-button';
+			content: "\e901";
+			font-style: initial;
+			font-size: 1.5em;
+			color: @sitetools-toggle-btn-color;
+			float: right;
+			font-style: normal;
+		}
+		&:hover{
+			text-decoration: none;
+			i.sitetools-main-collapse::before{
+				color: @sitetools-toggle-btn-color-hover;
+			}
+		}
+		&:focus{
+			text-decoration: none;
+		}
+	}
+}
+
+body{
+	.sitetools-main{
+		top: @menu-top-height + @banner-top-height;
+		width: @sitetools-main-width;
+		display: inline-flex;
+		position: fixed;
+				#bs-toolpanetabs ul.nav-pills a > i::before {
+			font-size: 150%;
+		}
+		a span {
+			line-height: 12px;
+		}
+		a.list-group-item {
+			height: 32px;
+			line-height: 12px;
+		}
+		.bs-panel.panel-default .panel-heading,
+		.panel-heading .panel-title a,
+		.panel-heading .bs-panel-title a{
+			height: 32px;
+			line-height: 12px;
+			span.title {
+				line-height: 12px;
+			}
+			i.icon-{
+				display: none;
+			}
+		}
+	}
+
+	.sitetools-main-fixed{
+		.sitetools-main{
+			display: inline-flex;
+			position: fixed;
+		}
+	}
+}

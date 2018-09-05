@@ -1,0 +1,121 @@
+/* toggle button mobile view */
+body .calumma-mobile-visible {
+	.sidebar-toggle[data-toggle~="navigation-main-collapse"]{
+		position: absolute;
+		padding: 0.3em 1em 0.2em 1em;
+		top: 0;
+		left: 0;
+		z-index: 12;
+		i.navigation-main-collapse::before{
+			font-family: 'bs-button';
+			content: "\e902";
+			font-size: 2em;
+			font-style: normal;
+			color: @menu-top-color;
+			float: left;
+		}
+		&:hover{
+			text-decoration: none;
+			i.navigation-main-collapse::before{
+				color: @menu-top-color-hover;
+			}
+		}
+		&:focus{
+			text-decoration: none;
+		}
+	}
+}
+
+body .calumma-mobile-visible,
+body.navigation-main-collapse .calumma-mobile-visible {
+	.sidebar-toggle[data-toggle~="navigation-main-collapse"]{
+		i.navigation-main-collapse::before{
+			font-size: 2em;
+			font-style: normal;
+		}
+	}
+}
+
+body{
+	.navigation-main{
+		top: 0px;
+		z-index: 100;
+		width: 100vw;
+		a span {
+			line-height: 26px;
+		}
+		a.list-group-item {
+			height: 48px;
+			line-height: 26px;
+		}
+		.panel-heading .panel-title a,
+		.panel-heading .bs-panel-title a{
+			height: 48px;
+			line-height: 26px;
+			span.title {
+				line-height: 26px;
+			}
+		}
+		.nav.nav-pills,
+		div.tab-content{
+			width: 100vw;
+			&>div {
+				height: 100%;
+			}
+		}
+		#bs-sitenavtabs {
+			ul.nav-pills a > i::before {
+				font-size: 2em;
+			}
+			div.tab-content{
+				height: calc(~"100vh - 110px");
+			}
+		}
+		#bs-sitenav-navigation {
+			#bs-mobile-user-container .panel-heading .bs-panel-title,
+			#bs-mediawiki-sidebar .panel-heading .bs-panel-title {
+				display: none;
+			}
+			#bs-mobile-user-container {
+				.bs-mobile-user-button.dropdown a.dropdown-toggle {
+					line-height: 48px;
+					height: 48px;
+					span {
+						display: inline-flex;
+						justify-content: space-between;
+						width: calc(~"100% - 24px - 15px");
+						line-height: 48px;
+						&::after {
+							content: "\e923";
+							font-family: "entypo";
+							font-style: normal;
+						}
+					}
+				}
+			}
+			.bs-link-edit-mediawiki-sidebar {
+				display: none;
+			}
+		}
+		#bs-nav-section-bs-usersidebar {
+			div.bs-usersidebar-editlink,
+			a.bs-usersidebar-edit {
+				display: none;
+			}
+			.bs-panel-title a.title {
+				span.title::before {
+					content: "\e92c";
+					font-family: "entypo";
+					float: right;
+					padding-right: 1em;
+				}
+				&.collapsed span.title::before {
+					content: "\e921";
+					font-family: "entypo";
+					float: right;
+					padding-right: 1em;
+				}
+			}
+		}
+	}
+}

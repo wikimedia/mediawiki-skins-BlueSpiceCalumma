@@ -1,0 +1,29 @@
+header.main-header .calumma-desktop-visible.navbar .p-search form {
+	border: none;
+	position: absolute;
+	padding: 0px;
+	padding-left: calc(~"( ( 100vw - 980px ) / 2 ) - 300px");
+	left: 300px;
+	top: @menu-top-items-margin;
+	.form-group{
+		width: 100%;
+		display: inline-flex;
+		input.form-control{
+			width: calc(~"100vw - 650px")  !important;
+			max-width: 836px - 200px;
+			box-shadow: none;
+		}
+	}
+}
+
+// user not logged in
+body.calumma-not-logged-in {
+	header.main-header .calumma-desktop-visible.navbar .p-search form {
+		.form-group{
+			input.form-control{
+				max-width: 980px;
+				width: calc(~"100vw - 300px - 200px") !important;
+			}
+		}
+	}
+}

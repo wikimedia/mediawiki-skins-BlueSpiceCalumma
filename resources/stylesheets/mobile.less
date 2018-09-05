@@ -1,0 +1,22 @@
+@import "common.less";
+
+@import "component/mobile/navbar.main.less";
+@import "component/mobile/navbar.bs-logo.less";
+@import "component/mobile/navbar.search.less";
+@import "component/mobile/navbar.usercontainer.less";
+@import "component/mobile/aside.navigation_main.less";
+@import "component/mobile/aside.navigation_main.usercontainer.less";
+@import "component/mobile/aside.sitetools_main.less";
+@import "component/mobile/scrollToTop.less";
+
+body.mediawiki {
+	.calumma-mobile-visible { display: block; }
+	.calumma-mobile-hidden { display: none; }
+
+	.calumma-desktop-visible,
+	.calumma-tablet-visible{ display: none; }
+
+	.calumma-mobile-visible.calumma-tablet-visible,
+	.calumma-mobile-visible.calumma-desktop-visible { display: block; }
+}
+
