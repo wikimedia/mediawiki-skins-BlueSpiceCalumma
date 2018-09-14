@@ -47,7 +47,8 @@ class FeaturedActionsData {
 		$curTitle = $skin->getTitle();
 		$curUser = $skin->getUser();
 
-		if ( $curUser->isAnon() ) { return;
+		if ( $curUser->isAnon() ) {
+			return;
 		}
 
 		$content_navigation_data = $data[SDFD::CONTENT_NAVIGATION_DATA];
@@ -91,7 +92,8 @@ class FeaturedActionsData {
 		$curTitle = $skin->getTitle();
 		$curUser = $skin->getUser();
 
-		if ( $curUser->isAnon() ) { return;
+		if ( $curUser->isAnon() ) {
+			return;
 		}
 
 		$content_navigation_data = $data[SDFD::CONTENT_NAVIGATION_DATA];
@@ -104,6 +106,22 @@ class FeaturedActionsData {
 			$defaultNewActions[$key] = $value;
 		}
 
+		$defaultNewActions['new-page'] = [
+			'class' => 'selected',
+			'primary' => true,
+			'id' => 'new-page',
+			'text' => wfMessage( 'bs-action-new-page-text' )->plain(),
+			'title' => wfMessage( 'bs-action-new-page-text' )->plain(),
+			'href' => '#'
+		];
+		if ( !$curTitle->isSpecialPage() ) {
+			$defaultNewActions['new-subpage'] = [
+				'id' => 'new-subpage',
+				'text' => wfMessage( 'bs-action-new-subpage-text' )->plain(),
+				'title' => wfMessage( 'bs-action-new-subpage-text' )->plain(),
+				'href' => '#'
+			];
+		}
 		$defaultNewActions['new-file'] = [
 			'position' => '20',
 			'id' => 'new-file',

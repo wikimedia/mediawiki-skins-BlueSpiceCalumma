@@ -51,10 +51,6 @@
 	color: @sitetools-graphicallist-color;
 }
 
-
-
-
-
 .dynamic-graphical-list-outer .dynamic-graphical-list-inner .dynamic-graphical-list-header{
 	height: auto;
 	display: flex;
@@ -70,6 +66,11 @@
 		color: @bs-color-primary;
 		font-size: 1em;
 		padding-left: 20px;
+		a{
+			color: @navigation-graphicallist-color;
+			text-decoration: none;
+			cursor: pointer;
+		}
 	}
 	.dynamic-graphical-list-actions{
 		a{
@@ -101,7 +102,6 @@
 	}
 }
 
-
 .dynamic-graphical-list-body {
 	overflow: auto;
 	height: calc(~"100vh - 160px");
@@ -119,4 +119,3 @@
 		}
 	}
 }
-

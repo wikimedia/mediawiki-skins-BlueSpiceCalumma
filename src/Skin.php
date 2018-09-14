@@ -49,23 +49,32 @@ class Skin extends \SkinChameleon {
 		$classes = $out->getProperty( 'bodyClassName' );
 		$request = $this->getRequest();
 
-		$cookie_navigation_main_sticky = $request->getCookie( 'Calumma_navigation-main-sticky' );
-		$cookie_sitetools_main_sticky = $request->getCookie( 'Calumma_sitetools-main-sticky' );
+		$cookie_desktop_view = $request->getCookie( 'Calumma_desktop-view' );
 
-		$cookie_navigation_main_collapsed = $request->getCookie( 'Calumma_navigation-main-collapse' );
-		$cookie_sitetools_main_collapsed = $request->getCookie( 'Calumma_sitetools-main-collapse' );
+		if ( ( !isset( $cookie_desktop_view ) ) || ( $cookie_desktop_view === 'true' ) ) {
+			$cookie_navigation_main_sticky =
+				$request->getCookie( 'Calumma_navigation-main-sticky' );
+			$cookie_sitetools_main_sticky =
+				$request->getCookie( 'Calumma_sitetools-main-sticky' );
 
-		$bodyAttrs[ 'class' ] .= $this->checkToggleState(
-			$cookie_navigation_main_sticky,
-			$cookie_navigation_main_collapsed,
-			'navigation'
-		);
-		$bodyAttrs[ 'class' ] .= $this->checkToggleState(
-			$cookie_sitetools_main_sticky,
-			$cookie_sitetools_main_collapsed,
-			'sitetools'
-		);
+			$cookie_navigation_main_collapsed =
+				$request->getCookie( 'Calumma_navigation-main-collapse' );
+			$cookie_sitetools_main_collapsed =
+				$request->getCookie( 'Calumma_sitetools-main-collapse' );
 
+			$bodyAttrs[ 'class' ] .= $this->checkToggleState(
+				$cookie_navigation_main_sticky,
+				$cookie_navigation_main_collapsed,
+				'navigation'
+			);
+			$bodyAttrs[ 'class' ] .= $this->checkToggleState(
+				$cookie_sitetools_main_sticky,
+				$cookie_sitetools_main_collapsed,
+				'sitetools'
+			);
+		} else {
+			$bodyAttrs[ 'class' ] .= ' navigation-main-collapse sitetools-main-collapse ';
+		}
 		$bodyAttrs[ 'class' ] .= ' navigation-main-fixed sitetools-main-fixed ' . $classes;
 
 		if ( !$this->getSkin()->getUser()->isLoggedIn() ) {

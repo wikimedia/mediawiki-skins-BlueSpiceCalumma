@@ -77,6 +77,18 @@ class SkinDataFieldDefinition {
 		$this->data[static::CONTENT_NAVIGATION_DATA] = [];
 		$this->data[static::CONTENT_NAVIGATION_GROUP] = [];
 		$this->data[static::CONTENT_NAVIGATION_GROUP] += [
+			'new-page' => [
+				'bs-group' => 'featuredActionsNew',
+				'position' => 01
+			],
+			'new-subpage' => [
+				'bs-group' => 'featuredActionsNew',
+				'position' => 02
+			],
+			'new-file' => [
+				'bs-group' => 'featuredActionsNew',
+				'position' => 99
+			],
 			've-edit' => [
 				'bs-group' => 'featuredActionsEdit',
 				'position' => 01,
@@ -130,6 +142,9 @@ class SkinDataFieldDefinition {
 		 * and split to SkinDataFiels
 		 */
 		$this->groupContentNavigation( $this->getSkin(), $this->skintemplate, $this->data );
+
+		/* append GlobalActions with link to Special:AllPages with preset for namespace 10 (templates) */
+		$this->makeGlobalActionsLinkAllTemplates( $this->skintemplate );
 
 		/* populate navigation elements*/
 		FeaturedActionsData::populate( $this->getSkin(), $this->skinktemplate, $this->data );
@@ -217,7 +232,6 @@ class SkinDataFieldDefinition {
 		$items = [];
 
 		foreach ( $data['content_navigation'] as $nav => $items ) {
-			// namespaces
 			if ( ( $nav === 'namespaces' ) || ( $nav === 'views' ) ) {
 				foreach ( $items as $key => $value ) {
 					$value['position'] = 0;
@@ -234,9 +248,7 @@ class SkinDataFieldDefinition {
 					}
 					$linklist[$key] = $value;
 				}
-			}
-			// other
- else {
+			} else {
 				foreach ( $items as $key => $value ) {
 					$value['position'] = 0;
 					$value['content_nav_group'] = $nav;
@@ -255,14 +267,16 @@ class SkinDataFieldDefinition {
 					}
 				$linklist[$key] = $value;
 				}
-	}
+			}
 		}
 		/*toolbox*/
 		foreach ( $data['nav_urls'] as $key => $value ) {
 
-			if ( !is_array( $value ) ) { continue;
+			if ( !is_array( $value ) ) {
+				continue;
 			}
-			if ( !isset( $value['text'] ) ) { continue;
+			if ( !isset( $value['text'] ) ) {
+				continue;
 			}
 
 			$value['position'] = 0;
@@ -410,6 +424,20 @@ class SkinDataFieldDefinition {
 		}
 
 		return $notifications;
+	}
+
+	private static function makeGlobalActionsLinkAllTemplates( $template ) {
+		$specialPage = \Title::makeTitleSafe( NS_SPECIAL, 'AllPages' );
+		$specialPageLink = $specialPage->getFullURL( 'namespace=10' );
+
+		$template->data[SkinData::GLOBAL_ACTIONS] += [
+			'bs-all-templates' => [
+					'href' => $specialPageLink,
+					'text' => wfMessage( 'bs-all-templates-link-text' )->plain(),
+					'title' => wfMessage( 'bs-all-templates-link-title' )->plain(),
+					'iconClass' => 'icon-file-text'
+				]
+		];
 	}
 
 }

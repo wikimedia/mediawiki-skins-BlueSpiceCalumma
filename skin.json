@@ -73,11 +73,18 @@
 				"js/jquery.mobile-1.4.5.min.js",
 				"js/SwipeToggle.js",
 				"js/skin.bluespicecalumma.scrollToTop.js",
-				"js/mobile.content.js"
+				"js/mobile.content.js",
+				"js/skin.bluespicecalumma.featuredActions.js"
 			],
 			"dependencies": [
 				"mediawiki.jqueryMsg",
 				"ext.bluespice"
+			],
+			"messages": [
+				"bs-action-new-page-text",
+				"bs-action-new-page-title",
+				"bs-action-new-subpage-text",
+				"bs-action-new-subpage-title"
 			]
 		},
 		"skin.bluespicecalumma.tab": {

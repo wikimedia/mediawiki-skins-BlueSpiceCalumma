@@ -15,8 +15,10 @@
 	"bs-action-edit-ve-edit-title": "Bearbeiten",
 	"bs-action-new-section-text": "Neuer Abschnitt",
 	"bs-action-new-section-title": "Neuer Abschnitt",
+	"bs-action-new-page-text": "Neue Seite",
+	"bs-action-new-page-title": "Neue Seite hinzufügen",
 	"bs-action-new-subpage-text": "Neue Unterseite",
-	"bs-action-new-subpage-title": "Neue Unterseite hinzufügen",
+	"bs-action-new-subpage-title": "Neue Unterseite zu $1 hinzufügen",
 	"bs-action-new-file-text": "Neue Datei hochladen",
 	"bs-action-new-file-title": "Neue Datei hochladen",
 	"notifications-badge-counter-grater-100": "99+",
@@ -52,7 +54,10 @@
 	"bs-sitetools-views": "Ansichten",
 	"bs-calumma-recentchanges-title": "Letzte Änderungen",
 	"bs-calumma-recentchanges-intro": "Hier werden die letzten Änderungen in Ihrem Wiki aufgelistet.",
+	"bs-calumma-recentchanges-specialpage-link": "Die klassische Ansicht der finden Sie [[Special:RecentChanges|hier]].",
 	"bs-calumma-recentchanges-column-header-title": "Letzte Änderungen",
 	"bs-calumma-recentchanges-history" : "Historie",
-	"bs-calumma-recentchanges-diff": "Unterschied"
+	"bs-calumma-recentchanges-diff": "Unterschied",
+	"bs-all-templates-link-text": "Alle Vorlagen",
+	"bs-all-templates-link-title": "Alle Vorlagen"
 }

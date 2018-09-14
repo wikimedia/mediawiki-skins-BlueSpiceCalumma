@@ -35,6 +35,7 @@ class MediaWikiSidebar extends BasePanel {
 	 */
 	public function getBody() {
 		$data = $this->skintemplate->get( 'sidebar' );
+		$this->shiftBlueSpiceAboutToEnd( $data['navigation'] );
 		$this->extendDefaultNavigation( $data['navigation'] );
 
 		$html = '';
@@ -121,7 +122,12 @@ class MediaWikiSidebar extends BasePanel {
 			if ( !isset( $link['title'] ) ) {
 				$link['title'] = $link['text'];
 			}
-			if ( ( $link['id'] === 'n-recentchanges' ) || ( $link['id'] === 'n-special-recentchanges' ) ) {
+			if ( ( $link['id'] === 'n-recentchanges' )
+					|| ( $link['id'] === 'n-special-recentchanges' ) ) {
+
+				$introText = wfMessage( 'bs-calumma-recentchanges-intro' )->plain() . '</br>';
+				$introText .= wfMessage( 'bs-calumma-recentchanges-specialpage-link' )->parse();
+
 				$link['href'] = '#';
 				$link['data'] = [
 					[
@@ -138,10 +144,27 @@ class MediaWikiSidebar extends BasePanel {
 					],
 					[
 						'key' => 'flyout-intro',
-						'value' => wfMessage( 'bs-calumma-recentchanges-intro' )->plain()
+						'value' => $introText
 					]
 				];
 			}
+		}
+	}
+
+	private function shiftBlueSpiceAboutToEnd( &$data ) {
+		$aboutLink = [];
+		$DataLinks = [];
+		foreach ( $data as &$link ) {
+			if ( ( $link['id'] === 'n-bluespiceabout' ) ) {
+				$aboutLink = $link;
+			} else {
+				$DataLinks[] = $link;
+			}
+		}
+
+		if ( !empty( $aboutLink ) ) {
+			array_push( $DataLinks, $aboutLink );
+			$data = $DataLinks;
 		}
 	}
 }
