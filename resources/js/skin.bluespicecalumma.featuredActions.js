@@ -17,13 +17,14 @@
 					namespace: siteNamespace
 				} );
 
-				dlg.on( 'ok', function ( sender, data ) {
-					if ( data.prefixedText ) {
+				dlg.on( 'ok', function ( sender, record ) {
+					var pageName = record.get( 'prefixedText' );
+					if ( pageName ) {
 						var params = { action: 'view' };
-						if( data.page_id !== 0 ) {
+						if( record.get( 'page_id' ) !== 0 ) {
 							var params = { action: 'edit' };
 						}
-						window.location.href = mw.util.getUrl( data.data.prefixedText, params );
+						window.location.href = mw.util.getUrl( pageName, params );
 					}
 				} );
 				dlg.show();

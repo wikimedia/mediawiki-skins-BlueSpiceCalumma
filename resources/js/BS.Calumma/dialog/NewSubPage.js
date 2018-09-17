@@ -23,8 +23,8 @@ Ext.define( 'BS.Calumma.dialog.NewSubPage', {
 						totalProperty: 'total'
 					}
 				},
-				autoLoadOnValue: true,
-				fields: ['text', 'id']
+				autoLoad: true,
+				fields: [ 'text', 'id' ]
 			} )
 		} );
 
