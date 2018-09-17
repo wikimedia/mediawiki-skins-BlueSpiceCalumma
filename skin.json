@@ -80,6 +80,7 @@
 				"js/skin.bluespicecalumma.featuredActions.js"
 			],
 			"dependencies": [
+				"mediawiki.cookie",
 				"mediawiki.jqueryMsg",
 				"ext.bluespice"
 			],
