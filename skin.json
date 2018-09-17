@@ -73,8 +73,6 @@
 		"skin.bluespicecalumma.scripts": {
 			"scripts": [
 				"js/SidebarToggle.js",
-				"js/jquery.mobile-1.4.5.min.js",
-				"js/SwipeToggle.js",
 				"js/skin.bluespicecalumma.scrollToTop.js",
 				"js/mobile.content.js",
 				"js/skin.bluespicecalumma.featuredActions.js"
