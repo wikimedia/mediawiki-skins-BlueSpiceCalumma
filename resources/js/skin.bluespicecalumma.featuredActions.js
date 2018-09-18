@@ -17,14 +17,9 @@
 					namespace: siteNamespace
 				} );
 
-				dlg.on( 'ok', function ( sender, record ) {
-					var pageName = record.get( 'prefixedText' );
+				dlg.on( 'ok', function ( sender, pageName ) {
 					if ( pageName ) {
-						var params = { action: 'view' };
-						if( record.get( 'page_id' ) !== 0 ) {
-							var params = { action: 'edit' };
-						}
-						window.location.href = mw.util.getUrl( pageName, params );
+						window.location.href = mw.util.getUrl( pageName, { action: 'view' } );
 					}
 				} );
 				dlg.show();

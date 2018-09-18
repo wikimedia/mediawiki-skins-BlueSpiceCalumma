@@ -114,7 +114,8 @@ class FeaturedActionsData {
 			'title' => wfMessage( 'bs-action-new-page-text' )->plain(),
 			'href' => '#'
 		];
-		if ( !$curTitle->isSpecialPage() ) {
+
+		if ( $curTitle->getArticleID() > 0 && !$curTitle->isRedirect() ) {
 			$defaultNewActions['new-subpage'] = [
 				'id' => 'new-subpage',
 				'text' => wfMessage( 'bs-action-new-subpage-text' )->plain(),

@@ -34,6 +34,6 @@ Ext.define( 'BS.Calumma.dialog.NewSubPage', {
 	},
 
 	getData: function () {
-		return this.cbPageName.getValue();
+		return this.cbPageName.getRawValue();
 	}
 } );

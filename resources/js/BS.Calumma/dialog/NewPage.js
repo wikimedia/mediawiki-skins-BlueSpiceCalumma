@@ -16,6 +16,6 @@ Ext.define( 'BS.Calumma.dialog.NewPage', {
 	},
 
 	getData: function () {
-		return this.cbPageName.getValue();
+		return this.cbPageName.getRawValue();
 	}
 } );
