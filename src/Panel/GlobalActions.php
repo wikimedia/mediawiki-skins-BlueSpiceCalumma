@@ -87,6 +87,6 @@ class GlobalActions extends BasePanel {
 	 * @return array
 	 */
 	public function getContainerClasses() {
-		return [ 'calumma-mobile-hidden' ];
+		return [ 'calumma-navigation-mobile-hidden' ];
 	}
 }
