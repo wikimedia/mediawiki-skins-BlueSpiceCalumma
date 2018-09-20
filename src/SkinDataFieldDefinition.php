@@ -404,7 +404,7 @@ class SkinDataFieldDefinition {
 		}
 
 		if ( isset( $ptools['notifications-notice'] ) ) {
-			$num = $ptools['notifications-alert']['links'][0]['data']['counter-num'];
+			$num = $ptools['notifications-notice']['links'][0]['data']['counter-num'];
 			$notifications += [
 				'notifications-notice' => [
 					'counter-num' => (int)$num,
