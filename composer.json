@@ -1,18 +1,18 @@
 {
 	"name": "bluespice/calumma",
-	"type"       : "mediawiki-skin",
+	"type": "mediawiki-skin",
 	"description": "A highly flexible MediaWiki skin using Bootstrap 4",
-	"keywords"   : [
+	"keywords": [
 		"wiki",
 		"MediaWiki",
 		"skin",
 		"Twitter",
 		"Bootstrap"
 	],
-	"license"    : "GPL-3.0-only",
+	"license": "GPL-3.0-only",
 	"extra": {
-        "installer-name": "BlueSpiceCalumma"
-    },
+		"installer-name": "BlueSpiceCalumma"
+	},
 	"require": {
 		"composer/installers": "~1.0"
 	},
