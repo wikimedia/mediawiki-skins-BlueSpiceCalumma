@@ -35,6 +35,11 @@
 				"bs-color-error": "#f2dede",
 				"bs-color-info": "#d9edf7",
 				"bs-color-after-content": "darken(@bs-color-neutral, 37.2549)"
+			},
+			"PageToolRegistry": {
+				"view": "BlueSpice\\Calumma\\PageTool\\View::factory",
+				"talk": "BlueSpice\\Calumma\\PageTool\\Talk::factory",
+				"history": "BlueSpice\\Calumma\\PageTool\\History::factory"
 			}
 		}
 	},

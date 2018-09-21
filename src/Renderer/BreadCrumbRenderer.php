@@ -1,5 +1,8 @@
 <?php
+
 namespace BlueSpice\Calumma\Renderer;
+
+use MediaWiki\MediaWikiServices;
 
 class BreadCrumbRenderer {
 
@@ -13,7 +16,6 @@ class BreadCrumbRenderer {
 		$html = '';
 
 		$portalLink = self::makePortalLink( $title );
-
 		$breadCrumbLinks = self::makeTitleLinks( $title );
 
 		$html .= $portalLink . $breadCrumbLinks;
@@ -67,6 +69,7 @@ class BreadCrumbRenderer {
 	 * @return type
 	 */
 	public static function makeTitleLinks( $title ) {
+		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
 		$titleParts = explode( '/', $title->getText() );
 		array_pop( $titleParts );
 
@@ -77,18 +80,7 @@ class BreadCrumbRenderer {
 			$root .= $titlePart;
 
 			$part = \Title::newFromText( $root, $title->getNamespace() );
-
-			$titleLink = \Html::openElement(
-				'a',
-				[
-					'title' => $titlePart,
-					'href' => $part->getFullURL()
-				]
-			);
-			$titleLink .= $titlePart;
-			$titleLink .= \Html::closeElement( 'a' );
-
-			$titleLiks[] = $titleLink;
+			$titleLiks[] = $linkRenderer->makeLink( $part, $titlePart );
 
 			$root .= '/';
 		}

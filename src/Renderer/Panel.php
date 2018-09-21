@@ -141,6 +141,7 @@ class Panel implements IRenderer {
 			)
 		];
 		$args['trigger-type'] = 'body';
+		$args['toggle-collapse'] = true;
 
 		if ( $this->panelInterface instanceof IFlyout ) {
 			$this->addIFlyoutArgs( $args, $this->panelInterface );
@@ -178,6 +179,7 @@ class Panel implements IRenderer {
 		];
 
 		$args['trigger-type'] = 'flyout';
+		$args['toggle-collapse'] = false;
 	}
 
 	/**
