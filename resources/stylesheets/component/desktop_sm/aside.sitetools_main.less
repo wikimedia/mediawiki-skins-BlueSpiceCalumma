@@ -1,33 +1,25 @@
 body{
 	.sidebar-toggle[data-toggle~="sitetools-main-collapse"]{
-			display: none;
-	}
-	.sidebar-toggle[data-toggle~="sitetools-main-sticky"]{
+		display: block;
 		position: fixed;
 		padding: 1em;
 		right: 300px;
 		top: @menu-top-height + @banner-top-height;
 		transition: right .3s;
 		z-index: 11;
-		i.sitetools-main-sticky::before{
-			font-family: 'entypo';
-			content: "\e9f6";
+		i.sitetools-main-collapse::before{
+			font-family: 'bs-button';
+			content: "\e901";
+			font-style: initial;
+			font-size: 1.5em;
+			color: @sitetools-toggle-btn-color;
+			float: right;
 			font-style: normal;
-			font-size: 1.2em;
-			line-height: 1.8em;
-			text-align: center;
-			color: @sitetools-sticky-btn-color;
-			background-color: @sitetools-sticky-btn-bg-color;
-			float: left;
-			height: 32px;
-			width: 32px;
-			border-radius: 16px;
-			padding: 0;
 		}
 		&:hover{
 			text-decoration: none;
-			i.sitetools-main-sticky::before{
-				background-color: @sitetools-sticky-btn-bg-color-hover;
+			i.sitetools-main-collapse::before{
+				color: @sitetools-toggle-btn-color-hover;
 			}
 		}
 		&:focus{
@@ -36,24 +28,7 @@ body{
 	}
 }
 
-body.sitetools-main-sticky {
-	.sidebar-toggle[data-toggle~="sitetools-main-sticky"]{
-		i.sitetools-main-sticky::before{
-			background-color: @sitetools-sticky-btn-bg-color-active;
-		}
-		&:hover{
-			text-decoration: none;
-			i.sitetools-main-sticky::before{
-				background-color: @sitetools-sticky-btn-bg-color-hover;
-			}
-		}
-	}
-}
-
 body.sitetools-main-collapse{
-	.sidebar-toggle[data-toggle~="sitetools-main-sticky"]{
-			display: none;
-	}
 	.sidebar-toggle[data-toggle~="sitetools-main-collapse"]{
 		display: block;
 		position: fixed;

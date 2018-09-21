@@ -115,30 +115,25 @@ class Skin extends \SkinChameleon {
 	protected function checkToggleState( $cookie_sticky, $cookie_state, $nav ) {
 		$option = 'bs-calumma-settings-' . $nav . '-main-collapse';
 		$userSetting = $this->getSkin()->getUser()->getOption( $option );
+		$userIsLoggedIn = $this->getSkin()->getUser()->isLoggedIn();
 
-		// fallback
 		$userSettingClass = '';
 		if ( ( !isset( $userSetting ) ) || ( $userSetting === true ) || ( $userSetting === '1' ) ) {
 			$userSettingClass = $nav . '-main-collapse ';
 		}
 
 		$cookieStateClass = '';
-		if ( ( !isset( $cookie_state ) ) || ( $cookie_state === 'true' ) ) {
+		if ( isset( $cookie_state ) && ( $cookie_state === 'true' ) ) {
 			$cookieStateClass = $nav . '-main-collapse ';
 		}
 
-		$cookieStickyClass = '';
-		if ( $cookie_sticky === 'true' ) {
-			$cookieStickyClass = $nav . '-main-sticky ';
-		}
-
 		$class = '';
-
-		if ( $cookieStickyClass === '' ) {
+		if ( !$userIsLoggedIn ) {
 			$class = $userSettingClass;
+		} elseif ( $userSettingClass !== '' ) {
+			$class = $nav . '-main-collapse ';
 		} else {
-			$class = $cookieStickyClass . ' ';
-			$class .= $cookieStateClass . ' ';
+			$class = $cookieStateClass;
 		}
 
 		return ' ' . $class . ' ';

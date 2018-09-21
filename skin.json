@@ -166,7 +166,7 @@
 	},
 	"DefaultUserOptions": {
 		"bs-calumma-settings-navigation-main-collapse": false,
-		"bs-calumma-settings-sitetools-main-collapse": false
+		"bs-calumma-settings-sitetools-main-collapse": true
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2

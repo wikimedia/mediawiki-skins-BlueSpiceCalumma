@@ -7,11 +7,6 @@
 		if( $( 'body' ).hasClass( target ) ){
 			$( 'body' ).removeClass( target );
 			mw.cookie.set( 'Calumma_'+target, 'false' );
-			var close = target.replace( '-sticky', '-collapse' );
-			if ( close !== target ){
-				mw.cookie.set( 'Calumma_'+close, 'false' );
-				$( 'body' ).addClass( close );
-			}
 		}
 		else{
 			$( 'body' ).addClass( target );
@@ -44,10 +39,7 @@
 			$( 'body' ).addClass( 'sitetools-main-collapse' );
 
 			mw.cookie.set( 'Calumma_navigation-main-collapse', 'true' );
-			mw.cookie.set( 'Calumma_navigation-main-sticky', 'false' );
-
 			mw.cookie.set( 'Calumma_sitetools-main-collapse', 'true' );
-			mw.cookie.set( 'Calumma_sitetools-main-sticky', 'false' );
 
 			mw.cookie.set( 'Calumma_desktop-view', 'false' );
 		}
