@@ -13,10 +13,16 @@ body.mediawiki{
 body.mediawiki .wrapper{
 	box-sizing: border-box;
 	height: 100%;
-	position: relative;
-	margin-top: @menu-top-height + @banner-top-height;
 	font-family: @wrapper-font-family;
 	font-weight: @wrapper-font-weight;
+}
+
+.content-wrapper {
+	/*
+	* This must be a `padding`, not a `margin`. The `margin` messes with some offset-calculations in
+	* JavaScripts. Especially ExtJS trees and tooltips.
+	*/
+	padding-top: @menu-top-height + @banner-top-height;
 }
 
 .bs-content.container {
