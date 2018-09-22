@@ -57,5 +57,6 @@
 	"bs-calumma-recentchanges-diff": "The label of a menu entry that opens the diff view of a page. The menu is attached to a preview image of that page",
 	"bs-calumma-recentchanges-specialpage-link": "A text containing a link to [[Special:RecentChanges]] within a flyout that displays a list of recent changes.",
 	"bs-all-templates-link-text": "The text for a link to [[Special:AllPages]] with preselection for namespace 10",
-	"bs-all-templates-link-title": "The title for a link to [[Special:AllPages]] with preselection for namespace 10"
+	"bs-all-templates-link-title": "The title for a link to [[Special:AllPages]] with preselection for namespace 10",
+	"bs-to-top-desc": "Link title for the \"Jump to top\" icon"
 }
