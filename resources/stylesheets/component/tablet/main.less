@@ -1,7 +1,7 @@
 .navigation-main-collapse.sitetools-main-collapse {
 	.content-wrapper {
-		padding-left: 50px;
-		padding-right: 50px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 	.bs-content.container {
 	}
@@ -9,7 +9,6 @@
 
 .sitetools-main-collapse {
 	.content-wrapper {
-		padding-left: 343px;
 		padding-right: 50px;
 		transition: padding .3s;
 	}
@@ -31,9 +30,15 @@
 	transition: padding .3s;
 	padding-left: 343px;
 	padding-right: 343px;
+	padding-top: @menu-top-mobile-height;
 }
 .bs-content.container {
 	width: auto;
 	max-width: 980px;
 	margin-left: auto;
+}
+
+.loader-indicator.loading {
+	top: @menu-top-mobile-height + @banner-top-height;
+	height: 3px;
 }

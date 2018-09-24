@@ -9,6 +9,9 @@ class Content extends \Skins\Chameleon\Components\Structure {
 	 */
 	public function getHtml() {
 		$html = \Html::openElement( 'div', [ 'class' => 'content-wrapper' ] );
+		$html .= '<div class="loader-indicator loading">'
+				. '<div class=loader-indicator-inner></div>'
+				. '</div>';
 		$html .= parent::getHtml();
 		$html .= \Html::closeElement( 'div' );
 
