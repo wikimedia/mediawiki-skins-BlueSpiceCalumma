@@ -35,7 +35,7 @@ class MediaWikiSidebar extends BasePanel {
 	 */
 	public function getBody() {
 		$data = $this->skintemplate->get( 'sidebar' );
-		$this->shiftBlueSpiceAboutToEnd( $data['navigation'] );
+
 		$this->extendDefaultNavigation( $data['navigation'] );
 
 		$html = '';
@@ -54,8 +54,20 @@ class MediaWikiSidebar extends BasePanel {
 		}
 		$navLinks += $data['navigation'];
 
+		$allSpecialPages = \Title::newFromText( 'Specialpages', NS_SPECIAL );
+		$navLinks[] = [
+				'href' => $allSpecialPages->getFullURL(),
+				'text' => wfMessage( 'specialpages' ),
+				'title' => wfMessage( 'specialpages' ),
+				'class' => 'calumma-desktop-hidden',
+				'iconClass' => 'icon-special-specialpages'
+			];
+
+		$this->shiftBlueSpiceAboutToEnd( $navLinks );
+
 		$navigation = new SimpleLinkListGroup( $navLinks );
 		$html .= $navigation->getHtml();
+
 		foreach ( $data as $section => $links ) {
 			if ( $this->skipSection( $section ) ) {
 				continue;
@@ -79,6 +91,8 @@ class MediaWikiSidebar extends BasePanel {
 
 			$html .= $collapsibleGroup->getHtml();
 		}
+
+		$html .= $this->addMobileFooterLinks( $this->skintemplate );
 
 		return $html;
 	}
@@ -122,6 +136,11 @@ class MediaWikiSidebar extends BasePanel {
 			if ( !isset( $link['title'] ) ) {
 				$link['title'] = $link['text'];
 			}
+
+			if ( !isset( $link['id'] ) ) {
+				continue;
+			}
+
 			if ( ( $link['id'] === 'n-recentchanges' )
 					|| ( $link['id'] === 'n-special-recentchanges' ) ) {
 
@@ -155,7 +174,7 @@ class MediaWikiSidebar extends BasePanel {
 		$aboutLink = [];
 		$DataLinks = [];
 		foreach ( $data as &$link ) {
-			if ( ( $link['id'] === 'n-bluespiceabout' ) ) {
+			if ( isset( $link['id'] ) && ( $link['id'] === 'n-bluespiceabout' ) ) {
 				$aboutLink = $link;
 			} else {
 				$DataLinks[] = $link;
@@ -167,4 +186,46 @@ class MediaWikiSidebar extends BasePanel {
 			$data = $DataLinks;
 		}
 	}
+
+	/**
+	 *
+	 * @param SkinTemplate $skintemplate
+	 * @return string
+	 */
+	protected function addMobileFooterLinks( $skintemplate ) {
+		$html = \Html::openElement(
+					'div',
+					[
+						'id' => 'calumma-mobile-footer-links',
+						'class' => 'panel panel-default calumma-desktop-hidden',
+					]
+				);
+
+		$html .= \Html::openElement(
+					'div',
+					[
+						'id' => 'calumma-mobile-footer-links',
+						'class' => 'panel-heading',
+						'role' => 'tab'
+					]
+				);
+		$html .= '<span class="separator"></span>';
+		$html .= \Html::closeElement( 'div' );
+
+		$html .= '<div class="list-group">';
+
+		$items[] = $this->skintemplate->getSkin()->privacyLink();
+		$items[] = $this->skintemplate->getSkin()->aboutLink();
+		$items[] = $this->skintemplate->getSkin()->disclaimerLink();
+
+		foreach ( $items as $item ) {
+			$html .= str_replace( '<a ', '<a class="list-group-item" ', $item );
+		}
+
+		$html .= \Html::closeElement( 'div' );
+		$html .= \Html::closeElement( 'div' );
+
+		return $html;
+	}
+
 }
