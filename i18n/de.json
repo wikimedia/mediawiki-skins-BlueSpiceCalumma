@@ -63,5 +63,7 @@
 	"bs-to-top-desc": "Nach oben springen",
 	"bs-calumma-pagetool-history-tooltip": "Versionsgeschichte",
 	"bs-calumma-pagetool-talk-tooltip": "Diskussion",
-	"bs-calumma-pagetool-view-tooltip": "Lesen"
+	"bs-calumma-pagetool-view-tooltip": "Lesen",
+	"bs-edit-mediawiki-sidebar-link-text": "MediaWiki Sidebar bearbeiten",
+	"bs-edit-mediawiki-sidebar-link-title": "MediaWiki Sidebar bearbeiten"
 }

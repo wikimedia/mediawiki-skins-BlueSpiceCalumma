@@ -40,18 +40,6 @@ class UserSidebar extends BasePanel {
 			return '';
 		}
 
-		$title = \Title::makeTitle( NS_USER, $user->getName() . '/Sidebar' );
-
-		$editLink = \Linker::link(
-						$title, '', [
-					'id' => 'bs-usersidebar-edit',
-					'class' => 'icon-pencil'
-						], [
-					'action' => 'edit',
-					'preload' => ''
-						]
-		);
-
 		$linklist = [];
 		$linklist = $this->getUserSidebarArray( $title );
 

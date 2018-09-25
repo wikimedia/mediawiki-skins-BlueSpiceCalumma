@@ -6,13 +6,11 @@ body{
 		div.tab-content{
 			width: 100%;
 		}
-		#bs-sitenav-navigation {
-			.bs-link-edit-mediawiki-sidebar {
-				display: block;
+		.tab-pane.active {
+			.bs-calumma-sidebar-edit-link {
+				display: none;
 			}
-		}
-		#bs-nav-section-bs-usersidebar {
-			div.bs-usersidebar-editlink {
+			&:hover .bs-calumma-sidebar-edit-link {
 				display: block;
 			}
 		}

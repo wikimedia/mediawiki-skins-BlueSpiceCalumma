@@ -45,6 +45,14 @@ body{
 			width: 100%;
 			border-bottom: 1px solid white;
 		}
+		.tab-pane.active {
+			.bs-calumma-sidebar-edit-link {
+				display: none;
+			}
+			&:hover .bs-calumma-sidebar-edit-link {
+				display: none;
+			}
+		}
 		a span {
 			line-height: 26px;
 		}
@@ -99,29 +107,6 @@ body{
 							font-style: normal;
 						}
 					}
-				}
-			}
-			.bs-link-edit-mediawiki-sidebar {
-				display: none;
-			}
-		}
-		#bs-nav-section-bs-usersidebar {
-			div.bs-usersidebar-editlink,
-			a.bs-usersidebar-edit {
-				display: none;
-			}
-			.bs-panel-title a.title {
-				span.title::before {
-					content: "\e92c";
-					font-family: "entypo";
-					float: right;
-					padding-right: 1em;
-				}
-				&.collapsed span.title::before {
-					content: "\e921";
-					font-family: "entypo";
-					float: right;
-					padding-right: 1em;
 				}
 			}
 		}

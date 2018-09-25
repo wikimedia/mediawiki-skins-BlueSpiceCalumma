@@ -63,5 +63,7 @@
 	"bs-to-top-desc": "Jump to top",
 	"bs-calumma-pagetool-history-tooltip": "Page history",
 	"bs-calumma-pagetool-talk-tooltip": "Discussion",
-	"bs-calumma-pagetool-view-tooltip": "View"
+	"bs-calumma-pagetool-view-tooltip": "View",
+	"bs-edit-mediawiki-sidebar-link-text": "Edit MediaWiki sidebar",
+	"bs-edit-mediawiki-sidebar-link-title": "Edit MediaWiki sidebar"
 }
