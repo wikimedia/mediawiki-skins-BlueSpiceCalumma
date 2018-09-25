@@ -12,10 +12,9 @@ class DataBeforeContent extends \Skins\Chameleon\Components\Structure {
 		$html .= parent::getHtml();
 
 		$dataBeforeContent = $this->getSkinTemplate()->get(
-			\BlueSpice\SkinData::BEFORE_CONTENT
+			\BlueSpice\SkinData::BEFORE_CONTENT,
+			[]
 		);
-
-		$title = $this->getSkin()->getTitle();
 
 		foreach ( $dataBeforeContent as $id => $data ) {
 			$html .= \Html::openElement( 'div', [ 'class' => 'bs-data-before-content-' . $id ] );
