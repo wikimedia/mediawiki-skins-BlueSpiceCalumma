@@ -1,7 +1,7 @@
 ( function ( mw, $, bs, d, undefined ) {
 	var specialNamespace = ( mw.config.get( 'wgContentNamespaces' ).indexOf( mw.config.get( 'wgNamespaceNumber' ) ) === -1 );
 
-	$( document ).on( 'click', '#new-page', function () {
+	$( document ).on( 'click', '.bs-fa-new-page', function () {
 		mw.loader.using( 'ext.bluespice.extjs' ).done( function () {
 			Ext.Loader.setPath( 'BS.Calumma', mw.config.get( 'stylepath' )
 					+ '/BlueSpiceCalumma/resources/js/BS.Calumma' );
@@ -27,7 +27,7 @@
 		} );
 	} );
 
-	$( document ).on( 'click', '#new-subpage', function () {
+	$( document ).on( 'click', '.bs-fa-new-subpage', function () {
 		mw.loader.using( 'ext.bluespice.extjs' ).done( function () {
 			Ext.Loader.setPath( 'BS.Calumma', mw.config.get( 'stylepath' )
 					+ '/BlueSpiceCalumma/resources/js/BS.Calumma' );

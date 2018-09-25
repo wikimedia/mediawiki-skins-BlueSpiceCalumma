@@ -77,18 +77,6 @@ class SkinDataFieldDefinition {
 		$this->data[static::CONTENT_NAVIGATION_DATA] = [];
 		$this->data[static::CONTENT_NAVIGATION_GROUP] = [];
 		$this->data[static::CONTENT_NAVIGATION_GROUP] += [
-			'new-page' => [
-				'bs-group' => 'featuredActionsNew',
-				'position' => 01
-			],
-			'new-subpage' => [
-				'bs-group' => 'featuredActionsNew',
-				'position' => 02
-			],
-			'new-file' => [
-				'bs-group' => 'featuredActionsNew',
-				'position' => 99
-			],
 			've-edit' => [
 				'bs-group' => 'featuredActionsEdit',
 				'position' => 01,

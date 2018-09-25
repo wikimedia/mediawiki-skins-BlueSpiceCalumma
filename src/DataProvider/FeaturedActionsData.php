@@ -107,9 +107,10 @@ class FeaturedActionsData {
 		}
 
 		$defaultNewActions['new-page'] = [
-			'class' => 'selected',
+			'classes' => [ 'selected', 'bs-fa-new-page' ],
 			'primary' => true,
 			'id' => 'new-page',
+			'position' => '01',
 			'text' => wfMessage( 'bs-action-new-page-text' )->plain(),
 			'title' => wfMessage( 'bs-action-new-page-text' )->plain(),
 			'href' => '#'
@@ -117,7 +118,9 @@ class FeaturedActionsData {
 
 		if ( $curTitle->getArticleID() > 0 && !$curTitle->isRedirect() ) {
 			$defaultNewActions['new-subpage'] = [
+				'position' => '10',
 				'id' => 'new-subpage',
+				'classes' => [ 'bs-fa-new-subpage' ],
 				'text' => wfMessage( 'bs-action-new-subpage-text' )->plain(),
 				'title' => wfMessage( 'bs-action-new-subpage-text' )->plain(),
 				'href' => '#'
@@ -126,6 +129,7 @@ class FeaturedActionsData {
 		$defaultNewActions['new-file'] = [
 			'position' => '20',
 			'id' => 'new-file',
+			'classes' => [ 'bs-fa-new-file' ],
 			'text' => wfMessage( 'bs-action-new-file-text' )->plain(),
 			'title' => wfMessage( 'bs-action-new-file-title' )->plain(),
 			'href' => \SpecialPage::getTitleFor( 'Upload' )->getLocalURL()

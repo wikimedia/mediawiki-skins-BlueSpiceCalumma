@@ -63,7 +63,14 @@ class FeaturedActions extends Component {
 		$firstEntry = array_shift( $itemDefinition );
 
 		$splitButtonData = $firstEntry;
-		$splitButtonData['classes'] = [ 'btn-primary', "bs-fa-$itemId" ];
+		if ( !isset( $splitButtonData['classes'] ) ) {
+			$splitButtonData['classes'] = [ 'btn-primary', "bs-fa-$itemId" ];
+		} else {
+			$splitButtonData['classes'] = array_merge(
+					$splitButtonData['classes'],
+					[ 'btn-primary', "bs-fa-$itemId" ]
+				);
+		}
 
 		if ( !isset( $splitButtonData['href'] ) ) {
 			$splitButtonData['classes'][] = 'disabled';
