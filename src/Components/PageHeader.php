@@ -3,6 +3,8 @@
 namespace BlueSpice\Calumma\Components;
 
 use BlueSpice\Calumma\TemplateComponent;
+use BlueSpice\Calumma\Renderer\BreadCrumbRenderer;
+use BlueSpice\Services;
 
 class PageHeader extends TemplateComponent {
 
@@ -25,7 +27,9 @@ class PageHeader extends TemplateComponent {
 			'indicators' => $this->getIndicators(),
 			'firstheading' => $this->getFirstHeading(),
 			'lang' => $this->getPageLanguageCode(),
-			'headerlinks' => $this->getHeaderLinks()
+			'headerlinks' => $this->getHeaderLinks(),
+			'breadcrumbs' => $this->getBreadCrumbs(),
+			'tools' => $this->getTools()
 		];
 		return $args;
 	}
@@ -69,4 +73,36 @@ class PageHeader extends TemplateComponent {
 	protected function getPageLanguageCode() {
 		return $this->getSkin()->getTitle()->getPageViewLanguage()->getHtmlCode();
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
+	protected function getBreadCrumbs() {
+		return BreadCrumbRenderer::doRender( $this->getSkin()->getTitle(), $this->getSkinTemplate() );
+	}
+
+	/**
+	 *
+	 * @return string
+	 */
+	protected function getTools() {
+		$html = '';
+		$pageToolsFactory = Services::getInstance()->getBSPageToolFactory();
+		foreach ( $pageToolsFactory->getAll() as $tool ) {
+			$requiredPermissions = $tool->getPermissions();
+			$shouldShow = true;
+			foreach ( $requiredPermissions as $requiredPermission ) {
+				if ( !$this->getSkin()->getTitle()->userCan( $requiredPermission ) ) {
+					$shouldShow = false;
+				}
+			}
+
+			if ( $shouldShow ) {
+				$html .= $tool->getHtml();
+			}
+		}
+		return $html;
+	}
+
 }

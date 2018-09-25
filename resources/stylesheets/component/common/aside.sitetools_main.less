@@ -73,7 +73,6 @@ body{
 			width: @sitetools-main-width;
 			transition: width .3s;
 			&>div {
-			white-space: nowrap;
 			overflow: hidden;
 			&>div>a {
 				padding-left: 10px;
@@ -161,8 +160,6 @@ body.sitetools-main-collapse{
 	a {
 		color: @sitetools-color;
 		text-decoration: none;
-		padding-top: 5px;
-		padding-bottom: 5px;
 		&:hover,
 		&:active,
 		&:visited {
@@ -262,6 +259,7 @@ body.sitetools-main-collapse{
 }
 
 .sitetools-main .bs-panel.panel-default {
+	width: @sitetools-main-width;
 	box-shadow: none;
 	.panel-collapse.collapsing,
 	.panel-collapse.collapse.in {
@@ -278,6 +276,7 @@ body.sitetools-main-collapse{
 		background-color: @sitetools-graphicallist-bg-color;
 	}
 	.panel-heading .bs-panel-title {
+		margin: 0;
 		background-color: transparent;
 		line-height: 40px;
 		a.tool{
@@ -324,6 +323,17 @@ body.sitetools-main-collapse{
 			}
 		}
 	}
+	.flyout-body-hint {
+		padding-left: 47px; //= 15px (padding of `.panel-heading`) +  32px (width of `.trigger-icon`)
+		font-size: small;
+
+		a {
+			color: inherit;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	}
 	.list-group {
 		background-color: transparent;
 		.list-group-item {
@@ -334,52 +344,21 @@ body.sitetools-main-collapse{
 			background-color: @sitetools-graphicallist-bg-color;
 		}
 	}
-	.panel-heading.dynamic-graphical-list-visible .bs-panel-title {
+	.panel-heading.dynamic-graphical-list-visible {
 		background-color: @sitetools-graphicallist-bg-color;
-		.trigger.flyout{
-			i.trigger-icon::before{
-				content: "\e923";
-				font-family: "entypo";
-				font-style: normal;
-				float: right;
+		.bs-panel-title {
+			.trigger.flyout{
+				i.trigger-icon::before{
+					content: "\e923";
+					font-family: "entypo";
+					font-style: normal;
+					float: right;
+				}
 			}
 		}
 	}
 }
 
-body aside.sitetools-main #bs-toolpanetabs div.tab-pane #bs-sitetool-dropzone {
-	margin: 20px;
-	color: @sitetools-color;
-}
-
-body aside.sitetools-main #bs-toolpanetabs div.tab-pane div.info-card{
-	margin-top: 20px;
-	.panel-section{ margin-top: 0;}
-	.title{
-		color: @sitetools-color;
-		font-size: 14px;
-		padding: 3px 5px 3px 20px;
-		display: block;
-		background-color: lighten( @bs-color-neutral , 28% );
-		margin-bottom: 3px;
-	}
-	.meta{
-		color: lighten( @sitetools-color, 25% );
-		font-size: 11px;
-		display: block;
-	}
-	.highlight{
-		padding: 10px 0 3px 0;
-		font-size: 12px;
-		font-weight: bold;
-		display: block;
-		&.good{ color: greenyellow; }
-		&.neutral{ color: lighten( @sitetools-color, 25% ) }
-		&.attention{ color: lightblue; }
-		&.important{ color: @bs-color-secondary; }
-		&.warning{ color: red; }
-	}
-}
 body aside.sitetools-main #bs-toolpanetabs div.tab-pane div.panel-section{
 	margin: 20px;
 	color: @sitetools-color;
@@ -418,21 +397,4 @@ body aside.sitetools-main #bs-toolpanetabs div.tab-pane span.multi-link-item {
 
 body aside.sitetools-main i.bs-icon-linklist-default{
 	display: none;
-}
-
-
-.panel-collapse,
-.panel-collapse.collapsing,
-.panel-collapse.collapse.in,
-.panel-collapse.collapse {
-	.bs-articleinfo-nav-container {
-		padding: 0px 10px 0px 50px;
-		display: block;
-		span,
-		.last-edited-time,
-		.last-edited-user {
-			display: block;
-			font-size: 11px;
-		}
-	}
 }

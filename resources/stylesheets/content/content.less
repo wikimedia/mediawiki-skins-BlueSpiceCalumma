@@ -30,6 +30,36 @@
 	}
 }
 
+.bs-breadcrumbs-namespace-seperator::after{
+	content: ":";
+}
+.bs-breadcrumbs-seperator::after{
+	content: "/";
+}
+
+.bs-page-breadcrumbs,
+.bs-page-tools {
+	font-size: smaller;
+	display: table-cell;
+	vertical-align: middle;
+	height: 32px;
+}
+
+.bs-page-tools.pull-right > a {
+	color: inherit;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&.page-tool-icon {
+		padding-left: 0.8em;
+		i {
+			font-size: large;
+		}
+	}
+}
+
 #firstHeading {
 	font-family: @font-family-primary;
 	font-weight: @font-weight-regular;

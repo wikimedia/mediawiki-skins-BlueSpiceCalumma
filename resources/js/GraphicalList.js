@@ -17,9 +17,7 @@ $(document).on( 'click', "*[data-graphicallist-callback]", function( e ) {
 		flyoutFactory = flyoutFactory[parts[i]];
 	}
 
-	var flyout = flyoutFactory();
 	var data = {};
-
 	$elem.dynamicGraphicalList({
 		title: data.flyoutTitle,
 		intro: data.flyoutIntro,
