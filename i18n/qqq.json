@@ -58,5 +58,8 @@
 	"bs-calumma-recentchanges-specialpage-link": "A text containing a link to [[Special:RecentChanges]] within a flyout that displays a list of recent changes.",
 	"bs-all-templates-link-text": "The text for a link to [[Special:AllPages]] with preselection for namespace 10",
 	"bs-all-templates-link-title": "The title for a link to [[Special:AllPages]] with preselection for namespace 10",
-	"bs-to-top-desc": "Link title for the \"Jump to top\" icon"
+	"bs-to-top-desc": "Link title for the \"Jump to top\" icon",
+	"bs-calumma-pagetool-history-tooltip": "Tool tip for an icon above the page title. Links to history view {{Identical|history}}",
+	"bs-calumma-pagetool-talk-tooltip": "Tool tip for an icon above the page title. Links to talk page {{Identical|talk}}",
+	"bs-calumma-pagetool-view-tooltip": "Tool tip for an icon above the page title. Links to standard page view. Only shown on talk pages {{Identical|view}}"
 }

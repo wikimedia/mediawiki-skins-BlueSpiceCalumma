@@ -60,5 +60,8 @@
 	"bs-calumma-recentchanges-diff": "Difference",
 	"bs-all-templates-link-text": "All templates",
 	"bs-all-templates-link-title": "All templates",
-	"bs-to-top-desc": "Jump to top"
+	"bs-to-top-desc": "Jump to top",
+	"bs-calumma-pagetool-history-tooltip": "Page history",
+	"bs-calumma-pagetool-talk-tooltip": "Discussion",
+	"bs-calumma-pagetool-view-tooltip": "View"
 }

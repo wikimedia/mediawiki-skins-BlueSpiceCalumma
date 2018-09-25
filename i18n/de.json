@@ -60,5 +60,8 @@
 	"bs-calumma-recentchanges-diff": "Unterschied",
 	"bs-all-templates-link-text": "Alle Vorlagen",
 	"bs-all-templates-link-title": "Alle Vorlagen",
-	"bs-to-top-desc": "Nach oben springen"
+	"bs-to-top-desc": "Nach oben springen",
+	"bs-calumma-pagetool-history-tooltip": "Versionsgeschichte",
+	"bs-calumma-pagetool-talk-tooltip": "Diskussion",
+	"bs-calumma-pagetool-view-tooltip": "Lesen"
 }
