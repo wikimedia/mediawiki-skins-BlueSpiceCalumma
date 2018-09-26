@@ -338,32 +338,26 @@ body .navigation-main{
 	}
 }
 
-body .navigation-main .bs-link-edit-mediawiki-sidebar {
-	width: 50px;
-	text-align: right;
-	margin-left: 250px;
-	padding: 3px 15px 10px 15px;
-	.bs-icon-edit-mediawiki-sidebar::before{
-		font-family: fontawesome;
-		content: '\f085';
-	}
-	&:hover {
-		background-color: transparent;
-		text-decoration: none;
-	}
-}
-
-body .navigation-main .bs-usersidebar-editlink {
-	padding-left: 250px;
-	#bs-usersidebar-edit {
-		padding: 10px 15px;
-		&::before {
-			font-family: fontawesome;
-			content: '\f085';
+body .navigation-main {
+	.tab-pane.active {
+		.bs-calumma-sidebar-edit-link {
+			text-align: right;
+			padding: 0px 15px;
+			display: none;
+			span {
+				color: @navigation-tab-color;
+			}
+			&:hover {
+				span {
+					background-color: transparent;
+					color: @navigation-color-hover;
+				}
+				background-color: transparent;
+				text-decoration: none;
+			}
 		}
-		&:hover {
-			text-decoration: none;
-			background-color: transparent;
+		&:hover .bs-calumma-sidebar-edit-link {
+			display: block;
 		}
 	}
 }

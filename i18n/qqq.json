@@ -61,5 +61,7 @@
 	"bs-to-top-desc": "Link title for the \"Jump to top\" icon",
 	"bs-calumma-pagetool-history-tooltip": "Tool tip for an icon above the page title. Links to history view {{Identical|history}}",
 	"bs-calumma-pagetool-talk-tooltip": "Tool tip for an icon above the page title. Links to talk page {{Identical|talk}}",
-	"bs-calumma-pagetool-view-tooltip": "Tool tip for an icon above the page title. Links to standard page view. Only shown on talk pages {{Identical|view}}"
+	"bs-calumma-pagetool-view-tooltip": "Tool tip for an icon above the page title. Links to standard page view. Only shown on talk pages {{Identical|view}}",
+	"bs-edit-mediawiki-sidebar-link-text": "The text for a link to edit [[MediaWiki:Sidebar]]",
+	"bs-edit-mediawiki-sidebar-link-title": "The title for a link to edit [[MediaWiki:Sidebar]]"
 }

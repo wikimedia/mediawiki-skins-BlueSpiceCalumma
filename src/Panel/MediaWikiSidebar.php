@@ -40,19 +40,7 @@ class MediaWikiSidebar extends BasePanel {
 
 		$html = '';
 
-		$navLinks = [];
-		if ( $this->skintemplate->getSkin()->getUser()->isAllowed( 'editinterface' ) ) {
-			$sidebar = \Title::makeTitle( NS_MEDIAWIKI, 'Sidebar' );
-			$navLinks[] = [
-				'text' => '',
-				'href' => $sidebar->getEditURL(),
-				'title' => '',
-				'target' => '_blank',
-				'class' => 'bs-link-edit-mediawiki-sidebar',
-				'iconClass' => 'bs-icon-edit-mediawiki-sidebar'
-			];
-		}
-		$navLinks += $data['navigation'];
+		$navLinks = $data['navigation'];
 
 		$allSpecialPages = \Title::newFromText( 'Specialpages', NS_SPECIAL );
 		$navLinks[] = [
@@ -92,6 +80,7 @@ class MediaWikiSidebar extends BasePanel {
 			$html .= $collapsibleGroup->getHtml();
 		}
 
+		$html .= $this->addEditLink( $this->skintemplate );
 		$html .= $this->addMobileFooterLinks( $this->skintemplate );
 
 		return $html;
@@ -224,6 +213,42 @@ class MediaWikiSidebar extends BasePanel {
 
 		$html .= \Html::closeElement( 'div' );
 		$html .= \Html::closeElement( 'div' );
+
+		return $html;
+	}
+
+	/**
+	 *
+	 * @param SkinTemplate $skintemplate
+	 * @return string
+	 */
+	protected function addEditLink( $skintemplate ) {
+		$html = '';
+
+		if ( $skintemplate->getSkin()->getUser()->isAllowed( 'editinterface' ) ) {
+			$sidebar = \Title::makeTitle( NS_MEDIAWIKI, 'Sidebar' );
+
+			$html .= \Html::openElement(
+				'a',
+				[
+					'href' => $sidebar->getEditURL(),
+					'title' => wfMessage( 'bs-edit-mediawiki-sidebar-link-title' )->plain(),
+					'target' => '_blank',
+					'class' => 'bs-edit-mediawiki-sidebar-link bs-calumma-sidebar-edit-link',
+					'iconClass' => ''
+				]
+			);
+
+			$html .= \Html::element(
+					'span',
+					[
+						'class' => 'label'
+					],
+					wfMessage( 'bs-edit-mediawiki-sidebar-link-text' )->plain()
+				);
+
+			$html .= \Html::closeElement( 'a' );
+		}
 
 		return $html;
 	}
