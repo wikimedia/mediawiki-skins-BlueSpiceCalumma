@@ -139,6 +139,21 @@
 	}
 }
 
+#content {
+	h1, h2, h3, h4, h5, h6 {
+		.mw-editsection {
+			visibility: hidden;
+			opacity: 0;
+			transition: visibility 0s, opacity 0.5s linear;
+		}
+
+		&:hover .mw-editsection {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
 #content .mw-editsection {
 	.mw-editsection-bracket {
 	}
@@ -149,4 +164,3 @@
 		}
 	}
 }
-
