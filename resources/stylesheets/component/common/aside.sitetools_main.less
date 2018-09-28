@@ -55,7 +55,6 @@
 /* body */
 body{
 	.sitetools-main{
-		padding-top: 1em;
 		right: 0;
 		top: @menu-top-height + @banner-top-height;
 		width: @sitetools-main-width;
@@ -73,27 +72,21 @@ body{
 			width: @sitetools-main-width;
 			transition: width .3s;
 			&>div {
-			overflow: hidden;
-			&>div>a {
-				padding-left: 10px;
-				line-height: 2em;
-				display: block;
-				width: 100%
-			}
+				overflow: hidden;
+				&>div>a {
+					padding-left: 10px;
+					display: block;
+					width: 100%
+				}
 			}
 			ul.nav-pills{
-				height: @sitetools-tabs-height;
 				display: flex;
 				justify-content: space-between;
 				li{
-					height: @sitetools-tabs-height;
 					a{
 						background-color: @sitetools-tab-bg-color;
 						color: @sitetools-tab-color;
-						border-radius: 0px;
 						width: 100%;
-						height: 32px;
-						line-height: 12px;
 					}
 					a:hover{
 						background-color: @sitetools-tab-bg-color-hover;
@@ -107,7 +100,6 @@ body{
 			}
 			div.tab-content{
 				position: relative;
-				height: calc(~"100vh - 150px");
 				overflow: visible;
 				overflow-y: auto;
 				direction: rtl;
@@ -117,7 +109,7 @@ body{
 				.quickinfo{
 					display: flex;
 					justify-content: space-around;
-					font-size: 10px;
+					font-size: 12px;
 					padding-top: 3px;
 					padding-bottom: 3px;
 					margin-bottom: 15px;
@@ -196,12 +188,9 @@ body.sitetools-main-collapse{
 		padding: 0px;
 		height: 48px;
 		.panel-title {
-			line-height: 32px;
 			a {
 				color: @sitetools-color;
-				font-size: 20px;
 				font-weight: @font-weight-regular;
-				height: 100%;
 				width: 100%;
 				display: block;
 				padding-left: 15px
@@ -229,14 +218,10 @@ body.sitetools-main-collapse{
 		background-color: @sitetools-graphicallist-bg-color;
 	}
 	.list-group {
-		background-color: transparent;
 		.list-group-item {
-			padding: 10px 15px;
+			padding: 15px;
 			padding-top: 10px;
 			padding-bottom: 10px;
-			margin-bottom: -1px;
-			background-color: transparent;
-			line-height: 11px;
 			border: none;
 		}
 		.list-group-item:hover {
@@ -266,11 +251,11 @@ body.sitetools-main-collapse{
 		clear: both;
 	}
 	.panel-heading {
-		padding: 0px;
-		height: 48px;
+		padding: 7px;
 		padding-left: 15px;
 		background-color: transparent;
 		border: none;
+		line-height: 14px;
 	}
 	.panel-heading:hover {
 		background-color: @sitetools-graphicallist-bg-color;
@@ -278,24 +263,20 @@ body.sitetools-main-collapse{
 	.panel-heading .bs-panel-title {
 		margin: 0;
 		background-color: transparent;
-		line-height: 40px;
 		a.tool{
 			float: right;
 		}
 		a.title{
+			font-size: 14px;
 			float: left;
 			span.title {
 				float: left;
-			}
-			span.badge {
-				margin-bottom: 10px;
 			}
 		}
 		i{
 			font-style: normal;
 			float: left;
 			width: 32px;
-			height: 100%;
 		}
 		.trigger.flyout{
 			i.trigger-icon::before{
@@ -304,7 +285,6 @@ body.sitetools-main-collapse{
 				font-style: normal;
 				float: right;
 				width: 32px;
-				height: 100%;
 			}
 		}
 		.trigger.body{
@@ -324,9 +304,9 @@ body.sitetools-main-collapse{
 		}
 	}
 	.flyout-body-hint {
+		padding: 3px;
 		padding-left: 47px; //= 15px (padding of `.panel-heading`) +  32px (width of `.trigger-icon`)
 		font-size: small;
-
 		a {
 			color: inherit;
 		}
@@ -335,10 +315,11 @@ body.sitetools-main-collapse{
 		}
 	}
 	.list-group {
-		background-color: transparent;
 		.list-group-item {
-			background-color: transparent;
-			border: none;
+			border: 0;
+			padding: 3px;
+			padding-left: 47px;
+			font-size: small;
 		}
 		.list-group-item:hover {
 			background-color: @sitetools-graphicallist-bg-color;
