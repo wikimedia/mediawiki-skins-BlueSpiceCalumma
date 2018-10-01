@@ -21,7 +21,7 @@
 	"bs-action-new-subpage-title": "The title of the 'create new subpage' link\n\nParameters:\n* $1 - title of the base page",
 	"bs-action-new-file-text": "The text of the 'upload new file' link",
 	"bs-action-new-file-title": "The title of the 'upload new file' link",
-	"notifications-badge-counter-grater-100": "The text displayed when the notification counter it higher than 100",
+	"notifications-badge-counter-gt-100": "The text displayed when the notification counter it higher than 100",
 	"bs-userbutton-notifications-link-text": "The text of the 'notifications' link",
 	"bs-userbutton-userpage-link-text": "The text of the 'user page' link",
 	"bs-mobilemoremenu-view-title": "The title of the 'view page' link in the mobile view of the skin",

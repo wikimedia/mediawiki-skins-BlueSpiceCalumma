@@ -408,7 +408,7 @@ class SkinDataFieldDefinition {
 			$notifications['notifications-badge-text'] =
 				( $counter < 100 )
 				? (string)$counter
-				: wfMessage( 'notifications-badge-counter-grater-100' )->plain();
+				: wfMessage( 'notifications-badge-counter-gt-100' )->plain();
 		}
 
 		return $notifications;
