@@ -172,10 +172,19 @@ class Panel implements IRenderer {
 	 * @param array &$args
 	 * @param IFlyout $flyout
 	 */
-	protected function addIFlyoutArgs( &$args, $flyout ) {
+	protected function addIFlyoutArgs( &$args, IFlyout $flyout ) {
+		$title = $flyout->getFlyoutTitleMessage();
+		if ( $title instanceof \Message ) {
+			$title = $title->text();
+		}
+		$intro = $flyout->getFlyoutIntroMessage();
+		if ( $intro instanceof \Message ) {
+			$intro = $intro->text();
+		}
+
 		$args['data'] += [
-			'flyout-title' => $flyout->getFlyoutTitleMessage()->text(),
-			'flyout-intro' => $flyout->getFlyoutIntroMessage()->text(),
+			'flyout-title' => $title,
+			'flyout-intro' => $intro,
 		];
 
 		$args['trigger-type'] = 'flyout';
