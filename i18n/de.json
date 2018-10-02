@@ -64,5 +64,8 @@
 	"bs-calumma-pagetool-talk-tooltip": "Diskussion",
 	"bs-calumma-pagetool-view-tooltip": "Lesen",
 	"bs-edit-mediawiki-sidebar-link-text": "MediaWiki Sidebar bearbeiten",
-	"bs-edit-mediawiki-sidebar-link-title": "MediaWiki Sidebar bearbeiten"
+	"bs-edit-mediawiki-sidebar-link-title": "MediaWiki Sidebar bearbeiten",
+	"bs-allpages-description": "Artikel von A-Z",
+	"bs-support-url": "https://de.bluespice.com/services/support",
+	"bs-support-description": "Support"
 }

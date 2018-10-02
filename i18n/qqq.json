@@ -66,5 +66,9 @@
 	"bs-calumma-pagetool-view-tooltip": "Tool tip for an icon above the page title. Links to standard page view. Only shown on talk pages {{Identical|view}}",
 	"bs-edit-mediawiki-sidebar-link-text": "The text for a link to edit [[MediaWiki:Sidebar]]",
 	"bs-edit-mediawiki-sidebar-link-title": "The title for a link to edit [[MediaWiki:Sidebar]]",
-	"bs-sidebar-override": "Default sidebar structure to replace default MW sidebar"
+	"bs-sidebar-override": "{{notranslate}}",
+	"bs-allpages-url": "{{notranslate}}",
+	"bs-allpages-description": "Label for the Special:AllPages in MW Sidebar",
+	"bs-support-url": "{{notranslate}}",
+	"bs-support-description": "Label for HW support page in MW Sidebar (external link)"
 }
