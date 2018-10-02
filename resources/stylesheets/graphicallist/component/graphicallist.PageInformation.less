@@ -3,15 +3,6 @@
 
 @article-info-bg-hover: transparent;
 
-/*
-TODO:
-- remove "!important" at ".bs-articleinfo-flyout-categorylist-cnt "
-- remove "!important" at ".bs-articleinfo-flyout-categorylist-cnt div"
-- remove "!important" at ""
-- remove "!important" at ""
-*/
-
-
 .dynamic-graphical-list-outer-west.dynamic-graphical-list-outer .bs-flyout-two-columns.x-panel.x-panel-default {
 	// top
 	.x-panel.panel-top
@@ -33,30 +24,25 @@ TODO:
 	}
 	// left
 	.x-panel.x-panel-default.panel-center-one {
-		.bs-articleinfo-flyout-categorylist-cnt {
-			width: 100% !important;
-			padding-bottom: 20px;
-			div {
-				width: 100% !important;
+		ul.bs-articleinfo-flyout-linklist {
+			padding-left: 0px;
+			li {
+				list-style-type: none;
 			}
-			.bs-articleinfo-flyout-linklist {
-				list-style: none;
-				padding-left: 0px;
-				a{
-					color: @bs-color-primary;
-					text-decoration: none;
-					height: 32px;
-					display: block;
-					line-height: 32px;
-					background-color: transparent;
-				}
-				a:hover {
-					text-decoration: none;
-					background-color: @article-info-bg-hover;
-				}
-				a.new, a.new:hover {
-					color: @link-color-new;
-				}
+			a {
+				color: @bs-color-primary;
+				text-decoration: none;
+				height: 32px;
+				display: block;
+				line-height: 32px;
+				background-color: transparent;
+			}
+			a:hover {
+				text-decoration: none;
+				background-color: @article-info-bg-hover;
+			}
+			a.new, a.new:hover {
+				color: @link-color-new;
 			}
 		}
 	}
@@ -78,9 +64,9 @@ TODO:
 						border-radius: 32px;
 					}
 					.oo-ui-popupWidget-popup {
-						width: auto !important;
+						width: auto;
 						.bs-userinfo-right {
-							width: auto !important;
+							width: auto;
 							float: right;
 							&>div {
 								h3 {
@@ -113,9 +99,9 @@ TODO:
 							border-radius: 32px;
 						}
 						.oo-ui-popupWidget-popup {
-							width: auto !important;
+							width: auto;
 							.bs-userinfo-right {
-								width: auto !important;
+								width: auto;
 								float: right;
 								&>div {
 									h3 {
@@ -141,9 +127,9 @@ TODO:
 							border-radius: 32px;
 						}
 						.oo-ui-popupWidget-popup {
-							width: auto !important;
+							width: auto;
 							.bs-userinfo-right {
-								width: auto !important;
+								width: auto;
 								float: right;
 								&>div {
 									h3 {
