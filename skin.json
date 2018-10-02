@@ -169,7 +169,8 @@
 	"callback": "BlueSpice\\Calumma\\Setup::onCallback",
 	"Hooks": {
 		"GetPreferences": "\\BlueSpice\\Calumma\\Hook\\GetPreferences\\UserPreferences::callback",
-		"MessageCache::get": "\\BlueSpice\\Calumma\\Hook\\MessageCacheGet\\ReplaceMWSidebar::callback"
+		"MessageCache::get": "\\BlueSpice\\Calumma\\Hook\\MessageCacheGet\\ReplaceMWSidebar::callback",
+		"BeforePageDisplay": "\\BlueSpice\\Calumma\\Hook\\BeforePageDisplay\\HistoryBacklink::callback"
 	},
 	"DefaultUserOptions": {
 		"bs-calumma-settings-navigation-main-collapse": false,
