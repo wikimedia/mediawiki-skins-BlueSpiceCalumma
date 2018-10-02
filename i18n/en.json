@@ -66,5 +66,9 @@
 	"bs-calumma-pagetool-view-tooltip": "View",
 	"bs-edit-mediawiki-sidebar-link-text": "Edit MediaWiki sidebar",
 	"bs-edit-mediawiki-sidebar-link-title": "Edit MediaWiki sidebar",
-	"bs-sidebar-override": "\n* navigation\n** mainpage|mainpage-description\n** Spezial:Alle_Seiten|Artikel von A-Z\n** recentchanges-url|recentchanges"
+	"bs-sidebar-override": "\n* navigation\n** mainpage|mainpage-description\n** bs-allpages-url|bs-allpages-description\n** recentchanges-url|recentchanges\n** bs-support-url|bs-support-description",
+	"bs-allpages-url": "Special:AllPages",
+	"bs-allpages-description": "All pages",
+	"bs-support-url": "https://bluespice.com/services/support",
+	"bs-support-description": "Support"
 }
