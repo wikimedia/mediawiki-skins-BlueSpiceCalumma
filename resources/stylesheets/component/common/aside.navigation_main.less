@@ -303,41 +303,6 @@ body .navigation-main{
 	}
 }
 
-#bs-bookshelfui-book-toc {
-	#bs-bookshelfui-book-toc-tree {
-		li.bs-treenodeitem {
-			&.collapsed.expandable.leaf {
-				span.bs-icon::before {
-					visibility: hidden;
-					color: white;
-				}
-			}
-			&.collapsed.expandable {
-				span.bs-icon::before {
-					content: "\e923";
-					font-family: "entypo";
-					font-style: normal;
-					color: white;
-				}
-			}
-			&.expandable {
-				span.bs-icon::before {
-					content: "\e921";
-					font-family: "entypo";
-					font-style: normal;
-					color: white;
-				}
-			}
-			&.expandable span.bs-icon:hover::before {
-				color: black;
-				background-color: white;
-				border-radius: 1em;
-
-			}
-		}
-	}
-}
-
 body .navigation-main {
 	.tab-pane.active {
 		.bs-calumma-sidebar-edit-link {
