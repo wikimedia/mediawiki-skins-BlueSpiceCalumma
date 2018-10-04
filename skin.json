@@ -65,6 +65,7 @@
 				"stylesheets/fixes/desktop.less": {},
 				"stylesheets/fixes/mobile.specialpages.less": {},
 				"stylesheets/fixes/desktop.specialpages.less": {},
+				"stylesheets/fixes/IEFixes.css": {},
 				"stylesheets/mobile.less": { "media": "all" },
 				"stylesheets/tablet.less": { "media": "all and ( min-width: 721px )" },
 				"stylesheets/desktop_sm.less": { "media": "all and ( min-width: 1001px )" },
