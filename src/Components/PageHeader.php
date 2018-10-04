@@ -55,7 +55,16 @@ class PageHeader extends TemplateComponent {
 	 * @return string
 	 */
 	protected function getFirstHeading() {
-		return $this->getSkinTemplate()->get( 'title' );
+		$titleText = $this->getSkinTemplate()->get( 'title' );
+
+		$currentTitle = $this->getSkin()->getTitle();
+		$title = \Title::newFromText( $titleText );
+		// Only shorten if not already overwirtten by another extension or `{{DISPLAYTITLE:...}}`
+		if ( $title->equals( $currentTitle ) ) {
+			$titleText = $currentTitle->getSubpageText();
+		}
+
+		return $titleText;
 	}
 
 	/**
