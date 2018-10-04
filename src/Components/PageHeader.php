@@ -47,7 +47,20 @@ class PageHeader extends TemplateComponent {
 	 * @return string
 	 */
 	protected function getIndicators() {
-		return $this->getSkinTemplate()->get( 'indicators' );
+		$out = '';
+		$indicators = $this->getSkinTemplate()->get( 'indicators' );
+		// Logic from `BaseTemplate`
+		foreach ( $indicators as $id => $content ) {
+			$out .= \Html::rawElement(
+				'div',
+				[
+					'id' => \Sanitizer::escapeIdForAttribute( "mw-indicator-$id" ),
+					'class' => 'mw-indicator',
+				],
+				$content
+			) . "\n";
+		}
+		return $out;
 	}
 
 	/**
