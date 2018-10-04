@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Daniel Vogel"
+			"Daniel Vogel",
+			"Kghbln"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice skin",
@@ -21,6 +22,7 @@
 	"bs-action-new-subpage-title": "Neue Unterseite zu $1 hinzufügen",
 	"bs-action-new-file-text": "Neue Datei hochladen",
 	"bs-action-new-file-title": "Neue Datei hochladen",
+	"notifications-badge-counter-gt-100": "99+",
 	"bs-userbutton-notifications-link-text": "Benachrichtigungen",
 	"bs-userbutton-userpage-link-text": "Mein Profil",
 	"bs-mobilemoremenu-view-title": "Ansicht",
@@ -55,7 +57,7 @@
 	"bs-calumma-recentchanges-intro": "Hier werden die letzten Änderungen im Wiki aufgelistet.",
 	"bs-calumma-recentchanges-specialpage-link": "Die klassische Ansicht ist [[Special:RecentChanges|hier]] zu finden.",
 	"bs-calumma-recentchanges-column-header-title": "Letzte Änderungen",
-	"bs-calumma-recentchanges-history" : "Historie",
+	"bs-calumma-recentchanges-history": "Historie",
 	"bs-calumma-recentchanges-diff": "Unterschied",
 	"bs-all-templates-link-text": "Alle Vorlagen",
 	"bs-all-templates-link-title": "Alle Vorlagen",
@@ -63,9 +65,8 @@
 	"bs-calumma-pagetool-history-tooltip": "Versionsgeschichte",
 	"bs-calumma-pagetool-talk-tooltip": "Diskussion",
 	"bs-calumma-pagetool-view-tooltip": "Lesen",
-	"bs-edit-mediawiki-sidebar-link-text": "MediaWiki Sidebar bearbeiten",
-	"bs-edit-mediawiki-sidebar-link-title": "MediaWiki Sidebar bearbeiten",
+	"bs-edit-mediawiki-sidebar-link-text": "Seitenleiste bearbeiten",
+	"bs-edit-mediawiki-sidebar-link-title": "Seitenleiste bearbeiten",
 	"bs-allpages-description": "Artikel von A-Z",
-	"bs-support-url": "https://de.bluespice.com/services/support",
 	"bs-support-description": "Support"
 }

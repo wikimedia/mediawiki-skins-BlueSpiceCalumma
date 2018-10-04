@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"bs-action-edit-edit-title": "Quell änneren",
+	"bs-action-edit-ve-edit-title": "Änneren",
+	"bs-action-new-page-text": "Nei Säit",
+	"bs-action-new-subpage-text": "Nei Ënnersäit",
+	"bs-userbutton-notifications-link-text": "Notifikatiounen",
+	"bs-userbutton-userpage-link-text": "Mäi Profil",
+	"bs-mobilemoremenu-view-text": "Weisen",
+	"bs-mobilemoremenu-edit-title": "Änneren",
+	"bs-mobilemoremenu-edit-text": "Änneren",
+	"bs-mobilemoremenu-new-section-title": "Neien Abschnitt",
+	"bs-mobilemoremenu-new-section-text": "Neien Abschnitt",
+	"bs-sitenav-navigation-section-mobileusercontainer": "Benotzer",
+	"bs-sitenav-navigation-section-mediawikisidebar": "Wiki",
+	"bs-sitenav-globalactions-title": "Global Aktiounen",
+	"bs-sitenav-globalactions-section-globalactions": "Global Aktiounen",
+	"bs-sitetools-pageinfo-title": "Informatioun",
+	"bs-calumma-graphicallist-recentchanges-preview-btn-edit": "Änneren",
+	"bs-sitetools-namespaces": "Nummraum",
+	"bs-sitetools-default": "Méi",
+	"bs-sitetools-qm": "Qualitéits Management",
+	"bs-calumma-recentchanges-title": "Rezent Ännerungen",
+	"bs-calumma-recentchanges-column-header-title": "Rezent Ännerungen",
+	"bs-calumma-recentchanges-diff": "Ënnerscheed",
+	"bs-all-templates-link-text": "All Schablounen",
+	"bs-all-templates-link-title": "All Schablounen",
+	"bs-to-top-desc": "Uewen op d'Säit scrollen",
+	"bs-calumma-pagetool-talk-tooltip": "Diskussioun",
+	"bs-allpages-description": "All Säiten",
+	"bs-support-description": "Ënnerstëtzung"
+}
