@@ -3,29 +3,42 @@
 namespace BlueSpice\Calumma\Components;
 
 use BlueSpice\Calumma\PanelFactory;
+use BlueSpice\Calumma\Structure\TabPanelStructure;
+use BlueSpice\Calumma\IActiveStateProvider;
 use Skins\Chameleon\IdRegistry;
 use BlueSpice\SkinData;
 
-class ToolPaneTabs extends \BlueSpice\Calumma\Structure\TabPanelStructure {
+class ToolPaneTabs extends TabPanelStructure {
 
 	/**
 	 *
 	 * @return array
 	 */
 	protected function getSubcomponentsData() {
+		$activeTabId = $this->getActiveTabId();
+
 		$panelFactory = new PanelFactory(
 			$this->getSkinTemplate()->get( SkinData::SITE_TOOLS ),
 			$this->getSkinTemplate()
 		);
 
 		$panels = $panelFactory->makePanels();
+
+		foreach ( $panels as $panel ) {
+			if ( $panel instanceof IActiveStateProvider ) {
+				if ( $panel->isActive() ) {
+					$activeTabId = $panel->getHtmlId();
+				}
+			}
+		}
+
 		$subComponentsData = [];
 		foreach ( $panels as $panel ) {
 			if ( !$panel->shouldRender( $this->getSkin()->getContext() ) ) {
 				continue;
 			}
 			$panel instanceof \BlueSpice\Calumma\IPanel;
-			$activeTabId = $this->getActiveTabId();
+
 			$tabId = $panel->getHtmlId();
 			$subComponentsData[] = [
 				'id' => $tabId,
@@ -48,4 +61,5 @@ class ToolPaneTabs extends \BlueSpice\Calumma\Structure\TabPanelStructure {
 		}
 		return $this->htmlId;
 	}
+
 }
