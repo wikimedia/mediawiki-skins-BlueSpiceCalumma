@@ -3,9 +3,10 @@
 namespace BlueSpice\Calumma\Panel;
 
 use BlueSpice\Calumma\PanelFactory;
+use BlueSpice\Calumma\IActiveStateProvider;
 use BlueSpice\SkinData;
 
-class QualityManagement extends PanelContainer {
+class QualityManagement extends PanelContainer implements IActiveStateProvider {
 
 	/**
 	 *
@@ -62,4 +63,17 @@ class QualityManagement extends PanelContainer {
 		}
 		return false;
 	}
+
+	public function isActive() {
+		$panels = $this->makePanels();
+		foreach ( $panels as $panel ) {
+			if ( ( $panel instanceof IActiveStateProvider ) ) {
+				if ( $panel->isActive() ) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
 }
