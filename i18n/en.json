@@ -53,7 +53,7 @@
 	"bs-sitetools-toolbox": "Toolbox",
 	"bs-sitetools-views": "Views",
 	"bs-calumma-recentchanges-title": "Recent changes",
-	"bs-calumma-recentchanges-intro": "This is a list with the pages recently modified.",
+	"bs-calumma-recentchanges-intro": "In this list you find all recent page edits and newly created pages.",
 	"bs-calumma-recentchanges-specialpage-link": "For the classic view click [[Special:RecentChanges|here]].",
 	"bs-calumma-recentchanges-column-header-title": "Recent changes",
 	"bs-calumma-recentchanges-history" : "History",
