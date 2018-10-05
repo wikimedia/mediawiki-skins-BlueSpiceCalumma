@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Daniel Vogel",
-			"Kghbln"
+			"Kghbln",
+			"Metalhead64"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice skin",
@@ -54,7 +55,7 @@
 	"bs-sitetools-toolbox": "Toolbox",
 	"bs-sitetools-views": "Ansichten",
 	"bs-calumma-recentchanges-title": "Letzte Änderungen",
-	"bs-calumma-recentchanges-intro": "Hier werden die letzten Änderungen im Wiki aufgelistet.",
+	"bs-calumma-recentchanges-intro": "In dieser Liste findest du alle letzten Seitenbearbeitungen und neu erstellte Seiten.",
 	"bs-calumma-recentchanges-specialpage-link": "Die klassische Ansicht ist [[Special:RecentChanges|hier]] zu finden.",
 	"bs-calumma-recentchanges-column-header-title": "Letzte Änderungen",
 	"bs-calumma-recentchanges-history": "Historie",
