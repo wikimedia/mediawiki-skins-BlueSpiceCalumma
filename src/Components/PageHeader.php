@@ -73,7 +73,7 @@ class PageHeader extends TemplateComponent {
 		$currentTitle = $this->getSkin()->getTitle();
 		$title = \Title::newFromText( $titleText );
 		// Only shorten if not already overwirtten by another extension or `{{DISPLAYTITLE:...}}`
-		if ( $title->equals( $currentTitle ) ) {
+		if ( $title && $title->equals( $currentTitle ) ) {
 			$titleText = $currentTitle->getSubpageText();
 		}
 
