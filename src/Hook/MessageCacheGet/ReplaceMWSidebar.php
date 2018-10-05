@@ -7,10 +7,14 @@ use BlueSpice\Hook\MessageCacheGet;
 class ReplaceMWSidebar extends MessageCacheGet {
 
 	protected function skipProcessing() {
-		if ( $this->lckey === 'sidebar' ) {
-			return false;
+		if ( $this->lckey !== 'sidebar' ) {
+			return true;
 		}
-		return true;
+		$sidebarTitle = \Title::makeTitle( NS_MEDIAWIKI, 'Sidebar' );
+		if ( $sidebarTitle instanceof \Title && $sidebarTitle->exists() ) {
+			return true;
+		}
+		return false;
 	}
 
 	protected function doProcess() {
