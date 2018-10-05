@@ -85,11 +85,15 @@ aside .bs-panel.panel-default {
 	background-color: @load-indicator-color;
 	position: fixed;
 	width: 100%;
-	top: @menu-top-height + @banner-top-height;
 
 	.loader-indicator-inner {
-		background-image: linear-gradient( to right, rgba(255,255,255,0 ) 30%, rgba(255,255,255,.9 ) 55%, rgba(255,255,255,0.9) 60%, rgba(255,255,255,0) 61% );
-		height: 5px;
+		background-image: linear-gradient(
+			to right,
+			rgba( 255,255,255,0.0 ) 40%,
+			rgba( 255,255,255,0.9 ) 55%,
+			rgba( 255,255,255,0.9 ) 60%,
+			rgba( 255,255,255,0.0 ) 60% );
+		height: 3px;
 		background-size: 50%;
 		background-position: 100%;
 
@@ -97,7 +101,6 @@ aside .bs-panel.panel-default {
 		-moz-animation:    bs-calumma-loader 2s infinite linear;
 		-o-animation:      bs-calumma-loader 2s infinite linear;
 		animation:         bs-calumma-loader 2s infinite linear;
-
 	}
 }
 
