@@ -52,7 +52,7 @@
 	"bs-sitetools-toolbox": "Caixa de ferramentas",
 	"bs-sitetools-views": "Visualizações",
 	"bs-calumma-recentchanges-title": "Mudanças recentes",
-	"bs-calumma-recentchanges-intro": "Esta é uma lista com as páginas modificadas recentemente.",
+	"bs-calumma-recentchanges-intro": "Nesta lista, você encontra todas as edições recentes de páginas e novas páginas criadas.",
 	"bs-calumma-recentchanges-specialpage-link": "Para a visualização clássica, clique [[Special:RecentChanges|aqui]].",
 	"bs-calumma-recentchanges-column-header-title": "Mudanças recentes",
 	"bs-calumma-recentchanges-history": "Histórico",
@@ -63,8 +63,8 @@
 	"bs-calumma-pagetool-history-tooltip": "Histórico das páginas",
 	"bs-calumma-pagetool-talk-tooltip": "Discussão",
 	"bs-calumma-pagetool-view-tooltip": "Visualização",
-	"bs-edit-mediawiki-sidebar-link-text": "Editar barra lateral do MediaWiki",
-	"bs-edit-mediawiki-sidebar-link-title": "Editar barra lateral do MediaWiki",
+	"bs-edit-mediawiki-sidebar-link-text": "Editar barra lateral",
+	"bs-edit-mediawiki-sidebar-link-title": "Editar barra lateral",
 	"bs-allpages-description": "Todas as páginas",
 	"bs-support-description": "Suporte"
 }
