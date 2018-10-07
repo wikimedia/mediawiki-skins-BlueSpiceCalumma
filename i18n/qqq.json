@@ -4,11 +4,12 @@
 			"Daniel Vogel",
 			"Nike",
 			"Raymond",
-			"Robby"
+			"Robby",
+			"Umherirrender"
 		]
 	},
 	"bluespicecalumma-desc": "Descripton text for the skin on [[Special:Version]]",
-	"bluespicecalumma-skin": "Name of the skin on [[Special:Version]] and [[Special:Preferences]]",
+	"bluespicecalumma-skin": "{{name}}\nName of the skin on [[Special:Version]] and [[Special:Preferences]]",
 	"prefs-bs-calumma": "The text of a section on [[Special:Preferences]] allowing users to set their preferences for ...",
 	"bs-calumma-pref-toggle-navigaiton-main": "The label of a input element on [[Special:Preferences]] allowing users to set their preference for the toggle behavior of the main navigation sidebar",
 	"bs-calumma-pref-toggle-sitetools-main": "The label of a input element on [[Special:Preferences]] allowing users to set their preference for the toggle behavior of the tools panel sidebar",
