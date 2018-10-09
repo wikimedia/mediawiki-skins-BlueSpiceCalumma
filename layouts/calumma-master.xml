@@ -8,6 +8,7 @@
 				<component type="\BlueSpice\Calumma\Components\Logo"/>
 				<component type="\BlueSpice\Calumma\Components\SearchForm"/>
 				<component type="\BlueSpice\Calumma\Components\UserButton"/>
+				<component type="\BlueSpice\Calumma\Components\LanguageSelector"/>
 				<component type="\BlueSpice\Calumma\Components\FeaturedActions"/>
 			</component>
 			<component type="\BlueSpice\Calumma\Components\MobileNav" class="calumma-mobile-visible calumma-tablet-visible">
