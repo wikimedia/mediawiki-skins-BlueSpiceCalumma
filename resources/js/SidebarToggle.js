@@ -10,26 +10,31 @@
 		}
 		else{
 			$( 'body' ).addClass( target );
+			if ( $( this ).closest( 'aside' ).hasClass( 'active' ) ) {
+				$( this ).closest( 'aside' ).removeClass( 'active' );
+			}
 			mw.cookie.set( 'Calumma_'+target, 'true' );
 		}
 	});
 
 	$( '.bs-tabs' ).on( 'click', '.active a[data-toggle="tab"]', function( e ){
-		var $anchor = $( this );
-		var targetId = $anchor.attr( 'href' ).substring( 1 ); //cut off leading '#'
-		var $tabsContainer = $anchor.closest( '.bs-tabs' );
-		var tabsContainerId = $tabsContainer.attr( 'id' );
+		if( ( $( d ).width() <= "1000" ) ) {
+			var $anchor = $( this );
+			var targetId = $anchor.attr( 'href' ).substring( 1 ); //cut off leading '#'
+			var $tabsContainer = $anchor.closest( '.bs-tabs' );
+			var tabsContainerId = $tabsContainer.attr( 'id' );
 
-		var asideTrigger = $anchor.closest( 'aside' ).attr( 'data-toggle-by' );
+			var asideTrigger = $anchor.closest( 'aside' ).attr( 'data-toggle-by' );
 
-		var activeTab = mw.cookie.get( 'CalummaTab_'+tabsContainerId );
-		if ( activeTab === targetId ){
-			$( 'body' ).addClass( asideTrigger );
-			mw.cookie.set( 'Calumma_' + asideTrigger, 'true' );
+			var activeTab = mw.cookie.get( 'CalummaTab_'+tabsContainerId );
+			if ( activeTab === targetId ){
+				$( 'body' ).addClass( asideTrigger );
+				mw.cookie.set( 'Calumma_' + asideTrigger, 'true' );
 
-			/*close graphicallist*/
-			var $graphicalListTrigger = $anchor.closest( 'aside' ).find( '.dynamic-graphical-list-visible a.title' );
-			$graphicalListTrigger.trigger( 'click' );
+				/*close graphicallist*/
+				var $graphicalListTrigger = $anchor.closest( 'aside' ).find( '.dynamic-graphical-list-visible a.title' );
+				$graphicalListTrigger.trigger( 'click' );
+			}
 		}
 	});
 
@@ -45,6 +50,18 @@
 		}
 		else {
 			mw.cookie.set( 'Calumma_desktop-view', 'true' );
+		}
+	});
+
+	$( d ).ready( function(e){
+		if( ( $( d ).width() > "1000" ) && ( $( d ).width() < "1201" ) ) {
+			if ( $( 'aside.navigation-main.active' ).length > 0 ) {
+				$( 'body.navigation-main-collapse' ).removeClass( 'navigation-main-collapse' );
+			}
+
+			if ( $( 'aside.sitetools-main.active' ).length > 0 ) {
+				$( 'body.sitetools-main-collapse' ).removeClass( 'sitetools-main-collapse' );
+			}
 		}
 	});
 })( document, jQuery, mediaWiki );

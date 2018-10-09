@@ -3,6 +3,8 @@ namespace BlueSpice\Calumma\Components;
 
 class SidebarToggle extends \Skins\Chameleon\Components\Structure {
 
+	protected $active_state = false;
+
 	/**
 	 * The resulting HTML
 	 * @return string
@@ -24,5 +26,13 @@ class SidebarToggle extends \Skins\Chameleon\Components\Structure {
 		$html .= \Html::closeElement( 'a' );
 
 		return $html;
+	}
+
+	/**
+	 * Is this element active
+	 * @return bool
+	 */
+	public function isActive() {
+		return $this->active_state;
 	}
 }

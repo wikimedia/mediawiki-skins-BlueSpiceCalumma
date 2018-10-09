@@ -1,7 +1,9 @@
-body{
+body .navigation-main,
+body .navigation-main.active {
 	.sidebar-toggle[data-toggle~="navigation-main-collapse"]{
 		display: block;
 		position: fixed;
+		width: 48px;
 		padding: 1em;
 		left: 300px;
 		top: @menu-top-height + @banner-top-height;
@@ -17,6 +19,7 @@ body{
 		}
 		&:hover{
 			text-decoration: none;
+			background-color: transparent;
 			i.navigation-main-collapse::before{
 				color: @navigation-toggle-btn-color-hover;
 			}
@@ -31,6 +34,7 @@ body.navigation-main-collapse {
 	.sidebar-toggle[data-toggle~="navigation-main-collapse"]{
 		display: block;
 		position: fixed;
+		width: 48px;
 		padding: 1em;
 		left: 0;
 		top: @menu-top-height + @banner-top-height;
@@ -46,6 +50,7 @@ body.navigation-main-collapse {
 		}
 		&:hover{
 			text-decoration: none;
+			background-color: transparent;
 			i.navigation-main-collapse::before{
 				color: @navigation-toggle-btn-color-hover;
 			}
@@ -57,7 +62,8 @@ body.navigation-main-collapse {
 }
 
 body{
-	.navigation-main{
+	&.navigation-main-collapse .navigation-main.active,
+	.navigation-main {
 		top: @menu-top-height + @banner-top-height;
 		width: @navigation-main-width;
 		#bs-sitenavtabs {

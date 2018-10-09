@@ -10,6 +10,8 @@ use BlueSpice\SkinData;
 
 class SiteNavTabs extends TabPanelStructure {
 
+	protected $active_state = false;
+
 	/**
 	 *
 	 * @return array
@@ -28,6 +30,7 @@ class SiteNavTabs extends TabPanelStructure {
 			if ( $panel instanceof IActiveStateProvider ) {
 				if ( $panel->isActive() ) {
 					$activeTabId = $panel->getHtmlId();
+					$this->active_state = true;
 				}
 			}
 		}
@@ -60,5 +63,13 @@ class SiteNavTabs extends TabPanelStructure {
 			$this->htmlId = IdRegistry::getRegistry()->getId( 'bs-sitenavtabs' );
 		}
 		return $this->htmlId;
+	}
+
+	/**
+	 * Is this element active
+	 * @return bool
+	 */
+	public function isActive() {
+		return $this->active_state;
 	}
 }

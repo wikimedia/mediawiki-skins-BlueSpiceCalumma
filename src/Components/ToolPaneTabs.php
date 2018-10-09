@@ -10,6 +10,8 @@ use BlueSpice\SkinData;
 
 class ToolPaneTabs extends TabPanelStructure {
 
+	protected $active_state = false;
+
 	/**
 	 *
 	 * @return array
@@ -28,6 +30,7 @@ class ToolPaneTabs extends TabPanelStructure {
 			if ( $panel instanceof IActiveStateProvider ) {
 				if ( $panel->isActive() ) {
 					$activeTabId = $panel->getHtmlId();
+					$this->active_state = true;
 				}
 			}
 		}
@@ -60,6 +63,14 @@ class ToolPaneTabs extends TabPanelStructure {
 			$this->htmlId = IdRegistry::getRegistry()->getId( 'bs-toolpanetabs' );
 		}
 		return $this->htmlId;
+	}
+
+	/**
+	 * Is this element active
+	 * @return bool
+	 */
+	public function isActive() {
+		return $this->active_state;
 	}
 
 }

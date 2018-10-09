@@ -11,11 +11,21 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 		$class = $this->getDomElement()->getAttribute( 'class' );
 		$toggleBy = $this->getDomElement()->getAttribute( 'data-toggle-by' );
 
+		$body = parent::getHtml();
+
+		$activeClass = '';
+		foreach ( $this->getSubcomponents() as $component ) {
+
+			if ( $component->isActive() ) {
+				$activeClass = ' active';
+			}
+		}
+
 		$html = \Html::openElement( 'aside', [
-			'class' => $class,
+			'class' => $class . $activeClass,
 			'data-toggle-by' => $toggleBy
 			] );
-		$html .= parent::getHtml();
+		$html .= $body;
 		$html .= \Html::closeElement( 'aside' );
 
 		return $html;

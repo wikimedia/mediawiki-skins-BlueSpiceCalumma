@@ -1,7 +1,9 @@
-body{
+body .sitetools-main,
+body .sitetools-main.active {
 	.sidebar-toggle[data-toggle~="sitetools-main-collapse"]{
 		display: block;
 		position: fixed;
+		width: 48px;
 		padding: 1em;
 		right: 300px;
 		top: @menu-top-height + @banner-top-height;
@@ -18,6 +20,7 @@ body{
 		}
 		&:hover{
 			text-decoration: none;
+			background-color: transparent;
 			i.sitetools-main-collapse::before{
 				color: @sitetools-toggle-btn-color-hover;
 			}
@@ -28,10 +31,11 @@ body{
 	}
 }
 
-body.sitetools-main-collapse{
+body.sitetools-main-collapse {
 	.sidebar-toggle[data-toggle~="sitetools-main-collapse"]{
 		display: block;
 		position: fixed;
+		width: 48px;
 		padding: 1em;
 		right: 0px;
 		top: @menu-top-height + @banner-top-height;
@@ -48,6 +52,7 @@ body.sitetools-main-collapse{
 		}
 		&:hover{
 			text-decoration: none;
+			background-color: transparent;
 			i.sitetools-main-collapse::before{
 				color: @sitetools-toggle-btn-color-hover;
 			}
@@ -58,8 +63,9 @@ body.sitetools-main-collapse{
 	}
 }
 
-body{
-	.sitetools-main{
+body {
+	&.sitetools-main-collapse .sitetools-main.active,
+	.sitetools-main {
 		top: @menu-top-height + @banner-top-height;
 		width: @sitetools-main-width;
 		display: inline-flex;
