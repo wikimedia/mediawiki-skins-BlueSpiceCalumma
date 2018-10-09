@@ -61,7 +61,7 @@ body{
 			div.tab-content{
 				position: relative;
 				overflow: visible;
-				overflow-y: auto;
+				overflow-y: hidden;
 				&>div{
 					position: relative;
 					top:0;
@@ -90,6 +90,9 @@ body{
 					color: white;
 					text-decoration: none;
 				}
+			}
+			div.tab-content:hover {
+				overflow-y: auto;
 			}
 		}
 		.list-group-item.dynamic-graphical-list-visible{
