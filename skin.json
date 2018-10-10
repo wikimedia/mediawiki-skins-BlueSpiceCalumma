@@ -93,7 +93,8 @@
 				"bs-action-new-page-text",
 				"bs-action-new-page-title",
 				"bs-action-new-subpage-text",
-				"bs-action-new-subpage-title"
+				"bs-action-new-subpage-title",
+				"bs-to-top-desc"
 			]
 		},
 		"skin.bluespicecalumma.tab": {

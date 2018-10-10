@@ -16,10 +16,4 @@
 	body .sitetools-main #bs-toolpanetabs ul.nav-pills a > i::before {
 		font-size: 2rem !important;
 	}
-	body [data-toggle~='sitetools-main-collapse'].sidebar-toggle i.sitetools-main-collapse::before {
-		font-size: 2rem !important;
-	}
-	body.navigation-main-collapse .sidebar-toggle[data-toggle~="navigation-main-collapse"] i.navigation-main-collapse::before {
-		font-size: 2rem !important;
-	}
 }
