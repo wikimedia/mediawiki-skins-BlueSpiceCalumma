@@ -11,7 +11,7 @@ header{
 			width: 80px;
 		}
 		.dropdown{
-			a.btn.dropdown-toggle{
+			.btn.dropdown-toggle{
 				line-height: 32px;
 				padding: 0px;
 				margin-top: 0px;
@@ -21,17 +21,17 @@ header{
 				padding-right: 5px;
 				width: 2em;
 			}
-			a.btn.dropdown-toggle::after{
+			.btn.dropdown-toggle::after{
 				font-family: 'fontawesome';
 				content: "\f0d7";
-				font-size: 120%;
+				font-size: 18px;
 				color: @menu-top-color;
-				line-height: 2em;
+				line-height: 28px;
 			}
-			a.btn.dropdown-toggle:hover::after{
+			.btn.dropdown-toggle:hover::after{
 				color: @menu-top-color-hover;
 			}
-			a.btn.btn-primary{
+			.btn.btn-primary{
 				background: none;
 				border: none;
 				box-shadow: none;
@@ -60,14 +60,14 @@ header{
 				    color: @menu-top-featuredactions-color-hover;
 				}
 			}
-			a.btn.btn-primary.disabled{
+			.btn.btn-primary.disabled{
 				.icon::before{
 					background-color: @menu-top-featuredactions-bg-color-disabled;
 				}
 			}
 		}
 		.dropdown.open{
-			a.btn.dropdown-toggle::after{
+			.btn.dropdown-toggle::after{
 				content: "\f0d8";
 			}
 			.dropdown-menu {
