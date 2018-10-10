@@ -6,10 +6,12 @@
 	},
 	"bs-action-edit-edit-title": "Quell änneren",
 	"bs-action-edit-ve-edit-title": "Änneren",
+	"bs-action-new-section-text": "Neien Abschnitt",
 	"bs-action-new-page-text": "Nei Säit",
 	"bs-action-new-subpage-text": "Nei Ënnersäit",
 	"bs-userbutton-notifications-link-text": "Notifikatiounen",
 	"bs-userbutton-userpage-link-text": "Mäi Profil",
+	"bs-mobilemoremenu-view-title": "Weisen",
 	"bs-mobilemoremenu-view-text": "Weisen",
 	"bs-mobilemoremenu-edit-title": "Änneren",
 	"bs-mobilemoremenu-edit-text": "Änneren",
@@ -20,6 +22,7 @@
 	"bs-sitenav-globalactions-title": "Global Aktiounen",
 	"bs-sitenav-globalactions-section-globalactions": "Global Aktiounen",
 	"bs-sitetools-pageinfo-title": "Informatioun",
+	"bs-sitetools-panel-section-export-label": "Exportéieren",
 	"bs-calumma-graphicallist-recentchanges-preview-btn-edit": "Änneren",
 	"bs-sitetools-namespaces": "Nummraum",
 	"bs-sitetools-default": "Méi",
@@ -31,6 +34,7 @@
 	"bs-all-templates-link-title": "All Schablounen",
 	"bs-to-top-desc": "Uewen op d'Säit scrollen",
 	"bs-calumma-pagetool-talk-tooltip": "Diskussioun",
+	"bs-calumma-pagetool-view-tooltip": "Weisen",
 	"bs-allpages-description": "All Säiten",
 	"bs-support-description": "Ënnerstëtzung"
 }
