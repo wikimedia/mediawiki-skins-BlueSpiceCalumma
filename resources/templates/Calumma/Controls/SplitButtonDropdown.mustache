@@ -1,7 +1,9 @@
 <div class="btn-group dropdown {{#groupClasses}}{{.}}{{/groupClasses}}">
-	<a type="button" class="btn {{#classes}}{{.}} {{/classes}}" {{#id}}id="{{.}}"{{/id}} {{#data}}{{.}} {{/data}} title="{{title}}" href="{{href}}" aria-haspopup="true" aria-expanded="false">
-		<i class="icon "></i><span class="btn-text">{{{text}}}</span><span class="sr-only">{{screenreaderToogleText}}</span>
-	</a>
+	<span {{#id}}id="{{.}}"{{/id}} type="button" class="btn {{#classes}}{{.}} {{/classes}}" {{#data}}{{.}} {{/data}} aria-haspopup="true" aria-expanded="false">
+		<a title="{{title}}" href="{{href}}">
+			<i class="icon "></i><span class="btn-text">{{{text}}}</span><span class="sr-only">{{screenreaderToogleText}}</span>
+		</a>
+	</span>
 	{{#hasItems}}
 	<a type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	</a>

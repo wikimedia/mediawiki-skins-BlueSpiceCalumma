@@ -11,7 +11,7 @@ header{
 			width: 80px;
 		}
 		.dropdown{
-			a.btn.dropdown-toggle{
+			span.btn.dropdown-toggle{
 				line-height: 32px;
 				padding: 0px;
 				margin-top: 0px;
@@ -21,51 +21,51 @@ header{
 				padding-right: 5px;
 				width: 2em;
 			}
-			a.btn.dropdown-toggle::after{
+			span.btn.dropdown-toggle::after{
 				font-family: 'fontawesome';
 				content: "\f0d7";
 				font-size: 1.2rem;
 				color: @menu-top-color;
 				line-height: 2em;
 			}
-			a.btn.dropdown-toggle:hover::after{
+			span.btn.dropdown-toggle:hover::after{
 				color: @menu-top-color-hover;
 			}
-			a.btn.btn-primary{
+			span.btn.btn-primary{
 				background: none;
 				border: none;
 				box-shadow: none;
 				padding: 0px;
 				line-height: 32px;
 				.icon::before{
-				    font-size: 1em;
-				    line-height: 1.3em;
-				    font-style: normal;
-				    text-align: center;
-				    padding: 0.5em;
-				    display: inline-block;
-				    width: 32px;
-				    height: 32px;
-				    border-radius: 16px;
-				    background-color: @menu-top-featuredactions-bg-color;
-				    color: @menu-top-featuredactions-color;
+					font-size: 1em;
+					line-height: 1.3em;
+					font-style: normal;
+					text-align: center;
+					padding: 0.5em;
+					display: inline-block;
+					width: 32px;
+					height: 32px;
+					border-radius: 16px;
+					background-color: @menu-top-featuredactions-bg-color;
+					color: @menu-top-featuredactions-color;
 				}
 				.btn-text{
 					display: none;
 				}
 				&:hover .icon::before{
-				    background-color: @menu-top-featuredactions-bg-color-hover;
-				    color: @menu-top-featuredactions-color-hover;
+					background-color: @menu-top-featuredactions-bg-color-hover;
+					color: @menu-top-featuredactions-color-hover;
 				}
 			}
-			a.btn.btn-primary.disabled{
+			span.btn.btn-primary.disabled{
 				.icon::before{
 					background-color: @menu-top-featuredactions-bg-color-disabled;
 				}
 			}
 		}
 		.dropdown.open{
-			a.btn.dropdown-toggle::after{
+			span.btn.dropdown-toggle::after{
 				content: "\f0d8";
 			}
 			.dropdown-menu {
