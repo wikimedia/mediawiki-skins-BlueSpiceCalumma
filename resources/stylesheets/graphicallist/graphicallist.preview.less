@@ -49,6 +49,10 @@
 					border: 1px solid @bs-color-primary;
 					border-bottom: none;
 					padding: 10px;
+					/* @embed */
+					background-image: url('../../images/common/ajax-loader.gif');
+					background-position: center center;
+					background-repeat: no-repeat;
 					img {
 						max-width: 100%;
 					}
@@ -89,10 +93,6 @@
 			}
 			&.has-actions div.caption {
 				height: @caption-height - @actions-height;
-				.image {
-					//height: @image-height - @actions-height;
-					//max-height: @image-height - @actions-height;
-				}
 			}
 			div.actions {
 				height: @actions-height;
