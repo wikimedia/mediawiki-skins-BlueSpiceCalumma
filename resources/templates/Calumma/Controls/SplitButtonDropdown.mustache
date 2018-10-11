@@ -1,17 +1,15 @@
 <div class="btn-group dropdown {{#groupClasses}}{{.}}{{/groupClasses}}">
-	<span {{#id}}id="{{.}}"{{/id}} type="button" class="btn {{#classes}}{{.}} {{/classes}}" {{#data}}{{.}} {{/data}} aria-haspopup="true" aria-expanded="false">
-		<a title="{{title}}" href="{{href}}">
-			<i class="icon "></i><span class="btn-text">{{{text}}}</span><span class="sr-only">{{screenreaderToogleText}}</span>
-		</a>
-	</span>
+	<a type="button" class="btn {{#classes}}{{.}} {{/classes}}"  {{#data}}{{.}} {{/data}} title="{{title}}" href="{{href}}" aria-haspopup="true" aria-expanded="false">
+		<i class="icon "></i><span class="btn-text">{{{text}}}</span><span class="sr-only">{{screenreaderToogleText}}</span>
+	</a>
 	{{#hasItems}}
 	<a type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	</a>
 	<ul class="dropdown-menu">
 		{{#items}}
 			{{#link}}
-			<li>
-				<a href="{{href}}" class="{{#classes}}{{.}} {{/classes}}" {{#data}}{{.}} {{/data}} title="{{title}}" id="{{id}}">{{text}}</a>
+			<li id="{{id}}">
+				<a href="{{href}}" class="{{#classes}}{{.}} {{/classes}}" {{#data}}{{.}} {{/data}} title="{{title}}">{{text}}</a>
 			</li>
 			{{/link}}
 			{{#separator}}
