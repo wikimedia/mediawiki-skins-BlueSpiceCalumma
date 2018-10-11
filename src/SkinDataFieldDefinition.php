@@ -6,7 +6,6 @@ use BlueSpice\SkinData;
 
 use BlueSpice\Calumma\Panel\SiteNavigation;
 use BlueSpice\Calumma\Panel\GlobalActions;
-use BlueSpice\Calumma\Panel\PageInfo;
 use BlueSpice\Calumma\Panel\QualityManagement;
 use BlueSpice\Calumma\Panel\PageTools;
 
@@ -351,15 +350,6 @@ class SkinDataFieldDefinition {
 				'position' => 20,
 				'callback' => function ( $skintemplate ) {
 					return new PageTools( $skintemplate );
-				}
-			]
-		];
-
-		$this->data[SkinData::SITE_TOOLS] += [
-			'page-info' => [
-				'position' => 10,
-				'callback' => function ( $skintemplate ) {
-					return new PageInfo( $skintemplate );
 				}
 			]
 		];
