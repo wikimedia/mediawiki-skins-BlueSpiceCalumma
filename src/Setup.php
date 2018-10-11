@@ -20,7 +20,7 @@ class Setup {
 	 *
 	 */
 	public static function onCallback() {
-		$GLOBALS[ 'egChameleonLayoutFile' ] = dirname( __DIR__ ) . '/layouts/calumma-master.xml';
+		$GLOBALS[ 'egChameleonLayoutFile' ] = dirname( __DIR__ ) . '/layouts/default.xml';
 		$GLOBALS[ 'wgUseMediaWikiUIEverywhere' ] = true;
 	}
 }
