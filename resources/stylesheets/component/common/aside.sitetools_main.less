@@ -103,9 +103,12 @@ body{
 			div.tab-content{
 				position: relative;
 				overflow: visible;
-				overflow-y: auto;
 				direction: rtl;
 				margin-top: 20px;
+				height: calc(~"100vh - 150px");
+				&:hover{
+					overflow-y: auto;
+				}
 				& * {
 					direction: ltr;
 				}
