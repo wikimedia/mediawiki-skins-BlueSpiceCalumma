@@ -103,10 +103,11 @@ body{
 			div.tab-content{
 				position: relative;
 				overflow: visible;
-				direction: rtl;
+				overflow-y: hidden;
+				direction: ltr;
 				margin-top: 20px;
 				height: calc(~"100vh - 150px");
-				&:hover{
+				&:hover {
 					overflow-y: auto;
 				}
 				& * {
@@ -349,7 +350,6 @@ body.sitetools-main-collapse{
 body aside.sitetools-main #bs-toolpanetabs div.tab-pane div.panel-section{
 	margin: 20px;
 	color: @sitetools-color;
-	overflow: hidden;
 	white-space: normal;
 }
 
