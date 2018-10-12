@@ -36,18 +36,30 @@ class PageTools extends PanelContainer {
 					return new ContentActions( $sktemplate );
 				}
 			],*/
-			'toolbox' => [
+			'edit' => [
 				'position' => 20,
+				'callback' => function ( $sktemplate ) {
+					return new Edit( $sktemplate );
+				}
+			],
+			'export' => [
+				'position' => 80,
+				'callback' => function ( $sktemplate ) {
+					return new Export( $sktemplate );
+				}
+			],
+			'toolbox' => [
+				'position' => 100,
 				'callback' => function ( $sktemplate ) {
 					return new Toolbox( $sktemplate );
 				}
 			],
-			'export' => [
-				'position' => 100,
+			'views' => [
+				'position' => 120,
 				'callback' => function ( $sktemplate ) {
-					return new Export( $sktemplate );
+					return new Views( $sktemplate );
 				}
-			]
+			],
 		];
 		$panelDefs = $this->skintemplate->get( SkinData::PAGE_TOOLS_PANEL );
 

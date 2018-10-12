@@ -10,7 +10,6 @@ use BlueSpice\Calumma\Panel\QualityManagement;
 use BlueSpice\Calumma\Panel\PageTools;
 
 use BlueSpice\Calumma\DataProvider\FeaturedActionsData;
-use BlueSpice\Calumma\DataProvider\SiteToolsData;
 use BlueSpice\Calumma\DataProvider\MobileMoreMenuData;
 
 class SkinDataFieldDefinition {
@@ -65,7 +64,13 @@ class SkinDataFieldDefinition {
 		/* Mobile more menu */
 		$this->data[static::MOBILE_MORE_MENU] = [];
 
+		/* Page tools sidebar */
+		$this->data[SkinData::EDIT_MENU] = [];
+		$this->data[SkinData::VIEW_MENU] = [];
 		$this->data[SkinData::EXPORT_MENU] = [];
+		$this->data[SkinData::EDIT_MENU_BLACKLIST] = [];
+		$this->data[SkinData::VIEW_MENU_BLACKLIST] = [];
+		$this->data[SkinData::TOOLBOX_BLACKLIST] = [ 'upload', 'specialpages', 'print' ];
 
 		$this->initLogo();
 		$this->initSiteNav();
@@ -136,7 +141,6 @@ class SkinDataFieldDefinition {
 		/* populate navigation elements*/
 		FeaturedActionsData::populate( $this->getSkin(), $this->skinktemplate, $this->data );
 		MobileMoreMenuData::populate( $this->getSkin(), $this->skinktemplate, $this->data );
-		SiteToolsData::populate( $this->getSkin(), $this->skinktemplate, $this->data );
 	}
 
 	/**

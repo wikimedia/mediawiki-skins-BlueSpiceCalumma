@@ -4,14 +4,14 @@ namespace BlueSpice\Calumma\Panel;
 
 use BlueSpice\SkinData;
 
-class Toolbox extends StandardSkinDataLinkList {
+class Edit extends StandardSkinDataLinkList {
 
 	/**
 	 *
 	 * @return \Message
 	 */
 	public function getTitleMessage() {
-		return new \Message( 'bs-sitetools-toolbox' );
+		return new \Message( 'bs-sitetools-edit' );
 	}
 
 	/**
@@ -20,7 +20,7 @@ class Toolbox extends StandardSkinDataLinkList {
 	 * @return bool
 	 */
 	protected function skipLink( $linkKey ) {
-		$blacklist = $this->skintemplate->data[SkinData::TOOLBOX_BLACKLIST];
+		$blacklist = $this->skintemplate->data[SkinData::EDIT_MENU_BLACKLIST];
 		return in_array( $linkKey, $blacklist );
 	}
 
@@ -29,8 +29,11 @@ class Toolbox extends StandardSkinDataLinkList {
 	 * @return array
 	 */
 	protected function getStandardSkinDataLinkListDefinition() {
-		$toolbox = $this->skintemplate->getToolbox();
-		return $toolbox;
+		$contentNavigation = $this->skintemplate->get( 'content_navigation' );
+		$editmenu = $this->skintemplate->get( SkinData::EDIT_MENU );
+
+		$combinedDefs = $contentNavigation['actions'] + $editmenu;
+		return $combinedDefs;
 	}
 
 }
