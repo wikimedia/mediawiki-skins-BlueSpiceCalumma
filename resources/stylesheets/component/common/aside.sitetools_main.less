@@ -102,8 +102,7 @@ body{
 			}
 			div.tab-content{
 				position: relative;
-				overflow: visible;
-				overflow-y: hidden;
+				overflow: hidden;
 				direction: ltr;
 				margin-top: 20px;
 				height: calc(~"100vh - 150px");
@@ -230,23 +229,18 @@ body.sitetools-main-collapse{
 			padding-top: 10px;
 			padding-bottom: 10px;
 			border: none;
+			span {
+				display: inline-block;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-width: 80%;
+				max-height: 100%;
+				white-space: nowrap;
+			}
 		}
 		.list-group-item:hover {
 			background-color: @sitetools-graphicallist-bg-color;
 		}
-		/*
-		a {
-			background-color: @sitetools-bg-color;
-			color: @sitetools-color;
-			border: none;
-			height: 32px;
-			width: 100%;
-		}
-		a:hover, a:hover::before {
-			color: @sitetools-color-hover;
-			background-color: @sitetools-bg-color-hover;
-		}
-		*/
 	}
 }
 
@@ -327,6 +321,15 @@ body.sitetools-main-collapse{
 			padding: 3px;
 			padding-left: 47px;
 			height: 32px;
+
+			span {
+				display: inline-block;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-width: 80%;
+				max-height: 100%;
+				white-space: nowrap;
+			}
 		}
 		.list-group-item:hover {
 			background-color: @sitetools-graphicallist-bg-color;

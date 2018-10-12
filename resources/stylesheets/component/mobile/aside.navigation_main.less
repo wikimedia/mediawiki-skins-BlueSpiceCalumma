@@ -59,6 +59,17 @@ body{
 		a.list-group-item {
 			height: 48px;
 			line-height: 26px;
+			span {
+				display: inline-block;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-width: 80%;
+				max-height: 100%;
+				margin-left: 24px;
+			}
+			i {
+				float: left;
+			}
 		}
 		.panel-heading .panel-title a,
 		.panel-heading .bs-panel-title a{
