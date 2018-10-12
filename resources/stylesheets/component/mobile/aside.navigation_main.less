@@ -79,6 +79,22 @@ body{
 				line-height: 26px;
 			}
 		}
+		.trigger.body{
+			float: right;
+			height: 100%;
+			i.trigger-icon::before{
+				content: "\e92c";
+				font-family: "entypo";
+				float: right;
+				font-style: normal;
+				padding-right: 1em;
+			}
+		}
+		.collapsed .trigger.body{
+			i.trigger-icon::before{
+				content: "\e921";
+			}
+		}
 		.nav.nav-pills,
 		div.tab-content{
 			width: 100vw;
