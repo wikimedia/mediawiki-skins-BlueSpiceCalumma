@@ -39,7 +39,8 @@
 			"PageToolRegistry": {
 				"view": "BlueSpice\\Calumma\\PageTool\\View::factory",
 				"talk": "BlueSpice\\Calumma\\PageTool\\Talk::factory",
-				"history": "BlueSpice\\Calumma\\PageTool\\History::factory"
+				"history": "BlueSpice\\Calumma\\PageTool\\History::factory",
+				"watch": "BlueSpice\\Calumma\\PageTool\\Watch::factory"
 			}
 		}
 	},
@@ -159,6 +160,15 @@
 			],
 			"dependencies": [
 				"ext.bluespice"
+			]
+		},
+		"skin.bluespicecalumma.ajaxWatch": {
+			"scripts": [
+				"js/bs.calumma.recentchanges.ajaxWatch.js"
+			],
+			"messages": [
+				"bs-calumma-pagetool-watch-tooltip",
+				"bs-calumma-pagetool-unwatch-tooltip"
 			]
 		}
 	},

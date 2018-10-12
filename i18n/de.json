@@ -68,6 +68,8 @@
 	"bs-calumma-pagetool-history-tooltip": "Versionsgeschichte",
 	"bs-calumma-pagetool-talk-tooltip": "Diskussion",
 	"bs-calumma-pagetool-view-tooltip": "Lesen",
+	"bs-calumma-pagetool-watch-tooltip": "Beobachten",
+	"bs-calumma-pagetool-unwatch-tooltip": "Nicht mehr beobachten",
 	"bs-edit-mediawiki-sidebar-link-text": "Seitenleiste bearbeiten",
 	"bs-edit-mediawiki-sidebar-link-title": "Seitenleiste bearbeiten",
 	"bs-allpages-description": "Artikel von A-Z",

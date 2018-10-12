@@ -36,7 +36,16 @@ class View extends IconBase {
 	 * @return bool
 	 */
 	protected function skipProcessing() {
-		return $this->getTitle()->isTalkPage() === false;
+		if ( $this->getTitle()->isSpecialPage() ) {
+			return true;
+		}
+
+		$action = $this->context->getRequest()->getVal( 'action', 'view' );
+		if ( $action !== 'view' ) {
+			return false;
+		}
+
+		return true;
 	}
 
 }

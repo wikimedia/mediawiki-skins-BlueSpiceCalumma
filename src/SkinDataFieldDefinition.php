@@ -68,7 +68,7 @@ class SkinDataFieldDefinition {
 		$this->data[SkinData::EDIT_MENU] = [];
 		$this->data[SkinData::VIEW_MENU] = [];
 		$this->data[SkinData::EXPORT_MENU] = [];
-		$this->data[SkinData::EDIT_MENU_BLACKLIST] = [];
+		$this->data[SkinData::EDIT_MENU_BLACKLIST] = [ 'watch', 'unwatch' ];
 		$this->data[SkinData::VIEW_MENU_BLACKLIST] = [];
 		$this->data[SkinData::TOOLBOX_BLACKLIST] = [ 'upload', 'specialpages', 'print' ];
 

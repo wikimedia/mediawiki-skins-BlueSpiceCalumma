@@ -31,4 +31,13 @@ class History extends IconBase {
 		return $url;
 	}
 
+	protected function skipProcessing() {
+		if ( $this->getTitle()->isSpecialPage() ) {
+			return true;
+		}
+
+		$action = $this->context->getRequest()->getVal( 'action', 'view' );
+		return $action === 'history';
+	}
+
 }

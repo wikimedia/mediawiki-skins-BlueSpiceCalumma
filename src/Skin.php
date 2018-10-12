@@ -23,7 +23,8 @@ class Skin extends \SkinChameleon {
 				'skin.bluespicecalumma.scripts',
 				'skin.bluespicecalumma.dynamicoffcanvas',
 				'skin.bluespicecalumma.panel',
-				'skin.bluespicecalumma.flyout.recentchanges'
+				'skin.bluespicecalumma.flyout.recentchanges',
+				'skin.bluespicecalumma.ajaxWatch'
 			]
 		);
 	}
