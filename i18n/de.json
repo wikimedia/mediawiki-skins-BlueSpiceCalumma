@@ -54,6 +54,8 @@
 	"bs-sitetools-qm": "Qualitätssicherung",
 	"bs-sitetools-toolbox": "Toolbox",
 	"bs-sitetools-views": "Ansichten",
+	"bs-sitetools-edit": "Bearbeiten",
+	"bs-sitetools-categories": "Kategorien",
 	"bs-calumma-recentchanges-title": "Letzte Änderungen",
 	"bs-calumma-recentchanges-intro": "In dieser Liste findest du alle letzten Seitenbearbeitungen und neu erstellte Seiten.",
 	"bs-calumma-recentchanges-specialpage-link": "Die klassische Ansicht ist [[Special:RecentChanges|hier]] zu finden.",
