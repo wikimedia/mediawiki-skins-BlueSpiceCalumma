@@ -72,18 +72,25 @@
 	}
 }
 
-.bs-page-tools.pull-right > a {
-	color: inherit;
+.bs-page-tools.pull-right {
 
-	&:hover {
-		text-decoration: none;
+	a {
+		color: inherit;
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
-	&.page-tool-icon {
+	.page-tool-icon {
+			padding-left: 0.8em;
+			i {
+				font-size: large;
+			}
+	}
+
+	.page-tool-text {
 		padding-left: 0.8em;
-		i {
-			font-size: large;
-		}
 	}
 }
 
