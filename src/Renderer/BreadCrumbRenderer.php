@@ -87,8 +87,8 @@ class BreadCrumbRenderer {
 
 		$html = '';
 		if ( !empty( $titleLiks ) ) {
-			$html .= '<span class="bs-breadcrumbs-namespace-seperator"></span> ';
-			$html .= implode( ' <span class="bs-breadcrumbs-seperator"></span> ', $titleLiks );
+			$html .= '<span class="bs-breadcrumbs-namespace-separator"></span> ';
+			$html .= implode( ' <span class="bs-breadcrumbs-separator"></span> ', $titleLiks );
 		}
 
 		return $html;

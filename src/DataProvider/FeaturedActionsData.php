@@ -66,7 +66,7 @@ class FeaturedActionsData {
 			}
 		}
 
-		if ( !$curTitle->isSpecialPage() ) {
+		if ( !$curTitle->isSpecialPage() && $curTitle->userCan( 'edit' ) ) {
 			$defaultEditActions['new-section'] = [
 				'position' => '10',
 				'id' => 'new-section',

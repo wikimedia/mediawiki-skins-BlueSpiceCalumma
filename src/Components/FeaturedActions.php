@@ -76,6 +76,15 @@ class FeaturedActions extends Component {
 			$splitButtonData['classes'][] = 'disabled';
 		}
 
+		$canEdit = $this->getSkin()->getTitle()->userCan( 'edit' );
+		if ( !$canEdit && ( $firstEntry['id'] === 'ca-view' ) ) {
+			return [
+				'classes' => [
+					0 => "btn-primary disabled bs-fa-$itemId"
+				]
+			];
+		}
+
 		$splitButtonData['hasItems'] = true;
 		if ( count( $itemDefinition ) == 0 ) {
 			$splitButtonData['hasItems'] = false;
@@ -91,8 +100,8 @@ class FeaturedActions extends Component {
 		$splitButtonData['items'][] = [ 'link' => $firstEntry ];
 
 		foreach ( $itemDefinition as $linkId => $linkDefinition ) {
-			if ( isset( $linkDefinition['seperator'] ) ) {
-				$splitButtonData['items'][] = [ 'seperator' => true ];
+			if ( isset( $linkDefinition['separator'] ) ) {
+				$splitButtonData['items'][] = [ 'separator' => true ];
 			} else {
 				$splitButtonData['items'][] = [ 'link' => $linkDefinition ];
 			}
