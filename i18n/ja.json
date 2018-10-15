@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Otokoume"
+			"Otokoume",
+			"Shirayuki"
 		]
 	},
+	"bs-sitetools-edit": "編集",
+	"bs-sitetools-categories": "カテゴリ",
 	"bs-to-top-desc": "ページの先頭にスクロール"
 }
