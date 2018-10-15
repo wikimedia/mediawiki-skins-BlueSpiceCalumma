@@ -83,7 +83,7 @@
 				"js/skin.bluespicecalumma.scrollToTop.js",
 				"js/mobile.content.js",
 				"js/skin.bluespicecalumma.featuredActions.js",
-				"js/bs.calumma.recentchanges.loadindicator.js"
+				"js/skin.bluespicecalumma.loadindicator.js"
 			],
 			"dependencies": [
 				"mediawiki.cookie",
