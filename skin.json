@@ -164,7 +164,7 @@
 		},
 		"skin.bluespicecalumma.ajaxWatch": {
 			"scripts": [
-				"js/bs.calumma.recentchanges.ajaxWatch.js"
+				"js/skin.bluespicecalumma.ajaxWatch.js"
 			],
 			"messages": [
 				"bs-calumma-pagetool-watch-tooltip",
