@@ -27,7 +27,7 @@
 			var asideTrigger = $anchor.closest( 'aside' ).attr( 'data-toggle-by' );
 
 			var activeTab = mw.cookie.get( 'CalummaTab_'+tabsContainerId );
-			if ( activeTab === targetId ){
+			if ( ( activeTab === targetId ) || !activeTab ){
 				$( 'body' ).addClass( asideTrigger );
 				mw.cookie.set( 'Calumma_' + asideTrigger, 'true' );
 
