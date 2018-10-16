@@ -46,6 +46,8 @@
 	"bs-sitetools-qm": "Управление качеством",
 	"bs-sitetools-toolbox": "Инструменты",
 	"bs-sitetools-views": "Просмотры",
+	"bs-sitetools-edit": "Править",
+	"bs-sitetools-categories": "Категории",
 	"bs-calumma-recentchanges-title": "Свежие правки",
 	"bs-calumma-recentchanges-intro": "Это список недавно изменённых страниц.",
 	"bs-calumma-recentchanges-specialpage-link": "Для классического вида нажмите [[Special:RecentChanges|здесь]].",
@@ -58,6 +60,8 @@
 	"bs-calumma-pagetool-history-tooltip": "История страницы",
 	"bs-calumma-pagetool-talk-tooltip": "Обсуждение",
 	"bs-calumma-pagetool-view-tooltip": "Просмотр",
+	"bs-calumma-pagetool-watch-tooltip": "Следить",
+	"bs-calumma-pagetool-unwatch-tooltip": "Не следить",
 	"bs-allpages-description": "Все страницы",
 	"bs-support-description": "Поддержка"
 }
