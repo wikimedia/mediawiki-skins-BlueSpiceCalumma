@@ -23,11 +23,13 @@
 	"bs-sitetools-pageactions": "လိက်မေံၜၠာ်ဆ်ုမာလ်ုဖး",
 	"bs-sitetools-default": "အ်ုၰာႋၰံင်",
 	"bs-sitetools-views": "မ်ုယောဝ်ႋ",
+	"bs-sitetools-edit": "အင်းတါင်",
 	"bs-calumma-recentchanges-history": "မေင်ႋစိင်",
 	"bs-calumma-recentchanges-diff": "လ်ုၜးဍံင်လ်ုဖး",
 	"bs-all-templates-link-title": "တန်ပ်ုလိက်လုက်ဆိင့်",
 	"bs-calumma-pagetool-history-tooltip": "လိက်မေံၜၠာ်မေင်ႋစိင်",
 	"bs-calumma-pagetool-view-tooltip": "မ်ုယောဝ်ႋ",
+	"bs-calumma-pagetool-unwatch-tooltip": "လ်ုအင်းခိုဝ်ယောဝ်ႋၜး",
 	"bs-allpages-description": "လိက်မေံၜါ်လုက်ကၠာ",
 	"bs-support-description": "ဆ်ုမာခေဝ်"
 }
