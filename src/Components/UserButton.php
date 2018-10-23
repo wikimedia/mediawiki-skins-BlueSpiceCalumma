@@ -45,14 +45,15 @@ class UserButton extends TemplateComponent {
 
 		$values['username'] = $user->getName();
 		$values['personalname'] = \BsUserHelper::getUserDisplayName( $user );
-		$values['width'] = "48px";
-		$values['height'] = "48px";
+		$baseSize = 48;
+		$values['width'] = $values['height'] = "{$baseSize}px";
 
+		$realsize = (int)$baseSize * 1.4;
 		$userImageParams = [
 			Params::MODULE => 'userprofileimage',
 			UserProfileImage::USERNAME => $user->getName(),
-			UserProfileImage::HEIGHT => 48,
-			UserProfileImage::WIDTH => 48
+			UserProfileImage::HEIGHT => $realsize,
+			UserProfileImage::WIDTH => $realsize,
 		];
 
 		// userimage
