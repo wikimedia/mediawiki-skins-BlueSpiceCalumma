@@ -35,6 +35,10 @@ abstract class StandardSkinDataLinkList extends BasePanel {
 				$linkDesc['title'] = $linkDesc['text'];
 			}
 
+			if ( empty( $linkDesc['href'] ) ) {
+				$linkDesc['href'] = '#';
+			}
+
 			$linkDef = [
 				'id' => isset( $linkDesc['id'] ) ? $linkDesc['id'] : '',
 				'title' => $linkDesc['title'],
