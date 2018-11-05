@@ -13,10 +13,6 @@ class FeaturedActions extends Component {
 	 * @return string
 	 */
 	public function getHtml() {
-		if ( $this->getSkinTemplate()->getSkin()->getUser()->isAnon() ) {
-			return '';
-		}
-
 		$data = $this->getSkinTemplate()->get( SkinData::FEATURED_ACTIONS );
 		$items = [];
 
