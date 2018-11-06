@@ -88,7 +88,9 @@
 			"dependencies": [
 				"mediawiki.cookie",
 				"mediawiki.jqueryMsg",
-				"ext.bluespice"
+				"ext.bluespice",
+				"jquery.suggestions",
+				"mediawiki.searchSuggest"
 			],
 			"messages": [
 				"bs-action-new-page-text",
