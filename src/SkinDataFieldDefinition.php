@@ -161,33 +161,23 @@ class SkinDataFieldDefinition {
 	}
 
 	private function initSearch() {
-		$this->data['bs_search_input'] = [
+		$this->data['bs_search_input'] = $this->data['bs_search_mobile_input'] = [
 			'id' => 'searchInput',
-			'name' => 'q',
+			'name' => 'search',
 			'type' => 'text',
 			'placeholder' => wfMessage( 'searchbutton' )
 		];
 
-		// $this->getSkin() returns null
-		$config = \MediaWiki\MediaWikiServices::getInstance()->getMainConfig();
-		$this->data['bs_search_action'] = $config->get( 'ScriptPath' );
+		$this->data['bs_search_action'] = \SpecialPage::getTitleFor( 'Search' )->getLocalURL();
 
 		$this->data['bs_search_method'] = 'GET';
 
-		$this->data['bs_search_target'] = [
-			'page_name' => \SpecialPage::getTitleFor( 'Search' )->getFullText()
-		];
+		$this->data['bs_search_hidden_fields'] = [ [
+			'fieldName' => 'fulltext',
+			'fieldValue' => '1'
+		] ];
 
 		$this->data['bs_search_id'] = 'bs_search_box';
-
-		$this->data['bs_search_mobile_input'] = [
-			'id' => 'searchMobileInput',
-			'name' => 'q',
-			'type' => 'text',
-			'placeholder' => wfMessage( 'searchbutton' )
-		];
-
-		$this->data['bs_search_id'] = 'bs_search_mobile_box';
 	}
 
 	/**
