@@ -49,10 +49,12 @@
 					border: 1px solid @bs-color-primary;
 					border-bottom: none;
 					padding: 10px;
-					/* @embed */
-					background-image: url('../../images/common/ajax-loader.gif');
-					background-position: center center;
-					background-repeat: no-repeat;
+					&:not( .loaded ) {
+						/* @embed */
+						background-image: url('../../images/common/ajax-loader.gif');
+						background-position: center center;
+						background-repeat: no-repeat;
+					}
 					img {
 						max-width: 100%;
 					}
