@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"McSalama",
-			"Nike"
+			"Nike",
+			"Valtlait"
 		]
 	},
 	"prefs-bs-calumma": "BlueSpice Calumma -asetukset",
@@ -41,7 +42,7 @@
 	"bs-to-top-desc": "Siirry sivun alkuun",
 	"bs-calumma-pagetool-history-tooltip": "Sivun historia",
 	"bs-calumma-pagetool-talk-tooltip": "Keskustelu",
-	"bs-edit-mediawiki-sidebar-link-text": "Muokkaa MediaWiki sivupalkkia",
+	"bs-edit-mediawiki-sidebar-link-text": "Muokkaa sivupalkkia",
 	"bs-allpages-description": "Kaikki sivut",
 	"bs-support-description": "Tuki"
 }
