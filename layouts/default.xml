@@ -2,6 +2,9 @@
 <structure xmlns="https://cmln.github.io/chameleon/schema/1.0/layout.rng">
 	<component type="\BlueSpice\Calumma\Components\Banner">
 	</component>
+	<component type="\BlueSpice\Calumma\Components\CustomMenu" data-menu="header" class="bs-custom-menu-container calumma-desktop-visible">
+		<component type="\BlueSpice\Calumma\Components\ToggleButton" data-toggle="bs-custom-menu-header-container-collapse" class="bs-custom-menu-header-button calumma-desktop-visible"/>
+	</component>
 	<component type="\BlueSpice\Calumma\Components\Wrapper">
 		<component type="\BlueSpice\Calumma\Components\Header" class="bs-menu-top">
 			<component type="\BlueSpice\Calumma\Components\Nav" class="calumma-desktop-visible">
