@@ -17,7 +17,9 @@
 	"attributes": {
 		"BlueSpiceFoundation": {
 			"RendererRegistry": {
-				"panel": "\\BlueSpice\\Calumma\\Renderer\\Panel"
+				"panel": "\\BlueSpice\\Calumma\\Renderer\\Panel",
+				"calummacustommenu": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu",
+				"calummacustommenuitem": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu\\Item"
 			},
 			"LessVarsRegistry": {
 				"bs-color-primary": "#3e5389",
@@ -41,6 +43,11 @@
 				"talk": "BlueSpice\\Calumma\\PageTool\\Talk::factory",
 				"history": "BlueSpice\\Calumma\\PageTool\\History::factory",
 				"watch": "BlueSpice\\Calumma\\PageTool\\Watch::factory"
+			}
+		},
+		"BlueSpiceCustomMenu": {
+			"Registry": {
+				"header": "\\BlueSpice\\Calumma\\CustomMenu\\Header::getInstance"
 			}
 		}
 	},
@@ -80,11 +87,13 @@
 		"skin.bluespicecalumma.scripts": {
 			"scripts": [
 				"js/SidebarToggle.js",
+				"js/ToggleButton.js",
 				"js/skin.bluespicecalumma.scrollToTop.js",
 				"js/scrollToJumpmark.js",
 				"js/mobile.content.js",
 				"js/skin.bluespicecalumma.featuredActions.js",
-				"js/skin.bluespicecalumma.loadindicator.js"
+				"js/skin.bluespicecalumma.loadindicator.js",
+				"js/skin.bluespicecalumma.customMenu.header.js"
 			],
 			"dependencies": [
 				"mediawiki.cookie",
