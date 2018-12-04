@@ -6,8 +6,14 @@
 				+ '/BlueSpiceCalumma/resources/js/BS.Calumma' );
 
 		var dfd = $.Deferred();
+		var previewCaptureNotDefault = mw.config.get(
+			'bsgArticlePreviewCaptureNotDefault',
+			false
+		);
+
 		Ext.create( 'BS.Calumma.flyout.RecentChanges', {
-			renderTo: $body[0]
+			renderTo: $body[0],
+			defaultTab: previewCaptureNotDefault === false ? 'gridviewpanel' : ''
 		} );
 
 		dfd.resolve();
