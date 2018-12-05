@@ -61,16 +61,16 @@
 	"ResourceModules": {
 		"skin.bluespicecalumma.styles": {
 			"styles": {
-				"stylesheets/common.less": { "media": "all" },
 				"stylesheets/fixes/mobile.less": {},
 				"stylesheets/fixes/desktop.less": {},
 				"stylesheets/fixes/mobile.specialpages.less": {},
 				"stylesheets/fixes/desktop.specialpages.less": {},
 				"stylesheets/fixes/IEFixes.css": {},
-				"stylesheets/mobile.less": { "media": "all" },
-				"stylesheets/tablet.less": { "media": "all and ( min-width: 721px )" },
-				"stylesheets/desktop_sm.less": { "media": "all and ( min-width: 1001px )" },
-				"stylesheets/desktop_md.less": { "media": "all and ( min-width: 1201px )" },
+				"stylesheets/icons.less": {},
+				"stylesheets/mobile.less": { "media": "all and ( max-width: 720px )" },
+				"stylesheets/tablet.less": { "media": "all and ( min-width: 721px ) and ( max-width: 1000px )" },
+				"stylesheets/desktop_sm.less": { "media": "all and ( min-width: 1001px ) and ( max-width: 1200px )" },
+				"stylesheets/desktop_md.less": { "media": "all and ( min-width: 1201px ) and ( max-width: 1699px )" },
 				"stylesheets/desktop_lg.less": { "media": "all and ( min-width: 1700px )" },
 				"stylesheets/print.less": { "media": "print" },
 				"stylesheets/content/mobile/content.less": { "media": "all and ( max-width: 1001px )" }

@@ -1,141 +1,32 @@
-body.mediawiki{
-	//background-color, background-image
+body.mediawiki,
+body.mediawiki.x-body {
 	background-color: white;
-}
-.bs-banner{
-	height: @banner-top-height;
-	position: fixed;
-	z-index: 9;
-	top: 0;
-	width: 100%;
-}
-
-body.mediawiki .wrapper{
-	box-sizing: border-box;
-	height: 100%;
 	font-family: @wrapper-font-family;
 	font-weight: @wrapper-font-weight;
-}
 
-header.main-header {
-	box-shadow: 0 0 3px 3px rgba(0,0,0,0.3);
-}
+	.wrapper {
+		box-sizing: border-box;
+		height: 100%;
 
-.content-wrapper {
-	padding-left: 5px;
-	padding-right: 5px;
-	/*
-	* This must be a `padding`, not a `margin`. The `margin` messes with some offset-calculations in
-	* JavaScripts. Especially ExtJS trees and tooltips.
-	*/
-	padding-top: @menu-top-height + @banner-top-height;
-}
-
-.bs-content.container {
-	//background-color, background-image
-	padding-top: 1em;
-	height: 100%;
-	max-width: 980px;
-	z-index: 8;
-}
-
-.dropdown {
-	cursor: pointer;
-}
-
-
-//bs-panel
-aside .bs-panel.panel-default {
-	.panel-heading .bs-panel-title {
-		display: inline-flex;
-		justify-content: space-between;
-		width: 100%;
-
-		a.tool{
-			width: 32px;
-			&:empty {
-				display: none;
-			}
+		.content-wrapper {
+			padding-left: 5px;
+			padding-right: 5px;
+			/*
+			* This must be a `padding`, not a `margin`. The `margin` messes with some offset-calculations in
+			* JavaScripts. Especially ExtJS trees and tooltips.
+			*/
+			padding-top: @menu-top-height + @banner-top-height; //TODO
 		}
-		a.tool:empty ~ a.title {
-			width: 100%;
-		}
-		a.title {
-			width: calc( ~"100% - 32px" );
-			float: right;
-			display: inline-block;
-			text-align: left;
-			span.title{
-				background-color: transparent;
-				display: block;
-				height: auto;
-			}
-		}
-		&:hover{
-			background-color: transparent;
+
+		.bs-content.container {
+			padding-top: 1em;
+			height: 100%;
+			max-width: 980px;
+			z-index: 8;
 		}
 	}
-}
 
-.panel-default .panel-heading .badge {
-	margin: 0px 5px 0px 5px;
-}
-
-.loader-indicator.loading {
-	height: 3px;
-	background-color: @load-indicator-color;
-	position: fixed;
-	width: 100%;
-
-	.loader-indicator-inner {
-		background-image: linear-gradient(
-			to right,
-			rgba( 255,255,255,0.0 ) 40%,
-			rgba( 255,255,255,0.9 ) 55%,
-			rgba( 255,255,255,0.9 ) 60%,
-			rgba( 255,255,255,0.0 ) 60% );
-		height: 3px;
-		background-size: 50%;
-		background-position: 100%;
-
-		-webkit-animation: bs-calumma-loader 2s infinite linear;
-		-moz-animation:    bs-calumma-loader 2s infinite linear;
-		-o-animation:      bs-calumma-loader 2s infinite linear;
-		animation:         bs-calumma-loader 2s infinite linear;
+	.dropdown {
+		cursor: pointer;
 	}
-}
-
-@-webkit-keyframes bs-calumma-loader {
-	0%   { background-position-x: 0; }
-	100% { background-position-x: 200%; }
-}
-@-moz-keyframes bs-calumma-loader {
-	0%   { background-position-x: 0; }
-	100% { background-position-x: 200%; }
-}
-@-o-keyframes bs-calumma-loader {
-	0%   { background-position-x: 0; }
-	100% { background-position-x: 200%; }
-}
-@keyframes bs-calumma-loader {
-	0%   { background-position-x: 0; }
-	100% { background-position-x: 200%; }
-}
-
-.bs-userminiprofile, .bs-groupminiprofile {
-	img {
-		border-radius: 100px;
-	}
-}
-.bs-userminiprofile {
-	img {
-		object-fit: cover;
-	}
-}
-
-.external {
-	background-position: center right;
-	background-repeat: no-repeat;
-	background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%3E%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%2336c%22%20d%3D%22M1.5%204.518h5.982V10.5H1.5z%22%2F%3E%3Cpath%20fill%3D%22%2336c%22%20d%3D%22M5.765%201H11v5.39L9.427%207.937l-1.31-1.31L5.393%209.35l-2.69-2.688%202.81-2.808L4.2%202.544z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M9.995%202.004l.022%204.885L8.2%205.07%205.32%207.95%204.09%206.723l2.882-2.88-1.85-1.852z%22%2F%3E%3C%2Fsvg%3E');
-	padding-right: 13px;
 }
