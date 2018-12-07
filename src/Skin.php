@@ -77,10 +77,6 @@ class Skin extends \SkinChameleon {
 			$bodyAttrs[ 'class' ] .= ' navigation-main-collapse sitetools-main-collapse ';
 		}
 		$bodyAttrs[ 'class' ] .= ' navigation-main-fixed sitetools-main-fixed ' . $classes;
-
-		if ( !$this->getSkin()->getUser()->isLoggedIn() ) {
-			$bodyAttrs[ 'class' ] .= ' calumma-not-logged-in ';
-		}
 	}
 
 	/**
