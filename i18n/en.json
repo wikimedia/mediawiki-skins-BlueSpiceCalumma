@@ -74,5 +74,6 @@
 	"bs-allpages-url": "Special:AllPages",
 	"bs-allpages-description": "All pages",
 	"bs-support-url": "https://bluespice.com/services/support",
-	"bs-support-description": "Support"
+	"bs-support-description": "Support",
+	"bs-calumma-navigation-toggle-tooltip": "Open / close"
 }

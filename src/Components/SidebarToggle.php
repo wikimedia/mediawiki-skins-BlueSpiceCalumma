@@ -14,11 +14,12 @@ class SidebarToggle extends \Skins\Chameleon\Components\Structure {
 		$class = $this->getDomElement()->getAttribute( 'class' );
 
 		$html = \Html::openElement( 'a', [
-				'href' => '#',
-				'class' => ' sidebar-toggle ' . $class,
-				'data-toggle' => $data,
-				'role' => 'button'
-			] );
+			'href' => '#',
+			'class' => ' sidebar-toggle ' . $class,
+			'data-toggle' => $data,
+			'role' => 'button',
+			'title' => \Message::newFromKey( "bs-calumma-navigation-toggle-tooltip" ),
+		] );
 
 		$html .= \Html::openElement( 'i', [ 'class' => $data ] );
 		$html .= \Html::closeElement( 'i' );
