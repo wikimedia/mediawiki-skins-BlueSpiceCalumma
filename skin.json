@@ -81,6 +81,7 @@
 			"scripts": [
 				"js/SidebarToggle.js",
 				"js/skin.bluespicecalumma.scrollToTop.js",
+				"js/scrollToJumpmark.js",
 				"js/mobile.content.js",
 				"js/skin.bluespicecalumma.featuredActions.js",
 				"js/skin.bluespicecalumma.loadindicator.js"
