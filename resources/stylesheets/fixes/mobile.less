@@ -34,4 +34,16 @@
 	#wikiEditor-section-characters .pages span {
 		height: 1.5rem;
 	}
+
+	.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary > .oo-ui-buttonElement-button {
+		background-color: #36c;
+		color: #222;
+		border-color: #a2a9b1;
+	}
+
+	// Window must be on top of everything, else, its buttons will get hidden
+	// below the top bar in full-screen dialogs or in mobile
+	.oo-ui-window {
+		z-index: 9999;
+	}
 }
