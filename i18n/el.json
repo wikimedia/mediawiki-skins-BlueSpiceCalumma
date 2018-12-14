@@ -28,12 +28,16 @@
 	"bs-sitetools-default": "Περισσότερα",
 	"bs-sitetools-toolbox": "Γραμμή εργαλείων",
 	"bs-sitetools-views": "Προβολές",
+	"bs-sitetools-edit": "Επεξεργασία",
+	"bs-sitetools-categories": "Κατηγορίες",
 	"bs-calumma-recentchanges-history": "Ιστορικό",
 	"bs-calumma-recentchanges-diff": "Διαφορά",
 	"bs-to-top-desc": "Πήδηση στην κορυφή της σελίδας",
 	"bs-calumma-pagetool-history-tooltip": "Ιστορικό σελίδας",
 	"bs-calumma-pagetool-talk-tooltip": "Συζήτηση",
 	"bs-calumma-pagetool-view-tooltip": "Προβολή",
+	"bs-calumma-pagetool-watch-tooltip": "Παρακολούθηση",
+	"bs-calumma-pagetool-unwatch-tooltip": "Παύση παρακολούθησης",
 	"bs-allpages-description": "Όλες οι σελίδες",
 	"bs-support-description": "Υποστήριξη"
 }

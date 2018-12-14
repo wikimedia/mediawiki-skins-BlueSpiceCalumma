@@ -73,5 +73,6 @@
 	"bs-edit-mediawiki-sidebar-link-text": "Seitenleiste bearbeiten",
 	"bs-edit-mediawiki-sidebar-link-title": "Seitenleiste bearbeiten",
 	"bs-allpages-description": "Artikel von A-Z",
-	"bs-support-description": "Support"
+	"bs-support-description": "Support",
+	"bs-calumma-navigation-toggle-tooltip": "Öffnen/Schließen"
 }

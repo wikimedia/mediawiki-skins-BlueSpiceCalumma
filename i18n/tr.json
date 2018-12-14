@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Captantrips",
-			"Hedda"
+			"Hedda",
+			"Sayginer"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice Teması",
@@ -52,6 +53,8 @@
 	"bs-sitetools-qm": "Kalite yönetimi",
 	"bs-sitetools-toolbox": "Araç Kutusu",
 	"bs-sitetools-views": "Görüntülenme",
+	"bs-sitetools-edit": "Düzenle",
+	"bs-sitetools-categories": "Kategoriler",
 	"bs-calumma-recentchanges-title": "Son değişiklikler",
 	"bs-calumma-recentchanges-intro": "Bu listede tüm yeni sayfa düzenlemelerini ve yeni oluşturulan sayfaları bulabilirsiniz.",
 	"bs-calumma-recentchanges-specialpage-link": "Klasik görünüm için [[Special:RecentChanges|buraya]] tıklayın",
@@ -64,6 +67,8 @@
 	"bs-calumma-pagetool-history-tooltip": "Sayfa geçmişi",
 	"bs-calumma-pagetool-talk-tooltip": "Tartışma",
 	"bs-calumma-pagetool-view-tooltip": "Görüntüle",
+	"bs-calumma-pagetool-watch-tooltip": "İzle",
+	"bs-calumma-pagetool-unwatch-tooltip": "İzlemeyi bırak",
 	"bs-edit-mediawiki-sidebar-link-text": "Kenar çubuğunu düzenle",
 	"bs-edit-mediawiki-sidebar-link-title": "Kenar çubuğunu düzenle",
 	"bs-allpages-description": "Tüm sayfalar",

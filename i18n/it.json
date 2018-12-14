@@ -29,11 +29,15 @@
 	"bs-calumma-graphicallist-recentchanges-preview-btn-history": "Cronologia",
 	"bs-sitetools-namespaces": "Namespace",
 	"bs-sitetools-toolbox": "Strumenti",
+	"bs-sitetools-edit": "Modifica",
+	"bs-sitetools-categories": "Categorie",
 	"bs-calumma-recentchanges-intro": "In questo elenco trovi tutte le pagine modificate di recente e le pagine appena create.",
 	"bs-calumma-recentchanges-history": "Cronologia",
 	"bs-all-templates-link-title": "Tutti i template",
 	"bs-to-top-desc": "Torna su",
 	"bs-calumma-pagetool-history-tooltip": "Cronologia della pagina",
 	"bs-calumma-pagetool-talk-tooltip": "Discussione",
+	"bs-calumma-pagetool-watch-tooltip": "Segui",
+	"bs-calumma-pagetool-unwatch-tooltip": "Non seguire",
 	"bs-allpages-description": "Tutte le pagine"
 }
