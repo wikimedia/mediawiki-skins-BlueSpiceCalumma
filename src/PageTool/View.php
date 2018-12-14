@@ -27,8 +27,7 @@ class View extends IconBase {
 	 * @return string
 	 */
 	protected function getUrl() {
-		$url = $this->getTitle()->getSubjectPage()->getLocalURL();
-		return $url;
+		return $this->getTitle()->getSubjectPage()->getLocalURL();
 	}
 
 	/**
@@ -41,11 +40,11 @@ class View extends IconBase {
 		}
 
 		$action = $this->context->getRequest()->getVal( 'action', 'view' );
-		if ( $action !== 'view' ) {
-			return false;
+		if ( !$this->getTitle()->isTalkPage() && in_array( $action, [ 'view', 'submit' ] ) ) {
+			return true;
 		}
 
-		return true;
+		return false;
 	}
 
 }
