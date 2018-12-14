@@ -66,5 +66,6 @@
 	"bs-edit-mediawiki-sidebar-link-text": "Edytuj panel boczny",
 	"bs-edit-mediawiki-sidebar-link-title": "Edytuj panel boczny",
 	"bs-allpages-description": "Wszystkie strony",
-	"bs-support-description": "Wsparcie"
+	"bs-support-description": "Wsparcie",
+	"bs-calumma-navigation-toggle-tooltip": "Otwórz / zamknij"
 }

@@ -70,5 +70,6 @@
 	"bs-edit-mediawiki-sidebar-link-text": "Editar barra lateral",
 	"bs-edit-mediawiki-sidebar-link-title": "Editar barra lateral",
 	"bs-allpages-description": "Todas as páginas",
-	"bs-support-description": "Suporte"
+	"bs-support-description": "Suporte",
+	"bs-calumma-navigation-toggle-tooltip": "Abrir / fechar"
 }

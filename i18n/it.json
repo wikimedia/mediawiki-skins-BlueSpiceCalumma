@@ -39,5 +39,6 @@
 	"bs-calumma-pagetool-talk-tooltip": "Discussione",
 	"bs-calumma-pagetool-watch-tooltip": "Segui",
 	"bs-calumma-pagetool-unwatch-tooltip": "Non seguire",
-	"bs-allpages-description": "Tutte le pagine"
+	"bs-allpages-description": "Tutte le pagine",
+	"bs-calumma-navigation-toggle-tooltip": "Apri / chiudi"
 }

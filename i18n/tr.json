@@ -3,7 +3,8 @@
 		"authors": [
 			"Captantrips",
 			"Hedda",
-			"Sayginer"
+			"Sayginer",
+			"Sucsuzz"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice Teması",
@@ -72,5 +73,6 @@
 	"bs-edit-mediawiki-sidebar-link-text": "Kenar çubuğunu düzenle",
 	"bs-edit-mediawiki-sidebar-link-title": "Kenar çubuğunu düzenle",
 	"bs-allpages-description": "Tüm sayfalar",
-	"bs-support-description": "Destek"
+	"bs-support-description": "Destek",
+	"bs-calumma-navigation-toggle-tooltip": "Aç / kapat"
 }

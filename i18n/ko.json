@@ -67,5 +67,6 @@
 	"bs-edit-mediawiki-sidebar-link-text": "사이드바 편집",
 	"bs-edit-mediawiki-sidebar-link-title": "사이드바 편집",
 	"bs-allpages-description": "모든 문서",
-	"bs-support-description": "지원"
+	"bs-support-description": "지원",
+	"bs-calumma-navigation-toggle-tooltip": "열기 / 닫기"
 }
