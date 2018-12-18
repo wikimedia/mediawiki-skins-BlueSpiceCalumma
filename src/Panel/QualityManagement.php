@@ -70,6 +70,12 @@ class QualityManagement extends PanelContainer implements IActiveStateProvider {
 		if ( $shouldRender === false ) {
 			return false;
 		}
+
+		$action = $context->getRequest()->getText( 'action', 'view' );
+		if ( $action !== 'view' ) {
+			return false;
+		}
+
 		// Only render when at least one of the registered panels
 		// actually renders.
 		foreach ( $this->panels as $panel ) {
