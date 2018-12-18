@@ -6,6 +6,9 @@
 		var jumpmarkId = hash.replace( '#', '' );
 
 		var jumpmark = d.getElementById( jumpmarkId );
+		if ( !jumpmark ) {
+			return;
+		}
 		var position = $( jumpmark ).position().top;
 
 		$( 'body, html').animate(
@@ -39,7 +42,7 @@
 				{
 					scrollTop: position
 				},
-				800
+				400
 			);
 		}
 	});

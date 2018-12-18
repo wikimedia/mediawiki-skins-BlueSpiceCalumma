@@ -38,7 +38,7 @@
 
 	bs.skin = bs.skin || {};
 	bs.skin.scrollToTop = bs.skin.scrollToTop || {
-		duration: 700,
+		duration: 400,
 		offset: 300
 	};
 
