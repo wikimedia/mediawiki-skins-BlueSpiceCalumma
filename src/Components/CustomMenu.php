@@ -11,7 +11,10 @@ class CustomMenu extends \Skins\Chameleon\Components\Structure {
 		$menu = $this->getDomElement()->getAttribute( 'data-menu' );
 
 		if ( !$this->getCutomMenu( $menu ) ) {
-			return '';
+			$customMenu = '';
+		} else {
+			$customMenu = $this->getCutomMenu( $menu );
+			$triggerButton = parent::getHtml();
 		}
 		$class = $this->getDomElement()->getAttribute( 'class' );
 		$class .= " bs-custom-menu-$menu-container navbar navbar-fixed-top";
@@ -19,10 +22,10 @@ class CustomMenu extends \Skins\Chameleon\Components\Structure {
 		$html = \Html::rawElement(
 			'nav',
 			[ 'class' => $class ],
-			$this->getCutomMenu( $menu )
+			$customMenu
 		);
 
-		$html .= parent::getHtml();
+		$html .= $triggerButton;
 
 		return $html;
 	}
