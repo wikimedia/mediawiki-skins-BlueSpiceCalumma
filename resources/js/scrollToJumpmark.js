@@ -28,7 +28,7 @@
 			return;
 		}
 
-		if ( $anchor.attr( 'href' ).indexOf( '#' ) !== 0 ) {
+		if ( !$anchor.attr( 'href' ) || $anchor.attr( 'href' ).indexOf( '#' ) !== 0 ) {
 			return;
 		}
 
