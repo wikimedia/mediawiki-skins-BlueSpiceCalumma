@@ -52,12 +52,7 @@ class Skin extends \SkinChameleon {
 
 		$cookie_desktop_view = $request->getCookie( 'Calumma_desktop-view' );
 
-		$cookie_custommenu_header_collapsed =
-			$request->getCookie( 'Calumma_bs-custom-menu-header-container-collapse' );
-
-		if ( $cookie_custommenu_header_collapsed === 'true' ) {
-			$bodyAttrs[ 'class' ] .= ' bs-custom-menu-header-container-collapse ';
-		}
+		$bodyAttrs[ 'class' ] .= $this->checkCustomMenuState( 'header' );
 
 		if ( ( !isset( $cookie_desktop_view ) ) || ( $cookie_desktop_view === 'true' ) ) {
 			$cookie_navigation_main_sticky =
@@ -141,6 +136,21 @@ class Skin extends \SkinChameleon {
 		}
 
 		return ' ' . $class . ' ';
+	}
+
+	/**
+	 *
+	 * @param string $menu
+	 * @return string
+	 */
+	protected function checkCustomMenuState( $menu ) {
+		$cookie_custommenu_header_collapsed =
+			$this->getRequest()->getCookie( 'Calumma_bs-custom-menu-' . $menu . '-container-collapse' );
+
+		if ( !isset( $cookie_custommenu_header_collapsed )
+			|| ( $cookie_custommenu_header_collapsed === 'true' ) ) {
+			return ' bs-custom-menu-' . $menu . '-container-collapse ';
+		}
 	}
 
 }
