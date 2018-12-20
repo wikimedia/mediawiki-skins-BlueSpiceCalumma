@@ -48,13 +48,19 @@
 
 			& > span {
 				float: left;
+				height: @custom-menu-top-height;
+				line-height: @custom-menu-top-height;
 			}
 
-			&:hover,
-			&:focus {
+			&:hover {
 				text-decoration: none;
 				color: @custom-menu-header-color-hover;
 				background-color: @custom-menu-header-bg-color-hover;
+			}
+
+			&:focus {
+				text-decoration: none;
+				background-color: transparent;
 			}
 		}
 
@@ -83,6 +89,8 @@
 					content: "\e921";
 					font-family: "entypo";
 					font-style: normal;
+					height: @custom-menu-top-height;
+					line-height: @custom-menu-top-height;
 				}
 				.dropdown-menu,
 				.child-menu {
@@ -102,6 +110,8 @@
 					content: "\e923";
 					font-family: "entypo";
 					font-style: normal;
+					height: @custom-menu-top-height;
+					line-height: @custom-menu-top-height;
 				}
 			}
 
