@@ -166,19 +166,23 @@ body.mediawiki.x-body {
 
 body.mediawiki {
 	&.bs-custom-menu-header-container-collapse{
-		.ve-init-target-source > .ve-ui-toolbar > .oo-ui-toolbar-bar {
-			top: @banner-top-height + 20px;
+		.ve-init-target-visual > .ve-ui-toolbar > .oo-ui-toolbar-bar,
+		.ve-init-target-source > .ve-ui-toolbar > .oo-ui-toolbar-bar{
+			top: @banner-top-height + 5px;
 		}
-		.ve-init-target-source > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
-			top: calc(~"@{banner-top-height} + @{menu-top-height} + 10px");
+		.ve-init-target-visual > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar,
+		.ve-init-target-source > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar{
+			top: calc(~"@{banner-top-height} + @{menu-top-height}");
 		}
 	}
 	&:not(.bs-custom-menu-header-container-collapse) {
-		.ve-init-target-source > .ve-ui-toolbar > .oo-ui-toolbar-bar {
-			top:  calc(~"@{banner-top-height} + 20px");
+		.ve-init-target-visual > .ve-ui-toolbar > .oo-ui-toolbar-bar,
+		.ve-init-target-source > .ve-ui-toolbar > .oo-ui-toolbar-bar{
+			top:  calc(~"@{banner-top-height}  + 5px");
 		}
+		.ve-init-target-visual > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar,
 		.ve-init-target-source > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
-			top: calc(~"@{banner-top-height} + @{menu-top-height} + @{custom-menu-top-height} + 2px");
+			top: calc(~"@{banner-top-height} + @{menu-top-height} + @{custom-menu-top-height}");
 		}
 	}
 }
