@@ -70,5 +70,6 @@
 	"bs-edit-mediawiki-sidebar-link-text": "Уреди бочну траку",
 	"bs-edit-mediawiki-sidebar-link-title": "Уреди бочну траку",
 	"bs-allpages-description": "Све странице",
-	"bs-support-description": "Подршка"
+	"bs-support-description": "Подршка",
+	"bs-calumma-navigation-toggle-tooltip": "Отвори / затвори"
 }
