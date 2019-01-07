@@ -102,29 +102,25 @@ class MobileUserContainer extends BasePanel {
 			$tools = $this->sortPersonalTools( $ptools );
 
 			$html .= $separator;
-			foreach ( $tools['links'] as $tool ) {
-				$html .= '<li><a text="' . $tool['text'];
-				$html .= '" href="' . $tool['href'] . '"><i></i>';
-				$html .= $tool['text'] . '</a></li>';
+
+			if ( isset( $tools['links'] ) ) {
+				$html .= $this->makePersonalToolsListItem( $tools['links'] );
+
+				$html .= $separator;
 			}
 
-			$html .= $separator;
-			foreach ( $tools['dashboards'] as $tool ) {
-				$html .= '<li><a text="' . $tool['text'];
-				$html .= '" href="' . $tool['href'] . '"><i></i>';
-				$html .= $tool['text'] . '</a></li>';
+			if ( isset( $tools['dashboards'] ) ) {
+				$html .= $this->makePersonalToolsListItem( $tools['dashboards'] );
+
+				$html .= $separator;
 			}
 
-			$html .= $separator;
-			foreach ( $tools['preferences'] as $tool ) {
-				$html .= '<li><a text="' . $tool['text'];
-				$html .= '" href="' . $tool['href'] . '"><i></i>';
-				$html .= $tool['text'] . '</a></li>';
+			if ( isset( $tools['preferences'] ) ) {
+				$html .= $this->makePersonalToolsListItem( $tools['preferences'] );
 			}
-			foreach ( $tools['logout'] as $tool ) {
-				$html .= '<li><a text="' . $tool['text'];
-				$html .= '" href="' . $tool['href'] . '"><i></i>';
-				$html .= $tool['text'] . '</a></li>';
+
+			if ( isset( $tools['logout'] ) ) {
+				$html .= $this->makePersonalToolsListItem( $tools['logout'] );
 			}
 
 			$html .= '</ul>';
@@ -233,6 +229,35 @@ class MobileUserContainer extends BasePanel {
 		}
 
 		return $tools;
+	}
+
+	/**
+	 *
+	 * @param array $items
+	 * @return string
+	 */
+	protected function makePersonalToolsListItem( $items ) {
+		$ret = '';
+		foreach ( $items as $item ) {
+			$ret .= \Html::openElement( 'li' );
+
+			$ret .= \Html::openElement(
+				'a',
+				[
+					'title' => $item['text'],
+					'href' => $item['href']
+				]
+			);
+
+			$ret .= \Html::element( 'i' );
+			$ret .= $item['text'];
+
+			$ret .= \Html::closeElement( 'a' );
+
+			$ret .= \Html::closeElement( 'li' );
+		}
+
+		return $ret;
 	}
 
 }
