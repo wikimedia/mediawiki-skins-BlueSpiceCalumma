@@ -3,7 +3,8 @@
 		"authors": [
 			"Okras",
 			"Vlad5250",
-			"Nk88"
+			"Nk88",
+			"Cronolio"
 		]
 	},
 	"bluespicecalumma-skin": "BlueSpiceCalumma",
@@ -50,19 +51,21 @@
 	"bs-sitetools-edit": "Править",
 	"bs-sitetools-categories": "Категории",
 	"bs-calumma-recentchanges-title": "Свежие правки",
-	"bs-calumma-recentchanges-intro": "Это список недавно изменённых страниц.",
+	"bs-calumma-recentchanges-intro": "В этом списке вы найдете все свежие правки и недавно созданные страницы.",
 	"bs-calumma-recentchanges-specialpage-link": "Для классического вида нажмите [[Special:RecentChanges|здесь]].",
 	"bs-calumma-recentchanges-column-header-title": "Свежие правки",
 	"bs-calumma-recentchanges-history": "История",
 	"bs-calumma-recentchanges-diff": "Разница",
 	"bs-all-templates-link-text": "Все шаблоны",
 	"bs-all-templates-link-title": "Все шаблоны",
-	"bs-to-top-desc": "Пролистать к верхней части страницы",
+	"bs-to-top-desc": "Перейти наверх",
 	"bs-calumma-pagetool-history-tooltip": "История страницы",
 	"bs-calumma-pagetool-talk-tooltip": "Обсуждение",
 	"bs-calumma-pagetool-view-tooltip": "Просмотр",
 	"bs-calumma-pagetool-watch-tooltip": "Следить",
 	"bs-calumma-pagetool-unwatch-tooltip": "Не следить",
+	"bs-edit-mediawiki-sidebar-link-text": "Править боковую панель",
+	"bs-edit-mediawiki-sidebar-link-title": "Править боковую панель",
 	"bs-allpages-description": "Все страницы",
 	"bs-support-description": "Поддержка",
 	"bs-calumma-navigation-toggle-tooltip": "Открыть/закрыть"

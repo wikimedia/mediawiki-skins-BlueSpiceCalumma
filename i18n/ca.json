@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Toniher"
+			"Toniher",
+			"Fitoschido"
 		]
 	},
-	"bs-to-top-desc": "Desplaça a l'inici la pàgina"
+	"bs-to-top-desc": "Desplaça a l'inici la pàgina",
+	"bs-calumma-navigation-toggle-tooltip": "Obre/tanca"
 }

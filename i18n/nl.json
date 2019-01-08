@@ -60,5 +60,6 @@
 	"bs-calumma-pagetool-watch-tooltip": "Volgen",
 	"bs-calumma-pagetool-unwatch-tooltip": "Niet volgen",
 	"bs-allpages-description": "Alle pagina's",
-	"bs-support-description": "Hulp en contact"
+	"bs-support-description": "Hulp en contact",
+	"bs-calumma-navigation-toggle-tooltip": "Openen / sluiten"
 }
