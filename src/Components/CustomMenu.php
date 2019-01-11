@@ -12,6 +12,7 @@ class CustomMenu extends \Skins\Chameleon\Components\Structure {
 
 		if ( !$this->getCutomMenu( $menu ) ) {
 			$customMenu = '';
+			$triggerButton = '';
 		} else {
 			$customMenu = $this->getCutomMenu( $menu );
 			$triggerButton = parent::getHtml();
