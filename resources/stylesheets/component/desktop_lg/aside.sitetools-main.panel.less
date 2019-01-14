@@ -67,12 +67,18 @@
 	.bs-panel.panel-default {
 		width: @sitetools-main-width;
 		box-shadow: none;
+		margin-bottom: 10px;
 		.panel-collapse.collapsing,
 		.panel-collapse.collapse.in {
 			clear: both;
+
+			&:empty {
+				display: none;
+			}
 		}
 		.panel-heading {
-			padding: 7px;
+			padding: 0px 7px 0px 15px;
+			padding-right: 7px;
 			padding-left: 15px;
 			background-color: transparent;
 			border: none;
