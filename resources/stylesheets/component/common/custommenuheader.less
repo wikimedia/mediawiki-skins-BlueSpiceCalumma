@@ -91,12 +91,43 @@
 					font-style: normal;
 					height: @custom-menu-top-height;
 					line-height: @custom-menu-top-height;
+					margin-left: 5px;
 				}
 				.dropdown-menu,
 				.child-menu {
 					padding: 0px;
 					list-style: none;
 					background-color: @custom-menu-header-bg-color;
+
+					&.level-2 {
+						top: calc(~"@{custom-menu-top-height} + 0.8em");
+						&::before {
+							font-size: 3em;
+							font-family: 'fontawesome';
+							content: "\f0d8";
+							position: absolute;
+							top: -0.9em;
+							left: 20px;
+							color:  @custom-menu-header-bg-color;
+							height: 1em;
+							z-index: -1;
+						}
+					}
+
+					&:not(.level-2) {
+						left: calc(~"100% + 12px");
+						&::before {
+							font-size: 3em;
+							font-family: 'fontawesome';
+							content: "\f0d9";
+							position: absolute;
+							top: -10px;
+							left: -12px;
+							color:  @custom-menu-header-bg-color;
+							height: 1em;
+							z-index: -1;
+						}
+					}
 				}
 			}
 			&:not(.level-1) {
