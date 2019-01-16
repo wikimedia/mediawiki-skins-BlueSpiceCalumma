@@ -182,6 +182,11 @@
 				"bs-calumma-pagetool-watch-tooltip",
 				"bs-calumma-pagetool-unwatch-tooltip"
 			]
+		},
+		"skin.bluespicecalumma.foucfix": {
+			"styles": [
+				"stylesheets/fixes/foucfix.less"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -194,7 +199,10 @@
 	"Hooks": {
 		"GetPreferences": "\\BlueSpice\\Calumma\\Hook\\GetPreferences\\UserPreferences::callback",
 		"MessageCache::get": "\\BlueSpice\\Calumma\\Hook\\MessageCacheGet\\ReplaceMWSidebar::callback",
-		"BeforePageDisplay": "\\BlueSpice\\Calumma\\Hook\\BeforePageDisplay\\HistoryBacklink::callback"
+		"BeforePageDisplay": [
+			"\\BlueSpice\\Calumma\\Hook\\BeforePageDisplay\\HistoryBacklink::callback",
+			"\\BlueSpice\\Calumma\\Hook\\BeforePageDisplay\\AddFoucFix::callback"
+		]
 	},
 	"DefaultUserOptions": {
 		"bs-calumma-settings-navigation-main-collapse": false,
