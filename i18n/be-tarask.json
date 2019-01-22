@@ -60,5 +60,7 @@
 	"bs-all-templates-link-text": "Усе шаблёны",
 	"bs-all-templates-link-title": "Усе шаблёны",
 	"bs-to-top-desc": "Перайсьці ўгару",
-	"bs-calumma-pagetool-history-tooltip": "Гісторыя старонкі"
+	"bs-calumma-pagetool-history-tooltip": "Гісторыя старонкі",
+	"bs-calumma-pagetool-talk-tooltip": "Абмеркаваньне",
+	"bs-calumma-pagetool-view-tooltip": "Прагляд"
 }
