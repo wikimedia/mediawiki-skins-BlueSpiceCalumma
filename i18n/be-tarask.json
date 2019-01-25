@@ -63,5 +63,6 @@
 	"bs-calumma-pagetool-history-tooltip": "Гісторыя старонкі",
 	"bs-calumma-pagetool-talk-tooltip": "Абмеркаваньне",
 	"bs-calumma-pagetool-view-tooltip": "Прагляд",
-	"bs-calumma-pagetool-watch-tooltip": "Назіраць"
+	"bs-calumma-pagetool-watch-tooltip": "Назіраць",
+	"bs-calumma-pagetool-unwatch-tooltip": "Не назіраць"
 }
