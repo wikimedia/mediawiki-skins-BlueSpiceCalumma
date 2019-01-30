@@ -36,7 +36,10 @@
 				"bs-color-warning": "#fcf8e3",
 				"bs-color-error": "#f2dede",
 				"bs-color-info": "#d9edf7",
-				"bs-color-after-content": "darken(@bs-color-neutral, 37.2549)"
+				"bs-color-after-content": "darken(@bs-color-neutral, 37.2549)",
+				"bs-body-background": "@bs-background-primary",
+				"bs-content-background": "@bs-background-neutral",
+				"bs-content-toc-background": "@bs-background-primary"
 			},
 			"PageToolRegistry": {
 				"view": "BlueSpice\\Calumma\\PageTool\\View::factory",
