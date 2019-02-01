@@ -1,31 +1,21 @@
-body.navigation-main-fixed {
-	/* TODO: Is this still in use? */
-	.navigation-main {
-		display: block;
-		position: fixed;
-	}
-}
-
 .navigation-main {
-	display: block;
-	position: fixed;
-	padding-top: 1em;
 	left: 0;
 	min-height: 100%;
-	overflow: hidden;
+	display: block;
+	position: fixed;
+	padding-top: 10px;
 	background-color: @navigation-bg-color;
 	z-index: 12;
+	overflow: hidden;
+
+
+	.separator {
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid @navigation-color;
+	}
 
 	#bs-sitenavtabs {
-		ul.nav-pills {
-			height: @navigation-tabs-height;
-			display: flex;
-			justify-content: space-between;
-
-			li{
-				height: @navigation-tabs-height;
-			}
-		}
 		div.tab-content {
 			position: relative;
 			overflow: hidden;
@@ -60,13 +50,12 @@ body.navigation-main-fixed {
 
 			a:focus,
 			a:visited {
-				color: white;
-				text-decoration: none;
+				color: @navigation-color;
 			}
-		}
 
-		div.tab-content:hover {
-			overflow-y: auto;
+			&:hover {
+				overflow-y: auto;
+			}
 		}
 	}
 
@@ -78,18 +67,26 @@ body.navigation-main-fixed {
 	.nav::after {
 		display: none;
 	}
+
 	.nav.nav-pills{
-		li a{
-		    background-color: @navigation-tab-bg-color;
-		    color: @navigation-tab-color;
-		}
-		li.active a{
-		    background-color: @navigation-tab-bg-color-active;
-		    color: @navigation-tab-color-active;
-		}
-		li a:hover{
-			background-color: @navigation-tab-bg-color-hover;
-		        color: @navigation-tab-color-hover;
+		height: @navigation-tabs-height;
+		display: flex;
+		justify-content: space-between;
+		li{
+			height: @navigation-tabs-height;
+
+			a{
+				background-color: @navigation-tab-bg-color;
+				color: @navigation-tab-color;
+			}
+			&.active a{
+				background-color: @navigation-tab-bg-color-active;
+				color: @navigation-tab-color-active;
+			}
+			a:hover{
+				background-color: @navigation-tab-bg-color-hover;
+				color: @navigation-tab-color-hover;
+			}
 		}
 	}
 
@@ -125,14 +122,12 @@ body.navigation-main-fixed {
 	}
 
 	h4 {
-		color: @navigation-color;
 		text-align: center;
 		font-size: 20px;
 		font-weight: @font-weight-regular;
 	}
 
 	h5 {
-		color: @navigation-color;
 		text-align: center;
 		font-size: 1.25rem;
 	}
@@ -148,8 +143,7 @@ body.navigation-main-fixed {
 
 	a:hover,
 	a:hover span {
-		background-color: @navigation-bg-color-hover;
-		color: @navigation-color-hover;
+		background-color: transparent;
 	}
 }
 
@@ -157,6 +151,10 @@ body.navigation-main-fixed {
 #bs-sitenav-navigation {
 	#bs-mobile-user-container .panel-heading .bs-panel-title,
 	#bs-mediawiki-sidebar .panel-heading .bs-panel-title {
+		display: none;
+	}
+
+	#bs-mobile-user-container {
 		display: none;
 	}
 

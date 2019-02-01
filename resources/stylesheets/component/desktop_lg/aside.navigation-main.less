@@ -1,5 +1,4 @@
-/* copy of desktop_sm */
-body{
+body {
 	&.navigation-main-collapse .navigation-main.active,
 	.navigation-main {
 		top: @menu-top-height + @banner-top-height;
@@ -11,39 +10,6 @@ body{
 			ul.nav-pills a > i::before {
 				font-size: 150%;
 			}
-		}
-		a span {
-			line-height: 32px;
-		}
-		a.list-group-item {
-			padding-top: 2px;
-			height: 32px;
-			line-height: 32px;
-		}
-		.panel-heading .panel-title a,
-		.panel-heading .bs-panel-title a{
-			height: 32px;
-			line-height: 12px;
-			span.title {
-				line-height: 12px;
-			}
-		}
-	}
-	.trigger.body{
-		float: right;
-		height: 100%;
-		i.trigger-icon::before{
-			content: "\e92c";
-			font-family: "entypo";
-			float: right;
-			font-style: normal;
-			padding-right: 1em;
-			line-height: 12px;
-		}
-	}
-	.collapsed .trigger.body{
-		i.trigger-icon::before{
-			content: "\e921";
 		}
 	}
 }
