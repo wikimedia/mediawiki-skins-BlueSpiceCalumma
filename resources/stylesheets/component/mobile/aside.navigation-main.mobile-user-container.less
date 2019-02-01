@@ -4,6 +4,7 @@
 	}
 	&>a:hover {
 		text-decoration: none;
+		background-color: @navigation-bg-color-hover;
 	}
 	a.dropdown-toggle {
 		display: block;
@@ -22,12 +23,13 @@
 		height: 100vh;
 		border-radius: 0px;
 		border-width: 0px;
-		background-color: @bs-color-primary;
+		background-color: @navigation-bg-color;
 		li a {
 			display: block;
 			width: 100%;
 			&:hover {
 				text-decoration: none;
+				background-color: @navigation-bg-color-hover;
 			}
 		}
 	}
@@ -60,6 +62,9 @@
 			}
 			& + .separator {
 				margin-top: 10px;
+			}
+			&:hover {
+				background-color: @navigation-bg-color-hover;
 			}
 		}
 		li{
