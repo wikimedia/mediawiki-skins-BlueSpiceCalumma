@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Macofe",
-			"Fitoschido"
+			"Fitoschido",
+			"Carlosmg.dg"
 		]
 	},
-	"bs-to-top-desc": "Desplazarse al principio de la página",
+	"bs-to-top-desc": "Ir al principio",
 	"bs-calumma-navigation-toggle-tooltip": "Abrir/cerrar"
 }
