@@ -3,7 +3,6 @@
 	min-height: 100%;
 	display: block;
 	position: fixed;
-	padding-top: 10px;
 	background-color: @navigation-bg-color;
 	z-index: 12;
 	overflow: hidden;
@@ -72,12 +71,17 @@
 		height: @navigation-tabs-height;
 		display: flex;
 		justify-content: space-between;
+		background-color: @navigation-tabs-bg-color;
+		margin-bottom: 10px;
+
 		li{
 			height: @navigation-tabs-height;
 
 			a{
 				background-color: @navigation-tab-bg-color;
 				color: @navigation-tab-color;
+				height: 100%;
+				line-height: 40px;
 			}
 			&.active a{
 				background-color: @navigation-tab-bg-color-active;
