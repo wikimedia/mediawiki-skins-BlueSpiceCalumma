@@ -45,9 +45,8 @@ class FeaturedActionsData {
 	 */
 	public static function populateActionsEdit( $skin, &$skintemplate, &$data ) {
 		$curTitle = $skin->getTitle();
-		$curUser = $skin->getUser();
 
-		if ( $curUser->isAnon() ) {
+		if ( !$curTitle->userCan( 'edit' ) ) {
 			return;
 		}
 
@@ -92,7 +91,7 @@ class FeaturedActionsData {
 		$curTitle = $skin->getTitle();
 		$curUser = $skin->getUser();
 
-		if ( $curUser->isAnon() ) {
+		if ( !$curUser->isAllowed( 'createpage' ) ) {
 			return;
 		}
 
