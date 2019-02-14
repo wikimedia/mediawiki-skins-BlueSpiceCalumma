@@ -1,5 +1,5 @@
 ( function( d, $, mw ) {
-	$( '.sidebar-toggle' ).on( 'click', function( e ){
+	$( d ).on( 'click', '.sidebar-toggle', function( e ){
 		e.preventDefault();
 
 		var target =  $( this ).attr( 'data-toggle' );
@@ -17,7 +17,7 @@
 		}
 	});
 
-	$( '.bs-tabs' ).on( 'click', '.active a[data-toggle="tab"]', function( e ){
+	$( d ).on( 'click', '.bs-tabs .active a[data-toggle="tab"]', function( e ){
 		if( ( $( d ).width() <= 1000 ) ) {
 			var $anchor = $( this );
 			var targetId = $anchor.attr( 'href' ).substring( 1 ); //cut off leading '#'
