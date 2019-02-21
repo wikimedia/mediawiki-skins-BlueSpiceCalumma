@@ -75,8 +75,5 @@
 	"bs-allpages-description": "All pages",
 	"bs-support-url": "https://bluespice.com/services/support",
 	"bs-support-description": "Support",
-	"bs-calumma-navigation-toggle-tooltip": "Open / close",
-	"bs-edit-custom-menu-link-title": "Edit menu",
-	"bs-edit-custom-menu-link-text": "Edit menu",
-	"bs-calumma-toggle-button-tooltip": "Open/Close"
+	"bs-calumma-navigation-toggle-tooltip": "Open / close"
 }
