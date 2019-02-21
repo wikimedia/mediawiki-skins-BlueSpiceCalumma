@@ -36,15 +36,21 @@ class GlobalActions extends BasePanel {
 	 * @return string
 	 */
 	public function getBody() {
-		$sections = [
-			'bs-sitenav-globalactions-section-globalactions' =>
+		$globalActions = $this->sortLinksAlphabetically(
 				$this->skintemplate->get( SkinData::GLOBAL_ACTIONS )
+			);
+
+		$sections = [
+			'bs-sitenav-globalactions-section-globalactions' => $globalActions
 		];
 
 		if ( $this->skintemplate->getSkin()->getUser()->isLoggedIn() ) {
-			$sections += [
-				'bs-sitenav-globalactions-section-management' =>
+			$management = $this->sortLinksAlphabetically(
 					$this->skintemplate->get( SkinData::ADMIN_LINKS )
+				);
+
+			$sections += [
+				'bs-sitenav-globalactions-section-management' => $management
 			];
 		}
 
@@ -88,5 +94,27 @@ class GlobalActions extends BasePanel {
 	 */
 	public function getContainerClasses() {
 		return [ 'calumma-navigation-mobile-hidden' ];
+	}
+
+	/**
+	 *
+	 * @param array $links
+	 * @return array
+	 */
+	protected function sortLinksAlphabetically( $links ) {
+		$helper = [];
+
+		foreach ( $links as $link ) {
+			if ( $link['text'] instanceof \Message ) {
+				$text = $link['text']->text();
+				$helper[$text] = $link;
+			} else {
+				$helper[$link['text']] = $link;
+			}
+		}
+
+		ksort( $helper );
+
+		return array_values( $helper );
 	}
 }
