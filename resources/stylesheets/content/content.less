@@ -33,11 +33,14 @@
 
 .bs-page-breadcrumbs {
 	line-height: 32px;
+	display: contents;
+
 	a {
 		color: @link-color;
-	}
-	a:hover {
-		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 }
 
@@ -54,12 +57,14 @@
 .bs-page-breadcrumbs,
 .bs-page-tools {
 	font-size: smaller;
-	display: table-cell;
 	vertical-align: middle;
 	height: 32px;
 	color: @bs-color-neutral3;
 }
+
 .bs-page-tools {
+	display: table-cell;
+
 	a {
 		i::before {
 			color: @bs-color-neutral3;
