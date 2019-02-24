@@ -71,5 +71,8 @@
 	"bs-edit-mediawiki-sidebar-link-title": "Рэдагаваць бакавую панэль",
 	"bs-allpages-description": "Усе старонкі",
 	"bs-support-description": "Падтрымка",
-	"bs-calumma-navigation-toggle-tooltip": "Адкрыць / закрыць"
+	"bs-calumma-navigation-toggle-tooltip": "Адкрыць / закрыць",
+	"bs-edit-custom-menu-link-title": "Рэдагаваць мэню",
+	"bs-edit-custom-menu-link-text": "Рэдагаваць мэню",
+	"bs-calumma-toggle-button-tooltip": "Адкрыць/закрыць"
 }

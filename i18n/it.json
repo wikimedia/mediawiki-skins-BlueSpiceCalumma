@@ -40,5 +40,8 @@
 	"bs-calumma-pagetool-watch-tooltip": "Segui",
 	"bs-calumma-pagetool-unwatch-tooltip": "Non seguire",
 	"bs-allpages-description": "Tutte le pagine",
-	"bs-calumma-navigation-toggle-tooltip": "Apri / chiudi"
+	"bs-calumma-navigation-toggle-tooltip": "Apri / chiudi",
+	"bs-edit-custom-menu-link-title": "Modifica menu",
+	"bs-edit-custom-menu-link-text": "Modifica menu",
+	"bs-calumma-toggle-button-tooltip": "Apri/chiudi"
 }

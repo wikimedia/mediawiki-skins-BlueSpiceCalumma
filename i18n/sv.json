@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Josve05a",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Sturban"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice-utseende",
@@ -55,12 +56,12 @@
 	"bs-sitetools-edit": "Redigera",
 	"bs-sitetools-categories": "Kategorier",
 	"bs-calumma-recentchanges-title": "Senaste ändringar",
-	"bs-calumma-recentchanges-intro": "I denna lista hittar du alla senaste sidredigeringar och sidorna som skapades senast.",
+	"bs-calumma-recentchanges-intro": "I denna lista hittar du de senaste sidredigeringarna och sidor som nyligen skapats.",
 	"bs-calumma-recentchanges-specialpage-link": "För den klassiska vyn, klicka [[Special:RecentChanges|här]].",
 	"bs-calumma-recentchanges-column-header-title": "Senaste ändringar",
 	"bs-calumma-recentchanges-history": "Historik",
 	"bs-calumma-recentchanges-diff": "Skillnad",
-	"bs-all-templates-link-text": "Lägg mallar",
+	"bs-all-templates-link-text": "Alla mallar",
 	"bs-all-templates-link-title": "Alla mallar",
 	"bs-to-top-desc": "Toppen av sidan",
 	"bs-calumma-pagetool-history-tooltip": "Sidhistorik",
@@ -72,5 +73,8 @@
 	"bs-edit-mediawiki-sidebar-link-title": "Redigera sidfältet",
 	"bs-allpages-description": "Alla sidor",
 	"bs-support-description": "Support",
-	"bs-calumma-navigation-toggle-tooltip": "Öppna / stäng"
+	"bs-calumma-navigation-toggle-tooltip": "Öppna / stäng",
+	"bs-edit-custom-menu-link-title": "Redigera meny",
+	"bs-edit-custom-menu-link-text": "Redigera meny",
+	"bs-calumma-toggle-button-tooltip": "Öppna/stäng"
 }

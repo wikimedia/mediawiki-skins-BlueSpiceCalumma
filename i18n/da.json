@@ -51,5 +51,8 @@
 	"bs-calumma-pagetool-watch-tooltip": "Overvåg",
 	"bs-calumma-pagetool-unwatch-tooltip": "Fjern fra overvågning",
 	"bs-allpages-description": "Alle sider",
-	"bs-calumma-navigation-toggle-tooltip": "Åbn / luk"
+	"bs-calumma-navigation-toggle-tooltip": "Åbn / luk",
+	"bs-edit-custom-menu-link-title": "Rediger menuen",
+	"bs-edit-custom-menu-link-text": "Rediger menuen",
+	"bs-calumma-toggle-button-tooltip": "Åbn/luk"
 }

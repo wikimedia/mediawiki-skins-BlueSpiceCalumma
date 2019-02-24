@@ -48,5 +48,8 @@
 	"bs-calumma-pagetool-unwatch-tooltip": "Net méi iwwerwaachen",
 	"bs-allpages-description": "All Säiten",
 	"bs-support-description": "Ënnerstëtzung",
-	"bs-calumma-navigation-toggle-tooltip": "Opmaachen / zoumaachen"
+	"bs-calumma-navigation-toggle-tooltip": "Opmaachen / zoumaachen",
+	"bs-edit-custom-menu-link-title": "Menü änneren",
+	"bs-edit-custom-menu-link-text": "Menü änneren",
+	"bs-calumma-toggle-button-tooltip": "Opmaachen / Zoumaachen"
 }

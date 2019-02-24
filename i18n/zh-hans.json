@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"A Chinese Wikipedian",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"94rain"
 		]
 	},
 	"bs-calumma-pref-toggle-navigaiton-main": "自动隐藏主菜单",
@@ -67,5 +68,6 @@
 	"bs-edit-mediawiki-sidebar-link-text": "编辑侧边栏",
 	"bs-edit-mediawiki-sidebar-link-title": "编辑侧边栏",
 	"bs-allpages-description": "所有页面",
-	"bs-support-description": "支持"
+	"bs-support-description": "支持",
+	"bs-edit-custom-menu-link-title": "编辑菜单"
 }

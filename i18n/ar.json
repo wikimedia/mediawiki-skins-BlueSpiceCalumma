@@ -72,5 +72,8 @@
 	"bs-edit-mediawiki-sidebar-link-title": "عدل الشريط الجانبي",
 	"bs-allpages-description": "كل الصفحات",
 	"bs-support-description": "الدعم",
-	"bs-calumma-navigation-toggle-tooltip": "فتح / إغلاق"
+	"bs-calumma-navigation-toggle-tooltip": "فتح / إغلاق",
+	"bs-edit-custom-menu-link-title": "عدل القائمة",
+	"bs-edit-custom-menu-link-text": "عدل القائمة",
+	"bs-calumma-toggle-button-tooltip": "فتح/إغلاق"
 }

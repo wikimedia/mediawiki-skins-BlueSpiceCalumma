@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"StanProg"
+			"StanProg",
+			"Vlad5250"
 		]
 	},
 	"bs-sitetools-edit": "Редактиране",
-	"bs-to-top-desc": "Най-горе"
+	"bs-to-top-desc": "Най-горе",
+	"bs-edit-custom-menu-link-title": "Редактиране на меню",
+	"bs-edit-custom-menu-link-text": "Редактиране на меню",
+	"bs-calumma-toggle-button-tooltip": "Отваряне/Затваряне"
 }

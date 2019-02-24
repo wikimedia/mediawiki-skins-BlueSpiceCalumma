@@ -71,5 +71,8 @@
 	"bs-edit-mediawiki-sidebar-link-title": "Уреди страничник",
 	"bs-allpages-description": "Сите страници",
 	"bs-support-description": "Поддршка",
-	"bs-calumma-navigation-toggle-tooltip": "Отвори / затвори"
+	"bs-calumma-navigation-toggle-tooltip": "Отвори / затвори",
+	"bs-edit-custom-menu-link-title": "Уреди мени",
+	"bs-edit-custom-menu-link-text": "Уреди мени",
+	"bs-calumma-toggle-button-tooltip": "Отвори/Затвори"
 }
