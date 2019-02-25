@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chameleon222"
+			"Chameleon222",
+			"Kingu"
 		]
 	},
-	"bs-to-top-desc": "Rull til toppen av siden"
+	"bs-to-top-desc": "Rull til toppen av siden",
+	"bs-edit-custom-menu-link-title": "Rediger meny",
+	"bs-edit-custom-menu-link-text": "Rediger meny"
 }
