@@ -62,6 +62,8 @@ class CustomMenu extends \Skins\Chameleon\Components\Structure {
 	 * @return string
 	 */
 	protected function addEditLink( $skintemplate, $menu ) {
+		$html = '';
+
 		if ( $skintemplate->getSkin()->getUser()->isAllowed( 'editinterface' ) ) {
 			$factory = Services::getInstance()->getService( 'BSCustomMenuFactory' );
 
@@ -69,7 +71,7 @@ class CustomMenu extends \Skins\Chameleon\Components\Structure {
 				return '';
 			}
 
-			$html = \Html::openElement(
+			$html .= \Html::openElement(
 				'a',
 				[
 					'href' => $factory->getMenu( $menu )->getEditURL(),
