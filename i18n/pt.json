@@ -71,5 +71,8 @@
 	"bs-edit-mediawiki-sidebar-link-title": "Editar barra lateral",
 	"bs-allpages-description": "Todas as páginas",
 	"bs-support-description": "Suporte",
-	"bs-calumma-navigation-toggle-tooltip": "Abrir / fechar"
+	"bs-calumma-navigation-toggle-tooltip": "Abrir / fechar",
+	"bs-edit-custom-menu-link-title": "Editar menu",
+	"bs-edit-custom-menu-link-text": "Editar menu",
+	"bs-calumma-toggle-button-tooltip": "Abrir/Fechar"
 }

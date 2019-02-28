@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Ата",
-			"Piramidion"
+			"Piramidion",
+			"Andrew J.Kurbiko",
+			"Vlad5250"
 		]
 	},
 	"bluespicecalumma-desc": "Тема оформлення для BlueSpice",
@@ -72,5 +74,8 @@
 	"bs-edit-mediawiki-sidebar-link-title": "Редагувати бічну панель",
 	"bs-allpages-description": "Усі сторінки",
 	"bs-support-description": "Підтримка",
-	"bs-calumma-navigation-toggle-tooltip": "Відкрити / закрити"
+	"bs-calumma-navigation-toggle-tooltip": "Відкрити / закрити",
+	"bs-edit-custom-menu-link-title": "Редагувати меню",
+	"bs-edit-custom-menu-link-text": "Редагувати меню",
+	"bs-calumma-toggle-button-tooltip": "Відкрити/закрити"
 }
