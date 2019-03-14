@@ -28,12 +28,21 @@ abstract class TemplateStructure extends \Skins\Chameleon\Components\Structure {
 	}
 
 	/**
+	 *
+	 * @var \TemplateParser[]
+	 */
+	protected static $templateParsers = [];
+
+	/**
 	 * Initializes the internal \TemplateParser object
 	 */
 	protected function initTemplateParser() {
-		$this->templateParser = new \TemplateParser(
-			$this->getTemplatePath()
-		);
+		$templatePath = $this->getTemplatePath();
+		if ( !isset( static::$templateParsers[$templatePath ] ) ) {
+			static::$templateParsers[$templatePath ] = new \TemplateParser( $templatePath );
+		}
+
+		$this->templateParser = static::$templateParsers[$templatePath ];
 	}
 
 	/**
