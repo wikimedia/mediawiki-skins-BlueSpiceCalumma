@@ -77,6 +77,7 @@
 				"stylesheets/fixes/desktop.specialpages.less": {},
 				"stylesheets/fixes/IEFixes.css": {},
 				"stylesheets/icons.less": {},
+				"stylesheets/common.less": {},
 				"stylesheets/mobile.less": { "media": "all and ( max-width: 720px )" },
 				"stylesheets/tablet.less": { "media": "all and ( min-width: 721px ) and ( max-width: 1000px )" },
 				"stylesheets/desktop_sm.less": { "media": "all and ( min-width: 1001px ) and ( max-width: 1200px )" },
