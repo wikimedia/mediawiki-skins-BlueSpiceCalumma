@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Daimona Eaytoy"
 		]
 	},
 	"bs-calumma-pref-toggle-navigaiton-main": "Nascondi automaticamente il menu principale",
-	"bs-action-edit-edit-title": "Modifica wikitesto",
+	"bs-action-edit-edit-title": "Modifica sorgente",
 	"bs-action-new-section-text": "Nuova sezione",
 	"bs-action-new-section-title": "Aggiungi una nuova sezione a questa pagina",
 	"bs-action-new-page-title": "Aggiungi una nuova pagina",

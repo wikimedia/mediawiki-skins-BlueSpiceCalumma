@@ -75,5 +75,8 @@
 	"bs-edit-mediawiki-sidebar-link-title": "Править боковую панель",
 	"bs-allpages-description": "Все страницы",
 	"bs-support-description": "Поддержка",
-	"bs-calumma-navigation-toggle-tooltip": "Открыть/закрыть"
+	"bs-calumma-navigation-toggle-tooltip": "Открыть/закрыть",
+	"bs-edit-custom-menu-link-title": "Редактировать меню",
+	"bs-edit-custom-menu-link-text": "Редактировать меню",
+	"bs-calumma-toggle-button-tooltip": "Открыть/закрыть"
 }
