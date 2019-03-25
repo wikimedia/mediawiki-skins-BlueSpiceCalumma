@@ -25,7 +25,7 @@ class CustomMenu extends \Skins\Chameleon\Components\Structure {
 				);
 		}
 		$class = $this->getDomElement()->getAttribute( 'class' );
-		$class .= " bs-custom-menu-$menu-container navbar navbar-fixed-top";
+		$class .= " bs-custom-menu-$menu-container navbar";
 
 		$html = \Html::rawElement(
 			'nav',
