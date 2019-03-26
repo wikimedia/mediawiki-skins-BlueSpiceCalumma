@@ -66,5 +66,9 @@
 	"bs-edit-mediawiki-sidebar-link-text": "Uredi bočnu traku",
 	"bs-edit-mediawiki-sidebar-link-title": "Uredi bočnu traku",
 	"bs-allpages-description": "Sve stranice",
-	"bs-support-description": "Podrška"
+	"bs-support-description": "Podrška",
+	"bs-calumma-navigation-toggle-tooltip": "Otvori / zatvori",
+	"bs-edit-custom-menu-link-title": "Uređivanje menija",
+	"bs-edit-custom-menu-link-text": "Uređivanje menija",
+	"bs-calumma-toggle-button-tooltip": "Otvori/Zatvori"
 }

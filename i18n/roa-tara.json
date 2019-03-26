@@ -71,5 +71,8 @@
 	"bs-edit-mediawiki-sidebar-link-title": "Cange 'a barre laterale",
 	"bs-allpages-description": "Tutte le pàggene",
 	"bs-support-description": "Supporte",
-	"bs-calumma-navigation-toggle-tooltip": "Iapre / Achiude"
+	"bs-calumma-navigation-toggle-tooltip": "Iapre / Achiude",
+	"bs-edit-custom-menu-link-title": "Cange 'u menu",
+	"bs-edit-custom-menu-link-text": "Cange 'u menu",
+	"bs-calumma-toggle-button-tooltip": "Iapre / Achiude"
 }
