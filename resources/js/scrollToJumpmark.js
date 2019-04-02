@@ -20,8 +20,8 @@
 			);
 		};
 
-		/* scroll to jumpmark on click (TOC,...) */
-		$( '#bodyContent' ).on( 'click', 'a', function( e ){
+		/* scroll to jumpmark on click (TOC, imagemap, ...) */
+		$( '#bodyContent' ).on( 'click', 'a, map area', function( e ) {
 			var $anchor = $( this );
 			var hash = this.hash;
 
