@@ -5,6 +5,9 @@
 			{{#searchInput}}
 				<input class="form-control" id="{{id}}" name="{{name}}" placeholder="{{placeholder}}" type="{{type}}">
 			{{/searchInput}}
+			{{#target}}
+				<input value="{{page_name}}" name="title" type="hidden">
+			{{/target}}
 			{{#hiddenFields}}
 				<input value="{{fieldValue}}" name="{{fieldName}}" type="hidden">
 			{{/hiddenFields}}

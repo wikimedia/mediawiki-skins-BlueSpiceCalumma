@@ -21,6 +21,7 @@ class MobileSearchForm extends TemplateComponent {
 		$args['id'] = $this->getSkinTemplate()->get( 'bs_search_mobile_id' );
 		$args['searchInput'] = $this->getSkinTemplate()->get( 'bs_search_mobile_input' );
 		$args['target'] = $this->getSkinTemplate()->get( 'bs_search_target' );
+		$args['hiddenFields'] = $this->getSkinTemplate()->get( 'bs_search_hidden_fields' );
 		$args['action'] = $this->getSkinTemplate()->get( 'bs_search_action' );
 		$args['method'] = $this->getSkinTemplate()->get( 'bs_search_method' );
 		return $args;
