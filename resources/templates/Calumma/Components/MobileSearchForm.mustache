@@ -9,6 +9,9 @@
 			{{#target}}
 				<input value="{{page_name}}" name="title" type="hidden">
 			{{/target}}
+			{{#hiddenFields}}
+				<input value="{{fieldValue}}" name="{{fieldName}}" type="hidden">
+			{{/hiddenFields}}
 		</div>
 	</form>
 </div>
