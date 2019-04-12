@@ -27,6 +27,7 @@
 	"bs-mobilemoremenu-edit-title": "Muokkaa",
 	"bs-mobilemoremenu-edit-text": "Muokkaa",
 	"bs-mobilemoremenu-new-section-title": "Uusi osio",
+	"bs-mobilemoremenu-new-section-text": "Uusi osio",
 	"bs-mobilemoremenu-history-title": "Historia",
 	"bs-mobilemoremenu-history-text": "Historia",
 	"bs-sitenav-navigation-title": "Päävalikko",
@@ -50,6 +51,7 @@
 	"bs-calumma-recentchanges-specialpage-link": "Perinteinen näkymä löytyy [[Special:RecentChanges|täältä]].",
 	"bs-calumma-recentchanges-column-header-title": "Tuoreet muutokset",
 	"bs-calumma-recentchanges-history": "Historia",
+	"bs-calumma-recentchanges-diff": "Ero",
 	"bs-all-templates-link-text": "Kaikki mallineet",
 	"bs-to-top-desc": "Siirry sivun alkuun",
 	"bs-calumma-pagetool-history-tooltip": "Sivun historia",
@@ -58,5 +60,6 @@
 	"bs-edit-mediawiki-sidebar-link-title": "Muokkaa sivupalkkia",
 	"bs-allpages-description": "Kaikki sivut",
 	"bs-support-description": "Tuki",
-	"bs-calumma-navigation-toggle-tooltip": "Avaa / sulje"
+	"bs-calumma-navigation-toggle-tooltip": "Avaa / sulje",
+	"bs-calumma-toggle-button-tooltip": "Avaa/Sulje"
 }
