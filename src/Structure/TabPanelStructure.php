@@ -96,7 +96,7 @@ abstract class TabPanelStructure extends TemplateStructure {
 	 * @return string
 	 */
 	protected function getCookieName() {
-		return 'CalummaTab_'.$this->getHtmlId();
+		return 'CalummaTab_' . $this->getHtmlId();
 	}
 
 	/**

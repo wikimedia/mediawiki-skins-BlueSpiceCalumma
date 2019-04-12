@@ -85,7 +85,7 @@ class MobileUserContainer extends BasePanel {
 			$html .= '<li><a text="' . $displayName;
 			$html .= '" href="' . $template->getSkin()->getUser()->getUserPage()->getFullURL() . '">';
 			$html .= '<i class="bs-icon-user"></i>';
-			$html .= '<span>' .  $userPageMessage->plain() . '</span></a></li>';
+			$html .= '<span>' . $userPageMessage->plain() . '</span></a></li>';
 
 			// notifications
 			$specialNotifications = \Title::newFromText( 'Notifications', NS_SPECIAL );
