@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Otokoume",
-			"Shirayuki"
+			"Shirayuki",
+			"珍庵"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice の外装",
@@ -18,6 +19,8 @@
 	"bs-mobilemoremenu-view-text": "閲覧",
 	"bs-mobilemoremenu-edit-title": "編集",
 	"bs-mobilemoremenu-edit-text": "編集",
+	"bs-mobilemoremenu-new-section-title": "新しい節",
+	"bs-mobilemoremenu-new-section-text": "新しい節",
 	"bs-mobilemoremenu-history-title": "履歴",
 	"bs-mobilemoremenu-history-text": "履歴",
 	"bs-sitenav-navigation-section-mobileusercontainer": "利用者",
@@ -38,8 +41,11 @@
 	"bs-calumma-pagetool-history-tooltip": "ページの履歴",
 	"bs-calumma-pagetool-talk-tooltip": "議論",
 	"bs-calumma-pagetool-view-tooltip": "閲覧",
+	"bs-calumma-pagetool-watch-tooltip": "ウォッチ",
+	"bs-calumma-pagetool-unwatch-tooltip": "ウォッチ解除",
 	"bs-edit-mediawiki-sidebar-link-text": "サイドバーを編集",
 	"bs-edit-mediawiki-sidebar-link-title": "サイドバーを編集",
+	"bs-allpages-description": "全ページ",
 	"bs-support-description": "サポート",
 	"bs-calumma-navigation-toggle-tooltip": "開く / 閉じる",
 	"bs-edit-custom-menu-link-title": "メニューを編集",
