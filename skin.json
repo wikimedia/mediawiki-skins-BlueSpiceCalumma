@@ -12,7 +12,10 @@
 	"namemsg": "bluespicecalumma-skin",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.31.0"
+		"MediaWiki": ">= 1.31.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 3.0"
+		}
 	},
 	"attributes": {
 		"BlueSpiceFoundation": {
