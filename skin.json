@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceCalumma",
-	"version": "3.1.0-alpha",
+	"version": "3.2.0-alpha",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"Daniel Vogel <d.vogel@hallowelt.com>",
@@ -12,9 +12,9 @@
 	"namemsg": "bluespicecalumma-skin",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.31.0",
+		"MediaWiki": ">= 1.34.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 3.0"
+			"BlueSpiceFoundation": ">= 3.2"
 		}
 	},
 	"attributes": {
