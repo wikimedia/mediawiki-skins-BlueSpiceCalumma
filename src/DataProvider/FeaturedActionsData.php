@@ -7,10 +7,10 @@ use BlueSpice\Calumma\SkinDataFieldDefinition as SDFD;
 class FeaturedActionsData {
 
 	/**
-	 *
 	 * @param \Skin $skin
 	 * @param \SkinTemplate &$skintemplate
 	 * @param array &$data
+	 * @throws \MWException
 	 */
 	public static function populate( $skin, &$skintemplate, &$data ) {
 		self::initFeaturedActions( $skin, $skintemplate, $data );
@@ -46,7 +46,28 @@ class FeaturedActionsData {
 	public static function populateActionsEdit( $skin, &$skintemplate, &$data ) {
 		$curTitle = $skin->getTitle();
 
+		$newSection = [
+			'position' => '10',
+			'id' => 'new-section',
+		];
+
+		if ( !$skin->getUser()->isLoggedIn() ) {
+			$newSection += [
+				'title' => wfMessage( 'bs-action-edit-please-login-title' )->plain(),
+				'href' => self::getLoginUrl( $skin )
+			];
+
+			$data[SkinData::FEATURED_ACTIONS]['edit']['new-section'] = $newSection;
+			return;
+		}
+
 		if ( !$curTitle->userCan( 'edit' ) ) {
+			$newSection += [
+				'title' => wfMessage( 'bs-action-edit-disabled-title' )->plain(),
+				'href' => ''
+			];
+
+			$data[SkinData::FEATURED_ACTIONS]['edit']['new-section'] = $newSection;
 			return;
 		}
 
@@ -65,7 +86,7 @@ class FeaturedActionsData {
 			}
 		}
 
-		if ( !$curTitle->isSpecialPage() && $curTitle->userCan( 'edit' ) ) {
+		if ( !$curTitle->isSpecialPage() ) {
 			$defaultEditActions['new-section'] = [
 				'position' => '10',
 				'id' => 'new-section',
@@ -82,16 +103,37 @@ class FeaturedActionsData {
 	}
 
 	/**
-	 *
 	 * @param \Skin $skin
 	 * @param \SkinTemplate &$skintemplate
 	 * @param array &$data
+	 * @throws \MWException
 	 */
 	public static function populateActionsNew( $skin, &$skintemplate, &$data ) {
 		$curTitle = $skin->getTitle();
 		$curUser = $skin->getUser();
 
+		$newSection = [
+			'position' => '10',
+			'id' => 'new-section'
+		];
+
+		if ( !$skin->getUser()->isLoggedIn() ) {
+			$newSection += [
+				'title' => wfMessage( 'bs-action-new-please-login-title' )->plain(),
+				'href' => self::getLoginUrl( $skin )
+			];
+
+			$data[SkinData::FEATURED_ACTIONS]['new']['new-section'] = $newSection;
+			return;
+		}
+
 		if ( !$curUser->isAllowed( 'createpage' ) ) {
+			$newSection += [
+				'title' => wfMessage( 'bs-action-new-disabled-title' )->plain(),
+				'href' => ''
+			];
+
+			$data[SkinData::FEATURED_ACTIONS]['new']['new-section'] = $newSection;
 			return;
 		}
 
@@ -135,5 +177,20 @@ class FeaturedActionsData {
 		];
 
 		$data[SkinData::FEATURED_ACTIONS]['new'] += $defaultNewActions;
+	}
+
+	/**
+	 * @param \Skin $skin
+	 * @return string
+	 * @throws \MWException
+	 */
+	private static function getLoginUrl( $skin ) {
+		$title = \SpecialPage::getTitleFor( 'Login' );
+		$login = $title->newFromText( 'Login', NS_SPECIAL );
+
+		$returnToPage = $skin->getTitle();
+		$query = [ 'returnTo' => $returnToPage->getPrefixedDBkey() ];
+
+		return $login->getFullURL( $query );
 	}
 }
