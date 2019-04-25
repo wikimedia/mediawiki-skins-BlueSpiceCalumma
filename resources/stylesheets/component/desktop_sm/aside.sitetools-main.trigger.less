@@ -10,8 +10,8 @@ body .sitetools-main.active {
 		transition: right .3s;
 		z-index: 11;
 		i.sitetools-main-collapse::before{
-			font-family: 'bs-button';
-			content: "\e901";
+			font-family: 'entypo';
+			content: "\e93c";
 			font-style: initial;
 			font-size: 21px;
 			line-height: 33.6px;
@@ -38,8 +38,10 @@ body.sitetools-main-collapse {
 	.sidebar-toggle[data-toggle~="sitetools-main-collapse"]{
 		right: 0px;
 		transition: right .3s;
+		width: 80px;
 		i.sitetools-main-collapse::before{
 			font-size: 31px;
+			float: left;
 			transition: font-size .1s;
 			transition-delay: .3s;
 		}
