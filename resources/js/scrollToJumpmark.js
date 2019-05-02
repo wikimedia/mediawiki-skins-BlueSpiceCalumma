@@ -10,6 +10,7 @@
 			if ( !jumpmark ) {
 				return;
 			}
+
 			var position = $( jumpmark ).position().top;
 
 			$( 'body, html').animate(
@@ -29,14 +30,14 @@
 				return;
 			}
 
-			if ( !$anchor.attr( 'href' ) || $anchor.attr( 'href' ).indexOf( '#' ) !== 0 ) {
-				return;
-			}
-
 			if ( hash !== '' ) {
 				var jumpmarkId = hash.replace( '#', '' );
 
 				var jumpmark = d.getElementById( jumpmarkId );
+				if ( !jumpmark ) {
+					return;
+				}
+
 				var position = $( jumpmark ).position().top;
 
 				$( 'body, html').animate(
@@ -45,6 +46,8 @@
 					},
 					400
 				);
+
+				return false;
 			}
 		});
 	});
