@@ -20,9 +20,9 @@
 	"attributes": {
 		"BlueSpiceFoundation": {
 			"RendererRegistry": {
-				"panel": "\\BlueSpice\\Calumma\\Renderer\\Panel",
-				"calummacustommenu": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu",
-				"calummacustommenuitem": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu\\Item"
+				"panel": "\\BlueSpice\\Calumma\\Renderer\\Panel::factory",
+				"calummacustommenu": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu::factory",
+				"calummacustommenuitem": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu\\Item::factory"
 			},
 			"LessVarsRegistry": {
 				"bs-color-primary": "#3e5389",
