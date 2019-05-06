@@ -58,9 +58,9 @@ class MobileUserContainer extends BasePanel {
 			$notifications = SDFD::countNotifications( $template );
 
 			// mediawiki-sidebar usermenu button
-			$html .= '<a role="button" class="dropdown-toggle" data-toggle="dropdown"';
+			$html .= '<a role="button" class="dropdown-toggle" data-toggle="dropdown" ';
 			$html .= 'data-notification-badge="' . $notifications['notifications-badge-active'] . '"';
-			$html .= '><img src="' . $imageSrc . '"';
+			$html .= '><img src="' . $imageSrc . '" ';
 			$html .= 'class="bs-profile-img" ';
 			$html .= 'title="' . $displayName;
 			$html .= '" alt="' . $userName . '" width="24px" height="24px" />';
@@ -72,7 +72,7 @@ class MobileUserContainer extends BasePanel {
 
 			// head with chevron, image and name
 			$html .= '<li class="bs-personal-menu-container-user"><i class="bs-navigation-main-back"></i>';
-			$html .= '<img src="' . $imageSrc . '" class="bs-profile-img"';
+			$html .= '<img src="' . $imageSrc . '" class="bs-profile-img" ';
 			$html .= 'title="' . $displayName;
 			$html .= '" alt="' . $userName . '" width="32px" height="32px" />';
 			$html .= '<span>' . $userName . '</span>';
