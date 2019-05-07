@@ -23,10 +23,13 @@
 
 		/* scroll to jumpmark on click (TOC, imagemap, ...) */
 		$( '#bodyContent' ).on( 'click', 'a, map area', function( e ) {
-			var $anchor = $( this );
 			var hash = this.hash;
 
-			if( $anchor.hasClass( 'external' ) ) {
+			if( $( this ).hasClass( 'external' ) ) {
+				return;
+			}
+
+			if( this.pathname !== mw.util.getUrl() ) {
 				return;
 			}
 
