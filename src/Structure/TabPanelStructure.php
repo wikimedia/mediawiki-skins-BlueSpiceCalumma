@@ -44,9 +44,8 @@ abstract class TabPanelStructure extends TemplateStructure {
 		$args = parent::getTemplateArgs();
 		$args['id'] = $this->getHtmlId();
 
-		$this->ensureActiveTab( $args[$this->getSubcomponentsArgsKey()] );
 		if ( $this->getActiveTabId() === null ) {
-			$args[$this->getSubcomponentsArgsKey()][0]['active'] = true;
+			$this->ensureActiveTab( $args[$this->getSubcomponentsArgsKey()] );
 		}
 
 		return $args;
