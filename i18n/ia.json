@@ -4,6 +4,9 @@
 			"McDutchie"
 		]
 	},
+	"bs-action-new-please-login-title": "Per favor aperi session pro adder un nove pagina",
+	"bs-action-new-disabled-title": "{{GENDER:|Tu}} non ha le permission de crear un nove pagina",
+	"bs-action-edit-disabled-title": "{{GENDER:|Tu}} non ha le permission de modificar iste pagina",
 	"bs-to-top-desc": "Saltar al initio",
 	"bs-edit-mediawiki-sidebar-link-text": "Modificar barra lateral",
 	"bs-edit-mediawiki-sidebar-link-title": "Modificar barra lateral"
