@@ -18,6 +18,7 @@
 	"bs-action-new-page-text": "Новая старонка",
 	"bs-action-new-please-login-title": "Калі ласка, увайдзіце, каб дадаць новую старонку",
 	"bs-action-edit-please-login-title": "Калі ласка, увайдзіце, каб рэдагаваць гэтую старонку",
+	"bs-action-new-disabled-title": "{{GENDER:|Вы}} ня маеце дазволу на стварэньне новай старонкі",
 	"bs-action-new-page-title": "Дадаць новую старонку",
 	"bs-action-new-subpage-text": "Новая падстаронка",
 	"bs-action-new-subpage-title": "Дадаць новую падстаронку да $1",
