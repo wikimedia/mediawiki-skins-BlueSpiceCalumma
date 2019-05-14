@@ -21,6 +21,9 @@ class Export extends BasePanel {
 	public function getBody() {
 		$linkDefs = $this->skintemplate->get( SkinData::EXPORT_MENU );
 		$this->maybeAddPrint( $linkDefs );
+		foreach ( $linkDefs as &$linkDef ) {
+			$linkDef['rel'] = 'nofollow';
+		}
 
 		$links = new LinkList( 'dummy-id', [
 			'content' => $linkDefs
