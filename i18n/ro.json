@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Strainu"
+			"Strainu",
+			"Andrei Stroe"
 		]
 	},
-	"bs-to-top-desc": "Derulează la începutul paginii"
+	"bs-to-top-desc": "Derulează la început"
 }

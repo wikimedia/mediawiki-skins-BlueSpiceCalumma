@@ -3,7 +3,8 @@
 		"authors": [
 			"A Chinese Wikipedian",
 			"Liuxinyu970226",
-			"94rain"
+			"94rain",
+			"科劳"
 		]
 	},
 	"bs-calumma-pref-toggle-navigaiton-main": "自动隐藏主菜单",
@@ -15,6 +16,10 @@
 	"bs-action-new-section-text": "新章节",
 	"bs-action-new-section-title": "添加新节至该作品",
 	"bs-action-new-page-text": "新页面",
+	"bs-action-new-please-login-title": "要创建新页面，请登录",
+	"bs-action-edit-please-login-title": "要编辑此页面，请登录",
+	"bs-action-new-disabled-title": "没有权限创建新的页面",
+	"bs-action-edit-disabled-title": "没有权限编辑此页面",
 	"bs-action-new-page-title": "添加新页面",
 	"bs-action-new-subpage-text": "新子页面",
 	"bs-action-new-subpage-title": "给$1新增子页面",
