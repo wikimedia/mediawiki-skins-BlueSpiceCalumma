@@ -22,7 +22,12 @@
 			"RendererRegistry": {
 				"panel": "\\BlueSpice\\Calumma\\Renderer\\Panel::factory",
 				"calummacustommenu": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu::factory",
-				"calummacustommenuitem": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu\\Item::factory"
+				"calummacustommenuitem": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu\\Item::factory",
+				"pageheader-breadcrumb": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\BreadCrumb::factory",
+				"pageheader-category": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\Category::factory",
+				"pageheader-lastedit": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\LastEdit::factory",
+				"pageheader-editbutton": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\EditButton::factory",
+				"pageheader-pageinfo": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\PageInfo::factory"
 			},
 			"LessVarsRegistry": {
 				"bs-color-primary": "#3e5389",
@@ -45,10 +50,7 @@
 				"bs-content-toc-background": "@bs-background-primary"
 			},
 			"PageToolRegistry": {
-				"view": "BlueSpice\\Calumma\\PageTool\\View::factory",
-				"talk": "BlueSpice\\Calumma\\PageTool\\Talk::factory",
-				"history": "BlueSpice\\Calumma\\PageTool\\History::factory",
-				"watch": "BlueSpice\\Calumma\\PageTool\\Watch::factory"
+				"history": "BlueSpice\\Calumma\\PageTool\\History::factory"
 			}
 		},
 		"BlueSpiceCustomMenu": {
@@ -93,7 +95,9 @@
 		},
 		"skin.bluespicecalumma.scripts": {
 			"scripts": [
+				"js/Breadcrumb.js",
 				"js/SidebarToggle.js",
+				"js/skin.bluespicecalumma.pageinfo.QmPanel.js",
 				"js/ToggleButton.js",
 				"js/skin.bluespicecalumma.scrollToTop.js",
 				"js/scrollToJumpmark.js",
