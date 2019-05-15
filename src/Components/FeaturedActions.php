@@ -16,13 +16,6 @@ class FeaturedActions extends Component {
 		$data = $this->getSkinTemplate()->get( SkinData::FEATURED_ACTIONS );
 		$items = [];
 
-		if ( array_key_exists( 'edit', $data ) ) {
-			$elements = $this->sortFeaturedActions( $data['edit'] );
-			$items += [
-				'edit' => $elements
-			];
-		}
-
 		if ( array_key_exists( 'new', $data ) ) {
 			$elements = $this->sortFeaturedActions( $data['new'] );
 			$items += [
