@@ -6,13 +6,14 @@ Ext.define( 'BS.Calumma.dialog.NewPage', {
 	namespace: '',
 
 	makeItems: function() {
+		var me = this;
 		this.cbPageName = Ext.create( 'BS.form.field.TitleCombo', {
 			fieldLabel: mw.message('bs-action-new-page-text').plain(),
 			enableKeyEvents: true,
 			value: this.namespace,
 			listeners: {
 				focusleave: function ( comboBox ) {
-					this.cbPageName.select( document.getElementById( this.cbPageName.id + '-inputEl' ).value );
+					me.cbPageName.select( document.getElementById( me.cbPageName.id + '-inputEl' ).value );
 				}
 			}
 		} );
