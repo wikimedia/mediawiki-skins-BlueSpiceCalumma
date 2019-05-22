@@ -28,9 +28,20 @@
 	color: #fff !important;
 }
 
-/*Special:AllPages*/
+/* Special:AllPages */
 body.ns-special .mw-allpages-body {
 	columns: 32em 2;
 	-moz-columns: 32em 2;
 	-webkit-columns: 32em 2;
+}
+
+/* Special:Specialpages */
+body.ns-special {
+	#content #bodyContent {
+		li.mw-specialpagerestricted {
+			& > a {
+				font-weight: bold;
+			}
+		}
+	}
 }
