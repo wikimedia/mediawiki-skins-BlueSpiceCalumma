@@ -3,7 +3,8 @@
 		"authors": [
 			"Otokoume",
 			"Shirayuki",
-			"珍庵"
+			"珍庵",
+			"Suchichi02"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice の外装",
@@ -37,7 +38,7 @@
 	"bs-calumma-recentchanges-column-header-title": "最近の更新",
 	"bs-calumma-recentchanges-history": "履歴",
 	"bs-calumma-recentchanges-diff": "差分",
-	"bs-to-top-desc": "ページの先頭にスクロール",
+	"bs-to-top-desc": "トップへ移動",
 	"bs-calumma-pagetool-history-tooltip": "ページの履歴",
 	"bs-calumma-pagetool-talk-tooltip": "議論",
 	"bs-calumma-pagetool-view-tooltip": "閲覧",
