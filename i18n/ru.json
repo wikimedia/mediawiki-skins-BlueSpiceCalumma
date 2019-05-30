@@ -20,6 +20,8 @@
 	"bs-action-new-section-text": "Новый раздел",
 	"bs-action-new-section-title": "Добавить новый раздел к этой странице",
 	"bs-action-new-page-text": "Новая страница",
+	"bs-action-new-please-login-title": "Пожалуйста, войдите, чтобы добавить новую страницу",
+	"bs-action-edit-please-login-title": "Пожалуйста, войдите, чтобы изменить эту страницу",
 	"bs-action-new-page-title": "Добавить новую страницу",
 	"bs-action-new-subpage-text": "Новая подстраница",
 	"bs-action-new-subpage-title": "Добавить новую подстраницу в $1",
