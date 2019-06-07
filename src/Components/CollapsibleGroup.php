@@ -66,7 +66,11 @@ class CollapsibleGroup extends TemplateComponent {
 	 * @return bool
 	 */
 	public function getGroupCollapseState() {
-		return $this->defs['collapse'];
+		if ( isset( $this->defs['collapse'] ) ) {
+			return $this->defs['collapse'];
+		}
+
+		return false;
 	}
 
 }
