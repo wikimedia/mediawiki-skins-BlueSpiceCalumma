@@ -53,7 +53,13 @@ interface IPanel {
 	/**
 	 *
 	 * @param \IContextSource $context
-	 * @return boolean
+	 * @return bool
 	 */
 	public function shouldRender( $context );
+
+	/**
+	 *
+	 * @return bool
+	 */
+	public function getPanelCollapseState();
 }
