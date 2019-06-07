@@ -1,0 +1,29 @@
+
+.bs-mobile-featured-actions-button {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 15;
+
+	& > i {
+		height: 48px;
+		width: 48px;
+		color: @mobile-more-menu-dropdown-color;
+		background-color: @mobile-more-menu-dropdown-bg-color;
+		border-radius: 24px;
+		display: block;
+		text-align: center;
+
+		&::before {
+			font-family: 'entypo';
+			content: "\e9f7";
+			font-weight: 700;
+			font-size: 250% !important;
+			font-style: normal;
+		}
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+}
