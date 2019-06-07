@@ -30,7 +30,7 @@ class Views extends StandardSkinDataLinkList {
 	 */
 	protected function getStandardSkinDataLinkListDefinition() {
 		$contentNavigation = $this->skintemplate->get( 'content_navigation' );
-		return $contentNavigation['namespaces'] + $contentNavigation['views'];
+		return $contentNavigation['views'];
 	}
 
 }
