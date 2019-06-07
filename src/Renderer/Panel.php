@@ -148,6 +148,7 @@ class Panel extends Renderer {
 		];
 		$args['trigger-type'] = 'body';
 		$args['toggle-collapse'] = true;
+		$args['collapse'] = $this->panelInterface->getPanelCollapseState();
 
 		if ( $this->panelInterface instanceof IFlyout ) {
 			$this->addIFlyoutArgs( $args, $this->panelInterface );

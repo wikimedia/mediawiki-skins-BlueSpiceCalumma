@@ -4,7 +4,7 @@ namespace BlueSpice\Calumma\Panel;
 
 use BlueSpice\Calumma\SkinDataPanel;
 
-class PlainHTML extends SkinDataPanel implements \BlueSpice\Calumma\IPanel {
+class PlainHTML extends SkinDataPanel {
 
 	/**
 	 *
