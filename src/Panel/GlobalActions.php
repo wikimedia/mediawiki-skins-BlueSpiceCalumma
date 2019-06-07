@@ -16,6 +16,12 @@ class GlobalActions extends BasePanel {
 
 	/**
 	 *
+	 * @var string
+	 */
+	protected $sectionId = '';
+
+	/**
+	 *
 	 * @param SkinTemplate $skintemplate
 	 */
 	public function __construct( $skintemplate ) {
@@ -59,11 +65,13 @@ class GlobalActions extends BasePanel {
 		foreach ( $sections as $section => $links ) {
 			$linklistgroup = new SimpleLinkListGroup( array_values( $links ) );
 
-			$sectionId = str_replace( ' ', '-', $section );
+			$this->sectionId = str_replace( ' ', '-', $section );
+
 			$collapsibleGroup = new CollapsibleGroup( [
-				'id' => $sectionId,
+				'id' => $this->sectionId,
 				'title' => wfMessage( $section ),
-				'content' => $linklistgroup->getHtml()
+				'content' => $linklistgroup->getHtml(),
+				'collapse' => $this->getPanelCollapseState()
 			] );
 
 			$html .= $collapsibleGroup->getHtml();
@@ -116,5 +124,18 @@ class GlobalActions extends BasePanel {
 		ksort( $helper );
 
 		return array_values( $helper );
+	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	public function getPanelCollapseState() {
+		if ( $this->sectionId === 'bs-sitenav-globalactions-section-globalactions' ) {
+			return false;
+		}
+		if ( $this->sectionId === 'bs-sitenav-globalactions-section-management' ) {
+			return false;
+		}
 	}
 }

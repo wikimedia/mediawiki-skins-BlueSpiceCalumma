@@ -85,4 +85,12 @@ abstract class BasePanel implements IPanel {
 	public function shouldRender( $context ) {
 		return true;
 	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	public function getPanelCollapseState() {
+		return false;
+	}
 }
