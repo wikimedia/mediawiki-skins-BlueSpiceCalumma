@@ -5,12 +5,14 @@ namespace BlueSpice\Calumma\Renderer;
 use Config;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
-use BlueSpice\Renderer;
+use BlueSpice\TemplateRenderer;
 use BlueSpice\Renderer\Params;
 use BlueSpice\Calumma\IPanel;
 use BlueSpice\Calumma\IFlyout;
+use BlueSpice\Utility\CacheHelper;
+use BlueSpice\TemplateFactory;
 
-class Panel extends Renderer {
+class Panel extends TemplateRenderer {
 
 	const PARAM_INSTANCE = 'instance';
 
@@ -22,15 +24,9 @@ class Panel extends Renderer {
 
 	/**
 	 *
-	 * @var \TemplateParser
+	 * @var array
 	 */
-	protected $templateParser = null;
-
-	/**
-	 *
-	 * @var string
-	 */
-	protected $renderedTemplate = '';
+	protected $conditionalArgs = [ 'body', 'tools', 'badges' ];
 
 	/**
 	 * Constructor
@@ -38,12 +34,23 @@ class Panel extends Renderer {
 	 * @param Params $params
 	 * @param LinkRenderer|null $linkRenderer
 	 * @param IContextSource|null $context
-	 * @param string $name | ''
+	 * @param string $name | '',
+	 * @param CacheHelper|null $cacheHelper
+	 * @param TemplateFactory|null $templateFactory
 	 */
 	protected function __construct( Config $config, Params $params,
 		LinkRenderer $linkRenderer = null, IContextSource $context = null,
-		$name = '' ) {
-		parent::__construct( $config, $params, $linkRenderer, $context, $name );
+		$name = '', CacheHelper $cacheHelper = null,
+		TemplateFactory $templateFactory = null ) {
+		parent::__construct(
+			$config,
+			$params,
+			$linkRenderer,
+			$context,
+			$name,
+			$cacheHelper,
+			$templateFactory
+		);
 
 		$this->params = $params;
 
@@ -51,75 +58,15 @@ class Panel extends Renderer {
 		if ( $this->panelInterface instanceof IPanel === false ) {
 			throw new \Exception( 'No IPanel provided!' );
 		}
+		$this->args = array_merge( $this->args, $this->getTemplateArgs() );
 	}
 
 	/**
 	 *
 	 * @return string
 	 */
-	public function render() {
-		$this->initTemplateParser();
-		$this->renderTemplate();
-		return $this->renderedTemplate;
-	}
-
-	/**
-	 *
-	 * @var \TemplateParser[]
-	 */
-	protected static $templateParsers = [];
-
-	/**
-	 * Initializes the internal \TemplateParser object
-	 */
-	protected function initTemplateParser() {
-		$templatePath = $this->getTemplatePath();
-		if ( !isset( static::$templateParsers[$templatePath ] ) ) {
-			static::$templateParsers[$templatePath ] = new \TemplateParser( $templatePath );
-		}
-
-		$this->templateParser = static::$templateParsers[$templatePath ];
-	}
-
-	/**
-	 *
-	 * @return string
-	 */
-	protected function getTemplatePath() {
-		$pathname = $this->getTemplatePathName();
-		$parts = explode( '.', $pathname );
-		array_pop( $parts );
-		$subPath = implode( '/', $parts );
-
-		return __DIR__ . "/../../resources/templates/$subPath";
-	}
-
-	/**
-	 *
-	 * @return string
-	 */
-	protected function getTemplateName() {
-		$pathname = $this->getTemplatePathName();
-		$parts = explode( '.', $pathname );
-		return array_pop( $parts );
-	}
-
-	/**
-	 *
-	 * @return string
-	 */
-	protected function getTemplatePathName() {
-		return 'Calumma.Components.Panel';
-	}
-
-	/**
-	 * Renders the template
-	 */
-	protected function renderTemplate() {
-		$this->renderedTemplate = $this->templateParser->processTemplate(
-			$this->getTemplateName(),
-			$this->getTemplateArgs()
-		);
+	public function getTemplateName() {
+		return 'BlueSpiceCalumma.Calumma.Components.Panel';
 	}
 
 	/**
@@ -159,8 +106,6 @@ class Panel extends Renderer {
 
 		return $args;
 	}
-
-	protected $conditionalArgs = [ 'body', 'tools', 'badges' ];
 
 	/**
 	 *
