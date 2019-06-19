@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"William Surya Permana"
+			"William Surya Permana",
+			"Bangjapra"
 		]
 	},
 	"bluespicecalumma-desc": "Kulit BlueSpice",
@@ -19,7 +20,7 @@
 	"bs-action-new-page-title": "Tambah halaman baru",
 	"bs-action-new-subpage-text": "Subhalaman baru",
 	"bs-action-new-subpage-title": "Tambah subhalaman baru di $1",
-	"bs-action-new-file-text": "Berkas unggahan baru",
+	"bs-action-new-file-text": "Unggah berkas baru",
 	"bs-action-new-file-title": "Unggah berkas baru",
 	"bs-userbutton-notifications-link-text": "Pemberitahuan",
 	"bs-userbutton-userpage-link-text": "Profil saya",
