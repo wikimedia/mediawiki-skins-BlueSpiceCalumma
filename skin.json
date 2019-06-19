@@ -99,7 +99,6 @@
 				"js/scrollToJumpmark.js",
 				"js/mobile.content.js",
 				"js/skin.bluespicecalumma.featuredActions.js",
-				"js/skin.bluespicecalumma.loadindicator.js",
 				"js/skin.bluespicecalumma.customMenu.header.js"
 			],
 			"dependencies": [
