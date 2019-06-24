@@ -1,4 +1,4 @@
-( function( $, d, undefined ) {
+( function( $, d, bs, undefined ) {
 
 	//AKA "element-bound off-canvas"
 	function DynamicGraphicalList( element, cfg ) {
@@ -36,6 +36,13 @@
 			.addClass( 'dynamic-graphical-list-body' )
 			.appendTo( this.$inner );
 
+		this.loadIndicator = new bs.LoadIndicator( {
+			$element: this.$body,
+			// We want to show loading right away, on every render
+			// must be positive integer
+			inTimeout: 1
+		} );
+
 		this.keyHandler = $.proxy( this.closeOnEsc, this );
 		$( document ).on( 'keydown', this.keyHandler );
 	};
@@ -51,8 +58,10 @@
 
 	DynamicGraphicalList.prototype.show = function() {
 		this.closeOtherFylouts();
+		if ( this.isRendered === false ) {
+			this.loadIndicator.pushPending();
+		}
 
-		this.$outer.addClass( 'dynamic-graphical-list-loading' );
 		this.$outer.removeClass( 'dynamic-graphical-list-hidden' );
 		this.$element.addClass( 'dynamic-graphical-list-visible' );
 		this.$element.parents('.dynamic-graphical-list-link-wrapper').first().addClass( 'dynamic-graphical-list-visible' );
@@ -89,7 +98,7 @@
 		//TODO: Dispatch DOMElement|jQuery|string(dom-id)|string|callback
 		var getBodyPromise = this.body( this, this.$body );
 		getBodyPromise.done( function( content ) {
-			me.$outer.removeClass( 'dynamic-graphical-list-loading' );
+			me.loadIndicator.popPending();
 			me.$body.append( content );
 			me.isRendered = true;
 		});
@@ -134,7 +143,7 @@
 
 	$.dynamicGraphicalListDirection = direction;
 
-})( jQuery, document );
+})( jQuery, document, blueSpice );
 
 $( document ).on( 'click', "*[data-target]", function(e){
 	var target = $( this ).data( "target" );
