@@ -182,7 +182,6 @@ class SkinDataFieldDefinition {
 
 	/**
 	 *
-	 * @global string $wgLogo
 	 */
 	public function initLogo() {
 		global $wgLogo;
