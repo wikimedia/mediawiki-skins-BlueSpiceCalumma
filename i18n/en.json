@@ -98,5 +98,6 @@
 	"bs-calumma-pageinfosentence": "This page is $1",
 	"bs-calumma-pageinfosentence-item-separator": "and",
 	"bs-calumma-pageinfosentence-item-separator-greater-two": ",",
-	"bs-calumma-pageinfosentence-item-class-separator": "but"
+	"bs-calumma-pageinfosentence-item-class-separator": "but",
+	"bs-calumma-full-screen-button-tooltip": "Full Screen/Normal mode"
 }

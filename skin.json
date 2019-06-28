@@ -99,6 +99,7 @@
 				"js/SidebarToggle.js",
 				"js/skin.bluespicecalumma.pageinfo.QmPanel.js",
 				"js/ToggleButton.js",
+				"js/FullScreenButton.js",
 				"js/skin.bluespicecalumma.scrollToTop.js",
 				"js/scrollToJumpmark.js",
 				"js/mobile.content.js",
