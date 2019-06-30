@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"bluespicecalumma-desc": "Руво „BlueSpice“",
@@ -23,7 +24,7 @@
 	"bs-action-new-page-title": "Додај нова страница",
 	"bs-action-new-subpage-text": "Нова потстраница",
 	"bs-action-new-subpage-title": "Додај нова потстраница во $1",
-	"bs-action-new-file-text": "Новоподигната податотека",
+	"bs-action-new-file-text": "Подигни нова податотека",
 	"bs-action-new-file-title": "Подигни нова податотека",
 	"bs-userbutton-notifications-link-text": "Известувања",
 	"bs-userbutton-userpage-link-text": "Мој профил",
