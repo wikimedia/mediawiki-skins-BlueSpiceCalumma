@@ -48,14 +48,18 @@ Ext.define( 'BS.Calumma.flyout.RecentChanges', {
 			plain: true,
 			iconCls: 'bs-icon-history',
 			text: dataset.get( 'hist_link' ),
-			onClick: function(){}
+			onClick: function(){
+				window.location = dataset.get( 'hist_url' );
+			}
 		} ];
 		if ( dataset.get( 'diff_link' ) !== '' ) {
 			items.push( {
 				plain: true,
 				iconCls: 'bs-icon-history',
 				text: dataset.get( 'diff_link' ),
-				onClick: function(){}
+				onClick: function() {
+					window.location = dataset.get( 'diff_url' );
+				}
 			} );
 		}
 		return new Ext.menu.Menu( {
