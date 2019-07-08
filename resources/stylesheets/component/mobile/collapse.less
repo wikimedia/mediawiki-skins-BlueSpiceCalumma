@@ -22,4 +22,11 @@ body {
 		}
 	}
 
+	&:not( .navigation-main-collapse ) .sidebar-toggle[data-toggle~="navigation-main-collapse"].calumma-mobile-visible-close-only{
+		display: block;
+	}
+	&.navigation-main-collapse .sidebar-toggle[data-toggle~="navigation-main-collapse"].calumma-mobile-visible-close-only{
+		display: none;
+	}
+
 }

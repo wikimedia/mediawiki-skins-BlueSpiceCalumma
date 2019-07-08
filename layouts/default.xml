@@ -24,7 +24,7 @@
 			</component>
 		</component>
 		<component type="\BlueSpice\Calumma\Components\Aside" data-toggle-by='navigation-main-collapse' class="navigation-main">
-			<component type="\BlueSpice\Calumma\Components\SidebarToggle" data-toggle="navigation-main-collapse" class="calumma-desktop-visible"/>
+			<component type="\BlueSpice\Calumma\Components\SidebarToggle" data-toggle="navigation-main-collapse" class="calumma-desktop-visible calumma-mobile-visible-close-only"/>
 			<component type="BlueSpice\Calumma\Components\SiteNavTabs" data-flyout-direction="east" />
 		</component>
 		<component type="\BlueSpice\Calumma\Components\Content">
