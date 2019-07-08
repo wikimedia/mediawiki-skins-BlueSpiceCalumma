@@ -44,19 +44,23 @@ Ext.define( 'BS.Calumma.flyout.RecentChanges', {
 	},
 
 	makeTooleMenu: function( dataset ) {
-		return new Ext.menu.Menu( {
-			items: [{
+		var items = [ {
+			plain: true,
+			iconCls: 'bs-icon-history',
+			text: dataset.get( 'hist_link' ),
+			onClick: function(){}
+		} ];
+		if ( dataset.get( 'diff_link' ) !== '' ) {
+			items.push( {
 				plain: true,
 				iconCls: 'bs-icon-history',
 				text: dataset.get( 'diff_link' ),
 				onClick: function(){}
-			}, {
-				plain: true,
-				iconCls: 'bs-icon-history',
-				text: dataset.get( 'hist_link' ),
-				onClick: function(){}
-			}]
-		});
+			} );
+		}
+		return new Ext.menu.Menu( {
+			items: items
+		} );
 	},
 
 	makeGridPanelColums: function() {
