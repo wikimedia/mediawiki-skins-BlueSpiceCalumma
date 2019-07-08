@@ -82,5 +82,21 @@
 	"bs-calumma-navigation-toggle-tooltip": "Open / close",
 	"bs-edit-custom-menu-link-title": "Edit menu",
 	"bs-edit-custom-menu-link-text": "Edit menu",
-	"bs-calumma-toggle-button-tooltip": "Open/Close"
+	"bs-calumma-toggle-button-tooltip": "Open/Close",
+	"bs-calumma-breadcrumbs-nstab-main": "All pages",
+	"bs-calumma-breadcrumbs-pages": "You are here",
+	"bs-calumma-breadcrumbs-pages-title": "You are currently viewing \"$1\"",
+	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Subpage|Subpages}} of \"$2\"",
+	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Subpage|$1 subpages}} of \"$2\"",
+	"bs-calumma-category-add-category-text": "Add category",
+	"bs-calumma-category-add-category-title": "Add category",
+	"bs-calumma-page-last-edit-text": "This page was last edited $1 ago by $2",
+	"bs-calumma-page-watch-title": "Watch \"$1\"",
+	"bs-calumma-page-watch-text": "Watch",
+	"bs-calumma-page-unwatch-title": "Do not watch \"$1\" anymore",
+	"bs-calumma-page-unwatch-text": "Do not watch anymore",
+	"bs-calumma-pageinfosentence": "This page is $1",
+	"bs-calumma-pageinfosentence-item-separator": "and",
+	"bs-calumma-pageinfosentence-item-separator-greater-two": ",",
+	"bs-calumma-pageinfosentence-item-class-separator": "but"
 }
