@@ -86,5 +86,21 @@
 	"bs-calumma-navigation-toggle-tooltip": "Tool tip for the icon of the sidebar togglers",
 	"bs-edit-custom-menu-link-title": "The title for a link to edit a menu of type BlueSpiceCustomMenu",
 	"bs-edit-custom-menu-link-text": "The text for a link to edit a menu of type BlueSpiceCustomMenu",
-	"bs-calumma-toggle-button-tooltip": "Tool tip for togglers"
+	"bs-calumma-toggle-button-tooltip": "Tool tip for togglers",
+	"bs-calumma-breadcrumbs-nstab-main": "Label for nstab-main to avoid misunderstaning in NS_MAIN",
+	"bs-calumma-breadcrumbs-pages": "Label for dropdown button for the page you are currently viewing",
+	"bs-calumma-breadcrumbs-pages-title": "Tooltip for dropdown button for the page you are currently viewing",
+	"bs-calumma-breadcrumbs-subpages": "Label for dropdown button for the subpages of the current page",
+	"bs-calumma-breadcrumbs-subpages-title": "Tooltip for dropdown button for the subpages of the current page",
+	"bs-calumma-category-add-category-text": "Label for button to add category",
+	"bs-calumma-category-add-category-title": "Tooltip for button to add category",
+	"bs-calumma-page-last-edit-text": "Text with time of last edit and last editor",
+	"bs-calumma-page-watch-title": "Title for watch button",
+	"bs-calumma-page-watch-text": "Text for watch button",
+	"bs-calumma-page-unwatch-title": "Title for unwatch button",
+	"bs-calumma-page-unwatch-text": "Text for unwatch button",
+	"bs-calumma-pageinfosentence": "Sentence wrapping page information",
+	"bs-calumma-pageinfosentence-item-separator": "Separator for page information items (AND)",
+	"bs-calumma-pageinfosentence-item-separator-greater-two": "Separator for more then two page information items (COMMA)",
+	"bs-calumma-pageinfosentence-item-class-separator": "Separator for page information items (BUT)"
 }

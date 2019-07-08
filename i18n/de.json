@@ -81,5 +81,21 @@
 	"bs-calumma-navigation-toggle-tooltip": "Öffnen/Schließen",
 	"bs-edit-custom-menu-link-title": "Menü bearbeiten",
 	"bs-edit-custom-menu-link-text": "Menü bearbeiten",
-	"bs-calumma-toggle-button-tooltip": "Öffnen/Schließen"
+	"bs-calumma-toggle-button-tooltip": "Öffnen/Schließen",
+	"bs-calumma-breadcrumbs-nstab-main": "Alle Seiten",
+	"bs-calumma-breadcrumbs-pages": "Du bist hier",
+	"bs-calumma-breadcrumbs-pages-title": "Du siehst gerade \"$1\"",
+	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Unterseite|Unterseiten}} von \"$2\"",
+	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Eine Unterseite|Unterseiten}} zu \"$2\"",
+	"bs-calumma-category-add-category-text": "Kategorie hinzufügen",
+	"bs-calumma-category-add-category-title": "Kategorie hinzufügen",
+	"bs-calumma-page-last-edit-text": "Dieser Artikel wurde zuletzt vor $1 von $2 bearbeitet",
+	"bs-calumma-page-watch-title": "Artikel \"$1\" beobachten",
+	"bs-calumma-page-watch-text": "Beobachten",
+	"bs-calumma-page-unwatch-title": "Artikel \"$1\" nicht mehr beobachten",
+	"bs-calumma-page-unwatch-text": "Nicht mehr beobachten",
+	"bs-calumma-pageinfosentence": "Diese Seite ist $1",
+	"bs-calumma-pageinfosentence-item-separator": "und",
+	"bs-calumma-pageinfosentence-item-separator-greater-two": ",",
+	"bs-calumma-pageinfosentence-item-class-separator": "aber"
 }
