@@ -14,6 +14,11 @@ class MobileFeaturedActionsButton extends \Skins\Chameleon\Components\Structure 
 		$type = $this->getDomElement()->getAttribute( 'data-type' );
 		$action = $this->getDomElement()->getAttribute( 'data-action' );
 
+		$user = $this->getSkin()->getUser();
+		if ( !$user->isAllowed( 'edit' ) ) {
+			return '';
+		}
+
 		$FeaturedActionsData = $this->getSkinTemplate()->get( SkinData::FEATURED_ACTIONS );
 		$menuData = $FeaturedActionsData[$type][$action];
 
