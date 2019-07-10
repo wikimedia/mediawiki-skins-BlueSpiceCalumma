@@ -20,9 +20,15 @@ class MobileFeaturedActionsButton extends \Skins\Chameleon\Components\Structure 
 		}
 
 		$FeaturedActionsData = $this->getSkinTemplate()->get( SkinData::FEATURED_ACTIONS );
+		if ( !isset( $FeaturedActionsData[$type][$action] ) ) {
+			return '';
+		}
 		$menuData = $FeaturedActionsData[$type][$action];
 
-		$classes = $class . ' ' . implode( ' ', $menuData['classes'] );
+		$classes = $class;
+		if ( isset( $menuData['classes'] ) ) {
+			$classes .= ' ' . implode( ' ', $menuData['classes'] );
+		}
 		$id = isset( $menuData[ 'id' ] ) ? $menuData[ 'id' ] : '';
 		$text = isset( $menuData[ 'text' ] ) ? $menuData[ 'text' ] : '';
 		$title = isset( $menuData[ 'title' ] ) ? $menuData[ 'title' ] : $text;
