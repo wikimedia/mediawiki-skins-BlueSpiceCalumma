@@ -79,5 +79,21 @@
 	"bs-calumma-navigation-toggle-tooltip": "فتح / إغلاق",
 	"bs-edit-custom-menu-link-title": "عدل القائمة",
 	"bs-edit-custom-menu-link-text": "عدل القائمة",
-	"bs-calumma-toggle-button-tooltip": "فتح/إغلاق"
+	"bs-calumma-toggle-button-tooltip": "فتح/إغلاق",
+	"bs-calumma-breadcrumbs-nstab-main": "كل الصفحات",
+	"bs-calumma-breadcrumbs-pages": "أنت هنا",
+	"bs-calumma-breadcrumbs-pages-title": "أنت تستعرض حاليا \"$1\"",
+	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|صفحة فرعية|صفحات فرعية}} ل$2",
+	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|صفحة فرعية|$1 صفحات فرعية}} ل$2",
+	"bs-calumma-category-add-category-text": "إضافة تصنيف",
+	"bs-calumma-category-add-category-title": "إضافة تصنيف",
+	"bs-calumma-page-last-edit-text": "تم آخر تعديل لهذه الصفحة منذ $1 بواسطة $2",
+	"bs-calumma-page-watch-title": "راقب \"$1\"",
+	"bs-calumma-page-watch-text": "راقب",
+	"bs-calumma-page-unwatch-title": "لا تراقب \"$1\" بعد الآن",
+	"bs-calumma-page-unwatch-text": "لا تراقب بعد الآن",
+	"bs-calumma-pageinfosentence": "هذه الصفحة $1",
+	"bs-calumma-pageinfosentence-item-separator": "و",
+	"bs-calumma-pageinfosentence-item-class-separator": "لكن",
+	"bs-calumma-full-screen-button-tooltip": "ملء الشاشة/الوضع العادي"
 }

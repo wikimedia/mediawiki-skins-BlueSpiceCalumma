@@ -78,5 +78,21 @@
 	"bs-calumma-navigation-toggle-tooltip": "Abrir / fechar",
 	"bs-edit-custom-menu-link-title": "Editar menu",
 	"bs-edit-custom-menu-link-text": "Editar menu",
-	"bs-calumma-toggle-button-tooltip": "Abrir/fechar"
+	"bs-calumma-toggle-button-tooltip": "Abrir/fechar",
+	"bs-calumma-breadcrumbs-nstab-main": "Todas as páginas",
+	"bs-calumma-breadcrumbs-pages": "Você está aqui",
+	"bs-calumma-breadcrumbs-pages-title": "Você está vendo no momento \"$1\"",
+	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Subpágina|Subpáginas}} de \"$2\"",
+	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Subpágina|$1 subpáginas}} de \"$2\"",
+	"bs-calumma-category-add-category-text": "Adicionar categoria",
+	"bs-calumma-category-add-category-title": "Adicionar categoria",
+	"bs-calumma-page-last-edit-text": "Esta página foi editada por último $1 atrás por $2",
+	"bs-calumma-page-watch-title": "Vigiar \"$1\"",
+	"bs-calumma-page-watch-text": "Vigiar",
+	"bs-calumma-page-unwatch-title": "Não vigiar mais \"$1\"",
+	"bs-calumma-page-unwatch-text": "Não assista mais",
+	"bs-calumma-pageinfosentence": "Esta página é $1",
+	"bs-calumma-pageinfosentence-item-separator": "e",
+	"bs-calumma-pageinfosentence-item-class-separator": "mas",
+	"bs-calumma-full-screen-button-tooltip": "Tela cheia/modo normal"
 }
