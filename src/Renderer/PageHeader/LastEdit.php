@@ -112,8 +112,9 @@ class LastEdit extends Renderer {
 	 * @return string
 	 */
 	private function makeLastEditorLink( WikiPage $wikiPage, $currentRevision ) {
+		/* Main_page is created with user id 0 */
 		if ( !$currentRevision->getUser() ) {
-			return '';
+			return $this->msg( 'bs-calumma-page-last-edit-by-system-user' )->plain();
 		}
 
 		$user = User::newFromId( $currentRevision->getUser() );

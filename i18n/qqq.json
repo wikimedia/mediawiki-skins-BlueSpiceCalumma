@@ -103,5 +103,6 @@
 	"bs-calumma-pageinfosentence-item-separator": "Separator for page information items (AND)",
 	"bs-calumma-pageinfosentence-item-separator-greater-two": "Separator for more then two page information items (COMMA)",
 	"bs-calumma-pageinfosentence-item-class-separator": "Separator for page information items (BUT)",
-	"bs-calumma-full-screen-button-tooltip": "Tool tip for full screen button"
+	"bs-calumma-full-screen-button-tooltip": "Tool tip for full screen button",
+	"bs-calumma-page-last-edit-by-system-user": "Label for system user as editor"
 }
