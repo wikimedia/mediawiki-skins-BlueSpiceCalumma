@@ -201,8 +201,8 @@ class PageInfoSentenceBuilder {
 			$sentence .= $lastItem['content'];
 		} elseif ( $hasContra && !( count( $contra ) > 2 ) ) {
 			$parts = $this->getSentenceParts( $contra );
-			$separator .= ' ';
-			$separator = wfMessage(
+			$separator = ' ';
+			$separator .= wfMessage(
 				'bs-calumma-pageinfosentence-item-separator'
 			)->plain();
 			$separator .= ' ';
@@ -234,8 +234,8 @@ class PageInfoSentenceBuilder {
 			$sentence .= $lastItem['content'];
 		} elseif ( $hasPro && !( count( $pro ) > 2 ) ) {
 			$parts = $this->getSentenceParts( $pro );
-			$separator .= ' ';
-			$separator = wfMessage(
+			$separator = ' ';
+			$separator .= wfMessage(
 				'bs-calumma-pageinfosentence-item-separator'
 			)->plain();
 			$separator .= ' ';
