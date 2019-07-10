@@ -158,6 +158,8 @@
 	max-width: 30%;
 
 	.bs-page-info-element-button {
+		color: @link-color;
+
 		i::before {
 			font-family: icomoon;
 			content: "\e9a6";
@@ -165,28 +167,65 @@
 			margin-right: 5px;
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
+			color: @link-color;
 			text-decoration: none;
 		}
 	}
 
 	.dropdown {
+		& > a {
+			&:hover,
+			&:focus {
+				text-decoration: none;
+			}
+		}
 		&.open {
 			.dropdown-toggle::before {
-			font-family: 'fontawesome';
-			content: "\f0d8";
-		}
+				font-family: 'fontawesome';
+				content: "\f0d8";
+			}
 		}
 
-		.dropdown-toggle::before {
-			font-family: 'fontawesome';
-			content: "\f0d7";
-			margin-left: 3px;
-			margin-right: 3px;
+		.dropdown-toggle {
+			color: @link-color;
+
+			&:hover,
+			&:focus {
+				color: @link-color;
+				text-decoration: none;
+			}
+
+			&::before {
+				font-family: 'fontawesome';
+				content: "\f0d7";
+				margin-left: 3px;
+				margin-right: 3px;
+			}
 		}
+
 		.dropdown-menu {
-			list-style-type: none;
-			padding: 0px;
+			& > ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+
+				& > li {
+					a {
+						display: block;
+						width: 100%;
+						padding-left: 5px;
+						padding-right: 5px;
+						line-height: 14px;
+						font-size: 11px;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -224,12 +263,12 @@
 		margin-left: 15px;
 		font-size: 11px;
 
-		border: 1px solid @bs-color-primary;
+		border: 1px solid @menu-top-page-edit-bg-color;
 		border-radius: 3px;
-		background-color: @bs-color-primary;
+		background-color: @menu-top-page-edit-bg-color;
 
 		& > a.btn {
-			color: white;
+			color: @menu-top-page-edit-color;
 			font-size: 11px;
 			&:hover {
 				text-decoration: none;
@@ -250,8 +289,29 @@
 			}
 		}
 
+		.dropdown-menu {
+			background-color: @menu-top-page-edit-bg-color;
+
+			& > li {
+				max-width: 100%;
+
+				a {
+					display: block;
+					width: 100%;
+					padding-left: 5px;
+					padding-right: 5px;
+					color: @menu-top-page-edit-color;
+
+					&:hover {
+						color: @menu-top-page-edit-color-hover;
+						background-color: @menu-top-page-edit-bg-color-hover;
+					}
+				}
+			}
+		}
+
 		&.open {
-			button {
+			a.btn {
 				&.dropdown-toggle {
 					i::after {
 						content: "\f0d8";
