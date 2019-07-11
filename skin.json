@@ -24,7 +24,8 @@
 				"calummacustommenu": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu::factory",
 				"calummacustommenuitem": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu\\Item::factory",
 				"pageheader-breadcrumb": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\BreadCrumb::factory",
-				"pageheader-category": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\Category::factory",
+				"@note": "The category renderer is hard coded as a fallback in PageHeader::getCategories, so it can be overwritten by extensions",
+				"@pageheader-category": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\Category::factory",
 				"pageheader-lastedit": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\LastEdit::factory",
 				"pageheader-editbutton": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\EditButton::factory",
 				"pageheader-pageinfo": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\PageInfo::factory"
