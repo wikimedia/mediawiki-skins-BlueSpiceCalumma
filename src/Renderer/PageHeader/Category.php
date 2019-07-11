@@ -44,7 +44,7 @@ class Category extends Renderer {
 			return $html;
 		}
 
-		$html .= $this->makeAddCategoryLink( $title );
+		$html .= $this->makeCategorySectionOpener( $title );
 		$html .= $this->makeCategoryLinks( $title );
 
 		return $html;
@@ -55,35 +55,19 @@ class Category extends Renderer {
 	 * @param Title $title
 	 * @return string
 	 */
-	private function makeAddCategoryLink( Title $title ) {
+	private function makeCategorySectionOpener( Title $title ) {
 		$html = '';
 
 		$html .= Html::openElement(
 				'div',
 				[
+					'id' => 'bs-category-container-add-category',
 					'class' => 'bs-category-container-add-category'
 				]
 			);
 
-		$html .= Html::openElement(
-				'a',
-				[
-					'id' => 'ca-insert_category',
-					'class' => 'bs-category-add-category',
-					'href' => '#',
-					'title' => $this->msg( 'bs-calumma-category-add-category-title' )->plain()
-				]
-			);
+		$html .= $this->makeIcon( $title );
 
-		$html .= Html::element( 'i' );
-
-		$html .= Html::element(
-				'span',
-				[],
-				$this->msg( 'bs-calumma-category-add-category-text' )->plain()
-			);
-
-		$html .= Html::closeElement( 'a' );
 		$html .= Html::closeElement( 'div' );
 
 		return $html;
@@ -119,7 +103,37 @@ class Category extends Renderer {
 
 		$html .= implode( '', $categoryLinks );
 
+		if ( empty( $categoryLinks ) ) {
+			$html .= Html::element(
+					'span',
+					[
+						'class' => 'bs-category-add-category'
+					],
+					$this->msg( 'bs-calumma-category-no-categories' )->plain() . ' '
+				);
+		}
+
 		$html .= Html::closeElement( 'div' );
+
+		return $html;
+	}
+
+	/**
+	 *
+	 * @param Title $title
+	 * @return string
+	 */
+	protected function makeIcon( $title ) {
+		$html = Html::openElement(
+				'span',
+				[
+					'class' => 'bs-category-add-category'
+				]
+			);
+
+		$html .= Html::element( 'i' );
+
+		$html .= Html::closeElement( 'span' );
 
 		return $html;
 	}
