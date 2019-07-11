@@ -78,5 +78,21 @@
 	"bs-calumma-navigation-toggle-tooltip": "Iapre / Achiude",
 	"bs-edit-custom-menu-link-title": "Cange 'u menu",
 	"bs-edit-custom-menu-link-text": "Cange 'u menu",
-	"bs-calumma-toggle-button-tooltip": "Iapre / Achiude"
+	"bs-calumma-toggle-button-tooltip": "Iapre / Achiude",
+	"bs-calumma-breadcrumbs-nstab-main": "Tutte le pàggene",
+	"bs-calumma-breadcrumbs-pages": "Tu ste aqquà",
+	"bs-calumma-breadcrumbs-pages-title": "Ste 'ndruche \"$1\"",
+	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Sottopàgene|Sottopàggene}} de \"$2\"",
+	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Sottopàgene|Sottopàggene}} de \"$2\"",
+	"bs-calumma-category-add-category-text": "Aggiunge 'a categorije",
+	"bs-calumma-category-add-category-title": "Aggiunge 'a categorije",
+	"bs-calumma-page-last-edit-text": "Sta pàgene ha state cangiate $1 fa da $2",
+	"bs-calumma-page-watch-title": "Condrolle \"$1\"",
+	"bs-calumma-page-watch-text": "Condrolle",
+	"bs-calumma-page-unwatch-title": "No sce condrollanne cchiù \"$1\"",
+	"bs-calumma-page-unwatch-text": "No sce condrollanne cchiù",
+	"bs-calumma-pageinfosentence": "Sta pàgene jè $1",
+	"bs-calumma-pageinfosentence-item-separator": "e",
+	"bs-calumma-pageinfosentence-item-class-separator": "ma",
+	"bs-calumma-full-screen-button-tooltip": "Scherme chine/Mode normale"
 }

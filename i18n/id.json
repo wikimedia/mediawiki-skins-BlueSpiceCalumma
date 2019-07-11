@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"William Surya Permana",
-			"Bangjapra"
+			"Bangjapra",
+			"Kenrick95"
 		]
 	},
 	"bluespicecalumma-desc": "Kulit BlueSpice",
@@ -72,5 +73,7 @@
 	"bs-edit-mediawiki-sidebar-link-title": "Sunting bilah sisi",
 	"bs-allpages-description": "Semua halaman",
 	"bs-support-description": "Dukungan",
-	"bs-calumma-navigation-toggle-tooltip": "Buka / tutup"
+	"bs-calumma-navigation-toggle-tooltip": "Buka / tutup",
+	"bs-calumma-pageinfosentence-item-separator": "dan",
+	"bs-calumma-pageinfosentence-item-class-separator": "tetapi"
 }
