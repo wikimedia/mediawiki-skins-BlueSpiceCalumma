@@ -17,13 +17,15 @@
 		object-fit: cover;
 	}
 	.bs-personal-menu-container {
-		width: 100%;
+		width: 100vw;
 		position: fixed;
 		top: 0;
-		height: 100vh;
+		height: calc(~"100vh - @{menu-top-mobile-height}");
+		margin-top: @menu-top-mobile-height;
 		border-radius: 0px;
 		border-width: 0px;
 		background-color: @navigation-bg-color;
+		box-shadow: none;
 		li a {
 			display: block;
 			width: 100%;

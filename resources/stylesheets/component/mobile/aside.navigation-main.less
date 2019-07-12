@@ -1,7 +1,6 @@
 .navigation-main{
 	top: 0px;
 	z-index: 100;
-	width: 100vw;
 
 	.tab-pane.active {
 		.bs-calumma-sidebar-edit-link {
@@ -14,6 +13,7 @@
 	}
 
 	#bs-sitenavtabs {
+		margin-top: @navigation-tabs-height;
 		ul.nav-pills li.calumma-navigation-mobile-hidden {
 			display: none;
 		}
@@ -23,7 +23,7 @@
 		}
 
 		div.tab-content{
-			height: calc(~"100vh - @{navigation-tabs-height} - 15px");
+			height: calc(~"100vh - @{menu-top-mobile-height} - @{navigation-tabs-height} - 15px");
 		}
 	}
 
