@@ -4,9 +4,12 @@ namespace BlueSpice\Calumma\Components;
 
 use Html;
 use Title;
+use Sanitizer;
+use MediaWiki\MediaWikiServices;
 use BlueSpice\SkinData;
 use BlueSpice\RendererFactory;
 use BlueSpice\Renderer\Params;
+use BlueSpice\Renderer\NullRenderer;
 use BlueSpice\Calumma\Renderer\PageHeader\Category;
 use BlueSpice\Calumma\TemplateComponent;
 use BlueSpice\Services;
@@ -130,7 +133,7 @@ class PageHeader extends TemplateComponent {
 			$out .= Html::rawElement(
 				'div',
 				[
-					'id' => \Sanitizer::escapeIdForAttribute( "mw-indicator-$id" ),
+					'id' => Sanitizer::escapeIdForAttribute( "mw-indicator-$id" ),
 					'class' => 'mw-indicator',
 				],
 				$content
@@ -215,11 +218,20 @@ class PageHeader extends TemplateComponent {
 		$args = parent::getTemplateArgs();
 		$args[Category::PARAM_CATEGORY_NAMES] = $this->getSkin()->getOutput()
 			->getCategories( 'normal' );
-		return $this->getRendererFactory()->get(
+		$renderer = $this->getRendererFactory()->get(
 			'pageheader-category',
 			new Params( $args ),
 			$this->getSkin()->getContext()
-		)->render();
+		);
+		if ( $renderer instanceof NullRenderer ) {
+			$renderer = Category::factory(
+				'pageheader-category',
+				Services::getInstance(),
+				MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
+				new Params( $args )
+			);
+		}
+		return $renderer->render();
 	}
 
 	/**
