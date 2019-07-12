@@ -69,7 +69,8 @@ class PageInfoSentenceBuilder {
 				'class' => $element->getHtmlClass(),
 				'url' => $element->getUrl(),
 				'menu' => $element->getMenu(),
-				'name' => $element->getName()
+				'name' => $element->getName(),
+				'id' => $element->getHtmlId()
 			];
 		}
 
@@ -142,7 +143,8 @@ class PageInfoSentenceBuilder {
 							'span',
 							[
 								'class' => $value[ 'class' ],
-								'title' => $value[ 'tooltip' ]
+								'title' => $value[ 'tooltip' ],
+								'id' => $value[ 'id' ]
 							],
 							$value[ 'content' ]
 						);
@@ -153,7 +155,8 @@ class PageInfoSentenceBuilder {
 							[
 								'class' => $value[ 'class' ],
 								'href' => $value[ 'url' ],
-								'title' => $value[ 'tooltip' ]
+								'title' => $value[ 'tooltip' ],
+								'id' => $value[ 'id' ]
 							],
 							$value[ 'content' ]
 						);
@@ -260,20 +263,32 @@ class PageInfoSentenceBuilder {
 				]
 			);
 
-		$html .= \Html::element(
-				'a',
-				[
-					'class' => $value[ 'class' ],
-					'id' => 'pageinfo-' . $value[ 'name' ]
-				],
-				$value[ 'content' ]
-			);
+		if ( $value[ 'url' ] !== '' ) {
+			$html .= \Html::element(
+					'a',
+					[
+						'class' => $value[ 'class' ],
+						'href' => $value[ 'url' ],
+						'id' => $value[ 'id' ]
+					],
+					$value[ 'content' ]
+				);
+		} else {
+			$html .= \Html::element(
+				'span',
+					[
+						'class' => $value[ 'class' ],
+						'id' => $value[ 'id' ]
+					],
+					$value[ 'content' ]
+				);
+		}
 
 		$html .= \Html::openElement(
 				'a',
 				[
 					'class' => ' dropdown-toggle',
-					'href' => $value[ 'url' ],
+					'href' => '#',
 					'data-toggle' => 'dropdown',
 					'aria-expanded' => 'false',
 					'title' => $value[ 'tooltip' ]
