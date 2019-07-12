@@ -213,7 +213,8 @@
 		"BeforePageDisplay": [
 			"\\BlueSpice\\Calumma\\Hook\\BeforePageDisplay\\HistoryBacklink::callback",
 			"\\BlueSpice\\Calumma\\Hook\\BeforePageDisplay\\AddFoucFix::callback"
-		]
+		],
+		"UserLoggedIn": "\\BlueSpice\\Calumma\\Hook\\UserLoggedIn\\AddNotification::callback"
 	},
 	"DefaultUserOptions": {
 		"bs-calumma-settings-navigation-main-collapse": false,
