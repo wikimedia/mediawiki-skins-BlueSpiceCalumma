@@ -81,5 +81,14 @@
 	"bs-calumma-navigation-toggle-tooltip": "Відкрити / закрити",
 	"bs-edit-custom-menu-link-title": "Редагувати меню",
 	"bs-edit-custom-menu-link-text": "Редагувати меню",
-	"bs-calumma-toggle-button-tooltip": "Відкрити/закрити"
+	"bs-calumma-toggle-button-tooltip": "Відкрити/закрити",
+	"bs-calumma-breadcrumbs-nstab-main": "Усі сторінки",
+	"bs-calumma-breadcrumbs-pages": "Ви тут",
+	"bs-calumma-category-no-categories": "Нема призначених категорій",
+	"bs-calumma-page-last-edit-text": "Цю сторінку востаннє відредаговано $1 тому користувачем $2",
+	"bs-calumma-page-watch-text": "Спостерігати",
+	"bs-calumma-pageinfosentence-item-separator": "та",
+	"bs-calumma-pageinfosentence-item-class-separator": "але",
+	"bs-calumma-page-last-edit-by-system-user": "системний користувач",
+	"bs-calumma-notification-logged-in": "Тепер Ви ввійшли в систему"
 }

@@ -84,8 +84,7 @@
 	"bs-calumma-breadcrumbs-pages-title": "Ste 'ndruche \"$1\"",
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Sottopàgene|Sottopàggene}} de \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Sottopàgene|Sottopàggene}} de \"$2\"",
-	"bs-calumma-category-add-category-text": "Aggiunge 'a categorije",
-	"bs-calumma-category-add-category-title": "Aggiunge 'a categorije",
+	"bs-calumma-category-no-categories": "Nisciuna categorije assegnate",
 	"bs-calumma-page-last-edit-text": "Sta pàgene ha state cangiate $1 fa da $2",
 	"bs-calumma-page-watch-title": "Condrolle \"$1\"",
 	"bs-calumma-page-watch-text": "Condrolle",
@@ -94,5 +93,7 @@
 	"bs-calumma-pageinfosentence": "Sta pàgene jè $1",
 	"bs-calumma-pageinfosentence-item-separator": "e",
 	"bs-calumma-pageinfosentence-item-class-separator": "ma",
-	"bs-calumma-full-screen-button-tooltip": "Scherme chine/Mode normale"
+	"bs-calumma-full-screen-button-tooltip": "Scherme chine/Mode normale",
+	"bs-calumma-page-last-edit-by-system-user": "utende de sisteme",
+	"bs-calumma-notification-logged-in": "E' trasute"
 }

@@ -80,5 +80,9 @@
 	"bs-calumma-navigation-toggle-tooltip": "Открыть/закрыть",
 	"bs-edit-custom-menu-link-title": "Редактировать меню",
 	"bs-edit-custom-menu-link-text": "Редактировать меню",
-	"bs-calumma-toggle-button-tooltip": "Открыть/закрыть"
+	"bs-calumma-toggle-button-tooltip": "Открыть/закрыть",
+	"bs-calumma-breadcrumbs-nstab-main": "Все страницы",
+	"bs-calumma-breadcrumbs-pages": "Вы здесь",
+	"bs-calumma-pageinfosentence-item-separator": "и",
+	"bs-calumma-pageinfosentence-item-class-separator": "но"
 }

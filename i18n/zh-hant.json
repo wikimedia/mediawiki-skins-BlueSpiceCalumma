@@ -84,8 +84,6 @@
 	"bs-calumma-breadcrumbs-pages-title": "您目前正在檢視「$1」",
 	"bs-calumma-breadcrumbs-subpages": "「$2」的{{PLURAL:$1|子頁面}}",
 	"bs-calumma-breadcrumbs-subpages-title": "「$2」的{{PLURAL:$1|子頁面}}",
-	"bs-calumma-category-add-category-text": "新增分類",
-	"bs-calumma-category-add-category-title": "新增分類",
 	"bs-calumma-page-last-edit-text": "此頁面由$2於$1做出最後編輯",
 	"bs-calumma-page-watch-title": "監視「$1」",
 	"bs-calumma-page-watch-text": "監視",

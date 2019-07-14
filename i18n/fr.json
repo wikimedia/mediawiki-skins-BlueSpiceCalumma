@@ -87,15 +87,16 @@
 	"bs-calumma-breadcrumbs-pages-title": "Vous regardez actuellement « $1 »",
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Sous-page|Sous-pages}} de « $2 »",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Sous-page|$1 sous-pages}} de « $2 »",
-	"bs-calumma-category-add-category-text": "Ajouter une catégorie",
-	"bs-calumma-category-add-category-title": "Ajouter une catégorie",
+	"bs-calumma-category-no-categories": "Aucune catégorie assignée",
 	"bs-calumma-page-last-edit-text": "Cette page a été modifiée pour la dernière fois il y a $1 par $2",
 	"bs-calumma-page-watch-title": "Suivre « $1 »",
 	"bs-calumma-page-watch-text": "Suivre",
-	"bs-calumma-page-unwatch-title": "Ne plus suivre « $1 »",
-	"bs-calumma-page-unwatch-text": "Ne plus suivre",
+	"bs-calumma-page-unwatch-title": "Ne plus jamais suivre « $1 »",
+	"bs-calumma-page-unwatch-text": "Ne plus jamais suivre",
 	"bs-calumma-pageinfosentence": "Cette page est $1",
 	"bs-calumma-pageinfosentence-item-separator": "et",
 	"bs-calumma-pageinfosentence-item-class-separator": "mais",
-	"bs-calumma-full-screen-button-tooltip": "Mode plein écran/normal"
+	"bs-calumma-full-screen-button-tooltip": "Mode plein écran/normal",
+	"bs-calumma-page-last-edit-by-system-user": "utilisateur système",
+	"bs-calumma-notification-logged-in": "Vous êtes maintenant connecté(e)."
 }

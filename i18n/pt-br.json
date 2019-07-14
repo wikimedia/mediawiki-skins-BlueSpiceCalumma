@@ -84,8 +84,7 @@
 	"bs-calumma-breadcrumbs-pages-title": "Você está vendo no momento \"$1\"",
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Subpágina|Subpáginas}} de \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Subpágina|$1 subpáginas}} de \"$2\"",
-	"bs-calumma-category-add-category-text": "Adicionar categoria",
-	"bs-calumma-category-add-category-title": "Adicionar categoria",
+	"bs-calumma-category-no-categories": "Não foi atribuída nenhuma categoria",
 	"bs-calumma-page-last-edit-text": "Esta página foi editada por último $1 atrás por $2",
 	"bs-calumma-page-watch-title": "Vigiar \"$1\"",
 	"bs-calumma-page-watch-text": "Vigiar",
@@ -94,5 +93,7 @@
 	"bs-calumma-pageinfosentence": "Esta página é $1",
 	"bs-calumma-pageinfosentence-item-separator": "e",
 	"bs-calumma-pageinfosentence-item-class-separator": "mas",
-	"bs-calumma-full-screen-button-tooltip": "Tela cheia/modo normal"
+	"bs-calumma-full-screen-button-tooltip": "Tela cheia/modo normal",
+	"bs-calumma-page-last-edit-by-system-user": "usuário do sistema",
+	"bs-calumma-notification-logged-in": "Agora você entrou"
 }

@@ -85,8 +85,7 @@
 	"bs-calumma-breadcrumbs-pages-title": "أنت تستعرض حاليا \"$1\"",
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|صفحة فرعية|صفحات فرعية}} ل$2",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|صفحة فرعية|$1 صفحات فرعية}} ل$2",
-	"bs-calumma-category-add-category-text": "إضافة تصنيف",
-	"bs-calumma-category-add-category-title": "إضافة تصنيف",
+	"bs-calumma-category-no-categories": "لا توجد تصنيفات معينة",
 	"bs-calumma-page-last-edit-text": "تم آخر تعديل لهذه الصفحة منذ $1 بواسطة $2",
 	"bs-calumma-page-watch-title": "راقب \"$1\"",
 	"bs-calumma-page-watch-text": "راقب",
@@ -95,5 +94,7 @@
 	"bs-calumma-pageinfosentence": "هذه الصفحة $1",
 	"bs-calumma-pageinfosentence-item-separator": "و",
 	"bs-calumma-pageinfosentence-item-class-separator": "لكن",
-	"bs-calumma-full-screen-button-tooltip": "ملء الشاشة/الوضع العادي"
+	"bs-calumma-full-screen-button-tooltip": "ملء الشاشة/الوضع العادي",
+	"bs-calumma-page-last-edit-by-system-user": "مستخدم نظام",
+	"bs-calumma-notification-logged-in": "أنت مسجل الدخول الآن"
 }

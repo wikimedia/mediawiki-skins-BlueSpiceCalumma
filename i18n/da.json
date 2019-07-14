@@ -59,8 +59,6 @@
 	"bs-calumma-breadcrumbs-pages": "Du er her",
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Underside|Undersider}} af \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Underside|$1 undersider}} af \"$2\"",
-	"bs-calumma-category-add-category-text": "Tilføj kategori",
-	"bs-calumma-category-add-category-title": "Tilføj kategori",
 	"bs-calumma-page-unwatch-text": "Overvåg ikke længere",
 	"bs-calumma-pageinfosentence-item-separator": "og",
 	"bs-calumma-pageinfosentence-item-class-separator": "men"

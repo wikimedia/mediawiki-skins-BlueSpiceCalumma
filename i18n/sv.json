@@ -80,5 +80,22 @@
 	"bs-calumma-navigation-toggle-tooltip": "Öppna / stäng",
 	"bs-edit-custom-menu-link-title": "Redigera meny",
 	"bs-edit-custom-menu-link-text": "Redigera meny",
-	"bs-calumma-toggle-button-tooltip": "Öppna/stäng"
+	"bs-calumma-toggle-button-tooltip": "Öppna/stäng",
+	"bs-calumma-breadcrumbs-nstab-main": "Alla sidor",
+	"bs-calumma-breadcrumbs-pages": "Du är här",
+	"bs-calumma-breadcrumbs-pages-title": "Du tittar för tillfället på \"$1\"",
+	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Undersida|Undersidor}} till \"$2\"",
+	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Undersida|$1 undersidor}} till \"$2\"",
+	"bs-calumma-category-no-categories": "Inga tilldelade kategorier",
+	"bs-calumma-page-last-edit-text": "Denna sida redigerades senast $1 sedan av $2",
+	"bs-calumma-page-watch-title": "Bevaka \"$1\"",
+	"bs-calumma-page-watch-text": "Bevaka",
+	"bs-calumma-page-unwatch-title": "Sluta bevaka \"$1\"",
+	"bs-calumma-page-unwatch-text": "Sluta bevaka",
+	"bs-calumma-pageinfosentence": "Denna sida är $1",
+	"bs-calumma-pageinfosentence-item-separator": "och",
+	"bs-calumma-pageinfosentence-item-class-separator": "men",
+	"bs-calumma-full-screen-button-tooltip": "Helskärm/Normalt läge",
+	"bs-calumma-page-last-edit-by-system-user": "systemanvändare",
+	"bs-calumma-notification-logged-in": "Du är nu inloggad"
 }
