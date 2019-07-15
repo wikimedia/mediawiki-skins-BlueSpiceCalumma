@@ -64,13 +64,14 @@ class PageInfoSentenceBuilder {
 				'position' => $element->getPosition(),
 				'item-class' => $element->getItemClass(),
 				'type' => $element->getType(),
-				'content' => $element->getLabelMessage()->plain(),
+				'label' => $element->getLabelMessage()->plain(),
 				'tooltip' => $element->getTooltipMessage()->plain(),
 				'class' => $element->getHtmlClass(),
 				'url' => $element->getUrl(),
 				'menu' => $element->getMenu(),
 				'name' => $element->getName(),
-				'id' => $element->getHtmlId()
+				'id' => $element->getHtmlId(),
+				'data' => $element->getHtmlDataAttribs()
 			];
 		}
 
@@ -81,6 +82,21 @@ class PageInfoSentenceBuilder {
 		$sentence = $this->makePagInfoSentence( $pro, $contra );
 
 		return $sentence;
+	}
+
+	/*
+	 *
+	 * @param array $arrayData
+	 * return array
+	 */
+	private function makeHtmlDataArray( $data ) {
+		$htmlData = [];
+
+		foreach ( $data as $key => $value ) {
+			$htmlData['data-' . $key] = $value;
+		}
+
+		return $htmlData;
 	}
 
 	/**
@@ -132,7 +148,7 @@ class PageInfoSentenceBuilder {
 		$parts = [];
 
 		foreach ( $itemclass as $key => $value ) {
-			if ( !array_key_exists( 'content', $value ) ) {
+			if ( !array_key_exists( 'label', $value ) ) {
 				continue;
 			}
 			$type = $value[ 'type' ];
@@ -146,19 +162,22 @@ class PageInfoSentenceBuilder {
 								'title' => $value[ 'tooltip' ],
 								'id' => $value[ 'id' ]
 							],
-							$value[ 'content' ]
+							$value[ 'label' ]
 						);
 					break;
 				case 'link':
 					$parts[] = \Html::element(
 							'a',
-							[
-								'class' => $value[ 'class' ],
-								'href' => $value[ 'url' ],
-								'title' => $value[ 'tooltip' ],
-								'id' => $value[ 'id' ]
-							],
-							$value[ 'content' ]
+							array_merge(
+								[
+									'class' => $value[ 'class' ],
+									'href' => $value[ 'url' ],
+									'title' => $value[ 'tooltip' ],
+									'id' => $value[ 'id' ]
+								],
+								$this->makeHtmlDataArray( $value['data'] )
+							),
+							$value[ 'label' ]
 						);
 					break;
 				case 'menu':
@@ -201,7 +220,7 @@ class PageInfoSentenceBuilder {
 				'bs-calumma-pageinfosentence-item-separator'
 			)->plain();
 			$sentence .= ' ';
-			$sentence .= $lastItem['content'];
+			$sentence .= $lastItem['label'];
 		} elseif ( $hasContra && !( count( $contra ) > 2 ) ) {
 			$parts = $this->getSentenceParts( $contra );
 			$separator = ' ';
@@ -234,7 +253,7 @@ class PageInfoSentenceBuilder {
 				'bs-calumma-pageinfosentence-item-separator'
 			)->plain();
 			$sentence .= ' ';
-			$sentence .= $lastItem['content'];
+			$sentence .= $lastItem['label'];
 		} elseif ( $hasPro && !( count( $pro ) > 2 ) ) {
 			$parts = $this->getSentenceParts( $pro );
 			$separator = ' ';
@@ -271,7 +290,7 @@ class PageInfoSentenceBuilder {
 						'href' => $value[ 'url' ],
 						'id' => $value[ 'id' ]
 					],
-					$value[ 'content' ]
+					$value[ 'label' ]
 				);
 		} else {
 			$html .= \Html::element(
@@ -280,7 +299,7 @@ class PageInfoSentenceBuilder {
 						'class' => $value[ 'class' ],
 						'id' => $value[ 'id' ]
 					],
-					$value[ 'content' ]
+					$value[ 'label' ]
 				);
 		}
 
