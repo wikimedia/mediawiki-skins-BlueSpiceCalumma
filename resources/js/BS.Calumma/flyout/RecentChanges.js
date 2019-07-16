@@ -76,23 +76,34 @@ Ext.define( 'BS.Calumma.flyout.RecentChanges', {
 				type: 'string'
 			},
 			renderer: function( value, metadata, record ) {
-				var diff = mw.html.element(
+				var diff = '';
+				var history = '';
+
+				if ( record.get( 'diff_url' ).length > 0 ) {
+					diff = mw.html.element(
 						'a',
 						{
-							'href': record.get( 'diff_url' )
+							'href': record.get( 'diff_url' ),
+							'target': '_blank'
 						},
 						mw.message( 'bs-calumma-recentchanges-diff' ).plain()
 					);
 
-				var history = mw.html.element(
+					diff = diff + ' | ';
+				}
+
+				if ( record.get( 'hist_url' ) ) {
+					history = mw.html.element(
 						'a',
 						{
-							'href': record.get( 'hist_url' )
+							'href': record.get( 'hist_url' ),
+							'target': '_blank'
 						},
 						mw.message( 'bs-calumma-recentchanges-history' ).plain()
 					);
+				}
 
-				return '<div><span class="title">' + record.get( 'page_link' ) + '</span><span class="actions">( ' + diff + ' | ' + history + ' )</span></div>';
+				return '<div><span class="title">' + record.get( 'page_link' ) + '</span><span class="actions">( ' + diff + history + ' )</span></div>';
 			}
 		}];
 	},
