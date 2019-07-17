@@ -84,6 +84,7 @@
 	"bs-calumma-breadcrumbs-pages-title": "您目前正在檢視「$1」",
 	"bs-calumma-breadcrumbs-subpages": "「$2」的{{PLURAL:$1|子頁面}}",
 	"bs-calumma-breadcrumbs-subpages-title": "「$2」的{{PLURAL:$1|子頁面}}",
+	"bs-calumma-category-no-categories": "沒有分類被分配",
 	"bs-calumma-page-last-edit-text": "此頁面由$2於$1做出最後編輯",
 	"bs-calumma-page-watch-title": "監視「$1」",
 	"bs-calumma-page-watch-text": "監視",
@@ -92,5 +93,7 @@
 	"bs-calumma-pageinfosentence": "此頁面是$1",
 	"bs-calumma-pageinfosentence-item-separator": "和",
 	"bs-calumma-pageinfosentence-item-class-separator": "但",
-	"bs-calumma-full-screen-button-tooltip": "全螢幕/正常模式"
+	"bs-calumma-full-screen-button-tooltip": "全螢幕/正常模式",
+	"bs-calumma-page-last-edit-by-system-user": "系統使用者",
+	"bs-calumma-notification-logged-in": "您現在已登入"
 }

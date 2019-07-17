@@ -79,5 +79,7 @@
 	"bs-edit-custom-menu-link-title": "Рэдагаваць мэню",
 	"bs-edit-custom-menu-link-text": "Рэдагаваць мэню",
 	"bs-calumma-toggle-button-tooltip": "Адкрыць/закрыць",
-	"bs-calumma-breadcrumbs-nstab-main": "Усе старонкі"
+	"bs-calumma-breadcrumbs-nstab-main": "Усе старонкі",
+	"bs-calumma-breadcrumbs-pages": "Вы тут",
+	"bs-calumma-breadcrumbs-pages-title": "Цяпер вы праглядаеце «$1»"
 }
