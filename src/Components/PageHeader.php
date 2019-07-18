@@ -287,7 +287,11 @@ class PageHeader extends TemplateComponent {
 				[
 					'class' => $iconClass
 				] );
-		$html .= $text;
+		$html .= Html::element(
+				'span',
+				[],
+				$text
+				);
 		$html .= Html::closeElement( 'a' );
 
 		$html .= Html::closeElement( 'span' );

@@ -95,7 +95,8 @@ class BreadCrumb extends Renderer {
 				'span',
 				[
 					'class' => 'bs-breadcrumbs-namespace-separator'
-				]
+				],
+				' '
 			);
 		}
 
@@ -112,7 +113,7 @@ class BreadCrumb extends Renderer {
 					$titleLinks
 				);
 
-			$html .= $breadcrumbsSeparator;
+			$html .= ' ' . $breadcrumbsSeparator . ' ';
 		}
 
 		if ( !empty( $titleLinks ) && !empty( $titleCurrent ) ) {
@@ -208,7 +209,8 @@ class BreadCrumb extends Renderer {
 				'span',
 				[
 					'class' => 'bs-breadcrumbs-subpages-separator'
-				]
+				],
+				' '
 			);
 
 		$html .= Html::openElement(
@@ -216,7 +218,8 @@ class BreadCrumb extends Renderer {
 				[
 					'id' => 'bs-breadcrumbs-subpages',
 					'class' => 'dropdown'
-				]
+				],
+				' '
 			);
 
 		$html .= Html::element(

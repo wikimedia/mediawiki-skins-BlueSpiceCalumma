@@ -4,6 +4,7 @@ namespace BlueSpice\Calumma;
 
 use Title;
 use User;
+use Html;
 use BlueSpice\PageInfoElement;
 use BlueSpice\IPageInfoElement;
 use Exception;
@@ -73,6 +74,10 @@ class PageInfoSentenceBuilder {
 				'id' => $element->getHtmlId(),
 				'data' => $element->getHtmlDataAttribs()
 			];
+		}
+
+		if ( empty( $items ) ) {
+			return $this->makeDefaultPageInfoSentence();
 		}
 
 		$pro = [];
@@ -155,7 +160,7 @@ class PageInfoSentenceBuilder {
 
 			switch ( $type ) {
 				case 'text':
-					$parts[] = \Html::element(
+					$parts[] = Html::element(
 							'span',
 							[
 								'class' => $value[ 'class' ],
@@ -166,7 +171,7 @@ class PageInfoSentenceBuilder {
 						);
 					break;
 				case 'link':
-					$parts[] = \Html::element(
+					$parts[] = Html::element(
 							'a',
 							array_merge(
 								[
@@ -275,7 +280,7 @@ class PageInfoSentenceBuilder {
 	private function makeDropdownMenu( $value ) {
 		$html = '';
 
-		$html .= \Html::openElement(
+		$html .= Html::openElement(
 				'span',
 				[
 					'class' => 'dropdown'
@@ -283,7 +288,7 @@ class PageInfoSentenceBuilder {
 			);
 
 		if ( $value[ 'url' ] !== '' ) {
-			$html .= \Html::element(
+			$html .= Html::element(
 					'a',
 					[
 						'class' => $value[ 'class' ],
@@ -293,7 +298,7 @@ class PageInfoSentenceBuilder {
 					$value[ 'label' ]
 				);
 		} else {
-			$html .= \Html::element(
+			$html .= Html::element(
 				'span',
 					[
 						'class' => $value[ 'class' ],
@@ -303,7 +308,7 @@ class PageInfoSentenceBuilder {
 				);
 		}
 
-		$html .= \Html::openElement(
+		$html .= Html::openElement(
 				'a',
 				[
 					'class' => ' dropdown-toggle',
@@ -314,9 +319,9 @@ class PageInfoSentenceBuilder {
 				]
 			);
 
-		$html .= \Html::closeElement( 'a' );
+		$html .= Html::closeElement( 'a' );
 
-		$html .= \Html::openElement(
+		$html .= Html::openElement(
 				'div',
 				[
 					'class' => 'dropdown-menu'
@@ -325,11 +330,27 @@ class PageInfoSentenceBuilder {
 
 		$html .= $value['menu'];
 
-		$html .= \Html::closeElement( 'div' );
+		$html .= Html::closeElement( 'div' );
 
-		$html .= \Html::closeElement( 'span' );
+		$html .= Html::closeElement( 'span' );
 
 		return $html;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
+	public function makeDefaultPageInfoSentence() {
+		$html = Html::element(
+				'span',
+				[
+					'title' => wfMessage( 'bs-calumma-pageinfosentence-no-item-tooltip' )->plain(),
+					'class' => 'bs-calumma-pageinfosentence-no-status'
+				],
+				wfMessage( 'bs-calumma-pageinfosentence-no-item-label' )->plain()
+			);
+
+		return $html;
+	}
 }

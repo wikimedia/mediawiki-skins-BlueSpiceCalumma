@@ -192,7 +192,11 @@
 			],
 			"messages": [
 				"bs-calumma-pagetool-watch-tooltip",
-				"bs-calumma-pagetool-unwatch-tooltip"
+				"bs-calumma-pagetool-unwatch-tooltip",
+				"bs-calumma-page-watch-text",
+				"bs-calumma-page-watch-title",
+				"bs-calumma-page-unwatch-text",
+				"bs-calumma-page-unwatch-title"
 			]
 		},
 		"skin.bluespicecalumma.foucfix": {
