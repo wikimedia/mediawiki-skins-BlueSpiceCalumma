@@ -93,19 +93,37 @@ class PageInfo extends Renderer {
 	 */
 	public function render() {
 		$title = $this->getContext()->getTitle();
-		if ( !$title || $title->isSpecialPage() ) {
+		if ( !title || !$title->exists() || $title->isSpecialPage() ) {
 			return '';
 		}
 
 		$elements = $this->factory->getAll( $this->getContext() );
 
-		$html = $this->makeActionButton();
+		$html = Html::openElement( 'ul' );
 
+		$html .= Html::openElement(
+				'li',
+				[
+					'class' => 'bs-page-info-element-button-col'
+				]
+		);
+		$html .= $this->makeActionButton();
+		$html .= Html::closeElement( 'li' );
+
+		$html .= Html::openElement(
+				'li',
+				[
+					'class' => 'bs-page-info-element-text-col'
+				]
+		);
 		$html .= $this->builder->build(
 			$elements,
 			$this->getContext()->getTitle(),
 			$this->getContext()->getUser()
 		);
+		$html .= Html::closeElement( 'li' );
+
+		$html .= Html::closeElement( 'ul' );
 
 		return $html;
 	}
@@ -121,7 +139,7 @@ class PageInfo extends Renderer {
 			'id' => 'pageinfo-qm-panel',
 			'class' => 'bs-page-info-element-button',
 			'href' => '#',
-			'title' => $this->msg( 'bs-page-info-element-button-title' )->plain()
+			'title' => $this->msg( 'bs-calumma-pageinfo-qm-button-tooltip' )->plain()
 		] );
 
 		$html .= Html::element( 'i' );
