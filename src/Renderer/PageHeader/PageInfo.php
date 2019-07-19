@@ -93,7 +93,7 @@ class PageInfo extends Renderer {
 	 */
 	public function render() {
 		$title = $this->getContext()->getTitle();
-		if ( !title || !$title->exists() || $title->isSpecialPage() ) {
+		if ( !$title || !$title->exists() || $title->isSpecialPage() ) {
 			return '';
 		}
 
