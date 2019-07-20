@@ -83,8 +83,7 @@ Ext.define( 'BS.Calumma.flyout.RecentChanges', {
 					diff = mw.html.element(
 						'a',
 						{
-							'href': record.get( 'diff_url' ),
-							'target': '_blank'
+							'href': record.get( 'diff_url' )
 						},
 						mw.message( 'bs-calumma-recentchanges-diff' ).plain()
 					);
@@ -96,8 +95,7 @@ Ext.define( 'BS.Calumma.flyout.RecentChanges', {
 					history = mw.html.element(
 						'a',
 						{
-							'href': record.get( 'hist_url' ),
-							'target': '_blank'
+							'href': record.get( 'hist_url' )
 						},
 						mw.message( 'bs-calumma-recentchanges-history' ).plain()
 					);
