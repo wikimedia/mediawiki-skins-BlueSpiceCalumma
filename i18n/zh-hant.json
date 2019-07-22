@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kly"
+			"Kly",
+			"Winston Sung"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice 外觀",
@@ -85,11 +86,14 @@
 	"bs-calumma-breadcrumbs-subpages": "「$2」的{{PLURAL:$1|子頁面}}",
 	"bs-calumma-breadcrumbs-subpages-title": "「$2」的{{PLURAL:$1|子頁面}}",
 	"bs-calumma-category-no-categories": "沒有分類被分配",
-	"bs-calumma-page-last-edit-text": "此頁面由$2於$1做出最後編輯",
+	"bs-calumma-page-last-edit-text": "最後一次編輯由$2於$1做出",
 	"bs-calumma-page-watch-title": "監視「$1」",
 	"bs-calumma-page-watch-text": "監視",
 	"bs-calumma-page-unwatch-title": "不再監視「$1」",
-	"bs-calumma-page-unwatch-text": "不再監視",
+	"bs-calumma-page-unwatch-text": "取消監視",
+	"bs-calumma-pageinfo-qm-button-tooltip": "開啟品質管理面板",
+	"bs-calumma-pageinfosentence-no-item-label": "沒有狀態資訊",
+	"bs-calumma-pageinfosentence-no-item-tooltip": "沒有此頁面的狀態資訊",
 	"bs-calumma-pageinfosentence": "此頁面是$1",
 	"bs-calumma-pageinfosentence-item-separator": "和",
 	"bs-calumma-pageinfosentence-item-class-separator": "但",

@@ -78,11 +78,13 @@
 	"bs-calumma-toggle-button-tooltip": "열기/닫기",
 	"bs-calumma-breadcrumbs-nstab-main": "모든 문서",
 	"bs-calumma-breadcrumbs-pages-title": "지금 \"$1\" 문서를 보고 있습니다",
+	"bs-calumma-category-no-categories": "할당된 분류 없음",
 	"bs-calumma-page-watch-title": "\"$1\" 주시하기",
 	"bs-calumma-page-watch-text": "주시",
 	"bs-calumma-page-unwatch-title": "\"$1\"을(를) 더 이상 주시하지 않음",
-	"bs-calumma-page-unwatch-text": "더 이상 주시하지 않음",
+	"bs-calumma-page-unwatch-text": "주시 해제",
 	"bs-calumma-pageinfosentence": "이 문서는 $1입니다",
 	"bs-calumma-full-screen-button-tooltip": "전체 화면/일반 모드",
-	"bs-calumma-page-last-edit-by-system-user": "시스템 사용자"
+	"bs-calumma-page-last-edit-by-system-user": "시스템 사용자",
+	"bs-calumma-notification-logged-in": "현재 로그인되어 있습니다"
 }
