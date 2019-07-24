@@ -95,7 +95,7 @@
 	"bs-calumma-page-unwatch-text": "Ne plus suivre",
 	"bs-calumma-pageinfo-qm-button-tooltip": "Ouvrir l’onglet de gestion de la qualité",
 	"bs-calumma-pageinfosentence-no-item-label": "Aucune information d’état",
-	"bs-calumma-pageinfosentence-no-item-tooltip": "Aucune information d’état sur cette page",
+	"bs-calumma-pageinfosentence-no-item-tooltip": "Aucune information d’état pour cette page",
 	"bs-calumma-pageinfosentence": "Cette page est $1",
 	"bs-calumma-pageinfosentence-item-separator": "et",
 	"bs-calumma-pageinfosentence-item-class-separator": "mais",
