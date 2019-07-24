@@ -107,7 +107,7 @@ class Category extends Renderer {
 			$html .= Html::element(
 					'span',
 					[
-						'class' => 'bs-category-add-category'
+						'class' => 'bs-category-no-categories'
 					],
 					$this->msg( 'bs-calumma-category-no-categories' )->plain() . ' '
 				);

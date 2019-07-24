@@ -5,14 +5,14 @@
 	cursor: pointer;
 	color: @custom-menu-header-color;
 	background-color: @custom-menu-header-bg-color;
-	border-radius: 0px 0px 5px 5px;
+	border-radius: 0 0 0.31rem 0.31rem;
 
 	i::before {
 		content: "\e92c";
 		font-family: "entypo";
 		font-style: normal;
-		padding-left: 3px;
-		padding-right: 3px;
+		padding-left: 0.187rem;
+		padding-right: 0.187rem;
 	}
 
 	&:hover,
@@ -30,7 +30,7 @@
 		display: flex;
 		height: 100%;
 		margin-bottom: 0;
-		padding: 0px;
+		padding: 0;
 		list-style: none;
 
 		& > li {
@@ -70,7 +70,6 @@
 			.dropdown-menu {
 				top: 0;
 				left: 100%;
-				margin-top: -1px;
 			}
 		}
 
@@ -91,11 +90,11 @@
 					font-style: normal;
 					height: @custom-menu-top-height;
 					line-height: @custom-menu-top-height;
-					margin-left: 5px;
+					margin-left: 0.31rem;
 				}
 				.dropdown-menu,
 				.child-menu {
-					padding: 0px;
+					padding: 0;
 					list-style: none;
 					background-color: @custom-menu-header-bg-color;
 
@@ -107,7 +106,7 @@
 							content: "\f0d8";
 							position: absolute;
 							top: -0.9em;
-							left: 20px;
+							left:  1.25rem;
 							color:  @custom-menu-header-bg-color;
 							height: 1em;
 							z-index: -1;
@@ -115,14 +114,14 @@
 					}
 
 					&:not(.level-2) {
-						left: calc(~"100% + 12px");
+						left: calc(~"100% + 0.75rem");
 						&::before {
 							font-size: 3em;
 							font-family: 'fontawesome';
 							content: "\f0d9";
 							position: absolute;
-							top: -10px;
-							left: -12px;
+							top: -0.625rem;
+							left: -0.75rem;
 							color:  @custom-menu-header-bg-color;
 							height: 1em;
 							z-index: -1;
@@ -158,8 +157,8 @@
 		visibility: hidden;
 		position: fixed;
 		top: 0;
-		right: 20px;
-		max-width: 130px;
+		right:  1.25rem;
+		max-width: 8.125rem;
 		height: @custom-menu-top-height;
 		overflow: hidden;
 		line-height: @custom-menu-top-height;
@@ -173,7 +172,7 @@
 
 		.label {
 			display: block;
-			margin-top: 12px;
+			margin-top: 0.75rem;
 		}
 	}
 

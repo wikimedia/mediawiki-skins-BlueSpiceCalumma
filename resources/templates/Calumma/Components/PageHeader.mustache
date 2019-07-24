@@ -6,9 +6,8 @@
 </div>
 
 <div class="visualClear"></div>
-<div class="bs-page-separator"></div>
 
-<div>
+<div class="bs-page-header">
 	<div class="bs-page-categories pull-left">{{{categories}}}</div>
 	<div class="bs-page-tools pull-right">{{{tools}}}</div>
 </div>
@@ -16,15 +15,13 @@
 <div class="visualClear"></div>
 <div class="bs-page-separator v-line"></div>
 
-<div class="mw-indicators mw-body-content">{{{indicators}}}</div>{{! Indicators should be places directly above #firstHeading}}
 <div class="bs-firstHeading-container">
-	<div class="pull-left">
-		<h1 id="firstHeading" class="firstHeading" lang="{{{lang}}}">
-			{{{firstheading}}}
-		</h1>
-	</div>
+	<div class="mw-indicators mw-body-content">{{{indicators}}}</div>{{! Indicators should be places directly above #firstHeading}}
+	<h1 id="firstHeading" class="firstHeading" lang="{{{lang}}}">
+		{{{firstheading}}}
+	</h1>
+	<div id="mw-page-header-links">{{{headerlinks}}}</div>
 </div>
-<div id="mw-page-header-links">{{{headerlinks}}}</div>
 
 <div class="visualClear"></div>
 

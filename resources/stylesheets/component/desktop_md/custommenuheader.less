@@ -1,14 +1,14 @@
 /* open */
 .calumma-toggle-button.bs-custom-menu-header-button {
-	right: 85px;
+	right: 5.3125rem;
 	top: @custom-menu-top-height;
-	padding-top: 0px;
-	height: 10px;
-	line-height: 10px;
+	padding-top: 0;
+	height: 0.625rem;
+	line-height: 0.625rem;
 
 	&:hover {
-		padding-top: 10px;
-		height: 20px;
+		padding-top: 0.625rem;
+		height: 1.25rem;
 	}
 }
 
@@ -21,9 +21,9 @@
 
 	.bs-custom-menu.header {
 		width: auto;
-		max-width: 980px;
+		max-width: @bs-content-width;
 		left: @navigation-main-width;
-		margin-left: calc( ~"50vw - 760px");
+		margin-left: calc( ~"50vw - 47.5rem");
 
 		& > li {
 			height: @custom-menu-top-height;
@@ -32,7 +32,7 @@
 		a {
 			height: @custom-menu-top-height;
 			line-height: @custom-menu-top-height;
-			padding: 0px;
+			padding: 0;
 			padding-left: 1em;
 			padding-right: 1em;
 		}
@@ -41,7 +41,7 @@
 		li.contains-children {
 			&.level-1 {
 				.child-menu {
-					padding: 0px;
+					padding: 0;
 				}
 			}
 		}
@@ -56,14 +56,14 @@
 /* collapsed */
 body.bs-custom-menu-header-container-collapse {
 	.calumma-toggle-button.bs-custom-menu-header-button {
-		height: 10px;
-		line-height: 10px;
-		padding-top: 0px;
-		top: 0px;
+		height: 0.625rem;
+		line-height: 0.625rem;
+		padding-top: 0;
+		top: 0;
 
 		&:hover {
-			padding-top: 10px;
-			height: 20px;
+			padding-top: 0.625rem;
+			height: 1.25rem;
 		}
 	}
 }

@@ -13,11 +13,11 @@ body {
 
 	&.navigation-main-collapse .navigation-main.active,
 	&.navigation-main-collapse .navigation-main {
-		width: 0px;
+		width: 0;
 		transition: width .3s;
 
 		#bs-sitenavtabs {
-			width: 0px;
+			width: 0;
 			transition: width .3s;
 		}
 	}
@@ -37,11 +37,11 @@ body {
 
 	&.sitetools-main-collapse .sitetools-main.active,
 	&.sitetools-main-collapse .sitetools-main {
-		width: 0px;
+		width: 0;
 		transition: width .3s;
 
 		#bs-toolpanetabs{
-			width: 0px;
+			width: 0;
 			transition: width .3s;
 		}
 	}
@@ -78,7 +78,7 @@ body {
 
 			.navigation-main #bs-sitenavtabs .tab-content,
 			.sitetools-main #bs-toolpanetabs .tab-content {
-				height: calc(~"100vh - @{banner-top-height} - @{menu-top-height} - @{navigation-tabs-height} - 15px" );
+				height: calc(~"100vh - @{banner-top-height} - @{menu-top-height} - @{navigation-tabs-height} - 0.9375rem" );
 			}
 
 			.wrapper .content-wrapper {
@@ -88,7 +88,7 @@ body {
 			/* VisualEditor */
 			.ve-init-target-visual > .ve-ui-toolbar > .oo-ui-toolbar-bar,
 			.ve-init-target-source > .ve-ui-toolbar > .oo-ui-toolbar-bar{
-				top: @banner-top-height + 5px;
+				top: @banner-top-height + 0.3125rem;
 			}
 			.ve-init-target-visual > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar,
 			.ve-init-target-source > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar{
@@ -128,7 +128,7 @@ body {
 
 			.navigation-main #bs-sitenavtabs .tab-content,
 			.sitetools-main #bs-toolpanetabs .tab-content {
-				height: calc(~"100vh - @{banner-top-height} - @{custom-menu-top-height} - @{menu-top-height} - @{navigation-tabs-height} - 15px" );
+				height: calc(~"100vh - @{banner-top-height} - @{custom-menu-top-height} - @{menu-top-height} - @{navigation-tabs-height} - 0.9375rem" );
 			}
 
 			.wrapper .content-wrapper {
@@ -159,7 +159,7 @@ body {
 			/* VisualEditor */
 			.ve-init-target-visual > .ve-ui-toolbar > .oo-ui-toolbar-bar,
 			.ve-init-target-source > .ve-ui-toolbar > .oo-ui-toolbar-bar{
-				top:  calc(~"@{banner-top-height}  + 5px");
+				top:  calc(~"@{banner-top-height}  + 0.3125rem");
 			}
 			.ve-init-target-visual > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar,
 			.ve-init-target-source > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {

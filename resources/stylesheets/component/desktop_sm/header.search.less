@@ -1,41 +1,40 @@
 header .navbar .p-search form {
-	left: 300px;
+	left: @navigation-main-width;
 	top: @menu-top-items-margin;
-	padding-left: calc(~"( 50vw - 745px )");
-	width: calc(~"100% + 30px") !important;
-	max-width: calc(~"50vw - 20px") !important;
+	padding-left: calc(~"( 50vw - 46.5625rem )");
+	width: calc(~"100% + 1.875rem") !important;
+	max-width: calc(~"50vw - 1.25rem") !important;
 
 	.form-group{
 		& > #bs-extendedsearch-input {
 			width: 100%;
-			max-width: calc(~"50vw - 152px") !important;
+			max-width: calc(~"50vw - 9.5rem") !important;
 		}
 
 		#bs-extendedsearch-box-wrapper {
 			min-width: 330px !important;
-			width: calc(~"100% - 30px") !important;
-			max-width: calc(~"50vw - 152px") !important;
+			width: calc(~"100% - 1.875rem") !important;
+			max-width: calc(~"50vw - 9.5rem") !important;
 
 			input.form-control{
-				width: 100%  !important;
+				width: 100% !important;
 			}
 		}
 
 		.bs-extendedsearch-autocomplete-popup {
 			width: 100% !important;
-			max-width: calc(~"50vw - 104px") !important;
-
+			max-width: 100% !important;
 
 			.bs-extendedsearch-autocomplete-popup-create-page-link {
 				&,
 				a {
 					height: auto;
-					min-height: 40px
+					min-height: 2.5rem
 				}
 			}
 
 			.bs-extendedsearch-autocomplete-popup-special-item-label {
-				min-height: 40px;
+				min-height: 2.5rem;
 				height: auto;
 			}
 		}

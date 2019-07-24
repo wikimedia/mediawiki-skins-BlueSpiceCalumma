@@ -1,0 +1,151 @@
+.bs-page-edit {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	min-width: 15.625rem;
+	max-width: 70%;
+
+	& > ul {
+		display:inline-flex;
+		flex-wrap:wrap;
+		list-style:none;
+		margin-bottom: 0;
+		padding-left:0;
+		justify-content: end;
+		min-width: 100%;
+
+		li {
+			line-height: 0;
+
+			&:first-child {
+				max-width: 80%;
+				height: max-content;
+				margin: auto;
+			}
+		}
+	}
+
+	.bs-page-edit-button-group {
+		margin-left: 0.625rem;
+		font-size: 0.75rem;
+		min-height: 1.8125rem;
+		border: 1px solid @page-header-page-edit-bg-color;
+		border-radius: 0.1875rem;
+		background-color: @page-header-page-edit-bg-color;
+
+		& > a.btn {
+			color: @page-header-page-edit-color;
+			font-size: 0.75rem;
+			font-weight: bold;
+			line-height: 0.75rem;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		a.btn {
+			&.dropdown-toggle {
+				padding-left: 0.625rem;
+				padding-right: 0.625rem;
+
+				i::after {
+					font-family: 'fontawesome';
+					content: "\f0d7";
+					font-style: normal;
+					font-weight: normal;
+				}
+			}
+		}
+
+		.dropdown-menu {
+			background-color: @page-header-page-edit-bg-color;
+
+			& > li {
+				max-width: 100%;
+
+				a {
+					display: block;
+					width: 100%;
+					min-height: 2.307rem;
+					padding-left: 0.3125rem;
+					padding-right: 0.3125rem;
+					font-size: 0.75rem;
+					line-height: 2.307rem;
+					color: @page-header-page-edit-color;
+					overflow: hidden;
+					text-overflow: ellipsis;
+
+					&:hover {
+						color: @page-header-page-edit-color-hover;
+						background-color: @page-header-page-edit-bg-color-hover;
+					}
+				}
+			}
+		}
+
+		&.open {
+			a.btn {
+				&.dropdown-toggle {
+					i::after {
+						content: "\f0d8";
+					}
+				}
+			}
+
+			.dropdown-menu {
+				margin-top: 0.625rem;
+
+				&::before {
+					margin-top: -0.56rem;
+					right: 0.1rem;
+					font-size: 1.875em;
+					font-family: 'fontawesome';
+					content: "\f0d8";
+					position: absolute;
+					color: @page-header-page-edit-bg-color;
+				}
+			}
+		}
+	}
+
+	.bs-page-last-edit {
+		line-height: 0.875rem;
+		font-size: 0.75rem;
+		display: inline-block;
+
+		a {
+			color: @link-color;
+
+			&:hover,
+			&:focus {
+				color: @link-color;
+				text-decoration: none;
+			}
+		}
+
+		&::before {
+			padding-right: 0.3125rem;
+			font-family: 'icomoon';
+			content: "\ea0c";
+			color: @link-color;
+		}
+	}
+
+	.bs-page-watch {
+		line-height: 0.875rem;
+		font-size: 0.75rem;
+		display: inline-block;
+		min-width: 4rem;
+
+		a {
+			color: @link-color;
+
+			&:hover,
+			&:focus {
+				color: @link-color;
+				text-decoration: none;
+			}
+		}
+	}
+}
