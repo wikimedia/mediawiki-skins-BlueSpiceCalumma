@@ -1,34 +1,34 @@
 header{
 	.bs-featured-actions{
 		position: absolute;
-		padding: 0px;
-		width: 160px;
+		padding: 0;
+		width: 10rem;
 		display: flex;
 		justify-content: space-between;
 
 		.btn-group{
 			margin-top: @menu-top-items-margin;
-			width: 80px;
+			width: 3.75rem;
 		}
 
 		.dropdown{
 			.btn.dropdown-toggle{
-				line-height: 32px;
-				padding: 0px;
-				margin-top: 0px;
+				line-height: 2rem;
+				padding: 0;
+				margin-top: 0;
 				-webkit-box-shadow: none;
 				box-shadow: none;
-				padding-left: 5px;
-				padding-right: 5px;
+				padding-left: 0.3125rem;
+				padding-right: 0.3125rem;
 				width: 2em;
 			}
 
 			.btn.dropdown-toggle::after{
 				font-family: 'fontawesome';
 				content: "\f0d7";
-				font-size: 18px;
+				font-size: 1.125rem;
 				color: @menu-top-color;
-				line-height: 28px;
+				line-height: 1.75rem;
 			}
 
 			.btn.dropdown-toggle:hover::after{
@@ -39,21 +39,21 @@ header{
 				background: none;
 				border: none;
 				box-shadow: none;
-				padding: 0px;
-				line-height: 32px;
+				padding: 0;
+				line-height: 2rem;
 
 				.icon::before{
-				    font-size: 1em;
-				    line-height: 1.3em;
+				    font-size: 0.875rem;
+				    line-height: 0.8125;
 				    font-style: normal;
 				    text-align: center;
-				    padding: 0.5em;
+				    padding: 0.3125rem;
 				    display: inline-block;
-				    width: 32px;
-					max-width: 32px;
-				    height: 32px;
-					max-height: 32px;
-				    border-radius: 16px;
+				    width: 2rem;
+					max-width: 2rem;
+				    height: 2rem;
+					max-height: 2rem;
+				    border-radius:  1rem;
 				    background-color: @menu-top-featuredactions-bg-color;
 				    color: @menu-top-featuredactions-color;
 				}
@@ -78,7 +78,7 @@ header{
 			.dropdown-menu {
 				background-color: @menu-top-dropdown-bg-color;
 				li a {
-					height: 32px;
+					height: 2rem;
 					color: @menu-top-dropdown-color;
 					&:hover {
 						background-color: @menu-top-dropdown-bg-color-hover;
@@ -107,10 +107,10 @@ header{
 	font-family: 'entypo';
 	content: "\e9f7";
 	font-weight: 700;
-	font-size: 150% !important;
-	line-height: 12px !important;
-	text-indent: -5.1px;
+	font-size: 1.325rem !important;
+	line-height: 1.3rem !important;
 }
+
 
 .bs-featured-actions .dropdown-menu #ca-view { display: none; }
 .ve-activated body header .bs-featured-actions .dropdown-menu #ca-view { display: block; }

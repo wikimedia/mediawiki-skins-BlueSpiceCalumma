@@ -1,12 +1,12 @@
 .bs-button-user{
 	float: right;
-	width: 200px;
-	margin-top: @menu-top-items-margin - 8px;
+	width: 12.5rem;
+	margin-top: @menu-top-items-margin - 0.5rem;
 	.bs-personal-not-loggedin {
-		line-height: 48px;
-		font-size: 105%;
+		line-height: 3rem;
+		font-size: 1rem;
 		font-weight: 700;
-		right: 2em;
+		right: 1.25rem;
 		position: fixed;
 		color: @menu-top-login-btn-color;
 		&:hover{
@@ -15,19 +15,19 @@
 		}
 	}
 	.bs-profile-img{
-		border-radius: 128px;
-		right: 2em;
+		border-radius: 8rem;
+		right: 1.25rem;
 		position: fixed;
 		object-fit: cover;
 	}
 	.bs-personal-menu-container{
-		margin-left: 0px;
+		margin-left: 0;
 		width: 100%;
-		top: 60px;
+		top: 3.75rem;
 		background-color: @menu-top-dropdown-bg-color;
 		ul{
 			list-style: none;
-			padding: 1em;
+			padding: 0.625rem;
 		}
 	}
 	.bs-personal-menu-container::before {
@@ -36,13 +36,13 @@
 		content: "\f0d8";
 		position: absolute;
 		top: -0.9em;
-		right: 22px;
+		right: 1.375rem;
 		color: @menu-top-dropdown-bg-color;
-		height: 1em;
+		height: 0.625rem;
 		z-index: -1;
 	}
 	#bs-personal-menu{
-		padding: 0px;
+		padding: 0;
 		li{
 			border: none;
 			width: 100%;
@@ -51,11 +51,11 @@
 				color: @menu-top-dropdown-color;
 				text-decoration: none;
 				display: block;
-				padding-left: 1em;
-				padding-right: 1em;
-				padding-top: 3px;
-				height: 32px;
-				line-height: 28px;
+				padding-left: 0.625rem;
+				padding-right: 0.625rem;
+				padding-top: 0.1875rem;
+				height: 2rem;
+				line-height: 1.75rem;
 			}
 			a:hover{
 				background-color:  @menu-top-dropdown-bg-color-hover;
@@ -71,7 +71,7 @@
 		.separator {
 			display: block;
 			width: 100%;
-			border-bottom: 18px solid @menu-top-dropdown-bg-color;
+			border-bottom: 1.125rem solid @menu-top-dropdown-bg-color;
 		}
 	}
 	.bs-userbutton-notifications-badge {
@@ -83,10 +83,10 @@
 		border-radius: 1.5em;
 		text-align: center;
 		line-height: 2.5em;
-		font-size: 11px;
+		font-size: 0.6875rem;
 		position: absolute;
-		right: calc(~"1em - 12px");
-		top: 0px;
+		right: 0.125rem;
+		top: 0;
 		z-index: 100;
 	}
 }

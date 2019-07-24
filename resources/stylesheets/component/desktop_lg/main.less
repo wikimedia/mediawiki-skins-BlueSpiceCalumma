@@ -3,15 +3,15 @@ body.mediawiki.x-body {
 	&:not( .navigation-main-collapse ):not( .sitetools-main-collapse ) {
 		.content-wrapper {
 			transition: padding .3s;
-			padding-left: calc(~"( 50vw - 490px )");
-			padding-right: calc(~"( 50vw - 490px )");
+			padding-left: calc(~"( 50vw - @{bs-content-width} / 2 )");
+			padding-right: calc(~"( 50vw - @{bs-content-width} / 2 )");
 		}
 
 		.bs-content.container {
 			padding-top: 1em;
 			transition: margin .3s;
 			width: auto;
-			max-width: 980px;
+			max-width: @bs-content-width;
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -20,8 +20,8 @@ body.mediawiki.x-body {
 	/* collapsing elements */
 	&.navigation-main-collapse.sitetools-main-collapse {
 		.content-wrapper {
-			padding-left: 0px;
-			padding-right: 0px;
+			padding-left: 0;
+			padding-right: 0;
 		}
 		.bs-content.container {
 			width: auto;
@@ -33,8 +33,8 @@ body.mediawiki.x-body {
 	&:not( .navigation-main-collapse ).sitetools-main-collapse {
 		.content-wrapper {
 			transition: padding .3s;
-			padding-left: 0px;
-			padding-right: 0px;
+			padding-left: 0;
+			padding-right: 0;
 		}
 		.bs-content.container {
 			transition: margin .3s;
@@ -46,8 +46,8 @@ body.mediawiki.x-body {
 	&:not( .sitetools-main-collapse ).navigation-main-collapse {
 		.content-wrapper {
 			transition: padding .3s;
-			padding-left: 0px;
-			padding-right: 0px;
+			padding-left: 0;
+			padding-right: 0;
 		}
 		.bs-content.container {
 			transition: margin .3s;

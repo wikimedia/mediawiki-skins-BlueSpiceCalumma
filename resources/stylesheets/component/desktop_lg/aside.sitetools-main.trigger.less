@@ -3,9 +3,9 @@ body .sitetools-main.active {
 	.sidebar-toggle[data-toggle~="sitetools-main-collapse"]{
 		display: block;
 		position: fixed;
-		width: 48px;
-		padding: 1em;
-		right: 300px;
+		width: 3rem;
+		padding: 0.625rem;
+		right: @sitetools-main-width;
 		top: @menu-top-height + @banner-top-height;
 		transition: right .3s;
 		z-index: 11;
@@ -13,8 +13,8 @@ body .sitetools-main.active {
 			font-family: 'entypo';
 			content: "\e93c";
 			font-style: initial;
-			font-size: 21px;
-			line-height: 33.6px;
+			font-size: 1.3125rem;
+			line-height: 2.1rem;
 			transition: font-size .1s;
 			transition-delay: .3s;
 			color: @sitetools-toggle-btn-color;
@@ -36,11 +36,11 @@ body .sitetools-main.active {
 
 body.sitetools-main-collapse {
 	.sidebar-toggle[data-toggle~="sitetools-main-collapse"]{
-		right: 0px;
+		right: 0;
 		transition: right .3s;
-		width: 80px;
+		width: 5rem;
 		i.sitetools-main-collapse::before{
-			font-size: 31px;
+			font-size: 1.9375rem;
 			float: left;
 			transition: font-size .1s;
 			transition-delay: .3s;

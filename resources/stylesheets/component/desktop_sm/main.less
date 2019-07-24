@@ -3,14 +3,14 @@ body.mediawiki.x-body {
 	&:not( .navigation-main-collapse ):not( .sitetools-main-collapse ) {
 		.content-wrapper {
 			transition: padding .3s;
-			padding-left: 0px;
-			padding-right: 0px;
+			padding-left: 0;
+			padding-right: 0;
 		}
 		.bs-content.container {
-			width: calc(~"( 100vw - 700px )");
-			padding-left: 0px;
-			padding-right: 0px;
-			max-width: 980px;
+			width: calc(~"( 100vw - 43.75rem )");
+			padding-left: 0;
+			padding-right: 0;
+			max-width: @bs-content-width;
 			margin-left: auto;
 		}
 	}
@@ -18,12 +18,12 @@ body.mediawiki.x-body {
 	/* collapsing elements */
 	&.navigation-main-collapse.sitetools-main-collapse {
 		.content-wrapper {
-			padding-left: 0px;
-			padding-right: 0px;
+			padding-left: 0;
+			padding-right: 0;
 			transition: padding .3s;
 		}
 		.bs-content.container {
-			width: calc( ~"( 100vw - 100px )" );
+			width: calc( ~"( 100vw - 6.25rem )" );
 			margin-left: auto;
 			margin-right: auto;
 			transition: margin .3s;
@@ -32,25 +32,25 @@ body.mediawiki.x-body {
 
 	&:not( .navigation-main-collapse ).sitetools-main-collapse {
 		.content-wrapper {
-			padding-left: 0px;
-			padding-right: 0px;
+			padding-left: 0;
+			padding-right: 0;
 			transition: padding .3s;
 		}
 		.bs-content.container {
-			width: calc( ~"( 100vw - 350px - ( 50vw - 490px ) ) - 50px" );
-			margin-right: calc(~"( 50vw - 490px ) + 50px");
+			width: calc( ~"( 50vw - 49.375rem )" );
+			margin-right: calc(~"( 50vw - 27.5rem )");
 		}
 	}
 
 	&:not( .sitetools-main-collapse ).navigation-main-collapse {
 		.content-wrapper {
 			transition: padding .3s;
-			padding-left: 0px;
-			padding-right: 0px;
+			padding-left: 0;
+			padding-right: 0;
 		}
 		.bs-content.container {
-			width: calc( ~"( 100vw - 350px - ( 50vw - 490px ) ) - 50px" );
-			margin-left: calc(~"( 50vw - 490px ) + 50px");
+			width: calc( ~"( 50vw - 49.375rem )" );
+			margin-left: calc(~"( 50vw - 27.5rem )");
 		}
 	}
 }

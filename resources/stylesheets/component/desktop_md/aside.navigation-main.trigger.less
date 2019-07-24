@@ -3,9 +3,9 @@ body .navigation-main.active {
 	.sidebar-toggle[data-toggle~="navigation-main-collapse"]{
 		display: block;
 		position: fixed;
-		width: 48px;
+		width: 3rem;
 		padding: 1em;
-		left: 300px;
+		left: @navigation-main-width;
 		top: @menu-top-height + @banner-top-height;
 		transition: left .3s;
 		z-index: 12;
@@ -13,8 +13,8 @@ body .navigation-main.active {
 			font-family: 'bs-button';
 			content: "\e902";
 			font-style: normal;
-			font-size: 21px;
-			line-height: 33.6px;
+			font-size: 1.325rem;
+			line-height: 2.1rem;
 			transition: font-size .1s;
 			transition-delay: .3s;
 			color: @navigation-toggle-btn-color;
@@ -38,7 +38,7 @@ body.navigation-main-collapse {
 		left: 0;
 		transition: left .3s;
 		i.navigation-main-collapse::before{
-			font-size: 32px;
+			font-size: 2rem;
 			transition: font-size .1s;
 			transition-delay: .3s;
 		}
