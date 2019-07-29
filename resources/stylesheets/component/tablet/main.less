@@ -25,16 +25,16 @@ body.mediawiki.x-body {
 
 	&:not( .navigation-main-collapse ).sitetools-main-collapse {
 		.bs-content.container {
-			width: calc( ~"100vw - 21.875rem" );
-			margin-left: 19.0625rem;
+			width: calc( ~"100vw - @{navigation-main-width} - 3rem" );
+			margin-left: calc( ~"@{navigation-main-width} + 1rem" );
 			transition: margin .3s;
 		}
 	}
 
 	&:not( .sitetools-main-collapse ).navigation-main-collapse {
 		.bs-content.container {
-			width: calc( ~"100vw - 21.875rem" );
-			margin-left: 19.0625rem;
+			width: calc( ~"100vw - @{sitetools-main-width} - 3rem" );
+			margin-right: calc( ~"@{sitetools-main-width} + 1rem" );
 			transition: margin .3s;
 		}
 	}
