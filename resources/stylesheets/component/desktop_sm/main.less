@@ -37,8 +37,8 @@ body.mediawiki.x-body {
 			transition: padding .3s;
 		}
 		.bs-content.container {
-			width: calc( ~"( 50vw - 49.375rem )" );
-			margin-right: calc(~"( 50vw - 27.5rem )");
+			width: calc( ~"100vw - @{navigation-main-width} - 2 * 3.5rem" );
+			margin-right: calc(~"( 50vw - @{bs-content-width} / 2 + 3.5rem )");
 		}
 	}
 
@@ -49,8 +49,8 @@ body.mediawiki.x-body {
 			padding-right: 0;
 		}
 		.bs-content.container {
-			width: calc( ~"( 50vw - 49.375rem )" );
-			margin-left: calc(~"( 50vw - 27.5rem )");
+			width: calc( ~"100vw - @{sitetools-main-width} - 2 * 3.5rem" );
+			margin-left: calc(~"( 50vw - @{bs-content-width} / 2 + 3.5rem )");
 		}
 	}
 }
