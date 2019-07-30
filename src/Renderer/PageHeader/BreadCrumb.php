@@ -128,6 +128,7 @@ class BreadCrumb extends Renderer {
 				implode( '/', $titleParts ),
 				$title->getNamespace()
 			);
+
 			$node = '';
 			$dropdown = false;
 			if ( $nodeTitle->exists() ) {
@@ -138,7 +139,9 @@ class BreadCrumb extends Renderer {
 			$html .= Html::element(
 					'a',
 					[
-						'class' => ( $dropdown ) ? 'dropdown-toggle' : '',
+						'class' => ( $dropdown )
+							? 'bs-breadcrumbs-current-title dropdown-toggle'
+							: 'bs-breadcrumbs-current-title',
 						'data-toggle' => ( $dropdown ) ? 'dropdown' : '',
 						'data-node' => $node,
 						'title' => $this->msg(
