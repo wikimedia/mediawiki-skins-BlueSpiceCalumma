@@ -88,11 +88,13 @@ body {
 			/* VisualEditor */
 			.ve-init-target-visual > .ve-ui-toolbar > .oo-ui-toolbar-bar,
 			.ve-init-target-source > .ve-ui-toolbar > .oo-ui-toolbar-bar{
-				top: @banner-top-height + 0.3125rem;
+				top: calc(~"@{banner-top-height} + 1rem");
+				.mixin-ve-width();
 			}
 			.ve-init-target-visual > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar,
 			.ve-init-target-source > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar{
 				top: calc(~"@{banner-top-height} + @{menu-top-height}");
+				.mixin-ve-width();
 			}
 		}
 	}
@@ -159,12 +161,21 @@ body {
 			/* VisualEditor */
 			.ve-init-target-visual > .ve-ui-toolbar > .oo-ui-toolbar-bar,
 			.ve-init-target-source > .ve-ui-toolbar > .oo-ui-toolbar-bar{
-				top:  calc(~"@{banner-top-height} + 0.3125rem");
+				top:  calc(~"@{banner-top-height} + 1rem");
+				.mixin-ve-width();
+
 			}
 			.ve-init-target-visual > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar,
 			.ve-init-target-source > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
 				top: calc(~"@{banner-top-height} + @{menu-top-height} + @{custom-menu-top-height}");
+				.mixin-ve-width();
 			}
 		}
 	}
+}
+
+.mixin-ve-width() {
+	font-size: 0.625rem;
+	max-width: calc(~"100vw - 8rem");
+	margin: auto;
 }
