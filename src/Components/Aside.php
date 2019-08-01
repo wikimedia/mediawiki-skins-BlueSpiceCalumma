@@ -8,6 +8,10 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 	 * @return string
 	 */
 	public function getHtml() {
+		if ( $this->skipRendering() ) {
+			return '';
+		}
+
 		$class = $this->getDomElement()->getAttribute( 'class' );
 		$toggleBy = $this->getDomElement()->getAttribute( 'data-toggle-by' );
 
@@ -30,4 +34,17 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 
 		return $html;
 	}
+
+	protected function skipRendering() {
+		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
+		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
+		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+
+		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
+			return true;
+		}
+
+		return false;
+	}
+
 }
