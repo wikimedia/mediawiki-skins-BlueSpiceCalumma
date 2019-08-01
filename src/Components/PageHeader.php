@@ -30,23 +30,66 @@ class PageHeader extends TemplateComponent {
 	 */
 	protected function getTemplateArgs() {
 		$args = parent::getTemplateArgs();
-		$args += [
+
+		$showContextBand = $this->showContextBand();
+		$showQualificationBand = $this->showQualificationBand();
+		$showMetaBand = $this->showMetaBand();
+		$showActionBand = $this->showActionBand();
+
+		$args = $this->getDefaultArgs();
+		if ( $this->isEditMode() ) {
+			$args['firstheading'] = $this->getFirstHeading();
+			return $args;
+		}
+
+		$args = [
 			'sitenotice' => $this->getSiteNotice(),
 			'indicators' => $this->getIndicators(),
 			'firstheading' => $this->getFirstHeading(),
 			'lang' => $this->getPageLanguageCode(),
 			'headerlinks' => $this->getHeaderLinks(),
-			'breadcrumbs' => $this->getBreadCrumbs(),
-			'tools' => $this->getTools(),
-			'namespaces' => $this->getSiteNamespaces(),
-			'categories' => $this->getCategories(),
-			'pageinfoelements' => $this->getPageInfoElement(),
-			'edit' => $this->getEditButton(),
-			'lastedit' => $this->getLastEdit(),
-			'watchaction' => $this->getWatchAction(),
+			'breadcrumbs' => $showContextBand ? $this->getBreadCrumbs() : '',
+			'namespaces' => $showContextBand ? $this->getSiteNamespaces() : '',
+			'categories' => $showQualificationBand ? $this->getCategories() : '',
+			'tools' => $showQualificationBand ? $this->getTools() : '',
+			'pageinfoelements' => $showMetaBand ? $this->getPageInfoElement() : '',
+			'lastedit' => $showMetaBand ? $this->getLastEdit() : '',
+			'watchaction' => $showMetaBand ? $this->getWatchAction() : '',
+			'edit' => $showActionBand ? $this->getEditButton() : '',
+			'contextband' => $showContextBand,
+			'qualificationband' => $showQualificationBand,
+			'metaband' => $showMetaBand,
+			'actionband' => $showActionBand
 
-		];
+		] + $args;
+
 		return $args;
+	}
+
+	/**
+	 *
+	 * @return array
+	 */
+	protected function getDefaultArgs() {
+		return [
+			'sitenotice' => '',
+			'indicators' => '',
+			'firstheading' => '',
+			'lang' => '',
+			'headerlinks' => '',
+			'breadcrumbs' => '',
+			'namespaces' => '',
+			'categories' => '',
+			'tools' => '',
+			'pageinfoelements' => '',
+			'lastedit' => '',
+			'watchaction' => '',
+			'edit' => '',
+			'contextband' => false,
+			'qualificationband' => false,
+			'metaband' => false,
+			'actionband' => false
+		];
 	}
 
 	/**
@@ -215,6 +258,10 @@ class PageHeader extends TemplateComponent {
 	 * @return string
 	 */
 	protected function getCategories() {
+		if ( $this->hideCategories() ) {
+			return '';
+		}
+
 		$args = parent::getTemplateArgs();
 		$args[Category::PARAM_CATEGORY_NAMES] = $this->getSkin()->getOutput()
 			->getCategories( 'normal' );
@@ -306,4 +353,101 @@ class PageHeader extends TemplateComponent {
 	protected function getRendererFactory() {
 		return Services::getInstance()->getBSRendererFactory();
 	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	protected function showContextBand() {
+		return true;
+	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	protected function showQualificationBand() {
+		if ( $this->getSkin()->getTitle()->exists() === false ) {
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	protected function showMetaBand() {
+		$title = $this->getSkin()->getTitle();
+		if ( $title->exists() === false ) {
+			return false;
+		}
+		if ( $title->isTalkPage() ) {
+			return false;
+		}
+		if ( $this->isHistoryView() ) {
+			return false;
+		}
+		if ( $this->isDiffView() ) {
+			return false;
+		}
+
+		return true;
+	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	protected function showActionBand() {
+		if ( $this->isDiffView() ) {
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	protected function hideCategories() {
+		if ( $this->getSkin()->getTitle()->isTalkPage() ) {
+			return true;
+		}
+		if ( $this->isHistoryView() ) {
+			return true;
+		}
+		if ( $this->isDiffView() ) {
+			return true;
+		}
+
+		return false;
+	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	private function isDiffView() {
+		return $this->getSkin()->getRequest()->getVal( 'diff', '-1' ) !== '-1';
+	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	private function isHistoryView() {
+		return $this->getSkin()->getRequest()->getVal( 'action', 'view' ) === 'history';
+	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	private function isEditMode() {
+		$action = $this->getSkin()->getRequest()->getVal( 'action', 'view' );
+		$veAction = $this->getSkin()->getRequest()->getVal( 'veaction', '' );
+		return $action === 'edit' || $veAction === 'edit';
+	}
+
 }
