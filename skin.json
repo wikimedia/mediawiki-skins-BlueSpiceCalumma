@@ -51,7 +51,8 @@
 				"bs-content-toc-background": "@bs-background-primary"
 			},
 			"PageToolRegistry": {
-				"history": "BlueSpice\\Calumma\\PageTool\\History::factory"
+				"history": "BlueSpice\\Calumma\\PageTool\\History::factory",
+				"view": "BlueSpice\\Calumma\\PageTool\\View::factory"
 			}
 		},
 		"BlueSpiceCustomMenu": {
