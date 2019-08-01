@@ -98,5 +98,8 @@
 	"bs-action-new-please-login-title": "Melde dich bitte an, um eine neue Seite hinzuzufügen.",
 	"bs-action-edit-please-login-title": "Melde dich bitte an, um diese Seite zu bearbeiten.",
 	"bs-action-new-disabled-title": "{{GENDER:|Du}} hast keine Berechtigung, eine neue Seite zu erstellen.",
-	"bs-action-edit-disabled-title": "{{GENDER:|Du}} hast keine Berechtigung, diese Seite zu bearbeiten."
+	"bs-action-edit-disabled-title": "{{GENDER:|Du}} hast keine Berechtigung, diese Seite zu bearbeiten.",
+	"bs-calumma-version-pager-prev-tooltip": "Zur vorherigen Version wechseln",
+	"bs-calumma-version-pager-next-tooltip": "Zur nächsten Version wechseln",
+	"bs-calumma-version-pager-info-text": "Version vom $1 von [[User:$2|$2]]"
 }
