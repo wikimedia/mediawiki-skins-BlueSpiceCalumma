@@ -103,5 +103,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "but",
 	"bs-calumma-full-screen-button-tooltip": "Full Screen/Normal mode",
 	"bs-calumma-page-last-edit-by-system-user": "system user",
-	"bs-calumma-notification-logged-in": "You are now logged in"
+	"bs-calumma-notification-logged-in": "You are now logged in",
+	"bs-calumma-alert-oldpage": "You are viewing an old version of this page. [[Special:Redirect/page/$1|Return to the latest version]]."
 }

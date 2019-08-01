@@ -53,6 +53,9 @@
 			"PageToolRegistry": {
 				"history": "BlueSpice\\Calumma\\PageTool\\History::factory",
 				"view": "BlueSpice\\Calumma\\PageTool\\View::factory"
+			},
+			"AlertProviderRegistry": {
+				"oldversion": "\\BlueSpice\\Calumma\\AlertProvider\\OldVersion::factory"
 			}
 		},
 		"BlueSpiceCustomMenu": {
