@@ -39,11 +39,11 @@ abstract class TemplateComponent extends Component {
 	 */
 	protected function initTemplateParser() {
 		$templatePath = $this->getTemplatePath();
-		if ( !isset( static::$templateParsers[$templatePath ] ) ) {
-			static::$templateParsers[$templatePath ] = new \TemplateParser( $templatePath );
+		if ( !isset( static::$templateParsers[$templatePath] ) ) {
+			static::$templateParsers[$templatePath] = new \TemplateParser( $templatePath );
 		}
 
-		$this->templateParser = static::$templateParsers[$templatePath ];
+		$this->templateParser = static::$templateParsers[$templatePath];
 	}
 
 	/**
