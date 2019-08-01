@@ -36,9 +36,20 @@ class OldVersion extends AlertProviderBase {
 	 */
 	private function isOldVersion() {
 		$oldId = $this->skin->getRequest()->getInt( 'oldid', -1 );
-		$currentRevId = $this->skin->getTitle()->getLatestRevID();
-		if ( $oldId !== -1 && $oldId !== $currentRevId ) {
-			return true;
+
+		if ( $oldId !== -1 ) {
+			$currentRevId = $this->skin->getTitle()->getLatestRevID();
+			$direction = $this->skin->getRequest()->getVal( 'direction', '' );
+			if ( $direction === 'next' ) {
+				$oldId = $this->skin->getTitle()->getNextRevisionID( $oldId );
+			}
+			if ( $direction === 'prev' ) {
+				$oldId = $this->skin->getTitle()->getPreviousRevisionID( $oldId );
+			}
+
+			if ( $oldId !== $currentRevId ) {
+				return true;
+			}
 		}
 		return false;
 	}
