@@ -10,6 +10,9 @@
 {{#qualificationband}}
 <div class="bs-page-header">
 	<div class="bs-page-categories pull-left">{{{categories}}}</div>
+	{{#actionband}}
+	<div class="bs-page-edit pull-right">{{{edit}}}</div>
+	{{/actionband}}
 	<div class="bs-page-tools pull-right">{{{tools}}}</div>
 </div>
 {{/qualificationband}}
@@ -36,11 +39,6 @@
 				{{{watchaction}}} {{{lastedit}}}
 			</li>
 			{{/metaband}}
-			{{#actionband}}
-			<li>
-				{{{edit}}}
-			</li>
-			{{/actionband}}
 		</ul>
 	</div>
 </div>
