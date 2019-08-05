@@ -4,7 +4,8 @@
 			"Jeroen N",
 			"Mainframe98",
 			"Ndecouck",
-			"Elroy"
+			"Elroy",
+			"Elderson"
 		]
 	},
 	"bs-calumma-pref-toggle-navigaiton-main": "Verberg automatisch het hoofdmenu",
@@ -68,5 +69,6 @@
 	"bs-calumma-navigation-toggle-tooltip": "Openen / sluiten",
 	"bs-edit-custom-menu-link-title": "Menu bewerken",
 	"bs-edit-custom-menu-link-text": "Menu bewerken",
-	"bs-calumma-toggle-button-tooltip": "Openen/sluiten"
+	"bs-calumma-toggle-button-tooltip": "Openen/sluiten",
+	"bs-calumma-alert-oldpage": "U bekijkt een oudere versie van deze pagina."
 }

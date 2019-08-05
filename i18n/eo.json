@@ -98,5 +98,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "sed",
 	"bs-calumma-full-screen-button-tooltip": "Plenekrana/Ordinara reĝimo",
 	"bs-calumma-page-last-edit-by-system-user": "sistema uzanto",
-	"bs-calumma-notification-logged-in": "Vi ensalutis"
+	"bs-calumma-notification-logged-in": "Vi ensalutis",
+	"bs-calumma-alert-oldpage": "Vi vidas malaktualan version de ĉi tiu paĝo. [[Special:Redirect/page/$1|Reiru al la plej aktuala versio]]."
 }

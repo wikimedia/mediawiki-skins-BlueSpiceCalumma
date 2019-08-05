@@ -5,7 +5,7 @@
 			"Winston Sung"
 		]
 	},
-	"bluespicecalumma-desc": "BlueSpice 外觀",
+	"bluespicecalumma-desc": "BlueSpice 佈景主題",
 	"bluespicecalumma-skin": "BlueSpiceCalumma",
 	"prefs-bs-calumma": "BlueSpice Calumma 設定",
 	"bs-calumma-pref-toggle-navigaiton-main": "自動隱藏主選單",
@@ -99,5 +99,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "但",
 	"bs-calumma-full-screen-button-tooltip": "全螢幕/正常模式",
 	"bs-calumma-page-last-edit-by-system-user": "系統使用者",
-	"bs-calumma-notification-logged-in": "您現在已登入"
+	"bs-calumma-notification-logged-in": "您現在已登入",
+	"bs-calumma-alert-oldpage": "您正檢視此頁面的舊版本。[[Special:Redirect/page/$1|返回最新版本]]。"
 }

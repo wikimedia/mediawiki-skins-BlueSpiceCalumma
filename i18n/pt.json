@@ -98,5 +98,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "mas",
 	"bs-calumma-full-screen-button-tooltip": "Ecrã completo/Modo normal",
 	"bs-calumma-page-last-edit-by-system-user": "utilizador do sistema",
-	"bs-calumma-notification-logged-in": "Tem agora uma sessão iniciada"
+	"bs-calumma-notification-logged-in": "Tem agora uma sessão iniciada",
+	"bs-calumma-alert-oldpage": "Está a ver uma versão antiga desta página. [[Special:Redirect/page/$1|Voltar para a versão mais recente]]."
 }

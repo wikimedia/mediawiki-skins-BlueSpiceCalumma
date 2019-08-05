@@ -99,5 +99,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "لكن",
 	"bs-calumma-full-screen-button-tooltip": "ملء الشاشة/الوضع العادي",
 	"bs-calumma-page-last-edit-by-system-user": "مستخدم نظام",
-	"bs-calumma-notification-logged-in": "أنت مسجل الدخول الآن"
+	"bs-calumma-notification-logged-in": "أنت مسجل الدخول الآن",
+	"bs-calumma-alert-oldpage": "أنت تقوم بعرض نسخة قديمة من هذه الصفحة، [[Special:Redirect/page/$1|العودة إلى أحدث إصدار]]."
 }
