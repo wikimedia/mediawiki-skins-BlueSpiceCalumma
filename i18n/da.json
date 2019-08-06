@@ -54,5 +54,12 @@
 	"bs-calumma-navigation-toggle-tooltip": "Åbn / luk",
 	"bs-edit-custom-menu-link-title": "Rediger menuen",
 	"bs-edit-custom-menu-link-text": "Rediger menuen",
-	"bs-calumma-toggle-button-tooltip": "Åbn/luk"
+	"bs-calumma-toggle-button-tooltip": "Åbn/luk",
+	"bs-calumma-breadcrumbs-nstab-main": "Alle sider",
+	"bs-calumma-breadcrumbs-pages": "Du er her",
+	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Underside|Undersider}} af \"$2\"",
+	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Underside|$1 undersider}} af \"$2\"",
+	"bs-calumma-page-unwatch-text": "Overvåg ikke",
+	"bs-calumma-pageinfosentence-item-separator": "og",
+	"bs-calumma-pageinfosentence-item-class-separator": "men"
 }

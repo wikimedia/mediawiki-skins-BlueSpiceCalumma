@@ -50,5 +50,8 @@
 	"bs-calumma-pagetool-unwatch-tooltip": "اکھ ہیٹھوں ہٹاؤ",
 	"bs-edit-mediawiki-sidebar-link-text": "پاسے آلی پٹّی وچ تبدیلی کرو",
 	"bs-allpages-description": "سارے ورقے",
-	"bs-support-description": "رہنمائی"
+	"bs-support-description": "رہنمائی",
+	"bs-calumma-breadcrumbs-nstab-main": "سارے ورقے",
+	"bs-calumma-page-unwatch-text": "اکھ ہیٹھوں ہٹاؤ",
+	"bs-calumma-pageinfosentence-item-class-separator": "پر"
 }

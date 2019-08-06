@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Daimona Eaytoy"
+			"Daimona Eaytoy",
+			"Annibale covini gerolamo"
 		]
 	},
 	"bluespicecalumma-desc": "Tema BlueSpice",
@@ -17,7 +18,7 @@
 	"bs-action-new-page-title": "Aggiungi una nuova pagina",
 	"bs-action-new-subpage-text": "Nuova sottopagina",
 	"bs-action-new-subpage-title": "Aggiungi una nuova sottopagina a $1",
-	"bs-action-new-file-text": "Nuovo file caricato",
+	"bs-action-new-file-text": "Carica un nuovo file",
 	"bs-action-new-file-title": "Carica un nuovo file",
 	"bs-userbutton-notifications-link-text": "Notifiche",
 	"bs-userbutton-userpage-link-text": "Il mio profilo",
@@ -62,5 +63,21 @@
 	"bs-calumma-navigation-toggle-tooltip": "Apri / chiudi",
 	"bs-edit-custom-menu-link-title": "Modifica menu",
 	"bs-edit-custom-menu-link-text": "Modifica menu",
-	"bs-calumma-toggle-button-tooltip": "Apri/chiudi"
+	"bs-calumma-toggle-button-tooltip": "Apri/chiudi",
+	"bs-calumma-breadcrumbs-nstab-main": "Tutte le pagine",
+	"bs-calumma-breadcrumbs-pages": "Sei qui",
+	"bs-calumma-breadcrumbs-pages-title": "Stai attualmente vedendo \"$1\"",
+	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Sottopagina|Sottopagine}} di \"$2\"",
+	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Sottopagina|$1 sottopagine}} di \"$2\"",
+	"bs-calumma-category-no-categories": "Nessuna categoria assegnata",
+	"bs-calumma-page-last-edit-text": "Ultima modifica $1 fa da $2",
+	"bs-calumma-page-watch-title": "Segui \"$1\"",
+	"bs-calumma-page-watch-text": "Segui",
+	"bs-calumma-page-unwatch-title": "Non seguire più \"$1\"",
+	"bs-calumma-page-unwatch-text": "Non seguire",
+	"bs-calumma-pageinfosentence": "Questa pagina è $1",
+	"bs-calumma-pageinfosentence-item-separator": "e",
+	"bs-calumma-pageinfosentence-item-class-separator": "ma",
+	"bs-calumma-full-screen-button-tooltip": "Schermo intero/modalità normale",
+	"bs-calumma-notification-logged-in": "Ora hai effettuato l'accesso"
 }

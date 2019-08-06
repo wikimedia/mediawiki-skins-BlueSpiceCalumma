@@ -3,7 +3,8 @@
 		"authors": [
 			"A Chinese Wikipedian",
 			"Liuxinyu970226",
-			"94rain"
+			"94rain",
+			"科劳"
 		]
 	},
 	"bs-calumma-pref-toggle-navigaiton-main": "自动隐藏主菜单",
@@ -71,5 +72,9 @@
 	"bs-support-description": "支持",
 	"bs-edit-custom-menu-link-title": "编辑菜单",
 	"bs-edit-custom-menu-link-text": "编辑菜单",
-	"bs-calumma-toggle-button-tooltip": "开/关"
+	"bs-calumma-toggle-button-tooltip": "开/关",
+	"bs-action-new-please-login-title": "要创建新页面，请登录",
+	"bs-action-edit-please-login-title": "要编辑此页面，请登录",
+	"bs-action-new-disabled-title": "没有权限创建新的页面",
+	"bs-action-edit-disabled-title": "没有权限编辑此页面"
 }

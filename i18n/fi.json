@@ -58,5 +58,8 @@
 	"bs-edit-mediawiki-sidebar-link-title": "Muokkaa sivupalkkia",
 	"bs-allpages-description": "Kaikki sivut",
 	"bs-support-description": "Tuki",
-	"bs-calumma-navigation-toggle-tooltip": "Avaa / sulje"
+	"bs-calumma-navigation-toggle-tooltip": "Avaa / sulje",
+	"bs-mobilemoremenu-new-section-text": "Uusi osio",
+	"bs-calumma-recentchanges-diff": "Ero",
+	"bs-calumma-toggle-button-tooltip": "Avaa/Sulje"
 }

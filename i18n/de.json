@@ -3,7 +3,8 @@
 		"authors": [
 			"Daniel Vogel",
 			"Kghbln",
-			"Metalhead64"
+			"Metalhead64",
+			"Osnard"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice skin",
@@ -84,7 +85,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Unterseite|Unterseiten}} von \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Eine Unterseite|Unterseiten}} zu \"$2\"",
 	"bs-calumma-category-no-categories": "Keine Kategorien vergeben",
-	"bs-calumma-page-last-edit-text": "Dieser Artikel wurde zuletzt vor $1 von $2 bearbeitet",
+	"bs-calumma-page-last-edit-text": "Zuletzt vor $1 von $2 bearbeitet",
 	"bs-calumma-page-watch-title": "Artikel \"$1\" beobachten",
 	"bs-calumma-page-watch-text": "Beobachten",
 	"bs-calumma-page-unwatch-title": "Artikel \"$1\" nicht mehr beobachten",
@@ -93,5 +94,9 @@
 	"bs-calumma-pageinfosentence-item-separator": "und",
 	"bs-calumma-pageinfosentence-item-separator-greater-two": ",",
 	"bs-calumma-pageinfosentence-item-class-separator": "aber",
-	"bs-calumma-page-last-edit-by-system-user": "Systembenutzer"
+	"bs-calumma-page-last-edit-by-system-user": "Systembenutzer",
+	"bs-action-new-please-login-title": "Melde dich bitte an, um eine neue Seite hinzuzufügen.",
+	"bs-action-edit-please-login-title": "Melde dich bitte an, um diese Seite zu bearbeiten.",
+	"bs-action-new-disabled-title": "{{GENDER:|Du}} hast keine Berechtigung, eine neue Seite zu erstellen.",
+	"bs-action-edit-disabled-title": "{{GENDER:|Du}} hast keine Berechtigung, diese Seite zu bearbeiten."
 }

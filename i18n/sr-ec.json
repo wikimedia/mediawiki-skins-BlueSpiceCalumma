@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"BadDog"
+			"BadDog",
+			"Zoranzoki21"
 		]
 	},
 	"bluespicecalumma-desc": "Тема BlueSpice-а",
@@ -19,7 +20,7 @@
 	"bs-action-new-page-title": "Додај нову страницу",
 	"bs-action-new-subpage-text": "Нова подстраница",
 	"bs-action-new-subpage-title": "Додај нову подстраницу странице „$1”",
-	"bs-action-new-file-text": "Нова датотека за отпремање",
+	"bs-action-new-file-text": "Отпремање нове датотеке",
 	"bs-action-new-file-title": "Отпреми нову датотеку",
 	"bs-userbutton-notifications-link-text": "Обавештења",
 	"bs-userbutton-userpage-link-text": "Мој профил",
@@ -74,5 +75,9 @@
 	"bs-calumma-navigation-toggle-tooltip": "Отвори / затвори",
 	"bs-edit-custom-menu-link-title": "Уређивање менија",
 	"bs-edit-custom-menu-link-text": "Уређивање менија",
-	"bs-calumma-toggle-button-tooltip": "Отвори/Затвори"
+	"bs-calumma-toggle-button-tooltip": "Отвори/Затвори",
+	"bs-action-new-please-login-title": "Молимо Вас да се пријавите да би сте додали нову страницу",
+	"bs-action-edit-please-login-title": "Молимо Вас да се пријавите да би сте уредили ову страницу",
+	"bs-action-new-disabled-title": "{{GENDER:|Ви}} немате дозволу за прављење нове странице",
+	"bs-action-edit-disabled-title": "{{GENDER:|Ви}} немате дозволу за уређивање ове странице"
 }

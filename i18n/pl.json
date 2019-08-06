@@ -68,5 +68,9 @@
 	"bs-allpages-description": "Wszystkie strony",
 	"bs-support-description": "Wsparcie",
 	"bs-calumma-navigation-toggle-tooltip": "Otwórz / zamknij",
-	"bs-calumma-toggle-button-tooltip": "Otwórz/Zamknij"
+	"bs-calumma-toggle-button-tooltip": "Otwórz/Zamknij",
+	"bs-action-new-please-login-title": "Zaloguj się aby dodać nową stronę",
+	"bs-action-edit-please-login-title": "Zaloguj się aby edytować tę stronę",
+	"bs-action-new-disabled-title": "{{GENDER:|Nie masz}} uprawnień aby stworzyć nową stronę",
+	"bs-action-edit-disabled-title": "{{GENDER:|Nie masz}} uprawnień aby edytować tę stronę"
 }
