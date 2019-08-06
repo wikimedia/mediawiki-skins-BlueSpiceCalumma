@@ -99,5 +99,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "но",
 	"bs-calumma-full-screen-button-tooltip": "Цел екран/Нормален поглед",
 	"bs-calumma-page-last-edit-by-system-user": "системски корисник",
-	"bs-calumma-notification-logged-in": "Сега сте најавени"
+	"bs-calumma-notification-logged-in": "Сега сте најавени",
+	"bs-calumma-alert-oldpage": "Гледате постара верзија на страницава. [[Special:Redirect/page/$1|Вратете се на најновата]]."
 }
