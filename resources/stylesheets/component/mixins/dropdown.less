@@ -1,0 +1,41 @@
+.mixin-dropdown-menu( @color, @bg-color, @color-hover, @bg-color-hover ) {
+	margin-left: 0;
+	width: 100%;
+	background-color: @bg-color;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		li{
+			border: none;
+			width: 100%;
+			a {
+				width: 100%;
+				color: @color;
+				text-decoration: none;
+				display: block;
+				padding-left: 0.625rem;
+				padding-right: 0.625rem;
+				padding-top: 0.1875rem;
+				height: 2rem;
+				line-height: 1.75rem;
+
+				&:hover{
+					background-color:  @bg-color-hover;
+					color: @color-hover;
+				}
+			}
+		}
+	}
+
+	&::before {
+		font-size: 3em;
+		font-family: 'fontawesome';
+		content: "\f0d8";
+		position: absolute;
+		top: -0.9em;
+		color: @bg-color;
+		height: 0.625rem;
+		z-index: -1;
+	}
+}

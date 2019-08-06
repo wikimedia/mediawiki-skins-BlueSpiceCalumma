@@ -153,15 +153,21 @@ class BreadCrumb extends Renderer {
 				);
 
 			if ( $dropdown ) {
+				$html .= Html::openElement(
+							'div',
+							[
+								'class' => 'dropdown-menu'
+							]
+						);
 				$html .= Html::element(
 						'ul',
 						[
 							'id' => 'bs-breadcrumbs-pages-list',
-							'class' => 'dropdown-menu'
 						]
 					);
 			}
 
+			$html .= Html::closeElement( 'div' );
 			$html .= Html::closeElement( 'span' );
 		}
 
@@ -246,14 +252,21 @@ class BreadCrumb extends Renderer {
 				)->parse()
 			);
 
-		$html .= Html::element(
-				'ul',
+		$html .= Html::openElement(
+				'div',
 				[
-					'id' => 'bs-breadcrumbs-subpages-list',
 					'class' => 'dropdown-menu'
 				]
 			);
 
+		$html .= Html::element(
+				'ul',
+				[
+					'id' => 'bs-breadcrumbs-subpages-list',
+				]
+			);
+
+		$html .= Html::closeElement( 'div' );
 		$html .= Html::closeElement( 'span' );
 
 		return $html;

@@ -5,7 +5,7 @@
 
 		var node = ':' + $( this ).data( 'node' );
 
-		var $target = $( this ).parent().children( '.dropdown-menu' );
+		var $target = $( this ).parent().children( '.dropdown-menu' ).children( 'ul' );
 
 		$target.html( '' );
 
