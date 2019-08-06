@@ -14,6 +14,23 @@
 			line-height: 0.625rem;
 			color: @page-header-breadcrumbs-color;
 		}
+
+		.dropdown-menu {
+			.mixin-dropdown-menu(
+					@page-header-breadcrumbs-dropdown-color,
+					@page-header-breadcrumbs-dropdown-bg-color,
+					@page-header-breadcrumbs-dropdown-color-hover,
+					@page-header-breadcrumbs-dropdown-bg-color-hover
+				);
+			width: auto;
+			margin-top: 1rem;
+
+			&::before {
+				color: @page-header-breadcrumbs-dropdown-bg-color-hover;
+				top: -0.9rem;
+				left: 2rem;
+			}
+		}
 	}
 }
 
@@ -33,7 +50,7 @@
 }
 
 #bs-breadcrumbs-pages {
-	.mixin-breadcrumb-dropdown();
+	.mixin-breadcrumb-dropdown-toggle();
 
 	.bs-breadcrumbs-current-title,
 	.dropdown-toggle,
@@ -43,10 +60,10 @@
 	}
 }
 #bs-breadcrumbs-subpages {
-	.mixin-breadcrumb-dropdown();
+	.mixin-breadcrumb-dropdown-toggle();
 }
 
-.mixin-breadcrumb-dropdown() {
+.mixin-breadcrumb-dropdown-toggle() {
 	.dropdown-toggle::after {
 		padding-left: 0.325rem;
 		padding-right: 0.325rem;
@@ -60,35 +77,5 @@
 		.dropdown-toggle::after {
 			content: "\f0d8";
 		}
-
-
-		&::after {
-			margin-top: 1.1rem;
-			left: 1rem;
-			font-size: 1.56em;
-			font-family: 'fontawesome';
-			content: "\f0d8";
-			position: absolute;
-			color: rgba(0,0,0,0.15);
-		}
-	}
-
-	.dropdown-menu {
-		margin-top: 0.5rem;
-		right: -0.333rem;
-
-		li {
-			a {
-				display: block;
-				width: 100%;
-				line-height: 1.875rem;
-				min-height: 1.875rem;
-				padding-left: 0.333rem;
-				padding-right: 0.333rem;
-				overflow: hidden;
-				text-overflow: ellipsis;
-			}
-		}
-
 	}
 }

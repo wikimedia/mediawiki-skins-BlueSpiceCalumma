@@ -5,20 +5,22 @@
 	{{#hasItems}}
 	<a type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	</a>
-	<ul class="dropdown-menu">
-		{{#items}}
-			{{#link}}
-			<li id="{{id}}">
-				<a href="{{href}}" class="{{#classes}}{{.}} {{/classes}}" {{#data}}{{.}} {{/data}} title="{{title}}">{{text}}</a>
-			</li>
-			{{/link}}
-			{{#separator}}
-			<li role="separator" class="divider"></li>
-			{{/separator}}
-			{{#header}}
-			<li class="dropdown-header">{{.}}</li>
-			{{/header}}
-		{{/items}}
-	</ul>
+		<div class="dropdown-menu">
+			<ul>
+				{{#items}}
+				{{#link}}
+				<li id="{{id}}">
+					<a href="{{href}}" class="{{#classes}}{{.}} {{/classes}}" {{#data}}{{.}} {{/data}} title="{{title}}">{{text}}</a>
+				</li>
+				{{/link}}
+				{{#separator}}
+				<li role="separator" class="divider"></li>
+				{{/separator}}
+				{{#header}}
+				<li class="dropdown-header">{{.}}</li>
+				{{/header}}
+				{{/items}}
+			</ul>
+		</div>
 	{{/hasItems}}
 </div>
