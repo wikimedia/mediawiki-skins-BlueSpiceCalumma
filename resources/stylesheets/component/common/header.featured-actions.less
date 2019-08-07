@@ -1,4 +1,4 @@
-header{
+header {
 	.bs-featured-actions{
 		position: absolute;
 		padding: 0;
@@ -76,27 +76,20 @@ header{
 				content: "\f0d8";
 			}
 			.dropdown-menu {
-				background-color: @menu-top-dropdown-bg-color;
-				li a {
-					height: 2rem;
-					color: @menu-top-dropdown-color;
-					&:hover {
-						background-color: @menu-top-dropdown-bg-color-hover;
-						color: @menu-top-dropdown-color-hover;
-					}
+				.mixin-dropdown-menu(
+						@menu-top-dropdown-color,
+						@menu-top-dropdown-bg-color,
+						@menu-top-dropdown-color-hover,
+						@menu-top-dropdown-bg-color-hover
+					);
+
+				&::before {
+					font-size: 3em;
 				}
-			}
-			.dropdown-menu::before {
-				font-size: 3em;
-				font-family: 'fontawesome';
-				content: "\f0d8";
-				position: absolute;
-				color: @menu-top-dropdown-bg-color;
 			}
 		}
 	}
 }
-
 
 .bs-fa-edit i::before{
 	font-family: 'entypo';

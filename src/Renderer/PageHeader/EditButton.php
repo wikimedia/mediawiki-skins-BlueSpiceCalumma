@@ -180,11 +180,12 @@ class EditButton extends Renderer {
 		$editButton .= Html::closeElement( 'a' );
 
 		$editButton .= Html::openElement(
-				'ul',
+				'div',
 				[
 					'class' => 'dropdown-menu'
 				]
 			);
+		$editButton .= Html::openElement( 'ul' );
 		$editButton .= Html::openElement( 'li' );
 
 		foreach ( $actions as $item ) {
@@ -202,6 +203,7 @@ class EditButton extends Renderer {
 
 		$editButton .= Html::closeElement( 'li' );
 		$editButton .= Html::closeElement( 'ul' );
+		$editButton .= Html::closeElement( 'div' );
 
 		$editButton .= Html::closeElement( 'span' );
 

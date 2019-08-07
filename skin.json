@@ -90,6 +90,7 @@
 				"stylesheets/common.less": {},
 				"stylesheets/mobile.less": { "media": "all and ( max-width: 720px )" },
 				"stylesheets/tablet.less": { "media": "all and ( min-width: 721px ) and ( max-width: 1000px )" },
+				"stylesheets/desktop.less": { "media": "all and ( min-width: 1001px )" },
 				"stylesheets/desktop_sm.less": { "media": "all and ( min-width: 1001px ) and ( max-width: 1200px )" },
 				"stylesheets/desktop_md.less": { "media": "all and ( min-width: 1201px ) and ( max-width: 1699px )" },
 				"stylesheets/desktop_lg.less": { "media": "all and ( min-width: 1700px )" },
