@@ -100,5 +100,8 @@
 	"bs-calumma-full-screen-button-tooltip": "Цел екран/Нормален поглед",
 	"bs-calumma-page-last-edit-by-system-user": "системски корисник",
 	"bs-calumma-notification-logged-in": "Сега сте најавени",
-	"bs-calumma-alert-oldpage": "Гледате постара верзија на страницава. [[Special:Redirect/page/$1|Вратете се на најновата]]."
+	"bs-calumma-alert-oldpage": "Гледате постара верзија на страницава. [[Special:Redirect/page/$1|Вратете се на најновата]].",
+	"bs-calumma-version-pager-prev-tooltip": "Прејди на претходна верзија",
+	"bs-calumma-version-pager-next-tooltip": "Прејди на следна верзија",
+	"bs-calumma-version-pager-info-text": "Верзија од $1 на [[User:$2|$2]]"
 }

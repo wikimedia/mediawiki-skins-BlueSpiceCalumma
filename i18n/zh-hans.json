@@ -4,7 +4,8 @@
 			"A Chinese Wikipedian",
 			"Liuxinyu970226",
 			"94rain",
-			"科劳"
+			"科劳",
+			"Viztor"
 		]
 	},
 	"bs-calumma-pref-toggle-navigaiton-main": "自动隐藏主菜单",
@@ -76,5 +77,7 @@
 	"bs-support-description": "支持",
 	"bs-edit-custom-menu-link-title": "编辑菜单",
 	"bs-edit-custom-menu-link-text": "编辑菜单",
-	"bs-calumma-toggle-button-tooltip": "开/关"
+	"bs-calumma-toggle-button-tooltip": "开/关",
+	"bs-calumma-version-pager-prev-tooltip": "切换到上一个版本",
+	"bs-calumma-version-pager-next-tooltip": "切换到下一个版本"
 }
