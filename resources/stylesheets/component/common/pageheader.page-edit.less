@@ -5,19 +5,15 @@
 	max-width: 70%;
 
 	& > ul {
-		display:inline-flex;
-		flex-wrap:wrap;
 		list-style:none;
 		margin-bottom: 0;
 		padding-left:0;
-		justify-content: end;
 		min-width: 100%;
 
 		li {
 			line-height: 0;
 
 			&:first-child {
-				max-width: 80%;
 				height: max-content;
 				margin: auto;
 			}
@@ -82,7 +78,6 @@
 
 	.bs-page-last-edit {
 		line-height: 0.875rem;
-		display: inline-block;
 
 		a {
 			color: @link-color;
@@ -104,8 +99,8 @@
 
 	.bs-page-watch {
 		line-height: 0.875rem;
-		display: inline-block;
 		min-width: 5rem;
+		margin-right: 1em;
 
 		a {
 			color: @link-color;
