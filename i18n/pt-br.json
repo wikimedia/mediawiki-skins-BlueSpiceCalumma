@@ -99,5 +99,8 @@
 	"bs-calumma-full-screen-button-tooltip": "Tela cheia/modo normal",
 	"bs-calumma-page-last-edit-by-system-user": "usuário do sistema",
 	"bs-calumma-notification-logged-in": "Agora você entrou",
-	"bs-calumma-alert-oldpage": "Você está vendo uma versão antiga desta página. [[Special:Redirect/page/$1|Retornar para a versão mais recente]]."
+	"bs-calumma-alert-oldpage": "Você está vendo uma versão antiga desta página. [[Special:Redirect/page/$1|Retornar para a versão mais recente]].",
+	"bs-calumma-version-pager-prev-tooltip": "Mudar para a versão anterior",
+	"bs-calumma-version-pager-next-tooltip": "Mudar para a versão seguinte",
+	"bs-calumma-version-pager-info-text": "Versão de $1 de [[User:$2|$2]]"
 }
