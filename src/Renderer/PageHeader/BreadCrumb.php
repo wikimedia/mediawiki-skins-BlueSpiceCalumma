@@ -165,9 +165,9 @@ class BreadCrumb extends Renderer {
 							'id' => 'bs-breadcrumbs-pages-list',
 						]
 					);
+				$html .= Html::closeElement( 'div' );
 			}
 
-			$html .= Html::closeElement( 'div' );
 			$html .= Html::closeElement( 'span' );
 		}
 
