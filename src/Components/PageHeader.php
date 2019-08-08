@@ -34,7 +34,6 @@ class PageHeader extends TemplateComponent {
 		$showContextBand = $this->showContextBand();
 		$showQualificationBand = $this->showQualificationBand();
 		$showMetaBand = $this->showMetaBand();
-		$showActionBand = $this->showActionBand();
 
 		$args = $this->getDefaultArgs();
 		if ( $this->isEditMode() ) {
@@ -55,11 +54,9 @@ class PageHeader extends TemplateComponent {
 			'pageinfoelements' => $showMetaBand ? $this->getPageInfoElement() : '',
 			'lastedit' => $showMetaBand ? $this->getLastEdit() : '',
 			'watchaction' => $showMetaBand ? $this->getWatchAction() : '',
-			'edit' => $showActionBand ? $this->getEditButton() : '',
 			'contextband' => $showContextBand,
 			'qualificationband' => $showQualificationBand,
-			'metaband' => $showMetaBand,
-			'actionband' => $showActionBand
+			'metaband' => $showMetaBand
 
 		] + $args;
 
@@ -392,17 +389,6 @@ class PageHeader extends TemplateComponent {
 			return false;
 		}
 
-		return true;
-	}
-
-	/**
-	 *
-	 * @return bool
-	 */
-	protected function showActionBand() {
-		if ( $this->isDiffView() ) {
-			return false;
-		}
 		return true;
 	}
 
