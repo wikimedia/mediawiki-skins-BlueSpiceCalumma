@@ -4,7 +4,8 @@
 			"A Chinese Wikipedian",
 			"Liuxinyu970226",
 			"94rain",
-			"科劳"
+			"科劳",
+			"Viztor"
 		]
 	},
 	"bs-calumma-pref-toggle-navigaiton-main": "自动隐藏主菜单",
@@ -76,5 +77,7 @@
 	"bs-action-new-please-login-title": "要创建新页面，请登录",
 	"bs-action-edit-please-login-title": "要编辑此页面，请登录",
 	"bs-action-new-disabled-title": "没有权限创建新的页面",
-	"bs-action-edit-disabled-title": "没有权限编辑此页面"
+	"bs-action-edit-disabled-title": "没有权限编辑此页面",
+	"bs-calumma-version-pager-prev-tooltip": "切换到上一个版本",
+	"bs-calumma-version-pager-next-tooltip": "切换到下一个版本"
 }

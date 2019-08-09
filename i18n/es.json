@@ -80,5 +80,8 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "pero",
 	"bs-calumma-full-screen-button-tooltip": "Pantalla completa/modo normal",
 	"bs-calumma-page-last-edit-by-system-user": "Usuario del sistema",
-	"bs-calumma-notification-logged-in": "Has accedido a tu cuenta"
+	"bs-calumma-notification-logged-in": "Has accedido a tu cuenta",
+	"bs-calumma-version-pager-prev-tooltip": "Cambiar a la versión anterior",
+	"bs-calumma-version-pager-next-tooltip": "Cambiar a la versión siguiente",
+	"bs-calumma-version-pager-info-text": "Versión de $1 por [[User:$2|$2]]"
 }

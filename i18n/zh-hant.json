@@ -100,5 +100,8 @@
 	"bs-calumma-full-screen-button-tooltip": "全螢幕/正常模式",
 	"bs-calumma-page-last-edit-by-system-user": "系統使用者",
 	"bs-calumma-notification-logged-in": "您現在已登入",
-	"bs-calumma-alert-oldpage": "您正檢視此頁面的舊版本。[[Special:Redirect/page/$1|返回最新版本]]。"
+	"bs-calumma-alert-oldpage": "您正檢視此頁面的舊版本。[[Special:Redirect/page/$1|返回最新版本]]。",
+	"bs-calumma-version-pager-prev-tooltip": "切換到前一個版本",
+	"bs-calumma-version-pager-next-tooltip": "切換到下一個版本",
+	"bs-calumma-version-pager-info-text": "由[[User:$2|$2]]所做的 $1 版本"
 }
