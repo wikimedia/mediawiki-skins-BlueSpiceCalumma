@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
-			"Steeve815"
+			"Steeve815",
+			"YaronSh"
 		]
 	},
 	"bs-to-top-desc": "קפיצה לראש הדף",
@@ -35,5 +36,6 @@
 	"bs-calumma-page-unwatch-text": "הפסקת מעקב",
 	"bs-calumma-pageinfosentence": "דף זה הוא $1",
 	"bs-calumma-pageinfosentence-item-separator": "וגם",
-	"bs-calumma-full-screen-button-tooltip": "מסך מלא/מצב רגיל"
+	"bs-calumma-full-screen-button-tooltip": "מסך מלא/מצב רגיל",
+	"bs-calumma-version-pager-prev-tooltip": "חזרה לגרסה קודמת"
 }

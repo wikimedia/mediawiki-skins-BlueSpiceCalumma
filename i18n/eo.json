@@ -99,5 +99,8 @@
 	"bs-calumma-full-screen-button-tooltip": "Plenekrana/Ordinara reĝimo",
 	"bs-calumma-page-last-edit-by-system-user": "sistema uzanto",
 	"bs-calumma-notification-logged-in": "Vi ensalutis",
-	"bs-calumma-alert-oldpage": "Vi vidas malaktualan version de ĉi tiu paĝo. [[Special:Redirect/page/$1|Reiru al la plej aktuala versio]]."
+	"bs-calumma-alert-oldpage": "Vi vidas malaktualan version de ĉi tiu paĝo. [[Special:Redirect/page/$1|Reiru al la plej aktuala versio]].",
+	"bs-calumma-version-pager-prev-tooltip": "Vidi antaŭan version",
+	"bs-calumma-version-pager-next-tooltip": "Vidi antaŭan version",
+	"bs-calumma-version-pager-info-text": "Versio de $1 far [[User:$2|$2]]"
 }
