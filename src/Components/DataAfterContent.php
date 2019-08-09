@@ -21,6 +21,7 @@ class DataAfterContent extends \Skins\Chameleon\Components\Structure {
 		}
 
 		foreach ( $dataAfterContent as $id => $data ) {
+			$html .= \Html::element( 'div', [ 'class' => 'bs-page-separator v-line' ] );
 			$html .= \Html::openElement( 'div', [ 'class' => 'bs-data-after-content-' . $id ] );
 			$html .= $data;
 			$html .= \Html::closeElement( 'div' );
