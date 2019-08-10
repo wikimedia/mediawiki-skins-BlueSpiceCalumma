@@ -15,5 +15,7 @@
 	"bs-calumma-pageinfosentence": "Ин саҳифа $1 аст",
 	"bs-calumma-pageinfosentence-item-separator": "ва",
 	"bs-calumma-pageinfosentence-item-class-separator": "аммо",
-	"bs-calumma-page-last-edit-by-system-user": "корбари система"
+	"bs-calumma-page-last-edit-by-system-user": "корбари система",
+	"bs-calumma-version-pager-prev-tooltip": "Нусхаи пешинатарро дидан",
+	"bs-calumma-version-pager-info-text": "Нусхаи [[User:$2|$2]] аз $1"
 }

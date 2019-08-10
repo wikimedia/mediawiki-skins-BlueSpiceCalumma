@@ -103,7 +103,7 @@
 	"bs-calumma-page-last-edit-by-system-user": "utilisateur système",
 	"bs-calumma-notification-logged-in": "Vous êtes maintenant connecté(e).",
 	"bs-calumma-alert-oldpage": "Vous regardez une ancienne version de cette page. [[Special:Redirect/page/$1|Revenir à la dernière version]].",
-	"bs-calumma-version-pager-prev-tooltip": "Basculer vers la version précédente",
+	"bs-calumma-version-pager-prev-tooltip": "Revenir à la version précédente",
 	"bs-calumma-version-pager-next-tooltip": "Basculer vers la version suivante",
 	"bs-calumma-version-pager-info-text": "Version de $1 par [[User:$2|$2]]"
 }
