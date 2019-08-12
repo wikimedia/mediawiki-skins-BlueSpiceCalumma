@@ -4,5 +4,8 @@
 			"Eitvys200"
 		]
 	},
-	"bs-to-top-desc": "Pereiti prie puslapio viršaus"
+	"bs-to-top-desc": "Pereiti prie puslapio viršaus",
+	"bs-calumma-alert-oldpage": "Žiūrite seną puslapio versiją. [[Special:Redirect/page/$1|Grįžkite į naujausią versiją]].",
+	"bs-calumma-version-pager-prev-tooltip": "Perjungti į senesnes versijas",
+	"bs-calumma-version-pager-next-tooltip": "Perjungti į kitą versiją"
 }
