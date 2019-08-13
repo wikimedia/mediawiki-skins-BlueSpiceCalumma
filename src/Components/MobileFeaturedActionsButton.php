@@ -14,16 +14,16 @@ class MobileFeaturedActionsButton extends \Skins\Chameleon\Components\Structure 
 		$type = $this->getDomElement()->getAttribute( 'data-type' );
 		$action = $this->getDomElement()->getAttribute( 'data-action' );
 
-		$user = $this->getSkin()->getUser();
-		if ( !$user->isAllowed( 'edit' ) ) {
+		$title = $this->getSkin()->getTitle();
+		if ( !$title->userCan( 'edit' ) ) {
 			return '';
 		}
 
-		$FeaturedActionsData = $this->getSkinTemplate()->get( SkinData::FEATURED_ACTIONS );
-		if ( !isset( $FeaturedActionsData[$type][$action] ) ) {
+		$featuredActionsData = $this->getSkinTemplate()->get( SkinData::FEATURED_ACTIONS );
+		if ( !isset( $featuredActionsData[$type][$action] ) ) {
 			return '';
 		}
-		$menuData = $FeaturedActionsData[$type][$action];
+		$menuData = $featuredActionsData[$type][$action];
 
 		$classes = $class;
 		if ( isset( $menuData['classes'] ) ) {
