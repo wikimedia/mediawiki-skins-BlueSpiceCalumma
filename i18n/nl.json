@@ -15,6 +15,8 @@
 	"bs-action-new-section-text": "Nieuw kopje",
 	"bs-action-new-section-title": "Nieuwe kopje toevoegen aan deze pagina",
 	"bs-action-new-page-text": "Nieuwe pagina",
+	"bs-action-new-please-login-title": "Meld u aan om nieuwe pagina's aan te maken",
+	"bs-action-edit-please-login-title": "Meld u aan om deze pagina te bewerken",
 	"bs-action-new-disabled-title": "{{GENDER:|U}} hebt geen toestemming om een nieuwe pagina aan te maken",
 	"bs-action-edit-disabled-title": "{{GENDER:|U}} hebt geen toestemming om deze pagina te bewerken",
 	"bs-action-new-page-title": "Een nieuwe pagina toevoegen",
