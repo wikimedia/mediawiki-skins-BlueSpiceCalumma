@@ -51,7 +51,7 @@ class FeaturedActionsData {
 			'id' => 'new-section',
 		];
 
-		if ( !$skin->getUser()->isLoggedIn() ) {
+		if ( $curTitle->userCan( 'edit' ) && !$skin->getUser()->isLoggedIn() ) {
 			$newSection += [
 				'title' => wfMessage( 'bs-action-edit-please-login-title' )->plain(),
 				'href' => self::getLoginUrl( $skin )
@@ -117,7 +117,7 @@ class FeaturedActionsData {
 			'id' => 'new-section'
 		];
 
-		if ( !$skin->getUser()->isLoggedIn() ) {
+		if ( $curTitle->userCan( 'edit' ) && !$skin->getUser()->isLoggedIn() ) {
 			$newSection += [
 				'title' => wfMessage( 'bs-action-new-please-login-title' )->plain(),
 				'href' => self::getLoginUrl( $skin )

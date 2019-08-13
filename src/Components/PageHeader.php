@@ -94,23 +94,11 @@ class PageHeader extends TemplateComponent {
 	 * @return string
 	 */
 	protected function getSiteNamespaces() {
-		$contentNavigation = $this->getSkinTemplate()->get( 'content_navigation' );
-
-		$html = '';
-
-		foreach ( $contentNavigation['namespaces'] as $item ) {
-			$html .= Html::element(
-					'a',
-					[
-						'id' => $item['id'],
-						'class' => $item['class'],
-						'href' => $item['href'],
-						'title' => $item['text']
-					],
-					$item['text']
-				);
-		}
-		return $html;
+		return $this->getRendererFactory()->get(
+			'pageheader-context',
+			new Params( parent::getTemplateArgs() ),
+			$this->getSkin()->getContext()
+		)->render();
 	}
 
 	/**
