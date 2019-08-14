@@ -26,10 +26,8 @@ class Context extends Renderer {
 		$items = $this->getAssocLinks();
 		$data = [
 			'id' => 'bs-page-context-button',
-			// TODO: Use dedicated message key
-			'title' => Message::newFromKey( 'bs-extjs-label-page' )->plain(),
-			// TODO: Use dedicated message key
-			'text' => Message::newFromKey( 'bs-extjs-label-page' )->plain(),
+			'title' => Message::newFromKey( 'bs-calumma-context-pagebutton-label' )->plain(),
+			'text' => Message::newFromKey( 'bs-calumma-context-pagebutton-tooltip' )->plain(),
 			'href' => $this->context->getTitle()->getSubjectPage()->getLinkURL(),
 			'hasItems' => !empty( $items ),
 			'items' => $items
@@ -42,10 +40,11 @@ class Context extends Renderer {
 	private function makeDiscussionButton() {
 		$this->html .= $this->linkRenderer->makeLink(
 			$this->getContext()->getTitle()->getTalkPage(),
-			// TODO: Use dedicated message key
-			Message::newFromKey( 'bs-calumma-pagetool-talk-tooltip' )->plain(),
+			Message::newFromKey( 'bs-calumma-context-discussionbutton-label' )->plain(),
 			[
-				'id' => 'bs-page-discussion-button'
+				'id' => 'bs-page-discussion-button',
+				'title' => Message::newFromKey( 'bs-calumma-context-discussionbutton-tooltip' )
+					->plain(),
 			]
 		);
 	}

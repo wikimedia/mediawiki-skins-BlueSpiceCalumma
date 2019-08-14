@@ -107,5 +107,11 @@
 	"bs-calumma-alert-oldpage": "You are viewing an old version of this page. [[Special:Redirect/page/$1|Return to the latest version]].",
 	"bs-calumma-version-pager-prev-tooltip": "Switch to previous version",
 	"bs-calumma-version-pager-next-tooltip": "Switch to next version",
-	"bs-calumma-version-pager-info-text": "Version of $1 by [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "Version of $1 by [[User:$2|$2]]",
+	"bs-calumma-assoclink-history-label":"History",
+	"bs-calumma-assoclink-history-tooltip":"Show revision history of page \"$1\"",
+	"bs-calumma-context-pagebutton-label" :"Page",
+	"bs-calumma-context-pagebutton-tooltip": "Show to the current subject page",
+	"bs-calumma-context-discussionbutton-label": "Discussion",
+	"bs-calumma-context-discussionbutton-tooltip": "Show to the current talk page"
 }

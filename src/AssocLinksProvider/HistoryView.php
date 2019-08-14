@@ -12,8 +12,7 @@ class HistoryView extends TitleLink {
 	 * @return \Message
 	 */
 	public function getLabel() {
-		// TODO: Use dedicated message key
-		return Message::newFromKey( 'bs-calumma-pagetool-history-tooltip' );
+		return Message::newFromKey( 'bs-calumma-assoclink-history-label' );
 	}
 
 	/**
@@ -21,8 +20,8 @@ class HistoryView extends TitleLink {
 	 * @return Message
 	 */
 	public function getTooltip() {
-		// TODO: Use dedicated message key
-		return Message::newFromKey( 'history-title' )->params( $this->title->getPrefixedText() );
+		return Message::newFromKey( 'bs-calumma-assoclink-history-tooltip' )
+			->params( $this->title->getPrefixedText() );
 	}
 
 	/**
