@@ -111,7 +111,7 @@
 	"bs-calumma-assoclink-history-label":"History",
 	"bs-calumma-assoclink-history-tooltip":"Show revision history of page \"$1\"",
 	"bs-calumma-context-pagebutton-label" :"Page",
-	"bs-calumma-context-pagebutton-tooltip": "Show to the current subject page",
+	"bs-calumma-context-pagebutton-tooltip": "Show the current subject page",
 	"bs-calumma-context-discussionbutton-label": "Discussion",
-	"bs-calumma-context-discussionbutton-tooltip": "Show to the current talk page"
+	"bs-calumma-context-discussionbutton-tooltip": "Show the current talk page"
 }

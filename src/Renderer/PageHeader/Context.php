@@ -26,8 +26,8 @@ class Context extends Renderer {
 		$items = $this->getAssocLinks();
 		$data = [
 			'id' => 'bs-page-context-button',
-			'title' => Message::newFromKey( 'bs-calumma-context-pagebutton-label' )->plain(),
-			'text' => Message::newFromKey( 'bs-calumma-context-pagebutton-tooltip' )->plain(),
+			'title' => Message::newFromKey( 'bs-calumma-context-pagebutton-tooltip' )->plain(),
+			'text' => Message::newFromKey( 'bs-calumma-context-pagebutton-label' )->plain(),
 			'href' => $this->context->getTitle()->getSubjectPage()->getLinkURL(),
 			'hasItems' => !empty( $items ),
 			'items' => $items
