@@ -62,6 +62,7 @@
 	"bs-sitetools-views": "The heading of a panel containing links to different views of the page",
 	"bs-sitetools-edit": "The heading of a panel containing links to edit actions of the page",
 	"bs-sitetools-categories": "The heading of a panel containing links to categories the page is assigned to\n{{Identical|Category}}",
+	"bs-sitetools-associated-links": "The heading of a panel containing links to various assiciated resources of the page",
 	"bs-calumma-recentchanges-title": "The heading of a flyout that displays a list of recent changes. Similar to [[Special:RecentChanges]]",
 	"bs-calumma-recentchanges-intro": "A introductional text within a flyout that displays a list of recent changes",
 	"bs-calumma-recentchanges-specialpage-link": "A text containing a link to [[Special:RecentChanges]] within a flyout that displays a list of recent changes.",
