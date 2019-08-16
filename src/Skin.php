@@ -2,6 +2,8 @@
 
 namespace BlueSpice\Calumma;
 
+use BlueSpice\Services;
+
 /**
  *
  * @ingroup Skins
@@ -151,6 +153,14 @@ class Skin extends \SkinChameleon {
 			|| ( $cookie_custommenu_header_collapsed === 'true' ) ) {
 			return ' bs-custom-menu-' . $menu . '-container-collapse ';
 		}
+	}
+
+	/**
+	 *
+	 * @return \Config
+	 */
+	public function getConfig() {
+		return Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 	}
 
 }
