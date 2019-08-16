@@ -1,55 +1,35 @@
 body.mediawiki,
 body.mediawiki.x-body {
-	&:not( .navigation-main-collapse ):not( .sitetools-main-collapse ) {
-		.content-wrapper {
-			transition: padding .3s;
-			padding-left: 0;
-			padding-right: 0;
-		}
+	@btn-width: 3rem;
+	@clearance: 1rem;
 
+	&:not( .navigation-main-collapse ):not( .sitetools-main-collapse ) {
 		.bs-content.container {
-			width: calc(~"( 100vw - 46.875rem )");
-			max-width: @bs-content-width;
-			margin-left: auto;
+			@container-width: "( 100vw - @{navigation-main-width} - @{sitetools-main-width} - 2 * @{btn-width} )";
+			width: calc( ~"@{container-width}" );
 		}
 	}
 
 	/* collapsing elements */
 	&.navigation-main-collapse.sitetools-main-collapse {
-		.content-wrapper {
-			padding-left: 0;
-			padding-right: 0;
-			transition: padding .3s;
-		}
 		.bs-content.container {
 			width: auto;
-			margin-left: auto;
-			margin-right: auto;
-
 		}
 	}
 
 	&:not( .navigation-main-collapse ).sitetools-main-collapse {
-		.content-wrapper {
-			padding-left: 0;
-			padding-right: 0;
-			transition: padding .3s;
-		}
 		.bs-content.container {
-			width: calc( ~"100vw - ( @{navigation-main-width} + ( 2 * 3.5rem ) )" );
-			margin-right: calc(~"50vw - ( @{bs-content-width} / 2 + ( 2 * 3.5rem ) )");
+			@container-width: "( 100vw - ( 2 * @{btn-width} ) - @{navigation-main-width} )";
+			width: calc( ~"@{container-width} - @{clearance}" );
+			margin-left: calc(~"0.9375rem + ( ( 100vw + @{navigation-main-width} - @{btn-width} ) - @{container-width} ) / 2");
 		}
 	}
 
 	&:not( .sitetools-main-collapse ).navigation-main-collapse {
-		.content-wrapper {
-			transition: padding .3s;
-			padding-left: 0;
-			padding-right: 0;
-		}
 		.bs-content.container {
-			width: calc( ~"100vw - ( @{navigation-main-width} + ( 2 * 3.5rem ) )" );
-			margin-left: calc(~"50vw - ( @{bs-content-width} / 2 + ( 2 * 3.5rem ) )");
+			@container-width: "( 100vw - ( 2 * @{btn-width} ) - @{sitetools-main-width} )";
+			width: calc( ~"@{container-width} -  @{clearance}" );
+			margin-right: calc(~"0.875rem + ( ( 100vw + @{sitetools-main-width} - @{btn-width} ) - @{container-width}) / 2 ");
 		}
 	}
 }
