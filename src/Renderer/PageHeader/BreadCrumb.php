@@ -149,7 +149,7 @@ class BreadCrumb extends Renderer {
 							$titleCurrent
 						)->parse()
 					],
-					$this->msg( 'bs-calumma-breadcrumbs-pages', $titleCurrent )->parse()
+					$title->getSubpageText()
 				);
 
 			if ( $dropdown ) {
