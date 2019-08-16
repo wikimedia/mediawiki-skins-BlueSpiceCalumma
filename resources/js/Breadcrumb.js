@@ -1,29 +1,32 @@
 ( function( d, $, mw ) {
-	$( d ).on( 'click',
-			'#bs-breadcrumbs-pages:not(.open) .dropdown-toggle, #bs-breadcrumbs-subpages:not(.open) .dropdown-toggle',
-			function( e ) {
+	var api = new mw.Api();
 
-		var node = ':' + $( this ).data( 'node' );
+	$( d ).on( 'click', '.bs-page-breadcrumbs .dropdown-toggle', function( e ) {
+		var $buttonGroup = $(this).parent( '.btn-group' );
+		if( $buttonGroup.data( 'loaded' ) === true ) {
+			return;
+		}
 
-		var $target = $( this ).parent().children( '.dropdown-menu' ).children( 'ul' );
+		var $mainButton = $buttonGroup.find( '.btn' ).first();
+		var path = $mainButton.data( 'bs-path' );
+		if( !path ) {
+			return;
+		}
 
-		$target.html( '' );
-
-		var api = new mw.Api();
+		var $dropDownMenu = $buttonGroup.find( '.dropdown-menu > ul' ).first();
 		api.abort();
-        api.get(
-				{
-					"format": "json",
-					"action": "bs-wikisubpage-treestore",
-					"node": node,
-					"limit": "-1"
-				}
-			)
-            .done( function( response ){
-				var list = '';
-				for ( var i = 0; i < response.children.length; i++ ) {
-					$( $target ).append( '<li>' + response.children[i].page_link + '</li>' );
-				};
-			});
+		api.get( {
+				"format": "json",
+				"action": "bs-wikisubpage-treestore",
+				"node": path,
+				"limit": "-1"
+		})
+		.done( function( response ){
+			for ( var i = 0; i < response.children.length; i++ ) {
+				$dropDownMenu.append( '<li>' + response.children[i].page_link + '</li>' );
+			};
+
+			$buttonGroup.data( 'loaded', true );
+		});
 	});
 })( document, jQuery, mediaWiki );

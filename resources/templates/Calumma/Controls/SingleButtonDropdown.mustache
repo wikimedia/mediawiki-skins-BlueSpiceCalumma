@@ -2,9 +2,9 @@
 	<button type="button" class="btn {{#classes}}{{.}} {{/classes}} dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		<i class="icon"></i><span class="btn-text">{{{text}}}</span><span class="caret"></span>
 	</button>
-		<div class="dropdown-menu">
-			<ul>
-				{{#items}}
+	<div class="dropdown-menu">
+		<ul>
+			{{#items}}
 				{{#link}}
 				<li>
 					<a href="{{href}}" title="{{title}}" id="{{id}}">{{text}}</a>
