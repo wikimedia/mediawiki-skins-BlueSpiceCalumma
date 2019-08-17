@@ -104,5 +104,9 @@
 	"bs-calumma-alert-oldpage": "Du visar en gammal version av denna sida. [[Special:Redirect/page/$1|Gå tillbaka till den senaste versionen]].",
 	"bs-calumma-version-pager-prev-tooltip": "Byt till föregående version",
 	"bs-calumma-version-pager-next-tooltip": "Byt till nästa version",
-	"bs-calumma-version-pager-info-text": "Versionen från $1 av [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "Versionen från $1 av [[User:$2|$2]]",
+	"bs-calumma-assoclink-history-label": "Historik",
+	"bs-calumma-assoclink-history-tooltip": "Visa sidversionshistorik för sidan \"$1\"",
+	"bs-calumma-context-pagebutton-label": "Sida",
+	"bs-calumma-context-discussionbutton-label": "Diskussion"
 }

@@ -113,9 +113,9 @@
 	"bs-calumma-version-pager-prev-tooltip": "Tooltip for an icon link, when a user is viewing an old version of a page",
 	"bs-calumma-version-pager-next-tooltip": "Tooltip for an icon link, when a user is viewing an old version of a page",
 	"bs-calumma-version-pager-info-text": "Text that tells which particular version a user is viewing\n\nParameters:\n* $1 - The timestamp of that version\n* $2 - The name of the user that created this version",
-	"bs-calumma-assoclink-history-label":"Label for link that navigates to the revision history of a page",
-	"bs-calumma-assoclink-history-tooltip":"Tooltip for link that navigates to the revision history of a page.\n\nParameters:\n* $1 - The full page name",
-	"bs-calumma-context-pagebutton-label" :"Label for button that navigates to the subject page",
+	"bs-calumma-assoclink-history-label": "Label for link that navigates to the revision history of a page",
+	"bs-calumma-assoclink-history-tooltip": "Tooltip for link that navigates to the revision history of a page.\n\nParameters:\n* $1 - The full page name",
+	"bs-calumma-context-pagebutton-label": "Label for button that navigates to the subject page",
 	"bs-calumma-context-pagebutton-tooltip": "Tooltip for button that navigates to the subject page",
 	"bs-calumma-context-discussionbutton-label": "Label for button that navigates to the talk page",
 	"bs-calumma-context-discussionbutton-tooltip": "Tooltip for button that navigates to the talk page"
