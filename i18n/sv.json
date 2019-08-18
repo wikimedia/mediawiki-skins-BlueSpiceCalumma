@@ -59,6 +59,7 @@
 	"bs-sitetools-views": "Visningar",
 	"bs-sitetools-edit": "Redigera",
 	"bs-sitetools-categories": "Kategorier",
+	"bs-sitetools-associated-links": "Associerade länkar",
 	"bs-calumma-recentchanges-title": "Senaste ändringar",
 	"bs-calumma-recentchanges-intro": "I denna lista hittar du de senaste sidredigeringarna och sidor som nyligen skapats.",
 	"bs-calumma-recentchanges-specialpage-link": "För den klassiska vyn, klicka [[Special:RecentChanges|här]].",
@@ -108,5 +109,7 @@
 	"bs-calumma-assoclink-history-label": "Historik",
 	"bs-calumma-assoclink-history-tooltip": "Visa sidversionshistorik för sidan \"$1\"",
 	"bs-calumma-context-pagebutton-label": "Sida",
-	"bs-calumma-context-discussionbutton-label": "Diskussion"
+	"bs-calumma-context-pagebutton-tooltip": "Visa den nuvarande ämnessidan",
+	"bs-calumma-context-discussionbutton-label": "Diskussion",
+	"bs-calumma-context-discussionbutton-tooltip": "Visa den nuvarande diskussionssidan"
 }
