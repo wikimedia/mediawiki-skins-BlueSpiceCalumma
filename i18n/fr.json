@@ -4,7 +4,8 @@
 			"Gomoko",
 			"Tartare",
 			"Wladek92",
-			"Zarisi"
+			"Zarisi",
+			"Djiboun"
 		]
 	},
 	"bluespicecalumma-desc": "Habillage BlueSkin",
@@ -60,6 +61,7 @@
 	"bs-sitetools-views": "Vues",
 	"bs-sitetools-edit": "Modifier",
 	"bs-sitetools-categories": "Catégories",
+	"bs-sitetools-associated-links": "Liens associés",
 	"bs-calumma-recentchanges-title": "Modifications récentes",
 	"bs-calumma-recentchanges-intro": "Dans cette liste vous trouverez toutes les dernières modifications de pages ainsi que les pages créées récemment.",
 	"bs-calumma-recentchanges-specialpage-link": "Pour l’affichage classique, cliquer [[Special:RecentChanges|ici]].",
@@ -105,5 +107,11 @@
 	"bs-calumma-alert-oldpage": "Vous regardez une ancienne version de cette page. [[Special:Redirect/page/$1|Revenir à la dernière version]].",
 	"bs-calumma-version-pager-prev-tooltip": "Revenir à la version précédente",
 	"bs-calumma-version-pager-next-tooltip": "Basculer vers la version suivante",
-	"bs-calumma-version-pager-info-text": "Version de $1 par [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "Version de $1 par [[User:$2|$2]]",
+	"bs-calumma-assoclink-history-label": "Historique",
+	"bs-calumma-assoclink-history-tooltip": "Afficher l'historique de la page « $1 »",
+	"bs-calumma-context-pagebutton-label": "Page",
+	"bs-calumma-context-pagebutton-tooltip": "Afficher la page en cours",
+	"bs-calumma-context-discussionbutton-label": "Discussion",
+	"bs-calumma-context-discussionbutton-tooltip": "Afficher la page de discussion en cours"
 }

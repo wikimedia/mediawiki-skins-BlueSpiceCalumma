@@ -65,5 +65,7 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "awer",
 	"bs-calumma-notification-logged-in": "Dir sidd elo ageloggt",
 	"bs-calumma-version-pager-next-tooltip": "Op déi nächst Versioun wiesselen",
-	"bs-calumma-version-pager-info-text": "Versioun vu(n) $1 vum [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "Versioun vu(n) $1 vum [[User:$2|$2]]",
+	"bs-calumma-context-pagebutton-label": "Säit",
+	"bs-calumma-context-discussionbutton-label": "Diskussioun"
 }

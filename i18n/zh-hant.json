@@ -58,6 +58,7 @@
 	"bs-sitetools-views": "檢視",
 	"bs-sitetools-edit": "編輯",
 	"bs-sitetools-categories": "分類",
+	"bs-sitetools-associated-links": "關聯連結",
 	"bs-calumma-recentchanges-title": "近期變更",
 	"bs-calumma-recentchanges-intro": "在此清單您可找出所有近期變動過頁面與新建立頁面。",
 	"bs-calumma-recentchanges-specialpage-link": "典型的檢視請點擊[[Special:RecentChanges|此]]。",
@@ -103,5 +104,11 @@
 	"bs-calumma-alert-oldpage": "您正檢視此頁面的舊版本。[[Special:Redirect/page/$1|返回最新版本]]。",
 	"bs-calumma-version-pager-prev-tooltip": "切換到前一個版本",
 	"bs-calumma-version-pager-next-tooltip": "切換到下一個版本",
-	"bs-calumma-version-pager-info-text": "由[[User:$2|$2]]所做的 $1 版本"
+	"bs-calumma-version-pager-info-text": "由[[User:$2|$2]]所做的 $1 版本",
+	"bs-calumma-assoclink-history-label": "歷史",
+	"bs-calumma-assoclink-history-tooltip": "顯示「$1」的修訂歷史",
+	"bs-calumma-context-pagebutton-label": "頁面",
+	"bs-calumma-context-pagebutton-tooltip": "顯示目前主題頁面",
+	"bs-calumma-context-discussionbutton-label": "討論",
+	"bs-calumma-context-discussionbutton-tooltip": "顯示目前討論頁面"
 }
