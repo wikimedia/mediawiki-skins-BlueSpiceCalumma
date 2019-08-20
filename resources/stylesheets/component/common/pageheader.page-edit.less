@@ -20,62 +20,6 @@
 		}
 	}
 
-	.bs-page-edit-button-group {
-		margin-left: 0.625rem;
-		min-height: 1.8125rem;
-		border: 1px solid @page-header-page-edit-bg-color;
-		border-radius: 0.1875rem;
-		background-color: @page-header-page-edit-bg-color;
-
-		& > a.btn {
-			color: @page-header-page-edit-color;
-			font-weight: bold;
-			line-height: 0.75rem;
-
-			&:hover {
-				text-decoration: none;
-			}
-		}
-
-		a.btn {
-			&.dropdown-toggle {
-				padding-left: 0.625rem;
-				padding-right: 0.625rem;
-
-				i::after {
-					font-family: 'fontawesome';
-					content: "\f0d7";
-					font-style: normal;
-					font-weight: normal;
-				}
-			}
-		}
-
-		.dropdown-menu {
-			top: 2.5rem;
-			.mixin-dropdown-menu(
-					@page-header-page-edit-color,
-					@page-header-page-edit-bg-color,
-					@page-header-page-edit-color-hover,
-					@page-header-page-edit-bg-color-hover
-				);
-
-				&::before {
-					right: 2rem;
-				}
-		}
-
-		&.open {
-			a.btn {
-				&.dropdown-toggle {
-					i::after {
-						content: "\f0d8";
-					}
-				}
-			}
-		}
-	}
-
 	.bs-page-last-edit {
 		line-height: 0.875rem;
 
@@ -93,7 +37,6 @@
 			padding-right: 0.3125rem;
 			font-family: 'icomoon';
 			content: "\ea0c";
-			color: @link-color;
 		}
 	}
 
