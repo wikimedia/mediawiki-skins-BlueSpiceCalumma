@@ -11,7 +11,7 @@ class Edit extends StandardSkinDataLinkList {
 	 * @return \Message
 	 */
 	public function getTitleMessage() {
-		return new \Message( 'bs-sitetools-edit' );
+		return new \Message( 'bs-sitetools-manage-page' );
 	}
 
 	/**
