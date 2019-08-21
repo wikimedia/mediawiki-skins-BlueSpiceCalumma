@@ -21,11 +21,10 @@
 			margin-top: 0.3125rem;
 
 			a {
-				color: @footer-link-color;
-				&:hover {
-					text-decoration: none;
-					color: @footer-link-color-hover;
-				}
+				.mixin-link-color(
+						@footer-link-color,
+						@footer-link-color-hover
+					);
 			}
 
 			&:first-child {
