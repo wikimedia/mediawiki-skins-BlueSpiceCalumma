@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Calumma\Tests\AssocLinksProvider;
 
-use PHPUnit\Framework\TestCase;
+use MediaWikiTestCase;
 use BlueSpice\Calumma\AssocLinksProvider\HistoryView;
 use BlueSpice\Html\Descriptor\ILink;
 use HashConfig;
@@ -11,21 +11,20 @@ use WebRequest;
 use Title;
 
 /**
- * @group Broken
  * @group BlueSpice
  * @group BlueSpiceCalumma
  */
-class HistoryViewTest extends TestCase {
+class HistoryViewTest extends MediaWikiTestCase {
 
 	/**
-	 * @covers HistoryView::factory
+	 * @covers BlueSpice\Calumma\AssocLinksProvider\HistoryView::factory
 	 */
 	public function testFactory() {
 		$requestMock = $this->createMock( WebRequest::class );
 		$requestMock->method( 'getVal' )
 			->willReturn( '' );
 
-		$mainPageTitle = Title::newMainPage();
+		$title = Title::newFromText( 'UTPage' );
 
 		$contextMock = $this->createMock( IContextSource::class );
 		$contextMock->expects( $this->any() )
@@ -33,23 +32,26 @@ class HistoryViewTest extends TestCase {
 			->willReturn( $requestMock );
 		$contextMock->expects( $this->any() )
 			->method( 'getTitle' )
-			->willReturn( $mainPageTitle );
+			->willReturn( $title );
 
 		$config = new HashConfig( [] );
 
 		$links = HistoryView::factory( $contextMock, $config );
 
-		$this->assertEquals( 1, count( $links ), "Should create one item" );
-		$this->assertInstanceOf( ILink::class, $links[0],  "First item should implement ILink" );
+		$this->assertArrayHasKey( 'history', $links, "Should have item 'history'" );
+		$this->assertInstanceOf(
+			ILink::class, $links['history'],
+			"Item ''history'' should implement ILink"
+		);
 		$this->assertContains(
 			'action=history',
-			$links[0]->getHref(),
+			$links['history']->getHref(),
 			"Should return proper querystring parameter"
 		);
 	}
 
 	/**
-	 * @covers HistoryView::factory
+	 * @covers BlueSpice\Calumma\AssocLinksProvider\HistoryView::factory
 	 */
 	public function testFactoryEmptyResultBecauseOfAction() {
 		$requestMock = $this->createMock( WebRequest::class );
@@ -74,7 +76,7 @@ class HistoryViewTest extends TestCase {
 	}
 
 	/**
-	 * @covers HistoryView::factory
+	 * @covers BlueSpice\Calumma\AssocLinksProvider\HistoryView::factory
 	 */
 	public function testFactoryEmptyResultBecauseOfNonExistingTitle() {
 		$requestMock = $this->createMock( WebRequest::class );
@@ -99,7 +101,7 @@ class HistoryViewTest extends TestCase {
 	}
 
 	/**
-	 * @covers HistoryView::factory
+	 * @covers BlueSpice\Calumma\AssocLinksProvider\HistoryView::factory
 	 */
 	public function testFactoryEmptyResultBecauseOfSpecialPage() {
 		$requestMock = $this->createMock( WebRequest::class );
