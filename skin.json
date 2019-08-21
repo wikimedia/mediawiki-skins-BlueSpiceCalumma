@@ -85,7 +85,7 @@
 	},
 	"AutoloadNamespaces": {
 		"BlueSpice\\Calumma\\": "src/",
-		"BlueSpice\\Calumma\\Tests": "tests/phpunit/"
+		"BlueSpice\\Calumma\\Tests\\": "tests/phpunit/"
 	},
 	"ResourceModules": {
 		"skin.bluespicecalumma.styles": {
