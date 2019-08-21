@@ -1,22 +1,22 @@
 header .navbar .p-search form {
-	padding-left: calc(~"( 50vw - 46.562rem )");
+	padding-left: calc(~"( 50vw - 43.625rem - 3.5rem - 1.25rem )");
 	width: calc(~"100% + 1.25rem") !important;
-	max-width: 43.625rem !important;
+	max-width: calc(~"@{bs-content-width} - 5rem") !important;
 
 	.form-group{
 		& > #bs-extendedsearch-input {
 			min-width: 39.6875rem !important;
-			max-width: 40.625rem !important;
+			max-width: calc(~"@{bs-content-width} - 5rem") !important;
 		}
 
 		#bs-extendedsearch-box-wrapper {
 			min-width: 39.6875rem !important;
-			max-width: 40.625rem !important;
+			max-width: calc(~"@{bs-content-width} - 5rem") !important;
 		}
 
 		.bs-extendedsearch-autocomplete-popup {
 			min-width: 42.6875rem !important;
-			max-width: 43.625rem !important;
+			max-width: calc(~"@{bs-content-width} - 5rem") !important;
 		}
 	}
 }
