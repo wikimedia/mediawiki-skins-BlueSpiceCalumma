@@ -61,5 +61,8 @@
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Underside|$1 undersider}} af \"$2\"",
 	"bs-calumma-page-unwatch-text": "Overvåg ikke",
 	"bs-calumma-pageinfosentence-item-separator": "og",
-	"bs-calumma-pageinfosentence-item-class-separator": "men"
+	"bs-calumma-pageinfosentence-item-class-separator": "men",
+	"bs-calumma-assoclink-history-label": "Historik",
+	"bs-calumma-context-pagebutton-label": "Side",
+	"bs-calumma-context-discussionbutton-label": "Diskussion"
 }
