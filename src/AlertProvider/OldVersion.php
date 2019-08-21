@@ -73,7 +73,7 @@ class OldVersion extends AlertProviderBase {
 	}
 
 	/**
-	 * Resolves the currently displayed "oldid" from the "old revision view" URL paramters
+	 * Resolves the currently displayed "oldid" from the "old revision view" URL parameters
 	 */
 	private function initOldId() {
 		$this->oldId = $this->skin->getRequest()->getInt( 'oldid', -1 );
