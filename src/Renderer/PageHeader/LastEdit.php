@@ -3,16 +3,78 @@
 namespace BlueSpice\Calumma\Renderer\PageHeader;
 
 use Html;
+use Config;
 use HtmlArmor;
 use WikiPage;
 use User;
-use MediaWiki\Revision\Revision;
+use IContextSource;
+use RequestContext;
+use BlueSpice\Services;
+use BlueSpice\UtilityFactory;
 use BlueSpice\Renderer;
+use BlueSpice\Renderer\Params;
+use MediaWiki\Linker\LinkRenderer;
+use Revision;
 
 class LastEdit extends Renderer {
 
 	/**
 	 *
+	 * @var UtilityFactory
+	 */
+	protected $util = null;
+
+	/**
+	 * LastEdit constructor.
+	 * @param Config $config
+	 * @param Params $params
+	 * @param LinkRenderer|null $linkRenderer
+	 * @param IContextSource|null $context
+	 * @param string $name
+	 * @param UtilityFactory|null $util
+	 */
+	protected function __construct( Config $config, Params $params,
+		LinkRenderer $linkRenderer = null, IContextSource $context = null,
+		$name = '', UtilityFactory $util = null ) {
+		parent::__construct( $config, $params, $linkRenderer, $context, $name );
+
+		$this->util = $util;
+	}
+
+	/**
+	 *
+	 * @param string $name
+	 * @param Services $services
+	 * @param Config $config
+	 * @param Params $params
+	 * @param IContextSource|null $context
+	 * @param LinkRenderer|null $linkRenderer
+	 * @param UtilityFactory|null $util
+	 * @return Renderer
+	 */
+	public static function factory( $name, Services $services, Config $config, Params $params,
+		IContextSource $context = null, LinkRenderer $linkRenderer = null,
+		UtilityFactory $util = null ) {
+		if ( !$context ) {
+			$context = $params->get(
+				static::PARAM_CONTEXT,
+				false
+			);
+			if ( !$context instanceof IContextSource ) {
+				$context = RequestContext::getMain();
+			}
+		}
+		if ( !$linkRenderer ) {
+			$linkRenderer = $services->getLinkRenderer();
+		}
+		if ( !$util ) {
+			$util = $services->getBSUtilityFactory();
+		}
+
+		return new static( $config, $params, $linkRenderer, $context, $name, $util );
+	}
+
+	/**
 	 * @return string
 	 */
 	public function render() {
@@ -121,7 +183,7 @@ class LastEdit extends Renderer {
 
 		$userLink = $this->linkRenderer->makeLink(
 			$user->getUserPage(),
-			$user->getRealName()
+			$this->util->getUserHelper( $user )->getDisplayName()
 		);
 
 		return $userLink;
