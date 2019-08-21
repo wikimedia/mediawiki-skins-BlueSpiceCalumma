@@ -10,9 +10,9 @@
 			<component type="\BlueSpice\Calumma\Components\Nav" class="calumma-desktop-visible">
 				<component type="\BlueSpice\Calumma\Components\Logo"/>
 				<component type="\BlueSpice\Calumma\Components\SearchForm"/>
+				<component type="\BlueSpice\Calumma\Components\FeaturedActions"/>
 				<component type="\BlueSpice\Calumma\Components\UserButton"/>
 				<component type="\BlueSpice\Calumma\Components\LanguageSelector"/>
-				<component type="\BlueSpice\Calumma\Components\FeaturedActions"/>
 				<component type="\BlueSpice\Calumma\Components\FullScreenButton"/>
 			</component>
 			<component type="\BlueSpice\Calumma\Components\MobileNav" class="calumma-mobile-visible calumma-tablet-visible">
