@@ -105,18 +105,12 @@
 		font-size: 0.9375rem;
 	}
 	a {
-		color: @link-color;
-		&.new {
-			color: @link-color-new; //.new
-			&:hover {
-				text-decoration: none;
-				color: @link-color-new-hover;
-			}
-		}
-		&:hover {
-			text-decoration: none;
-			color: @link-color-hover;
-		}
+		.mixin-link-title-color(
+				@link-color,
+				@link-color-hover,
+				@link-color-new,
+				@link-color-new-hover
+			);
 	}
 	.floatleft {
 		margin-right: 1.5em;
