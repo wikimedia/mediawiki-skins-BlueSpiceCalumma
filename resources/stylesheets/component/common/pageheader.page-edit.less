@@ -1,28 +1,33 @@
 .bs-page-edit {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	max-width: 70%;
+	max-width: 50%;
 
 	& > ul {
 		list-style:none;
 		margin-bottom: 0;
 		padding-left:0;
 		min-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
 
-		li {
+		& > li {
 			line-height: 0;
-
-			&:first-child {
-				height: max-content;
-				margin: auto;
-			}
+			height: max-content;
 		}
+	}
+
+	.bs-page-edit-elements {
+		display: inline-flex;
+		padding-left: 0;
+	}
+
+	.bs-page-edit-element-icon-col,
+	.bs-page-edit-element-text-col {
+		display: inline-block;
 	}
 
 	.bs-page-last-edit {
 		line-height: 0.875rem;
-
 		a {
 			color: @link-color;
 
@@ -32,12 +37,13 @@
 				text-decoration: none;
 			}
 		}
+	}
 
-		&::before {
-			padding-right: 0.3125rem;
-			font-family: 'icomoon';
-			content: "\ea0c";
-		}
+	.icon-info::before {
+		float: left;
+		padding-right: 0.3125rem;
+		font-family: 'icomoon';
+		content: "\ea0c";
 	}
 
 	.bs-page-watch {
