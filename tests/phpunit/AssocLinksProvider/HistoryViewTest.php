@@ -10,6 +10,11 @@ use IContextSource;
 use WebRequest;
 use Title;
 
+/**
+ * @group Broken
+ * @group BlueSpice
+ * @group BlueSpiceCalumma
+ */
 class HistoryViewTest extends TestCase {
 
 	/**
