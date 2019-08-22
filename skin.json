@@ -64,6 +64,12 @@
 				"existing-siblings": "\\BlueSpice\\Calumma\\AssocLinksProvider\\ExistingSiblings::factory",
 				"mapped-siblings": "\\BlueSpice\\Calumma\\AssocLinksProvider\\MappedSiblings::factory",
 				"custom-callback": "\\BlueSpice\\Calumma\\AssocLinksProvider\\CustomCallback::factory"
+			},
+			"BreadcrumbRootNodeRegistry": {
+				"namespace-mainpage": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\NamespaceMainPage::factory",
+				"namespace-portalpage": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\NamespacePortalPage::factory",
+				"special-allpages": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialAllPages::factory",
+				"special-specialpages": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialSpecialPages::factory"
 			}
 		},
 		"BlueSpiceCustomMenu": {
@@ -236,6 +242,10 @@
 		},
 		"AssocLinksCustomCallback": {
 			"value": null
+		},
+		"BreadcrumbNamespacePortalPageRootNodePortalNamespace": {
+			"@note": "NS_PROJECT",
+			"value": 4
 		}
 	},
 	"callback": "BlueSpice\\Calumma\\Setup::onCallback",
