@@ -16,7 +16,7 @@ class ExistingSiblings extends TitleLink {
 	 */
 	public function getLabel() {
 		if ( $this->title->getNamespace() === NS_MAIN ) {
-			return Message::newFromKey( 'bs-ns_main' );
+			return $this->context->msg( 'bs-ns_main' );
 		}
 		return new RawMessage( $this->title->getNsText() );
 	}
@@ -44,6 +44,11 @@ class ExistingSiblings extends TitleLink {
 		$links = [];
 		foreach ( $res as $row ) {
 			$assocTitle = Title::newFromRow( $row );
+			if ( !$assocTitle->isValid() ) {
+				// whenever a namespace was removed, but the entries in the page table
+				// still remain
+				continue;
+			}
 			if ( $assocTitle->equals( $currentTitle ) ) {
 				continue;
 			}
