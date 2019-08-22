@@ -14,7 +14,12 @@ class LanguageSelector extends Component {
 		$currentLanguage = $this->getSkin()->getLanguage()->getCode();
 		$otherLanguages = $this->getSkinTemplate()->get( 'language_urls' );
 
-		$html = '<div class="bs-language-selector">';
+		$html = \Html::openElement(
+				'div',
+				[
+					'class' => 'bs-language-selector dropdown'
+				]
+			);
 
 		if ( empty( $otherLanguages ) ) {
 			$html .= \Html::closeElement( 'div' );
@@ -24,29 +29,26 @@ class LanguageSelector extends Component {
 		$lang = explode( '-', $currentLanguage );
 		$class = ' bs-language-selector-icon-' . $lang[0] . ' bs-language-selector-icon ';
 
-		$html .= \Html::openElement( 'div', [ 'class' => 'bs-language-selector-current-language' ] );
+		$html .= \Html::openElement(
+				'a',
+				[
+					'class' => 'bs-language-selector-current-language dropdown-toggle',
+					'data-toggle' => 'dropdown',
+					'aria-haspopup' => 'true',
+					'aria-expanded' => 'false'
+				]
+			);
+
 		$html .= \Html::element(
 				'i',
 				[
 					'class' => $class
 				]
 			);
-		$html .= \Html::closeElement( 'div' );
+		$html .= \Html::closeElement( 'a' );
 
-		$html .= \Html::openElement( 'div', [ 'class' => 'dropdown' ] );
-		$html .= \Html::element(
-				'a',
-				[
-					'class' => 'btn dropdown-toggle',
-					'type' => 'button',
-					'data-toggle' => 'dropdown',
-					'aria-haspopup' => 'true',
-					'aria-expanded' => 'false',
-				],
-				''
-			);
-
-		$html .= \Html::openElement( 'ul', [ 'class' => 'dropdown-menu' ] );
+		$html .= \Html::openElement( 'div', [ 'class' => 'dropdown-menu' ] );
+		$html .= \Html::openElement( 'ul' );
 
 		foreach ( $otherLanguages as $language ) {
 			$html .= \Html::openElement( 'li' );
@@ -87,7 +89,7 @@ class LanguageSelector extends Component {
 		$html .= \Html::closeElement( 'ul' );
 		$html .= \Html::closeElement( 'div' );
 
-		$html .= '</div>';
+		$html .= \Html::closeElement( 'div' );
 
 		return $html;
 	}
