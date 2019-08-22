@@ -26,6 +26,7 @@
 					color: @color-hover;
 				}
 			}
+
 		}
 	}
 
@@ -38,6 +39,17 @@
 		color: @bg-color;
 		height: 0.625rem;
 		z-index: -1;
+	}
+}
+
+.mixin-dropdown-menu-title-new( @color, @color-hover, @bg-color-hover ) {
+	a.new {
+		color: @color;
+
+		&:hover {
+			background-color:  @bg-color-hover;
+			color: @color-hover;
+		}
 	}
 }
 
