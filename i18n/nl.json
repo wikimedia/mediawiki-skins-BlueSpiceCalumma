@@ -52,6 +52,7 @@
 	"bs-sitetools-toolbox": "Hulpmiddelen",
 	"bs-sitetools-edit": "Bewerken",
 	"bs-sitetools-categories": "Categorien",
+	"bs-sitetools-associated-links": "Gerelateerde koppelingen",
 	"bs-calumma-recentchanges-title": "Recente wijzigingen",
 	"bs-calumma-recentchanges-intro": "In deze lijst vind u alle nieuwe en recent gewijzigde pagina's.",
 	"bs-calumma-recentchanges-specialpage-link": "Voor het klassieke overzicht, klik [[Special:RecentChanges|hier]].",
@@ -66,6 +67,8 @@
 	"bs-calumma-pagetool-view-tooltip": "Bekijken",
 	"bs-calumma-pagetool-watch-tooltip": "Volgen",
 	"bs-calumma-pagetool-unwatch-tooltip": "Niet volgen",
+	"bs-edit-mediawiki-sidebar-link-text": "Zijbalk bewerken",
+	"bs-edit-mediawiki-sidebar-link-title": "Zijbalk bewerken",
 	"bs-allpages-description": "Alle pagina's",
 	"bs-support-description": "Hulp en contact",
 	"bs-calumma-navigation-toggle-tooltip": "Openen / sluiten",
@@ -95,5 +98,10 @@
 	"bs-calumma-alert-oldpage": "U bekijkt een oudere versie van deze pagina. [[Special:Redirect/page/$1|Terug naar de laatste versie]].",
 	"bs-calumma-version-pager-prev-tooltip": "Naar een vorige versie schakelen",
 	"bs-calumma-version-pager-next-tooltip": "Naar de volgende versie schakelen",
-	"bs-calumma-version-pager-info-text": "Versie van $1 door [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "Versie van $1 door [[User:$2|$2]]",
+	"bs-calumma-assoclink-history-label": "Geschiedenis",
+	"bs-calumma-assoclink-history-tooltip": "Toon de versiegeschiedenis van de pagina \"$1\"",
+	"bs-calumma-context-pagebutton-label": "Pagina",
+	"bs-calumma-context-discussionbutton-label": "Overleg",
+	"bs-calumma-context-discussionbutton-tooltip": "Toon de huidige overlegpagina"
 }
