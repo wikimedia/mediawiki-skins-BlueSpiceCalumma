@@ -57,6 +57,7 @@
 	"bs-sitetools-qm": "Управление качеством",
 	"bs-sitetools-toolbox": "Инструменты",
 	"bs-sitetools-views": "Просмотры",
+	"bs-sitetools-view-mode": "Режим",
 	"bs-sitetools-edit": "Править",
 	"bs-sitetools-categories": "Категории",
 	"bs-calumma-recentchanges-title": "Свежие правки",
@@ -83,6 +84,13 @@
 	"bs-calumma-toggle-button-tooltip": "Открыть/закрыть",
 	"bs-calumma-breadcrumbs-nstab-main": "Все страницы",
 	"bs-calumma-breadcrumbs-pages": "Вы здесь",
+	"bs-calumma-page-unwatch-text": "Не следить",
 	"bs-calumma-pageinfosentence-item-separator": "и",
-	"bs-calumma-pageinfosentence-item-class-separator": "но"
+	"bs-calumma-pageinfosentence-item-class-separator": "но",
+	"bs-calumma-version-pager-prev-tooltip": "Переключиться на предыдущую версию",
+	"bs-calumma-version-pager-next-tooltip": "Переключиться на следующую версию",
+	"bs-calumma-assoclink-history-label": "История",
+	"bs-calumma-context-pagebutton-label": "Страница",
+	"bs-calumma-context-discussionbutton-label": "Обсуждение",
+	"bs-calumma-context-discussionbutton-tooltip": "Показать текущую страницу обсуждения"
 }

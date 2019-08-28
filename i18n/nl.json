@@ -6,7 +6,8 @@
 			"Ndecouck",
 			"Elroy",
 			"Elderson",
-			"RadioAzureus"
+			"RadioAzureus",
+			"Siebrand"
 		]
 	},
 	"bs-calumma-pref-toggle-navigaiton-main": "Verberg automatisch het hoofdmenu",
@@ -35,7 +36,7 @@
 	"bs-mobilemoremenu-new-section-text": "Nieuw kopje",
 	"bs-mobilemoremenu-history-title": "Geschiedenis",
 	"bs-mobilemoremenu-history-text": "Geschiedenis",
-	"bs-sitenav-navigation-title": "Hoofd-navigatie",
+	"bs-sitenav-navigation-title": "Hoofdnavigatie",
 	"bs-sitenav-navigation-section-mobileusercontainer": "Gebruiker",
 	"bs-sitenav-navigation-section-mediawikisidebar": "Wiki",
 	"bs-sitenav-globalactions-section-management": "Beheer",
@@ -106,6 +107,6 @@
 	"bs-calumma-assoclink-history-label": "Geschiedenis",
 	"bs-calumma-assoclink-history-tooltip": "Toon de versiegeschiedenis van de pagina \"$1\"",
 	"bs-calumma-context-pagebutton-label": "Pagina",
-	"bs-calumma-context-discussionbutton-label": "Discussie",
+	"bs-calumma-context-discussionbutton-label": "Overleg",
 	"bs-calumma-context-discussionbutton-tooltip": "Toon de huidige overlegpagina"
 }
