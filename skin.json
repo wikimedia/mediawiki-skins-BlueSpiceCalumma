@@ -27,7 +27,7 @@
 				"pageheader-context": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\Context::factory",
 				"@note": "The category renderer is hard coded as a fallback in PageHeader::getCategories, so it can be overwritten by extensions",
 				"@pageheader-category": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\Category::factory",
-				"pageheader-lastedit": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\LastEdit::factory",
+				"@pageheader-lastedit": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\LastEdit::factory",
 				"pageheader-editbutton": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\EditButton::factory",
 				"pageheader-pageinfo": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\PageInfo::factory"
 			},
