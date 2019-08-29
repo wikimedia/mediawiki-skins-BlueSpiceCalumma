@@ -10,6 +10,7 @@ use BlueSpice\SkinData;
 use BlueSpice\RendererFactory;
 use BlueSpice\Renderer\Params;
 use BlueSpice\Renderer\NullRenderer;
+use BlueSpice\Calumma\Renderer\PageHeader\LastEdit;
 use BlueSpice\Calumma\Renderer\PageHeader\Category;
 use BlueSpice\Calumma\TemplateComponent;
 use BlueSpice\Services;
@@ -114,15 +115,25 @@ class PageHeader extends TemplateComponent {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getLastEdit() {
-		return $this->getRendererFactory()->get(
+		$renderer = $this->getRendererFactory()->get(
 			'pageheader-lastedit',
 			new Params( parent::getTemplateArgs() ),
 			$this->getSkin()->getContext()
-		)->render();
+		);
+
+		if ( $renderer instanceof NullRenderer ) {
+			$renderer = LastEdit::factory(
+				'pageheader-lastedit',
+				Services::getInstance(),
+				MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
+				new Params( parent::getTemplateArgs() )
+			);
+		}
+
+		return $renderer->render();
 	}
 
 	/**
