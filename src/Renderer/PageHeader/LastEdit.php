@@ -85,7 +85,7 @@ class LastEdit extends Renderer {
 		}
 
 		$wikiPage = WikiPage::factory( $title );
-		$currentRevision = $wikiPage->getRevision();
+		$currentRevision = $this->getCurrentRevision( $wikiPage );
 
 		if ( !$currentRevision ) {
 			return '';
@@ -113,7 +113,7 @@ class LastEdit extends Renderer {
 	 * @param Revision $currentRevision
 	 * @return string
 	 */
-	private function makeLastEditDiffLink( WikiPage $wikiPage, $currentRevision ) {
+	protected function makeLastEditDiffLink( WikiPage $wikiPage, $currentRevision ) {
 		$rawTimestamp = $currentRevision->getTimestamp();
 		$formattedDate = $this->getContext()->getLanguage()->date( $rawTimestamp );
 
@@ -173,7 +173,7 @@ class LastEdit extends Renderer {
 	 * @param Revision $currentRevision
 	 * @return string
 	 */
-	private function makeLastEditorLink( WikiPage $wikiPage, $currentRevision ) {
+	protected function makeLastEditorLink( WikiPage $wikiPage, $currentRevision ) {
 		/* Main_page is created with user id 0 */
 		if ( !$currentRevision->getUser() ) {
 			return $this->msg( 'bs-calumma-page-last-edit-by-system-user' )->plain();
@@ -187,5 +187,13 @@ class LastEdit extends Renderer {
 		);
 
 		return $userLink;
+	}
+
+	/**
+	 * @param WikiPage $wikiPage
+	 * @return Revision|null
+	 */
+	protected function getCurrentRevision( WikiPage $wikiPage ) {
+		return $wikiPage->getRevision();
 	}
 }
