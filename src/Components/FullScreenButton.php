@@ -13,11 +13,11 @@ class FullScreenButton extends \Skins\Chameleon\Components\Structure {
 		$class = $this->getDomElement()->getAttribute( 'class' );
 
 		$html = \Html::openElement( 'a', [
-			'href' => '#',
 			'title' => wfMessage( 'bs-calumma-full-screen-button-tooltip' )->plain(),
 			'class' => ' calumma-full-screen-button ' . $class,
 			'data-toggle' => $data,
-			'role' => 'button'
+			'role' => 'button',
+			'aria-label' => wfMessage( 'bs-calumma-full-screen-button-tooltip' )->plain()
 		] );
 
 		$html .= \Html::openElement( 'i', [ 'class' => $data ] );
