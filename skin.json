@@ -52,10 +52,6 @@
 				"bs-content-toc-background": "@bs-background-primary",
 				"bs-seperator-line-color": "#e9e9e9"
 			},
-			"@PageToolRegistry": {
-				"history": "BlueSpice\\Calumma\\PageTool\\History::factory",
-				"view": "BlueSpice\\Calumma\\PageTool\\View::factory"
-			},
 			"AlertProviderRegistry": {
 				"oldversion": "\\BlueSpice\\Calumma\\AlertProvider\\OldVersion::factory"
 			},
