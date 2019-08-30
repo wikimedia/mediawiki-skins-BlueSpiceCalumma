@@ -232,7 +232,14 @@
 	"config_prefix": "bsgBlueSpiceCalumma",
 	"config": {
 		"AssocLinksEnabledProviders": {
-			"value": [ "history-view", "existing-siblings", "mapped-siblings", "custom-callback" ]
+			"value": [
+				"history-view",
+				"existing-siblings",
+				"mapped-siblings",
+				"custom-callback",
+				"profile-classic",
+				"profile-modern"
+			]
 		},
 		"AssocLinksExistingSiblingsNamespaceBlacklist": {
 			"value": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
