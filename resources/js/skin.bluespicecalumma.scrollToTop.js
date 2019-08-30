@@ -5,12 +5,11 @@
 		var anchor = mw.html.element(
 			'a',
 			{
-				href: '#',
 				class: 'bs-top bs-icon-arrow-o-up',
 				id: 'bs-top',
-				title: mw.message('bs-to-top-desc').plain()
-			},
-			''
+				title: mw.message('bs-to-top-desc').plain(),
+				'aria-label': mw.message('bs-to-top-desc').plain()
+			}
 		);
 		$(anchor).appendTo($('body'));
 
