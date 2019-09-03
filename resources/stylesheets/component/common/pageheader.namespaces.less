@@ -3,7 +3,9 @@
 	height: auto;
 
 	a {
-		line-height: 0.625rem;
+		&.btn {
+			border: none;
+		}
 
 		.mixin-link-title-color(
 				@link-color,
@@ -24,10 +26,12 @@
 
 
 	.dropdown {
-		height: 0.875rem;
 		border: none;
 
 		.mixin-dropdown-toggle-before( @page-header-breadcrumbs-dropdown-color, @page-header-breadcrumbs-dropdown-color-hover );
+		.dropdown-toggle {
+		    line-height: 1rem;
+		}
 		.dropdown-menu {
 			.mixin-box-shadow-secondary();
 			.mixin-dropdown-menu(
@@ -47,4 +51,9 @@
 			}
 		}
 	}
+
+    #bs-page-discussion-button {
+	    margin-left: 1.125rem;
+	    display: inline-block;
+    }
 }
