@@ -51,7 +51,6 @@ class PageHeader extends TemplateComponent {
 			'breadcrumbs' => $showContextBand ? $this->getBreadCrumbs() : '',
 			'namespaces' => $showContextBand ? $this->getSiteNamespaces() : '',
 			'categories' => $showQualificationBand ? $this->getCategories() : '',
-			'tools' => $showQualificationBand ? $this->getTools() : '',
 			'pageinfoelements' => $showMetaBand ? $this->getPageInfoElement() : '',
 			'lastedit' => $showMetaBand ? $this->getLastEdit() : '',
 			'watchaction' => $showMetaBand ? $this->getWatchAction() : '',
@@ -78,7 +77,6 @@ class PageHeader extends TemplateComponent {
 			'breadcrumbs' => '',
 			'namespaces' => '',
 			'categories' => '',
-			'tools' => '',
 			'pageinfoelements' => '',
 			'lastedit' => '',
 			'watchaction' => '',
@@ -224,29 +222,6 @@ class PageHeader extends TemplateComponent {
 			new Params( parent::getTemplateArgs() ),
 			$this->getSkin()->getContext()
 		)->render();
-	}
-
-	/**
-	 *
-	 * @return string
-	 */
-	protected function getTools() {
-		$html = '';
-		$pageToolsFactory = Services::getInstance()->getBSPageToolFactory();
-		foreach ( $pageToolsFactory->getAll() as $tool ) {
-			$requiredPermissions = $tool->getPermissions();
-			$shouldShow = true;
-			foreach ( $requiredPermissions as $requiredPermission ) {
-				if ( !$this->getSkin()->getTitle()->userCan( $requiredPermission ) ) {
-					$shouldShow = false;
-				}
-			}
-
-			if ( $shouldShow ) {
-				$html .= $tool->getHtml();
-			}
-		}
-		return $html;
 	}
 
 	/**
