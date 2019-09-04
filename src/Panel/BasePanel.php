@@ -70,8 +70,7 @@ abstract class BasePanel implements IPanel {
 	}
 
 	/**
-	 *
-	 * @return type
+	 * @return array|string[]
 	 */
 	public function getTriggerRLDependencies() {
 		return [];
@@ -83,6 +82,9 @@ abstract class BasePanel implements IPanel {
 	 * @return bool
 	 */
 	public function shouldRender( $context ) {
+		if ( $context->getOutput()->isPrintable() ) {
+			return false;
+		}
 		return true;
 	}
 
