@@ -57,6 +57,7 @@
 	"bs-sitetools-qm": "质量管理",
 	"bs-sitetools-toolbox": "工具箱",
 	"bs-sitetools-views": "浏览次数",
+	"bs-sitetools-view-mode": "模式",
 	"bs-sitetools-edit": "编辑",
 	"bs-sitetools-categories": "分类",
 	"bs-calumma-recentchanges-title": "最近更改",
@@ -81,5 +82,8 @@
 	"bs-calumma-toggle-button-tooltip": "开/关",
 	"bs-calumma-version-pager-prev-tooltip": "切换到上一个版本",
 	"bs-calumma-version-pager-next-tooltip": "切换到下一个版本",
-	"bs-calumma-version-pager-info-text": "[[用户:$2|$2]]提供的$1的版本"
+	"bs-calumma-version-pager-info-text": "[[用户:$2|$2]]提供的$1的版本",
+	"bs-calumma-assoclink-history-label": "历史",
+	"bs-calumma-context-pagebutton-label": "页",
+	"bs-calumma-context-discussionbutton-label": "讨论"
 }
