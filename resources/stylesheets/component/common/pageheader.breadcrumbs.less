@@ -9,7 +9,11 @@
 				@link-color-new-hover
 			);
 		}
-		.btn:active, .btn.active {
+		.btn {
+		    border: none;
+		}
+		.btn:active,
+		.btn.active {
 				box-shadow: none;
 		}
 		&.open {
@@ -70,6 +74,7 @@
 #bs-breadcrumb-rootnode {
 	display: inline-block;
 	margin-right: 0.5rem;
+	vertical-align: middle;
 	a {
 		.mixin-link-title-color(
 			@link-color,
@@ -78,8 +83,4 @@
 			@link-color-new-hover
 		);
 	}
-}
-
-#bs-page-discussion-button {
-	margin-left: 1rem;
 }
