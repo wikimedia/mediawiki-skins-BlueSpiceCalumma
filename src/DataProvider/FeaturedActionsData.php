@@ -54,7 +54,8 @@ class FeaturedActionsData {
 		if ( $curTitle->userCan( 'edit' ) && !$skin->getUser()->isLoggedIn() ) {
 			$newSection += [
 				'title' => wfMessage( 'bs-action-edit-please-login-title' )->plain(),
-				'href' => self::getLoginUrl( $skin )
+				'href' => self::getLoginUrl( $skin ),
+				'classes' => [ 'disabled' ]
 			];
 
 			$data[SkinData::FEATURED_ACTIONS]['edit']['new-section'] = $newSection;
@@ -64,7 +65,8 @@ class FeaturedActionsData {
 		if ( !$curTitle->userCan( 'edit' ) ) {
 			$newSection += [
 				'title' => wfMessage( 'bs-action-edit-disabled-title' )->plain(),
-				'href' => ''
+				'href' => '#',
+				'classes' => [ 'disabled' ]
 			];
 
 			$data[SkinData::FEATURED_ACTIONS]['edit']['new-section'] = $newSection;
