@@ -308,7 +308,8 @@ class PageInfoSentenceBuilder {
 				);
 		}
 
-		$html .= Html::openElement(
+		if ( !empty( $value['menu'] ) ) {
+			$html .= Html::openElement(
 				'a',
 				[
 					'class' => ' dropdown-toggle',
@@ -319,18 +320,19 @@ class PageInfoSentenceBuilder {
 				]
 			);
 
-		$html .= Html::closeElement( 'a' );
+			$html .= Html::closeElement( 'a' );
 
-		$html .= Html::openElement(
+			$html .= Html::openElement(
 				'div',
 				[
 					'class' => 'dropdown-menu'
 				]
 			);
 
-		$html .= $value['menu'];
+			$html .= $value['menu'];
 
-		$html .= Html::closeElement( 'div' );
+			$html .= Html::closeElement( 'div' );
+		}
 
 		$html .= Html::closeElement( 'span' );
 
