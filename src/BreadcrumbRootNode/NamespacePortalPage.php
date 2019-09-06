@@ -34,7 +34,11 @@ class NamespacePortalPage extends BreadcrumbRootNodeBase {
 
 		return $this->linkRenderer->makeLink(
 			$namespacePortalPage,
-			$nsText
+			$nsText,
+			[
+				'class' => 'btn',
+				'role' => 'button'
+			]
 		);
 	}
 }

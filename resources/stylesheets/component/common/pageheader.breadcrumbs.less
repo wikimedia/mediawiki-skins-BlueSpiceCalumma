@@ -1,4 +1,8 @@
 .bs-page-breadcrumbs {
+	a.btn {
+		border: none;
+		padding: 0;
+	}
 	.dropdown {
 		& > a {
 			padding: 0;
@@ -11,6 +15,8 @@
 		}
 		.btn {
 		    border: none;
+			vertical-align: middle;
+			float: none;
 		}
 		.btn:active,
 		.btn.active {
@@ -29,6 +35,7 @@
 
 		& > a.dropdown-toggle {
 			margin-left: 0.3em;
+			margin-right: 0.3em;
 			padding-right: 0;
 			padding-left: 0;
 			width: 1rem;
@@ -82,5 +89,10 @@
 			@link-color-new,
 			@link-color-new-hover
 		);
+
+		&::after {
+			content: ":";
+			color:@page-header-breadcrumbs-color;
+		}
 	}
 }

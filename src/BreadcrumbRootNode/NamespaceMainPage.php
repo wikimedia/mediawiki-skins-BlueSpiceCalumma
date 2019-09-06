@@ -30,7 +30,11 @@ class NamespaceMainPage extends BreadcrumbRootNodeBase {
 
 		return $this->linkRenderer->makeLink(
 			$namespaceMainPage,
-			$nsText
+			$nsText,
+			[
+				'class' => 'btn',
+				'role' => 'button'
+			]
 		);
 	}
 

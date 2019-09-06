@@ -25,7 +25,11 @@ class SpecialSpecialPages extends BreadcrumbRootNodeBase {
 
 		return $this->linkRenderer->makeLink(
 			$specialSpecialpages,
-			$specialSpecialpages->getText()
+			$specialSpecialpages->getText(),
+			[
+				'class' => 'btn',
+				'role' => 'button'
+			]
 		);
 	}
 

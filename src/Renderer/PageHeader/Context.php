@@ -30,7 +30,8 @@ class Context extends Renderer {
 			'text' => Message::newFromKey( 'bs-calumma-context-pagebutton-label' )->plain(),
 			'href' => $this->context->getTitle()->getSubjectPage()->getLinkURL(),
 			'hasItems' => !empty( $items ),
-			'items' => $items
+			'items' => $items,
+			'class' => 'btn'
 		];
 		$splitButton = new SplitButtonDropdown( null, $data );
 
