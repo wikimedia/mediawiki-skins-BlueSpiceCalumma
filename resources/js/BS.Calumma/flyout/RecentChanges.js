@@ -14,6 +14,10 @@ Ext.define( 'BS.Calumma.flyout.RecentChanges', {
 		return 'articlepreviewimage';
 	},
 
+	makeDataViewItemLinkUrl: function( dataset ) {
+		return dataset.oldid_url;
+	},
+
 	makeDataViewThumbImageTitletextValue: function( dataset ) {
 		return dataset.page_prefixedtext;
 	},
@@ -101,7 +105,7 @@ Ext.define( 'BS.Calumma.flyout.RecentChanges', {
 					);
 				}
 
-				return '<div><span class="title">' + record.get( 'page_link' ) + '</span><span class="actions">( ' + diff + history + ' )</span></div>';
+				return '<div><span class="title">' + record.get( 'oldid_link' ) + '</span><span class="actions">( ' + diff + history + ' )</span></div>';
 			}
 		}];
 	},
