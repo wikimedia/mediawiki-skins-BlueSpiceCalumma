@@ -52,7 +52,7 @@ class BreadCrumb extends Renderer {
 					[
 						'id' => 'bs-breadcrumb-rootnode'
 					],
-					"$rootNodeHtml: "
+					"$rootNodeHtml"
 				);
 			}
 		}

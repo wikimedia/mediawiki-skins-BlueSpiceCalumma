@@ -23,7 +23,10 @@ class SpecialAllPages extends BreadcrumbRootNodeBase {
 		return $this->linkRenderer->makeLink(
 			$specialAllpages,
 			$specialAllpages->getText(),
-			[],
+			[
+				'class' => 'btn',
+				'role' => 'button'
+			],
 			[
 				'namespace' => $title->getNamespace()
 			]
