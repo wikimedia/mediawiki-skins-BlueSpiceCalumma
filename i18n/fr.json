@@ -5,7 +5,8 @@
 			"Tartare",
 			"Wladek92",
 			"Zarisi",
-			"Djiboun"
+			"Djiboun",
+			"Verdy p"
 		]
 	},
 	"bluespicecalumma-desc": "Habillage BlueSkin",
@@ -105,13 +106,13 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "mais",
 	"bs-calumma-full-screen-button-tooltip": "Mode plein écran/normal",
 	"bs-calumma-page-last-edit-by-system-user": "utilisateur système",
-	"bs-calumma-notification-logged-in": "Vous êtes maintenant connecté(e).",
+	"bs-calumma-notification-logged-in": "Vous êtes maintenant {{GENDER:|connecté|connectée}}.",
 	"bs-calumma-alert-oldpage": "Vous regardez une ancienne version de cette page. [[Special:Redirect/page/$1|Revenir à la dernière version]].",
 	"bs-calumma-version-pager-prev-tooltip": "Revenir à la version précédente",
 	"bs-calumma-version-pager-next-tooltip": "Basculer vers la version suivante",
 	"bs-calumma-version-pager-info-text": "Version de $1 par [[User:$2|$2]]",
 	"bs-calumma-assoclink-history-label": "Historique",
-	"bs-calumma-assoclink-history-tooltip": "Afficher l'historique de la page « $1 »",
+	"bs-calumma-assoclink-history-tooltip": "Afficher l'historique de la page « $1 »",
 	"bs-calumma-context-pagebutton-label": "Page",
 	"bs-calumma-context-pagebutton-tooltip": "Afficher la page en cours",
 	"bs-calumma-context-discussionbutton-label": "Discussion",
