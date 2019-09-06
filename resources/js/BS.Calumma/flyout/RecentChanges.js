@@ -47,7 +47,7 @@ Ext.define( 'BS.Calumma.flyout.RecentChanges', {
 		var items = [ {
 			plain: true,
 			iconCls: 'bs-icon-history',
-			text: dataset.get( 'hist_link' ),
+			text: mw.message( 'bs-calumma-recentchanges-history' ).plain(),
 			onClick: function(){
 				window.location = dataset.get( 'hist_url' );
 			}
@@ -56,7 +56,7 @@ Ext.define( 'BS.Calumma.flyout.RecentChanges', {
 			items.push( {
 				plain: true,
 				iconCls: 'bs-icon-history',
-				text: dataset.get( 'diff_link' ),
+				text: mw.message( 'bs-calumma-recentchanges-diff' ).plain(),
 				onClick: function() {
 					window.location = dataset.get( 'diff_url' );
 				}
