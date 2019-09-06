@@ -14,19 +14,12 @@ class MobileMoreMenuData {
 	 */
 	public static function populate( $skin, &$skintemplate, &$data ) {
 		foreach ( $data[SkinData::FEATURED_ACTIONS]['edit'] as $item ) {
-			if ( array_key_exists( 'id', $item ) ) {
-				$item['class'] = 'calumma-mobile-more-menu-' . $item['id'];
-				unset( $item['id'] );
+			$class = '';
+			if ( array_key_exists( 'classes', $item ) ) {
+				$class = implode( ' ', $item['classes'] );
 			}
-			if ( !array_key_exists( 'text', $item ) ) {
-				$item['text'] = $item['title'];
-			}
-			$data[SkinDataFieldDefinition::MOBILE_MORE_MENU][] = $item;
-		}
-
-		foreach ( $data[SkinData::FEATURED_ACTIONS]['new'] as $item ) {
 			if ( array_key_exists( 'id', $item ) ) {
-				$item['class'] = 'calumma-mobile-more-menu-' . $item['id'];
+				$item['class'] = $class . ' calumma-mobile-more-menu-' . $item['id'];
 				unset( $item['id'] );
 			}
 			if ( !array_key_exists( 'text', $item ) ) {
