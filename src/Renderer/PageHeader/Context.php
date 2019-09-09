@@ -46,6 +46,7 @@ class Context extends Renderer {
 				'id' => 'bs-page-discussion-button',
 				'title' => Message::newFromKey( 'bs-calumma-context-discussionbutton-tooltip' )
 					->plain(),
+				'class' => 'btn'
 			]
 		);
 	}

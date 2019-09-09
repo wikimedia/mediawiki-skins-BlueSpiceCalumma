@@ -2,6 +2,7 @@
 	a.btn {
 		border: none;
 		padding: 0;
+		line-height: 1.4rem;
 	}
 	.dropdown {
 		& > a {
@@ -14,7 +15,7 @@
 			);
 		}
 		.btn {
-		    border: none;
+			border: none;
 			vertical-align: middle;
 			float: none;
 		}
@@ -68,7 +69,9 @@
 				);
 			width: auto;
 			margin-top: 0.8rem;
-
+			max-height: 25rem;
+			overflow: auto;
+			user-select: none;
 			&::before {
 				color: @page-header-breadcrumbs-dropdown-bg-color-hover;
 				margin-top: -1px;
