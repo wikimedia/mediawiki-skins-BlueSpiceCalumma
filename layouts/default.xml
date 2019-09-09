@@ -51,6 +51,7 @@
 				</row>
 			</grid>
 		</component>
+		<component type="\BlueSpice\Calumma\Components\MobileMoreMenu" class="calumma-mobile-visible calumma-tablet-visible calumma-desktop-hidden"/>
 		<component type="\BlueSpice\Calumma\Components\MobileFeaturedActionsButton" data-type="new" data-action="new-page" class="calumma-mobile-visible calumma-tablet-visible calumma-desktop-hidden"/>
 		<component type="\BlueSpice\Calumma\Components\Aside" data-toggle-by='sitetools-main-collapse' class="sitetools-main calumma-mobile-hidden" hide-if-noread="true">
 			<component type="\BlueSpice\Calumma\Components\SidebarToggle" data-toggle="sitetools-main-collapse" class="calumma-desktop-visible"/>

@@ -1,21 +1,28 @@
 body div.bs-mobile-more-menu {
 	a.bs-mobile-more-menu-button {
 		position: fixed;
-		right: 10vw;
-		bottom: 1.25rem;
+		right: 2.5vw;
+		bottom: 15vw;
+		padding: 0;
 		&:hover {
 			color: @mobile-more-menu-button-open-color-hover;
 			text-decoration: none;
 		}
-		&::before {
-			font-family: 'entypo';
-			content: "\e999";
-			font-size: 2rem;
-			line-height: 3rem;
-			color: @mobile-more-menu-dropdown-color;
+		i {
+			height:  3rem;
+			width:  3rem;
+			display: block;
+			text-align: center;
+			font-style: normal;
 			background-color: @mobile-more-menu-dropdown-bg-color;
 			border-radius: 1.5rem;
-			padding: 0.2em;
+			&::before {
+				font-family: 'entypo';
+				content: "\e999";
+				font-size: 1.2rem;
+				line-height: 3rem;
+				color: @mobile-more-menu-dropdown-color;
+			}
 		}
 	}
 	.dropdown-menu {
@@ -23,50 +30,36 @@ body div.bs-mobile-more-menu {
 		bottom: 0;
 		right: 0;
 		top: auto;
-		background-color: @mobile-more-menu-dropdown-bg-color;
+		.mixin-mobile-menu(
+			@mobile-more-menu-dropdown-color,
+			@mobile-more-menu-dropdown-bg-color,
+			@mobile-more-menu-dropdown-color-hover,
+			@mobile-more-menu-dropdown-bg-color-hover
+		);
 		& > ul {
 			padding-top: 0.625rem;
 			padding-left: 0.625rem;
 			padding-right: 0.625rem;
-			padding-bottom: 6.25rem;
-			& > li {
-				list-style: none;
-				& > a {
-					min-width: 100%;
-					width: 100%;
-					display: block;
-					font-size: 1.2rem;
-					line-height: 2em;
-					padding-left: 1em;
-					color: @mobile-more-menu-dropdown-color;
-					&:hover {
-					    background-color: @mobile-more-menu-dropdown-bg-color-hover;
-					    text-decoration: none;
-					    color: @mobile-more-menu-dropdown-color-hover;
-					}
-				}
-			}
+			padding-bottom: 4.25rem;
 		}
-		a.bs-mobile-more-menu-button{
+		a.bs-mobile-more-menu-button {
+			position: absolute;
+			top: 2.5vw;
 			background-color: transparent;
-		    &::before:hover{
+			i::before:hover{
 				color: @mobile-more-menu-button-close-color-hover;
-		    }
-		    &::before {
+			}
+			i::before {
 				font-family: 'entypo';
 				content: "\e98d";;
-				font-size: 2rem;
-				line-height: 3rem;
-				background-color: transparent;
-				color: @mobile-more-menu-dropdown-bg-color;
-				background-color: @mobile-more-menu-dropdown-color;
+				font-size: 1.5rem;
+				color: @mobile-more-menu-dropdown-color;
+				background-color: transparen;
 				border-radius: 1.5rem;
-				padding: 0.2em;
-		    }
+			}
 		}
 	}
 }
-
 
 div.bs-mobile-more-menu .dropdown-menu > ul > li > a.calumma-mobile-more-menu-ca-view { display: none; }
 .ve-activated div.bs-mobile-more-menu .dropdown-menu > ul > li > a.calumma-mobile-more-menu-ca-view { display: block; }
