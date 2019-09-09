@@ -138,8 +138,8 @@ class PageInfo extends Renderer {
 		$html .= Html::openElement( 'a', [
 			'id' => 'pageinfo-qm-panel',
 			'class' => 'bs-page-info-element-button',
-			'href' => '#',
-			'title' => $this->msg( 'bs-calumma-pageinfo-qm-button-tooltip' )->plain()
+			'title' => $this->msg( 'bs-calumma-pageinfo-qm-button-tooltip' )->plain(),
+			'aria-label' => $this->msg( 'bs-calumma-pageinfo-qm-button-tooltip' )->plain()
 		] );
 
 		$html .= Html::element( 'i' );
