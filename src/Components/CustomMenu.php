@@ -10,6 +10,10 @@ class CustomMenu extends \Skins\Chameleon\Components\Structure {
 	 * @return string
 	 */
 	public function getHtml() {
+		if ( $this->skipRendering() ) {
+			return '';
+		}
+
 		$menu = $this->getDomElement()->getAttribute( 'data-menu' );
 
 		if ( !$this->getCutomMenu( $menu ) ) {
@@ -93,6 +97,22 @@ class CustomMenu extends \Skins\Chameleon\Components\Structure {
 		}
 
 		return $html;
+	}
+
+	/**
+	 * ATTENTION: There is related code in BlueSpice\Calumma\Skin::checkCustomMenuState
+	 * @return bool
+	 */
+	protected function skipRendering() {
+		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
+		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
+		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+
+		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
+			return true;
+		}
+
+		return false;
 	}
 
 }
