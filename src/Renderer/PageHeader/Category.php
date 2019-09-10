@@ -55,7 +55,7 @@ class Category extends Renderer {
 	 * @param Title $title
 	 * @return string
 	 */
-	private function makeCategorySectionOpener( Title $title ) {
+	protected function makeCategorySectionOpener( Title $title ) {
 		$html = '';
 
 		$html .= Html::openElement(
@@ -78,7 +78,7 @@ class Category extends Renderer {
 	 * @param Title $title
 	 * @return string
 	 */
-	private function makeCategoryLinks( Title $title ) {
+	protected function makeCategoryLinks( Title $title ) {
 		$html = '';
 
 		$categoryLinks = [];
