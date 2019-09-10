@@ -59,7 +59,8 @@
 				"history-view": "\\BlueSpice\\Calumma\\AssocLinksProvider\\HistoryView::factory",
 				"existing-siblings": "\\BlueSpice\\Calumma\\AssocLinksProvider\\ExistingSiblings::factory",
 				"mapped-siblings": "\\BlueSpice\\Calumma\\AssocLinksProvider\\MappedSiblings::factory",
-				"custom-callback": "\\BlueSpice\\Calumma\\AssocLinksProvider\\CustomCallback::factory"
+				"custom-callback": "\\BlueSpice\\Calumma\\AssocLinksProvider\\CustomCallback::factory",
+				"rootpage-sibling": "\\BlueSpice\\Calumma\\AssocLinksProvider\\RootPageSibling::factory"
 			},
 			"BreadcrumbRootNodeRegistry": {
 				"namespace-mainpage": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\NamespaceMainPage::factory",
@@ -233,11 +234,15 @@
 				"existing-siblings",
 				"mapped-siblings",
 				"custom-callback",
+				"rootpage-sibling",
 				"profile-classic",
 				"profile-modern"
 			]
 		},
 		"AssocLinksExistingSiblingsNamespaceBlacklist": {
+			"value": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
+		},
+		"AssocLinksRootPageSiblingNamespaceBlacklist": {
 			"value": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
 		},
 		"AssocLinksMappedSiblingsNamespaceMap": {
