@@ -3,7 +3,7 @@
 		display: inline-flex;
 		justify-content: flex-start;
 		margin-top: 0.3125rem;
-		margin-right: 3.125rem;
+		margin-right: 0;
 		max-width: 100%;
 
 		.bs-category-add-category {
@@ -30,14 +30,17 @@
 			display: flex;
 			justify-content: flex-start;
 			flex-wrap: wrap;
+
+			& > a.pill:last-of-type {
+				margin-right: 0.3rem;
+			}
 		}
 
 		.bs-insertcategory-category-container-editlink {
 			position: relative;
 
 			.bs-category-add-category {
-				position: absolute;
-				border: 1px solid transparent;
+				border: none;
 			}
 		}
 
