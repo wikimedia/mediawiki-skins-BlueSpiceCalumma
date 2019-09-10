@@ -7,6 +7,7 @@ use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Calumma\AssocLinksCollector;
 use BlueSpice\Calumma\Controls\SplitButtonDropdown;
 use Message;
+use Html;
 
 class Context extends Renderer {
 
@@ -31,7 +32,8 @@ class Context extends Renderer {
 			'href' => $this->context->getTitle()->getSubjectPage()->getLinkURL(),
 			'hasItems' => !empty( $items ),
 			'items' => $items,
-			'class' => 'btn'
+			'class' => 'btn',
+			'isLabel' => !$this->getContext()->getTitle()->isTalkPage()
 		];
 		$splitButton = new SplitButtonDropdown( null, $data );
 
@@ -39,7 +41,31 @@ class Context extends Renderer {
 	}
 
 	private function makeDiscussionButton() {
-		$this->html .= $this->linkRenderer->makeLink(
+		if ( $this->getContext()->getTitle()->isTalkPage() ) {
+			$this->html .= $this->getDiscussionSpan();
+		} else {
+			$this->html .= $this->getDiscussionLink();
+		}
+	}
+
+	/**
+	 * @return string
+	 */
+	private function getDiscussionSpan() {
+		$span = Html::element(
+			'span',
+			[ 'id' => 'bs-page-discussion-button' ],
+			Message::newFromKey( 'bs-calumma-context-discussionbutton-label' )->plain()
+		);
+
+		return $span;
+	}
+
+	/**
+	 * @return string
+	 */
+	private function getDiscussionLink() {
+		$link = $this->linkRenderer->makeLink(
 			$this->getContext()->getTitle()->getTalkPage(),
 			Message::newFromKey( 'bs-calumma-context-discussionbutton-label' )->plain(),
 			[
@@ -49,6 +75,8 @@ class Context extends Renderer {
 				'class' => 'btn'
 			]
 		);
+
+		return $link;
 	}
 
 	private function getAssocLinks() {
