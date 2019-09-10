@@ -141,17 +141,18 @@ class Skin extends \SkinChameleon {
 	}
 
 	/**
-	 *
+	 * ATTENTION: There is related code in BlueSpice\Calumma\Components\CustomMenu::skipRendering
 	 * @param string $menu
 	 * @return string
 	 */
 	protected function checkCustomMenuState( $menu ) {
-		$cookie_custommenu_header_collapsed =
-			$this->getRequest()->getCookie( 'Calumma_bs-custom-menu-' . $menu . '-container-collapse' );
+		$className = 'bs-custom-menu-' . $menu . '-container-collapse';
+		$cookieName = "Calumma_$className";
+		$cookieValue = $this->getRequest()->getCookie( $cookieName, null, 'false' );
+		$userHasReadPermissionsAtAll = $this->getUser()->isAllowed( 'read' );
 
-		if ( !isset( $cookie_custommenu_header_collapsed )
-			|| ( $cookie_custommenu_header_collapsed === 'true' ) ) {
-			return ' bs-custom-menu-' . $menu . '-container-collapse ';
+		if ( $cookieValue !== 'false' || !$userHasReadPermissionsAtAll ) {
+			return " $className ";
 		}
 	}
 
