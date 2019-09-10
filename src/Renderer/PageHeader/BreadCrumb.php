@@ -21,6 +21,10 @@ class BreadCrumb extends Renderer {
 		if ( !$title ) {
 			return $html;
 		}
+		if ( $title->isSpecialPage() ) {
+			$title = $this->maybeSwapTitle( $title );
+		}
+
 		$html .= $this->makePortalLink( $title );
 		$html .= $this->makeTitleLinks( $title );
 
@@ -111,4 +115,21 @@ class BreadCrumb extends Renderer {
 
 		return implode( $seperator, $html );
 	}
+
+	/**
+	 *
+	 * @param Title $title
+	 */
+	private function maybeSwapTitle( $title ) {
+		// e.g. "Special:MovePage/Help:Some/Page/With/Subpage"
+		$titleParts = explode( '/', $title->getPrefixedText(), 2 );
+
+		if ( isset( $titleParts[1] ) ) {
+			// e.g. "Help:Some/Page/With/Subpage"
+			$title = Title::newFromText( $titleParts[1] );
+		}
+
+		return $title;
+	}
+
 }
