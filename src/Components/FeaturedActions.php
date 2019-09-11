@@ -13,6 +13,10 @@ class FeaturedActions extends Component {
 	 * @return string
 	 */
 	public function getHtml() {
+		if ( $this->skipRendering() ) {
+			return '';
+		}
+
 		$data = $this->getSkinTemplate()->get( SkinData::FEATURED_ACTIONS );
 		$items = [];
 
@@ -111,5 +115,17 @@ class FeaturedActions extends Component {
 		} );
 
 		return $faArray;
+	}
+
+	protected function skipRendering() {
+		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
+		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
+		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+
+		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
+			return true;
+		}
+
+		return false;
 	}
 }
