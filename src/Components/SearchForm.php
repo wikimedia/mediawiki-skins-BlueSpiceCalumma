@@ -9,6 +9,18 @@ class SearchForm extends TemplateComponent {
 	 *
 	 * @return string
 	 */
+	public function getHtml() {
+		if ( $this->skipRendering() ) {
+			return '';
+		}
+
+		return parent::getHtml();
+	}
+
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getTemplatePathName() {
 		return 'Calumma.Components.SearchForm';
 	}
@@ -26,4 +38,21 @@ class SearchForm extends TemplateComponent {
 		$args['method'] = $this->getSkinTemplate()->get( 'bs_search_method' );
 		return $args;
 	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	protected function skipRendering() {
+		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
+		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
+		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+
+		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
+			return true;
+		}
+
+		return false;
+	}
+
 }
