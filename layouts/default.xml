@@ -9,7 +9,7 @@
 		<component type="\BlueSpice\Calumma\Components\Header" class="bs-menu-top">
 			<component type="\BlueSpice\Calumma\Components\Nav" class="calumma-desktop-visible">
 				<component type="\BlueSpice\Calumma\Components\Logo"/>
-				<component type="\BlueSpice\Calumma\Components\SearchForm"/>
+				<component type="\BlueSpice\Calumma\Components\SearchForm" hide-if-noread="true"/>
 				<component type="\BlueSpice\Calumma\Components\FeaturedActions"/>
 				<component type="\BlueSpice\Calumma\Components\UserButton"/>
 				<component type="\BlueSpice\Calumma\Components\LanguageSelector"/>
