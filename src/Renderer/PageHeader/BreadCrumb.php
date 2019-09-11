@@ -9,6 +9,7 @@ use BlueSpice\Calumma\Controls\SplitButtonDropdown;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Calumma\IBreadcrumbRootNode;
 use Exception;
+use WebRequest;
 
 class BreadCrumb extends Renderer {
 
@@ -22,7 +23,7 @@ class BreadCrumb extends Renderer {
 			return $html;
 		}
 		if ( $title->isSpecialPage() ) {
-			$title = $this->maybeSwapTitle( $title );
+			$title = $this->maybeSwapTitle( $title, $this->getContext()->getRequest() );
 		}
 
 		$html .= $this->makePortalLink( $title );
@@ -119,17 +120,33 @@ class BreadCrumb extends Renderer {
 	/**
 	 *
 	 * @param Title $title
+	 * @param WebRequest $request
 	 */
-	private function maybeSwapTitle( $title ) {
-		// e.g. "Special:MovePage/Help:Some/Page/With/Subpage"
-		$titleParts = explode( '/', $title->getPrefixedText(), 2 );
+	private function maybeSwapTitle( $title, $request ) {
+		$newTitle = $title;
 
-		if ( isset( $titleParts[1] ) ) {
-			// e.g. "Help:Some/Page/With/Subpage"
-			$title = Title::newFromText( $titleParts[1] );
+		// e.g Special:CiteThisPage&page=Main_Page
+		$pageQueryString = $request->getVal( 'page', '' );
+		if ( !empty( $pageQueryString ) ) {
+			$newTitle = Title::newFromText( $pageQueryString );
 		}
 
-		return $title;
+		// e.g. "Special:MovePage/Help:Some/Page/With/Subpage"
+		$titleParts = explode( '/', $title->getPrefixedText(), 2 );
+		if ( isset( $titleParts[1] ) ) {
+			// e.g. "Help:Some/Page/With/Subpage"
+			$newTitle = Title::newFromText( $titleParts[1] );
+		}
+
+		// e.g. Special:Browse/:Main-5FPage
+		// TODO: This should be in `BlueSpiceSMWConnector`
+		if ( class_exists( 'SMW\Encoder' ) ) {
+			$newTitle = Title::newFromText(
+				\SMW\Encoder::decode( $newTitle->getPrefixedText() )
+			);
+		}
+
+		return $newTitle instanceof Title ? $newTitle : $title;
 	}
 
 }
