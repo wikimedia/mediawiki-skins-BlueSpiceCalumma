@@ -83,5 +83,11 @@
 	"bs-calumma-notification-logged-in": "Has accedido a tu cuenta",
 	"bs-calumma-version-pager-prev-tooltip": "Cambiar a la versión anterior",
 	"bs-calumma-version-pager-next-tooltip": "Cambiar a la versión siguiente",
-	"bs-calumma-version-pager-info-text": "Versión de $1 por [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "Versión de $1 por [[User:$2|$2]]",
+	"bs-sitetools-view-mode": "Modo",
+	"bs-sitetools-associated-links": "Enlaces asociados",
+	"bs-calumma-assoclink-history-label": "Historial",
+	"bs-calumma-assoclink-history-tooltip": "Mostrar el historial de revisiones de la página «$1»",
+	"bs-calumma-context-pagebutton-label": "Página",
+	"bs-calumma-context-discussionbutton-label": "Discusión"
 }

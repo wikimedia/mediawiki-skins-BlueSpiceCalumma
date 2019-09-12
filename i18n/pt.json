@@ -102,5 +102,14 @@
 	"bs-calumma-alert-oldpage": "Está a ver uma versão antiga desta página. [[Special:Redirect/page/$1|Voltar para a versão mais recente]].",
 	"bs-calumma-version-pager-prev-tooltip": "Mudar para a versão anterior",
 	"bs-calumma-version-pager-next-tooltip": "Mudar para a versão seguinte",
-	"bs-calumma-version-pager-info-text": "Versão de $1 de [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "Versão de $1 de [[User:$2|$2]]",
+	"bs-sitetools-view-mode": "Modo",
+	"bs-sitetools-manage-page": "Gerir página",
+	"bs-sitetools-associated-links": "Hiperligações associadas",
+	"bs-calumma-assoclink-history-label": "Historial",
+	"bs-calumma-assoclink-history-tooltip": "Mostrar o historial de revisões da página \"$1\"",
+	"bs-calumma-context-pagebutton-label": "Página",
+	"bs-calumma-context-pagebutton-tooltip": "Mostrar a página atual",
+	"bs-calumma-context-discussionbutton-label": "Discussão",
+	"bs-calumma-context-discussionbutton-tooltip": "Mostrar a página de discussão atual"
 }

@@ -91,5 +91,10 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "but",
 	"bs-calumma-full-screen-button-tooltip": "전체 화면/일반 모드",
 	"bs-calumma-page-last-edit-by-system-user": "시스템 사용자",
-	"bs-calumma-notification-logged-in": "현재 로그인되어 있습니다"
+	"bs-calumma-notification-logged-in": "현재 로그인되어 있습니다",
+	"bs-sitetools-view-mode": "모드",
+	"bs-sitetools-manage-page": "문서 관리",
+	"bs-calumma-assoclink-history-label": "역사",
+	"bs-calumma-context-pagebutton-label": "문서",
+	"bs-calumma-context-discussionbutton-label": "토론"
 }

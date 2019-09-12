@@ -84,5 +84,20 @@
 	"bs-calumma-breadcrumbs-nstab-main": "Все страницы",
 	"bs-calumma-breadcrumbs-pages": "Вы здесь",
 	"bs-calumma-pageinfosentence-item-separator": "и",
-	"bs-calumma-pageinfosentence-item-class-separator": "но"
+	"bs-calumma-pageinfosentence-item-class-separator": "но",
+	"bs-sitetools-view-mode": "Режим",
+	"bs-sitetools-manage-page": "Управлять страницей",
+	"bs-sitetools-associated-links": "Связанные ссылки",
+	"bs-calumma-category-no-categories": "Нет назначенных категорий",
+	"bs-calumma-page-watch-text": "Следить",
+	"bs-calumma-page-unwatch-text": "Не следить",
+	"bs-calumma-pageinfosentence-no-item-label": "Нет информации о статусе",
+	"bs-calumma-pageinfosentence-no-item-tooltip": "Нет информации о статусе для этой страницы",
+	"bs-calumma-version-pager-prev-tooltip": "Переключиться на предыдущую версию",
+	"bs-calumma-version-pager-next-tooltip": "Переключиться на следующую версию",
+	"bs-calumma-version-pager-info-text": "Версия от $1, сделанная [[User:$2|$2]]",
+	"bs-calumma-assoclink-history-label": "История",
+	"bs-calumma-context-pagebutton-label": "Страница",
+	"bs-calumma-context-discussionbutton-label": "Обсуждение",
+	"bs-calumma-context-discussionbutton-tooltip": "Показать текущую страницу обсуждения"
 }

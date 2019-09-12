@@ -104,5 +104,14 @@
 	"bs-calumma-alert-oldpage": "أنت تقوم بعرض نسخة قديمة من هذه الصفحة، [[Special:Redirect/page/$1|العودة إلى أحدث إصدار]].",
 	"bs-calumma-version-pager-prev-tooltip": "التبديل إلى الإصدار السابق",
 	"bs-calumma-version-pager-next-tooltip": "تحويل إلى النسخة التالية",
-	"bs-calumma-version-pager-info-text": "نسخة $1 بواسطة [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "نسخة $1 بواسطة [[User:$2|$2]]",
+	"bs-sitetools-view-mode": "الوضع",
+	"bs-sitetools-manage-page": "إدارة الصفحة",
+	"bs-sitetools-associated-links": "الروابط المرتبطة",
+	"bs-calumma-assoclink-history-label": "التاريخ",
+	"bs-calumma-assoclink-history-tooltip": "عرض تاريخ مراجعة الصفحة \"$1\"",
+	"bs-calumma-context-pagebutton-label": "صفحة",
+	"bs-calumma-context-pagebutton-tooltip": "عرض صفحة الموضوع الحالية",
+	"bs-calumma-context-discussionbutton-label": "نقاش",
+	"bs-calumma-context-discussionbutton-tooltip": "عرض صفحة النقاش الحالية"
 }

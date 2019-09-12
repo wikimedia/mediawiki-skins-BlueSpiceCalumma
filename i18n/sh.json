@@ -91,5 +91,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "ali",
 	"bs-calumma-full-screen-button-tooltip": "Cijeli zaslon/Uobičajeni prikaz",
 	"bs-calumma-page-last-edit-by-system-user": "sistemski korisnik",
-	"bs-calumma-notification-logged-in": "Sad ste prijavljeni"
+	"bs-calumma-notification-logged-in": "Sad ste prijavljeni",
+	"bs-calumma-page-unwatch-text": "Prekini s praćenjem"
 }

@@ -103,5 +103,14 @@
 	"bs-calumma-alert-oldpage": "Гледате постара верзија на страницава. [[Special:Redirect/page/$1|Вратете се на најновата]].",
 	"bs-calumma-version-pager-prev-tooltip": "Прејди на претходна верзија",
 	"bs-calumma-version-pager-next-tooltip": "Прејди на следна верзија",
-	"bs-calumma-version-pager-info-text": "Верзија од $1 на [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "Верзија од $1 на [[User:$2|$2]]",
+	"bs-sitetools-view-mode": "Режим",
+	"bs-sitetools-manage-page": "Раководење со страница",
+	"bs-sitetools-associated-links": "Поврзани врски",
+	"bs-calumma-assoclink-history-label": "Историја",
+	"bs-calumma-assoclink-history-tooltip": "Прикажи историја на преработките на страницата „$1“",
+	"bs-calumma-context-pagebutton-label": "Страница",
+	"bs-calumma-context-pagebutton-tooltip": "Прикажи ја тековната предметна страница",
+	"bs-calumma-context-discussionbutton-label": "Разговор",
+	"bs-calumma-context-discussionbutton-tooltip": "Прикажи ја тековната разговорна страница"
 }

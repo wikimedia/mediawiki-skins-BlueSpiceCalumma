@@ -9,5 +9,9 @@
 	"bs-allpages-description": "Visas lapas",
 	"bs-support-description": "Atbalsts",
 	"bs-calumma-pageinfosentence-item-separator": "un",
-	"bs-calumma-pageinfosentence-item-class-separator": "bet"
+	"bs-calumma-pageinfosentence-item-class-separator": "bet",
+	"bs-sitetools-view-mode": "Režīms",
+	"bs-sitetools-manage-page": "Pārvaldīt lapu",
+	"bs-calumma-assoclink-history-label": "Vēsture",
+	"bs-calumma-context-pagebutton-label": "Lapa"
 }

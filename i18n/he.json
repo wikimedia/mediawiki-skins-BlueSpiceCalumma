@@ -3,7 +3,8 @@
 		"authors": [
 			"Amire80",
 			"Steeve815",
-			"YaronSh"
+			"YaronSh",
+			"Strayblues"
 		]
 	},
 	"bs-to-top-desc": "קפיצה לראש הדף",
@@ -37,5 +38,7 @@
 	"bs-calumma-pageinfosentence": "דף זה הוא $1",
 	"bs-calumma-pageinfosentence-item-separator": "וגם",
 	"bs-calumma-full-screen-button-tooltip": "מסך מלא/מצב רגיל",
-	"bs-calumma-version-pager-prev-tooltip": "חזרה לגרסה קודמת"
+	"bs-calumma-version-pager-prev-tooltip": "חזרה לגרסה קודמת",
+	"bs-calumma-context-pagebutton-label": "דף",
+	"bs-calumma-context-discussionbutton-label": "דיון"
 }

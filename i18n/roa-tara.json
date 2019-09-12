@@ -102,5 +102,14 @@
 	"bs-calumma-alert-oldpage": "Ste 'ndruche 'na versiona vecchie de sta pàgene [[Special:Redirect/page/$1|Tuèrne a l'urtema versione]].",
 	"bs-calumma-version-pager-prev-tooltip": "Tuèrne 'a versione d'apprime",
 	"bs-calumma-version-pager-next-tooltip": "Vèje 'a prossema versione",
-	"bs-calumma-version-pager-info-text": "Versione de $1 da [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "Versione de $1 da [[User:$2|$2]]",
+	"bs-sitetools-view-mode": "Mode",
+	"bs-sitetools-manage-page": "Gestisce 'a pàgene",
+	"bs-sitetools-associated-links": "Collegaminde associate",
+	"bs-calumma-assoclink-history-label": "Cunde",
+	"bs-calumma-assoclink-history-tooltip": "Fà 'ndrucà 'u cunde d'a revisione d'a pàgene \"$1\"",
+	"bs-calumma-context-pagebutton-label": "Pàgene",
+	"bs-calumma-context-pagebutton-tooltip": "Fà 'ndrucà l'oggette de mò d'a pàgene",
+	"bs-calumma-context-discussionbutton-label": "'Ngazzamende",
+	"bs-calumma-context-discussionbutton-tooltip": "Fà 'ndrucà 'a pàgene de le 'ngazzaminde de mò"
 }
