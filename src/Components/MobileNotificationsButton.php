@@ -10,6 +10,10 @@ class MobileNotificationsButton extends \Skins\Chameleon\Components\Structure {
 	 * @return string
 	 */
 	public function getHtml() {
+		if ( $this->skipRendering() ) {
+			return '';
+		}
+
 		$class = $this->getDomElement()->getAttribute( 'class' );
 		$title = \Title::newFromText( 'Notifications', NS_SPECIAL );
 
@@ -31,4 +35,21 @@ class MobileNotificationsButton extends \Skins\Chameleon\Components\Structure {
 
 		return $html;
 	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	protected function skipRendering() {
+		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
+		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
+		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+
+		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
+			return true;
+		}
+
+		return false;
+	}
+
 }

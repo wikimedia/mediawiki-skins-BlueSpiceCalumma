@@ -10,6 +10,10 @@ class SidebarToggle extends \Skins\Chameleon\Components\Structure {
 	 * @return string
 	 */
 	public function getHtml() {
+		if ( $this->skipRendering() ) {
+			return '';
+		}
+
 		$data = $this->getDomElement()->getAttribute( 'data-toggle' );
 		$class = $this->getDomElement()->getAttribute( 'class' );
 
@@ -36,4 +40,21 @@ class SidebarToggle extends \Skins\Chameleon\Components\Structure {
 	public function isActive() {
 		return $this->activeState;
 	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	protected function skipRendering() {
+		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
+		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
+		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+
+		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
+			return true;
+		}
+
+		return false;
+	}
+
 }
