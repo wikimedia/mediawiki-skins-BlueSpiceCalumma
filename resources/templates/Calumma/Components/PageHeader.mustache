@@ -26,23 +26,25 @@
 
 <div class="bs-page-after-header">
 	{{#metaband}}
-	<div class="bs-page-info-element pull-left">{{{pageinfoelements}}}</div>
+	<div class="bs-page-edit pull-left">
+	    <ul class="bs-page-edit-elements">
+            <li class="bs-page-edit-element-icon-col">
+                <i class="icon-info"></i>
+            </li>
+            <li class="bs-page-edit-element-text-col">
+                {{{lastedit}}}
+            </li>
+        </ul>
+     </div>
 	{{/metaband}}
-	<div class="bs-page-edit pull-right">
+	<div class="bs-page-info-element pull-right">
 		<ul>
 			{{#metaband}}
 			<li>
 				{{{watchaction}}}
 			</li>
 			<li>
-				<ul class="bs-page-edit-elements">
-					<li class="bs-page-edit-element-icon-col">
-						<i class="icon-info"></i>
-					</li>
-					<li class="bs-page-edit-element-text-col">
-						{{{lastedit}}}
-					</li>
-				</ul>
+			    {{{pageinfoelements}}}
 			</li>
 			{{/metaband}}
 		</ul>
