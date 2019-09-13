@@ -42,8 +42,15 @@ class BreadCrumb extends Renderer {
 			'BlueSpiceFoundationBreadcrumbRootNodeRegistry'
 		);
 
+		$enabledProviders = $this->config->get(
+			'BlueSpiceCalummaBreadcrumbRootNodeEnabledProviders'
+		);
+
 		$breadcrumbRootNodes = [];
 		foreach ( $registry->getAllValues() as $callbackKey => $callback ) {
+			if ( !in_array( $callbackKey, $enabledProviders ) ) {
+				continue;
+			}
 			$breadcrumbRootNode = call_user_func_array( $callback, [ $this->config ] );
 			if ( $breadcrumbRootNode instanceof IBreadcrumbRootNode === false ) {
 				throw new Exception( "Factory callback for '$callbackKey' did not return a "

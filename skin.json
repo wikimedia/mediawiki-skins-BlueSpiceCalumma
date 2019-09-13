@@ -251,6 +251,12 @@
 		"AssocLinksCustomCallback": {
 			"value": null
 		},
+		"BreadcrumbRootNodeEnabledProviders": {
+			"value": [
+				"namespace-mainpage",
+				"special-specialpages"
+			]
+		},
 		"BreadcrumbNamespacePortalPageRootNodePortalNamespace": {
 			"@note": "NS_PROJECT",
 			"value": 4
