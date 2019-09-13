@@ -23,6 +23,10 @@ abstract class TemplateComponent extends Component {
 	 * @return string
 	 */
 	public function getHtml() {
+		if ( $this->skipRendering() ) {
+			return '';
+		}
+
 		$this->initTemplateParser();
 		$this->renderTemplate();
 		return $this->renderedTemplate;
@@ -104,5 +108,28 @@ abstract class TemplateComponent extends Component {
 		$pathname = $this->getTemplatePathName();
 		$parts = explode( '.', $pathname );
 		return array_pop( $parts );
+	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	protected function skipRendering() {
+		/**
+		 * Unfortunately this class get's used outside of the Chameleon framework. To maintain the
+		 * original behavior, we must return `false` in such cases!
+		 */
+		if ( $this->getDomElement() === null ) {
+			return false;
+		}
+		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
+		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
+		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+
+		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
+			return true;
+		}
+
+		return false;
 	}
 }
