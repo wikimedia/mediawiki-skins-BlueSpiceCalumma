@@ -30,6 +30,11 @@ class MobileMoreMenu extends TemplateComponent {
 		$args['show'] = parent::getTemplateArgs();
 		$args['show']['title'] = "";
 		$args['show']['links'] = $this->getSkinTemplate()->get( SDFD::MOBILE_MORE_MENU );
+
+		if ( !$this->getSkinTemplate()->getSkin()->getTitle()->userCan( 'edit' ) ) {
+			$args['show']['isDisabled'] = true;
+		}
+
 		return $args;
 	}
 }
