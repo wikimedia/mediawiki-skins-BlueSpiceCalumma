@@ -22,15 +22,15 @@ class NamespacePortalPage extends BreadcrumbRootNodeBase {
 			'BlueSpiceCalummaBreadcrumbNamespacePortalPageRootNodePortalNamespace'
 		);
 
-		$namespacePortalPage = Title::makeTitle(
-			$portalNamespace,
-			$title->getNsText()
-		);
-
 		$nsText = str_replace( '_', ' ', $title->getNsText() );
 		if ( $title->getNamespace() === NS_MAIN ) {
 			$nsText = Message::newFromKey( 'bs-ns_main' );
 		}
+
+		$namespacePortalPage = Title::makeTitle(
+			$portalNamespace,
+			$nsText
+		);
 
 		return $this->linkRenderer->makeLink(
 			$namespacePortalPage,
