@@ -16,10 +16,11 @@
 				<component type="\BlueSpice\Calumma\Components\FullScreenButton"/>
 			</component>
 			<component type="\BlueSpice\Calumma\Components\MobileNav" class="calumma-mobile-visible calumma-tablet-visible">
-				<component type="\BlueSpice\Calumma\Components\SidebarToggle" data-toggle="navigation-main-collapse"/>
+				<component type="\BlueSpice\Calumma\Components\SidebarToggle" data-toggle="navigation-main-collapse" hide-if-noread="true"/>
 				<component type="\BlueSpice\Calumma\Components\Logo"/>
-				<component type="\BlueSpice\Calumma\Components\MobileSearchForm"/>
-				<component type="\BlueSpice\Calumma\Components\MobileNotificationsButton" class="mobile-notifications-button"/>
+				<component type="\BlueSpice\Calumma\Components\MobileSearchForm" hide-if-noread="true"/>
+				<component type="\BlueSpice\Calumma\Components\MobileNotificationsButton" class="mobile-notifications-button" hide-if-noread="true"/>
+				<component type="\BlueSpice\Calumma\Components\MobileLoginButton" class="mobile-login-button" />
 				<component type="\BlueSpice\Calumma\Components\SidebarToggle" data-toggle="sitetools-main-collapse"/>
 			</component>
 		</component>
