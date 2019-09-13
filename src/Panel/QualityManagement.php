@@ -37,14 +37,7 @@ class QualityManagement extends PanelContainer implements IActiveStateProvider {
 	 * @return \BlueSpice\Calumma\IPanel[]
 	 */
 	protected function makePanels() {
-		$defaultPanelDefs = [
-			'assoc-links' => [
-				'position' => 10,
-				'callback' => function ( $sktemplate ) {
-					return new AssocLinks( $sktemplate );
-				}
-			]
-		];
+		$defaultPanelDefs = [];
 
 		$panelDefs = $this->skintemplate->get( SkinData::PAGE_DOCUMENTS_PANEL );
 
