@@ -42,6 +42,12 @@ class PageTools extends PanelContainer {
 					return new Edit( $sktemplate );
 				}
 			],
+			'assoc-links' => [
+				'position' => 30,
+				'callback' => function ( $sktemplate ) {
+					return new AssocLinks( $sktemplate );
+				}
+			],
 			'export' => [
 				'position' => 80,
 				'callback' => function ( $sktemplate ) {
@@ -59,7 +65,7 @@ class PageTools extends PanelContainer {
 				'callback' => function ( $sktemplate ) {
 					return new Views( $sktemplate );
 				}
-			],
+			]
 		];
 		$panelDefs = $this->skintemplate->get( SkinData::PAGE_TOOLS_PANEL );
 
