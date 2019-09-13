@@ -131,6 +131,12 @@ class BreadCrumb extends Renderer {
 			$newTitle = Title::newFromText( $pageQueryString );
 		}
 
+		// e.g Special:Duplicator&source=Main_Page
+		$sourceQueryString = $request->getVal( 'source', '' );
+		if ( !empty( $sourceQueryString ) ) {
+			$newTitle = Title::newFromText( $sourceQueryString );
+		}
+
 		// e.g. "Special:MovePage/Help:Some/Page/With/Subpage"
 		$titleParts = explode( '/', $title->getPrefixedText(), 2 );
 		if ( isset( $titleParts[1] ) ) {
