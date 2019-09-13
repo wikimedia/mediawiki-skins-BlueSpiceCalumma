@@ -78,7 +78,7 @@ class AssocLinks extends BasePanel {
 	protected $htmlId = null;
 
 	/**
-	 * The HTML ID for thie component
+	 * The HTML ID for the component
 	 * @return string
 	 */
 	public function getHtmlId() {
