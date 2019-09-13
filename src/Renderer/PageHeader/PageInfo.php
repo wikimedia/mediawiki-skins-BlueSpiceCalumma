@@ -98,6 +98,9 @@ class PageInfo extends Renderer {
 		}
 
 		$elements = $this->factory->getAll( $this->getContext() );
+		if ( empty( $elements ) ) {
+			return '';
+		}
 
 		$html = Html::openElement( 'ul' );
 
