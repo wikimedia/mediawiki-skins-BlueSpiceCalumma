@@ -64,7 +64,7 @@ class FeaturedActionsData {
 
 		if ( !$curTitle->userCan( 'edit' ) ) {
 			$newSection += [
-				'title' => wfMessage( 'bs-action-edit-disabled-title' )->plain(),
+				'title' => wfMessage( 'bs-action-edit-disabled-title' )->text(),
 				'href' => '#',
 				'classes' => [ 'disabled' ]
 			];
@@ -131,7 +131,7 @@ class FeaturedActionsData {
 
 		if ( !$curUser->isAllowed( 'createpage' ) ) {
 			$newSection += [
-				'title' => wfMessage( 'bs-action-new-disabled-title' )->plain(),
+				'title' => wfMessage( 'bs-action-new-disabled-title' )->text(),
 				'href' => ''
 			];
 
