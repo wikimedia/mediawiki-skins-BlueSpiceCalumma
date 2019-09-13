@@ -55,6 +55,9 @@ class ExistingSiblings extends TitleLink {
 			if ( in_array( $assocTitle->getNamespace(), $namespaceBlacklist ) ) {
 				continue;
 			}
+			if ( $assocTitle->isTalkPage() ) {
+				continue;
+			}
 			$links["existing-namespace-{$assocTitle->getNamespace()}"]
 				= new static( $context, $config, $assocTitle );
 		}
