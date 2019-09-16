@@ -10,7 +10,8 @@ class MobileLoginButton extends \Skins\Chameleon\Components\Structure {
 	 * @return string
 	 */
 	public function getHtml() {
-		if ( $this->getSkin()->getUser()->isLoggedIn() ) {
+		if ( $this->getSkin()->getUser()->isLoggedIn()
+			|| $this->getSkin()->getUser()->isAllowed( 'read' ) ) {
 			return '';
 		}
 
