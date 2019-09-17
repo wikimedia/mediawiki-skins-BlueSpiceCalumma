@@ -116,5 +116,6 @@
 	"bs-calumma-context-pagebutton-label" :"Page",
 	"bs-calumma-context-pagebutton-tooltip": "Show the current subject page",
 	"bs-calumma-context-discussionbutton-label": "Discussion",
-	"bs-calumma-context-discussionbutton-tooltip": "Show the current talk page"
+	"bs-calumma-context-discussionbutton-tooltip": "Show the current talk page",
+	"bs-calumma-search-button-label": "Search"
 }

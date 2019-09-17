@@ -102,5 +102,6 @@
 	"bs-action-edit-disabled-title": "{{GENDER:|Du}} hast keine Berechtigung, diese Seite zu bearbeiten.",
 	"bs-calumma-version-pager-prev-tooltip": "Zur vorherigen Version wechseln",
 	"bs-calumma-version-pager-next-tooltip": "Zur nächsten Version wechseln",
-	"bs-calumma-version-pager-info-text": "Version vom $1 von [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "Version vom $1 von [[User:$2|$2]]",
+	"bs-calumma-search-button-label": "Suchen"
 }
