@@ -29,6 +29,10 @@
 
 	.dropdown {
 		border: none;
+		
+		& > span {
+			cursor: default;
+		}
 
 		.mixin-dropdown-toggle-before( @page-header-breadcrumbs-dropdown-color, @page-header-breadcrumbs-dropdown-color-hover );
 		.dropdown-toggle {
