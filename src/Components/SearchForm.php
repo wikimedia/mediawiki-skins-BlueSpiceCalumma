@@ -36,6 +36,7 @@ class SearchForm extends TemplateComponent {
 		$args['hiddenFields'] = $this->getSkinTemplate()->get( 'bs_search_hidden_fields' );
 		$args['action'] = $this->getSkinTemplate()->get( 'bs_search_action' );
 		$args['method'] = $this->getSkinTemplate()->get( 'bs_search_method' );
+		$args['btn-aria-label'] = wfMessage( 'bs-calumma-search-button-label' )->plain();
 		return $args;
 	}
 
