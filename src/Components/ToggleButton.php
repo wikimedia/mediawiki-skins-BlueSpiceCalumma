@@ -16,7 +16,8 @@ class ToggleButton extends \Skins\Chameleon\Components\Structure {
 				'title' => wfMessage( 'bs-calumma-toggle-button-tooltip' )->plain(),
 				'class' => ' calumma-toggle-button ' . $class,
 				'data-toggle' => $data,
-				'role' => 'button'
+				'role' => 'button',
+				'aria-label' => wfMessage( 'bs-calumma-toggle-button-tooltip' )->plain()
 			] );
 
 		$html .= \Html::openElement( 'i', [ 'class' => $data ] );
