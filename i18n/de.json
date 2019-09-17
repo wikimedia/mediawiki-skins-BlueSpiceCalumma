@@ -102,5 +102,6 @@
 	"bs-calumma-page-last-edit-by-system-user": "Systembenutzer",
 	"bs-calumma-version-pager-prev-tooltip": "Zur vorherigen Version wechseln",
 	"bs-calumma-version-pager-next-tooltip": "Zur nächsten Version wechseln",
-	"bs-calumma-version-pager-info-text": "Version vom $1 von [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "Version vom $1 von [[User:$2|$2]]",
+	"bs-calumma-search-button-label": "Suchen"
 }

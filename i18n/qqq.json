@@ -120,5 +120,6 @@
 	"bs-calumma-context-pagebutton-label": "Label for button that navigates to the subject page",
 	"bs-calumma-context-pagebutton-tooltip": "Tooltip for button that navigates to the subject page",
 	"bs-calumma-context-discussionbutton-label": "Label for button that navigates to the talk page",
-	"bs-calumma-context-discussionbutton-tooltip": "Tooltip for button that navigates to the talk page"
+	"bs-calumma-context-discussionbutton-tooltip": "Tooltip for button that navigates to the talk page",
+	"bs-calumma-search-button-label": "Tooltip for button at search form to start search"
 }
