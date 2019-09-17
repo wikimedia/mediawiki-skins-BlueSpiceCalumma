@@ -3,6 +3,7 @@ body {
 	/* collapsed */
 	&.mediawiki,
 	&.mediawiki.x-body {
+		&:not( .bs-cusom-menu-active ),
 		&.bs-custom-menu-header-container-collapse {
 			/* VisualEditor */
 			.ve-init-target-visual > .ve-ui-toolbar > .oo-ui-toolbar-bar,
@@ -19,7 +20,7 @@ body {
 	/* open */
 	&.mediawiki,
 	&.mediawiki.x-body {
-		&:not( .bs-custom-menu-header-container-collapse ) {
+		&.bs-cusom-menu-active:not( .bs-custom-menu-header-container-collapse ) {
 			/* VisualEditor */
 			.ve-init-target-visual > .ve-ui-toolbar > .oo-ui-toolbar-bar,
 			.ve-init-target-source > .ve-ui-toolbar > .oo-ui-toolbar-bar{

@@ -53,6 +53,7 @@ body {
 	/* collapsed */
 	&.mediawiki,
 	&.mediawiki.x-body {
+		&:not( .bs-cusom-menu-active ),
 		&.bs-custom-menu-header-container-collapse {
 			header.main-header {
 				top: @banner-top-height;
@@ -102,7 +103,7 @@ body {
 	/* open */
 	&.mediawiki,
 	&.mediawiki.x-body {
-		&:not( .bs-custom-menu-header-container-collapse ) {
+		&.bs-cusom-menu-active:not( .bs-custom-menu-header-container-collapse ) {
 			header.main-header {
 				top: @banner-top-height + @custom-menu-top-height;
 			}
