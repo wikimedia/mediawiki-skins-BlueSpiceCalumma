@@ -103,30 +103,24 @@
 	.floatleft {
 		margin-right: 1.5em;
 	}
-	ul {
-		margin: 0 0 0 1.6em;
-		padding: 0;
-	}
-	ul > li {
-		margin-left: 0em;
-		font-size: 0.9375rem;
-		font-weight: @font-weight-regular;
-		margin-top: 0.1875rem;
-		margin-bottom: 0.1875rem;
-	}
-	li > ul > li {
-		margin-left: 0em;
-	}
+	ul,
 	ol {
 		margin: 0 0 0 1.6em;
 		padding: 0;
 	}
+	ul > li,
 	ol > li {
+		list-style-position: inside;
 		margin-left: 0em;
 		font-size: 0.9375rem;
 		font-weight: @font-weight-regular;
 		margin-top: 0.1875rem;
 		margin-bottom: 0.1875rem;
+	}
+	.mw-parser-output > ul,
+	.mw-parser-output > ol {
+		margin-left: 0em;
+		display: inline-block;
 	}
 	#contentSub .subpages {
 		display: none;
