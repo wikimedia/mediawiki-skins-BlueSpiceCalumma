@@ -185,12 +185,20 @@ class PageHeader extends TemplateComponent {
 	 */
 	protected function getFirstHeading() {
 		$titleText = $this->getSkinTemplate()->get( 'title' );
+		// Might contain HTML elements e.g. by BlueSpiceRating
+		// e.g. "<span>...</span>Some Page<a>...</a>"
+		$strippedTitleText = strip_tags( $titleText );
 
 		$currentTitle = $this->getSkin()->getTitle();
-		$title = Title::newFromText( $titleText );
-		// Only shorten if not already overwirtten by another extension or `{{DISPLAYTITLE:...}}`
+		$title = Title::newFromText( $strippedTitleText );
+		// Only shorten if not already overwritten by another extension or `{{DISPLAYTITLE:...}}`
+
 		if ( $title && $title->equals( $currentTitle ) ) {
-			$titleText = $currentTitle->getSubpageText();
+			$titleText = str_replace(
+				$strippedTitleText,
+				$currentTitle->getSubpageText(),
+				$titleText
+			);
 		}
 
 		return $titleText;
