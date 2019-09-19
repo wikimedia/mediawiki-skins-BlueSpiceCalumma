@@ -117,5 +117,6 @@
 	"bs-calumma-context-pagebutton-label": "Page",
 	"bs-calumma-context-pagebutton-tooltip": "Afficher la page en cours",
 	"bs-calumma-context-discussionbutton-label": "Discussion",
-	"bs-calumma-context-discussionbutton-tooltip": "Afficher la page de discussion en cours"
+	"bs-calumma-context-discussionbutton-tooltip": "Afficher la page de discussion en cours",
+	"bs-calumma-search-button-label": "Rechercher"
 }
