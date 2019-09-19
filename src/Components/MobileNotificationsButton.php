@@ -22,6 +22,7 @@ class MobileNotificationsButton extends \Skins\Chameleon\Components\Structure {
 		$html = \Html::openElement( 'a', [
 				'href' => $title->getFullURL(),
 				'title' => $title->getText(),
+				'aria-label' => $title->getText(),
 				'class' => ' ' . $class,
 				'role' => 'button'
 			] );
