@@ -108,5 +108,6 @@
 	"bs-calumma-assoclink-history-tooltip": "Toon de versiegeschiedenis van de pagina \"$1\"",
 	"bs-calumma-context-pagebutton-label": "Pagina",
 	"bs-calumma-context-discussionbutton-label": "Overleg",
-	"bs-calumma-context-discussionbutton-tooltip": "Toon de huidige overlegpagina"
+	"bs-calumma-context-discussionbutton-tooltip": "Toon de huidige overlegpagina",
+	"bs-calumma-search-button-label": "Zoeken"
 }

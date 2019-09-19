@@ -112,5 +112,6 @@
 	"bs-calumma-context-pagebutton-label": "Страница",
 	"bs-calumma-context-pagebutton-tooltip": "Прикажи ја тековната предметна страница",
 	"bs-calumma-context-discussionbutton-label": "Разговор",
-	"bs-calumma-context-discussionbutton-tooltip": "Прикажи ја тековната разговорна страница"
+	"bs-calumma-context-discussionbutton-tooltip": "Прикажи ја тековната разговорна страница",
+	"bs-calumma-search-button-label": "Пребарај"
 }

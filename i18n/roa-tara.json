@@ -111,5 +111,6 @@
 	"bs-calumma-context-pagebutton-label": "Pàgene",
 	"bs-calumma-context-pagebutton-tooltip": "Fà 'ndrucà l'oggette de mò d'a pàgene",
 	"bs-calumma-context-discussionbutton-label": "'Ngazzamende",
-	"bs-calumma-context-discussionbutton-tooltip": "Fà 'ndrucà 'a pàgene de le 'ngazzaminde de mò"
+	"bs-calumma-context-discussionbutton-tooltip": "Fà 'ndrucà 'a pàgene de le 'ngazzaminde de mò",
+	"bs-calumma-search-button-label": "Cirche"
 }

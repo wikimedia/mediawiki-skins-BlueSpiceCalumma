@@ -13,5 +13,6 @@
 	"bs-calumma-pageinfosentence-item-separator": "un",
 	"bs-calumma-pageinfosentence-item-class-separator": "bet",
 	"bs-calumma-assoclink-history-label": "Vēsture",
-	"bs-calumma-context-pagebutton-label": "Lapa"
+	"bs-calumma-context-pagebutton-label": "Lapa",
+	"bs-calumma-search-button-label": "Meklēt"
 }
