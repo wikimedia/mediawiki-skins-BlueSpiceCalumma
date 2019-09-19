@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"আফতাবুজ্জামান"
+			"আফতাবুজ্জামান",
+			"Nokib Sarkar"
 		]
 	},
 	"bs-sitetools-edit": "সম্পাদনা",
@@ -50,5 +51,6 @@
 	"bs-support-description": "সহায়তা",
 	"bs-edit-custom-menu-link-text": "মেনু সম্পাদনা করুন",
 	"bs-calumma-toggle-button-tooltip": "খুলুন/বন্ধ করুন",
-	"bs-sitetools-view-mode": "মোড"
+	"bs-sitetools-view-mode": "মোড",
+	"bs-calumma-search-button-label": "অনুসন্ধান"
 }
