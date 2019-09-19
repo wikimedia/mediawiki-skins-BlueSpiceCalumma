@@ -30,6 +30,29 @@ class Toolbox extends StandardSkinDataLinkList {
 	 */
 	protected function getStandardSkinDataLinkListDefinition() {
 		$toolbox = $this->skintemplate->getToolbox();
+		$sorter = 0;
+		$sortKeys = [];
+		// split multilink toolbox items such as feeds into single links as the link
+		// panels currently do not support multiple links in one toolbox item
+		foreach ( $toolbox as $key => $item ) {
+			if ( !isset( $item['links'] ) ) {
+				$sortKeys[$key] = $sorter;
+				$sorter++;
+				continue;
+			}
+			foreach ( $item['links'] as $name => $link ) {
+				$toolbox[$name] = $link;
+				$sortKeys[$name] = $sorter;
+			}
+			unset( $toolbox[$key] );
+			$sorter++;
+		}
+		uksort( $toolbox, function ( $a, $b ) use ( $sortKeys ) {
+			if ( $sortKeys[$a] === $sortKeys[$b] ) {
+				return 0;
+			}
+			return $sortKeys[$a] < $sortKeys[$b] ? -1 : 1;
+		} );
 		return $toolbox;
 	}
 
