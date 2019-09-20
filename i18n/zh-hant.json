@@ -112,5 +112,6 @@
 	"bs-calumma-context-pagebutton-label": "頁面",
 	"bs-calumma-context-pagebutton-tooltip": "顯示目前主題頁面",
 	"bs-calumma-context-discussionbutton-label": "討論",
-	"bs-calumma-context-discussionbutton-tooltip": "顯示目前討論頁面"
+	"bs-calumma-context-discussionbutton-tooltip": "顯示目前討論頁面",
+	"bs-calumma-search-button-label": "搜尋"
 }

@@ -111,5 +111,6 @@
 	"bs-calumma-context-pagebutton-label": "Página",
 	"bs-calumma-context-pagebutton-tooltip": "Mostrar a atual página do assunto",
 	"bs-calumma-context-discussionbutton-label": "Discussão",
-	"bs-calumma-context-discussionbutton-tooltip": "Mostrar a atual página de discussão"
+	"bs-calumma-context-discussionbutton-tooltip": "Mostrar a atual página de discussão",
+	"bs-calumma-search-button-label": "Pesquisar"
 }

@@ -81,5 +81,6 @@
 	"bs-calumma-pageinfosentence-item-separator": "e",
 	"bs-calumma-pageinfosentence-item-class-separator": "ma",
 	"bs-calumma-full-screen-button-tooltip": "Schermo intero/modalità normale",
-	"bs-calumma-notification-logged-in": "Ora hai effettuato l'accesso"
+	"bs-calumma-notification-logged-in": "Ora hai effettuato l'accesso",
+	"bs-calumma-search-button-label": "Ricerca"
 }
