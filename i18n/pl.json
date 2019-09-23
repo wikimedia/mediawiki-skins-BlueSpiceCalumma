@@ -54,7 +54,9 @@
 	"bs-sitetools-toolbox": "Przybornik",
 	"bs-sitetools-views": "Wyświetlenia",
 	"bs-sitetools-edit": "Edytuj",
+	"bs-sitetools-manage-page": "Zarządzaj stroną",
 	"bs-sitetools-categories": "Kategorie",
+	"bs-sitetools-associated-links": "Powiązane linki",
 	"bs-calumma-recentchanges-title": "Ostatnie zmiany",
 	"bs-calumma-recentchanges-intro": "W poniższej liście znajdziesz wszystkie ostatnie edycje na stronach oraz nowo utworzone strony.",
 	"bs-calumma-recentchanges-specialpage-link": "Klasyczne ostatnie zmiany znajdziesz [[Special:RecentChanges|tutaj]].",
@@ -74,8 +76,12 @@
 	"bs-allpages-description": "Wszystkie strony",
 	"bs-support-description": "Wsparcie",
 	"bs-calumma-navigation-toggle-tooltip": "Otwórz / zamknij",
+	"bs-edit-custom-menu-link-title": "Edytuj menu",
+	"bs-edit-custom-menu-link-text": "Edytuj menu",
 	"bs-calumma-toggle-button-tooltip": "Otwórz/Zamknij",
 	"bs-calumma-breadcrumbs-nstab-main": "Wszystkie strony",
+	"bs-calumma-breadcrumbs-pages": "Jesteś tutaj",
+	"bs-calumma-breadcrumbs-pages-title": "Aktualnie przeglądasz stronę „$1”",
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Podstrona|Podstrony}} „$2”",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Podstrona|$1 podstrony|$1 podstron}} „$2”",
 	"bs-calumma-category-no-categories": "Brak przypisanych kategorii",
@@ -91,5 +97,9 @@
 	"bs-calumma-notification-logged-in": "Nie jesteś zalogowany(a)",
 	"bs-calumma-version-pager-prev-tooltip": "Przejdź do poprzedniej wersji",
 	"bs-calumma-version-pager-next-tooltip": "Przejdź do następnej wersji",
-	"bs-calumma-version-pager-info-text": "Wersja z $1 autorstwa {{GENDER:$2|użytkownika|użytkowniczki}} [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "Wersja z $1 autorstwa {{GENDER:$2|użytkownika|użytkowniczki}} [[User:$2|$2]]",
+	"bs-calumma-assoclink-history-label": "Historia",
+	"bs-calumma-context-pagebutton-label": "Strona",
+	"bs-calumma-context-discussionbutton-label": "Dyskusja",
+	"bs-calumma-search-button-label": "Szukaj"
 }

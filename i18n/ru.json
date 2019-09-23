@@ -5,7 +5,8 @@
 			"Vlad5250",
 			"Nk88",
 			"Cronolio",
-			"Facenapalm"
+			"Facenapalm",
+			"Katunchik"
 		]
 	},
 	"bluespicecalumma-desc": "Тема BlueSpice",
@@ -99,5 +100,6 @@
 	"bs-calumma-assoclink-history-label": "История",
 	"bs-calumma-context-pagebutton-label": "Страница",
 	"bs-calumma-context-discussionbutton-label": "Обсуждение",
-	"bs-calumma-context-discussionbutton-tooltip": "Показать текущую страницу обсуждения"
+	"bs-calumma-context-discussionbutton-tooltip": "Показать текущую страницу обсуждения",
+	"bs-calumma-search-button-label": "Поиск"
 }
