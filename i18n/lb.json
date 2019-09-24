@@ -69,5 +69,6 @@
 	"bs-calumma-version-pager-info-text": "Versioun vu(n) $1 vum [[User:$2|$2]]",
 	"bs-calumma-assoclink-history-label": "Versiounen",
 	"bs-calumma-context-pagebutton-label": "Säit",
-	"bs-calumma-context-discussionbutton-label": "Diskussioun"
+	"bs-calumma-context-discussionbutton-label": "Diskussioun",
+	"bs-calumma-search-button-label": "Sichen"
 }
