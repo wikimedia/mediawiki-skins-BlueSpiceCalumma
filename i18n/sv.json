@@ -113,5 +113,6 @@
 	"bs-calumma-context-pagebutton-label": "Sida",
 	"bs-calumma-context-pagebutton-tooltip": "Visa den nuvarande ämnessidan",
 	"bs-calumma-context-discussionbutton-label": "Diskussion",
-	"bs-calumma-context-discussionbutton-tooltip": "Visa den nuvarande diskussionssidan"
+	"bs-calumma-context-discussionbutton-tooltip": "Visa den nuvarande diskussionssidan",
+	"bs-calumma-search-button-label": "Sök"
 }
