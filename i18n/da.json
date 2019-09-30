@@ -64,5 +64,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "men",
 	"bs-calumma-assoclink-history-label": "Historik",
 	"bs-calumma-context-pagebutton-label": "Side",
-	"bs-calumma-context-discussionbutton-label": "Diskussion"
+	"bs-calumma-context-discussionbutton-label": "Diskussion",
+	"bs-calumma-search-button-label": "Søg"
 }

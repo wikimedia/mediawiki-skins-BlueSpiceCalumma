@@ -5,7 +5,8 @@
 			"Kghbln",
 			"Metalhead64",
 			"Osnard",
-			"Mglaser"
+			"Mglaser",
+			"Tobi 406"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice skin",
@@ -107,13 +108,13 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "aber",
 	"bs-calumma-full-screen-button-tooltip": "Vollbild/Normale Ansicht",
 	"bs-calumma-page-last-edit-by-system-user": "Systembenutzer",
-	"bs-calumma-notification-logged-in": "Du bist jetzt eingeloggt",
+	"bs-calumma-notification-logged-in": "Du bist jetzt angemeldet",
 	"bs-calumma-alert-oldpage": "Du betrachtest eine alte Version der Seite. [[Special:Redirect/page/$1|Zur neuesten Version gehen]].",
 	"bs-calumma-version-pager-prev-tooltip": "Zur vorherigen Version wechseln",
 	"bs-calumma-version-pager-next-tooltip": "Zur nächsten Version wechseln",
 	"bs-calumma-version-pager-info-text": "Version vom $1 von [[User:$2|$2]]",
 	"bs-calumma-assoclink-history-label": "Versionsgeschichte",
-	"bs-calumma-assoclink-history-tooltip": "Versionsgeschichte der Seite \\\"$1\\\" anzeigen",
+	"bs-calumma-assoclink-history-tooltip": "Versionsgeschichte der Seite \"$1\" anzeigen",
 	"bs-calumma-context-pagebutton-label": "Seite",
 	"bs-calumma-context-pagebutton-tooltip": "Zeige die aktuelle Seite",
 	"bs-calumma-context-discussionbutton-label": "Diskussion",
