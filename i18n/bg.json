@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"StanProg",
-			"Vlad5250"
+			"Vlad5250",
+			"Ted Masters"
 		]
 	},
 	"bluespicecalumma-skin": "BlueSpiceCalumma",
@@ -88,7 +89,7 @@
 	"bs-calumma-pageinfosentence-item-separator": "и",
 	"bs-calumma-pageinfosentence-item-class-separator": "но",
 	"bs-calumma-page-last-edit-by-system-user": "системен потребител",
-	"bs-calumma-notification-logged-in": "Вие не сте влезли",
+	"bs-calumma-notification-logged-in": "Вече сте влезли",
 	"bs-calumma-assoclink-history-label": "История",
 	"bs-calumma-context-pagebutton-label": "Страница",
 	"bs-calumma-context-discussionbutton-label": "Беседа",
