@@ -7,6 +7,10 @@ use BlueSpice\Calumma\AssocLinksProvider\CustomCallback;
 use BlueSpice\Html\Descriptor\ILink;
 use HashConfig;
 
+/**
+ * @group BlueSpice
+ * @group BlueSpiceCalumma
+ */
 class CustomCallbackTest extends TestCase {
 
 	/**
