@@ -14,6 +14,10 @@ Ext.define( 'BS.Calumma.flyout.RecentChanges', {
 		return 'articlepreviewimage';
 	},
 
+	makeDataViewItemLinkUrl: function( dataset ) {
+		return dataset.oldid_url;
+	},
+
 	makeDataViewThumbImageTitletextValue: function( dataset ) {
 		return dataset.page_prefixedtext;
 	},
@@ -47,7 +51,7 @@ Ext.define( 'BS.Calumma.flyout.RecentChanges', {
 		var items = [ {
 			plain: true,
 			iconCls: 'bs-icon-history',
-			text: dataset.get( 'hist_link' ),
+			text: mw.message( 'bs-calumma-recentchanges-history' ).plain(),
 			onClick: function(){
 				window.location = dataset.get( 'hist_url' );
 			}
@@ -56,7 +60,7 @@ Ext.define( 'BS.Calumma.flyout.RecentChanges', {
 			items.push( {
 				plain: true,
 				iconCls: 'bs-icon-history',
-				text: dataset.get( 'diff_link' ),
+				text: mw.message( 'bs-calumma-recentchanges-diff' ).plain(),
 				onClick: function() {
 					window.location = dataset.get( 'diff_url' );
 				}
@@ -101,7 +105,7 @@ Ext.define( 'BS.Calumma.flyout.RecentChanges', {
 					);
 				}
 
-				return '<div><span class="title">' + record.get( 'page_link' ) + '</span><span class="actions">( ' + diff + history + ' )</span></div>';
+				return '<div><span class="title">' + record.get( 'oldid_link' ) + '</span><span class="actions">( ' + diff + history + ' )</span></div>';
 			}
 		}];
 	},

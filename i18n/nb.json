@@ -1,8 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chameleon222"
+			"Chameleon222",
+			"Kingu",
+			"Orf3us"
 		]
 	},
-	"bs-to-top-desc": "Rull til toppen av siden"
+	"bs-to-top-desc": "Rull til toppen av siden",
+	"bs-edit-custom-menu-link-title": "Rediger meny",
+	"bs-edit-custom-menu-link-text": "Rediger meny",
+	"bs-calumma-assoclink-history-label": "Historikk",
+	"bs-calumma-context-pagebutton-label": "Side",
+	"bs-calumma-context-discussionbutton-label": "Diskusjon"
 }

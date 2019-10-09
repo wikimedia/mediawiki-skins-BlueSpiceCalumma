@@ -3,7 +3,9 @@
 		"authors": [
 			"Captantrips",
 			"Hedda",
-			"Sayginer"
+			"Sayginer",
+			"Sucsuzz",
+			"BaRaN6161 TURK"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice Teması",
@@ -72,5 +74,12 @@
 	"bs-edit-mediawiki-sidebar-link-text": "Kenar çubuğunu düzenle",
 	"bs-edit-mediawiki-sidebar-link-title": "Kenar çubuğunu düzenle",
 	"bs-allpages-description": "Tüm sayfalar",
-	"bs-support-description": "Destek"
+	"bs-support-description": "Destek",
+	"bs-calumma-navigation-toggle-tooltip": "Aç / kapat",
+	"bs-calumma-assoclink-history-label": "Geçmiş",
+	"bs-calumma-assoclink-history-tooltip": "\"$1\" sayfasının revizyon geçmişini göster",
+	"bs-calumma-context-pagebutton-label": "Sayfa",
+	"bs-calumma-context-pagebutton-tooltip": "Geçerli konu sayfasını göster",
+	"bs-calumma-context-discussionbutton-label": "Tartışma",
+	"bs-calumma-context-discussionbutton-tooltip": "Geçerli konuşma sayfasına göster"
 }

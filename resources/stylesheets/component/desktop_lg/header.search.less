@@ -1,43 +1,23 @@
 header .navbar .p-search form {
-	left: 300px;
-	top: @menu-top-items-margin;
-	padding-left: calc(~"( 50vw - 745px )");
-	width: calc(~"100% + 20px") !important;
-	max-width: 698px !important;
+	padding-left: calc(~"( 50vw - 43.625rem - 3.5rem - 2rem )");
+	width: calc(~"100% + 1.25rem") !important;
+	max-width: calc(~"@{bs-content-width} - 5rem") !important;
 
 	.form-group{
 		& > #bs-extendedsearch-input {
-			min-width: 635px !important;
-			width: 100%;
-			max-width: 650px !important;
+			min-width: 39.6875rem !important;
+			width: 100% !important;
+			max-width: calc(~"@{bs-content-width} - 15rem") !important;
 		}
 
 		#bs-extendedsearch-box-wrapper {
-			min-width: 635px !important;
-			max-width: 650px !important;
-
-			input.form-control{
-				width: 100% !important;
-			}
+			min-width: 39.6875rem !important;
+			max-width: calc(~"@{bs-content-width} - 1rem") !important;
 		}
 
 		.bs-extendedsearch-autocomplete-popup {
-			min-width: 683px !important;
-			max-width: 698px !important;
-
-			.bs-extendedsearch-autocomplete-popup-create-page-link {
-				&,
-				a {
-					height: auto;
-					min-height: 40px
-				}
-			}
-
-
-			.bs-extendedsearch-autocomplete-popup-special-item-label {
-				min-height: 40px;
-				height: auto;
-			}
+			min-width: 42.6875rem !important;
+			max-width: calc(~"@{bs-content-width} - 1rem") !important;
 		}
 	}
 }

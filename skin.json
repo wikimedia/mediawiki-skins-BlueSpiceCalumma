@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceCalumma",
-	"version": "3.0.1",
+	"version": "3.1.0",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"Daniel Vogel <d.vogel@hallowelt.com>",
@@ -12,17 +12,24 @@
 	"namemsg": "bluespicecalumma-skin",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.31.0",
+		"MediaWiki": "~1.31",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 3.0"
+			"BlueSpiceFoundation": "~3.1"
 		}
 	},
 	"attributes": {
 		"BlueSpiceFoundation": {
 			"RendererRegistry": {
-				"panel": "\\BlueSpice\\Calumma\\Renderer\\Panel",
-				"calummacustommenu": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu",
-				"calummacustommenuitem": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu\\Item"
+				"panel": "\\BlueSpice\\Calumma\\Renderer\\Panel::factory",
+				"calummacustommenu": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu::factory",
+				"calummacustommenuitem": "\\BlueSpice\\Calumma\\Renderer\\CustomMenu\\Menu\\Item::factory",
+				"pageheader-breadcrumb": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\BreadCrumb::factory",
+				"pageheader-context": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\Context::factory",
+				"@note": "The category renderer is hard coded as a fallback in PageHeader::getCategories, so it can be overwritten by extensions",
+				"@pageheader-category": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\Category::factory",
+				"@pageheader-lastedit": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\LastEdit::factory",
+				"pageheader-editbutton": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\EditButton::factory",
+				"pageheader-pageinfo": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\PageInfo::factory"
 			},
 			"LessVarsRegistry": {
 				"bs-color-primary": "#3e5389",
@@ -35,20 +42,36 @@
 				"bs-color-progressive": "#347bff",
 				"bs-color-contructive": "#00af89",
 				"bs-color-destructive": "#d11d13",
-				"bs-color-success": "#dff0d8",
-				"bs-color-warning": "#fcf8e3",
-				"bs-color-error": "#f2dede",
-				"bs-color-info": "#d9edf7",
+				"bs-color-success": "#c5e8c9",
+				"bs-color-warning": "#f7e1b2",
+				"bs-color-error": "#f0c6ef",
+				"bs-color-info": "#bddfdf",
 				"bs-color-after-content": "darken(@bs-color-neutral, 37.2549)",
 				"bs-body-background": "@bs-background-primary",
 				"bs-content-background": "@bs-background-neutral",
-				"bs-content-toc-background": "@bs-background-primary"
+				"bs-content-toc-background": "@bs-background-primary",
+				"bs-seperator-line-color": "#e9e9e9"
 			},
-			"PageToolRegistry": {
-				"view": "BlueSpice\\Calumma\\PageTool\\View::factory",
-				"talk": "BlueSpice\\Calumma\\PageTool\\Talk::factory",
-				"history": "BlueSpice\\Calumma\\PageTool\\History::factory",
-				"watch": "BlueSpice\\Calumma\\PageTool\\Watch::factory"
+			"AlertProviderRegistry": {
+				"oldversion": "\\BlueSpice\\Calumma\\AlertProvider\\OldVersion::factory"
+			},
+			"AssocLinksProviderRegistry": {
+				"history-view": "\\BlueSpice\\Calumma\\AssocLinksProvider\\HistoryView::factory",
+				"existing-siblings": "\\BlueSpice\\Calumma\\AssocLinksProvider\\ExistingSiblings::factory",
+				"mapped-siblings": "\\BlueSpice\\Calumma\\AssocLinksProvider\\MappedSiblings::factory",
+				"custom-callback": "\\BlueSpice\\Calumma\\AssocLinksProvider\\CustomCallback::factory",
+				"rootpage-sibling": "\\BlueSpice\\Calumma\\AssocLinksProvider\\RootPageSibling::factory"
+			},
+			"BreadcrumbRootNodeRegistry": {
+				"namespace-mainpage": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\NamespaceMainPage::factory",
+				"namespace-portalpage": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\NamespacePortalPage::factory",
+				"special-allpages": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialAllPages::factory",
+				"special-specialpages": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialSpecialPages::factory"
+			}
+		},
+		"BlueSpiceCustomMenu": {
+			"Registry": {
+				"header": "\\BlueSpice\\Calumma\\CustomMenu\\Header::getInstance"
 			}
 		},
 		"BlueSpiceCustomMenu": {
@@ -69,7 +92,8 @@
 		"SkinBlueSpiceCalumma": "SkinBlueSpiceCalumma.php"
 	},
 	"AutoloadNamespaces": {
-		"BlueSpice\\Calumma\\": "src/"
+		"BlueSpice\\Calumma\\": "src/",
+		"BlueSpice\\Calumma\\Tests\\": "tests/phpunit/"
 	},
 	"ResourceModules": {
 		"skin.bluespicecalumma.styles": {
@@ -83,6 +107,7 @@
 				"stylesheets/common.less": {},
 				"stylesheets/mobile.less": { "media": "all and ( max-width: 720px )" },
 				"stylesheets/tablet.less": { "media": "all and ( min-width: 721px ) and ( max-width: 1000px )" },
+				"stylesheets/desktop.less": { "media": "all and ( min-width: 1001px )" },
 				"stylesheets/desktop_sm.less": { "media": "all and ( min-width: 1001px ) and ( max-width: 1200px )" },
 				"stylesheets/desktop_md.less": { "media": "all and ( min-width: 1201px ) and ( max-width: 1699px )" },
 				"stylesheets/desktop_lg.less": { "media": "all and ( min-width: 1700px )" },
@@ -93,13 +118,15 @@
 		},
 		"skin.bluespicecalumma.scripts": {
 			"scripts": [
+				"js/Breadcrumb.js",
 				"js/SidebarToggle.js",
+				"js/skin.bluespicecalumma.pageinfo.QmPanel.js",
 				"js/ToggleButton.js",
+				"js/FullScreenButton.js",
 				"js/skin.bluespicecalumma.scrollToTop.js",
 				"js/scrollToJumpmark.js",
 				"js/mobile.content.js",
 				"js/skin.bluespicecalumma.featuredActions.js",
-				"js/skin.bluespicecalumma.loadindicator.js",
 				"js/skin.bluespicecalumma.customMenu.header.js"
 			],
 			"dependencies": [
@@ -187,7 +214,16 @@
 			],
 			"messages": [
 				"bs-calumma-pagetool-watch-tooltip",
-				"bs-calumma-pagetool-unwatch-tooltip"
+				"bs-calumma-pagetool-unwatch-tooltip",
+				"bs-calumma-page-watch-text",
+				"bs-calumma-page-watch-title",
+				"bs-calumma-page-unwatch-text",
+				"bs-calumma-page-unwatch-title"
+			]
+		},
+		"skin.bluespicecalumma.foucfix": {
+			"styles": [
+				"stylesheets/fixes/foucfix.less"
 			]
 		},
 		"skin.bluespicecalumma.foucfix": {
@@ -200,7 +236,41 @@
 		"localBasePath": "resources",
 		"remoteSkinPath": "BlueSpiceCalumma/resources"
 	},
+	"config_prefix": "bsgBlueSpiceCalumma",
 	"config": {
+		"AssocLinksEnabledProviders": {
+			"value": [
+				"history-view",
+				"existing-siblings",
+				"mapped-siblings",
+				"custom-callback",
+				"rootpage-sibling",
+				"profile-classic",
+				"profile-modern"
+			]
+		},
+		"AssocLinksExistingSiblingsNamespaceBlacklist": {
+			"value": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
+		},
+		"AssocLinksRootPageSiblingNamespaceBlacklist": {
+			"value": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
+		},
+		"AssocLinksMappedSiblingsNamespaceMap": {
+			"value": []
+		},
+		"AssocLinksCustomCallback": {
+			"value": null
+		},
+		"BreadcrumbRootNodeEnabledProviders": {
+			"value": [
+				"namespace-mainpage",
+				"special-specialpages"
+			]
+		},
+		"BreadcrumbNamespacePortalPageRootNodePortalNamespace": {
+			"@note": "NS_PROJECT",
+			"value": 4
+		}
 	},
 	"callback": "BlueSpice\\Calumma\\Setup::onCallback",
 	"Hooks": {
@@ -209,7 +279,8 @@
 		"BeforePageDisplay": [
 			"\\BlueSpice\\Calumma\\Hook\\BeforePageDisplay\\HistoryBacklink::callback",
 			"\\BlueSpice\\Calumma\\Hook\\BeforePageDisplay\\AddFoucFix::callback"
-		]
+		],
+		"UserLoggedIn": "\\BlueSpice\\Calumma\\Hook\\UserLoggedIn\\AddNotification::callback"
 	},
 	"DefaultUserOptions": {
 		"bs-calumma-settings-navigation-main-collapse": false,

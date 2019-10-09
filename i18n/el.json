@@ -39,5 +39,6 @@
 	"bs-calumma-pagetool-watch-tooltip": "Παρακολούθηση",
 	"bs-calumma-pagetool-unwatch-tooltip": "Παύση παρακολούθησης",
 	"bs-allpages-description": "Όλες οι σελίδες",
-	"bs-support-description": "Υποστήριξη"
+	"bs-support-description": "Υποστήριξη",
+	"bs-calumma-navigation-toggle-tooltip": "Άνοιγμα / κλείσιμο"
 }

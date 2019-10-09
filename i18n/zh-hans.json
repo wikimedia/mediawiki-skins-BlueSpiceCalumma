@@ -2,7 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"A Chinese Wikipedian",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"94rain",
+			"科劳",
+			"Viztor",
+			"Looong"
 		]
 	},
 	"bs-calumma-pref-toggle-navigaiton-main": "自动隐藏主菜单",
@@ -67,5 +71,19 @@
 	"bs-edit-mediawiki-sidebar-link-text": "编辑侧边栏",
 	"bs-edit-mediawiki-sidebar-link-title": "编辑侧边栏",
 	"bs-allpages-description": "所有页面",
-	"bs-support-description": "支持"
+	"bs-support-description": "支持",
+	"bs-edit-custom-menu-link-title": "编辑菜单",
+	"bs-edit-custom-menu-link-text": "编辑菜单",
+	"bs-calumma-toggle-button-tooltip": "开/关",
+	"bs-action-new-please-login-title": "要创建新页面，请登录",
+	"bs-action-edit-please-login-title": "要编辑此页面，请登录",
+	"bs-action-new-disabled-title": "没有权限创建新的页面",
+	"bs-action-edit-disabled-title": "没有权限编辑此页面",
+	"bs-calumma-version-pager-prev-tooltip": "切换到上一个版本",
+	"bs-calumma-version-pager-next-tooltip": "切换到下一个版本",
+	"bs-sitetools-view-mode": "模式",
+	"bs-calumma-version-pager-info-text": "[[用户:$2|$2]]提供的$1的版本",
+	"bs-calumma-assoclink-history-label": "历史",
+	"bs-calumma-context-pagebutton-label": "页",
+	"bs-calumma-context-discussionbutton-label": "讨论"
 }

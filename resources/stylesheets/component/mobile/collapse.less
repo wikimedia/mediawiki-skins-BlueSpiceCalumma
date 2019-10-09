@@ -13,13 +13,20 @@ body {
 
 	&.navigation-main-collapse .navigation-main.active,
 	&.navigation-main-collapse .navigation-main {
-		width: 0px;
+		width: 0;
 		transition: width .3s;
 
 		#bs-sitenavtabs {
-			width: 0px;
+			width: 0;
 			transition: width .3s;
 		}
+	}
+
+	&:not( .navigation-main-collapse ) .sidebar-toggle[data-toggle~="navigation-main-collapse"].calumma-mobile-visible-close-only{
+		display: block;
+	}
+	&.navigation-main-collapse .sidebar-toggle[data-toggle~="navigation-main-collapse"].calumma-mobile-visible-close-only{
+		display: none;
 	}
 
 }

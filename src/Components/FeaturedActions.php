@@ -13,20 +13,17 @@ class FeaturedActions extends Component {
 	 * @return string
 	 */
 	public function getHtml() {
+		if ( $this->skipRendering() ) {
+			return '';
+		}
+
 		$data = $this->getSkinTemplate()->get( SkinData::FEATURED_ACTIONS );
 		$items = [];
 
-		if ( array_key_exists( 'edit', $data ) ) {
-			$elements = $this->sortFeaturedActions( $data['edit'] );
+		foreach ( $data as $dataKey => $dataDef ) {
+			$elements = $this->sortFeaturedActions( $dataDef );
 			$items += [
-				'edit' => $elements
-			];
-		}
-
-		if ( array_key_exists( 'new', $data ) ) {
-			$elements = $this->sortFeaturedActions( $data['new'] );
-			$items += [
-				'new' => $elements
+				$dataKey => $elements
 			];
 		}
 
@@ -118,5 +115,17 @@ class FeaturedActions extends Component {
 		} );
 
 		return $faArray;
+	}
+
+	protected function skipRendering() {
+		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
+		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
+		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+
+		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
+			return true;
+		}
+
+		return false;
 	}
 }

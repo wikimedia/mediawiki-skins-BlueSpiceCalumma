@@ -33,6 +33,7 @@ class CollapsibleGroup extends TemplateComponent {
 		$args['id'] = $this->getGroupId();
 		$args['title'] = $this->getGroupTitle();
 		$args['content'] = $this->getGroupContent();
+		$args['collapse'] = $this->getGroupCollapseState();
 		return $args;
 	}
 
@@ -59,4 +60,17 @@ class CollapsibleGroup extends TemplateComponent {
 	protected function getGroupContent() {
 		return $this->defs['content'];
 	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	public function getGroupCollapseState() {
+		if ( isset( $this->defs['collapse'] ) ) {
+			return $this->defs['collapse'];
+		}
+
+		return false;
+	}
+
 }

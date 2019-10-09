@@ -2,13 +2,13 @@
 .calumma-toggle-button.bs-custom-menu-header-button {
 	left: 10vw;
 	top: @custom-menu-top-height;
-	padding-top: 0px;
-	height: 10px;
-	line-height: 10px;
+	padding-top: 0;
+	height: 0.625rem;
+	line-height: 0.625rem;
 
 	&:hover {
-		padding-top: 10px;
-		height: 20px;
+		padding-top: 0.625rem;
+		height: 1.25rem;
 	}
 }
 
@@ -20,12 +20,12 @@
 	padding-right: 1em;
 	.bs-custom-menu.header {
 		left: @navigation-main-width;
-		padding-left: calc( ~"50vw - 760px");
+		padding-left: calc( ~"50vw - 47.5rem");
 
 		a {
 			height: @custom-menu-top-height;
-			line-height: 30px;
-			padding: 0px 10px;
+			line-height: 1.875rem;
+			padding: 0 0.625rem;
 
 		}
 		li.dropdown,
@@ -33,7 +33,7 @@
 		li.contains-children {
 			&.level-1 {
 				.child-menu {
-					padding: 0px;
+					padding: 0;
 				}
 			}
 		}
@@ -48,14 +48,14 @@
 /* collapsed */
 body.bs-custom-menu-header-container-collapse {
 	.calumma-toggle-button.bs-custom-menu-header-button {
-		height: 10px;
-		line-height: 10px;
-		padding-top: 0px;
-		top: 0px;
+		height: 0.625rem;
+		line-height: 0.625rem;
+		padding-top: 0;
+		top: 0;
 
 		&:hover {
-			padding-top: 10px;
-			height: 20px;
+			padding-top: 0.625rem;
+			height: 1.25rem;
 		}
 	}
 }
@@ -113,12 +113,13 @@ body.mediawiki.x-body {
 
 		.navigation-main #bs-sitenavtabs .tab-content,
 		.sitetools-main #bs-toolpanetabs .tab-content {
-			height: calc(~"100vh - 150px - @{custom-menu-top-height}");
+			height: calc(~"100vh - 9.375rem - @{custom-menu-top-height}");
 		}
 
 
 		.mobile-notifications-button,
 		.mobile-search-button,
+		.mobile-login-button,
 		.sidebar-toggle[data-toggle~="sitetools-main-collapse"] {
 			top: @custom-menu-top-height;
 		}
