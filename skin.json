@@ -272,6 +272,17 @@
 		"BreadcrumbNamespacePortalPageRootNodePortalNamespace": {
 			"@note": "NS_PROJECT",
 			"value": 4
+		},
+		"PanelCollapseState":{
+			"value": {
+				"bs-associated-links": true,
+				"bs-manage-page-panel": false,
+				"bs-export-panel": false,
+				"bs-toolbox-panel": false,
+				"bs-page-mode-panel": true,
+				"bs-sitenav-globalactions-section-management": false,
+				"bs-sitenav-globalactions-section-globalactions": false
+			}
 		}
 	},
 	"callback": "BlueSpice\\Calumma\\Setup::onCallback",
