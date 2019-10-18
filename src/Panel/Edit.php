@@ -3,6 +3,7 @@
 namespace BlueSpice\Calumma\Panel;
 
 use BlueSpice\SkinData;
+use Skins\Chameleon\IdRegistry;
 
 class Edit extends StandardSkinDataLinkList {
 
@@ -36,4 +37,20 @@ class Edit extends StandardSkinDataLinkList {
 		return $combinedDefs;
 	}
 
+	/**
+	 *
+	 * @var string
+	 */
+	protected $htmlId = null;
+
+	/**
+	 * The HTML ID for thie component
+	 * @return string
+	 */
+	public function getHtmlId() {
+		if ( $this->htmlId === null ) {
+			$this->htmlId = IdRegistry::getRegistry()->getId( 'bs-manage-page-panel' );
+		}
+		return $this->htmlId;
+	}
 }
