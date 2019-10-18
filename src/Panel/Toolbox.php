@@ -3,6 +3,7 @@
 namespace BlueSpice\Calumma\Panel;
 
 use BlueSpice\SkinData;
+use Skins\Chameleon\IdRegistry;
 
 class Toolbox extends StandardSkinDataLinkList {
 
@@ -54,6 +55,23 @@ class Toolbox extends StandardSkinDataLinkList {
 			return $sortKeys[$a] < $sortKeys[$b] ? -1 : 1;
 		} );
 		return $toolbox;
+	}
+
+	/**
+	 *
+	 * @var string
+	 */
+	protected $htmlId = null;
+
+	/**
+	 * The HTML ID for thie component
+	 * @return string
+	 */
+	public function getHtmlId() {
+		if ( $this->htmlId === null ) {
+			$this->htmlId = IdRegistry::getRegistry()->getId( 'bs-toolbox-panel' );
+		}
+		return $this->htmlId;
 	}
 
 }
