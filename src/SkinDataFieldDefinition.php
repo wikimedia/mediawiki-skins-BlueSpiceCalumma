@@ -14,10 +14,10 @@ use BlueSpice\Calumma\DataProvider\MobileMoreMenuData;
 
 class SkinDataFieldDefinition {
 
-	const MOBILE_MORE_MENU = 'bs_mobile_more_menu';
-	const LOGO = 'bs_wiki_logo';
-	const CONTENT_NAVIGATION_GROUP = 'bs_content_navigation_group';
-	const CONTENT_NAVIGATION_DATA = 'bs_content_navigation_data';
+	public const MOBILE_MORE_MENU = 'bs_mobile_more_menu';
+	public const LOGO = 'bs_wiki_logo';
+	public const CONTENT_NAVIGATION_GROUP = 'bs_content_navigation_group';
+	public const CONTENT_NAVIGATION_DATA = 'bs_content_navigation_data';
 
 	/**
 	 *

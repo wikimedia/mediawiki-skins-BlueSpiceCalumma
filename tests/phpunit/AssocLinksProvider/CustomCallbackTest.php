@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Calumma\Tests\AssocLinksProvider;
 
+use Exception;
 use PHPUnit\Framework\TestCase;
 use BlueSpice\Calumma\AssocLinksProvider\CustomCallback;
 use BlueSpice\Html\Descriptor\ILink;
@@ -43,10 +44,10 @@ class CustomCallbackTest extends TestCase {
 
 	/**
 	 * @covers CustomCallback::factory
-	 * @expectedException Exception
-	 * @expectedExceptionMessage Field 'label' must be provided!
 	 */
 	public function testFactoryException() {
+		$this->expectException( Exception::class );
+		$this->expectExceptionMessage( "Field 'label' must be provided!" );
 		$callback = function ( $context, $config ) {
 			return [
 				[

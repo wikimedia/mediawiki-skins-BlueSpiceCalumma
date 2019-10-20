@@ -14,7 +14,7 @@ use BlueSpice\TemplateFactory;
 
 class Panel extends TemplateRenderer {
 
-	const PARAM_INSTANCE = 'instance';
+	public const PARAM_INSTANCE = 'instance';
 
 	/**
 	 *

@@ -12,7 +12,7 @@ use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
 
 class Category extends Renderer {
-	const PARAM_CATEGORY_NAMES = 'categories';
+	public const PARAM_CATEGORY_NAMES = 'categories';
 
 	/**
 	 * Constructor

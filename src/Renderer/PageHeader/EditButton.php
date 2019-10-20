@@ -12,7 +12,7 @@ use BlueSpice\Renderer\Params;
 use BlueSpice\Renderer;
 
 class EditButton extends Renderer {
-	const FEATURED_ACTIONS = SkinData::FEATURED_ACTIONS;
+	public const FEATURED_ACTIONS = SkinData::FEATURED_ACTIONS;
 
 	/**
 	 * Constructor
