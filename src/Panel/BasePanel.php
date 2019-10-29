@@ -93,6 +93,15 @@ abstract class BasePanel implements IPanel {
 	 * @return bool
 	 */
 	public function getPanelCollapseState() {
+		$htmlId = $this->getHtmlId();
+		$states = $this->skintemplate->getSkin()->getConfig()->get(
+			'BlueSpiceCalummaPanelCollapseState'
+		);
+
+		if ( array_key_exists( $htmlId, $states ) &&
+			( $states[$htmlId] === true || $states[$htmlId] === 1 ) ) {
+				return true;
+		}
 		return false;
 	}
 }

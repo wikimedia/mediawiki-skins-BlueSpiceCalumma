@@ -3,6 +3,7 @@
 namespace BlueSpice\Calumma\Panel;
 
 use BlueSpice\SkinData;
+use Skins\Chameleon\IdRegistry;
 
 class Export extends BasePanel {
 
@@ -55,4 +56,20 @@ class Export extends BasePanel {
 		];
 	}
 
+	/**
+	 *
+	 * @var string
+	 */
+	protected $htmlId = null;
+
+	/**
+	 * The HTML ID for thie component
+	 * @return string
+	 */
+	public function getHtmlId() {
+		if ( $this->htmlId === null ) {
+			$this->htmlId = IdRegistry::getRegistry()->getId( 'bs-export-panel' );
+		}
+		return $this->htmlId;
+	}
 }

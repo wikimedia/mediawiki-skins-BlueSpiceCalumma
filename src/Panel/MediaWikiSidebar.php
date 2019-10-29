@@ -71,11 +71,19 @@ class MediaWikiSidebar extends BasePanel {
 
 			$sectionId = str_replace( ' ', '-', $section );
 
-			$collapsibleGroup = new CollapsibleGroup( [
+			$groupParams = [
 				'id' => $sectionId,
 				'title' => $section,
 				'content' => $linklistgroup->getHtml()
-			] );
+			];
+
+			if ( $this->getGroupCollapseState( $sectionId ) === true ) {
+				$groupParams += [
+					'collapse' => true
+				];
+			}
+
+			$collapsibleGroup = new CollapsibleGroup( $groupParams );
 
 			$html .= $collapsibleGroup->getHtml();
 		}
@@ -253,4 +261,20 @@ class MediaWikiSidebar extends BasePanel {
 		return $html;
 	}
 
+	/**
+	 *
+	 * @param string $sectionId
+	 * @return bool
+	 */
+	public function getGroupCollapseState( $sectionId ) {
+		$states = $this->skintemplate->getSkin()->getConfig()->get(
+			'BlueSpiceCalummaPanelCollapseState'
+		);
+
+		if ( array_key_exists( $sectionId, $states ) &&
+			( $states[$sectionId] === true || $states[$sectionId] === 1 ) ) {
+				return true;
+		}
+		return false;
+	}
 }
