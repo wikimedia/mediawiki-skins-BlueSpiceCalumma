@@ -92,5 +92,15 @@
 	"bs-calumma-full-screen-button-tooltip": "Cijeli zaslon/Uobičajeni prikaz",
 	"bs-calumma-page-last-edit-by-system-user": "sistemski korisnik",
 	"bs-calumma-notification-logged-in": "Sad ste prijavljeni",
-	"bs-calumma-page-unwatch-text": "Prekini s praćenjem"
+	"bs-calumma-page-unwatch-text": "Prekini s praćenjem",
+	"bs-calumma-version-pager-prev-tooltip": "Prijeđi na prethodnu verziju",
+	"bs-calumma-version-pager-next-tooltip": "Prijeđi na novu stranicu",
+	"bs-calumma-version-pager-info-text": "Verzija $1 od strane [[User:$2|$2]]",
+	"bs-calumma-assoclink-history-label": "Historija",
+	"bs-calumma-assoclink-history-tooltip": "Prikaži istoriju izmjena stranice „$1“",
+	"bs-calumma-context-pagebutton-label": "Stranica",
+	"bs-calumma-context-pagebutton-tooltip": "Prikaži trenutnu predmetnu stranicu",
+	"bs-calumma-context-discussionbutton-label": "Razgovor",
+	"bs-calumma-context-discussionbutton-tooltip": "Prikaži trenutnu razgovornu stranicu",
+	"bs-calumma-search-button-label": "Traži"
 }
