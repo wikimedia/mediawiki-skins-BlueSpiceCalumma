@@ -81,5 +81,6 @@
 	"bs-calumma-full-screen-button-tooltip": "Schermo intero/modalità normale",
 	"bs-calumma-notification-logged-in": "Ora hai effettuato l'accesso",
 	"bs-sitetools-view-mode": "Modalità",
-	"bs-sitetools-manage-page": "Gestisci pagina"
+	"bs-sitetools-manage-page": "Gestisci pagina",
+	"bs-calumma-search-button-label": "Ricerca"
 }

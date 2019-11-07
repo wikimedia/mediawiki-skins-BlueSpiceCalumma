@@ -91,5 +91,15 @@
 	"bs-calumma-notification-logged-in": "Nie jesteś zalogowany(a)",
 	"bs-calumma-version-pager-prev-tooltip": "Przejdź do poprzedniej wersji",
 	"bs-calumma-version-pager-next-tooltip": "Przejdź do następnej wersji",
-	"bs-calumma-version-pager-info-text": "Wersja z $1 autorstwa {{GENDER:$2|użytkownika|użytkowniczki}} [[User:$2|$2]]"
+	"bs-calumma-version-pager-info-text": "Wersja z $1 autorstwa {{GENDER:$2|użytkownika|użytkowniczki}} [[User:$2|$2]]",
+	"bs-sitetools-manage-page": "Zarządzaj stroną",
+	"bs-sitetools-associated-links": "Powiązane linki",
+	"bs-edit-custom-menu-link-title": "Edytuj menu",
+	"bs-edit-custom-menu-link-text": "Edytuj menu",
+	"bs-calumma-breadcrumbs-pages": "Jesteś tutaj",
+	"bs-calumma-breadcrumbs-pages-title": "Aktualnie przeglądasz stronę „$1”",
+	"bs-calumma-assoclink-history-label": "Historia",
+	"bs-calumma-context-pagebutton-label": "Strona",
+	"bs-calumma-context-discussionbutton-label": "Dyskusja",
+	"bs-calumma-search-button-label": "Szukaj"
 }

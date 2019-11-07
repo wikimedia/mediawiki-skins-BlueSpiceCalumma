@@ -96,5 +96,6 @@
 	"bs-sitetools-manage-page": "문서 관리",
 	"bs-calumma-assoclink-history-label": "역사",
 	"bs-calumma-context-pagebutton-label": "문서",
-	"bs-calumma-context-discussionbutton-label": "토론"
+	"bs-calumma-context-discussionbutton-label": "토론",
+	"bs-calumma-search-button-label": "검색"
 }
