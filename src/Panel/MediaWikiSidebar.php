@@ -266,15 +266,27 @@ class MediaWikiSidebar extends BasePanel {
 	 * @param string $sectionId
 	 * @return bool
 	 */
-	public function getGroupCollapseState( $sectionId ) {
-		$states = $this->skintemplate->getSkin()->getConfig()->get(
-			'BlueSpiceCalummaPanelCollapseState'
-		);
+	protected function getGroupCollapseState( $sectionId ) {
+		$cookiePrefix = $this->getCookiePrefix();
+		$cookieName = $cookiePrefix . 'collapse-' . $sectionId;
+		$request = $this->skintemplate->getSkin()->getRequest();
+		$cookie = $request->getCookie( $cookieName );
 
-		if ( array_key_exists( $sectionId, $states ) &&
-			( $states[$sectionId] === true || $states[$sectionId] === 1 ) ) {
-				return true;
+		if ( $cookie === 'false' ) {
+			return false;
+		} elseif ( $cookie === 'true' ) {
+			return true;
+		} else {
+			$states = $this->skintemplate->getSkin()->getConfig()->get(
+				'BlueSpiceCalummaPanelCollapseState'
+			);
+
+			if ( array_key_exists( $sectionId, $states ) &&
+				( $states[$sectionId] === true || $states[$sectionId] === 1 ) ) {
+					return true;
+			}
+
+			return false;
 		}
-		return false;
 	}
 }
