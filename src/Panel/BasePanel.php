@@ -90,18 +90,38 @@ abstract class BasePanel implements IPanel {
 
 	/**
 	 *
+	 * @return string
+	 */
+	protected function getCookiePrefix() {
+		return 'Calumma_CollapsePanel_';
+	}
+
+	/**
+	 *
 	 * @return bool
 	 */
-	public function getPanelCollapseState() {
+	protected function getPanelCollapseState() {
 		$htmlId = $this->getHtmlId();
-		$states = $this->skintemplate->getSkin()->getConfig()->get(
-			'BlueSpiceCalummaPanelCollapseState'
-		);
+		$cookiePrefix = $this->getCookiePrefix();
 
-		if ( array_key_exists( $htmlId, $states ) &&
-			( $states[$htmlId] === true || $states[$htmlId] === 1 ) ) {
-				return true;
+		$request = $this->skintemplate->getSkin()->getRequest();
+		$cookie = $request->getCookie( $cookiePrefix . $htmlId );
+
+		if ( $cookie === 'false' ) {
+			return false;
+		} elseif ( $cookie === 'true' ) {
+			return true;
+		} else {
+			$states = $this->skintemplate->getSkin()->getConfig()->get(
+				'BlueSpiceCalummaPanelCollapseState'
+			);
+
+			if ( array_key_exists( $htmlId, $states ) &&
+				( $states[$htmlId] === true || $states[$htmlId] === 1 ) ) {
+					return true;
+			}
+
+			return false;
 		}
-		return false;
 	}
 }
