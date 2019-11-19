@@ -17,7 +17,7 @@ class Setup {
 		// force overwrite of the custom header registry even when the skin is
 		// loaded before the BlueSpiceCustomMenu extension. ERM:16808
 		$GLOBALS[ 'bsgExtensionAttributeRegistryOverrides' ]["BlueSpiceCustomMenuRegistry"] = [
-			"set" => [
+			"merge" => [
 				"header" => "\\BlueSpice\\Calumma\\CustomMenu\\Header::getInstance"
 			]
 		];
