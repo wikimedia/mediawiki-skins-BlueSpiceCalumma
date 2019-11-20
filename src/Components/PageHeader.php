@@ -5,7 +5,6 @@ namespace BlueSpice\Calumma\Components;
 use Html;
 use Title;
 use Sanitizer;
-use MediaWiki\MediaWikiServices;
 use BlueSpice\SkinData;
 use BlueSpice\RendererFactory;
 use BlueSpice\Renderer\Params;
@@ -126,7 +125,7 @@ class PageHeader extends TemplateComponent {
 			$renderer = LastEdit::factory(
 				'pageheader-lastedit',
 				Services::getInstance(),
-				MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
+				Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
 				new Params( parent::getTemplateArgs() )
 			);
 		}
@@ -253,7 +252,7 @@ class PageHeader extends TemplateComponent {
 			$renderer = Category::factory(
 				'pageheader-category',
 				Services::getInstance(),
-				MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
+				Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
 				new Params( $args )
 			);
 		}
