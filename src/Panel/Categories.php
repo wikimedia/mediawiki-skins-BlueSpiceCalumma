@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Calumma\Panel;
 
-use MediaWiki\MediaWikiServices;
+use BlueSpice\Services;
 use Skins\Chameleon\IdRegistry;
 
 class Categories extends BasePanel {
@@ -33,7 +33,7 @@ class Categories extends BasePanel {
 			return;
 		}
 
-		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
+		$linkRenderer = Services::getInstance()->getLinkRenderer();
 		$categoryNames = $this->skintemplate->getSkin()->getOutput()->getCategories( 'normal' );
 		$categoryLinks = [];
 		foreach ( $categoryNames as $categoryName ) {

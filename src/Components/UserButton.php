@@ -1,6 +1,7 @@
 <?php
 namespace BlueSpice\Calumma\Components;
 
+use BlueSpice\Services;
 use BlueSpice\Calumma\SkinDataFieldDefinition as SDFD;
 use BlueSpice\DynamicFileDispatcher\UrlBuilder;
 use BlueSpice\DynamicFileDispatcher\Params;
@@ -37,8 +38,9 @@ class UserButton extends TemplateComponent {
 	 */
 	protected function getUserButton() {
 		$user = $this->getSkin()->getUser();
-		$imageUrlBuilder = \MediaWiki\MediaWikiServices::getInstance()
-			->getService( 'BSDynamicFileDispatcherUrlBuilder' );
+		$imageUrlBuilder = Services::getInstance()->getService(
+			'BSDynamicFileDispatcherUrlBuilder'
+		);
 		$imageUrlBuilder instanceof UrlBuilder;
 
 		$values = [];
