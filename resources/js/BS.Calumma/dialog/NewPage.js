@@ -2,18 +2,22 @@ Ext.define( 'BS.Calumma.dialog.NewPage', {
 	extend: 'MWExt.Dialog',
 	requires: [ 'BS.form.field.TitleCombo' ],
 	title: mw.message( 'bs-action-new-page-title' ).plain(),
+	closeAction: 'destroy',
 
 	namespace: '',
+	currentInputValue: '',
 
 	makeItems: function() {
 		var me = this;
 		this.cbPageName = Ext.create( 'BS.form.field.TitleCombo', {
+			id: this.getId() + '-pagename',
 			fieldLabel: mw.message('bs-action-new-page-text').plain(),
 			enableKeyEvents: true,
 			value: this.namespace,
 			listeners: {
 				focusleave: function ( comboBox ) {
-					me.cbPageName.select( document.getElementById( me.cbPageName.id + '-inputEl' ).value );
+					me.currentInputValue = document.getElementById( me.cbPageName.id + '-inputEl' ).value;
+					me.cbPageName.select( me.currentInputValue );
 				}
 			}
 		} );
@@ -22,15 +26,20 @@ Ext.define( 'BS.Calumma.dialog.NewPage', {
 			this.cbPageName
 		];
 	},
+
 	onPageNameKeypress: function ( combo, e, eOpts ) {
+		this.currentInputValue = document.getElementById( this.cbPageName.id + '-inputEl' ).value;
 		if ( e.charCode === 13 ) {
-			this.cbPageName.select( document.getElementById( this.cbPageName.id + '-inputEl' ).value );
+			this.cbPageName.select( this.currentInputValue );
 			this.onBtnOKClick();
 		}
 	},
+
 	getData: function () {
-		return this.cbPageName.getRawValue();
+		debugger;
+		return this.currentInputValue;
 	},
+
 	show: function() {
 		this.callParent(arguments);
 		this.cbPageName.focus();
