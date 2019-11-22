@@ -146,14 +146,14 @@ class BreadCrumb extends Renderer {
 
 		// e.g. "Special:MovePage/Help:Some/Page/With/Subpage"
 		$titleParts = explode( '/', $title->getPrefixedText(), 2 );
-		if ( isset( $titleParts[1] ) ) {
+		if ( !empty( $titleParts[1] ) ) {
 			// e.g. "Help:Some/Page/With/Subpage"
 			$newTitle = Title::newFromText( $titleParts[1] );
 		}
 
 		// e.g. Special:Browse/:Main-5FPage
 		// TODO: This should be in `BlueSpiceSMWConnector`
-		if ( class_exists( 'SMW\Encoder' ) ) {
+		if ( $newTitle && class_exists( 'SMW\Encoder' ) ) {
 			$newTitle = Title::newFromText(
 				\SMW\Encoder::decode( $newTitle->getPrefixedText() )
 			);
