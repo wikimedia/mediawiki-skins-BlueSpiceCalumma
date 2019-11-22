@@ -14,6 +14,7 @@
 					siteNamespace = mw.config.get( 'wgCanonicalNamespace' ) + ':';
 				}
 				var dlg = Ext.create( 'BS.Calumma.dialog.NewPage', {
+					id: "bs-calumma-featured-action-dialog-newpage",
 					namespace: siteNamespace
 				} );
 
@@ -35,6 +36,7 @@
 			Ext.onReady( function () {
 				var currentPageName = mw.config.get( 'wgPageName' );
 				dlg = Ext.create( 'BS.Calumma.dialog.NewSubPage', {
+					id: "bs-calumma-featured-action-dialog-newsubpage",
 					basePage: currentPageName
 				} );
 
