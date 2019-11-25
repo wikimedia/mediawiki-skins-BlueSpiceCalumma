@@ -138,7 +138,7 @@ class GlobalActions extends BasePanel {
 
 		if ( $cookie === 'false' ) {
 			return false;
-		} else if ( $cookie === 'true' ) {
+		} elseif ( $cookie === 'true' ) {
 			return true;
 		} else {
 			$states = $this->skintemplate->getSkin()->getConfig()->get(
