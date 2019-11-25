@@ -130,7 +130,7 @@ class GlobalActions extends BasePanel {
 	 *
 	 * @return bool
 	 */
-	protected function getPanelCollapseState() {
+	public function getPanelCollapseState() {
 		$cookiePrefix = $this->getCookiePrefix();
 		$cookieName = $cookiePrefix . 'collapse-' . $this->sectionId;
 		$request = $this->skintemplate->getSkin()->getRequest();
