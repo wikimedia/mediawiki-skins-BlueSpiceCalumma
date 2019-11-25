@@ -100,7 +100,7 @@ abstract class BasePanel implements IPanel {
 	 *
 	 * @return bool
 	 */
-	protected function getPanelCollapseState() {
+	public function getPanelCollapseState() {
 		$htmlId = $this->getHtmlId();
 		$cookiePrefix = $this->getCookiePrefix();
 
