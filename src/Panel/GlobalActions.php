@@ -131,25 +131,10 @@ class GlobalActions extends BasePanel {
 	 * @return bool
 	 */
 	public function getPanelCollapseState() {
-		$cookiePrefix = $this->getCookiePrefix();
-		$cookieName = $cookiePrefix . 'collapse-' . $this->sectionId;
-		$request = $this->skintemplate->getSkin()->getRequest();
-		$cookie = $request->getCookie( $cookieName );
-
-		if ( $cookie === 'false' ) {
+		if ( $this->sectionId === 'bs-sitenav-globalactions-section-globalactions' ) {
 			return false;
-		} elseif ( $cookie === 'true' ) {
-			return true;
-		} else {
-			$states = $this->skintemplate->getSkin()->getConfig()->get(
-				'BlueSpiceCalummaPanelCollapseState'
-			);
-
-			if ( array_key_exists( $this->sectionId, $states ) &&
-				( $states[$this->sectionId] === true || $states[$this->sectionId] === 1 ) ) {
-					return true;
-			}
-
+		}
+		if ( $this->sectionId === 'bs-sitenav-globalactions-section-management' ) {
 			return false;
 		}
 	}

@@ -1,19 +1,4 @@
 (function( mw, $, d, bs, undefined ) {
-	$(d).on( 'click', '.bs-panel a.title, .panel a.title', function() {
-		var $title = $(this);
-		var $panel = $title.parent();
-		var collapeState = false;
-		var collapsingPanel = $title.attr( 'aria-controls' );
-
-		if ( $title.hasClass( 'collapsed' ) ) {
-			collapeState = true;
-		}
-		mw.cookie.set( 'Calumma_CollapsePanel_'+ collapsingPanel, collapeState );
-	} );
-})( mediaWiki, jQuery, document, blueSpice );
-
-
-(function( mw, $, d, bs, undefined ) {
 	$(d).on( 'click', '.bs-panel a.title', function() {
 		var $title = $(this);
 		var $panel = $title.parents( '.bs-panel' );
