@@ -14,6 +14,8 @@ Ext.define( 'BS.Calumma.dialog.NewPage', {
 			fieldLabel: mw.message('bs-action-new-page-text').plain(),
 			enableKeyEvents: true,
 			value: this.namespace,
+			// Internet explorer has trouble asserting value is on the allowed list
+			forceSelection: Ext.isIE ? false : true,
 			listeners: {
 				focusleave: function ( comboBox ) {
 					me.currentInputValue = document.getElementById( me.cbPageName.id + '-inputEl' ).value;
@@ -36,7 +38,6 @@ Ext.define( 'BS.Calumma.dialog.NewPage', {
 	},
 
 	getData: function () {
-		debugger;
 		return this.currentInputValue;
 	},
 
