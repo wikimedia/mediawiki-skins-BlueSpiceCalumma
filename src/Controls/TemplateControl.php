@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Calumma\Controls;
 
+use QuickTemplate;
 use BlueSpice\Calumma\IControl;
 use TemplateParser;
 
@@ -9,7 +10,7 @@ abstract class TemplateControl implements IControl {
 
 	/**
 	 *
-	 * @var \SkinTemplate
+	 * @var QuickTemplate
 	 */
 	protected $skintemplate = null;
 
@@ -21,10 +22,10 @@ abstract class TemplateControl implements IControl {
 
 	/**
 	 *
-	 * @param \SkinTemplate $skintemplate
+	 * @param QuickTemplate $skintemplate
 	 * @param array $data
 	 */
-	public function __construct( $skintemplate, $data ) {
+	public function __construct( QuickTemplate $skintemplate, $data ) {
 		$this->skintemplate = $skintemplate;
 		$this->templateData = $data;
 	}

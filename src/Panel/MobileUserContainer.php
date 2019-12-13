@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Calumma\Panel;
 
+use QuickTemplate;
 use BlueSpice\Services;
 use BlueSpice\Calumma\SkinDataFieldDefinition as SDFD;
 use BlueSpice\DynamicFileDispatcher\UserProfileImage;
@@ -11,15 +12,15 @@ class MobileUserContainer extends BasePanel {
 
 	/**
 	 *
-	 * @var \SkinTemplate
+	 * @var QuickTemplate
 	 */
 	protected $skintemplate = null;
 
 	/**
 	 *
-	 * @param \SkinTemplate $skintemplate
+	 * @param \QuickTemplate $skintemplate
 	 */
-	public function __construct( $skintemplate ) {
+	public function __construct( QuickTemplate $skintemplate ) {
 		$this->skintemplate = $skintemplate;
 	}
 

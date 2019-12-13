@@ -7,11 +7,12 @@ use HtmlArmor;
 use Title;
 use Config;
 use IContextSource;
+use QuickTemplate;
 use MediaWiki\Linker\LinkRenderer;
-use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
+use BlueSpice\Calumma\Renderer\PageHeader;
 
-class Category extends Renderer {
+class Category extends PageHeader {
 	public const PARAM_CATEGORY_NAMES = 'categories';
 
 	/**
@@ -21,11 +22,12 @@ class Category extends Renderer {
 	 * @param LinkRenderer|null $linkRenderer
 	 * @param IContextSource|null $context
 	 * @param string $name | ''
+	 * @param QuickTemplate|null $skinTemplate
 	 */
 	protected function __construct( Config $config, Params $params,
 		LinkRenderer $linkRenderer = null, IContextSource $context = null,
-		$name = '' ) {
-		parent::__construct( $config, $params, $linkRenderer, $context, $name );
+		$name = '', QuickTemplate $skinTemplate = null ) {
+		parent::__construct( $config, $params, $linkRenderer, $context, $name, $skinTemplate );
 
 		$this->args[static::PARAM_CATEGORY_NAMES] = $params->get(
 			static::PARAM_CATEGORY_NAMES,

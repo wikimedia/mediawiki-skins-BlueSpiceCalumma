@@ -1,6 +1,7 @@
 <?php
 namespace BlueSpice\Calumma\DataProvider;
 
+use QuickTemplate;
 use BlueSpice\SkinData;
 use BlueSpice\Calumma\SkinDataFieldDefinition as SDFD;
 
@@ -8,11 +9,11 @@ class FeaturedActionsData {
 
 	/**
 	 * @param \Skin $skin
-	 * @param \SkinTemplate &$skintemplate
+	 * @param QuickTemplate $skintemplate
 	 * @param array &$data
 	 * @throws \MWException
 	 */
-	public static function populate( $skin, &$skintemplate, &$data ) {
+	public static function populate( $skin, QuickTemplate $skintemplate, &$data ) {
 		self::initFeaturedActions( $skin, $skintemplate, $data );
 		self::populateActionsEdit( $skin, $skintemplate, $data );
 		self::populateActionsNew( $skin, $skintemplate, $data );
@@ -21,10 +22,10 @@ class FeaturedActionsData {
 	/**
 	 *
 	 * @param \Skin $skin
-	 * @param \SkinTemplate &$skintemplate
+	 * @param QuickTemplate $skintemplate
 	 * @param array &$data
 	 */
-	public static function initFeaturedActions( $skin, &$skintemplate, &$data ) {
+	public static function initFeaturedActions( $skin, QuickTemplate $skintemplate, &$data ) {
 		if ( !array_key_exists( 'edit', $data[SkinData::FEATURED_ACTIONS] ) ) {
 			$data[SkinData::FEATURED_ACTIONS] += [
 				'edit' => []
@@ -40,10 +41,10 @@ class FeaturedActionsData {
 	/**
 	 *
 	 * @param \Skin $skin
-	 * @param \SkinTemplate &$skintemplate
+	 * @param QuickTemplate $skintemplate
 	 * @param array &$data
 	 */
-	public static function populateActionsEdit( $skin, &$skintemplate, &$data ) {
+	public static function populateActionsEdit( $skin, QuickTemplate $skintemplate, &$data ) {
 		$curTitle = $skin->getTitle();
 
 		$newSection = [
@@ -106,11 +107,11 @@ class FeaturedActionsData {
 
 	/**
 	 * @param \Skin $skin
-	 * @param \SkinTemplate &$skintemplate
+	 * @param QuickTemplate $skintemplate
 	 * @param array &$data
 	 * @throws \MWException
 	 */
-	public static function populateActionsNew( $skin, &$skintemplate, &$data ) {
+	public static function populateActionsNew( $skin, QuickTemplate $skintemplate, &$data ) {
 		$curTitle = $skin->getTitle();
 		$curUser = $skin->getUser();
 

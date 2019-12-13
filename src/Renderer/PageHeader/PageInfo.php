@@ -2,18 +2,21 @@
 
 namespace BlueSpice\Calumma\Renderer\PageHeader;
 
+use Exception;
 use Config;
 use IContextSource;
 use RequestContext;
 use Html;
+use QuickTemplate;
 use MediaWiki\Linker\LinkRenderer;
 use BlueSpice\Services;
 use BlueSpice\PageInfoElementFactory;
 use BlueSpice\Renderer\Params;
 use BlueSpice\Renderer;
 use BlueSpice\Calumma\PageInfoSentenceBuilder;
+use BlueSpice\Calumma\Renderer\PageHeader;
 
-class PageInfo extends Renderer {
+class PageInfo extends PageHeader {
 
 	/**
 	 *
@@ -34,14 +37,15 @@ class PageInfo extends Renderer {
 	 * @param LinkRenderer|null $linkRenderer
 	 * @param IContextSource|null $context
 	 * @param string $name | ''
+	 * @param QuickTemplate|null $skinTemplate
 	 * @param PageInfoElementFactory|null $factory
 	 * @param PageInfoSentenceBuilder|null $builder
 	 */
 	protected function __construct( Config $config, Params $params,
 		LinkRenderer $linkRenderer = null, IContextSource $context = null,
-		$name = '', PageInfoElementFactory $factory = null,
+		$name = '', QuickTemplate $skinTemplate = null, PageInfoElementFactory $factory = null,
 		PageInfoSentenceBuilder $builder = null ) {
-		parent::__construct( $config, $params, $linkRenderer, $context, $name );
+		parent::__construct( $config, $params, $linkRenderer, $context, $name, $skinTemplate );
 
 		$this->factory = $factory;
 		$this->builder = $builder;
@@ -55,13 +59,15 @@ class PageInfo extends Renderer {
 	 * @param Params $params
 	 * @param IContextSource|null $context
 	 * @param LinkRenderer|null $linkRenderer
+	 * @param QuickTemplate|null $skinTemplate
 	 * @param PageInfoElementFactory|null $factory
 	 * @param PageInfoSentenceBuilder|null $builder
 	 * @return Renderer
 	 */
 	public static function factory( $name, Services $services, Config $config, Params $params,
 		IContextSource $context = null, LinkRenderer $linkRenderer = null,
-		PageInfoElementFactory $factory = null, PageInfoSentenceBuilder $builder = null ) {
+		QuickTemplate $skinTemplate = null, PageInfoElementFactory $factory = null,
+		PageInfoSentenceBuilder $builder = null ) {
 		if ( !$context ) {
 			$context = $params->get(
 				static::PARAM_CONTEXT,
@@ -82,10 +88,25 @@ class PageInfo extends Renderer {
 				$context
 			);
 		}
-		return new static(
-				$config, $params, $linkRenderer,
-				$context, $name, $factory, $builder
+		if ( !$skinTemplate ) {
+			$skinTemplate = $params->get( static::SKIN_TEMPLATE, null );
+		}
+		if ( !$skinTemplate ) {
+			throw new Exception(
+				'Param "' . static::SKIN_TEMPLATE . '" must be an instance of '
+				. QuickTemplate::class
 			);
+		}
+		return new static(
+			$config,
+			$params,
+			$linkRenderer,
+			$context,
+			$name,
+			$skinTemplate,
+			$factory,
+			$builder
+		);
 	}
 
 	/**
