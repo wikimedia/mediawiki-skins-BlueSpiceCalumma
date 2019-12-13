@@ -1,6 +1,7 @@
 <?php
 namespace BlueSpice\Calumma\DataProvider;
 
+use QuickTemplate;
 use BlueSpice\Calumma\SkinDataFieldDefinition;
 use BlueSpice\SkinData;
 
@@ -9,10 +10,10 @@ class MobileMoreMenuData {
 	/**
 	 *
 	 * @param Skin $skin
-	 * @param SkinTemplate &$skintemplate
+	 * @param QuickTemplate $skintemplate
 	 * @param array &$data
 	 */
-	public static function populate( $skin, &$skintemplate, &$data ) {
+	public static function populate( $skin, QuickTemplate $skintemplate, &$data ) {
 		foreach ( $data[SkinData::FEATURED_ACTIONS]['edit'] as $item ) {
 			$class = '';
 			if ( array_key_exists( 'classes', $item ) ) {

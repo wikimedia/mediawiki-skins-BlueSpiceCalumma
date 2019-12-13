@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Calumma\Panel;
 
+use QuickTemplate;
 use BlueSpice\Calumma\IPanel;
 use Skins\Chameleon\IdRegistry;
 
@@ -9,15 +10,15 @@ abstract class BasePanel implements IPanel {
 
 	/**
 	 *
-	 * @var \SkinTemplate
+	 * @var QuickTemplate
 	 */
 	protected $skintemplate = null;
 
 	/**
 	 *
-	 * @param \SkinTemplate $skintemplate
+	 * @param QuickTemplate $skintemplate
 	 */
-	public function __construct( $skintemplate ) {
+	public function __construct( QuickTemplate $skintemplate ) {
 		$this->skintemplate = $skintemplate;
 	}
 

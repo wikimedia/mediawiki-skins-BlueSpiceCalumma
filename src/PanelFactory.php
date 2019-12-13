@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Calumma;
 
+use QuickTemplate;
 use BlueSpice\Calumma\Panel\LinkList;
 use BlueSpice\Calumma\Panel\PlainHTML;
 use BlueSpice\Calumma\Panel\Form;
@@ -16,7 +17,7 @@ class PanelFactory {
 
 	/**
 	 *
-	 * @var \SkinTemplate
+	 * @var QuickTemplate
 	 */
 	protected $sktemplate = null;
 
@@ -41,9 +42,9 @@ class PanelFactory {
 	/**
 	 *
 	 * @param array $panelDefs
-	 * @param \SkinTemplate $sktemplate
+	 * @param QuickTemplate $sktemplate
 	 */
-	public function __construct( $panelDefs, $sktemplate ) {
+	public function __construct( $panelDefs, QuickTemplate $sktemplate ) {
 		$this->panelDefinitions = $panelDefs;
 		$this->sktemplate = $sktemplate;
 	}

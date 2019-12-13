@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Calumma\Panel;
 
+use QuickTemplate;
 use BlueSpice\Calumma\Components\SimpleLinkListGroup;
 use BlueSpice\Calumma\Components\CollapsibleGroup;
 
@@ -9,15 +10,15 @@ class MediaWikiSidebar extends BasePanel {
 
 	/**
 	 *
-	 * @var \SkinTemplate
+	 * @var QuickTemplate
 	 */
 	protected $skintemplate = null;
 
 	/**
 	 *
-	 * @param SkinTemplate $skintemplate
+	 * @param QuickTemplate $skintemplate
 	 */
-	public function __construct( $skintemplate ) {
+	public function __construct( QuickTemplate $skintemplate ) {
 		$this->skintemplate = $skintemplate;
 	}
 
@@ -186,10 +187,10 @@ class MediaWikiSidebar extends BasePanel {
 
 	/**
 	 *
-	 * @param SkinTemplate $skintemplate
+	 * @param QuickTemplate $skintemplate
 	 * @return string
 	 */
-	protected function addMobileFooterLinks( $skintemplate ) {
+	protected function addMobileFooterLinks( QuickTemplate $skintemplate ) {
 		$html = \Html::openElement(
 					'div',
 					[
@@ -227,10 +228,10 @@ class MediaWikiSidebar extends BasePanel {
 
 	/**
 	 *
-	 * @param SkinTemplate $skintemplate
+	 * @param QuickTemplate $skintemplate
 	 * @return string
 	 */
-	protected function addEditLink( $skintemplate ) {
+	protected function addEditLink( QuickTemplate $skintemplate ) {
 		$html = '';
 
 		if ( $skintemplate->getSkin()->getUser()->isAllowed( 'editinterface' ) ) {

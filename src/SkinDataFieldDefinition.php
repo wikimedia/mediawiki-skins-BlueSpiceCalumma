@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Calumma;
 
+use QuickTemplate;
 use BlueSpice\SkinData;
 
 use BlueSpice\Calumma\Panel\SiteNavigation;
@@ -21,7 +22,7 @@ class SkinDataFieldDefinition {
 
 	/**
 	 *
-	 * @var \SkinTemplate
+	 * @var QuickTemplate
 	 */
 	protected $skintemplate = null;
 
@@ -32,10 +33,10 @@ class SkinDataFieldDefinition {
 	protected $data = [];
 
 	/**
-	 * @param \SkinTemplate $skintemplate
+	 * @param QuickTemplate $skintemplate
 	 * @param array &$data
 	 */
-	public function __construct( $skintemplate, &$data ) {
+	public function __construct( QuickTemplate $skintemplate, &$data ) {
 		$this->skintemplate = $skintemplate;
 		$this->data =& $data;
 	}
@@ -139,8 +140,8 @@ class SkinDataFieldDefinition {
 		$this->makeGlobalActionsLinkAllTemplates( $this->skintemplate );
 
 		/* populate navigation elements*/
-		FeaturedActionsData::populate( $this->getSkin(), $this->skinktemplate, $this->data );
-		MobileMoreMenuData::populate( $this->getSkin(), $this->skinktemplate, $this->data );
+		FeaturedActionsData::populate( $this->getSkin(), $this->skintemplate, $this->data );
+		MobileMoreMenuData::populate( $this->getSkin(), $this->skintemplate, $this->data );
 	}
 
 	/**
@@ -202,11 +203,11 @@ class SkinDataFieldDefinition {
 	/**
 	 *
 	 * @param \Skin $skin
-	 * @param \SkinTemplate &$skintemplate
+	 * @param QuickTemplate $skintemplate
 	 * @param array &$data
 	 * @return bool
 	 */
-	protected function groupContentNavigation( $skin, &$skintemplate, &$data ) {
+	protected function groupContentNavigation( $skin, QuickTemplate $skintemplate, &$data ) {
 		$group = $data[static::CONTENT_NAVIGATION_GROUP];
 		$linklist = [];
 		$items = [];

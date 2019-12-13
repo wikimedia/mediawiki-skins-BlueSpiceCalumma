@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Calumma\Panel;
 
+use QuickTemplate;
 use BlueSpice\SkinData;
 use BlueSpice\Calumma\Components\SimpleLinkListGroup;
 use BlueSpice\Calumma\Components\CollapsibleGroup;
@@ -10,7 +11,7 @@ class GlobalActions extends BasePanel {
 
 	/**
 	 *
-	 * @var \SkinTemplate
+	 * @var QuickTemplate
 	 */
 	protected $skintemplate = null;
 
@@ -22,9 +23,9 @@ class GlobalActions extends BasePanel {
 
 	/**
 	 *
-	 * @param SkinTemplate $skintemplate
+	 * @param QuickTemplate $skintemplate
 	 */
-	public function __construct( $skintemplate ) {
+	public function __construct( QuickTemplate $skintemplate ) {
 		$this->skintemplate = $skintemplate;
 	}
 
