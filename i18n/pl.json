@@ -3,7 +3,8 @@
 		"authors": [
 			"Chrumps",
 			"Railfail536",
-			"Rail"
+			"Rail",
+			"WaldiSt"
 		]
 	},
 	"bluespicecalumma-desc": "Skórka BlueSpice",
@@ -11,6 +12,8 @@
 	"prefs-bs-calumma": "Ustawienia skórki BlueSpice Calumma",
 	"bs-calumma-pref-toggle-navigaiton-main": "Automatycznie ukryj główne menu",
 	"bs-calumma-pref-toggle-sitetools-main": "Automatycznie ukryj menu narzędzi",
+	"bs-action-edit-view-title": "Wyjdź z edycji",
+	"bs-action-edit-view-text": "Wyjdź z edycji",
 	"bs-action-edit-edit-title": "Edytuj źródło",
 	"bs-action-edit-ve-edit-title": "Edytuj",
 	"bs-action-new-section-text": "Nowa sekcja",
