@@ -9,6 +9,7 @@ use BlueSpice\SkinData;
 use BlueSpice\RendererFactory;
 use BlueSpice\Renderer\Params;
 use BlueSpice\Renderer\NullRenderer;
+use BlueSpice\Calumma\Renderer\PageHeader as PageHeaderRenderer;
 use BlueSpice\Calumma\Renderer\PageHeader\LastEdit;
 use BlueSpice\Calumma\Renderer\PageHeader\Category;
 use BlueSpice\Calumma\TemplateComponent;
@@ -92,9 +93,13 @@ class PageHeader extends TemplateComponent {
 	 * @return string
 	 */
 	protected function getSiteNamespaces() {
+		$params = array_merge(
+			parent::getTemplateArgs(),
+			[ PageHeaderRenderer::SKIN_TEMPLATE => $this->getSkinTemplate() ]
+		);
 		return $this->getRendererFactory()->get(
 			'pageheader-context',
-			new Params( parent::getTemplateArgs() ),
+			new Params( $params ),
 			$this->getSkin()->getContext()
 		)->render();
 	}
@@ -104,9 +109,13 @@ class PageHeader extends TemplateComponent {
 	 * @return string
 	 */
 	protected function getPageInfoElement() {
+		$params = array_merge(
+			parent::getTemplateArgs(),
+			[ PageHeaderRenderer::SKIN_TEMPLATE => $this->getSkinTemplate() ]
+		);
 		return $this->getRendererFactory()->get(
 			'pageheader-pageinfo',
-			new Params( parent::getTemplateArgs() ),
+			new Params( $params ),
 			$this->getSkin()->getContext()
 		)->render();
 	}
@@ -115,9 +124,13 @@ class PageHeader extends TemplateComponent {
 	 * @return string
 	 */
 	protected function getLastEdit() {
+		$params = array_merge(
+			parent::getTemplateArgs(),
+			[ PageHeaderRenderer::SKIN_TEMPLATE => $this->getSkinTemplate() ]
+		);
 		$renderer = $this->getRendererFactory()->get(
 			'pageheader-lastedit',
-			new Params( parent::getTemplateArgs() ),
+			new Params( $params ),
 			$this->getSkin()->getContext()
 		);
 
@@ -126,7 +139,7 @@ class PageHeader extends TemplateComponent {
 				'pageheader-lastedit',
 				Services::getInstance(),
 				Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
-				new Params( parent::getTemplateArgs() )
+				new Params( $params )
 			);
 		}
 
@@ -141,6 +154,10 @@ class PageHeader extends TemplateComponent {
 		$params = parent::getTemplateArgs();
 		$params[SkinData::FEATURED_ACTIONS] = $this->getSkinTemplate()->get(
 			SkinData::FEATURED_ACTIONS
+		);
+		$params = array_merge(
+			$params,
+			[ PageHeaderRenderer::SKIN_TEMPLATE => $this->getSkinTemplate() ]
 		);
 		return $this->getRendererFactory()->get(
 			'pageheader-editbutton',
@@ -224,9 +241,13 @@ class PageHeader extends TemplateComponent {
 	 * @return string
 	 */
 	protected function getBreadCrumbs() {
+		$params = array_merge(
+			parent::getTemplateArgs(),
+			[ PageHeaderRenderer::SKIN_TEMPLATE => $this->getSkinTemplate() ]
+		);
 		return $this->getRendererFactory()->get(
 			'pageheader-breadcrumb',
-			new Params( parent::getTemplateArgs() ),
+			new Params( $params ),
 			$this->getSkin()->getContext()
 		)->render();
 	}
@@ -243,6 +264,10 @@ class PageHeader extends TemplateComponent {
 		$args = parent::getTemplateArgs();
 		$args[Category::PARAM_CATEGORY_NAMES] = $this->getSkin()->getOutput()
 			->getCategories( 'normal' );
+		$args = array_merge(
+			$args,
+			[ PageHeaderRenderer::SKIN_TEMPLATE => $this->getSkinTemplate() ]
+		);
 		$renderer = $this->getRendererFactory()->get(
 			'pageheader-category',
 			new Params( $args ),

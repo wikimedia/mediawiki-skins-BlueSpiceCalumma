@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Calumma\Panel;
 
+use QuickTemplate;
 use BlueSpice\Calumma\IPanel;
 use BlueSpice\Calumma\Renderer\Panel;
 use BlueSpice\Services;
@@ -12,7 +13,7 @@ abstract class PanelContainer extends BasePanel {
 
 	/**
 	 *
-	 * @var \SkinTemplate
+	 * @var QuickTemplate
 	 */
 	protected $skintemplate = null;
 
@@ -30,9 +31,9 @@ abstract class PanelContainer extends BasePanel {
 
 	/**
 	 *
-	 * @param \SkinTemplate $skintemplate
+	 * @param QuickTemplate $skintemplate
 	 */
-	public function __construct( $skintemplate ) {
+	public function __construct( QuickTemplate $skintemplate ) {
 		$this->skintemplate = $skintemplate;
 		$this->rendererFactory =
 			Services::getInstance()->getBSRendererFactory();

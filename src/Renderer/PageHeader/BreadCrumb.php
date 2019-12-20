@@ -4,14 +4,14 @@ namespace BlueSpice\Calumma\Renderer\PageHeader;
 
 use Html;
 use Title;
-use BlueSpice\Renderer;
 use BlueSpice\Calumma\Controls\SplitButtonDropdown;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Calumma\IBreadcrumbRootNode;
+use BlueSpice\Calumma\Renderer\PageHeader;
 use Exception;
 use WebRequest;
 
-class BreadCrumb extends Renderer {
+class BreadCrumb extends PageHeader {
 
 	/**
 	 * @return string
@@ -97,7 +97,7 @@ class BreadCrumb extends Renderer {
 				$classes[] = 'new';
 			}
 
-			$splitButtons[] = new SplitButtonDropdown( null, [
+			$splitButtons[] = new SplitButtonDropdown( $this->skinTemplate, [
 				'classes' => $classes,
 				'href' => $part->getLinkURL(),
 				'text' => $part->getSubpageText(),

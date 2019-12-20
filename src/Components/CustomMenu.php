@@ -1,6 +1,7 @@
 <?php
 namespace BlueSpice\Calumma\Components;
 
+use QuickTemplate;
 use BlueSpice\Services;
 
 class CustomMenu extends \Skins\Chameleon\Components\Structure {
@@ -61,11 +62,11 @@ class CustomMenu extends \Skins\Chameleon\Components\Structure {
 
 	/**
 	 *
-	 * @param SkinTemplate $skintemplate
+	 * @param QuickTemplate $skintemplate
 	 * @param string $menu
 	 * @return string
 	 */
-	protected function addEditLink( $skintemplate, $menu ) {
+	protected function addEditLink( QuickTemplate $skintemplate, $menu ) {
 		$html = '';
 		$factory = Services::getInstance()->getService( 'BSCustomMenuFactory' );
 

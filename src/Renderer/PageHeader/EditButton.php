@@ -6,12 +6,13 @@ use Config;
 use IContextSource;
 use Html;
 use Title;
+use QuickTemplate;
 use MediaWiki\Linker\LinkRenderer;
 use BlueSpice\SkinData;
 use BlueSpice\Renderer\Params;
-use BlueSpice\Renderer;
+use BlueSpice\Calumma\Renderer\PageHeader;
 
-class EditButton extends Renderer {
+class EditButton extends PageHeader {
 	public const FEATURED_ACTIONS = SkinData::FEATURED_ACTIONS;
 
 	/**
@@ -21,11 +22,12 @@ class EditButton extends Renderer {
 	 * @param LinkRenderer|null $linkRenderer
 	 * @param IContextSource|null $context
 	 * @param string $name | ''
+	 * @param QuickTemplate|null $skinTemplate
 	 */
 	protected function __construct( Config $config, Params $params,
 		LinkRenderer $linkRenderer = null, IContextSource $context = null,
-		$name = '' ) {
-		parent::__construct( $config, $params, $linkRenderer, $context, $name );
+		$name = '', QuickTemplate $skinTemplate = null ) {
+		parent::__construct( $config, $params, $linkRenderer, $context, $name, $skinTemplate );
 
 		$this->args[static::FEATURED_ACTIONS] = $params->get(
 			static::FEATURED_ACTIONS,

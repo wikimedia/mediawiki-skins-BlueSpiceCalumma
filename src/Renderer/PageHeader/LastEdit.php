@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Calumma\Renderer\PageHeader;
 
+use Exception;
 use Html;
 use Config;
 use HtmlArmor;
@@ -9,14 +10,16 @@ use WikiPage;
 use User;
 use IContextSource;
 use RequestContext;
+use QuickTemplate;
 use BlueSpice\Services;
 use BlueSpice\UtilityFactory;
 use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
 use MediaWiki\Linker\LinkRenderer;
 use Revision;
+use BlueSpice\Calumma\Renderer\PageHeader;
 
-class LastEdit extends Renderer {
+class LastEdit extends PageHeader {
 
 	/**
 	 *
@@ -31,12 +34,13 @@ class LastEdit extends Renderer {
 	 * @param LinkRenderer|null $linkRenderer
 	 * @param IContextSource|null $context
 	 * @param string $name
+	 * @param QuickTemplate|null $skinTemplate
 	 * @param UtilityFactory|null $util
 	 */
 	protected function __construct( Config $config, Params $params,
 		LinkRenderer $linkRenderer = null, IContextSource $context = null,
-		$name = '', UtilityFactory $util = null ) {
-		parent::__construct( $config, $params, $linkRenderer, $context, $name );
+		$name = '', QuickTemplate $skinTemplate = null, UtilityFactory $util = null ) {
+		parent::__construct( $config, $params, $linkRenderer, $context, $name, $skinTemplate );
 
 		$this->util = $util;
 	}
@@ -49,12 +53,13 @@ class LastEdit extends Renderer {
 	 * @param Params $params
 	 * @param IContextSource|null $context
 	 * @param LinkRenderer|null $linkRenderer
+	 * @param QuickTemplate|null $skinTemplate
 	 * @param UtilityFactory|null $util
 	 * @return Renderer
 	 */
 	public static function factory( $name, Services $services, Config $config, Params $params,
 		IContextSource $context = null, LinkRenderer $linkRenderer = null,
-		UtilityFactory $util = null ) {
+		QuickTemplate $skinTemplate = null, UtilityFactory $util = null ) {
 		if ( !$context ) {
 			$context = $params->get(
 				static::PARAM_CONTEXT,
@@ -70,8 +75,25 @@ class LastEdit extends Renderer {
 		if ( !$util ) {
 			$util = $services->getBSUtilityFactory();
 		}
+		if ( !$skinTemplate ) {
+			$skinTemplate = $params->get( static::SKIN_TEMPLATE, null );
+		}
+		if ( !$skinTemplate ) {
+			throw new Exception(
+				'Param "' . static::SKIN_TEMPLATE . '" must be an instance of '
+				. QuickTemplate::class
+			);
+		}
 
-		return new static( $config, $params, $linkRenderer, $context, $name, $util );
+		return new static(
+			$config,
+			$params,
+			$linkRenderer,
+			$context,
+			$name,
+			$skinTemplate,
+			$util
+		);
 	}
 
 	/**

@@ -2,14 +2,14 @@
 
 namespace BlueSpice\Calumma\Renderer\PageHeader;
 
-use BlueSpice\Renderer;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Calumma\AssocLinksCollector;
 use BlueSpice\Calumma\Controls\SplitButtonDropdown;
+use BlueSpice\Calumma\Renderer\PageHeader;
 use Message;
 use Html;
 
-class Context extends Renderer {
+class Context extends PageHeader {
 
 	protected $html = '';
 
@@ -35,7 +35,7 @@ class Context extends Renderer {
 			'class' => 'btn',
 			'isLabel' => !$this->getContext()->getTitle()->isTalkPage()
 		];
-		$splitButton = new SplitButtonDropdown( null, $data );
+		$splitButton = new SplitButtonDropdown( $this->skinTemplate, $data );
 
 		$this->html .= $splitButton->getHtml();
 	}
