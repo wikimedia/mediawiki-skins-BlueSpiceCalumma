@@ -1,31 +1,40 @@
 .bs-page-edit {
-	min-width: 15.625rem;
-	max-width: 50%;
+	max-width: 48%;
+	width: 100%;
 
 	& > ul {
+		width: 100%;
 		padding: 0;
 		margin: 0;
 		list-style-type: none;
-		display: inline-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
 
 		& > li {
-			height: max-content;
+			max-width: 100%;
+			line-height: 1.1em;
+			margin-right: 0.3125em;
+			margin-bottom: 0.625rem;
+
+			& > ul {
+				padding-left: 0;
+				display: inline-flex;
+			}
 		}
-
 	}
 
-	.bs-page-edit-elements {
-		display: inline-flex;
-		padding-left: 0;
-	}
-
-	.bs-page-edit-element-icon-col,
 	.bs-page-edit-element-text-col {
+		display: inline-block;
+		max-width: 97%;
+	}
+
+	.bs-page-edit-element-button-col {
 		display: inline-block;
 	}
 
 	.bs-page-last-edit {
-		line-height: 0.875rem;
+		line-height: 0.875em;
 		a {
 			color: @link-color;
 
@@ -39,9 +48,8 @@
 
 	.icon-info::before {
 		float: left;
-		padding-right: 0.3125rem;
+		padding-right: 0.3125em;
 		font-family: 'icomoon';
 		content: "\ea0c";
-		line-height: 1.1rem;
 	}
 }
