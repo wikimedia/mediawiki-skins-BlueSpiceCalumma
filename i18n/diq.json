@@ -80,5 +80,14 @@
 	"bs-edit-custom-menu-link-title": "Menuyi bıvurne",
 	"bs-edit-custom-menu-link-text": "Menuyi bıvurne",
 	"bs-calumma-toggle-button-tooltip": "Ake/Kip ke",
+	"bs-calumma-breadcrumbs-nstab-main": "Peli pêro",
+	"bs-calumma-breadcrumbs-pages": "Şımayê tiya derê",
+	"bs-calumma-pageinfosentence-item-separator": "u",
+	"bs-calumma-pageinfosentence-item-class-separator": "lakin",
+	"bs-calumma-full-screen-button-tooltip": "Tam ekran/modo normal",
+	"bs-calumma-page-last-edit-by-system-user": "Karberê sistemi",
+	"bs-calumma-assoclink-history-label": "Terix",
+	"bs-calumma-context-pagebutton-label": "Pele",
+	"bs-calumma-context-discussionbutton-label": "Werênayış",
 	"bs-calumma-search-button-label": "Cı geyre"
 }
