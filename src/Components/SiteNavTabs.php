@@ -2,11 +2,11 @@
 
 namespace BlueSpice\Calumma\Components;
 
+use BlueSpice\Calumma\IActiveStateProvider;
 use BlueSpice\Calumma\PanelFactory;
 use BlueSpice\Calumma\Structure\TabPanelStructure;
-use BlueSpice\Calumma\IActiveStateProvider;
-use Skins\Chameleon\IdRegistry;
 use BlueSpice\SkinData;
+use Skins\Chameleon\IdRegistry;
 
 class SiteNavTabs extends TabPanelStructure {
 

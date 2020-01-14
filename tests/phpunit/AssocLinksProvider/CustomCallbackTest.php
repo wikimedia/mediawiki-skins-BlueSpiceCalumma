@@ -2,11 +2,11 @@
 
 namespace BlueSpice\Calumma\Tests\AssocLinksProvider;
 
-use Exception;
-use PHPUnit\Framework\TestCase;
 use BlueSpice\Calumma\AssocLinksProvider\CustomCallback;
 use BlueSpice\Html\Descriptor\ILink;
+use Exception;
 use HashConfig;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @group BlueSpice

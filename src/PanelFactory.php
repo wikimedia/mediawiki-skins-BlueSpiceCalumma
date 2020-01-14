@@ -2,10 +2,10 @@
 
 namespace BlueSpice\Calumma;
 
-use QuickTemplate;
+use BlueSpice\Calumma\Panel\Form;
 use BlueSpice\Calumma\Panel\LinkList;
 use BlueSpice\Calumma\Panel\PlainHTML;
-use BlueSpice\Calumma\Panel\Form;
+use QuickTemplate;
 
 class PanelFactory {
 

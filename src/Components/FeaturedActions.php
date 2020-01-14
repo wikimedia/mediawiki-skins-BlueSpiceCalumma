@@ -2,9 +2,9 @@
 
 namespace BlueSpice\Calumma\Components;
 
-use Skins\Chameleon\Components\Component;
 use BlueSpice\Calumma\Controls\SplitButtonDropdown;
 use BlueSpice\SkinData;
+use Skins\Chameleon\Components\Component;
 
 class FeaturedActions extends Component {
 

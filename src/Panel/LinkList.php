@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Calumma\Panel;
 
-use BlueSpice\Calumma\SkinDataPanel;
 use BlueSpice\Calumma\Components\SimpleLinkListGroup;
+use BlueSpice\Calumma\SkinDataPanel;
 
 class LinkList extends SkinDataPanel {
 

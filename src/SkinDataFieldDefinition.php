@@ -2,16 +2,14 @@
 
 namespace BlueSpice\Calumma;
 
-use QuickTemplate;
-use BlueSpice\SkinData;
-
-use BlueSpice\Calumma\Panel\SiteNavigation;
-use BlueSpice\Calumma\Panel\GlobalActions;
-use BlueSpice\Calumma\Panel\QualityManagement;
-use BlueSpice\Calumma\Panel\PageTools;
-
 use BlueSpice\Calumma\DataProvider\FeaturedActionsData;
 use BlueSpice\Calumma\DataProvider\MobileMoreMenuData;
+use BlueSpice\Calumma\Panel\GlobalActions;
+use BlueSpice\Calumma\Panel\PageTools;
+use BlueSpice\Calumma\Panel\QualityManagement;
+use BlueSpice\Calumma\Panel\SiteNavigation;
+use BlueSpice\SkinData;
+use QuickTemplate;
 
 class SkinDataFieldDefinition {
 

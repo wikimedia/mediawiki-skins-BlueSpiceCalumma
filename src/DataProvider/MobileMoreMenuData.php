@@ -1,9 +1,9 @@
 <?php
 namespace BlueSpice\Calumma\DataProvider;
 
-use QuickTemplate;
 use BlueSpice\Calumma\SkinDataFieldDefinition;
 use BlueSpice\SkinData;
+use QuickTemplate;
 
 class MobileMoreMenuData {
 

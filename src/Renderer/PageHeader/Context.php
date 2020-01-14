@@ -2,12 +2,12 @@
 
 namespace BlueSpice\Calumma\Renderer\PageHeader;
 
-use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Calumma\AssocLinksCollector;
 use BlueSpice\Calumma\Controls\SplitButtonDropdown;
 use BlueSpice\Calumma\Renderer\PageHeader;
-use Message;
+use BlueSpice\ExtensionAttributeBasedRegistry;
 use Html;
+use Message;
 
 class Context extends PageHeader {
 

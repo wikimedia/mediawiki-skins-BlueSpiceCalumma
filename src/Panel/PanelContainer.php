@@ -2,12 +2,12 @@
 
 namespace BlueSpice\Calumma\Panel;
 
-use QuickTemplate;
 use BlueSpice\Calumma\IPanel;
 use BlueSpice\Calumma\Renderer\Panel;
-use BlueSpice\Services;
-use BlueSpice\RendererFactory;
 use BlueSpice\Renderer\Params;
+use BlueSpice\RendererFactory;
+use BlueSpice\Services;
+use QuickTemplate;
 
 abstract class PanelContainer extends BasePanel {
 

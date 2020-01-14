@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Calumma\Controls;
 
-use QuickTemplate;
 use BlueSpice\Calumma\IControl;
+use QuickTemplate;
 use TemplateParser;
 
 abstract class TemplateControl implements IControl {

@@ -1,8 +1,8 @@
 <?php
 namespace BlueSpice\Calumma\Components;
 
-use QuickTemplate;
 use BlueSpice\Services;
+use QuickTemplate;
 
 class CustomMenu extends \Skins\Chameleon\Components\Structure {
 

@@ -2,15 +2,15 @@
 
 namespace BlueSpice\Calumma\Renderer\PageHeader;
 
-use Config;
-use IContextSource;
-use Html;
-use Title;
-use QuickTemplate;
-use MediaWiki\Linker\LinkRenderer;
-use BlueSpice\SkinData;
-use BlueSpice\Renderer\Params;
 use BlueSpice\Calumma\Renderer\PageHeader;
+use BlueSpice\Renderer\Params;
+use BlueSpice\SkinData;
+use Config;
+use Html;
+use IContextSource;
+use MediaWiki\Linker\LinkRenderer;
+use QuickTemplate;
+use Title;
 
 class EditButton extends PageHeader {
 	public const FEATURED_ACTIONS = SkinData::FEATURED_ACTIONS;

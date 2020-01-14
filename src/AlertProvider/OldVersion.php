@@ -3,8 +3,8 @@
 namespace BlueSpice\Calumma\AlertProvider;
 
 use BlueSpice\AlertProviderBase;
-use BlueSpice\IAlertProvider;
 use BlueSpice\Calumma\Controls\VersionPager;
+use BlueSpice\IAlertProvider;
 use BlueSpice\Services;
 use Message;
 

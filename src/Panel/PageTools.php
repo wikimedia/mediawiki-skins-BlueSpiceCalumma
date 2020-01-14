@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Calumma\Panel;
 
-use BlueSpice\SkinData;
 use BlueSpice\Calumma\PanelFactory;
+use BlueSpice\SkinData;
 
 class PageTools extends PanelContainer {
 

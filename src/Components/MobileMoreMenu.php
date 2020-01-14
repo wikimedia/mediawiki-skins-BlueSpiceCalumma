@@ -1,8 +1,8 @@
 <?php
 namespace BlueSpice\Calumma\Components;
 
-use BlueSpice\Calumma\TemplateComponent;
 use BlueSpice\Calumma\SkinDataFieldDefinition as SDFD;
+use BlueSpice\Calumma\TemplateComponent;
 
 class MobileMoreMenu extends TemplateComponent {
 

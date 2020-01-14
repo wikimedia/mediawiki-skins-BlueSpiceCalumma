@@ -2,15 +2,15 @@
 
 namespace BlueSpice\Calumma\Renderer;
 
+use BlueSpice\Calumma\IFlyout;
+use BlueSpice\Calumma\IPanel;
+use BlueSpice\Renderer\Params;
+use BlueSpice\TemplateFactory;
+use BlueSpice\TemplateRenderer;
+use BlueSpice\Utility\CacheHelper;
 use Config;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
-use BlueSpice\TemplateRenderer;
-use BlueSpice\Renderer\Params;
-use BlueSpice\Calumma\IPanel;
-use BlueSpice\Calumma\IFlyout;
-use BlueSpice\Utility\CacheHelper;
-use BlueSpice\TemplateFactory;
 
 class Panel extends TemplateRenderer {
 

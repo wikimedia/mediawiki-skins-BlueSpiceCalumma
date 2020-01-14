@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Calumma\Controls;
 
-use Message;
 use MediaWiki\Storage\RevisionRecord;
+use Message;
 
 class VersionPager extends TemplateControl {
 

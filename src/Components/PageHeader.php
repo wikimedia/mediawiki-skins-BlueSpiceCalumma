@@ -2,18 +2,18 @@
 
 namespace BlueSpice\Calumma\Components;
 
-use Html;
-use Title;
-use Sanitizer;
-use BlueSpice\SkinData;
-use BlueSpice\RendererFactory;
-use BlueSpice\Renderer\Params;
-use BlueSpice\Renderer\NullRenderer;
-use BlueSpice\Calumma\Renderer\PageHeader as PageHeaderRenderer;
-use BlueSpice\Calumma\Renderer\PageHeader\LastEdit;
 use BlueSpice\Calumma\Renderer\PageHeader\Category;
+use BlueSpice\Calumma\Renderer\PageHeader\LastEdit;
+use BlueSpice\Calumma\Renderer\PageHeader as PageHeaderRenderer;
 use BlueSpice\Calumma\TemplateComponent;
+use BlueSpice\Renderer\NullRenderer;
+use BlueSpice\Renderer\Params;
+use BlueSpice\RendererFactory;
 use BlueSpice\Services;
+use BlueSpice\SkinData;
+use Html;
+use Sanitizer;
+use Title;
 
 class PageHeader extends TemplateComponent {
 

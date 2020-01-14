@@ -2,9 +2,9 @@
 
 namespace BlueSpice\Calumma\Panel;
 
-use QuickTemplate;
-use BlueSpice\Calumma\Components\SimpleLinkListGroup;
 use BlueSpice\Calumma\Components\CollapsibleGroup;
+use BlueSpice\Calumma\Components\SimpleLinkListGroup;
+use QuickTemplate;
 
 class MediaWikiSidebar extends BasePanel {
 

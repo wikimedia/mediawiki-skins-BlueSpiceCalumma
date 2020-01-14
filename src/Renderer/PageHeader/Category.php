@@ -2,15 +2,15 @@
 
 namespace BlueSpice\Calumma\Renderer\PageHeader;
 
+use BlueSpice\Calumma\Renderer\PageHeader;
+use BlueSpice\Renderer\Params;
+use Config;
 use Html;
 use HtmlArmor;
-use Title;
-use Config;
 use IContextSource;
-use QuickTemplate;
 use MediaWiki\Linker\LinkRenderer;
-use BlueSpice\Renderer\Params;
-use BlueSpice\Calumma\Renderer\PageHeader;
+use QuickTemplate;
+use Title;
 
 class Category extends PageHeader {
 	public const PARAM_CATEGORY_NAMES = 'categories';

@@ -2,13 +2,13 @@
 
 namespace BlueSpice\Calumma\Tests\AssocLinksProvider;
 
-use MediaWikiTestCase;
 use BlueSpice\Calumma\AssocLinksProvider\HistoryView;
 use BlueSpice\Html\Descriptor\ILink;
 use HashConfig;
 use IContextSource;
-use WebRequest;
+use MediaWikiTestCase;
 use Title;
+use WebRequest;
 
 /**
  * @group BlueSpice
@@ -72,7 +72,7 @@ class HistoryViewTest extends MediaWikiTestCase {
 
 		$links = HistoryView::factory( $contextMock, $config );
 
-		$this->assertEquals( 0, count( $links ), "Should not contain an item" );
+		$this->assertSame( 0, count( $links ), "Should not contain an item" );
 	}
 
 	/**
@@ -97,7 +97,7 @@ class HistoryViewTest extends MediaWikiTestCase {
 
 		$links = HistoryView::factory( $contextMock, $config );
 
-		$this->assertEquals( 0, count( $links ), "Should not contain an item" );
+		$this->assertSame( 0, count( $links ), "Should not contain an item" );
 	}
 
 	/**
@@ -122,6 +122,6 @@ class HistoryViewTest extends MediaWikiTestCase {
 
 		$links = HistoryView::factory( $contextMock, $config );
 
-		$this->assertEquals( 0, count( $links ), "Should not contain an item" );
+		$this->assertSame( 0, count( $links ), "Should not contain an item" );
 	}
 }

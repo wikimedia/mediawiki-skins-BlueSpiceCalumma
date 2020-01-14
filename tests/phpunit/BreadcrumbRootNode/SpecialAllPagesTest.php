@@ -2,10 +2,10 @@
 
 namespace BlueSpice\Calumma\Tests\BreadcrumbRootNode;
 
-use PHPUnit\Framework\TestCase;
 use BlueSpice\Calumma\BreadcrumbRootNode\SpecialAllPages;
 use BlueSpice\Calumma\IBreadcrumbRootNode;
 use HashConfig;
+use PHPUnit\Framework\TestCase;
 use SpecialPageFactory;
 use Title;
 

@@ -2,10 +2,10 @@
 
 namespace BlueSpice\Calumma\Panel;
 
-use QuickTemplate;
-use BlueSpice\SkinData;
-use BlueSpice\Calumma\Components\SimpleLinkListGroup;
 use BlueSpice\Calumma\Components\CollapsibleGroup;
+use BlueSpice\Calumma\Components\SimpleLinkListGroup;
+use BlueSpice\SkinData;
+use QuickTemplate;
 
 class GlobalActions extends BasePanel {
 

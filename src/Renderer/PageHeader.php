@@ -8,14 +8,14 @@
 
 namespace BlueSpice\Calumma\Renderer;
 
-use Config;
-use IContextSource;
-use QuickTemplate;
-use MediaWiki\Linker\LinkRenderer;
-use BlueSpice\Services;
 use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
+use BlueSpice\Services;
+use Config;
 use Exception;
+use IContextSource;
+use MediaWiki\Linker\LinkRenderer;
+use QuickTemplate;
 
 /**
  * Description of PageHeader

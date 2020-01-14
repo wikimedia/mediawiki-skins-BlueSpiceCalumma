@@ -1,12 +1,12 @@
 <?php
 namespace BlueSpice\Calumma\Components;
 
-use BlueSpice\Services;
 use BlueSpice\Calumma\SkinDataFieldDefinition as SDFD;
-use BlueSpice\DynamicFileDispatcher\UrlBuilder;
-use BlueSpice\DynamicFileDispatcher\Params;
-use BlueSpice\DynamicFileDispatcher\UserProfileImage;
 use BlueSpice\Calumma\TemplateComponent;
+use BlueSpice\DynamicFileDispatcher\Params;
+use BlueSpice\DynamicFileDispatcher\UrlBuilder;
+use BlueSpice\DynamicFileDispatcher\UserProfileImage;
+use BlueSpice\Services;
 
 class UserButton extends TemplateComponent {
 

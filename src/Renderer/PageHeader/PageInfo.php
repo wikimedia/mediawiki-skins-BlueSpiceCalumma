@@ -2,19 +2,19 @@
 
 namespace BlueSpice\Calumma\Renderer\PageHeader;
 
-use Exception;
-use Config;
-use IContextSource;
-use RequestContext;
-use Html;
-use QuickTemplate;
-use MediaWiki\Linker\LinkRenderer;
-use BlueSpice\Services;
-use BlueSpice\PageInfoElementFactory;
-use BlueSpice\Renderer\Params;
-use BlueSpice\Renderer;
 use BlueSpice\Calumma\PageInfoSentenceBuilder;
 use BlueSpice\Calumma\Renderer\PageHeader;
+use BlueSpice\PageInfoElementFactory;
+use BlueSpice\Renderer;
+use BlueSpice\Renderer\Params;
+use BlueSpice\Services;
+use Config;
+use Exception;
+use Html;
+use IContextSource;
+use MediaWiki\Linker\LinkRenderer;
+use QuickTemplate;
+use RequestContext;
 
 class PageInfo extends PageHeader {
 

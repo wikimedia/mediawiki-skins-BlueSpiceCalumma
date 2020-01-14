@@ -1,9 +1,9 @@
 <?php
 namespace BlueSpice\Calumma\DataProvider;
 
-use QuickTemplate;
-use BlueSpice\SkinData;
 use BlueSpice\Calumma\SkinDataFieldDefinition as SDFD;
+use BlueSpice\SkinData;
+use QuickTemplate;
 
 class FeaturedActionsData {
 
@@ -30,12 +30,12 @@ class FeaturedActionsData {
 			$data[SkinData::FEATURED_ACTIONS] += [
 				'edit' => []
 			];
-		};
+		}
 		if ( !array_key_exists( 'new', $data[SkinData::FEATURED_ACTIONS] ) ) {
 			$data[SkinData::FEATURED_ACTIONS] += [
 				'new' => []
 			];
-		};
+		}
 	}
 
 	/**

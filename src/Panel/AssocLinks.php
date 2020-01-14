@@ -2,9 +2,9 @@
 
 namespace BlueSpice\Calumma\Panel;
 
-use Skins\Chameleon\IdRegistry;
-use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Calumma\AssocLinksCollector;
+use BlueSpice\ExtensionAttributeBasedRegistry;
+use Skins\Chameleon\IdRegistry;
 
 class AssocLinks extends BasePanel {
 

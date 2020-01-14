@@ -2,22 +2,22 @@
 
 namespace BlueSpice\Calumma\Renderer\PageHeader;
 
-use Exception;
-use Html;
-use Config;
-use HtmlArmor;
-use WikiPage;
-use User;
-use IContextSource;
-use RequestContext;
-use QuickTemplate;
-use BlueSpice\Services;
-use BlueSpice\UtilityFactory;
+use BlueSpice\Calumma\Renderer\PageHeader;
 use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
+use BlueSpice\Services;
+use BlueSpice\UtilityFactory;
+use Config;
+use Exception;
+use Html;
+use HtmlArmor;
+use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
+use QuickTemplate;
+use RequestContext;
 use Revision;
-use BlueSpice\Calumma\Renderer\PageHeader;
+use User;
+use WikiPage;
 
 class LastEdit extends PageHeader {
 

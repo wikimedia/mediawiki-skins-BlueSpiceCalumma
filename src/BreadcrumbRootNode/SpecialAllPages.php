@@ -3,9 +3,9 @@
 namespace BlueSpice\Calumma\BreadcrumbRootNode;
 
 use BlueSpice\Calumma\BreadcrumbRootNodeBase;
+use Message;
 use SpecialPageFactory;
 use Title;
-use Message;
 
 class SpecialAllPages extends BreadcrumbRootNodeBase {
 

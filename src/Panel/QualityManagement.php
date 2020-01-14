@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Calumma\Panel;
 
-use BlueSpice\Calumma\PanelFactory;
 use BlueSpice\Calumma\IActiveStateProvider;
+use BlueSpice\Calumma\PanelFactory;
 use BlueSpice\SkinData;
 
 class QualityManagement extends PanelContainer implements IActiveStateProvider {

@@ -2,13 +2,13 @@
 
 namespace BlueSpice\Calumma\Renderer\PageHeader;
 
-use Html;
-use Title;
 use BlueSpice\Calumma\Controls\SplitButtonDropdown;
-use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Calumma\IBreadcrumbRootNode;
 use BlueSpice\Calumma\Renderer\PageHeader;
+use BlueSpice\ExtensionAttributeBasedRegistry;
 use Exception;
+use Html;
+use Title;
 use WebRequest;
 
 class BreadCrumb extends PageHeader {
@@ -128,6 +128,7 @@ class BreadCrumb extends PageHeader {
 	 *
 	 * @param Title $title
 	 * @param WebRequest $request
+	 * @return Title
 	 */
 	private function maybeSwapTitle( $title, $request ) {
 		$newTitle = $title;

@@ -3,8 +3,8 @@
 namespace BlueSpice\Calumma\BreadcrumbRootNode;
 
 use BlueSpice\Calumma\BreadcrumbRootNodeBase;
-use Title;
 use Message;
+use Title;
 
 class NamespacePortalPage extends BreadcrumbRootNodeBase {
 

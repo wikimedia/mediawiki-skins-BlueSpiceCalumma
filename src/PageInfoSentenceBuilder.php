@@ -2,12 +2,12 @@
 
 namespace BlueSpice\Calumma;
 
+use BlueSpice\IPageInfoElement;
+use BlueSpice\PageInfoElement;
+use Exception;
+use Html;
 use Title;
 use User;
-use Html;
-use BlueSpice\PageInfoElement;
-use BlueSpice\IPageInfoElement;
-use Exception;
 
 class PageInfoSentenceBuilder {
 
@@ -89,10 +89,10 @@ class PageInfoSentenceBuilder {
 		return $sentence;
 	}
 
-	/*
+	/**
 	 *
-	 * @param array $arrayData
-	 * return array
+	 * @param array $data
+	 * @return array
 	 */
 	private function makeHtmlDataArray( $data ) {
 		$htmlData = [];
