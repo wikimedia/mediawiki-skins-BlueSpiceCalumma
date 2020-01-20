@@ -93,10 +93,12 @@
 	"ResourceModules": {
 		"skin.bluespicecalumma.styles": {
 			"styles": {
-				"stylesheets/fixes/mobile.less": {},
-				"stylesheets/fixes/desktop.less": {},
-				"stylesheets/fixes/mobile.specialpages.less": {},
-				"stylesheets/fixes/desktop.specialpages.less": {},
+				"stylesheets/fixes/mobile.less": { "media": "all and ( max-width: 720px )" },
+				"stylesheets/fixes/tablet.less": { "media": "all and ( min-width: 721px ) and ( max-width: 1000px )" },
+				"stylesheets/fixes/desktop.less": { "media": "all and ( min-width: 1001px )" },
+				"stylesheets/fixes/mobile.specialpages.less": { "media": "all and ( max-width: 720px )" },
+				"stylesheets/fixes/tablet.specialpages.less": { "media": "all and ( min-width: 721px ) and ( max-width: 1000px )" },
+				"stylesheets/fixes/desktop.specialpages.less": { "media": "all and ( min-width: 1001px )" },
 				"stylesheets/fixes/IEFixes.css": {},
 				"stylesheets/icons.less": {},
 				"stylesheets/common.less": {},
