@@ -6,7 +6,8 @@
 			"94rain",
 			"科劳",
 			"Viztor",
-			"Looong"
+			"Looong",
+			"VulpesVulpes825"
 		]
 	},
 	"bs-calumma-pref-toggle-navigaiton-main": "自动隐藏主菜单",
@@ -25,7 +26,7 @@
 	"bs-action-new-page-title": "添加新页面",
 	"bs-action-new-subpage-text": "新子页面",
 	"bs-action-new-subpage-title": "给$1新增子页面",
-	"bs-action-new-file-text": "新上传的文件",
+	"bs-action-new-file-text": "上传新文件",
 	"bs-action-new-file-title": "上传新文件",
 	"bs-userbutton-notifications-link-text": "通知",
 	"bs-userbutton-userpage-link-text": "我的详情",
@@ -59,6 +60,7 @@
 	"bs-sitetools-views": "浏览次数",
 	"bs-sitetools-view-mode": "模式",
 	"bs-sitetools-edit": "编辑",
+	"bs-sitetools-manage-page": "管理页面",
 	"bs-sitetools-categories": "分类",
 	"bs-calumma-recentchanges-title": "最近更改",
 	"bs-calumma-recentchanges-intro": "在这个列表中，您可以找到最近的页面编辑和新创建的页面。",
