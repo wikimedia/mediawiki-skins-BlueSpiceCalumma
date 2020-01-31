@@ -32,6 +32,11 @@ pre {
 		font-weight: @font-weight-regular;
 		margin-top: 0.1875rem;
 		margin-bottom: 0.1875rem;
+	}
+}
+
+.mw-content-ltr ul {
+	& > li {
 		list-style-type: none;
 
 		&:not( .ve-ce-branchNode ):before {
@@ -40,7 +45,6 @@ pre {
 			margin-right: .65em;
 		}
 	}
-
 	& > li.ve-ce-branchNode > p {
 		&:before {
 			content: '\2022 ';
@@ -49,6 +53,7 @@ pre {
 		}
 	}
 }
+
 .mw-content-ltr .floatleft + ul,
 .mw-content-ltr .floatleft + ol {
 	display: inline-block;
