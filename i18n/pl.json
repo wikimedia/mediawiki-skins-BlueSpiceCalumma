@@ -3,7 +3,8 @@
 		"authors": [
 			"Chrumps",
 			"Railfail536",
-			"Rail"
+			"Rail",
+			"WaldiSt"
 		]
 	},
 	"bluespicecalumma-desc": "Skórka BlueSpice",
@@ -101,5 +102,7 @@
 	"bs-calumma-assoclink-history-label": "Historia",
 	"bs-calumma-context-pagebutton-label": "Strona",
 	"bs-calumma-context-discussionbutton-label": "Dyskusja",
-	"bs-calumma-search-button-label": "Szukaj"
+	"bs-calumma-search-button-label": "Szukaj",
+	"bs-action-edit-view-title": "Wyjdź z edycji",
+	"bs-action-edit-view-text": "Wyjdź z edycji"
 }

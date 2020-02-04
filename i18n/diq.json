@@ -80,5 +80,14 @@
 	"bs-sitetools-manage-page": "Pelê idare kerê",
 	"bs-sitetools-categories": "Kategoriy",
 	"bs-sitetools-associated-links": "Gırey eleqeyın",
-	"bs-calumma-recentchanges-title": "Vurnayışê peyêni"
+	"bs-calumma-recentchanges-title": "Vurnayışê peyêni",
+	"bs-calumma-breadcrumbs-nstab-main": "Peli pêro",
+	"bs-calumma-breadcrumbs-pages": "Şımayê tiya derê",
+	"bs-calumma-pageinfosentence-item-separator": "u",
+	"bs-calumma-pageinfosentence-item-class-separator": "lakin",
+	"bs-calumma-full-screen-button-tooltip": "Tam ekran/modo normal",
+	"bs-calumma-page-last-edit-by-system-user": "Karberê sistemi",
+	"bs-calumma-assoclink-history-label": "Terix",
+	"bs-calumma-context-pagebutton-label": "Pele",
+	"bs-calumma-context-discussionbutton-label": "Werênayış"
 }

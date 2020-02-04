@@ -109,5 +109,6 @@
 	"bs-calumma-context-pagebutton-label": "Pagina",
 	"bs-calumma-context-discussionbutton-label": "Overleg",
 	"bs-calumma-context-discussionbutton-tooltip": "Toon de huidige overlegpagina",
-	"bs-calumma-search-button-label": "Zoeken"
+	"bs-calumma-search-button-label": "Zoeken",
+	"bs-sitetools-views": "Weergaven"
 }
