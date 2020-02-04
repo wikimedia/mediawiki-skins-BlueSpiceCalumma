@@ -123,7 +123,8 @@ class FeaturedActionsData {
 		if ( $curTitle->userCan( 'edit' ) && !$skin->getUser()->isLoggedIn() ) {
 			$newSection += [
 				'title' => wfMessage( 'bs-action-new-please-login-title' )->plain(),
-				'href' => self::getLoginUrl( $skin )
+				'href' => self::getLoginUrl( $skin ),
+				'classes' => [ 'disabled' ]
 			];
 
 			$data[SkinData::FEATURED_ACTIONS]['new']['new-section'] = $newSection;
@@ -133,7 +134,8 @@ class FeaturedActionsData {
 		if ( !$curUser->isAllowed( 'createpage' ) ) {
 			$newSection += [
 				'title' => wfMessage( 'bs-action-new-disabled-title' )->text(),
-				'href' => ''
+				'href' => '',
+				'classes' => [ 'disabled' ]
 			];
 
 			$data[SkinData::FEATURED_ACTIONS]['new']['new-section'] = $newSection;
