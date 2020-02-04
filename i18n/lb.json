@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Les Meloures"
 		]
 	},
 	"bs-action-edit-edit-title": "Quell änneren",
@@ -23,14 +24,14 @@
 	"bs-sitenav-globalactions-section-globalactions": "Global Aktiounen",
 	"bs-sitenav-globalactions-section-management": "Gestioun",
 	"bs-sitetools-pageinfo-title": "Informatioun",
-	"bs-sitetools-pagetools-title": "Geschirkëscht",
+	"bs-sitetools-pagetools-title": "Geschierkëscht",
 	"bs-sitetools-panel-section-export-title": "Exportéieren",
 	"bs-sitetools-panel-section-export-label": "Exportéieren",
 	"bs-calumma-graphicallist-recentchanges-preview-btn-edit": "Änneren",
 	"bs-sitetools-namespaces": "Nummraum",
 	"bs-sitetools-default": "Méi",
 	"bs-sitetools-qm": "Qualitéits Management",
-	"bs-sitetools-toolbox": "Geschirkëscht",
+	"bs-sitetools-toolbox": "Geschierkëscht",
 	"bs-sitetools-views": "Säitenofruffer",
 	"bs-sitetools-edit": "Änneren",
 	"bs-sitetools-categories": "Kategorien",
