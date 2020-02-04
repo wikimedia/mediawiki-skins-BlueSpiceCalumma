@@ -5,7 +5,8 @@
 			"Fitoschido",
 			"Carlosmg.dg",
 			"Johny Weissmuller Jr",
-			"Madamebiblio"
+			"Madamebiblio",
+			"DannyS712"
 		]
 	},
 	"bs-calumma-pref-toggle-navigaiton-main": "Ocultar automáticamente el menú principal",
@@ -63,6 +64,8 @@
 	"bs-calumma-pagetool-history-tooltip": "Historial de página",
 	"bs-calumma-pagetool-talk-tooltip": "Discusión",
 	"bs-calumma-pagetool-view-tooltip": "Ver",
+	"bs-calumma-pagetool-watch-tooltip": "Vigilar",
+	"bs-calumma-pagetool-unwatch-tooltip": "Dejar de vigilar",
 	"bs-allpages-description": "Todas las páginas",
 	"bs-support-description": "Asistencia",
 	"bs-calumma-navigation-toggle-tooltip": "Abrir/cerrar",
