@@ -42,6 +42,9 @@ class MobileNotificationsButton extends \Skins\Chameleon\Components\Structure {
 	 * @return bool
 	 */
 	protected function skipRendering() {
+		if ( !$this->getSkin()->getUser()->isLoggedIn() ) {
+			return true;
+		}
 		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
 		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
 		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
