@@ -33,7 +33,7 @@
 
 			var hash = this.hash;
 
-			if( this.pathname !== mw.util.getUrl() ) {
+			if( this.pathname + this.search !== mw.util.getUrl() ) {
 				return;
 			}
 
