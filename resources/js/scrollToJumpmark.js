@@ -3,6 +3,8 @@
 		/* scroll to jumpmark on load */
 		var hash = window.location.hash;
 
+		mw.hook( 'bs.calumma.scroll.to.jumpmark.before' ).fire( hash, null );
+
 		if ( hash !== '' ) {
 			var jumpmarkId = hash.replace( '#', '' );
 
@@ -33,6 +35,8 @@
 
 			var hash = this.hash;
 
+			mw.hook( 'bs.calumma.scroll.to.jumpmark.before' ).fire( hash, e );
+
 			if( this.pathname + this.search !== mw.util.getUrl() ) {
 				return;
 			}
@@ -53,6 +57,7 @@
 					},
 					400
 				);
+
 			}
 		});
 	});
