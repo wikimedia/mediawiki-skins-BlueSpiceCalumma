@@ -52,31 +52,49 @@ class Skin extends \SkinChameleon {
 		$classes = $out->getProperty( 'bodyClassName' );
 		$request = $this->getRequest();
 
-		$cookie_desktop_view = $request->getCookie( 'Calumma_desktop-view' );
+		$cookieDesktopView = null;
+		$cookieDesktopView = $request->getCookie( 'Calumma_desktop-view' );
+
+		$cookieFullSreenMode = null;
+		$cookieFullSreenMode = $request->getCookie( 'Calumma_bs-full-screen-mode' );
+
+		$desktopView = false;
+		$fullSreenMode = false;
+
+		if ( ( $cookieDesktopView === null ) || ( $cookieDesktopView === 'true' ) ) {
+			$desktopView = true;
+		}
+
+		if ( ( $cookieFullSreenMode !== null ) && ( $cookieFullSreenMode === 'true' ) ) {
+			$fullSreenMode = true;
+		}
 
 		$bodyAttrs[ 'class' ] .= $this->checkCustomMenuState( 'header' );
 
-		if ( ( !isset( $cookie_desktop_view ) ) || ( $cookie_desktop_view === 'true' ) ) {
-			$cookie_navigation_main_sticky =
+		if ( ( $desktopView === true ) && ( $fullSreenMode === false ) ) {
+			$cookieNavigationMainSticky =
 				$request->getCookie( 'Calumma_navigation-main-sticky' );
-			$cookie_sitetools_main_sticky =
+			$cookieSitetoolsMainSticky =
 				$request->getCookie( 'Calumma_sitetools-main-sticky' );
 
-			$cookie_navigation_main_collapsed =
+			$cookieNavigationMainCollapsed =
 				$request->getCookie( 'Calumma_navigation-main-collapse' );
-			$cookie_sitetools_main_collapsed =
+			$cookieSitetoolsMainCollapsed =
 				$request->getCookie( 'Calumma_sitetools-main-collapse' );
 
 			$bodyAttrs[ 'class' ] .= $this->checkToggleState(
-				$cookie_navigation_main_sticky,
-				$cookie_navigation_main_collapsed,
+				$cookieNavigationMainSticky,
+				$cookieNavigationMainCollapsed,
 				'navigation'
 			);
 			$bodyAttrs[ 'class' ] .= $this->checkToggleState(
-				$cookie_sitetools_main_sticky,
-				$cookie_sitetools_main_collapsed,
+				$cookieSitetoolsMainSticky,
+				$cookieSitetoolsMainCollapsed,
 				'sitetools'
 			);
+		} elseif ( ( $desktopView === true ) && ( $fullSreenMode === true ) ) {
+			$bodyAttrs[ 'class' ] .=
+				' navigation-main-collapse sitetools-main-collapse bs-full-screen-mode ';
 		} else {
 			$bodyAttrs[ 'class' ] .= ' navigation-main-collapse sitetools-main-collapse ';
 		}
