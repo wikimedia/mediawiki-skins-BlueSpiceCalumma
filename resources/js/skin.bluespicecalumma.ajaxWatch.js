@@ -2,7 +2,7 @@
 	$( d ).on( 'click', '#ca-watch, #ca-unwatch', function( e ) {
 		var $this = $(this);
 		var currentPage = mw.config.get( 'wgPageName' );
-		mw.loader.using( 'mediawiki.api.watch' ).done( function() {
+		mw.loader.using( 'mediawiki.api' ).done( function() {
 			var api = new mw.Api();
 			if( $this.attr( 'id' ) === 'ca-watch' ) {
 				api.watch( currentPage ).done( function() {
