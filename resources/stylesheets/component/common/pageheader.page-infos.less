@@ -1,28 +1,11 @@
-.bs-page-info-element {
-	max-width: 50%;
-
+.bs-page-info-elements {
 	& > ul {
-		list-style:none;
-		margin-bottom: 0;
-		padding-left:0;
-		min-width: 100%;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-end;
-
-		& > li {
-			line-height: 1.1rem;
-			height: max-content;
-		}
-	}
-
-	.bs-page-info-element-button-col,
-	.bs-page-info-element-text-col {
-		display: inline-block;
+		display: inline-flex;
+		flex-wrap: nowrap;
 	}
 
 	.bs-page-info-element-button {
-		height: 100%;
+		height: 1.1em;
 		color: @link-color;
 
 		i::before {
@@ -30,7 +13,7 @@
 			content: "\e9a6";
 			font-style: normal;
 			margin-right: 0.3125rem;
-			margin-left: 1rem;
+			line-height: 1em;
 		}
 
 		&:hover,
@@ -38,6 +21,10 @@
 			color: @link-color;
 			text-decoration: none;
 		}
+	}
+
+	.bs-page-info-element-text-col {
+		line-height: 1.2em;
 	}
 
 	.dropdown {
@@ -67,8 +54,8 @@
 			&::before {
 				font-family: 'fontawesome';
 				content: "\f0d7";
-				margin-left: 0.1875rem;
-				margin-right: 0.1875rem;
+				margin-left: 0.1875em;
+				margin-right: 0.1875em;
 			}
 		}
 
@@ -82,30 +69,16 @@
 					a {
 						display: block;
 						width: 100%;
-						min-height: 1.875rem;
-						line-height: 1.875rem;
-						padding-left: 0.3125rem;
-						padding-right: 0.3125rem;
+						min-height: 1.875em;
+						line-height: 1.875em;
+						padding-left: 0.3125em;
+						padding-right: 0.3125em;
 
 						&:hover {
 							text-decoration: none;
 						}
 					}
 				}
-			}
-		}
-	}
-
-	.bs-page-watch {
-		min-width: 5rem;
-
-		a {
-			color: @link-color;
-
-			&:hover,
-			&:focus {
-				color: @link-color;
-				text-decoration: none;
 			}
 		}
 	}

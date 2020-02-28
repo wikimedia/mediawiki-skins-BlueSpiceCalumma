@@ -102,9 +102,7 @@ class PageInfo extends Renderer {
 			return '';
 		}
 
-		$html = Html::openElement( 'ul' );
-
-		$html .= Html::openElement(
+		$html = Html::openElement(
 				'li',
 				[
 					'class' => 'bs-page-info-element-button-col'
@@ -125,8 +123,6 @@ class PageInfo extends Renderer {
 			$this->getContext()->getUser()
 		);
 		$html .= Html::closeElement( 'li' );
-
-		$html .= Html::closeElement( 'ul' );
 
 		return $html;
 	}

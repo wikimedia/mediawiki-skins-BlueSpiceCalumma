@@ -14,6 +14,7 @@ use BlueSpice\Calumma\Renderer\PageHeader\LastEdit;
 use BlueSpice\Calumma\Renderer\PageHeader\Category;
 use BlueSpice\Calumma\TemplateComponent;
 use BlueSpice\Services;
+use BlueSpice\ExtensionAttributeBasedRegistry;
 
 class PageHeader extends TemplateComponent {
 
@@ -52,6 +53,7 @@ class PageHeader extends TemplateComponent {
 			'namespaces' => $showContextBand ? $this->getSiteNamespaces() : '',
 			'categories' => $showQualificationBand ? $this->getCategories() : '',
 			'pageinfoelements' => $showMetaBand ? $this->getPageInfoElement() : '',
+			'beforecontent' => $showMetaBand ? $this->getDataBeforeContent() : '',
 			'lastedit' => $showMetaBand ? $this->getLastEdit() : '',
 			'watchaction' => $showMetaBand ? $this->getWatchAction() : '',
 			'contextband' => $showContextBand,
@@ -418,4 +420,47 @@ class PageHeader extends TemplateComponent {
 		return $action === 'edit' || $veAction === 'edit';
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
+	private function getDataBeforeContent() {
+		$data = [];
+
+		$params = array_merge(
+			parent::getTemplateArgs(),
+			[
+				PageHeaderRenderer::SKIN_TEMPLATE => $this->getSkinTemplate()
+			]
+		);
+
+		$registry = new ExtensionAttributeBasedRegistry(
+			'BlueSpiceFoundationPageHeaderBeforeContentRegistry'
+		);
+
+		$registeredFactoryCallbacks = $registry->getAllValues();
+
+		$activeProviders =
+			Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' )
+				->get( 'BlueSpiceCalummaPageHeaderBeforeContentEnabledProviders' );
+
+		foreach ( $registeredFactoryCallbacks as $callbackKey => $factoryCallback ) {
+
+			if ( !in_array( $callbackKey, $activeProviders ) ) {
+				continue;
+			}
+
+			if ( !is_callable( $factoryCallback ) ) {
+				throw new \Exception( "No valid callback for '$callbackKey'!" );
+			}
+
+			$data[] = $this->getRendererFactory()->get(
+				$callbackKey,
+				new Params( $params ),
+				$this->getSkin()->getContext()
+			)->render();
+
+		}
+		return $data;
+	}
 }

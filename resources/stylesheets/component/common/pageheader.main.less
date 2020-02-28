@@ -43,4 +43,24 @@
 .bs-page-after-header {
 	margin-top: 0;
 	color: @page-header-metaband-color;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 1em 0;
+	}
+
+	li {
+		height: 1.2em;
+		line-height: 1.2em;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+	}
+
+	& > ul {
+		display: inline-flex;
+		flex-wrap: wrap-reverse;
+		justify-content: space-between;
+		width: 100%;
+	}
 }
