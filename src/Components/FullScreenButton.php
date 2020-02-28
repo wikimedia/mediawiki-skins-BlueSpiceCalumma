@@ -12,6 +12,11 @@ class FullScreenButton extends \Skins\Chameleon\Components\Structure {
 		$data = 'bs-full-screen-mode';
 		$class = $this->getDomElement()->getAttribute( 'class' );
 
+		$cookieFullSreenMode = $this->getSkin()->getRequest()->getCookie( 'Calumma_bs-full-screen-mode' );
+		if ( isset( $cookieFullSreenMode ) && ( $cookieFullSreenMode === 'true' ) ) {
+			$class .= ' bs-full-screen-mode ';
+		}
+
 		$html = \Html::openElement( 'a', [
 			'title' => wfMessage( 'bs-calumma-full-screen-button-tooltip' )->plain(),
 			'class' => ' calumma-full-screen-button ' . $class,

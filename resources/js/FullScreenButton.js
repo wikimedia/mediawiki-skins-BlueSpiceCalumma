@@ -6,17 +6,18 @@
 
 		if ( $( this ).hasClass( target ) ){
 			$( this ).removeClass( target );
-			$( 'body.mediawiki .wrapper .bs-content.container' ).removeClass( target );
-
-		} else{
+			$( 'body.mediawiki' ).removeClass( target );
+			mw.cookie.set( 'Calumma_'+target, 'false' );
+		} else {
 			if ( !( $( 'body' ).hasClass( 'navigation-main-collapse' ) ) ){
 				$( '.navigation-main .sidebar-toggle' ).trigger( 'click' );
 			}
 			if ( !( $( 'body' ).hasClass( 'sitetools-main-collapse' ) ) ){
 				$( '.sitetools-main .sidebar-toggle' ).trigger( 'click' );
 			}
-			$( 'body.mediawiki .wrapper .bs-content.container' ).addClass( target );
 			$( this ).addClass( target );
+			$( 'body.mediawiki' ).addClass( target );
+			mw.cookie.set( 'Calumma_'+target, 'true' );
 		}
 	});
 })( document, jQuery, mediaWiki );
