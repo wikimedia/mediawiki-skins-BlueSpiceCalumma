@@ -1,8 +1,6 @@
 <?php
 namespace BlueSpice\Calumma\Components;
 
-use SpecialPageFactory;
-
 class MobileLoginButton extends \Skins\Chameleon\Components\Structure {
 
 	/**
@@ -16,7 +14,9 @@ class MobileLoginButton extends \Skins\Chameleon\Components\Structure {
 		}
 
 		$class = $this->getDomElement()->getAttribute( 'class' );
-		$title = SpecialPageFactory::getTitleForAlias( 'Userlogin' );
+		$title = \MediaWiki\MediaWikiServices::getInstance()
+			->getSpecialPageFactory()
+			->getTitleForAlias( 'Userlogin' );
 
 		$html = \Html::openElement( 'a', [
 			'href' => $title->getFullURL(),

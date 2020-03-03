@@ -4,7 +4,6 @@ namespace BlueSpice\Calumma\BreadcrumbRootNode;
 
 use BlueSpice\Calumma\BreadcrumbRootNodeBase;
 use Message;
-use SpecialPageFactory;
 use Title;
 
 class SpecialAllPages extends BreadcrumbRootNodeBase {
@@ -24,7 +23,9 @@ class SpecialAllPages extends BreadcrumbRootNodeBase {
 			$nsText = Message::newFromKey( 'bs-ns_main' );
 		}
 
-		$specialAllpages = SpecialPageFactory::getTitleForAlias( 'Allpages' );
+		$specialAllpages = \MediaWiki\MediaWikiServices::getInstance()
+			->getSpecialPageFactory()
+			->getTitleForAlias( 'Allpages' );
 
 		return $this->linkRenderer->makeLink(
 			$specialAllpages,

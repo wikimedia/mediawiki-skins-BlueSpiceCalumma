@@ -2,7 +2,6 @@
 namespace BlueSpice\Calumma\Components;
 
 use BlueSpice\Calumma\SkinDataFieldDefinition as SDFD;
-use SpecialPageFactory;
 
 class MobileNotificationsButton extends \Skins\Chameleon\Components\Structure {
 
@@ -48,7 +47,10 @@ class MobileNotificationsButton extends \Skins\Chameleon\Components\Structure {
 		}
 		// TODO: This should either be provided by BlueSpiceEchoConnector or there
 		// should at least be a registry for possible notification special pages
-		if ( !SpecialPageFactory::exists( 'Notifications' ) ) {
+		if ( !\MediaWiki\MediaWikiServices::getInstance()
+			->getSpecialPageFactory()
+			->exists( 'Notifications' )
+		) {
 			return true;
 		}
 		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );

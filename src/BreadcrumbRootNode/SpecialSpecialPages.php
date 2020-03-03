@@ -3,7 +3,6 @@
 namespace BlueSpice\Calumma\BreadcrumbRootNode;
 
 use BlueSpice\Calumma\BreadcrumbRootNodeBase;
-use SpecialPageFactory;
 use Title;
 
 class SpecialSpecialPages extends BreadcrumbRootNodeBase {
@@ -18,7 +17,9 @@ class SpecialSpecialPages extends BreadcrumbRootNodeBase {
 			return '';
 		}
 
-		$specialSpecialpages = SpecialPageFactory::getTitleForAlias( 'Specialpages' );
+		$specialSpecialpages = \MediaWiki\MediaWikiServices::getInstance()
+			->getSpecialPageFactory()
+			->getTitleForAlias( 'Specialpages' );
 		if ( $title->equals( $specialSpecialpages ) ) {
 			return '';
 		}

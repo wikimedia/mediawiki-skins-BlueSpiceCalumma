@@ -298,9 +298,11 @@ class SkinDataFieldDefinition {
 	}
 
 	private function initGlobalActions() {
-		$specialPages = \SpecialPageFactory::getPage( 'Specialpages' );
-		$specialUpload = \SpecialPageFactory::getPage( 'Upload' );
-		$specialWatchlist = \SpecialPageFactory::getPage( 'Watchlist' );
+		$factory = \MediaWiki\MediaWikiServices::getInstance()
+			->getSpecialPageFactory();
+		$specialPages = $factory->getPage( 'Specialpages' );
+		$specialUpload = $factory->getPage( 'Upload' );
+		$specialWatchlist = $factory->getPage( 'Watchlist' );
 
 		$this->data[SkinData::GLOBAL_ACTIONS] = [
 			'specialpage-specialpages' => [
