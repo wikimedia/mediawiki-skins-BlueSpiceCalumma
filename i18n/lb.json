@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"Les Meloures"
+			"Les Meloures",
+			"Soued031"
 		]
 	},
 	"bs-action-edit-edit-title": "Quell änneren",
@@ -53,8 +54,8 @@
 	"bs-edit-custom-menu-link-title": "Menü änneren",
 	"bs-edit-custom-menu-link-text": "Menü änneren",
 	"bs-calumma-toggle-button-tooltip": "Opmaachen / Zoumaachen",
-	"bs-action-new-please-login-title": "Loggt Iech w.e.g. a fir eng nei Säit derbäizesetzen",
-	"bs-action-edit-please-login-title": "Loggt Iech w.e.g. a fir dës Säit z'änneren",
+	"bs-action-new-please-login-title": "Loggt Iech wgl. a fir eng nei Säit derbäizesetzen",
+	"bs-action-edit-please-login-title": "Loggt Iech wgl. a fir dës Säit z'änneren",
 	"bs-action-new-file-text": "En Neie Fichier eroplueden",
 	"bs-calumma-breadcrumbs-nstab-main": "All Säiten",
 	"bs-calumma-breadcrumbs-pages": "Dir sidd hei",

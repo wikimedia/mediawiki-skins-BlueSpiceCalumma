@@ -4,7 +4,8 @@
 			"Otokoume",
 			"Shirayuki",
 			"珍庵",
-			"Suchichi02"
+			"Suchichi02",
+			"Kkairri"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice の外装",
@@ -51,5 +52,31 @@
 	"bs-mobilemoremenu-new-section-text": "新しい節",
 	"bs-calumma-pagetool-watch-tooltip": "ウォッチ",
 	"bs-calumma-pagetool-unwatch-tooltip": "ウォッチ解除",
-	"bs-allpages-description": "全ページ"
+	"bs-allpages-description": "全ページ",
+	"bs-action-edit-view-title": "編集を終了する",
+	"bs-action-edit-view-text": "編集を終了する",
+	"bs-action-new-please-login-title": "新しいページを追加するにはログインしてください",
+	"bs-action-edit-please-login-title": "このページを編集するにはログインしてください",
+	"bs-action-new-disabled-title": "{{GENDER:|あなた}}には新規ページを作成する権限がありません",
+	"bs-action-edit-disabled-title": "{{GENDER:|あなた}}にはこのページを編集する権限がありません",
+	"bs-action-new-subpage-title": "$1のサブページを追加する",
+	"bs-action-new-file-text": "新しいファイルをアップロード",
+	"bs-action-new-file-title": "新しいファイルをアップロード",
+	"bs-userbutton-userpage-link-text": "自分のプロフィール",
+	"bs-sitenav-globalactions-title": "グローバルの操作",
+	"bs-sitenav-globalactions-section-globalactions": "グローバルの操作",
+	"bs-sitenav-globalactions-section-management": "管理",
+	"bs-sitetools-panel-section-export-title": "書き出し",
+	"bs-sitetools-panel-section-export-label": "書き出し",
+	"bs-sitetools-pageactions": "ページでの操作",
+	"bs-sitetools-qm": "品質管理",
+	"bs-sitetools-associated-links": "関連するリンク",
+	"bs-all-templates-link-text": "すべてのテンプレート",
+	"bs-all-templates-link-title": "すべてのテンプレート",
+	"bs-calumma-breadcrumbs-nstab-main": "すべてのページ",
+	"bs-calumma-breadcrumbs-pages-title": "現在「$1」を閲覧中",
+	"bs-calumma-breadcrumbs-subpages": "「$2」の{{PLURAL:$1|サブページ}}",
+	"bs-calumma-breadcrumbs-subpages-title": "「$2」の{{PLURAL:$1|サブページ}}",
+	"bs-calumma-category-no-categories": "カテゴリが割り当てられていません",
+	"bs-calumma-assoclink-history-label": "履歴"
 }
