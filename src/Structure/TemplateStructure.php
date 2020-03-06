@@ -2,6 +2,10 @@
 
 namespace BlueSpice\Calumma\Structure;
 
+use DOMElement;
+use Skins\Chameleon\ChameleonTemplate;
+use Skins\Chameleon\IdRegistry;
+
 abstract class TemplateStructure extends \Skins\Chameleon\Components\Structure {
 
 	/**
@@ -15,6 +19,24 @@ abstract class TemplateStructure extends \Skins\Chameleon\Components\Structure {
 	 * @var string
 	 */
 	protected $renderedTemplate = '';
+
+	/**
+	 *
+	 * @var IdRegistry
+	 */
+	protected $idRegistry = null;
+
+	/**
+	 *
+	 * @param ChameleonTemplate $template
+	 * @param DOMElement|null $domElement
+	 * @param int $indent
+	 */
+	public function __construct( ChameleonTemplate $template, DOMElement $domElement = null,
+			$indent = 0 ) {
+		parent::__construct( $template, $domElement, $indent );
+		$this->idRegistry = IdRegistry::getRegistry();
+	}
 
 	/**
 	 * The resulting HTML

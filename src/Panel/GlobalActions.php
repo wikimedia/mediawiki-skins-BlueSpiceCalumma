@@ -112,7 +112,10 @@ class GlobalActions extends BasePanel {
 	protected function sortLinksAlphabetically( $links ) {
 		$helper = [];
 
-		foreach ( $links as $link ) {
+		foreach ( $links as $linkid => $link ) {
+			if ( !isset( $link['id'] ) || empty( $link['id'] ) ) {
+				$link['id'] = "bs-ga-link-$linkid";
+			}
 			if ( $link['text'] instanceof \Message ) {
 				$text = $link['text']->text();
 				$helper[$text] = $link;
