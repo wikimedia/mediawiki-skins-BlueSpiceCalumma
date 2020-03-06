@@ -36,7 +36,7 @@ abstract class PanelContainer extends BasePanel {
 	public function __construct( QuickTemplate $skintemplate ) {
 		$this->skintemplate = $skintemplate;
 		$this->rendererFactory =
-			Services::getInstance()->getBSRendererFactory();
+			Services::getInstance()->getService( 'BSRendererFactory' );
 	}
 
 	/**
