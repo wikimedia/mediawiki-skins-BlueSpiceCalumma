@@ -63,7 +63,7 @@ abstract class TabPanelStructure extends TemplateStructure {
 		if ( $component instanceof IPanel ) {
 			$tabId = $component->getHtmlId();
 			$data = [
-				'id' => $tabId,
+				'id' => $this->idRegistry->getId( $tabId ),
 				'title' => $component->getTitle(),
 				'body' => $component->getBody(),
 				'active' => $tabId === $activeTabId

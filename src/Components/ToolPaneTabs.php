@@ -44,7 +44,7 @@ class ToolPaneTabs extends TabPanelStructure {
 
 			$tabId = $panel->getHtmlId();
 			$subComponentsData[] = [
-				'id' => $tabId,
+				'id' => $this->idRegistry->getId( $tabId ),
 				'active' => $tabId === $activeTabId,
 				'title' => $panel->getTitleMessage(),
 				'body' => $panel->getBody()
