@@ -354,7 +354,7 @@ class PageHeader extends TemplateComponent {
 	 * @return RendererFactory
 	 */
 	protected function getRendererFactory() {
-		return Services::getInstance()->getBSRendererFactory();
+		return Services::getInstance()->getService( 'BSRendererFactory' );
 	}
 
 	/**
