@@ -81,7 +81,7 @@ class PageInfo extends PageHeader {
 			$linkRenderer = $services->getLinkRenderer();
 		}
 		if ( !$factory ) {
-			$factory = $services->getBSPageInfoElementFactory();
+			$factory = $services->getService( 'BSPageInfoElementFactory' );
 		}
 		if ( !$builder ) {
 			$builder = new PageInfoSentenceBuilder(

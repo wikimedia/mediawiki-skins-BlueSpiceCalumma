@@ -73,7 +73,7 @@ class LastEdit extends PageHeader {
 			$linkRenderer = $services->getLinkRenderer();
 		}
 		if ( !$util ) {
-			$util = $services->getBSUtilityFactory();
+			$util = $services->getService( 'BSUtilityFactory' );
 		}
 		if ( !$skinTemplate ) {
 			$skinTemplate = $params->get( static::SKIN_TEMPLATE, null );
