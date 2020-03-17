@@ -69,8 +69,7 @@ class UserButton extends TemplateComponent {
 		$values['notifications'] = $notifications;
 
 		// specialpage link
-		$tilte = new \Title();
-		$specialNotifications = $tilte->newFromText( 'Notifications', NS_SPECIAL );
+		$specialNotifications = \Title::newFromText( 'Notifications', NS_SPECIAL );
 		$values['notifications']['notifications-link'] = [
 			'href' => $specialNotifications->getFullURL(),
 			'text' => wfMessage( 'bs-userbutton-notifications-link-text' )->text(),
