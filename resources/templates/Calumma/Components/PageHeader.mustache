@@ -25,30 +25,39 @@
 <div class="visualClear"></div>
 
 <div class="bs-page-after-header">
-	{{#metaband}}
-	<div class="bs-page-edit pull-left">
-	    <ul class="bs-page-edit-elements">
-            <li class="bs-page-edit-element-icon-col">
-                <i class="icon-info"></i>
-            </li>
-            <li class="bs-page-edit-element-text-col">
-                {{{lastedit}}}
-            </li>
-        </ul>
-     </div>
-	{{/metaband}}
-	<div class="bs-page-info-element pull-right">
-		<ul>
-			{{#metaband}}
-			<li>
-				{{{watchaction}}}
-			</li>
-			<li>
-			    {{{pageinfoelements}}}
-			</li>
-			{{/metaband}}
-		</ul>
-</div>
+	<ul>
+		<li class="bs-page-edit-elements pull-left">
+			<ul>
+				{{#metaband}}
+				<li class="bs-page-edit-element-icon-col">
+					<i class="icon-info"></i>
+				</li>
+				<li class="bs-page-edit-element-text-col">
+					{{{lastedit}}}
+				</li>
+				{{/metaband}}
+			</ul>
+		</li>
+		<li class="pull-right">
+			<ul>
+				{{#metaband}}
+				<li>
+					{{{watchaction}}}
+				</li>
+				{{/metaband}}
+			</ul>
+		</li>
+	</ul>
+	<ul>
+		<li class="bs-page-info-elements pull-left">
+			<ul>
+				{{#metaband}}
+					{{{pageinfoelements}}}
+				{{/metaband}}
+			</ul>
+		</li>
+	</ul>
+	{{#beforecontent}}{{{.}}}{{/beforecontent}}
 </div>
 <div class="visualClear"></div>
 

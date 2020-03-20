@@ -67,6 +67,9 @@
 				"namespace-portalpage": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\NamespacePortalPage::factory",
 				"special-allpages": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialAllPages::factory",
 				"special-specialpages": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialSpecialPages::factory"
+			},
+			"PageHeaderBeforeContentRegistry": {
+				"pageheader-assignments": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignments::factory"
 			}
 		},
 		"BlueSpiceCustomMenu": {
@@ -230,6 +233,11 @@
 	},
 	"config_prefix": "bsgBlueSpiceCalumma",
 	"config": {
+		"PageHeaderBeforeContentEnabledProviders": {
+			"value": [
+				"pageheader-assignments"
+			]
+		},
 		"AssocLinksEnabledProviders": {
 			"value": [
 				"history-view",
