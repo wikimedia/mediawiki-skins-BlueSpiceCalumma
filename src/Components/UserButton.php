@@ -177,8 +177,7 @@ class UserButton extends TemplateComponent {
 
 			$returnTarget = 'returnto=' . $returnToPage->getPrefixedDBkey();
 
-			$oTilte = new \Title();
-			$oLogin = $oTilte->newFromText( 'Login', NS_SPECIAL );
+			$oLogin = \Title::newFromText( 'Login', NS_SPECIAL );
 
 			$login = [];
 			$login['url'] = $oLogin->getFullURL( $returnTarget );
