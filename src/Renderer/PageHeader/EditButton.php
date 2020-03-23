@@ -42,7 +42,13 @@ class EditButton extends PageHeader {
 	public function render() {
 		$html = '';
 		$title = $this->getContext()->getTitle();
-		if ( !$title || !$title->userCan( 'edit' ) ) {
+		if ( !$title ) {
+			return $html;
+		}
+		if ( !\MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan( 'edit', $this->getContext()->getUser(), $title )
+		) {
 			return $html;
 		}
 		$editActions = $this->getActions( $title );

@@ -46,13 +46,15 @@ class FeaturedActionsData {
 	 */
 	public static function populateActionsEdit( $skin, QuickTemplate $skintemplate, &$data ) {
 		$curTitle = $skin->getTitle();
+		$user = $skin->getUser();
+		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
 
 		$newSection = [
 			'position' => '10',
 			'id' => 'new-section',
 		];
 
-		if ( $curTitle->userCan( 'edit' ) && !$skin->getUser()->isLoggedIn() ) {
+		if ( $pm->userCan( 'edit', $user, $curTitle ) && !$user->isLoggedIn() ) {
 			$newSection += [
 				'title' => wfMessage( 'bs-action-edit-please-login-title' )->plain(),
 				'href' => self::getLoginUrl( $skin ),
@@ -63,7 +65,7 @@ class FeaturedActionsData {
 			return;
 		}
 
-		if ( !$curTitle->userCan( 'edit' ) ) {
+		if ( !$pm->userCan( 'edit', $user, $curTitle ) ) {
 			$newSection += [
 				'title' => wfMessage( 'bs-action-edit-disabled-title' )->text(),
 				'href' => '#',
@@ -114,13 +116,14 @@ class FeaturedActionsData {
 	public static function populateActionsNew( $skin, QuickTemplate $skintemplate, &$data ) {
 		$curTitle = $skin->getTitle();
 		$curUser = $skin->getUser();
+		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
 
 		$newSection = [
 			'position' => '10',
 			'id' => 'new-section'
 		];
 
-		if ( $curTitle->userCan( 'edit' ) && !$skin->getUser()->isLoggedIn() ) {
+		if ( $pm->userCan( 'edit', $curUser, $curTitle ) && !$curUser->isLoggedIn() ) {
 			$newSection += [
 				'title' => wfMessage( 'bs-action-new-please-login-title' )->plain(),
 				'href' => self::getLoginUrl( $skin ),

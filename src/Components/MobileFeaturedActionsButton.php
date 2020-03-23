@@ -15,7 +15,10 @@ class MobileFeaturedActionsButton extends \Skins\Chameleon\Components\Structure 
 		$action = $this->getDomElement()->getAttribute( 'data-action' );
 
 		$title = $this->getSkin()->getTitle();
-		if ( !$title->userCan( 'edit' ) ) {
+		if ( !\MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan( 'edit', $this->getSkin()->getUser(), $title )
+		) {
 			return '';
 		}
 

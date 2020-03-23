@@ -20,18 +20,22 @@ class MobileMoreMenu extends TemplateComponent {
 	 */
 	protected function getTemplateArgs() {
 		$args = [];
+		$skin = $this->getSkinTemplate()->getSkin();
 
-		if ( $this->getSkinTemplate()->getSkin()->getTitle()->isSpecialPage() ) {
+		if ( $skin->getTitle()->isSpecialPage() ) {
 			return [];
 		}
-		if ( $this->getSkinTemplate()->getSkin()->getUser()->isAnon() ) {
+		if ( $skin->getUser()->isAnon() ) {
 			return [];
 		}
 		$args['show'] = parent::getTemplateArgs();
 		$args['show']['title'] = "";
 		$args['show']['links'] = $this->getSkinTemplate()->get( SDFD::MOBILE_MORE_MENU );
 
-		if ( !$this->getSkinTemplate()->getSkin()->getTitle()->userCan( 'edit' ) ) {
+		if ( !\MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan( 'edit', $skin->getUser(), $skin->getTitle() )
+		) {
 			$args['show']['isDisabled'] = true;
 		}
 

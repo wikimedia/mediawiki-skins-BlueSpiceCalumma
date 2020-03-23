@@ -69,7 +69,13 @@ class FeaturedActions extends Component {
 			$splitButtonData['classes'][] = 'disabled';
 		}
 
-		$canEdit = $this->getSkin()->getTitle()->userCan( 'edit' );
+		$canEdit = \MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan(
+				'edit',
+				$this->getSkin()->getUser(),
+				$this->getSkin()->getTitle()
+		);
 		if ( !$canEdit && ( $firstEntry['id'] === 'ca-view' ) ) {
 			return [
 				'classes' => [
