@@ -10,7 +10,6 @@ use BlueSpice\SkinData;
 use BlueSpice\RendererFactory;
 use BlueSpice\Renderer\Params;
 use BlueSpice\Renderer\NullRenderer;
-use BlueSpice\Calumma\Renderer\PageHeader as PageHeaderRenderer;
 use BlueSpice\Calumma\Renderer\PageHeader\LastEdit;
 use BlueSpice\Calumma\Renderer\PageHeader\Category;
 use BlueSpice\Calumma\TemplateComponent;
@@ -431,7 +430,7 @@ class PageHeader extends TemplateComponent {
 		$params = array_merge(
 			parent::getTemplateArgs(),
 			[
-				PageHeaderRenderer::SKIN_TEMPLATE => $this->getSkinTemplate()
+				'skintemplate' => $this->getSkinTemplate()
 			]
 		);
 
