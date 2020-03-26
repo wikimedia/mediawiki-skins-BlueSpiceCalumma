@@ -7,7 +7,8 @@
 			"科劳",
 			"Viztor",
 			"Looong",
-			"VulpesVulpes825"
+			"VulpesVulpes825",
+			"500000000006城"
 		]
 	},
 	"bs-calumma-pref-toggle-navigaiton-main": "自动隐藏主菜单",
@@ -82,6 +83,8 @@
 	"bs-edit-custom-menu-link-title": "编辑菜单",
 	"bs-edit-custom-menu-link-text": "编辑菜单",
 	"bs-calumma-toggle-button-tooltip": "开/关",
+	"bs-calumma-breadcrumbs-nstab-main": "所有页面",
+	"bs-calumma-breadcrumbs-pages": "你在这里",
 	"bs-calumma-version-pager-prev-tooltip": "切换到上一个版本",
 	"bs-calumma-version-pager-next-tooltip": "切换到下一个版本",
 	"bs-calumma-version-pager-info-text": "[[用户:$2|$2]]提供的$1的版本",
