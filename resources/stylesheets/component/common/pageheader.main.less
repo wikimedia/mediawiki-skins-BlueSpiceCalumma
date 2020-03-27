@@ -45,22 +45,17 @@
 	color: @page-header-metaband-color;
 
 	ul {
+		padding: 0;
 		list-style: none;
-		padding: 0;
-		margin: 0 0 1em 0;
-	}
-
-	li {
-		height: 1.2em;
-		line-height: 1.2em;
-		margin: 0 0 0.5em 0;
-		padding: 0;
 	}
 
 	& > ul {
-		display: inline-flex;
-		flex-wrap: wrap-reverse;
+		display: flex;
 		justify-content: space-between;
-		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.bs-page-watch {
+		line-height: 1.1em;
 	}
 }

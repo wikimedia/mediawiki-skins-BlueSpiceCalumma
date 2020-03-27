@@ -1,12 +1,22 @@
-.bs-page-info-elements {
+.bs-page-info-elements-col {
 	& > ul {
 		display: inline-flex;
+		width: 100%;
+		justify-content: flex-end;
+		flex-wrap: wrap-reverse;
+	}
+
+}
+.bs-page-info-elements {
+	& > ul {
+		display: flex;
 		flex-wrap: nowrap;
 	}
 
 	.bs-page-info-element-button {
 		height: 1.1em;
 		color: @link-color;
+		margin-left: 10px;
 
 		i::before {
 			font-family: icomoon;
