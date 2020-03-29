@@ -244,8 +244,46 @@ class PageHeader extends TemplateComponent {
 		}
 
 		$args = parent::getTemplateArgs();
-		$args[Category::PARAM_CATEGORY_NAMES] = $this->getSkin()->getOutput()
-			->getCategories( 'normal' );
+
+		// If user has set preference not to show hidden cats,
+		// do not retrieve them.
+		$showHiddenCategories = \RequestContext::getMain()->getUser()
+			->getOption( "showhiddencats" );
+		$categoryRequestType = "normal";
+		if ( $showHiddenCategories ) {
+			$categoryRequestType = "all";
+		}
+		$categoriesFromSkin = $this->getSkin()->getOutput()
+			->getCategories( $categoryRequestType );
+
+		// Filter out tracking categories if the user set hidden categories
+		// not be displayes. Unfortunately, this has to be done on a text
+		// level, as tracking categories do not have any metadata to
+		// identify them.
+		if ( !$showHiddenCategories ) {
+			$trackingCategories = new \TrackingCategories(
+				Services::getInstance()->getConfigFactory()->makeConfig( 'main' )
+			);
+			$trackingCategoryList = $trackingCategories->getTrackingCategories();
+			foreach ( $trackingCategoryList as $category ) {
+				$trackingCategoryNames[] = $category['cats'][0]->mTextform;
+			}
+			$categoriesToBeDisplayed = [];
+			foreach ( $categoriesFromSkin as $category ) {
+				if ( in_array( $category, $trackingCategoryNames ) ) {
+					continue;
+				}
+				$categoriesToBeDisplayed[] = $category;
+			}
+		} else {
+			$categoriesToBeDisplayed = $categoriesFromSkin;
+		}
+
+		$args[Category::PARAM_CATEGORY_NAMES] = $categoriesToBeDisplayed;
+		$args = array_merge(
+			$args,
+			[ PageHeaderRenderer::SKIN_TEMPLATE => $this->getSkinTemplate() ]
+		);
 		$renderer = $this->getRendererFactory()->get(
 			'pageheader-category',
 			new Params( $args ),
