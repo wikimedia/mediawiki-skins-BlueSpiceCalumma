@@ -280,10 +280,6 @@ class PageHeader extends TemplateComponent {
 		}
 
 		$args[Category::PARAM_CATEGORY_NAMES] = $categoriesToBeDisplayed;
-		$args = array_merge(
-			$args,
-			[ PageHeaderRenderer::SKIN_TEMPLATE => $this->getSkinTemplate() ]
-		);
 		$renderer = $this->getRendererFactory()->get(
 			'pageheader-category',
 			new Params( $args ),
