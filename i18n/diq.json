@@ -89,5 +89,13 @@
 	"bs-calumma-page-last-edit-by-system-user": "Karberê sistemi",
 	"bs-calumma-assoclink-history-label": "Terix",
 	"bs-calumma-context-pagebutton-label": "Pele",
-	"bs-calumma-context-discussionbutton-label": "Werênayış"
+	"bs-calumma-context-discussionbutton-label": "Werênayış",
+	"bs-calumma-page-watch-text": "Seyr kerê",
+	"bs-calumma-page-unwatch-title": "Hıni \"$1\" seyr mekerê",
+	"bs-calumma-page-unwatch-text": "Seyri vındarne",
+	"bs-calumma-pageinfo-qm-button-tooltip": "Panela idarey qelitey akerdey",
+	"bs-calumma-pageinfosentence-no-item-label": "Melumatê weziyeti çıniyo",
+	"bs-calumma-pageinfosentence-no-item-tooltip": "Heqê ena pela de weziyetê melumati çıniyo",
+	"bs-calumma-pageinfosentence": "Nê pela $1 ya/yo",
+	"bs-calumma-notification-logged-in": "Şıma ronıştış akerdo"
 }

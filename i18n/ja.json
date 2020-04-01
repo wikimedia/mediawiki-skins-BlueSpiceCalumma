@@ -5,7 +5,8 @@
 			"Shirayuki",
 			"珍庵",
 			"Suchichi02",
-			"Kkairri"
+			"Kkairri",
+			"Aefgh39622"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice の外装",
@@ -78,5 +79,22 @@
 	"bs-calumma-breadcrumbs-subpages": "「$2」の{{PLURAL:$1|サブページ}}",
 	"bs-calumma-breadcrumbs-subpages-title": "「$2」の{{PLURAL:$1|サブページ}}",
 	"bs-calumma-category-no-categories": "カテゴリが割り当てられていません",
-	"bs-calumma-assoclink-history-label": "履歴"
+	"bs-calumma-assoclink-history-label": "履歴",
+	"bs-calumma-pref-toggle-navigaiton-main": "メインメニューを自動的に非表示にする",
+	"bs-sitenav-navigation-title": "メインナビゲーション",
+	"bs-sitenav-usersidebar-title": "パーソナルナビゲーション",
+	"bs-sitetools-view-mode": "モード",
+	"bs-calumma-recentchanges-intro": "このリストには、最近行ったページの編集と新しく作成したページがすべて表示されます。",
+	"bs-calumma-breadcrumbs-pages": "現在位置",
+	"bs-calumma-page-last-edit-text": "最終編集: $1前、$2",
+	"bs-calumma-page-watch-title": "「$1」をウォッチ",
+	"bs-calumma-page-watch-text": "ウォッチ",
+	"bs-calumma-page-unwatch-title": "今後「$1」を監視しない",
+	"bs-calumma-page-unwatch-text": "ウォッチ解除",
+	"bs-calumma-pageinfosentence": "このページは$1です。",
+	"bs-calumma-pageinfosentence-item-separator": "and",
+	"bs-calumma-pageinfosentence-item-class-separator": "but",
+	"bs-calumma-full-screen-button-tooltip": "全画面/通常モード",
+	"bs-calumma-notification-logged-in": "ログインしました",
+	"bs-calumma-search-button-label": "検索"
 }
