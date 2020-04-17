@@ -2,10 +2,11 @@
 
 namespace BlueSpice\Calumma\Panel;
 
-use QuickTemplate;
-use BlueSpice\SkinData;
-use BlueSpice\Calumma\Components\SimpleLinkListGroup;
 use BlueSpice\Calumma\Components\CollapsibleGroup;
+use BlueSpice\Calumma\Components\SimpleLinkListGroup;
+use BlueSpice\Calumma\CookieHandler;
+use BlueSpice\SkinData;
+use QuickTemplate;
 
 class GlobalActions extends BasePanel {
 
@@ -137,8 +138,8 @@ class GlobalActions extends BasePanel {
 	public function getPanelCollapseState() {
 		$cookiePrefix = $this->getCookiePrefix();
 		$cookieName = $cookiePrefix . 'collapse-' . $this->sectionId;
-		$request = $this->skintemplate->getSkin()->getRequest();
-		$cookie = $request->getCookie( $cookieName );
+		$cookieHandler = new CookieHandler( $this->skintemplate->getSkin()->getRequest() );
+		$cookie = $cookieHandler->getCookie( $cookieName );
 
 		if ( $cookie === 'false' ) {
 			return false;

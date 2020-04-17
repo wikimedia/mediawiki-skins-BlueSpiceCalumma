@@ -51,36 +51,37 @@ class Skin extends \SkinChameleon {
 	public function addToBodyAttributes( $out, &$bodyAttrs ) {
 		$classes = $out->getProperty( 'bodyClassName' );
 		$request = $this->getRequest();
+		$cookieHandler = new CookieHandler( $request );
 
 		$cookieDesktopView = null;
-		$cookieDesktopView = $request->getCookie( 'Calumma_desktop-view' );
+		$cookieDesktopView = $cookieHandler->getCookie( 'Calumma_desktop-view' );
 
-		$cookieFullSreenMode = null;
-		$cookieFullSreenMode = $request->getCookie( 'Calumma_bs-full-screen-mode' );
+		$cookieFullScreenMode = null;
+		$cookieFullScreenMode = $cookieHandler->getCookie( 'Calumma_bs-full-screen-mode' );
 
 		$desktopView = false;
-		$fullSreenMode = false;
+		$fullScreenMode = false;
 
 		if ( ( $cookieDesktopView === null ) || ( $cookieDesktopView === 'true' ) ) {
 			$desktopView = true;
 		}
 
-		if ( ( $cookieFullSreenMode !== null ) && ( $cookieFullSreenMode === 'true' ) ) {
-			$fullSreenMode = true;
+		if ( ( $cookieFullScreenMode !== null ) && ( $cookieFullScreenMode === 'true' ) ) {
+			$fullScreenMode = true;
 		}
 
 		$bodyAttrs[ 'class' ] .= $this->checkCustomMenuState( 'header' );
 
-		if ( ( $desktopView === true ) && ( $fullSreenMode === false ) ) {
+		if ( ( $desktopView === true ) && ( $fullScreenMode === false ) ) {
 			$cookieNavigationMainSticky =
-				$request->getCookie( 'Calumma_navigation-main-sticky' );
+				$cookieHandler->getCookie( 'Calumma_navigation-main-sticky' );
 			$cookieSitetoolsMainSticky =
-				$request->getCookie( 'Calumma_sitetools-main-sticky' );
+				$cookieHandler->getCookie( 'Calumma_sitetools-main-sticky' );
 
 			$cookieNavigationMainCollapsed =
-				$request->getCookie( 'Calumma_navigation-main-collapse' );
+				$cookieHandler->getCookie( 'Calumma_navigation-main-collapse' );
 			$cookieSitetoolsMainCollapsed =
-				$request->getCookie( 'Calumma_sitetools-main-collapse' );
+				$cookieHandler->getCookie( 'Calumma_sitetools-main-collapse' );
 
 			$bodyAttrs[ 'class' ] .= $this->checkToggleState(
 				$cookieNavigationMainSticky,
@@ -92,7 +93,7 @@ class Skin extends \SkinChameleon {
 				$cookieSitetoolsMainCollapsed,
 				'sitetools'
 			);
-		} elseif ( ( $desktopView === true ) && ( $fullSreenMode === true ) ) {
+		} elseif ( ( $desktopView === true ) && ( $fullScreenMode === true ) ) {
 			$bodyAttrs[ 'class' ] .=
 				' navigation-main-collapse sitetools-main-collapse bs-full-screen-mode ';
 		} else {
@@ -166,7 +167,8 @@ class Skin extends \SkinChameleon {
 	protected function checkCustomMenuState( $menu ) {
 		$className = 'bs-custom-menu-' . $menu . '-container-collapse';
 		$cookieName = "Calumma_$className";
-		$cookieValue = $this->getRequest()->getCookie( $cookieName, null, 'false' );
+		$cookieHandler = new CookieHandler( $this->getRequest() );
+		$cookieValue = $cookieHandler->getCookie( $cookieName, 'false' );
 		$userHasReadPermissionsAtAll = $this->getUser()->isAllowed( 'read' );
 
 		if ( $cookieValue !== 'false' || !$userHasReadPermissionsAtAll ) {

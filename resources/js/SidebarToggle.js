@@ -6,14 +6,14 @@
 
 		if( $( 'body' ).hasClass( target ) ){
 			$( 'body' ).removeClass( target );
-			mw.cookie.set( 'Calumma_'+target, 'false' );
+			bs.calumma.cookie.set( 'Calumma_'+target, 'false' );
 		}
 		else{
 			$( 'body' ).addClass( target );
 			if ( $( this ).closest( 'aside' ).hasClass( 'active' ) ) {
 				$( this ).closest( 'aside' ).removeClass( 'active' );
 			}
-			mw.cookie.set( 'Calumma_'+target, 'true' );
+			bs.calumma.cookie.set( 'Calumma_'+target, 'true' );
 		}
 	});
 
@@ -26,10 +26,10 @@
 
 			var asideTrigger = $anchor.closest( 'aside' ).attr( 'data-toggle-by' );
 
-			var activeTab = mw.cookie.get( 'CalummaTab_'+tabsContainerId );
+			var activeTab = bs.calumma.cookie.get( 'CalummaTab_'+tabsContainerId );
 			if ( ( activeTab === targetId ) || !activeTab ){
 				$( 'body' ).addClass( asideTrigger );
-				mw.cookie.set( 'Calumma_' + asideTrigger, 'true' );
+				bs.calumma.cookie.set( 'Calumma_' + asideTrigger, 'true' );
 
 				/*close graphicallist*/
 				var $graphicalListTrigger = $anchor.closest( 'aside' ).find( '.dynamic-graphical-list-visible a.title' );
@@ -43,13 +43,13 @@
 			$( 'body' ).addClass( 'navigation-main-collapse' );
 			$( 'body' ).addClass( 'sitetools-main-collapse' );
 
-			mw.cookie.set( 'Calumma_navigation-main-collapse', 'true' );
-			mw.cookie.set( 'Calumma_sitetools-main-collapse', 'true' );
+			bs.calumma.cookie.set( 'Calumma_navigation-main-collapse', 'true' );
+			bs.calumma.cookie.set( 'Calumma_sitetools-main-collapse', 'true' );
 
-			mw.cookie.set( 'Calumma_desktop-view', 'false' );
+			bs.calumma.cookie.set( 'Calumma_desktop-view', 'false' );
 		}
 		else {
-			mw.cookie.set( 'Calumma_desktop-view', 'true' );
+			bs.calumma.cookie.set( 'Calumma_desktop-view', 'true' );
 		}
 	});
 

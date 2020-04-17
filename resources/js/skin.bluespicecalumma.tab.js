@@ -5,6 +5,6 @@
 		var $tabsContainer = $anchor.closest( '.bs-tabs' );
 		var tabsContainerId = $tabsContainer.attr( 'id' );
 
-		mw.cookie.set( 'CalummaTab_'+tabsContainerId, targetId );
+		bs.calumma.cookie.set( 'CalummaTab_'+tabsContainerId, targetId );
 	});
 })( document, jQuery, mediaWiki );

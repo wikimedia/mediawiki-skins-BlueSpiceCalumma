@@ -8,7 +8,7 @@
 		if ( $title.hasClass( 'collapsed' ) ) {
 			collapeState = true;
 		}
-		mw.cookie.set( 'Calumma_CollapsePanel_'+ collapsingPanel, collapeState );
+		bs.calumma.cookie.set( 'Calumma_CollapsePanel_'+ collapsingPanel, collapeState );
 	} );
 })( mediaWiki, jQuery, document, blueSpice );
 
