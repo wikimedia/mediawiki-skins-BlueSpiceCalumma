@@ -2,6 +2,9 @@
 
 namespace BlueSpice\Calumma\Structure;
 
+use BlueSpice\Calumma\CookieHandler;
+use BlueSpice\Calumma\IPanel;
+
 abstract class TabPanelStructure extends TemplateStructure {
 
 	/**
@@ -53,7 +56,7 @@ abstract class TabPanelStructure extends TemplateStructure {
 
 	/**
 	 *
-	 * @param \BlueSpice\Calumma\Structure\IPanel $component
+	 * @param IPanel $component
 	 * @return array
 	 * @throws \MWException
 	 */
@@ -85,9 +88,8 @@ abstract class TabPanelStructure extends TemplateStructure {
 	 * @return string
 	 */
 	protected function getActiveTabId() {
-		$cookieName = $this->getCookieName();
-		$activeTabId = $this->getSkin()->getRequest()->getCookie( $cookieName );
-		return $activeTabId;
+		$cookieHandler = new CookieHandler( $this->getSkin()->getRequest() );
+		return $cookieHandler->getCookie( $this->getCookieName() );
 	}
 
 	/**

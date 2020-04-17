@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Calumma\Panel;
 
+use BlueSpice\Calumma\CookieHandler;
 use BlueSpice\Calumma\IPanel;
 use QuickTemplate;
 use Skins\Chameleon\IdRegistry;
@@ -105,8 +106,8 @@ abstract class BasePanel implements IPanel {
 		$htmlId = $this->getHtmlId();
 		$cookiePrefix = $this->getCookiePrefix();
 
-		$request = $this->skintemplate->getSkin()->getRequest();
-		$cookie = $request->getCookie( $cookiePrefix . $htmlId );
+		$cookieHandler = new CookieHandler( $this->skintemplate->getSkin()->getRequest() );
+		$cookie = $cookieHandler->getCookie( $cookiePrefix . $htmlId );
 
 		if ( $cookie === 'false' ) {
 			return false;

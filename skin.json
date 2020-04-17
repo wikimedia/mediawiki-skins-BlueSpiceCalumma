@@ -73,6 +73,14 @@
 			"Registry": {
 				"header": "\\BlueSpice\\Calumma\\CustomMenu\\Header::getInstance"
 			}
+		},
+		"BlueSpicePrivacy": {
+			"CookieConsentNativeMWCookies": {
+				"Calumma_state": {
+					"group": "convenience",
+					"addPrefix": true
+				}
+			}
 		}
 	},
 	"ValidSkinNames": {
@@ -115,6 +123,7 @@
 		},
 		"skin.bluespicecalumma.scripts": {
 			"scripts": [
+				"js/skin.bluespicecalumma.cookies.js",
 				"js/Breadcrumb.js",
 				"js/SidebarToggle.js",
 				"js/skin.bluespicecalumma.pageinfo.QmPanel.js",

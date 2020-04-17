@@ -3,6 +3,8 @@
 
 namespace BlueSpice\Calumma\Components;
 
+use BlueSpice\Calumma\CookieHandler;
+
 class FullScreenButton extends \Skins\Chameleon\Components\Structure {
 	/**
 	 * The resulting HTML
@@ -12,8 +14,9 @@ class FullScreenButton extends \Skins\Chameleon\Components\Structure {
 		$data = 'bs-full-screen-mode';
 		$class = $this->getDomElement()->getAttribute( 'class' );
 
-		$cookieFullSreenMode = $this->getSkin()->getRequest()->getCookie( 'Calumma_bs-full-screen-mode' );
-		if ( isset( $cookieFullSreenMode ) && ( $cookieFullSreenMode === 'true' ) ) {
+		$cookieHandler = new CookieHandler( $this->getSkin()->getRequest() );
+		$cookieFullScreenMode = $cookieHandler->getCookie( 'Calumma_bs-full-screen-mode' );
+		if ( isset( $cookieFullScreenMode ) && ( $cookieFullScreenMode === 'true' ) ) {
 			$class .= ' bs-full-screen-mode ';
 		}
 

@@ -4,6 +4,7 @@ namespace BlueSpice\Calumma\Panel;
 
 use BlueSpice\Calumma\Components\CollapsibleGroup;
 use BlueSpice\Calumma\Components\SimpleLinkListGroup;
+use BlueSpice\Calumma\CookieHandler;
 use QuickTemplate;
 
 class MediaWikiSidebar extends BasePanel {
@@ -270,8 +271,8 @@ class MediaWikiSidebar extends BasePanel {
 	protected function getGroupCollapseState( $sectionId ) {
 		$cookiePrefix = $this->getCookiePrefix();
 		$cookieName = $cookiePrefix . 'collapse-' . $sectionId;
-		$request = $this->skintemplate->getSkin()->getRequest();
-		$cookie = $request->getCookie( $cookieName );
+		$cookieHandler = new CookieHandler( $this->skintemplate->getSkin()->getRequest() );
+		$cookie = $cookieHandler->getCookie( $cookieName );
 
 		if ( $cookie === 'false' ) {
 			return false;

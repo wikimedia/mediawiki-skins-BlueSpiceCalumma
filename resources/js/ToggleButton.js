@@ -8,11 +8,11 @@
 
 		if( $( 'body' ).hasClass( target ) ){
 			$( 'body' ).removeClass( target );
-			mw.cookie.set( 'Calumma_'+target, 'false' );
+			bs.calumma.cookie.set( 'Calumma_'+target, 'false' );
 		}
 		else{
 			$( 'body' ).addClass( target );
-			mw.cookie.set( 'Calumma_'+target, 'true' );
+			bs.calumma.cookie.set( 'Calumma_'+target, 'true' );
 		}
 	});
 })( document, jQuery, mediaWiki );

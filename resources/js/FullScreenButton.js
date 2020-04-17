@@ -7,7 +7,7 @@
 		if ( $( this ).hasClass( target ) ){
 			$( this ).removeClass( target );
 			$( 'body.mediawiki' ).removeClass( target );
-			mw.cookie.set( 'Calumma_'+target, 'false' );
+			bs.calumma.cookie.set( 'Calumma_'+target, 'false' );
 		} else {
 			if ( !( $( 'body' ).hasClass( 'navigation-main-collapse' ) ) ){
 				$( '.navigation-main .sidebar-toggle' ).trigger( 'click' );
@@ -17,7 +17,7 @@
 			}
 			$( this ).addClass( target );
 			$( 'body.mediawiki' ).addClass( target );
-			mw.cookie.set( 'Calumma_'+target, 'true' );
+			bs.calumma.cookie.set( 'Calumma_'+target, 'true' );
 		}
 	});
 })( document, jQuery, mediaWiki );

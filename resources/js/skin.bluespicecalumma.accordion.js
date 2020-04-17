@@ -4,6 +4,6 @@ $( function( mw, $, d ) {
 		var targetId = $panel.attr( 'id' );
 		var tabsContainerId = $(this).attr( 'id' );
 
-		mw.cookie.set( 'CalummaAccordion_'+tabsContainerId, targetId );
+		bs.calumma.cookie.set( 'CalummaAccordion_'+tabsContainerId, targetId );
 	});
 })( mediaWiki, jQuery, document );
