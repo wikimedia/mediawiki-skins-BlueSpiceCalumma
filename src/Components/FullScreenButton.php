@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BlueSpice\Calumma\Components;
 
 use BlueSpice\Calumma\CookieHandler;
