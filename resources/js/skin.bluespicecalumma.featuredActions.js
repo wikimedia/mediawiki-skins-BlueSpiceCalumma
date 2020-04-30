@@ -11,16 +11,18 @@
 				if ( specialNamespace || mw.config.get( 'wgCanonicalNamespace' ) === '' ) {
 					siteNamespace = '';
 				} else {
-					siteNamespace = mw.config.get( 'wgCanonicalNamespace' ) + ':';
+					siteNamespace = mw.config.get( 'wgCanonicalNamespace' );
 				}
 				var dlg = Ext.create( 'BS.Calumma.dialog.NewPage', {
 					id: "bs-calumma-featured-action-dialog-newpage",
 					namespace: siteNamespace
 				} );
 
-				dlg.on( 'ok', function ( sender, pageName ) {
-					if ( pageName ) {
-						window.location.href = mw.util.getUrl( pageName, { action: 'view' } );
+				dlg.on( 'ok', function ( sender, data ) {
+					if ( data.name ) {
+						window.location.href = mw.util.getUrl( data.name, {
+							action: 'edit'
+						} );
 					}
 				} );
 				dlg.show();
@@ -41,11 +43,17 @@
 				} );
 
 				dlg.on( 'ok', function ( sender, data ) {
-					var data = currentPageName + '/' + data;
-					window.location.href = mw.util.getUrl( data, { action: 'view' } );
+					var data = {
+						namespace: mw.config.get( 'wgCanonicalNamespace' ),
+						name: currentPageName + '/' + data
+					};
+					window.location.href = mw.util.getUrl( data.name, {
+						action: 'edit'
+					} );
 				} );
 				dlg.show();
 			} );
 		} );
 	} );
+
 } )( mediaWiki, jQuery, blueSpice, document );
