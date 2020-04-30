@@ -9,11 +9,17 @@ Ext.define( 'BS.Calumma.dialog.NewPage', {
 
 	makeItems: function() {
 		var me = this;
+		var namespace = '';
+
+		if ( this.namespace !== '' ) {
+			namespace = this.namespace;
+		}
+
 		this.cbPageName = Ext.create( 'BS.form.field.TitleCombo', {
 			id: this.getId() + '-pagename',
 			fieldLabel: mw.message('bs-action-new-page-text').plain(),
 			enableKeyEvents: true,
-			value: this.namespace,
+			value: namespace + ':',
 			// Internet explorer has trouble asserting value is on the allowed list
 			forceSelection: Ext.isIE ? false : true,
 			listeners: {
@@ -35,10 +41,16 @@ Ext.define( 'BS.Calumma.dialog.NewPage', {
 			this.cbPageName.select( this.currentInputValue );
 			this.onBtnOKClick();
 		}
+		if ( e.charCode === 58 ) {
+			this.namespace = this.currentInputValue ;
+		}
 	},
 
 	getData: function () {
-		return this.currentInputValue;
+		return {
+			name: this.currentInputValue,
+			namespace: this.namespace
+		}
 	},
 
 	show: function() {
