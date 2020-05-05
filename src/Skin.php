@@ -133,11 +133,11 @@ class Skin extends \SkinChameleon {
 	 */
 	protected function checkToggleState( $cookie_sticky, $cookie_state, $nav ) {
 		$option = 'bs-calumma-settings-' . $nav . '-main-collapse';
-		$userSetting = $this->getSkin()->getUser()->getOption( $option );
+		$userSetting = $this->getSkin()->getUser()->getOption( $option, null );
 		$userIsLoggedIn = $this->getSkin()->getUser()->isLoggedIn();
 
 		$userSettingClass = '';
-		if ( ( !isset( $userSetting ) ) || ( $userSetting === true ) || ( $userSetting === '1' ) ) {
+		if ( $userSetting === null || (bool)$userSetting === true ) {
 			$userSettingClass = $nav . '-main-collapse ';
 		}
 
