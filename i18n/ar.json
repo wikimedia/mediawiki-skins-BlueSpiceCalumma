@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"HitomiAkane",
 			"Meno25",
 			"ديفيد",
-			"HitomiAkane",
 			"زكريا"
 		]
 	},
@@ -78,7 +78,7 @@
 	"bs-edit-custom-menu-link-title": "عدل القائمة",
 	"bs-edit-custom-menu-link-text": "عدل القائمة",
 	"bs-calumma-toggle-button-tooltip": "فتح/إغلاق",
-	"bs-action-new-please-login-title": "يُرجَى تسجيل الدخول لإضافة صفحة جديدة",
+	"bs-action-new-please-login-title": "يرجى تسجيل الدخول لإضافة صفحة جديدة",
 	"bs-action-edit-please-login-title": "يُرجَى تسجيل الدخول لتعديل هذه الصفحة",
 	"bs-action-new-disabled-title": "ليست {{GENDER:|لديك}} صلاحية إنشاء صفحة جديدة",
 	"bs-action-edit-disabled-title": "ليست {{GENDER:|لديك}} صلاحية تعديل صفحة جديدة",
