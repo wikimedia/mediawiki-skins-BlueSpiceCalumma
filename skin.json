@@ -272,7 +272,7 @@
 			]
 		},
 		"BreadcrumbNamespacePortalPageRootNodePortalNamespace": {
-			"@note": "NS_PROJECT",
+			"description": "Defaults to NS_PROJECT",
 			"value": 4
 		},
 		"PanelCollapseState":{
