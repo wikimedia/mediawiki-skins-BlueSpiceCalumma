@@ -80,7 +80,7 @@
 	"bs-sidebar-override": "\n* navigation\n** mainpage|mainpage-description\n** bs-allpages-url|bs-allpages-description\n** recentchanges-url|recentchanges\n** bs-support-url|bs-support-description",
 	"bs-allpages-url": "Special:AllPages",
 	"bs-allpages-description": "All pages",
-	"bs-support-url": "https://bluespice.com/services/support",
+	"bs-support-url": "https://bluespice.com/services/technical-support",
 	"bs-support-description": "Support",
 	"bs-calumma-navigation-toggle-tooltip": "Open / close",
 	"bs-edit-custom-menu-link-title": "Edit menu",
