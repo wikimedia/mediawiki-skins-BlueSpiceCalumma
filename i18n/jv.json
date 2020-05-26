@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Diki Ananta",
 			"NoiX180"
 		]
 	},
@@ -27,7 +28,7 @@
 	"bs-mobilemoremenu-history-title": "Sajarah",
 	"bs-mobilemoremenu-history-text": "Sajarah",
 	"bs-sitenav-navigation-title": "Napigasi pokok",
-	"bs-sitenav-navigation-section-mobileusercontainer": "Panganggo",
+	"bs-sitenav-navigation-section-mobileusercontainer": "Naraguna",
 	"bs-sitenav-navigation-section-mediawikisidebar": "Wiki",
 	"bs-sitenav-globalactions-title": "Laku sajagat",
 	"bs-sitenav-globalactions-section-globalactions": "Laku sajagat",
