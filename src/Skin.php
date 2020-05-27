@@ -184,4 +184,17 @@ class Skin extends \SkinChameleon {
 		return Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 	}
 
+	/**
+	 * Make sure ParserFunctions within `MediaWiki:Sidebar` are evaluated
+	 * @param array &$bar
+	 * @param string $message
+	 */
+	public function addToSidebar( &$bar, $message ) {
+		if ( $message === 'sidebar' ) {
+			$this->addToSidebarPlain( $bar, wfMessage( $message )->inContentLanguage()->text() );
+			return;
+		}
+		parent::addToSidebar( $bar, $message );
+	}
+
 }
