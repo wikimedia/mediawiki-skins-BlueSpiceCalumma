@@ -3,6 +3,7 @@
 body {
 
 	/* aside.navigation-main */
+	&.navigation-main-collapse .navigation-main.active,
 	&:not( .navigation-main-collapse ) .navigation-main {
 		width: @navigation-main-width;
 		transition: width .3s;
@@ -13,7 +14,6 @@ body {
 		}
 	}
 
-	&.navigation-main-collapse .navigation-main.active,
 	&.navigation-main-collapse .navigation-main {
 		width: 0;
 		transition: width .3s;
@@ -26,7 +26,7 @@ body {
 
 
 	/* aside.sitetools-main */
-
+	&.sitetools-main-collapse .sitetools-main.active,
 	&:not( .sitetools-main-collapse ) .sitetools-main {
 		width: @sitetools-main-width;
 		transition: width .3s;
@@ -37,7 +37,6 @@ body {
 		}
 	}
 
-	&.sitetools-main-collapse .sitetools-main.active,
 	&.sitetools-main-collapse .sitetools-main {
 		width: 0;
 		transition: width .3s;
