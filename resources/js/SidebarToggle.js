@@ -39,16 +39,22 @@
 	});
 
 	$( d ).ready( function(e){
-		if( ( $( d ).width() <= 1000 ) ) {
+		if( $( d ).width() <= 721 ) {
+			$( 'body' ).addClass( 'navigation-main-collapse' );
+			$( 'aside.navigation-main' ).css( 'display', 'block' );
+
+			bs.calumma.cookie.set( 'Calumma_navigation-main-collapse', 'true' );
+			bs.calumma.cookie.set( 'Calumma_desktop-view', 'false' );
+		}
+		if( ( $( d ).width() > 721 ) && ( $( d ).width() <= 1000 ) ) {
 			$( 'body' ).addClass( 'navigation-main-collapse' );
 			$( 'body' ).addClass( 'sitetools-main-collapse' );
 
 			bs.calumma.cookie.set( 'Calumma_navigation-main-collapse', 'true' );
 			bs.calumma.cookie.set( 'Calumma_sitetools-main-collapse', 'true' );
-
 			bs.calumma.cookie.set( 'Calumma_desktop-view', 'false' );
 		}
-		else {
+		if( $( d ).width() > 1000 ) {
 			bs.calumma.cookie.set( 'Calumma_desktop-view', 'true' );
 		}
 	});
