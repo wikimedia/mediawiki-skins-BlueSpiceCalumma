@@ -1,6 +1,10 @@
 body {
 
-	/* aside.navigation-main */
+	.navigation-main.active,
+	.navigation-main {
+		display: none;
+	}
+
 	&:not( .navigation-main-collapse ) .navigation-main {
 		width: 100vw;
 		transition: width .3s;
