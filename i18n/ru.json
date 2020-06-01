@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Cronolio",
+			"Diman Russkov",
 			"Facenapalm",
 			"Katunchik",
 			"Nk88",
@@ -89,7 +90,9 @@
 	"bs-calumma-toggle-button-tooltip": "Открыть/закрыть",
 	"bs-calumma-breadcrumbs-nstab-main": "Все страницы",
 	"bs-calumma-breadcrumbs-pages": "Вы здесь",
+	"bs-calumma-breadcrumbs-pages-title": "Вы просматриваете \"$1\"",
 	"bs-calumma-category-no-categories": "Нет назначенных категорий",
+	"bs-calumma-page-watch-title": "Смотреть \"$1\"",
 	"bs-calumma-page-watch-text": "Следить",
 	"bs-calumma-page-unwatch-text": "Не следить",
 	"bs-calumma-pageinfosentence-no-item-label": "Нет информации о статусе",
