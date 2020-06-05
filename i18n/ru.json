@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Cronolio",
+			"Diman Russkov",
 			"Facenapalm",
 			"Katunchik",
 			"Nk88",
@@ -101,5 +102,10 @@
 	"bs-calumma-context-pagebutton-label": "Страница",
 	"bs-calumma-context-discussionbutton-label": "Обсуждение",
 	"bs-calumma-context-discussionbutton-tooltip": "Показать текущую страницу обсуждения",
-	"bs-calumma-search-button-label": "Поиск"
+	"bs-calumma-search-button-label": "Поиск",
+	"bs-action-new-disabled-title": "{{GENDER:|У вас}} нет прав на создание новой страницы",
+	"bs-action-edit-disabled-title": "{{GENDER:|У вас}} нет прав на редактирование этой страницы",
+	"bs-calumma-breadcrumbs-pages-title": "Вы просматриваете \"$1\"",
+	"bs-calumma-page-watch-title": "Смотреть \"$1\"",
+	"bs-calumma-full-screen-button-tooltip": "Полноэкранный/Нормальный режим"
 }

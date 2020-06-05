@@ -76,5 +76,17 @@
 	"bs-calumma-assoclink-history-label": "تاریخچه",
 	"bs-calumma-context-pagebutton-label": "صفحه",
 	"bs-calumma-context-discussionbutton-label": "بحث",
-	"bs-calumma-search-button-label": "جستجو"
+	"bs-calumma-search-button-label": "جستجو",
+	"bs-action-edit-edit-title": "ویرایش مبدأ",
+	"bs-userbutton-notifications-link-text": "اعلان‌ها",
+	"bs-userbutton-userpage-link-text": "صفحهٔ من",
+	"bs-mobilemoremenu-view-title": "نمایش",
+	"bs-mobilemoremenu-view-text": "نمایش",
+	"bs-sitetools-qualitymanagement-title": "مدیریتت کیفیت",
+	"bs-sitetools-pageactions": "عملکردهای صفحه",
+	"bs-sitetools-toolbox": "جعبه‌ابزار",
+	"bs-sitetools-views": "بازدیدها",
+	"bs-sitetools-view-mode": "حالت",
+	"bs-edit-custom-menu-link-title": "منوی ویرایش",
+	"bs-edit-custom-menu-link-text": "منوی ویرایش"
 }

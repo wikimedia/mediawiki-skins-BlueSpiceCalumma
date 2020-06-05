@@ -104,5 +104,12 @@
 	"bs-calumma-context-discussionbutton-label": "Dyskusja",
 	"bs-calumma-search-button-label": "Szukaj",
 	"bs-action-edit-view-title": "Wyjdź z edycji",
-	"bs-action-edit-view-text": "Wyjdź z edycji"
+	"bs-action-edit-view-text": "Wyjdź z edycji",
+	"bs-sitetools-view-mode": "Tryb",
+	"bs-calumma-pageinfosentence-no-item-label": "Brak informacji o statusie",
+	"bs-calumma-pageinfosentence-no-item-tooltip": "Brak informacji o statusie tej strony",
+	"bs-calumma-page-last-edit-by-system-user": "użytkownik systemu",
+	"bs-calumma-alert-oldpage": "Widzisz starszą wersję tej strony. [[Special:Redirect/page/$1|Wróć do najnowszej wersji]].",
+	"bs-calumma-assoclink-history-tooltip": "Pokaż historię wersji strony „$1”",
+	"bs-calumma-context-discussionbutton-tooltip": "Pokaż obecną stronę dyskusji"
 }
