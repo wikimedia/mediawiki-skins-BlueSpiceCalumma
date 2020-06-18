@@ -27,6 +27,40 @@
 			};
 
 			$buttonGroup.data( 'loaded', true );
+
+			var $beadCrumbsCnt = $('#content .bs-page-breadcrumbs' ).first();
+			var $dropDown = $buttonGroup.find( '.dropdown-menu' ).first();
+
+			var $dropDownListItems = $dropDown.find( 'a' );
+			var textWidth = 0;
+			var charCount = 0;
+			for ( var i = 0; i < $dropDownListItems.length; i++ ){
+				var element = $dropDownListItems[i];
+				var whiteSpace = element.style.whiteSpace;
+
+				element.style.whiteSpace = "nowrap";
+				if ( $( element ).text.length > charCount ) {
+					textWidth = $( element ).width();
+				}
+				element.style.whiteSpace = whiteSpace;
+			}
+			$dropDown.css( 'width', textWidth + 'px' );
+
+			if ( $dropDown.width() > $beadCrumbsCnt.width() ) {
+				$dropDown.width( $beadCrumbsCnt.width() - 4 )
+			}
+
+			var beadCrumbsCntOffset = $beadCrumbsCnt.offset();
+			var dropDownOffset = $dropDown.offset();
+			if ( beadCrumbsCntOffset.left > dropDownOffset.left ) {
+				$dropDown.offset( { left: beadCrumbsCntOffset.left } );
+			}
+
+			beadCrumbsCntOffset.right = beadCrumbsCntOffset.left + $( '#content' ).width();
+			dropDownOffset.right = dropDownOffset.left + $dropDown.width();
+			if ( beadCrumbsCntOffset.right < dropDownOffset.right ) {
+				$dropDown.offset( { left: beadCrumbsCntOffset.right - $dropDown.width() - 2 } );
+			}
 		});
 	});
 })( document, jQuery, mediaWiki );
