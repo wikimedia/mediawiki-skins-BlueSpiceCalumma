@@ -96,9 +96,15 @@ class FeaturedActions extends Component {
 			unset( $firstEntry['id'] );
 		}
 
+		if ( !isset( $firstEntry['classes'] ) ) {
+			$firstEntry['classes'] = [];
+		}
 		$splitButtonData['items'][] = [ 'link' => $firstEntry ];
 
 		foreach ( $itemDefinition as $linkId => $linkDefinition ) {
+			if ( !isset( $linkDefinition['classes'] ) ) {
+				$linkDefinition['classes'] = [];
+			}
 			if ( isset( $linkDefinition['separator'] ) ) {
 				$splitButtonData['items'][] = [ 'separator' => true ];
 			} else {
