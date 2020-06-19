@@ -16,7 +16,7 @@
 				{{#items}}
 				{{#link}}
 				<li id="{{id}}">
-					<a href="{{href}}" class="{{#classes}}{{.}} {{/classes}}"{{#data}} data-{{key}}="{{value}}"{{/data}} title="{{title}}">{{text}}</a>
+					<a href="{{href}}" {{#classes}}class="{{.}} "{{/classes}}{{#data}} data-{{key}}="{{value}}"{{/data}} title="{{title}}">{{text}}</a>
 				</li>
 				{{/link}}
 				{{#separator}}
