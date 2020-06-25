@@ -75,6 +75,7 @@ class Item extends \BlueSpice\CustomMenu\Renderer\Menu\Item {
 			$attribs[static::PARAM_CLASS] = ' dropdown-toggle';
 		} elseif ( $this->hasChildren() ) {
 			$attribs[static::PARAM_CLASS] = ' dropdown-submenu-toggle';
+			$attribs[static::PARAM_HREF] = '';
 		}
 
 		return $attribs;
