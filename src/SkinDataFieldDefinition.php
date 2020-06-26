@@ -74,7 +74,6 @@ class SkinDataFieldDefinition {
 		$this->initLogo();
 		$this->initSiteNav();
 		$this->initSiteTools();
-		$this->initGlobalActions();
 
 		/* Content navigation group map */
 		$this->data[static::CONTENT_NAVIGATION_DATA] = [];
@@ -293,38 +292,6 @@ class SkinDataFieldDefinition {
 				'callback' => function ( $skintemplate ) {
 					return new GlobalActions( $skintemplate );
 				}
-			]
-		];
-	}
-
-	private function initGlobalActions() {
-		$factory = \MediaWiki\MediaWikiServices::getInstance()
-			->getSpecialPageFactory();
-		$specialPages = $factory->getPage( 'Specialpages' );
-		$specialUpload = $factory->getPage( 'Upload' );
-		$specialWatchlist = $factory->getPage( 'Watchlist' );
-
-		$this->data[SkinData::GLOBAL_ACTIONS] = [
-			'specialpage-specialpages' => [
-				'href' => $specialPages->getPageTitle()->getFullURL(),
-				'text' => $specialPages->getDescription(),
-				'title' => $specialPages->getPageTitle(),
-				'iconClass' => ' icon-special-specialpages ',
-				'position' => 20
-			],
-			'specialpage-upload' => [
-				'href' => $specialUpload->getPageTitle()->getFullURL(),
-				'text' => $specialUpload->getDescription(),
-				'title' => $specialUpload->getPageTitle(),
-				'iconClass' => ' icon-special-upload ',
-				'position' => 10
-			],
-			'specialpage-watchlist' => [
-				'href' => $specialWatchlist->getPageTitle()->getFullURL(),
-				'text' => $specialWatchlist->getDescription(),
-				'title' => $specialWatchlist->getPageTitle(),
-				'iconClass' => ' icon-special-watchlist ',
-				'position' => 30
 			]
 		];
 	}
