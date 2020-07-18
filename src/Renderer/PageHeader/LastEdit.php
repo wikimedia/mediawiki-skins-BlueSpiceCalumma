@@ -13,10 +13,10 @@ use Html;
 use HtmlArmor;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\Revision\RevisionRecord;
+use MediaWiki\Revision\RevisionStore;
 use QuickTemplate;
 use RequestContext;
-use Revision;
-use User;
 use WikiPage;
 
 class LastEdit extends PageHeader {
@@ -28,6 +28,12 @@ class LastEdit extends PageHeader {
 	protected $util = null;
 
 	/**
+	 *
+	 * @var RevisionStore
+	 */
+	protected $revisionStore = null;
+
+	/**
 	 * LastEdit constructor.
 	 * @param Config $config
 	 * @param Params $params
@@ -36,13 +42,16 @@ class LastEdit extends PageHeader {
 	 * @param string $name
 	 * @param QuickTemplate|null $skinTemplate
 	 * @param UtilityFactory|null $util
+	 * @param RevisionStore|null $revisionStore
 	 */
 	protected function __construct( Config $config, Params $params,
 		LinkRenderer $linkRenderer = null, IContextSource $context = null,
-		$name = '', QuickTemplate $skinTemplate = null, UtilityFactory $util = null ) {
+		$name = '', QuickTemplate $skinTemplate = null, UtilityFactory $util = null,
+		RevisionStore $revisionStore = null ) {
 		parent::__construct( $config, $params, $linkRenderer, $context, $name, $skinTemplate );
 
 		$this->util = $util;
+		$this->revisionStore = $revisionStore;
 	}
 
 	/**
@@ -55,11 +64,13 @@ class LastEdit extends PageHeader {
 	 * @param LinkRenderer|null $linkRenderer
 	 * @param QuickTemplate|null $skinTemplate
 	 * @param UtilityFactory|null $util
+	 * @param RevisionStore|null $revisionStore
 	 * @return Renderer
 	 */
 	public static function factory( $name, Services $services, Config $config, Params $params,
 		IContextSource $context = null, LinkRenderer $linkRenderer = null,
-		QuickTemplate $skinTemplate = null, UtilityFactory $util = null ) {
+		QuickTemplate $skinTemplate = null, UtilityFactory $util = null,
+		RevisionStore $revisionStore = null ) {
 		if ( !$context ) {
 			$context = $params->get(
 				static::PARAM_CONTEXT,
@@ -84,6 +95,9 @@ class LastEdit extends PageHeader {
 				. QuickTemplate::class
 			);
 		}
+		if ( !$revisionStore ) {
+			$revisionStore = $services->getRevisionStore();
+		}
 
 		return new static(
 			$config,
@@ -92,7 +106,8 @@ class LastEdit extends PageHeader {
 			$context,
 			$name,
 			$skinTemplate,
-			$util
+			$util,
+			$revisionStore
 		);
 	}
 
@@ -132,7 +147,7 @@ class LastEdit extends PageHeader {
 	/**
 	 *
 	 * @param WikiPage $wikiPage
-	 * @param Revision $currentRevision
+	 * @param RevisionRecord $currentRevision
 	 * @return string
 	 */
 	protected function makeLastEditDiffLink( WikiPage $wikiPage, $currentRevision ) {
@@ -192,7 +207,7 @@ class LastEdit extends PageHeader {
 	/**
 	 *
 	 * @param WikiPage $wikiPage
-	 * @param Revision $currentRevision
+	 * @param RevisionRecord $currentRevision
 	 * @return string
 	 */
 	protected function makeLastEditorLink( WikiPage $wikiPage, $currentRevision ) {
@@ -201,11 +216,9 @@ class LastEdit extends PageHeader {
 			return $this->msg( 'bs-calumma-page-last-edit-by-system-user' )->plain();
 		}
 
-		$user = User::newFromId( $currentRevision->getUser() );
-
 		$userLink = $this->linkRenderer->makeLink(
-			$user->getUserPage(),
-			$this->util->getUserHelper( $user )->getDisplayName()
+			$currentRevision->getUser()->getUserPage(),
+			$this->util->getUserHelper( $currentRevision->getUser() )->getDisplayName()
 		);
 
 		return $userLink;
@@ -213,9 +226,9 @@ class LastEdit extends PageHeader {
 
 	/**
 	 * @param WikiPage $wikiPage
-	 * @return Revision|null
+	 * @return RevisionRecord|null
 	 */
 	protected function getCurrentRevision( WikiPage $wikiPage ) {
-		return $wikiPage->getRevision();
+		return $this->revisionStore->getRevisionByTitle( $wikiPage->getTitle() );
 	}
 }
