@@ -1,12 +1,12 @@
 .main-footer{
+	border-color: @theme-footer-separator-line;
 	#footer-places {
 		li {
 			a {
-				color: @theme-footer-link-fg-color;
-
-				&:hover{
-					color: @theme-footer-link-fg-color-hover;
-				}
+				.mixin-link-color(
+					@theme-footer-link-fg-color,
+					@theme-footer-link-fg-color-hover
+				);
 			}
 		}
 	}
