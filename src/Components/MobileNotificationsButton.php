@@ -2,6 +2,7 @@
 namespace BlueSpice\Calumma\Components;
 
 use BlueSpice\Calumma\SkinDataFieldDefinition as SDFD;
+use MediaWiki\MediaWikiServices;
 
 class MobileNotificationsButton extends \Skins\Chameleon\Components\Structure {
 
@@ -55,7 +56,8 @@ class MobileNotificationsButton extends \Skins\Chameleon\Components\Structure {
 		}
 		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
 		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
-		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+		$userHasReadPermissionsAtAll = !MediaWikiServices::getInstance()
+			->getPermissionManager()->userHasRight( $this->getSkin()->getUser(), 'read' );
 
 		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
 			return true;

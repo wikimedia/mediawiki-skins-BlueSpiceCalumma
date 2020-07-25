@@ -2,6 +2,7 @@
 namespace BlueSpice\Calumma\Components;
 
 use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 use QuickTemplate;
 
 class CustomMenu extends \Skins\Chameleon\Components\Structure {
@@ -74,28 +75,34 @@ class CustomMenu extends \Skins\Chameleon\Components\Structure {
 			return '';
 		}
 
-		if ( $skintemplate->getSkin()->getUser()->isAllowed( 'editinterface' ) ) {
-			$html .= \Html::openElement(
-				'a',
+		$isAllowed = MediaWikiServices::getInstance()->getPermissionManager()->userHasRight(
+			$skintemplate->getSkin()->getUser(),
+			'editinterface'
+		);
+		if ( !$isAllowed ) {
+			return $html;
+		}
+
+		$html .= \Html::openElement(
+			'a',
+			[
+				'href' => $factory->getMenu( $menu )->getEditURL(),
+				'title' => wfMessage( 'bs-edit-custom-menu-link-title' )->plain(),
+				'target' => '_blank',
+				'class' => 'bs-edit-custom-menu-link',
+				'iconClass' => ''
+			]
+		);
+
+		$html .= \Html::element(
+				'span',
 				[
-					'href' => $factory->getMenu( $menu )->getEditURL(),
-					'title' => wfMessage( 'bs-edit-custom-menu-link-title' )->plain(),
-					'target' => '_blank',
-					'class' => 'bs-edit-custom-menu-link',
-					'iconClass' => ''
-				]
+					'class' => 'label'
+				],
+				wfMessage( 'bs-edit-custom-menu-link-text' )->plain()
 			);
 
-			$html .= \Html::element(
-					'span',
-					[
-						'class' => 'label'
-					],
-					wfMessage( 'bs-edit-custom-menu-link-text' )->plain()
-				);
-
-			$html .= \Html::closeElement( 'a' );
-		}
+		$html .= \Html::closeElement( 'a' );
 
 		return $html;
 	}
@@ -107,7 +114,8 @@ class CustomMenu extends \Skins\Chameleon\Components\Structure {
 	protected function skipRendering() {
 		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
 		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
-		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+		$userHasReadPermissionsAtAll = !MediaWikiServices::getInstance()
+			->getPermissionManager()->userHasRight( $this->getSkin()->getUser(), 'read' );
 
 		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
 			return true;

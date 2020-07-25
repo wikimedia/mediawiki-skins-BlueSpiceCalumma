@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Calumma;
 
+use MediaWiki\MediaWikiServices;
 use Skins\Chameleon\Components\Component;
 
 abstract class TemplateComponent extends Component {
@@ -124,7 +125,8 @@ abstract class TemplateComponent extends Component {
 		}
 		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
 		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
-		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+		$userHasReadPermissionsAtAll = !MediaWikiServices::getInstance()
+			->getPermissionManager()->userHasRight( $this->getSkin()->getUser(), 'read' );
 
 		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
 			return true;

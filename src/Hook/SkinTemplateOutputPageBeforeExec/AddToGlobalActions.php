@@ -20,10 +20,11 @@ class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
 		if ( !$special ) {
 			return;
 		}
-		if ( !$this->getContext()
-			->getUser()
-			->isAllowed( $special->getRestriction() )
-		) {
+		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+			$this->getContext()->getUser(),
+			$special->getRestriction()
+		);
+		if ( !$isAllowed ) {
 			return;
 		}
 		$this->mergeSkinDataArray(
@@ -46,10 +47,11 @@ class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
 		if ( !$special ) {
 			return;
 		}
-		if ( !$this->getContext()
-			->getUser()
-			->isAllowed( $special->getRestriction() )
-		) {
+		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+			$this->getContext()->getUser(),
+			$special->getRestriction()
+		);
+		if ( !$isAllowed ) {
 			return;
 		}
 		$this->mergeSkinDataArray(
@@ -77,10 +79,11 @@ class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
 			return;
 		}
 
-		if ( !$this->getContext()
-			->getUser()
-			->isAllowed( $special->getRestriction() )
-		) {
+		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+			$this->getContext()->getUser(),
+			$special->getRestriction()
+		);
+		if ( !$isAllowed ) {
 			return;
 		}
 		$this->mergeSkinDataArray(
