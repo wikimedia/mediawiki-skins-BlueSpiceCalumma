@@ -1,17 +1,15 @@
 .bs-button-user{
 	float: right;
 	width: 12.5rem;
-	margin-top: @menu-top-items-margin - 0.5rem;
+	margin-top: @theme-header-items-margin - 0.5rem;
 	.bs-personal-not-loggedin {
 		line-height: 3rem;
 		font-size: 1rem;
 		font-weight: 700;
 		right: 5rem;
 		position: fixed;
-		color: @menu-top-login-btn-color;
 		&:hover{
 			text-decoration: none;
-			color: @menu-top-login-btn-color-hover;
 		}
 	}
 	.bs-profile-img{
@@ -21,14 +19,8 @@
 		object-fit: cover;
 	}
 	.bs-personal-menu-container{
+		.mixin-dropdown-menu( inherit, inherit, inherit, inherit );
 		top: 3.75rem;
-
-		.mixin-dropdown-menu(
-			@menu-top-dropdown-color,
-			@menu-top-dropdown-bg-color,
-			@menu-top-dropdown-color-hover,
-			@menu-top-dropdown-bg-color-hover
-		);
 
 		&::before {
 			left: 2.75rem;
@@ -44,7 +36,7 @@
 		.separator {
 			display: block;
 			width: 100%;
-			border-bottom: 1.125rem solid @menu-top-dropdown-bg-color;
+			border-bottom: 1.125rem solid currentColor;
 		}
 	}
 	.bs-userbutton-notifications-badge {

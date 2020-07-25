@@ -3,15 +3,14 @@
 	min-height: 100%;
 	display: block;
 	position: fixed;
-	border-left: 2px solid @bs-seperator-line-color;
-	background-color: @sitetools-bg-color;
+	border-left: 2px solid currentColor;
 	z-index: 11;
 	overflow: visible;
 
 	.separator {
 		display: block;
 		width: 100%;
-		border-bottom: 1px solid @sitetools-color;
+		border-bottom: 1px solid currentColor;
 	}
 
 	#bs-toolpanetabs{
@@ -23,7 +22,6 @@
 			-ms-user-select: none; /* IE 10+ */
 			user-select: none; /* Standard syntax */
 			direction: ltr;
-			color: @sitetools-tab-color;
 
 			* {
 				direction: ltr;
@@ -36,13 +34,7 @@
 
 			a {
 				white-space: nowrap;
-				color: @sitetools-color;
 			}
-			a:focus,
-			a:visited {
-				color: @sitetools-color;
-			}
-
 			&:hover {
 				overflow-y: auto;
 			}
@@ -74,7 +66,6 @@
 
 	.nav.nav-pills {
 		height: @navigation-tabs-height;
-		background-color: @sitetools-tabs-bg-color;
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 11px;
@@ -82,20 +73,8 @@
 		li {
 			height: @navigation-tabs-height;
 			a {
-				background-color: @sitetools-tab-bg-color;
-				color: @sitetools-tab-color;
 				height: 100%;
 				line-height: 40px;
-			}
-
-			&.active a {
-				background-color: @sitetools-tab-bg-color-active;
-				color: @sitetools-tab-color-active;
-			}
-
-			a:hover {
-				background-color: @sitetools-tab-bg-color-hover;
-				color: @sitetools-tab-color-hover;
 			}
 		}
 	}
@@ -106,27 +85,19 @@
 	}
 
 	h4 {
-		color: @sitetools-color;
 		text-align: center;
 		font-size: 20px;
 		font-weight: @font-weight-regular;
 	}
 
 	h5 {
-		color: @sitetools-color;
 		text-align: center;
 		font-size: 20px;
-	}
-
-	a,
-	a span {
-		color: @sitetools-color;
 	}
 
 	a:hover,
 	a:hover span {
 		background-color: transparent;
-		color: @sitetools-color-hover;
 	}
 
 }
