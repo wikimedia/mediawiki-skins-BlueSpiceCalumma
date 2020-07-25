@@ -1,6 +1,8 @@
 <?php
 namespace BlueSpice\Calumma\Components;
 
+use MediaWiki\MediaWikiServices;
+
 class Aside extends \Skins\Chameleon\Components\Structure {
 
 	/**
@@ -38,7 +40,8 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 	protected function skipRendering() {
 		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
 		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
-		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+		$userHasReadPermissionsAtAll = !MediaWikiServices::getInstance()
+			->getPermissionManager()->userHasRight( $this->getSkin()->getUser(), 'read' );
 
 		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
 			return true;

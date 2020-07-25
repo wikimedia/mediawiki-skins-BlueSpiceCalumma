@@ -3,6 +3,7 @@
 namespace BlueSpice\Calumma;
 
 use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 /**
  *
@@ -169,7 +170,8 @@ class Skin extends \SkinChameleon {
 		$cookieName = "Calumma_$className";
 		$cookieHandler = new CookieHandler( $this->getRequest() );
 		$cookieValue = $cookieHandler->getCookie( $cookieName, 'false' );
-		$userHasReadPermissionsAtAll = $this->getUser()->isAllowed( 'read' );
+		$userHasReadPermissionsAtAll = MediaWikiServices::getInstance()
+			->getPermissionManager()->userHasRight( $this->getSkin()->getUser(), 'read' );
 
 		if ( $cookieValue !== 'false' || !$userHasReadPermissionsAtAll ) {
 			return " $className ";

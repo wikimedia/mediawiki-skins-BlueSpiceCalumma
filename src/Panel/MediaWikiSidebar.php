@@ -5,6 +5,7 @@ namespace BlueSpice\Calumma\Panel;
 use BlueSpice\Calumma\Components\CollapsibleGroup;
 use BlueSpice\Calumma\Components\SimpleLinkListGroup;
 use BlueSpice\Calumma\CookieHandler;
+use MediaWiki\MediaWikiServices;
 use QuickTemplate;
 
 class MediaWikiSidebar extends BasePanel {
@@ -235,30 +236,36 @@ class MediaWikiSidebar extends BasePanel {
 	protected function addEditLink( QuickTemplate $skintemplate ) {
 		$html = '';
 
-		if ( $skintemplate->getSkin()->getUser()->isAllowed( 'editinterface' ) ) {
-			$sidebar = \Title::makeTitle( NS_MEDIAWIKI, 'Sidebar' );
+		$isAllowed = MediaWikiServices::getInstance()->getPermissionManager()->userHasRight(
+			$skintemplate->getSkin()->getUser(),
+			'editinterface'
+		);
+		if ( !$isAllowed ) {
+			return '';
+		}
 
-			$html .= \Html::openElement(
-				'a',
+		$sidebar = \Title::makeTitle( NS_MEDIAWIKI, 'Sidebar' );
+
+		$html .= \Html::openElement(
+			'a',
+			[
+				'href' => $sidebar->getEditURL(),
+				'title' => wfMessage( 'bs-edit-mediawiki-sidebar-link-title' )->plain(),
+				'target' => '_blank',
+				'class' => 'bs-edit-mediawiki-sidebar-link bs-calumma-sidebar-edit-link',
+				'iconClass' => ''
+			]
+		);
+
+		$html .= \Html::element(
+				'span',
 				[
-					'href' => $sidebar->getEditURL(),
-					'title' => wfMessage( 'bs-edit-mediawiki-sidebar-link-title' )->plain(),
-					'target' => '_blank',
-					'class' => 'bs-edit-mediawiki-sidebar-link bs-calumma-sidebar-edit-link',
-					'iconClass' => ''
-				]
+					'class' => 'label'
+				],
+				wfMessage( 'bs-edit-mediawiki-sidebar-link-text' )->plain()
 			);
 
-			$html .= \Html::element(
-					'span',
-					[
-						'class' => 'label'
-					],
-					wfMessage( 'bs-edit-mediawiki-sidebar-link-text' )->plain()
-				);
-
-			$html .= \Html::closeElement( 'a' );
-		}
+		$html .= \Html::closeElement( 'a' );
 
 		return $html;
 	}

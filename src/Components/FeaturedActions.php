@@ -4,6 +4,7 @@ namespace BlueSpice\Calumma\Components;
 
 use BlueSpice\Calumma\Controls\SplitButtonDropdown;
 use BlueSpice\SkinData;
+use MediaWiki\MediaWikiServices;
 use Skins\Chameleon\Components\Component;
 
 class FeaturedActions extends Component {
@@ -132,7 +133,8 @@ class FeaturedActions extends Component {
 	protected function skipRendering() {
 		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
 		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
-		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+		$userHasReadPermissionsAtAll = !MediaWikiServices::getInstance()
+			->getPermissionManager()->userHasRight( $this->getSkin()->getUser(), 'read' );
 
 		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
 			return true;

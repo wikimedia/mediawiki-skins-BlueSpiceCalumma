@@ -3,6 +3,7 @@ namespace BlueSpice\Calumma\DataProvider;
 
 use BlueSpice\Calumma\SkinDataFieldDefinition as SDFD;
 use BlueSpice\SkinData;
+use MediaWiki\MediaWikiServices;
 use QuickTemplate;
 
 class FeaturedActionsData {
@@ -134,7 +135,11 @@ class FeaturedActionsData {
 			return;
 		}
 
-		if ( !$curUser->isAllowed( 'createpage' ) ) {
+		$isAllowed = MediaWikiServices::getInstance()->getPermissionManager()->userHasRight(
+			$curUser,
+			'createpage'
+		);
+		if ( !$isAllowed ) {
 			$newSection += [
 				'title' => wfMessage( 'bs-action-new-disabled-title' )->text(),
 				'href' => '',
