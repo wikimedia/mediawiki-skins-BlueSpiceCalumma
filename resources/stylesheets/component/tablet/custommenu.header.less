@@ -1,7 +1,7 @@
 /* open */
 .calumma-toggle-button.bs-custom-menu-header-button {
 	left: 10vw;
-	top: @custom-menu-top-height;
+	top: @custom-theme-header-height;
 	padding-top: 0;
 	height: 0.625rem;
 	line-height: 0.625rem;
@@ -13,8 +13,8 @@
 }
 
 .bs-custom-menu-header-container {
-	height: @custom-menu-top-height;
-	min-height: @custom-menu-top-height;
+	height: @custom-theme-header-height;
+	min-height: @custom-theme-header-height;
 	width: 100vw;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -23,7 +23,7 @@
 		padding-left: calc( ~"50vw - 47.5rem");
 
 		a {
-			height: @custom-menu-top-height;
+			height: @custom-theme-header-height;
 			line-height: 1.875rem;
 			padding: 0 0.625rem;
 
@@ -39,7 +39,7 @@
 		}
 		li.dropdown-submenu .dropdown-menu {
 			left: 100%;
-			top: calc(~"100% - @{custom-menu-top-height}");
+			top: calc(~"100% - @{custom-theme-header-height}");
 		}
 	}
 }
@@ -73,17 +73,17 @@ body.mediawiki.x-body {
 		&.navigation-main-collapse aside.navigation-main,
 		aside.navigation-main,
 		aside.navigation-main.active {
-			top: @menu-top-mobile-height + @banner-top-height;
+			top: @theme-header-mobile-height + @banner-top-height;
 		}
 
 		&.sitetools-main-collapse aside.sitetools-main,
 		aside.sitetools-main,
 		aside.sitetools-main.active {
-			top: @menu-top-mobile-height + @banner-top-height;
+			top: @theme-header-mobile-height + @banner-top-height;
 		}
 
 		.wrapper .content-wrapper {
-			padding-top: @menu-top-mobile-height + @banner-top-height;
+			padding-top: @theme-header-mobile-height + @banner-top-height;
 		}
 	}
 }
@@ -93,27 +93,27 @@ body.mediawiki,
 body.mediawiki.x-body {
 	&:not( .bs-custom-menu-header-container-collapse ) {
 		header.main-header {
-			top: @banner-top-height + @custom-menu-top-height;
+			top: @banner-top-height + @custom-theme-header-height;
 		}
 		&.navigation-main-collapse aside.navigation-main,
 		aside.navigation-main,
 		aside.navigation-main.active {
-			top: @menu-top-mobile-height + @banner-top-height + @custom-menu-top-height;
+			top: @theme-header-mobile-height + @banner-top-height + @custom-theme-header-height;
 		}
 
 		&.sitetools-main-collapse aside.sitetools-main,
 		aside.sitetools-main,
 		aside.sitetools-main.active {
-			top: @menu-top-mobile-height + @banner-top-height + @custom-menu-top-height;
+			top: @theme-header-mobile-height + @banner-top-height + @custom-theme-header-height;
 		}
 
 		.wrapper .content-wrapper {
-			padding-top: @menu-top-mobile-height + @banner-top-height + @custom-menu-top-height;
+			padding-top: @theme-header-mobile-height + @banner-top-height + @custom-theme-header-height;
 		}
 
 		.navigation-main #bs-sitenavtabs .tab-content,
 		.sitetools-main #bs-toolpanetabs .tab-content {
-			height: calc(~"100vh - 9.375rem - @{custom-menu-top-height}");
+			height: calc(~"100vh - 9.375rem - @{custom-theme-header-height}");
 		}
 
 
@@ -121,28 +121,28 @@ body.mediawiki.x-body {
 		.mobile-search-button,
 		.mobile-login-button,
 		.sidebar-toggle[data-toggle~="sitetools-main-collapse"] {
-			top: @custom-menu-top-height;
+			top: @custom-theme-header-height;
 		}
 
 		/* graphical list */
 		.dynamic-graphical-list-outer-east {
-			top: @menu-top-mobile-height + @custom-menu-top-height;
-			height: calc(~"100vh - @{menu-top-mobile-height} - @{custom-menu-top-height}");
+			top: @theme-header-mobile-height + @custom-theme-header-height;
+			height: calc(~"100vh - @{theme-header-mobile-height} - @{custom-theme-header-height}");
 		}
 
 		.dynamic-graphical-list-outer-west {
-			top: @menu-top-mobile-height + @custom-menu-top-height;
-			height: calc(~"100vh - @{menu-top-mobile-height} - @{custom-menu-top-height}");
+			top: @theme-header-mobile-height + @custom-theme-header-height;
+			height: calc(~"100vh - @{theme-header-mobile-height} - @{custom-theme-header-height}");
 		}
 
 		.dynamic-graphical-list-outer-south {
-			top: @menu-top-mobile-height + @custom-menu-top-height;
-			height: calc(~"100vh - @{menu-top-mobile-height} - @{custom-menu-top-height}");
+			top: @theme-header-mobile-height + @custom-theme-header-height;
+			height: calc(~"100vh - @{theme-header-mobile-height} - @{custom-theme-header-height}");
 		}
 
 		.dynamic-graphical-list-outer-north {
-			top: @menu-top-mobile-height + @custom-menu-top-height;
-			height: calc(~"100vh - @{menu-top-mobile-height} - @{custom-menu-top-height}");
+			top: @theme-header-mobile-height + @custom-theme-header-height;
+			height: calc(~"100vh - @{theme-header-mobile-height} - @{custom-theme-header-height}");
 		}
 	}
 }

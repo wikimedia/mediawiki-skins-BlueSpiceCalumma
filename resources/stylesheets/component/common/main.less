@@ -4,7 +4,6 @@ html {
 
 body.mediawiki,
 body.mediawiki.x-body {
-	background: @bs-body-background;
 	font-family: @wrapper-font-family;
 	font-weight: @wrapper-font-weight;
 	font-size: 0.875rem;
@@ -22,7 +21,7 @@ body.mediawiki.x-body {
 			* This must be a `padding`, not a `margin`. The `margin` messes with some offset-calculations in
 			* JavaScripts. Especially ExtJS trees and tooltips.
 			*/
-			padding-top: @menu-top-height + @banner-top-height; //TODO
+			padding-top: @theme-header-height + @banner-top-height; //TODO
 		}
 
 		.bs-content.container {
@@ -30,7 +29,6 @@ body.mediawiki.x-body {
 			height: 100%;
 			max-width: @bs-content-width;
 			z-index: 8;
-			background: @bs-content-background;
 			font-size: 0.875rem;
 			margin-left: auto;
 			margin-right: auto;

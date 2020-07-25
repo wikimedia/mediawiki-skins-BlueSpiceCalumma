@@ -11,7 +11,6 @@ body div.bs-mobile-more-menu {
 		bottom: calc(~"2.5vw + 60px");
 		padding: 0;
 		&:hover {
-			color: @mobile-more-menu-button-open-color-hover;
 			text-decoration: none;
 		}
 		i {
@@ -20,7 +19,6 @@ body div.bs-mobile-more-menu {
 			display: block;
 			text-align: center;
 			font-style: normal;
-			background-color: @mobile-more-menu-dropdown-bg-color;
 			border-radius: 24px;
 			&::before {
 				font-family: 'entypo';
@@ -31,39 +29,35 @@ body div.bs-mobile-more-menu {
 				text-align: center;
 				height: 48px;
 				width: 48px;
-				color: @mobile-more-menu-dropdown-color;
 			}
 		}
 	}
 	.dropdown-menu {
+		.mixin-dropdown-menu( inherit, inherit, inherit, inherit );
+
 		position: fixed;
 		bottom: 0;
 		right: 0;
 		top: auto;
-		.mixin-mobile-menu(
-			@mobile-more-menu-dropdown-color,
-			@mobile-more-menu-dropdown-bg-color,
-			@mobile-more-menu-dropdown-color-hover,
-			@mobile-more-menu-dropdown-bg-color-hover
-		);
 		& > ul {
 			padding-top: 0.625rem;
 			padding-left: 0.625rem;
 			padding-right: 3.425rem;
 			padding-bottom: 4.25rem;
 		}
+
+		&::before {
+			display: none;
+		}
+
 		a.bs-mobile-more-menu-button {
 			position: absolute;
 			top: 2.5vw;
 			background-color: transparent;
-			i::before:hover{
-				color: @mobile-more-menu-button-close-color-hover;
-			}
 			i::before {
 				font-family: 'entypo';
 				content: "\e98d";;
 				font-size: 1.5rem;
-				color: @mobile-more-menu-dropdown-color;
 				background-color: transparent;
 				border-radius: 1.5rem;
 			}

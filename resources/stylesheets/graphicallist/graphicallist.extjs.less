@@ -1,5 +1,4 @@
 @import "../dimensions.less";
-@import "../colors.less";
 @import "../fonts.less";
 
 .dynamic-graphical-list-body .bs-flyout-tabbed-data-view {
@@ -12,14 +11,12 @@
 		padding:  0.625rem 0;
 		padding-left: 0.75rem;
 		.x-tab {
-			background: @navigation-graphicallist-bg-color;
 			border: 1px solid white;
 			border-radius: 0.3125rem;
 			span {
 				padding: 0.3125rem;
 				margin: 0;
 				text-align: center;
-				color: white;
 			}
 			span[class~="icon-grid"]::before{
 				font-family: fontawesome;
@@ -30,22 +27,8 @@
 				content: '\f009';
 			}
 		}
-		.x-tab.x-tab-active {
-			background-color: @bs-color-primary;
-			border-color: lighten( @navigation-graphicallist-bg-color, 5% );
-			span[data-ref~="btnIconEl"]::before{
-				color: lighten( @navigation-graphicallist-bg-color, 5% );
-			}
-		}
 	}
 	.x-panel-body.x-panel-body-default {
 		background-color: transparent;
-	}
-	// toolbar ( add-button before .x-panel-body and paging toolbar after .x-panel-body )
-	.x-toolbar {
-		//background-color: darken( @navigation-graphicallist-bg-color, 5% );
-		.x-toolbar-text{
-			//color: white;
-		}
 	}
 }

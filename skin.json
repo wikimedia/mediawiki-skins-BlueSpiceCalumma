@@ -32,25 +32,6 @@
 				"pageheader-pageinfo": "\\BlueSpice\\Calumma\\Renderer\\PageHeader\\PageInfo::factory"
 			},
 			"LessVarsRegistry": {
-				"bs-color-primary": "#3e5389",
-				"bs-color-secondary": "#ffae00",
-				"bs-color-tertiary": "#b73a3a",
-				"bs-color-neutral": "#929292",
-				"bs-color-neutral2": "#ABABAB",
-				"bs-color-neutral3": "#C4C4C4",
-				"bs-color-neutral4": "#787878",
-				"bs-color-progressive": "#347bff",
-				"bs-color-contructive": "#00af89",
-				"bs-color-destructive": "#d11d13",
-				"bs-color-success": "#c5e8c9",
-				"bs-color-warning": "#f7e1b2",
-				"bs-color-error": "#f0c6ef",
-				"bs-color-info": "#bddfdf",
-				"bs-color-after-content": "darken(@bs-color-neutral, 37.2549)",
-				"bs-body-background": "@bs-background-primary",
-				"bs-content-background": "@bs-background-neutral",
-				"bs-content-toc-background": "@bs-background-primary",
-				"bs-seperator-line-color": "#e9e9e9"
 			},
 			"AlertProviderRegistry": {
 				"oldversion": "\\BlueSpice\\Calumma\\AlertProvider\\OldVersion::factory"
@@ -120,6 +101,13 @@
 				"stylesheets/content/mobile/content.less": { "media": "all and ( max-width: 1001px )" }
 			},
 			"class": "\\BlueSpice\\ResourceModule\\LessVars"
+		},
+		"skin.bluespicecalumma.theme.default": {
+			"styles": {
+				"stylesheets/themes/default/common.less": {},
+				"stylesheets/themes/default/mobile.less": { "media": "all and ( max-width: 1000px )" }
+			},
+			"class": "\\MWStake\\MediaWiki\\Component\\CommonUserInterface\\ResourceLoader\\LessVars"
 		},
 		"skin.bluespicecalumma.scripts": {
 			"scripts": [
