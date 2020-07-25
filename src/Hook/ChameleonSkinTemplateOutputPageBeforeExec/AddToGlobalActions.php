@@ -1,11 +1,11 @@
 <?php
 
-namespace BlueSpice\Calumma\Hook\SkinTemplateOutputPageBeforeExec;
+namespace BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
+use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\SkinData;
 
-class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
+class AddToGlobalActions extends ChameleonSkinTemplateOutputPageBeforeExec {
 
 	protected function doProcess() {
 		$this->addSpecialPages();
