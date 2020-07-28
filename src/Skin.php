@@ -3,6 +3,8 @@
 namespace BlueSpice\Calumma;
 
 use BlueSpice\Services;
+use ExtensionRegistry;
+use Hooks;
 use MediaWiki\MediaWikiServices;
 
 /**
@@ -197,6 +199,27 @@ class Skin extends \SkinChameleon {
 			return;
 		}
 		parent::addToSidebar( $bar, $message );
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	protected function prepareQuickTemplate() {
+		$tpl = parent::prepareQuickTemplate();
+		$allThings = ExtensionRegistry::getInstance()->getAllThings();
+		// See: T254300
+		// This hook will be available in Chameleon 3.0.1 and should therefore never
+		// be executed a second time. We remove this whole method whenever we upgrade
+		// to the newest version of Chameleon. Since CHAMELEON_VERSION was removed
+		// in favor of the version variable in extension.json in a newer version,
+		// we simply need to check if chameleon was registered within extension.json
+		if ( isset( $allThings['chameleon'] )
+			&& version_compare( $allThings['chameleon'], '3.0.1', '>=' ) ) {
+			wfDebugLog( 'bluespice-deprecations', __METHOD__, 'private' );
+			return $tpl;
+		}
+		Hooks::run( 'ChameleonSkinTemplateOutputPageBeforeExec', [ $this, $tpl ] );
+		return $tpl;
 	}
 
 }
