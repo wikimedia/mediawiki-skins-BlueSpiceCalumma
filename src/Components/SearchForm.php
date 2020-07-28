@@ -2,6 +2,7 @@
 namespace BlueSpice\Calumma\Components;
 
 use BlueSpice\Calumma\TemplateComponent;
+use MediaWiki\MediaWikiServices;
 
 class SearchForm extends TemplateComponent {
 
@@ -47,7 +48,8 @@ class SearchForm extends TemplateComponent {
 	protected function skipRendering() {
 		$hideIfNoRead = $this->getDomElement()->getAttribute( 'hide-if-noread' );
 		$hideIfNoRead = strtolower( $hideIfNoRead ) === 'true' ? true : false;
-		$userHasReadPermissionsAtAll = !$this->getSkin()->getUser()->isAllowed( 'read' );
+		$userHasReadPermissionsAtAll = !MediaWikiServices::getInstance()
+			->getPermissionManager()->userHasRight( $this->getSkin()->getUser(), 'read' );
 
 		if ( $hideIfNoRead && $userHasReadPermissionsAtAll ) {
 			return true;
