@@ -15,6 +15,8 @@ use BlueSpice\Calumma\Renderer\PageHeader\Category;
 use BlueSpice\Calumma\TemplateComponent;
 use BlueSpice\Services;
 use BlueSpice\ExtensionAttributeBasedRegistry;
+use WikiPage;
+use WikiTextContent;
 
 class PageHeader extends TemplateComponent {
 
@@ -448,8 +450,38 @@ class PageHeader extends TemplateComponent {
 		if ( $this->isDiffView() ) {
 			return true;
 		}
+		$isInstanceOf = $this->isInstanceOfContent( WikiTextContent::class );
+		$isContentModel = $this->isContentModel( CONTENT_MODEL_WIKITEXT );
+		if ( !$isInstanceOf && !$isContentModel ) {
+			return true;
+		}
 
 		return false;
+	}
+
+	/**
+	 * Save for overwriting content classes, but page must exist
+	 * @param string $contentClass
+	 * @return bool
+	 */
+	private function isInstanceOfContent( $contentClass ) {
+		if ( !$this->getSkin()->getTitle()->exists() ) {
+			return false;
+		}
+		$wikiPage = WikiPage::factory( $this->getSkin()->getTitle() );
+		if ( !$wikiPage ) {
+			return false;
+		}
+		return $wikiPage->getContent() instanceof $contentClass;
+	}
+
+	/**
+	 * Unsafe when extending contentmodel
+	 * @param string $modelName
+	 * @return bool
+	 */
+	private function isContentModel( $modelName ) {
+		return $this->getSkin()->getTitle()->getContentModel() === $modelName;
 	}
 
 	/**
