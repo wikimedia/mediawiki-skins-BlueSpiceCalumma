@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Jaideraf"
 		]
 	},
-	"bluespicecalumma-desc": "Pele BlueSpice",
+	"bluespicecalumma-desc": "Tema BlueSpice",
 	"bluespicecalumma-skin": "BlueSpiceCalumma",
 	"prefs-bs-calumma": "Configurações do BlueSpice Calumma",
 	"bs-calumma-pref-toggle-navigaiton-main": "Ocultar automaticamente o menu principal",
