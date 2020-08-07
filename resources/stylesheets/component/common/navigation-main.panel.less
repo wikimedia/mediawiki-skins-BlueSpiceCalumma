@@ -12,14 +12,6 @@
 				background-color: transparent;
 
 				.panel-title {
-					a {
-						color: @navigation-color;
-					}
-
-					&:hover a {
-						color: @navigation-color-hover;
-						background-color: @navigation-bg-color-hover;
-					}
 					a::after {
 						content: "\e92c";
 						font-family: "entypo";
@@ -67,20 +59,11 @@
 				.panel-title,
 				.bs-panel-title {
 					a {
-						color: @navigation-color;
 						padding: 10px 0 10px 10px;
-					}
-
-					&:hover a {
-						color: @navigation-color-hover;
-						background-color: @navigation-bg-color-hover;
 					}
 				}
 
 				&.dynamic-graphical-list-visible .bs-panel-title {
-					a {
-						background-color: @navigation-graphicallist-bg-color;
-					}
 					.trigger.flyout{
 						i.trigger-icon::after{
 							content: "\e922";
@@ -97,24 +80,8 @@
 		/* list-group-item */
 		.list-group {
 			a.list-group-item {
-				span {
-				}
-
 				i {
 					float: left;
-					color: @navigation-color;
-				}
-
-				&:hover {
-					background-color: @navigation-bg-color-hover;
-
-					i {
-						color: @navigation-color-hover;
-					}
-				}
-
-				&.dynamic-graphical-list-visible {
-					background-color: @navigation-graphicallist-bg-color;
 				}
 			}
 		}

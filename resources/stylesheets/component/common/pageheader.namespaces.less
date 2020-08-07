@@ -12,8 +12,8 @@
 		.mixin-link-title-color(
 				@link-color,
 				@link-color-hover,
-				@link-color-new,
-				@link-color-new-hover
+				@bs-color-tertiary,
+				@bs-color-tertiary-hover
 			);
 
 		& + a {
@@ -21,7 +21,6 @@
 		}
 
 		&.selected {
-			color: @page-header-namespace-selected;
 			font-weight: @font-weight-bold;
 		}
 	}
@@ -29,7 +28,7 @@
 
 	.dropdown {
 		border: none;
-		
+
 		& > span {
 			cursor: default;
 		}
@@ -40,12 +39,6 @@
 		}
 		.dropdown-menu {
 			.mixin-box-shadow-secondary();
-			.mixin-dropdown-menu(
-					@page-header-namespaces-dropdown-color,
-					@page-header-namespaces-dropdown-bg-color,
-					@page-header-namespaces-dropdown-color-hover,
-					@page-header-namespaces-dropdown-bg-color-hover
-				);
 
 			width: auto;
 			margin-top: 0.8rem;
@@ -62,7 +55,6 @@
 				font-size: 3em;
 				font-family: 'fontawesome';
 				content: "\f0d8";
-				color: @page-header-breadcrumbs-dropdown-bg-color-hover;
 				position: absolute;
 				bottom: -2.2rem;
 				right: -0.3rem;

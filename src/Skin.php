@@ -42,6 +42,7 @@ class Skin extends \SkinChameleon {
 		$out->addModuleStyles( [
 			'skin.bluespicecalumma.styles',
 			'skin.bluespicecalumma.dynamicoffcanvas.styles',
+			'skin.bluespicecalumma.theme.default'
 		] );
 	}
 

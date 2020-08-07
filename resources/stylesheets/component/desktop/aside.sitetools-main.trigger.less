@@ -5,7 +5,7 @@ body .sitetools-main {
 		width: 48px;
 		padding: 1em;
 		right: @sitetools-main-width;
-		top: @menu-top-height + @banner-top-height;
+		top: @theme-header-height + @banner-top-height;
 		transition: right .3s;
 		z-index: 11;
 		i.sitetools-main-collapse::before{
@@ -16,16 +16,12 @@ body .sitetools-main {
 			line-height: 33px;
 			transition: font-size .1s;
 			transition-delay: .3s;
-			color: @sitetools-toggle-btn-color;
 			float: right;
 			font-style: normal;
 		}
 		&:hover{
 			text-decoration: none;
 			background-color: transparent;
-			i.sitetools-main-collapse::before{
-				color: @sitetools-toggle-btn-color-hover;
-			}
 		}
 		&:focus{
 			text-decoration: none;
