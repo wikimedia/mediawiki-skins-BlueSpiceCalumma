@@ -18,6 +18,7 @@ use MediaWiki\Storage\RevisionRecord;
 use MediaWiki\Storage\RevisionStore;
 use QuickTemplate;
 use RequestContext;
+use User;
 use WikiPage;
 
 class LastEdit extends PageHeader {
@@ -180,14 +181,17 @@ class LastEdit extends PageHeader {
 	 * @return string
 	 */
 	protected function makeLastEditorLink( WikiPage $wikiPage, $currentRevision ) {
+		$userIdentity = $currentRevision->getUser();
+		$user = User::newFromId( $userIdentity );
+
 		/* Main_page is created with user id 0 */
-		if ( !$currentRevision->getUser() ) {
+		if ( ( $userIdentity === null ) || ( $user->getId() === 0 ) ) {
 			return $this->msg( 'bs-calumma-page-last-edit-by-system-user' )->plain();
 		}
 
 		$userLink = $this->linkRenderer->makeLink(
-			$currentRevision->getUser()->getUserPage(),
-			$this->util->getUserHelper( $currentRevision->getUser() )->getDisplayName()
+			$user->getUserPage(),
+			$this->util->getUserHelper( $user )->getDisplayName()
 		);
 
 		return $userLink;
