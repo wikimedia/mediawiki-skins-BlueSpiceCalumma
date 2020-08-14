@@ -1,7 +1,7 @@
 /* open */
 .calumma-toggle-button.bs-custom-menu-header-button {
 	left: 10vw;
-	top: @custom-theme-header-height;
+	top: @theme-custom-menu-height;
 	padding-top: 0;
 	height: 0.625rem;
 	line-height: 0.625rem;
@@ -13,8 +13,8 @@
 }
 
 .bs-custom-menu-header-container {
-	height: @custom-theme-header-height;
-	min-height: @custom-theme-header-height;
+	height: @theme-custom-menu-height;
+	min-height: @theme-custom-menu-height;
 	width: 100vw;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -23,7 +23,7 @@
 		padding-left: calc( ~"50vw - 47.5rem");
 
 		a {
-			height: @custom-theme-header-height;
+			height: @theme-custom-menu-height;
 			line-height: 1.875rem;
 			padding: 0 0.625rem;
 
@@ -39,7 +39,7 @@
 		}
 		li.dropdown-submenu .dropdown-menu {
 			left: 100%;
-			top: calc(~"100% - @{custom-theme-header-height}");
+			top: calc(~"100% - @{theme-custom-menu-height}");
 		}
 	}
 }
@@ -93,27 +93,27 @@ body.mediawiki,
 body.mediawiki.x-body {
 	&:not( .bs-custom-menu-header-container-collapse ) {
 		header.main-header {
-			top: @banner-top-height + @custom-theme-header-height;
+			top: @banner-top-height + @theme-custom-menu-height;
 		}
 		&.navigation-main-collapse aside.navigation-main,
 		aside.navigation-main,
 		aside.navigation-main.active {
-			top: @theme-header-mobile-height + @banner-top-height + @custom-theme-header-height;
+			top: @theme-header-mobile-height + @banner-top-height + @theme-custom-menu-height;
 		}
 
 		&.sitetools-main-collapse aside.sitetools-main,
 		aside.sitetools-main,
 		aside.sitetools-main.active {
-			top: @theme-header-mobile-height + @banner-top-height + @custom-theme-header-height;
+			top: @theme-header-mobile-height + @banner-top-height + @theme-custom-menu-height;
 		}
 
 		.wrapper .content-wrapper {
-			padding-top: @theme-header-mobile-height + @banner-top-height + @custom-theme-header-height;
+			padding-top: @theme-header-mobile-height + @banner-top-height + @theme-custom-menu-height;
 		}
 
 		.navigation-main #bs-sitenavtabs .tab-content,
 		.sitetools-main #bs-toolpanetabs .tab-content {
-			height: calc(~"100vh - 9.375rem - @{custom-theme-header-height}");
+			height: calc(~"100vh - 9.375rem - @{theme-custom-menu-height}");
 		}
 
 
@@ -121,28 +121,28 @@ body.mediawiki.x-body {
 		.mobile-search-button,
 		.mobile-login-button,
 		.sidebar-toggle[data-toggle~="sitetools-main-collapse"] {
-			top: @custom-theme-header-height;
+			top: @theme-custom-menu-height;
 		}
 
 		/* graphical list */
 		.dynamic-graphical-list-outer-east {
-			top: @theme-header-mobile-height + @custom-theme-header-height;
-			height: calc(~"100vh - @{theme-header-mobile-height} - @{custom-theme-header-height}");
+			top: @theme-header-mobile-height + @theme-custom-menu-height;
+			height: calc(~"100vh - @{theme-header-mobile-height} - @{theme-custom-menu-height}");
 		}
 
 		.dynamic-graphical-list-outer-west {
-			top: @theme-header-mobile-height + @custom-theme-header-height;
-			height: calc(~"100vh - @{theme-header-mobile-height} - @{custom-theme-header-height}");
+			top: @theme-header-mobile-height + @theme-custom-menu-height;
+			height: calc(~"100vh - @{theme-header-mobile-height} - @{theme-custom-menu-height}");
 		}
 
 		.dynamic-graphical-list-outer-south {
-			top: @theme-header-mobile-height + @custom-theme-header-height;
-			height: calc(~"100vh - @{theme-header-mobile-height} - @{custom-theme-header-height}");
+			top: @theme-header-mobile-height + @theme-custom-menu-height;
+			height: calc(~"100vh - @{theme-header-mobile-height} - @{theme-custom-menu-height}");
 		}
 
 		.dynamic-graphical-list-outer-north {
-			top: @theme-header-mobile-height + @custom-theme-header-height;
-			height: calc(~"100vh - @{theme-header-mobile-height} - @{custom-theme-header-height}");
+			top: @theme-header-mobile-height + @theme-custom-menu-height;
+			height: calc(~"100vh - @{theme-header-mobile-height} - @{theme-custom-menu-height}");
 		}
 	}
 }

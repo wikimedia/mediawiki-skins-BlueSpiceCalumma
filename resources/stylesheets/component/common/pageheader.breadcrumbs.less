@@ -10,12 +10,6 @@
 		& > a {
 			display: inline-block;
 			padding: 0;
-			.mixin-link-title-color(
-				@link-color,
-				@link-color-hover,
-				@bs-color-tertiary,
-				@bs-color-tertiary-hover
-			);
 		}
 		.btn {
 			border: none;
@@ -44,11 +38,6 @@
 			padding-left: 0;
 			width: 1rem;
 
-			.mixin-link-color(
-					@page-header-breadcrumbs-dropdown-color,
-					@page-header-breadcrumbs-dropdown-color
-				);
-
 			&::before {
 				font-family: 'fontawesome';
 				content: "\f0da";
@@ -59,19 +48,6 @@
 
 		.dropdown-menu {
 			.mixin-box-shadow-secondary();
-
-			.mixin-dropdown-menu(
-					@page-header-breadcrumbs-dropdown-color,
-					@page-header-breadcrumbs-dropdown-bg-color,
-					@page-header-breadcrumbs-dropdown-color-hover,
-					@page-header-breadcrumbs-dropdown-bg-color-hover
-				);
-
-			.mixin-dropdown-menu-title-new(
-					@bs-color-tertiary,
-					@bs-color-tertiary-hover,
-					@page-header-breadcrumbs-dropdown-bg-color-hover
-				);
 
 			width: auto;
 			max-width: 425px;
@@ -118,12 +94,6 @@
 	vertical-align: middle;
 	a {
 		display: inline-block;
-		.mixin-link-title-color(
-			@link-color,
-			@link-color-hover,
-			@bs-color-tertiary,
-			@bs-color-tertiary-hover
-		);
 
 		&::after {
 			content: ":";
