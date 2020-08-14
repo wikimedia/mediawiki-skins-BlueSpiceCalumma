@@ -64,7 +64,7 @@ class NamespacePortalPageTest extends MediaWikiTestCase {
 		$html = $node->getHtml( $title );
 
 		$this->assertNotEmpty( $html, 'Should not be empty' );
-		$this->assertContains(
+		$this->assertStringContainsString(
 			$portalTitle->getNsText() . ':',
 			$html,
 			'Should have namespace prefix'

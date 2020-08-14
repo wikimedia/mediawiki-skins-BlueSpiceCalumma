@@ -59,6 +59,6 @@ class NamespaceMainPageTest extends MediaWikiTestCase {
 		$html = $node->getHtml( $title );
 
 		$this->assertNotEmpty( $html, 'Should not be empty' );
-		$this->assertContains( $title->getNsText() . ':', $html, 'Should have namespace prefix' );
+		$this->assertStringContainsString( $title->getNsText() . ':', $html, 'Should have namespace prefix' );
 	}
 }

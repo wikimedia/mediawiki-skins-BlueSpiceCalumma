@@ -43,7 +43,7 @@ class HistoryViewTest extends MediaWikiTestCase {
 			ILink::class, $links['history'],
 			"Item ''history'' should implement ILink"
 		);
-		$this->assertContains(
+		$this->assertStringContainsString(
 			'action=history',
 			$links['history']->getHref(),
 			"Should return proper querystring parameter"

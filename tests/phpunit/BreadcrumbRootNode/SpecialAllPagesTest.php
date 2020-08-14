@@ -62,7 +62,7 @@ class SpecialAllPagesTest extends MediaWikiTestCase {
 		$html = $node->getHtml( $title );
 
 		$this->assertNotEmpty( $html, 'Should not be empty' );
-		$this->assertContains(
+		$this->assertStringContainsString(
 			$specialAllPages->getPrefixedText(),
 			$html,
 			'Should have namespace prefix'
