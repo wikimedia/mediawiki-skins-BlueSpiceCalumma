@@ -76,7 +76,9 @@
 		"SkinBlueSpiceCalumma": "SkinBlueSpiceCalumma.php"
 	},
 	"AutoloadNamespaces": {
-		"BlueSpice\\Calumma\\": "src/",
+		"BlueSpice\\Calumma\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
 		"BlueSpice\\Calumma\\Tests\\": "tests/phpunit/"
 	},
 	"ResourceModules": {
