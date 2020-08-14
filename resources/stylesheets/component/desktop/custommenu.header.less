@@ -1,32 +1,32 @@
 /* open */
 .calumma-toggle-button.bs-custom-menu-header-button {
 	right: 2.5rem;
-	top: @custom-theme-header-height;
+	top: @theme-custom-menu-height;
 	padding-top: 0;
 	height: 1rem;
 	line-height: 0.875rem;
 }
 
 .bs-custom-menu-header-container {
-	height: @custom-theme-header-height;
-	min-height: @custom-theme-header-height;
+	height: @theme-custom-menu-height;
+	min-height: @theme-custom-menu-height;
 	width: 100vw;
 	padding-left: 1em;
 	padding-right: 1em;
 
 	.bs-custom-menu.header {
 		width: auto;
-		max-width: @bs-content-width;
+		max-width: @theme-content-width;
 		left: @navigation-main-width;
 		margin-left: calc( ~"50vw - 47.5rem");
 
 		& > li {
-			height: @custom-theme-header-height;
+			height: @theme-custom-menu-height;
 		}
 
 		a {
-			height: @custom-theme-header-height;
-			line-height: @custom-theme-header-height;
+			height: @theme-custom-menu-height;
+			line-height: @theme-custom-menu-height;
 			padding: 0;
 			padding-left: 1em;
 			padding-right: 1em;
@@ -42,7 +42,7 @@
 		}
 		li.dropdown-submenu .dropdown-menu {
 			left: 100%;
-			top: calc(~"100% - @{custom-theme-header-height}");
+			top: calc(~"100% - @{theme-custom-menu-height}");
 		}
 	}
 }

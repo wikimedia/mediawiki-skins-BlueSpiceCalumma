@@ -1,16 +1,16 @@
-@theme-body-bg-color: lighten( @neutral-bg, 100% ); //@bs-background-primary
-@theme-content-bg-color: lighten( @neutral-bg, 100% ); //@bs-background-neutral
+@theme-body-bg-color: @body-bg;
+@theme-content-bg-color: @content-bg;
 @theme-custom-menu-header-bg-color: lighten( @neutral-bg, 2.6% );
 @theme-custom-menu-header-fg-color: lighten( @neutral-bg, 100% );
 @theme-header-bg-color: lighten( @neutral-bg, 28% );
 @theme-header-fg-color: lighten( @neutral-bg, 2.6% );
 @theme-header-login-button-fg-color: @theme-header-fg-color;
 @theme-header-button-bg-color: @primary-bg;
-@theme-header-button-fg-color: lighten( @neutral-bg, 100% );
+@theme-header-button-fg-color: @primary-fg;
 @theme-navigation-main-bg-color: @primary-bg;
-@theme-navigation-main-fg-color: lighten( @neutral-bg, 100% );
-@theme-sitetools-main-bg-color: lighten( @neutral-bg, 100% );
-@theme-sitetools-main-fg-color: darken( @neutral-bg, 17% );
+@theme-navigation-main-fg-color: @primary-fg;
+@theme-sitetools-main-bg-color: @secondary-bg;
+@theme-sitetools-main-fg-color: @secondary-fg;
 @theme-custom-menu-header-bg-color-hover: lighten( @theme-custom-menu-header-bg-color, 6% );
 @theme-custom-menu-header-fg-color-hover: @theme-custom-menu-header-fg-color;
 @theme-custom-menu-header-dropdown-bg-color-open: @theme-custom-menu-header-bg-color-hover;
@@ -21,10 +21,10 @@
 @theme-custom-menu-header-dropdown-fg-color-hover: @theme-custom-menu-header-fg-color-hover;
 @theme-header-fg-color-hover: @theme-header-button-bg-color-hover;
 @theme-header-login-button-fg-color-hover: @theme-header-fg-color-hover;
-@theme-header-button-bg-color-hover: lighten( @theme-header-button-bg-color, 31.5%);
+@theme-header-button-bg-color-hover: lighten( @theme-header-button-bg-color, 31.5% );
 @theme-header-button-fg-color-hover: lighten( @neutral-bg, 100% );
-@theme-header-button-bg-color-disabled: lighten( @theme-header-button-bg-color, 31.5%);
-@theme-header-button-fg-color-disabled: lighten( @neutral-bg, 100% );
+@theme-header-button-bg-color-disabled: lighten( @theme-header-button-bg-color, 31.5% );
+@theme-header-button-fg-color-disabled: lighten( @theme-header-button-fg-color, 31.5% );
 @theme-header-dropdown-bg-color: @theme-header-button-bg-color;
 @theme-header-dropdown-bg-color-hover: @theme-header-button-bg-color-hover;
 @theme-header-dropdown-fg-color: @theme-header-button-fg-color;
@@ -33,7 +33,7 @@
 @theme-header-fullscreen-button-fg-color-hover: @theme-header-fg-color-hover;
 @theme-header-fullscreen-button-fg-color-active: @theme-header-fg-color;
 @theme-navigation-main-bg-color-hover: lighten( @theme-navigation-main-bg-color, 31.5% );
-@theme-navigation-main-fg-color-hover: lighten( @neutral-bg, 100% );
+@theme-navigation-main-fg-color-hover: @theme-navigation-main-fg-color;
 @theme-navigation-main-button-fg-color: @theme-navigation-main-bg-color;
 @theme-navigation-main-button-fg-color-hover: @theme-navigation-main-bg-color-hover;
 @theme-navigation-main-tabs-bg-color: transparent;
@@ -44,7 +44,7 @@
 @theme-navigation-main-tab-fg-color-hover: @theme-navigation-main-fg-color;
 @theme-navigation-main-tab-fg-color-active: @theme-navigation-main-fg-color;
 @theme-navigation-main-border: none;
-@theme-sitetools-main-bg-color-hover: lighten( @neutral-bg, 38.5% );
+@theme-sitetools-main-bg-color-hover: lighten( @theme-sitetools-main-fg-color, 55.5% );
 @theme-sitetools-main-fg-color-hover: @theme-sitetools-main-fg-color;
 @theme-sitetools-main-button-fg-color: @theme-sitetools-main-fg-color;
 @theme-sitetools-main-button-fg-color-hover: @theme-sitetools-main-fg-color-hover;
@@ -52,10 +52,10 @@
 @theme-sitetools-main-tab-bg-color: transparent;
 @theme-sitetools-main-tab-bg-color-hover: transparent;
 @theme-sitetools-main-tab-bg-color-active: transparent;
-@theme-sitetools-main-tab-fg-color: @theme-sitetools-main-fg-color-hover;
-@theme-sitetools-main-tab-fg-color-hover: @theme-sitetools-main-fg-color;
-@theme-sitetools-main-tab-fg-color-active: @theme-sitetools-main-fg-color;
-@theme-sitetools-main-border: 2px solid lighten( @neutral-bg, 34% );
+@theme-sitetools-main-tab-fg-color: lighten( @theme-sitetools-main-fg-color, 37% );
+@theme-sitetools-main-tab-fg-color-hover: lighten( @theme-sitetools-main-fg-color, 17.2% );
+@theme-sitetools-main-tab-fg-color-active:lighten( @theme-sitetools-main-fg-color, 17.2% );
+@theme-sitetools-main-border: 2px solid lighten( @theme-sitetools-main-fg-color, 55.5% );
 @theme-back-to-top-fg-color: @theme-navigation-main-fg-color;
 @theme-back-to-top-fg-color-hover: @theme-navigation-main-fg-color-hover;
 @theme-footer-fg-color: @bs-color-link;
@@ -87,7 +87,7 @@
 @theme-navigation-main-grapicallist-preview-tab-bg-color-active: @theme-navigation-main-bg-color-hover;
 @theme-navigation-main-grapicallist-preview-tab-fg-color-active: @theme-navigation-main-fg-color-hover;
 @theme-navigation-main-grapicallist-preview-border-color: @theme-navigation-main-bg-color;
-@theme-navigation-main-grapicallist-preview-fg-color: lighten( @neutral-bg, 100% );
+@theme-navigation-main-grapicallist-preview-fg-color: @theme-navigation-main-fg-color;
 @theme-navigation-main-grapicallist-preview-item-bg-color: lighten( @neutral-bg, 100% );
 @theme-navigation-main-grapicallist-preview-item-bg-color-hover: @theme-navigation-main-bg-color;
 @theme-navigation-main-grapicallist-preview-grid-border-color: "";
@@ -116,7 +116,7 @@
 @theme-mw-color-layout-link: @bs-color-link;
 @theme-mw-color-layout-link-highlight: @bs-color-link-hover;
 
-@theme-oo-ui-color-progessive:@bs-color-link;
+@theme-oo-ui-color-progessive: @bs-color-link;
 @theme-oo-ui-color-progessive-highlight: @bs-color-link-hover;
 @theme-oo-ui-color-progessive-active: @theme-oo-ui-color-progessive;
 @theme-oo-ui-color-progessive-text: #FFFFFF;
@@ -136,7 +136,19 @@
 
 
 /* compatibility */
-@bs-color-link: #0060DF;
-@bs-color-link-hover: #006EFF;
-@bs-color-link-new: #B73A3A;;
-@bs-color-link-new-hover: #E92121;
+@theme-content-link-fg: @bs-color-link;
+@theme-content-link-fg-hover: lighten( @theme-content-link-fg, 6% );
+@theme-content-link-new-fg: @bs-color-link-new;
+@theme-content-link-new-fg-hover: #E92121;
+
+
+
+
+/* content area */
+@theme-content-fg-primary: "";
+@theme-content-fg-secondary: "";
+//@bs-color-neutral3 ?? //TODO
+//@bs-color-link: #0060DF;
+//@bs-color-link-hover: #006EFF;
+//@bs-color-link-new: #B73A3A;
+//@bs-color-link-new-hover: #E92121;

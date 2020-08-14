@@ -113,7 +113,8 @@
 		"skin.bluespicecalumma.theme.default": {
 			"styles": {
 				"stylesheets/themes/default/common.less": {},
-				"stylesheets/themes/default/mobile.less": { "media": "all and ( max-width: 1000px )" }
+				"stylesheets/themes/default/mobile.less": { "media": "all and ( max-width: 1000px )" },
+				"stylesheets/themes/default/print.less": { "media": "print" }
 			},
 			"class": "\\MWStake\\MediaWiki\\Component\\CommonUserInterface\\ResourceLoader\\LessVars"
 		},

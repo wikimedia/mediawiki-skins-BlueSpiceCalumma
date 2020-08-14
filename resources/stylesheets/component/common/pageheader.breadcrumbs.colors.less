@@ -1,0 +1,47 @@
+.bs-page-breadcrumbs {
+	.dropdown {
+		& > a {
+			.mixin-link-title-color(
+				@theme-content-link-fg,
+				@theme-content-link-fg-hover,
+				@theme-content-link-new-fg,
+				@theme-content-link-new-fg-hover
+			);
+		}
+
+		& > a.dropdown-toggle {
+			.mixin-link-color(
+				@content-fg,
+				@content-fg
+			);
+		}
+
+		.dropdown-menu {
+			.mixin-dropdown-menu(
+				@content-fg,
+				@content-bg,
+				@content-fg,
+				lighten( @content-fg, 55.5% )
+			);
+
+			a.new {
+				color: @theme-content-link-new-fg;
+
+				&:hover {
+					color: @theme-content-link-new-fg-hover;
+				}
+			}
+		}
+	}
+}
+
+#bs-breadcrumb-rootnode {
+	a {
+		.mixin-link-title-color(
+			@theme-content-link-fg,
+			@theme-content-link-fg-hover,
+			@theme-content-link-new-fg,
+			@theme-content-link-new-fg-hover
+		);
+	}
+}
