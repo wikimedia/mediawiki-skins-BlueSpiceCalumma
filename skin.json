@@ -62,6 +62,12 @@
 					"addPrefix": true
 				}
 			}
+		},
+		"FlexiSkin": {
+			"SubscriberRegistry": {
+				"calumma": "\\BlueSpice\\Calumma\\FlexiSkin\\Subscriber::factory"
+			}
+
 		}
 	},
 	"ValidSkinNames": {
