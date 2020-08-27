@@ -13,7 +13,8 @@
 				return;
 			}
 
-			var position = $( jumpmark ).position().top;
+			var position = $( jumpmark )[0].getBoundingClientRect().top
+				+ $( window )['scrollTop']();
 
 			$( 'body, html').animate(
 				{
@@ -49,7 +50,8 @@
 					return;
 				}
 
-				var position = $( jumpmark ).position().top;
+			var position = $( jumpmark )[0].getBoundingClientRect().top
+				+ $( window )['scrollTop']();
 
 				$( 'body, html').animate(
 					{
