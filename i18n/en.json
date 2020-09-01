@@ -92,7 +92,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Subpage|Subpages}} of \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Subpage|$1 subpages}} of \"$2\"",
 	"bs-calumma-category-no-categories": "No categories assigned",
-	"bs-calumma-page-last-edit-text": "Last edited $1 ago by $2",
+	"bs-calumma-page-last-edit-text": "Last edited $1 by $2",
 	"bs-calumma-page-watch-title": "Watch \"$1\"",
 	"bs-calumma-page-watch-text": "Watch",
 	"bs-calumma-page-unwatch-title": "Do not watch \"$1\" anymore",
