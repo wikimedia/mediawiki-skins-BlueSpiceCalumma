@@ -94,7 +94,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Unterseite|Unterseiten}} von \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Eine Unterseite|Unterseiten}} zu \"$2\"",
 	"bs-calumma-category-no-categories": "Keine Kategorien vergeben",
-	"bs-calumma-page-last-edit-text": "Zuletzt vor $1 von $2 bearbeitet",
+	"bs-calumma-page-last-edit-text": "Zuletzt $1 von $2 bearbeitet",
 	"bs-calumma-page-watch-title": "Artikel \"$1\" beobachten",
 	"bs-calumma-page-watch-text": "Beobachten",
 	"bs-calumma-page-unwatch-title": "Artikel \"$1\" nicht mehr beobachten",

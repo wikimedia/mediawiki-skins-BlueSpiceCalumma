@@ -6,6 +6,7 @@ use BlueSpice\Calumma\Renderer\PageHeader;
 use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
 use BlueSpice\Services;
+use BlueSpice\Timestamp;
 use BlueSpice\UtilityFactory;
 use Config;
 use Exception;
@@ -13,8 +14,8 @@ use Html;
 use HtmlArmor;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
-use MediaWiki\Revision\RevisionRecord;
-use MediaWiki\Revision\RevisionStore;
+use MediaWiki\Storage\RevisionRecord;
+use MediaWiki\Storage\RevisionStore;
 use QuickTemplate;
 use RequestContext;
 use WikiPage;
@@ -154,40 +155,8 @@ class LastEdit extends PageHeader {
 		$rawTimestamp = $currentRevision->getTimestamp();
 		$formattedDate = $this->getContext()->getLanguage()->date( $rawTimestamp );
 
-		$unixTS = wfTimestamp( TS_UNIX, $rawTimestamp );
-		$period = time() - $unixTS;
-
-		$chosenIntervals = [];
-		/* interval: 'years', 'days', 'hours', 'minutes' */
-
-		/* more than one year */
-		if ( ( $period > ( 365 * 24 * 60 * 60 ) ) ) {
-			$chosenIntervals = [ 'years' ];
-		}
-
-		/* between one day and one year */
-		if ( ( $period > ( 24 * 60 * 60 ) ) && ( $period < ( 365 * 24 * 60 * 60 ) ) ) {
-			$chosenIntervals = [ 'days' ];
-		}
-
-		/* between one day and one hour */
-		if ( ( $period > ( 60 * 60 ) ) && ( $period < ( 24 * 60 * 60 ) ) ) {
-			$chosenIntervals = [ 'hours' ];
-		}
-
-		/* less than one hour */
-		if ( ( $period < ( 60 * 60 ) ) ) {
-			$chosenIntervals = [ 'minutes' ];
-		}
-
-		if ( $period < 60 ) {
-			$chosenIntervals[] = 'seconds';
-		}
-
-		$formattedPeriod = $this->getContext()->getLanguage()->formatDuration(
-			$period,
-			$chosenIntervals
-		);
+		$revisionTimestamp = Timestamp::getInstance( $rawTimestamp );
+		$formattedPeriod = $revisionTimestamp->getAgeString( null, null, 1 );
 
 		$diffLink = $this->linkRenderer->makeLink(
 			$wikiPage->getTitle(),
