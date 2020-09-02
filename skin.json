@@ -147,7 +147,11 @@
 				"bs-action-new-page-title",
 				"bs-action-new-subpage-text",
 				"bs-action-new-subpage-title",
-				"bs-to-top-desc"
+				"bs-to-top-desc",
+				"bs-calumma-navigation-toggle-tooltip-left-open",
+				"bs-calumma-navigation-toggle-tooltip-left-close",
+				"bs-calumma-navigation-toggle-tooltip-right-open",
+				"bs-calumma-navigation-toggle-tooltip-right-close"
 			]
 		},
 		"skin.bluespicecalumma.tab": {
