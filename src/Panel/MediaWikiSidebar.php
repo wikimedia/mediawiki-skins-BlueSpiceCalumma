@@ -214,9 +214,10 @@ class MediaWikiSidebar extends BasePanel {
 
 		$html .= '<div class="list-group">';
 
-		$items[] = $this->skintemplate->getSkin()->privacyLink();
-		$items[] = $this->skintemplate->getSkin()->aboutLink();
-		$items[] = $this->skintemplate->getSkin()->disclaimerLink();
+		$skin = $this->skintemplate->getSkin();
+		$items[] = $skin->footerLink( 'privacy', 'privacypage' );
+		$items[] = $skin->footerLink( 'aboutsite', 'aboutpage' );
+		$items[] = $skin->footerLink( 'disclaimers', 'disclaimerpage' );
 
 		foreach ( $items as $item ) {
 			$html .= str_replace( '<a ', '<a class="list-group-item" ', $item );
