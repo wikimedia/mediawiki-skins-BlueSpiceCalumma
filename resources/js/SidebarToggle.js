@@ -4,6 +4,25 @@
 
 		var target =  $( this ).attr( 'data-toggle' );
 
+		let side = '';
+		if( target == 'navigation-main-collapse' ){
+			side = 'left';
+		} else if( target == 'sitetools-main-collapse' ){
+			side = 'right';
+		}
+
+		let sideAction = '';
+		if( $( 'body' ).hasClass( target ) ){
+			sideAction = 'close';
+		} else {
+			sideAction = 'open';
+		}
+
+		let messageKey = 'bs-calumma-navigation-toggle-tooltip-' + side + '-' + sideAction;
+		let messageOnButton = mw.message( messageKey  ).plain();
+		$("." + target).attr('title', messageOnButton);
+		$("." + target).attr('aria-label', messageOnButton);
+
 		if( $( 'body' ).hasClass( target ) ){
 			$( 'body' ).removeClass( target );
 			bs.calumma.cookie.set( 'Calumma_'+target, 'false' );
@@ -69,6 +88,23 @@
 				$( 'body.sitetools-main-collapse' ).removeClass( 'sitetools-main-collapse' );
 			}
 		}
+
+		let leftButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-left-close';
+		let rightButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-right-close';
+
+		if( $( 'body' ).hasClass( 'navigation-main-collapse' ) ){
+			leftButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-left-open';
+		}
+		if( $( 'body' ).hasClass( 'sitetools-main-collapse' ) ){
+			rightButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-right-open';
+		}
+
+		$(".navigation-main-collapse").attr('title', mw.message( leftButtonMsgKey ).plain());
+		$(".navigation-main-collapse").attr('aria-label', mw.message( leftButtonMsgKey ).plain());
+		$(".sitetools-main-collapse").attr('title', mw.message( rightButtonMsgKey ).plain());
+		$(".sitetools-main-collapse").attr('aria-label', mw.message( rightButtonMsgKey ).plain());
+
+
 	});
 })( document, jQuery, mediaWiki );
 
