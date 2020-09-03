@@ -5,7 +5,6 @@ namespace BlueSpice\Calumma\Renderer\PageHeader;
 use BlueSpice\Calumma\Renderer\PageHeader;
 use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
-use BlueSpice\Services;
 use BlueSpice\Timestamp;
 use BlueSpice\UtilityFactory;
 use Config;
@@ -14,6 +13,7 @@ use Html;
 use HtmlArmor;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Storage\RevisionRecord;
 use MediaWiki\Storage\RevisionStore;
 use QuickTemplate;
@@ -58,7 +58,7 @@ class LastEdit extends PageHeader {
 	/**
 	 *
 	 * @param string $name
-	 * @param Services $services
+	 * @param MediaWikiServices $services
 	 * @param Config $config
 	 * @param Params $params
 	 * @param IContextSource|null $context
@@ -68,8 +68,8 @@ class LastEdit extends PageHeader {
 	 * @param RevisionStore|null $revisionStore
 	 * @return Renderer
 	 */
-	public static function factory( $name, Services $services, Config $config, Params $params,
-		IContextSource $context = null, LinkRenderer $linkRenderer = null,
+	public static function factory( $name, MediaWikiServices $services, Config $config,
+		Params $params, IContextSource $context = null, LinkRenderer $linkRenderer = null,
 		QuickTemplate $skinTemplate = null, UtilityFactory $util = null,
 		RevisionStore $revisionStore = null ) {
 		if ( !$context ) {

@@ -10,11 +10,11 @@ namespace BlueSpice\Calumma\Renderer;
 
 use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
-use BlueSpice\Services;
 use Config;
 use Exception;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\MediaWikiServices;
 use QuickTemplate;
 
 /**
@@ -51,7 +51,7 @@ abstract class PageHeader extends Renderer {
 	/**
 	 *
 	 * @param string $name
-	 * @param Services $services
+	 * @param MediaWikiServices $services
 	 * @param Config $config
 	 * @param Params $params
 	 * @param IContextSource|null $context
@@ -59,8 +59,8 @@ abstract class PageHeader extends Renderer {
 	 * @param QuickTemplate|null $skinTemplate
 	 * @return Renderer
 	 */
-	public static function factory( $name, Services $services, Config $config, Params $params,
-		IContextSource $context = null, LinkRenderer $linkRenderer = null,
+	public static function factory( $name, MediaWikiServices $services, Config $config,
+		Params $params, IContextSource $context = null, LinkRenderer $linkRenderer = null,
 		QuickTemplate $skinTemplate = null ) {
 		if ( !$context ) {
 			$context = $params->get(

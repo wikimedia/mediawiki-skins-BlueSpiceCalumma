@@ -7,12 +7,12 @@ use BlueSpice\Calumma\Renderer\PageHeader;
 use BlueSpice\PageInfoElementFactory;
 use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
-use BlueSpice\Services;
 use Config;
 use Exception;
 use Html;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\MediaWikiServices;
 use QuickTemplate;
 use RequestContext;
 
@@ -54,7 +54,7 @@ class PageInfo extends PageHeader {
 	/**
 	 *
 	 * @param string $name
-	 * @param Services $services
+	 * @param MediaWikiServices $services
 	 * @param Config $config
 	 * @param Params $params
 	 * @param IContextSource|null $context
@@ -64,8 +64,8 @@ class PageInfo extends PageHeader {
 	 * @param PageInfoSentenceBuilder|null $builder
 	 * @return Renderer
 	 */
-	public static function factory( $name, Services $services, Config $config, Params $params,
-		IContextSource $context = null, LinkRenderer $linkRenderer = null,
+	public static function factory( $name, MediaWikiServices $services, Config $config,
+		Params $params, IContextSource $context = null, LinkRenderer $linkRenderer = null,
 		QuickTemplate $skinTemplate = null, PageInfoElementFactory $factory = null,
 		PageInfoSentenceBuilder $builder = null ) {
 		if ( !$context ) {

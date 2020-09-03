@@ -5,7 +5,7 @@ namespace BlueSpice\Calumma\AlertProvider;
 use BlueSpice\AlertProviderBase;
 use BlueSpice\Calumma\Controls\VersionPager;
 use BlueSpice\IAlertProvider;
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 use Message;
 
 class OldVersion extends AlertProviderBase {
@@ -55,7 +55,7 @@ class OldVersion extends AlertProviderBase {
 		if ( $this->oldId === $currentRevId ) {
 			return false;
 		}
-		$revision = Services::getInstance()->getRevisionLookup()->getRevisionById(
+		$revision = MediaWikiServices::getInstance()->getRevisionLookup()->getRevisionById(
 			$this->oldId
 		);
 		if ( !$revision ) {
@@ -69,7 +69,7 @@ class OldVersion extends AlertProviderBase {
 	 * @return string
 	 */
 	protected function buildVersionPager() {
-		$services = Services::getInstance();
+		$services = MediaWikiServices::getInstance();
 		$revisionLookup = $services->getRevisionLookup();
 		$userLang = $this->skin->getLanguage();
 		$title = $this->skin->getTitle();
