@@ -5,7 +5,7 @@ namespace BlueSpice\Calumma\Panel;
 use BlueSpice\Calumma\SkinDataFieldDefinition as SDFD;
 use BlueSpice\DynamicFileDispatcher\Params;
 use BlueSpice\DynamicFileDispatcher\UserProfileImage;
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 use QuickTemplate;
 
 class MobileUserContainer extends BasePanel {
@@ -37,7 +37,7 @@ class MobileUserContainer extends BasePanel {
 			'<div class="bs-mobile-user-button dropdown calumma-mobile-visible calumma-tablet-visible">';
 
 		if ( $template->getSkin()->getUser()->isLoggedIn() ) {
-			$imageUrlBuilder = Services::getInstance()->getService(
+			$imageUrlBuilder = MediaWikiServices::getInstance()->getService(
 				'BSDynamicFileDispatcherUrlBuilder'
 			);
 			$imageUrlBuilder instanceof UrlBuilder;

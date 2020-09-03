@@ -6,7 +6,7 @@ use BlueSpice\Calumma\IPanel;
 use BlueSpice\Calumma\Renderer\Panel;
 use BlueSpice\Renderer\Params;
 use BlueSpice\RendererFactory;
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 use QuickTemplate;
 
 abstract class PanelContainer extends BasePanel {
@@ -36,7 +36,7 @@ abstract class PanelContainer extends BasePanel {
 	public function __construct( QuickTemplate $skintemplate ) {
 		$this->skintemplate = $skintemplate;
 		$this->rendererFactory =
-			Services::getInstance()->getService( 'BSRendererFactory' );
+			MediaWikiServices::getInstance()->getService( 'BSRendererFactory' );
 	}
 
 	/**

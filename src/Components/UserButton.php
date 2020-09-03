@@ -6,7 +6,7 @@ use BlueSpice\Calumma\TemplateComponent;
 use BlueSpice\DynamicFileDispatcher\Params;
 use BlueSpice\DynamicFileDispatcher\UrlBuilder;
 use BlueSpice\DynamicFileDispatcher\UserProfileImage;
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class UserButton extends TemplateComponent {
 
@@ -38,7 +38,7 @@ class UserButton extends TemplateComponent {
 	 */
 	protected function getUserButton() {
 		$user = $this->getSkin()->getUser();
-		$imageUrlBuilder = Services::getInstance()->getService(
+		$imageUrlBuilder = MediaWikiServices::getInstance()->getService(
 			'BSDynamicFileDispatcherUrlBuilder'
 		);
 		$imageUrlBuilder instanceof UrlBuilder;

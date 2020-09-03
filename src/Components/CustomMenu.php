@@ -1,7 +1,6 @@
 <?php
 namespace BlueSpice\Calumma\Components;
 
-use BlueSpice\Services;
 use MediaWiki\MediaWikiServices;
 use QuickTemplate;
 
@@ -69,7 +68,7 @@ class CustomMenu extends \Skins\Chameleon\Components\Structure {
 	 */
 	protected function addEditLink( QuickTemplate $skintemplate, $menu ) {
 		$html = '';
-		$factory = Services::getInstance()->getService( 'BSCustomMenuFactory' );
+		$factory = MediaWikiServices::getInstance()->getService( 'BSCustomMenuFactory' );
 
 		if ( $factory->getMenu( $menu )->getEditURL() === null ) {
 			return '';
