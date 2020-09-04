@@ -76,7 +76,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Subpágina|Subpáginas}} de \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Subpágina|Subpáginas}} de \"$2\"",
 	"bs-calumma-category-no-categories": "No se asignó ninguna categoría",
-	"bs-calumma-page-last-edit-text": "$2 efectuó la última modificación hace $1",
+	"bs-calumma-page-last-edit-text": "$2 efectuó la última modificación $1",
 	"bs-calumma-page-watch-title": "Vigilar «$1»",
 	"bs-calumma-page-watch-text": "Vigilar",
 	"bs-calumma-page-unwatch-title": "No vigilar «$1» más",

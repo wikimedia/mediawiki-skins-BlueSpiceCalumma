@@ -89,7 +89,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Podstrona|Podstrony}} „$2”",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Podstrona|$1 podstrony|$1 podstron}} „$2”",
 	"bs-calumma-category-no-categories": "Brak przypisanych kategorii",
-	"bs-calumma-page-last-edit-text": "Ostatnio edytowano $1 temu przez $2",
+	"bs-calumma-page-last-edit-text": "Ostatnio edytowano $1 przez $2",
 	"bs-calumma-page-watch-title": "Obserwuj stronę „$1”",
 	"bs-calumma-page-watch-text": "Obserwuj",
 	"bs-calumma-page-unwatch-title": "Nie obserwuj więcej strony „$1”",
