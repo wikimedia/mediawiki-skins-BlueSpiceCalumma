@@ -4,6 +4,7 @@
 			"BaRaN6161 TURK",
 			"Captantrips",
 			"Hedda",
+			"MuratTheTurkish",
 			"Sayginer",
 			"Sucsuzz"
 		]
@@ -92,7 +93,7 @@
 	"bs-calumma-breadcrumbs-subpages": "\"$2\"'nin {{PLURAL:$1|alt sayfası|alt sayfası}}",
 	"bs-calumma-breadcrumbs-subpages-title": "\"$2\"'nin {{PLURAL:$1|alt sayfası|$1 alt sayfası}}",
 	"bs-calumma-category-no-categories": "Hiçbir kategori atanmadı",
-	"bs-calumma-page-last-edit-text": "Son düzenleme $1 önce $2",
+	"bs-calumma-page-last-edit-text": "Son düzenleme $1 - $2",
 	"bs-calumma-page-watch-title": "\"$1\" izle",
 	"bs-calumma-page-watch-text": "İzle",
 	"bs-calumma-page-unwatch-title": "Artık \"$1\" izlemeyin",
