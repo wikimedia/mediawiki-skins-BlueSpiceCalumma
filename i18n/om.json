@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Maammee",
 			"Oromoo"
 		]
 	},
@@ -37,7 +38,7 @@
 	"bs-calumma-recentchanges-title": "Jijjiirama dhihoo",
 	"bs-calumma-recentchanges-intro": "Tarree kana keessatti gulaalli fuulaa dhihoo maraa fi fuula haara uumame argatta.",
 	"bs-calumma-recentchanges-column-header-title": "Jijjiirama dhihoo",
-	"bs-calumma-recentchanges-diff": "Garagarumma",
+	"bs-calumma-recentchanges-diff": "Garaagarumma",
 	"bs-all-templates-link-text": "Qajojii galchi mara",
 	"bs-to-top-desc": "Gara olii utaali",
 	"bs-calumma-pagetool-history-tooltip": "Seenaa fuulaa",
@@ -55,7 +56,7 @@
 	"bs-calumma-breadcrumbs-pages-title": "Amma kan daawwachaa jirtu \"$1\"",
 	"bs-calumma-page-last-edit-text": "$1 dura $2 dhan dhuma irratti kan gulaalame",
 	"bs-calumma-page-watch-title": "\"$1\" daawwadhu",
-	"bs-calumma-page-watch-text": "Daawwadhu",
+	"bs-calumma-page-watch-text": "Eegi",
 	"bs-calumma-page-unwatch-text": "Daawwachu dhiisi",
 	"bs-calumma-pageinfosentence-item-separator": "fi",
 	"bs-calumma-pageinfosentence-item-class-separator": "garuu",

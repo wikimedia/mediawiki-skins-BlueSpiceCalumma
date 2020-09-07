@@ -92,7 +92,7 @@
 	"bs-calumma-breadcrumbs-subpages": "Sous-page{{PLURAL:$1||s}} de « $2 »",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Sous-page|$1 sous-pages}} de « $2 »",
 	"bs-calumma-category-no-categories": "Aucune catégorie assignée",
-	"bs-calumma-page-last-edit-text": "Dernière modification il y a $1 par $2",
+	"bs-calumma-page-last-edit-text": "Dernière modification le $1 par $2",
 	"bs-calumma-page-watch-title": "Suivre « $1 »",
 	"bs-calumma-page-watch-text": "Suivre",
 	"bs-calumma-page-unwatch-title": "Ne plus jamais suivre « $1 »",
