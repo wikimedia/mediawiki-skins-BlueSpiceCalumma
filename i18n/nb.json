@@ -91,7 +91,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Underside|Undersider}} av «$2»",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Underside|$1 undersider}} av «$2»",
 	"bs-calumma-category-no-categories": "Ingen kategorier tildelt",
-	"bs-calumma-page-last-edit-text": "Sist redigert for $1 siden av $2",
+	"bs-calumma-page-last-edit-text": "Sist redigert $1 av $2",
 	"bs-calumma-page-watch-title": "Overvåk «$1»",
 	"bs-calumma-page-watch-text": "Overvåk",
 	"bs-calumma-page-unwatch-title": "Ikke overvåk «$1» lenger",
