@@ -531,7 +531,7 @@ class PageHeader extends TemplateComponent {
 		$registeredFactoryCallbacks = $registry->getAllValues();
 
 		$activeProviders =
-			Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' )
+			MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' )
 				->get( 'BlueSpiceCalummaPageHeaderBeforeContentEnabledProviders' );
 
 		foreach ( $registeredFactoryCallbacks as $callbackKey => $factoryCallback ) {
