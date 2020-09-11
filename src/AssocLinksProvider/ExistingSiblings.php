@@ -3,7 +3,7 @@
 namespace BlueSpice\Calumma\AssocLinksProvider;
 
 use BlueSpice\Html\Descriptor\TitleLink;
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 use Message;
 use RawMessage;
 use Title;
@@ -32,7 +32,7 @@ class ExistingSiblings extends TitleLink {
 		$namespaceBlacklist = $config->get(
 			'BlueSpiceCalummaAssocLinksExistingSiblingsNamespaceBlacklist'
 		);
-		$dbr = Services::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $dbr->select(
 			'page',
 			'*',

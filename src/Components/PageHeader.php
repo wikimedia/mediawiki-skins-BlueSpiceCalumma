@@ -10,9 +10,9 @@ use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Renderer\NullRenderer;
 use BlueSpice\Renderer\Params;
 use BlueSpice\RendererFactory;
-use BlueSpice\Services;
 use BlueSpice\SkinData;
 use Html;
+use MediaWiki\MediaWikiServices;
 use Sanitizer;
 use Title;
 use WikiPage;
@@ -141,8 +141,8 @@ class PageHeader extends TemplateComponent {
 		if ( $renderer instanceof NullRenderer ) {
 			$renderer = LastEdit::factory(
 				'pageheader-lastedit',
-				Services::getInstance(),
-				Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
+				MediaWikiServices::getInstance(),
+				MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
 				new Params( $params )
 			);
 		}
@@ -284,7 +284,7 @@ class PageHeader extends TemplateComponent {
 		// identify them.
 		if ( !$showHiddenCategories ) {
 			$trackingCategories = new \TrackingCategories(
-				Services::getInstance()->getConfigFactory()->makeConfig( 'main' )
+				MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'main' )
 			);
 			$trackingCategoryList = $trackingCategories->getTrackingCategories();
 			foreach ( $trackingCategoryList as $category ) {
@@ -314,8 +314,8 @@ class PageHeader extends TemplateComponent {
 		if ( $renderer instanceof NullRenderer ) {
 			$renderer = Category::factory(
 				'pageheader-category',
-				Services::getInstance(),
-				Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
+				MediaWikiServices::getInstance(),
+				MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
 				new Params( $args )
 			);
 		}
@@ -392,7 +392,7 @@ class PageHeader extends TemplateComponent {
 	 * @return RendererFactory
 	 */
 	protected function getRendererFactory() {
-		return Services::getInstance()->getService( 'BSRendererFactory' );
+		return MediaWikiServices::getInstance()->getService( 'BSRendererFactory' );
 	}
 
 	/**

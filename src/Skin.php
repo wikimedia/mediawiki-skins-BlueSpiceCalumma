@@ -2,7 +2,6 @@
 
 namespace BlueSpice\Calumma;
 
-use BlueSpice\Services;
 use ExtensionRegistry;
 use Hooks;
 use MediaWiki\MediaWikiServices;
@@ -186,7 +185,7 @@ class Skin extends \SkinChameleon {
 	 * @return \Config
 	 */
 	public function getConfig() {
-		return Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		return MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 	}
 
 	/**

@@ -2,9 +2,9 @@
 
 namespace BlueSpice\Calumma;
 
-use BlueSpice\Services;
 use Config;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\MediaWikiServices;
 
 abstract class BreadcrumbRootNodeBase implements IBreadcrumbRootNode {
 
@@ -36,7 +36,7 @@ abstract class BreadcrumbRootNodeBase implements IBreadcrumbRootNode {
 	 * @return IBreadCrumpRootNode
 	 */
 	public static function factory( $config ) {
-		$linkRenderer = Services::getInstance()->getLinkRenderer();
+		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
 
 		return new static( $config, $linkRenderer );
 	}
