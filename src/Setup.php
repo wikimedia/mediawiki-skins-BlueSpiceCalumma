@@ -35,19 +35,47 @@ class Setup {
 
 		$lessVars->setVar( 'content-width', '61.25rem' );
 		$lessVars->setVar( 'body-bg', '#ffffff' );
+
+		$lessVars->setVar( 'font-weight-light', '300' );
+		$lessVars->setVar( 'font-weight-regular', '400' );
+		$lessVars->setVar( 'font-weight-medium', '500' );
+		$lessVars->setVar( 'font-weight-bold', '700' );
+
 		$lessVars->setVar( 'content-bg', '#ffffff' );
 		$lessVars->setVar( 'content-fg', '#333333' );
+		$lessVars->setVar( 'content-font-size', '0.9375rem' );
+		$lessVars->setVar( 'content-font-weight', '@font-weight-regular' );
+		$lessVars->setVar( 'content-primary-font-family', '"Open sans"' );
+		$lessVars->setVar( 'content-font-family', '@content-primary-font-family, "Roboto", "arial", "sans-serif"' );
+
 		$lessVars->setVar( 'content-h1-fg', '#333333' );
+		$lessVars->setVar( 'content-h1-font-size', '2rem' );
+		$lessVars->setVar( 'content-h1-font-weight', '@font-weight-medium' );
 		$lessVars->setVar( 'content-h1-border', 'none' );
+
 		$lessVars->setVar( 'content-h2-fg', '#333333' );
+		$lessVars->setVar( 'content-h2-font-size', '1.8rem' );
+		$lessVars->setVar( 'content-h2-font-weight', '@font-weight-medium' );
 		$lessVars->setVar( 'content-h2-border', '1px solid currentColor' );
+
 		$lessVars->setVar( 'content-h3-fg', '#333333' );
+		$lessVars->setVar( 'content-h3-font-size', '1.6rem' );
+		$lessVars->setVar( 'content-h3-font-weight', '@font-weight-medium' );
 		$lessVars->setVar( 'content-h3-border', 'none' );
+
 		$lessVars->setVar( 'content-h4-fg', '#333333' );
+		$lessVars->setVar( 'content-h4-font-size', '1.4rem' );
+		$lessVars->setVar( 'content-h4-font-weight', '@font-weight-bold' );
 		$lessVars->setVar( 'content-h4-border', 'none' );
+
 		$lessVars->setVar( 'content-h5-fg', '#333333' );
+		$lessVars->setVar( 'content-h5-font-size', '1.25rem' );
+		$lessVars->setVar( 'content-h5-font-weight', '@font-weight-bold' );
 		$lessVars->setVar( 'content-h5-border', 'none' );
+
 		$lessVars->setVar( 'content-h6-fg', '#333333' );
+		$lessVars->setVar( 'content-h6-font-size', '1.0625rem' );
+		$lessVars->setVar( 'content-h6-font-weight', '@font-weight-bold' );
 		$lessVars->setVar( 'content-h6-border', 'none' );
 	}
 }
