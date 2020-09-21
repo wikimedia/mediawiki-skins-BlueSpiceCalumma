@@ -49,7 +49,7 @@ class Template extends \Skins\Chameleon\ChameleonTemplate {
 	 * @inheritDoc
 	 */
 	public function getFooterIcons( $option = null ) {
-		return $this->get( 'footericons' );
+		return parent::getFooterIcons( $option );
 	}
 
 }
