@@ -46,7 +46,7 @@
 			}
 			$dropDown.css( 'width', textWidth + 'px' );
 
-			if ( $dropDown.width() > $beadCrumbsCnt.width() ) {
+			if ( $dropDown.width() < $beadCrumbsCnt.width() ) {
 				$dropDown.width( $beadCrumbsCnt.width() - 4 )
 			}
 
