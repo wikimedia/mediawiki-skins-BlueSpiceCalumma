@@ -13,6 +13,9 @@ class Subscriber implements IFlexiSkinSubscriber {
 	 * @inheritDoc
 	 */
 	public function getAffectedRLModules(): array {
-		return [ 'skin.bluespicecalumma.theme.default' ];
+		return [
+			'skin.bluespicecalumma.theme.default',
+			'skin.bluespicecalumma.styles'
+		];
 	}
 }
