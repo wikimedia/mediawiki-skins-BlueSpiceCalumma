@@ -2,10 +2,10 @@
 	.dropdown {
 		& > a {
 			.mixin-link-title-color(
-				@theme-content-link-fg,
-				@theme-content-link-fg-hover,
-				@theme-content-link-new-fg,
-				@theme-content-link-new-fg-hover
+				@theme-page-header-link-fg-color,
+				@theme-page-header-link-fg-color-hover,
+				@theme-page-header-new-link-fg-color,
+				@theme-page-header-new-link-fg-color-hover
 			);
 		}
 
@@ -25,10 +25,10 @@
 			);
 
 			a.new {
-				color: @theme-content-link-new-fg;
+				color: @theme-page-header-new-link-fg-color;
 
 				&:hover {
-					color: @theme-content-link-new-fg-hover;
+					color: @theme-page-header-new-link-fg-color-hover;
 				}
 			}
 		}
@@ -38,10 +38,10 @@
 #bs-breadcrumb-rootnode {
 	a {
 		.mixin-link-title-color(
-			@theme-content-link-fg,
-			@theme-content-link-fg-hover,
-			@theme-content-link-new-fg,
-			@theme-content-link-new-fg-hover
+			@theme-page-header-link-fg-color,
+			@theme-page-header-link-fg-color-hover,
+			@theme-page-header-new-link-fg-color,
+			@theme-page-header-new-link-fg-color-hover
 		);
 	}
 }

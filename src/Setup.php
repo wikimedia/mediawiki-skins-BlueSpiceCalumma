@@ -33,15 +33,32 @@ class Setup {
 	private static function setLessVars() {
 		$lessVars = LessVars::getInstance();
 
+		$lessVars->setVar( 'primary-bg', '#3E5389' );
+		$lessVars->setVar( 'primary-fg', 'white' );
+
+		$lessVars->setVar( 'secondary-bg', 'white' );
+		$lessVars->setVar( 'secondary-fg', '#666666' );
+
+		$lessVars->setVar( 'tertiary-bg', '#D9D9D9' );
+		$lessVars->setVar( 'tertiary-fg', '#999999' );
+
+		$lessVars->setVar( 'quaternary-bg', '#999999' );
+		$lessVars->setVar( 'quaternary-fg', 'white' );
+
+		$lessVars->setVar( 'link-fg', '#0060DF' );
+		$lessVars->setVar( 'new-link-fg', '#B73A3A' );
+
+		$lessVars->setVar( 'body-bg', 'white' );
 		$lessVars->setVar( 'content-width', '61.25rem' );
-		$lessVars->setVar( 'body-bg', '#ffffff' );
+		$lessVars->setVar( 'content-bg', 'white' );
+		$lessVars->setVar( 'content-fg', '#333333' );
 
 		$lessVars->setVar( 'font-weight-light', '300' );
 		$lessVars->setVar( 'font-weight-regular', '400' );
 		$lessVars->setVar( 'font-weight-medium', '500' );
 		$lessVars->setVar( 'font-weight-bold', '700' );
 
-		$lessVars->setVar( 'content-bg', '#ffffff' );
+		$lessVars->setVar( 'content-bg', 'white' );
 		$lessVars->setVar( 'content-fg', '#333333' );
 		$lessVars->setVar( 'content-font-size', '0.9375rem' );
 		$lessVars->setVar( 'content-font-weight', '@font-weight-regular' );

@@ -1,0 +1,15 @@
+#content {
+	.bs-page-before-header,
+	.bs-page-header,
+	.bs-firstHeading-container,
+	.bs-page-after-header {
+		a {
+			.mixin-link-title-color(
+				@theme-page-header-link-fg-color,
+				@theme-page-header-link-fg-color-hover,
+				@theme-page-header-new-link-fg-color,
+				@theme-page-header-new-link-fg-color-hover
+			);
+		}
+	}
+}
