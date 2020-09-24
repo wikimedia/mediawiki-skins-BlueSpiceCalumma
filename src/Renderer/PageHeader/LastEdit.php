@@ -14,11 +14,10 @@ use HtmlArmor;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
-use MediaWiki\Storage\RevisionRecord;
-use MediaWiki\Storage\RevisionStore;
+use MediaWiki\Revision\RevisionRecord;
+use MediaWiki\Revision\RevisionStore;
 use QuickTemplate;
 use RequestContext;
-use User;
 use WikiPage;
 
 class LastEdit extends PageHeader {
@@ -182,16 +181,15 @@ class LastEdit extends PageHeader {
 	 */
 	protected function makeLastEditorLink( WikiPage $wikiPage, $currentRevision ) {
 		$userIdentity = $currentRevision->getUser();
-		$user = User::newFromId( $userIdentity );
 
 		/* Main_page is created with user id 0 */
-		if ( ( $userIdentity === null ) || ( $user->getId() === 0 ) ) {
+		if ( !$userIdentity || $userIdentity->getId() === 0 ) {
 			return $this->msg( 'bs-calumma-page-last-edit-by-system-user' )->plain();
 		}
 
 		$userLink = $this->linkRenderer->makeLink(
-			$user->getUserPage(),
-			$this->util->getUserHelper( $user )->getDisplayName()
+			$userIdentity->getUserPage(),
+			$this->util->getUserHelper( $userIdentity )->getDisplayName()
 		);
 
 		return $userLink;
