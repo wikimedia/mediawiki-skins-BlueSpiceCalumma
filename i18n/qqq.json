@@ -87,6 +87,10 @@
 	"bs-support-url": "{{notranslate}}",
 	"bs-support-description": "Label for HW support page in MW Sidebar (external link)",
 	"bs-calumma-navigation-toggle-tooltip": "Tool tip for the icon of the sidebar togglers",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Tooltip for the left main navigation menu open button",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Tooltip for the left main navigation menu close button",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Tooltip for the right main navigation menu open button",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Tooltip for the right main navigation menu close button",
 	"bs-edit-custom-menu-link-title": "The title for a link to edit a menu of type BlueSpiceCustomMenu",
 	"bs-edit-custom-menu-link-text": "The text for a link to edit a menu of type BlueSpiceCustomMenu",
 	"bs-calumma-toggle-button-tooltip": "Tool tip for togglers",
@@ -121,9 +125,5 @@
 	"bs-calumma-context-pagebutton-tooltip": "Tooltip for button that navigates to the subject page",
 	"bs-calumma-context-discussionbutton-label": "Label for button that navigates to the talk page",
 	"bs-calumma-context-discussionbutton-tooltip": "Tooltip for button that navigates to the talk page",
-	"bs-calumma-search-button-label": "Tooltip for button at search form to start search",
-	"bs-calumma-navigation-toggle-tooltip-left-open": "Tooltip for the left main navigation menu open button",
-	"bs-calumma-navigation-toggle-tooltip-left-close": "Tooltip for the left main navigation menu close button",
-	"bs-calumma-navigation-toggle-tooltip-right-open": "Tooltip for the right main navigation menu open button",
-	"bs-calumma-navigation-toggle-tooltip-right-close": "Tooltip for the right main navigation menu close button"
+	"bs-calumma-search-button-label": "Tooltip for button at search form to start search"
 }
