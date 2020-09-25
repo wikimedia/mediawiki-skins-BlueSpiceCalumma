@@ -42,7 +42,7 @@ body div.bs-mobile-more-menu {
 		& > ul {
 			padding-top: 0.625rem;
 			padding-left: 0.625rem;
-			padding-right: 3.425rem;
+			padding-right: 0.625rem;
 			padding-bottom: 4.25rem;
 		}
 
@@ -51,15 +51,17 @@ body div.bs-mobile-more-menu {
 		}
 
 		a.bs-mobile-more-menu-button {
-			position: absolute;
-			top: 2.5vw;
+			position: unset;
+			width: 3rem;
+			padding: 0;
+			margin-left: auto;
 			background-color: transparent;
+			border-radius: 1.5rem;
 			i::before {
 				font-family: 'entypo';
 				content: "\e98d";;
 				font-size: 1.5rem;
 				background-color: transparent;
-				border-radius: 1.5rem;
 			}
 		}
 	}
