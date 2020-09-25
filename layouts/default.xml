@@ -64,5 +64,7 @@
 				</cell>
 			</row>
 		</grid>
+		<component type="\BlueSpice\Calumma\Components\MobileMoreMenu" class="calumma-mobile-visible calumma-tablet-visible calumma-desktop-hidden"/>
+		<component type="\BlueSpice\Calumma\Components\MobileFeaturedActionsButton" data-type="new" data-action="new-page" class="calumma-mobile-visible calumma-tablet-visible calumma-desktop-hidden"/>
 	</component>
 </structure>
