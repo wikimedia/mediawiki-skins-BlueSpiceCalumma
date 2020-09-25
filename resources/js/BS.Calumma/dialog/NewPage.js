@@ -42,7 +42,7 @@ Ext.define( 'BS.Calumma.dialog.NewPage', {
 			this.onBtnOKClick();
 		}
 		if ( e.charCode === 58 ) {
-			this.namespace = this.currentInputValue ;
+			this.namespace = this.currentInputValue;
 		}
 	},
 
