@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <structure xmlns="https://cmln.github.io/chameleon/schema/1.0/layout.rng">
-	<component type="\BlueSpice\Calumma\Components\Banner">
-	</component>
 	<component type="\BlueSpice\Calumma\Components\CustomMenu" data-menu="header" class="bs-custom-menu-container calumma-desktop-visible navbar-fixed-top" hide-if-noread="true">
 		<component type="\BlueSpice\Calumma\Components\ToggleButton" data-toggle="bs-custom-menu-header-container-collapse" class="bs-custom-menu-header-button calumma-desktop-visible"/>
 	</component>

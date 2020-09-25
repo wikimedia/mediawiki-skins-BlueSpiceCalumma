@@ -67,23 +67,23 @@ body.mediawiki,
 body.mediawiki.x-body {
 	&.bs-custom-menu-header-container-collapse {
 		header.main-header {
-			top: @banner-top-height;
+			top: 0;
 		}
 
 		&.navigation-main-collapse aside.navigation-main,
 		aside.navigation-main,
 		aside.navigation-main.active {
-			top: @theme-header-mobile-height + @banner-top-height;
+			top: @theme-header-mobile-height;
 		}
 
 		&.sitetools-main-collapse aside.sitetools-main,
 		aside.sitetools-main,
 		aside.sitetools-main.active {
-			top: @theme-header-mobile-height + @banner-top-height;
+			top: @theme-header-mobile-height;
 		}
 
 		.wrapper .content-wrapper {
-			padding-top: @theme-header-mobile-height + @banner-top-height;
+			padding-top: @theme-header-mobile-height;
 		}
 	}
 }
@@ -93,22 +93,22 @@ body.mediawiki,
 body.mediawiki.x-body {
 	&:not( .bs-custom-menu-header-container-collapse ) {
 		header.main-header {
-			top: @banner-top-height + @theme-custom-menu-height;
+			top: @theme-custom-menu-height;
 		}
 		&.navigation-main-collapse aside.navigation-main,
 		aside.navigation-main,
 		aside.navigation-main.active {
-			top: @theme-header-mobile-height + @banner-top-height + @theme-custom-menu-height;
+			top: @theme-header-mobile-height + @theme-custom-menu-height;
 		}
 
 		&.sitetools-main-collapse aside.sitetools-main,
 		aside.sitetools-main,
 		aside.sitetools-main.active {
-			top: @theme-header-mobile-height + @banner-top-height + @theme-custom-menu-height;
+			top: @theme-header-mobile-height + @theme-custom-menu-height;
 		}
 
 		.wrapper .content-wrapper {
-			padding-top: @theme-header-mobile-height + @banner-top-height + @theme-custom-menu-height;
+			padding-top: @theme-header-mobile-height + @theme-custom-menu-height;
 		}
 
 		.navigation-main #bs-sitenavtabs .tab-content,
