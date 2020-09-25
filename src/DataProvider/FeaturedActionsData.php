@@ -64,8 +64,22 @@ class FeaturedActionsData {
 		}
 
 		if ( !$curTitle->userCan( 'edit' ) ) {
+			$permissionErrors = $curTitle->getUserPermissionsErrors( 'edit', $skin->getUser() );
+			$errorMessages = '';
+			/**
+			 * @var \Message $errorMessage
+			 */
+			foreach ( $permissionErrors[0] as $errorMessage ) {
+				if ( is_object( $errorMessage ) ) {
+					$errorMessages .= $errorMessage->plain() . "\n";
+				}
+			}
+			$titleForButton = empty( $errorMessages )
+				? wfMessage( 'bs-action-edit-disabled-title' )->text()
+				: $errorMessages;
+
 			$newSection += [
-				'title' => wfMessage( 'bs-action-edit-disabled-title' )->text(),
+				'title' => $titleForButton,
 				'href' => '#',
 				'classes' => [ 'disabled' ]
 			];
