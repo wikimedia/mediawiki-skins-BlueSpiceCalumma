@@ -11,17 +11,17 @@
 
 		& > a.dropdown-toggle {
 			.mixin-link-color(
-				@content-fg,
-				@content-fg
+				@theme-content-fg-color,
+				@theme-content-fg-color
 			);
 		}
 
 		.dropdown-menu {
 			.mixin-dropdown-menu(
-				@content-fg,
+				@theme-content-fg-color,
 				@content-bg,
-				@content-fg,
-				lighten( @content-fg, 55.5% )
+				@theme-content-fg-color,
+				lighten( @theme-content-fg-color, 55.5% )
 			);
 
 			a.new {

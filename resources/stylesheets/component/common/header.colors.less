@@ -63,6 +63,11 @@ body.mediawiki header.main-header {
 
 	/* user container */
 	.bs-button-user.dropdown {
+		.bs-userbutton-notifications-badge {
+			background-color: @theme-notification-inverted-bg;
+			color: @theme-notification-inverted-fg;
+		}
+
 		.bs-personal-not-loggedin {
 			color: @theme-header-fg-color;
 			&:hover {
@@ -82,6 +87,11 @@ body.mediawiki header.main-header {
 					color: @theme-header-dropdown-fg-color-hover;
 					background-color: @theme-header-dropdown-bg-color-hover;
 				}
+			}
+
+			.bs-userbutton-notifications-link::after{
+				content: attr(data-notifications-badge-text);
+				color: @theme-notification-fg;
 			}
 
 			#bs-personal-menu .separator {

@@ -48,15 +48,13 @@ class Setup {
 		$lessVars->setVar( 'link-fg', '#0060DF' );
 		$lessVars->setVar( 'new-link-fg', '#B73A3A' );
 
-		$lessVars->setVar( 'body-bg', 'white' );
-		$lessVars->setVar( 'content-width', '61.25rem' );
-		$lessVars->setVar( 'content-bg', 'white' );
-		$lessVars->setVar( 'content-fg', '#333333' );
-
 		$lessVars->setVar( 'font-weight-light', '300' );
 		$lessVars->setVar( 'font-weight-regular', '400' );
 		$lessVars->setVar( 'font-weight-medium', '500' );
 		$lessVars->setVar( 'font-weight-bold', '700' );
+
+		$lessVars->setVar( 'body-bg', 'white' );
+		$lessVars->setVar( 'content-width', '61.25rem' );
 
 		$lessVars->setVar( 'content-bg', 'white' );
 		$lessVars->setVar( 'content-fg', '#333333' );
