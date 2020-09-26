@@ -5,6 +5,8 @@
 
 		mw.hook( 'bs.calumma.scroll.to.jumpmark.before' ).fire( hash, null );
 
+		var clearance = $( '#content' ).position().top;
+
 		if ( hash !== '' ) {
 			var jumpmarkId = hash.replace( '#', '' );
 
@@ -13,12 +15,11 @@
 				return;
 			}
 
-			var position = $( jumpmark )[0].getBoundingClientRect().top
-				+ $( window )['scrollTop']();
+			var position = $( jumpmark ).position().top;
 
 			$( 'body, html').animate(
 				{
-					scrollTop: position
+					scrollTop: position - clearance
 				},
 				100
 			);
@@ -50,16 +51,17 @@
 					return;
 				}
 
-			var position = $( jumpmark )[0].getBoundingClientRect().top
-				+ $( window )['scrollTop']();
+				var position = $( jumpmark ).position().top;
+				if ( position === 0 ) { //hidden element (e.g. bootstrap nav-tabs)
+					return;
+				}
 
 				$( 'body, html').animate(
 					{
-						scrollTop: position
+						scrollTop: position - clearance
 					},
 					400
 				);
-
 			}
 		});
 	});
