@@ -4,24 +4,29 @@
 
 		var target =  $( this ).attr( 'data-toggle' );
 
-		let side = '';
+		var side = '';
 		if( target == 'navigation-main-collapse' ){
 			side = 'left';
 		} else if( target == 'sitetools-main-collapse' ){
 			side = 'right';
 		}
 
-		let sideAction = '';
+		var sideAction = '';
 		if( $( 'body' ).hasClass( target ) ){
 			sideAction = 'close';
 		} else {
 			sideAction = 'open';
 		}
 
-		let messageKey = 'bs-calumma-navigation-toggle-tooltip-' + side + '-' + sideAction;
-		let messageOnButton = mw.message( messageKey  ).plain();
-		$("." + target).attr('title', messageOnButton);
-		$("." + target).attr('aria-label', messageOnButton);
+		// Give grep a chance:
+		// - bs-calumma-navigation-toggle-tooltip-left-close
+		// - bs-calumma-navigation-toggle-tooltip-left-open
+		// - bs-calumma-navigation-toggle-tooltip-right-close
+		// - bs-calumma-navigation-toggle-tooltip-right-open
+		var messageKey = 'bs-calumma-navigation-toggle-tooltip-' + side + '-' + sideAction;
+		var messageOnButton = mw.message( messageKey  ).plain();
+		$( this ).attr( 'title', messageOnButton );
+		$( this ).attr( 'aria-label', messageOnButton );
 
 		if( $( 'body' ).hasClass( target ) ){
 			$( 'body' ).removeClass( target );
@@ -89,8 +94,8 @@
 			}
 		}
 
-		let leftButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-left-close';
-		let rightButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-right-close';
+		var leftButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-left-close';
+		var rightButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-right-close';
 
 		if( $( 'body' ).hasClass( 'navigation-main-collapse' ) ){
 			leftButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-left-open';
@@ -99,10 +104,13 @@
 			rightButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-right-open';
 		}
 
-		$(".navigation-main-collapse").attr('title', mw.message( leftButtonMsgKey ).plain());
-		$(".navigation-main-collapse").attr('aria-label', mw.message( leftButtonMsgKey ).plain());
-		$(".sitetools-main-collapse").attr('title', mw.message( rightButtonMsgKey ).plain());
-		$(".sitetools-main-collapse").attr('aria-label', mw.message( rightButtonMsgKey ).plain());
+		var $mainNavToggle = $(".sidebar-toggle .navigation-main-collapse").parent( '.sidebar-toggle' );
+		$mainNavToggle.attr('title', mw.message( leftButtonMsgKey ).plain());
+		$mainNavToggle.attr('aria-label', mw.message( leftButtonMsgKey ).plain());
+
+		var $siteToolsToggle = $(".sidebar-toggle .sitetools-main-collapse").parent( '.sidebar-toggle' );
+		$siteToolsToggle.attr('title', mw.message( rightButtonMsgKey ).plain());
+		$siteToolsToggle.attr('aria-label', mw.message( rightButtonMsgKey ).plain());
 
 
 	});
