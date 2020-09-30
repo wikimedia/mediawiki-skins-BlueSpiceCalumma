@@ -18,7 +18,13 @@ class SpecialAllPages extends BreadcrumbRootNodeBase {
 			return '';
 		}
 
-		$nsText = str_replace( '_', ' ', $title->getNsText() );
+		$namespaceKey = $title->getNamespace();
+
+		if ( $this->skipForNamespaces( $namespaceKey ) === true ) {
+			return '';
+		}
+
+		$nsText = $this->getLocalizedNamespaceText( $namespaceKey );
 		if ( $title->getNamespace() === NS_MAIN ) {
 			$nsText = Message::newFromKey( 'bs-ns_main' );
 		}
@@ -35,9 +41,27 @@ class SpecialAllPages extends BreadcrumbRootNodeBase {
 				'role' => 'button'
 			],
 			[
-				'namespace' => $title->getNamespace()
+				'namespace' => $namespaceKey
 			]
 		);
 	}
 
+	/**
+	 * @param int $currentNamespaceKey
+	 * @return bool
+	 */
+	private function skipForNamespaces( $currentNamespaceKey ) {
+		$invalidNamespaces = [
+				NS_MAIN, NS_TALK,
+				NS_FILE, NS_FILE_TALK,
+				NS_TEMPLATE, NS_TEMPLATE_TALK,
+				NS_CATEGORY, NS_CATEGORY_TALK
+			];
+
+		if ( in_array( $currentNamespaceKey, $invalidNamespaces ) ) {
+				return true;
+		}
+
+		return false;
+	}
 }
