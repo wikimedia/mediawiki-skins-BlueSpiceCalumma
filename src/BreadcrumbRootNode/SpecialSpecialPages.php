@@ -17,16 +17,29 @@ class SpecialSpecialPages extends BreadcrumbRootNodeBase {
 			return '';
 		}
 
+		$nsText = $this->getLocalizedNamespaceText( NS_SPECIAL );
+
 		$specialSpecialpages = \MediaWiki\MediaWikiServices::getInstance()
 			->getSpecialPageFactory()
 			->getTitleForAlias( 'Specialpages' );
-		if ( $title->equals( $specialSpecialpages ) ) {
+
+		$specialBadtitle = \MediaWiki\MediaWikiServices::getInstance()
+			->getSpecialPageFactory()
+			->getTitleForAlias( 'Badtitle' );
+
+		$specialLogin = \MediaWiki\MediaWikiServices::getInstance()
+			->getSpecialPageFactory()
+			->getTitleForAlias( 'Login' );
+
+		if ( $title->equals( $specialSpecialpages )
+			|| $title->equals( $specialBadtitle )
+			|| $title->equals( $specialLogin ) ) {
 			return '';
 		}
 
 		return $this->linkRenderer->makeLink(
 			$specialSpecialpages,
-			$specialSpecialpages->getText(),
+			$nsText,
 			[
 				'class' => 'btn',
 				'role' => 'button'

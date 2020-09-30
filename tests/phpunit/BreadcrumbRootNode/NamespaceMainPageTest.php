@@ -6,6 +6,7 @@ use BlueSpice\Calumma\BreadcrumbRootNode\NamespaceMainPage;
 use BlueSpice\Calumma\IBreadcrumbRootNode;
 use HashConfig;
 use MediaWikiTestCase;
+use Message;
 use Title;
 
 /**
@@ -49,7 +50,25 @@ class NamespaceMainPageTest extends MediaWikiTestCase {
 	/**
 	 * @covers \BlueSpice\Calumma\BreadcrumbRootNode\NamespaceMainPage::getHtml
 	 */
-	public function testGetHtmlOnWikiPage() {
+	public function testGetHtmlOnWikiPageNsMain() {
+		$config = new HashConfig( [] );
+
+		$node = NamespaceMainPage::factory( $config );
+
+		$title = Title::makeTitle( NS_MAIN, 'SomePage' );
+
+		$html = $node->getHtml( $title );
+
+		$nsText = Message::newFromKey( 'bs-ns_main' )->text();
+
+		$this->assertNotEmpty( $html, 'Should not be empty' );
+		$this->assertStringContainsString( $nsText, $html, 'Should have namespace prefix' );
+	}
+
+	/**
+	 * @covers \BlueSpice\Calumma\BreadcrumbRootNode\NamespaceMainPage::getHtml
+	 */
+	public function testGetHtmlOnWikiPageNsHelp() {
 		$config = new HashConfig( [] );
 
 		$node = NamespaceMainPage::factory( $config );
@@ -58,7 +77,7 @@ class NamespaceMainPageTest extends MediaWikiTestCase {
 
 		$html = $node->getHtml( $title );
 
-		$this->assertNotEmpty( $html, 'Should not be empty' );
-		$this->assertStringContainsString( $title->getNsText() . ':', $html, 'Should have namespace prefix' );
+		$this->assertEmpty( $html, 'Should be empty' );
 	}
+
 }

@@ -40,4 +40,21 @@ abstract class BreadcrumbRootNodeBase implements IBreadcrumbRootNode {
 
 		return new static( $config, $linkRenderer );
 	}
+
+	/**
+	 * Get the localized namespace text
+	 *
+	 * @param int $namespaceKey
+	 * @return sting|null
+	 */
+	protected function getLocalizedNamespaceText( $namespaceKey ) {
+		global $wgLang;
+
+		$namespaces = $wgLang->getNamespaces();
+
+		if ( array_key_exists( $namespaceKey, $namespaces ) ) {
+			return $namespaces[$namespaceKey];
+		}
+		return null;
+	}
 }
