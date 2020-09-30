@@ -74,6 +74,7 @@ header {
 				}
 			}
 			.btn.btn-primary.disabled{
+				pointer-events:auto; /* This is required for tooltips to be displayed */
 				.icon::before{
 					background-color: @menu-top-featuredactions-bg-color-disabled;
 				}
