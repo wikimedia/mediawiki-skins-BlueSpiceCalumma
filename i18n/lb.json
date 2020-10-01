@@ -72,5 +72,9 @@
 	"bs-calumma-assoclink-history-label": "Versiounen",
 	"bs-calumma-context-pagebutton-label": "Säit",
 	"bs-calumma-context-discussionbutton-label": "Diskussioun",
-	"bs-calumma-search-button-label": "Sichen"
+	"bs-calumma-search-button-label": "Sichen",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Lénke Menü opmaachen",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Lénke Menü zoumaachen",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Rietse Menü opmaachen",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Rietse Menü zoumaacchen"
 }

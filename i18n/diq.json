@@ -106,7 +106,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Bın pelay|Bın peleyê }} \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Bın pelay|$1 Bın peleyê }} \"$2\"",
 	"bs-calumma-category-no-categories": "Qet yew kategoriye bêerziyaya",
-	"bs-calumma-page-last-edit-text": "Vurnayışo peyên $1 ra ver $2",
+	"bs-calumma-page-last-edit-text": "Vurnayışo peyên $1 de be terefê $2",
 	"bs-calumma-page-watch-title": "$1 seyr kerê",
 	"bs-calumma-alert-oldpage": "Şımayê kehan versiyonê ena pele vinenê. [[Special:Redirect/page/$1|Ravêrê versiyonê neweyi ]].",
 	"bs-calumma-version-pager-prev-tooltip": "Ravêr versiyonê verêni",

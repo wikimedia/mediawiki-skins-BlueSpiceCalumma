@@ -7,6 +7,7 @@
 			"Katunchik",
 			"Nk88",
 			"Okras",
+			"Pacha Tchernof",
 			"Vlad5250"
 		]
 	},
@@ -107,5 +108,6 @@
 	"bs-action-edit-disabled-title": "{{GENDER:|У вас}} нет прав на редактирование этой страницы",
 	"bs-calumma-breadcrumbs-pages-title": "Вы просматриваете \"$1\"",
 	"bs-calumma-page-watch-title": "Смотреть \"$1\"",
-	"bs-calumma-full-screen-button-tooltip": "Полноэкранный/Нормальный режим"
+	"bs-calumma-full-screen-button-tooltip": "Полноэкранный/Нормальный режим",
+	"bs-calumma-page-last-edit-text": "Последняя правка от $2, $1"
 }

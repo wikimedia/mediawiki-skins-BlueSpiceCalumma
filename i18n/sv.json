@@ -115,5 +115,9 @@
 	"bs-calumma-context-pagebutton-tooltip": "Visa den nuvarande ämnessidan",
 	"bs-calumma-context-discussionbutton-label": "Diskussion",
 	"bs-calumma-context-discussionbutton-tooltip": "Visa den nuvarande diskussionssidan",
-	"bs-calumma-search-button-label": "Sök"
+	"bs-calumma-search-button-label": "Sök",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Öppna vänster meny",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Stäng vänster meny",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Öppna höger meny",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Stäng höger meny"
 }

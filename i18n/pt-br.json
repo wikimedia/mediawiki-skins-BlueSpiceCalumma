@@ -113,5 +113,9 @@
 	"bs-calumma-context-pagebutton-tooltip": "Mostrar a atual página do assunto",
 	"bs-calumma-context-discussionbutton-label": "Discussão",
 	"bs-calumma-context-discussionbutton-tooltip": "Mostrar a atual página de discussão",
-	"bs-calumma-search-button-label": "Pesquisar"
+	"bs-calumma-search-button-label": "Pesquisar",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Abrir o menu esquerdo",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Fechar menu esquerdo",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Abrir o menu direito",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Fechar menu direito"
 }

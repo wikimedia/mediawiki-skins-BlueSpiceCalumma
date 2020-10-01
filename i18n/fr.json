@@ -119,5 +119,9 @@
 	"bs-calumma-context-pagebutton-tooltip": "Afficher la page en cours",
 	"bs-calumma-context-discussionbutton-label": "Discussion",
 	"bs-calumma-context-discussionbutton-tooltip": "Afficher la page de discussion en cours",
-	"bs-calumma-search-button-label": "Rechercher"
+	"bs-calumma-search-button-label": "Rechercher",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Ouvrir le menu de gauche",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Fermer le menu de gauche",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Ouvrir le menu de droite",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Fermer le menu de droite"
 }
