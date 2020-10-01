@@ -47,6 +47,9 @@
 				"namespace-mainpage": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\NamespaceMainPage::factory",
 				"namespace-portalpage": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\NamespacePortalPage::factory",
 				"special-allpages": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialAllPages::factory",
+				"special-alltemplates": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialAllTemplates::factory",
+				"special-categories": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialCategories::factory",
+				"special-filelist": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialFilelist::factory",
 				"special-specialpages": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialSpecialPages::factory"
 			}
 		},
@@ -269,6 +272,10 @@
 		"BreadcrumbRootNodeEnabledProviders": {
 			"value": [
 				"namespace-mainpage",
+				"special-allpages",
+				"special-alltemplates",
+				"special-categories",
+				"special-filelist",
 				"special-specialpages"
 			]
 		},

@@ -22,7 +22,8 @@ class NamespacePortalPage extends BreadcrumbRootNodeBase {
 			'BlueSpiceCalummaBreadcrumbNamespacePortalPageRootNodePortalNamespace'
 		);
 
-		$nsText = str_replace( '_', ' ', $title->getNsText() );
+		$namespaceKey = $title->getNamespace();
+		$nsText = $this->getLocalizedNamespaceText( $namespaceKey );
 		if ( $title->getNamespace() === NS_MAIN ) {
 			$nsText = Message::newFromKey( 'bs-ns_main' );
 		}
