@@ -235,6 +235,9 @@
 			"styles": [
 				"stylesheets/fixes/foucfix.less"
 			]
+		},
+		"skin.bluespicecalumma.legacy": {
+			"class": "ResourceLoaderSkinModule"
 		}
 	},
 	"ResourceFileModulePaths": {
