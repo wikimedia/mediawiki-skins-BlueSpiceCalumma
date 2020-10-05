@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hanna Tardos",
 			"Tacsipacsi"
 		]
 	},
@@ -74,6 +75,8 @@
 	"bs-edit-mediawiki-sidebar-link-title": "Oldalsáv szerkesztése",
 	"bs-allpages-description": "Az összes lap listája",
 	"bs-support-description": "Támogatás",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Bal menü megnyitása",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Jobb menü megnyitása",
 	"bs-edit-custom-menu-link-title": "Menü szerkesztése",
 	"bs-edit-custom-menu-link-text": "Menü szerkesztése",
 	"bs-calumma-breadcrumbs-nstab-main": "Minden lap",
