@@ -125,5 +125,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Tooltip for button that navigates to the subject page",
 	"bs-calumma-context-discussionbutton-label": "Label for button that navigates to the talk page",
 	"bs-calumma-context-discussionbutton-tooltip": "Tooltip for button that navigates to the talk page",
-	"bs-calumma-search-button-label": "Tooltip for button at search form to start search"
+	"bs-calumma-search-button-label": "Tooltip for button at search form to start search",
+	"bs-calumma-purged-successfully": "Message in a notification box, displayed after user successfully purges a page using right-menu 'Refresh' button",
+	"bs-calumma-purge-failed": "Message in a notification box, displayed after user tried to purge a page using right-menu 'Refresh' button, but purge failed"
 }
