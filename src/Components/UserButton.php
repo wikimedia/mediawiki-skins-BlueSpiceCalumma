@@ -45,8 +45,9 @@ class UserButton extends TemplateComponent {
 
 		$values = [];
 
+		$util = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' );
 		$values['username'] = $user->getName();
-		$values['personalname'] = \BsUserHelper::getUserDisplayName( $user );
+		$values['personalname'] = $util->getUserHelper( $user )->getDisplayName();
 		$baseSize = 48;
 		$values['width'] = $values['height'] = "{$baseSize}px";
 
