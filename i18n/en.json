@@ -121,5 +121,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Show the current subject page",
 	"bs-calumma-context-discussionbutton-label": "Discussion",
 	"bs-calumma-context-discussionbutton-tooltip": "Show the current talk page",
-	"bs-calumma-search-button-label": "Search"
+	"bs-calumma-search-button-label": "Search",
+	"bs-calumma-purged-successfully": "The page cache has been cleared",
+	"bs-calumma-purge-failed": "An error occured while clearing the page's cache"
 }

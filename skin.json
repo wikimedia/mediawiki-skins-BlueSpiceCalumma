@@ -133,7 +133,8 @@
 				"js/scrollToJumpmark.js",
 				"js/mobile.content.js",
 				"js/skin.bluespicecalumma.featuredActions.js",
-				"js/skin.bluespicecalumma.customMenu.header.js"
+				"js/skin.bluespicecalumma.customMenu.header.js",
+				"js/purgeLink.js"
 			],
 			"dependencies": [
 				"mediawiki.cookie",
@@ -151,7 +152,9 @@
 				"bs-calumma-navigation-toggle-tooltip-left-open",
 				"bs-calumma-navigation-toggle-tooltip-left-close",
 				"bs-calumma-navigation-toggle-tooltip-right-open",
-				"bs-calumma-navigation-toggle-tooltip-right-close"
+				"bs-calumma-navigation-toggle-tooltip-right-close",
+				"bs-calumma-purged-successfully",
+				"bs-calumma-purge-failed"
 			]
 		},
 		"skin.bluespicecalumma.tab": {
