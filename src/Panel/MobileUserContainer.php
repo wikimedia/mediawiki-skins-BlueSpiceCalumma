@@ -43,7 +43,9 @@ class MobileUserContainer extends BasePanel {
 			$imageUrlBuilder instanceof UrlBuilder;
 
 			$util = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' );
-			$displayName = $util->getUserHelper( $user )->getDisplayName();
+			$displayName = $util->getUserHelper(
+				$template->getSkin()->getUser()
+			)->getDisplayName();
 			$userName = $template->getSkin()->getUser()->getName();
 
 			$userImageParams = [
