@@ -125,5 +125,7 @@
 	"bs-calumma-navigation-toggle-tooltip-left-open": "Tooltip for the left main navigation menu open button",
 	"bs-calumma-navigation-toggle-tooltip-left-close": "Tooltip for the left main navigation menu close button",
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Tooltip for the right main navigation menu open button",
-	"bs-calumma-navigation-toggle-tooltip-right-close": "Tooltip for the right main navigation menu close button"
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Tooltip for the right main navigation menu close button",
+	"bs-calumma-purged-successfully": "Message in a notification box, displayed after user successfully purges a page using right-menu 'Refresh' button",
+	"bs-calumma-purge-failed": "Message in a notification box, displayed after user tried to purge a page using right-menu 'Refresh' button, but purge failed"
 }
