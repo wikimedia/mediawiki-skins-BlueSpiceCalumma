@@ -123,5 +123,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Afficher la page en cours",
 	"bs-calumma-context-discussionbutton-label": "Discussion",
 	"bs-calumma-context-discussionbutton-tooltip": "Afficher la page de discussion en cours",
-	"bs-calumma-search-button-label": "Rechercher"
+	"bs-calumma-search-button-label": "Rechercher",
+	"bs-calumma-purged-successfully": "Le cache de la page a été effacé",
+	"bs-calumma-purge-failed": "Une erreur s’est produite lors de l’effacement du cache de la page"
 }

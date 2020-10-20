@@ -121,5 +121,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Geçerli konu sayfasını göster",
 	"bs-calumma-context-discussionbutton-label": "Tartışma",
 	"bs-calumma-context-discussionbutton-tooltip": "Geçerli konuşma sayfasına göster",
-	"bs-calumma-search-button-label": "Ara"
+	"bs-calumma-search-button-label": "Ara",
+	"bs-calumma-purged-successfully": "Sayfa önbelleği temizlendi",
+	"bs-calumma-purge-failed": "Sayfanın önbelleğini temizlerken bir hata oluştu"
 }
