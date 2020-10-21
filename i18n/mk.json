@@ -117,5 +117,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Прикажи ја тековната предметна страница",
 	"bs-calumma-context-discussionbutton-label": "Разговор",
 	"bs-calumma-context-discussionbutton-tooltip": "Прикажи ја тековната разговорна страница",
-	"bs-calumma-search-button-label": "Пребарај"
+	"bs-calumma-search-button-label": "Пребарај",
+	"bs-calumma-purged-successfully": "Меѓускладот на страницата е исчистен",
+	"bs-calumma-purge-failed": "Се појави грешка при чистењето на меѓускладот на страницата"
 }
