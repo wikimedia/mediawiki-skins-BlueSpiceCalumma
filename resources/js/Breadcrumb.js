@@ -32,19 +32,22 @@
 			var $dropDown = $buttonGroup.find( '.dropdown-menu' ).first();
 
 			var $dropDownListItems = $dropDown.find( 'a' );
+
+			var padding = $dropDown.width() - $( $dropDownListItems[0] ).width();
+
 			var textWidth = 0;
-			var charCount = 0;
 			for ( var i = 0; i < $dropDownListItems.length; i++ ){
 				var element = $dropDownListItems[i];
-				var whiteSpace = element.style.whiteSpace;
 
+				var whiteSpace = element.style.whiteSpace;
 				element.style.whiteSpace = "nowrap";
-				if ( $( element ).text.length > charCount ) {
+
+				if ( $( element ).width() > textWidth ) {
 					textWidth = $( element ).width();
 				}
 				element.style.whiteSpace = whiteSpace;
 			}
-			$dropDown.css( 'width', textWidth + 'px' );
+			$dropDown.css( 'width', ( padding + textWidth + padding ) + 'px' );
 
 			if ( $dropDown.width() < $beadCrumbsCnt.width() ) {
 				$dropDown.width( $beadCrumbsCnt.width() - 4 )
