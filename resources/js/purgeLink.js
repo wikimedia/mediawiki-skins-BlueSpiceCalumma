@@ -17,12 +17,8 @@
 					});
 			})
 			.done(function( data ){
-				mw.loader.using( "ext.bluespice.extjs" ).done(function(){
-						bs.util.alert('bs-calumma-purge-success', {
-							text: mw.message('bs-calumma-purged-successfully').plain()
-						});
-						location.reload();
-					});
+				bs.deferredNotifications.push( mw.message('bs-calumma-purged-successfully').plain() );
+				location.reload();
 			});
 
 	});
