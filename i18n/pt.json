@@ -116,5 +116,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Mostrar a página atual",
 	"bs-calumma-context-discussionbutton-label": "Discussão",
 	"bs-calumma-context-discussionbutton-tooltip": "Mostrar a página de discussão atual",
-	"bs-calumma-search-button-label": "Pesquisar"
+	"bs-calumma-search-button-label": "Pesquisar",
+	"bs-calumma-purged-successfully": "A cache da página foi limpa",
+	"bs-calumma-purge-failed": "Ocorreu uma falha ao limpar a cache da página"
 }

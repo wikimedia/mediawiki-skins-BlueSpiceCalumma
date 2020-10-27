@@ -119,5 +119,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Visa den nuvarande ämnessidan",
 	"bs-calumma-context-discussionbutton-label": "Diskussion",
 	"bs-calumma-context-discussionbutton-tooltip": "Visa den nuvarande diskussionssidan",
-	"bs-calumma-search-button-label": "Sök"
+	"bs-calumma-search-button-label": "Sök",
+	"bs-calumma-purged-successfully": "Sidans cache har rensats",
+	"bs-calumma-purge-failed": "Ett fel uppstod när sidans cache skulle rensas"
 }
