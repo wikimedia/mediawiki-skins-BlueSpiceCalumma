@@ -1,25 +1,4 @@
 
-.mw-htmlform fieldset {
-	border: none;
-	border-radius: 0.1875rem;
-	background-color: rgba( 0,0,0,0.05 );
-
-	legend {
-		background-color: #c8ccd1; /* MediaWiki UI "Disabled" */
-		border-radius: 0.1875rem;
-		padding: 0.1em 0.4em;
-		margin-bottom: 0.5em;
-	}
-
-	label {
-		margin-right: 1em;
-	}
-
-	.mw-ui-input, .mw-ui-checkbox {
-		margin: 0.5em 0;
-	}
-}
-
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-active > .oo-ui-buttonElement-button
 {
 	color: #fff !important;
@@ -69,5 +48,10 @@ body.ns-special {
 /*Special:CategoryTree*/
 body.mw-special-CategoryTree .oo-ui-defaultOverlay {
 	z-index: 200;
+}
+
+form[id^=mw] table {
+	border-collapse: separate;
+	border-spacing: 2px;
 }
 
