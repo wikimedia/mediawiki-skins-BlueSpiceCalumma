@@ -3,6 +3,7 @@
 		"authors": [
 			"Aefgh39622",
 			"Kkairri",
+			"Omotecho",
 			"Otokoume",
 			"Shirayuki",
 			"Suchichi02",
@@ -98,6 +99,7 @@
 	"bs-calumma-pageinfosentence-item-separator": "and",
 	"bs-calumma-pageinfosentence-item-class-separator": "but",
 	"bs-calumma-full-screen-button-tooltip": "全画面/通常モード",
+	"bs-calumma-page-last-edit-by-system-user": "システム利用者",
 	"bs-calumma-notification-logged-in": "ログインしました",
 	"bs-calumma-alert-oldpage": "このページの古い版を表示しています。[[Special:Redirect/page/$1|最新版に戻る]]",
 	"bs-calumma-version-pager-prev-tooltip": "前の版に切り替える",
