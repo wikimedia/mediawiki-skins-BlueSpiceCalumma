@@ -88,7 +88,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Sottopàgene|Sottopàggene}} de \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Sottopàgene|Sottopàggene}} de \"$2\"",
 	"bs-calumma-category-no-categories": "Nisciuna categorije assegnate",
-	"bs-calumma-page-last-edit-text": "Urteme cangiamende $1 fa da $2",
+	"bs-calumma-page-last-edit-text": "Urteme cangiamende $1 da $2",
 	"bs-calumma-page-watch-title": "Condrolle \"$1\"",
 	"bs-calumma-page-watch-text": "Condrolle",
 	"bs-calumma-page-unwatch-title": "No sce condrollanne cchiù \"$1\"",
@@ -112,5 +112,9 @@
 	"bs-calumma-context-pagebutton-tooltip": "Fà 'ndrucà l'oggette de mò d'a pàgene",
 	"bs-calumma-context-discussionbutton-label": "'Ngazzamende",
 	"bs-calumma-context-discussionbutton-tooltip": "Fà 'ndrucà 'a pàgene de le 'ngazzaminde de mò",
-	"bs-calumma-search-button-label": "Cirche"
+	"bs-calumma-search-button-label": "Cirche",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Iapre 'u menù de sinistre",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Achiude 'u menù de sinistre",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Iapre 'u menù de destre",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Achiude 'u menù de destre"
 }

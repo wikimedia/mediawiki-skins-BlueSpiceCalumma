@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Josve05a",
+			"Sabelöga",
 			"Sturban",
 			"WikiPhoenix"
 		]
@@ -90,7 +91,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Undersida|Undersidor}} till \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Undersida|$1 undersidor}} till \"$2\"",
 	"bs-calumma-category-no-categories": "Inga tilldelade kategorier",
-	"bs-calumma-page-last-edit-text": "Redigerades senast $1 sedan av $2",
+	"bs-calumma-page-last-edit-text": "Redigerades senast $1 av $2",
 	"bs-calumma-page-watch-title": "Bevaka \"$1\"",
 	"bs-calumma-page-watch-text": "Bevaka",
 	"bs-calumma-page-unwatch-title": "Sluta bevaka \"$1\"",
@@ -114,5 +115,11 @@
 	"bs-calumma-context-pagebutton-tooltip": "Visa den nuvarande ämnessidan",
 	"bs-calumma-context-discussionbutton-label": "Diskussion",
 	"bs-calumma-context-discussionbutton-tooltip": "Visa den nuvarande diskussionssidan",
-	"bs-calumma-search-button-label": "Sök"
+	"bs-calumma-search-button-label": "Sök",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Öppna vänster meny",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Stäng vänster meny",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Öppna höger meny",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Stäng höger meny",
+	"bs-calumma-purged-successfully": "Sidans cache har rensats",
+	"bs-calumma-purge-failed": "Ett fel uppstod när sidans cache skulle rensas"
 }

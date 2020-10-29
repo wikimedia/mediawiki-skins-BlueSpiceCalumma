@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Aefgh39622",
-			"Geonuch"
+			"Geonuch",
+			"Patsagorn Y."
 		]
 	},
 	"bluespicecalumma-desc": "สกินบลูสไปซ์",
@@ -22,7 +23,7 @@
 	"bs-action-new-subpage-title": "เพิ่มส่วนย่อยใหม่ไปยัง $1",
 	"bs-action-new-file-text": "อัปโหลดไฟล์ใหม่",
 	"bs-action-new-file-title": "อัปโหลดไฟล์ใหม่",
-	"bs-userbutton-notifications-link-text": "การแจ้งความ",
+	"bs-userbutton-notifications-link-text": "การแจ้งเตือน",
 	"bs-userbutton-userpage-link-text": "โปรไฟล์ของฉัน",
 	"bs-mobilemoremenu-view-title": "ดู",
 	"bs-mobilemoremenu-view-text": "ดู",

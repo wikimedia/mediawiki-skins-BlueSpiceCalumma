@@ -3,9 +3,11 @@
 		"authors": [
 			"Aefgh39622",
 			"Kkairri",
+			"Omotecho",
 			"Otokoume",
 			"Shirayuki",
 			"Suchichi02",
+			"Yusuke1109",
 			"珍庵"
 		]
 	},
@@ -96,5 +98,15 @@
 	"bs-calumma-full-screen-button-tooltip": "全画面/通常モード",
 	"bs-calumma-notification-logged-in": "ログインしました",
 	"bs-calumma-assoclink-history-label": "履歴",
-	"bs-calumma-search-button-label": "検索"
+	"bs-calumma-search-button-label": "検索",
+	"bs-sitetools-qualitymanagement-title": "品質管理",
+	"bs-sitetools-default": "その他",
+	"bs-calumma-recentchanges-specialpage-link": "過去の版は[[Special:RecentChanges|こちら]]。",
+	"bs-calumma-page-last-edit-by-system-user": "システム利用者",
+	"bs-calumma-alert-oldpage": "このページの古い版を表示しています。[[Special:Redirect/page/$1|最新版に戻る]]",
+	"bs-calumma-version-pager-prev-tooltip": "前の版に切り替える",
+	"bs-calumma-version-pager-next-tooltip": "次の版に切り替える",
+	"bs-calumma-version-pager-info-text": "[[User:$2|$2]]による$1の版",
+	"bs-calumma-assoclink-history-tooltip": "ページ「$1」のリビジョン履歴を見る",
+	"bs-calumma-context-discussionbutton-label": "議論"
 }

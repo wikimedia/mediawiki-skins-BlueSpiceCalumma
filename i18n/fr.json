@@ -95,7 +95,7 @@
 	"bs-calumma-breadcrumbs-subpages": "Sous-page{{PLURAL:$1||s}} de « $2 »",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Sous-page|$1 sous-pages}} de « $2 »",
 	"bs-calumma-category-no-categories": "Aucune catégorie assignée",
-	"bs-calumma-page-last-edit-text": "Dernière modification il y a $1 par $2",
+	"bs-calumma-page-last-edit-text": "Dernière modification le $1 par $2",
 	"bs-calumma-page-watch-title": "Suivre « $1 »",
 	"bs-calumma-page-watch-text": "Suivre",
 	"bs-calumma-page-unwatch-title": "Ne plus jamais suivre « $1 »",
@@ -119,5 +119,11 @@
 	"bs-calumma-context-pagebutton-tooltip": "Afficher la page en cours",
 	"bs-calumma-context-discussionbutton-label": "Discussion",
 	"bs-calumma-context-discussionbutton-tooltip": "Afficher la page de discussion en cours",
-	"bs-calumma-search-button-label": "Rechercher"
+	"bs-calumma-search-button-label": "Rechercher",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Ouvrir le menu de gauche",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Fermer le menu de gauche",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Ouvrir le menu de droite",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Fermer le menu de droite",
+	"bs-calumma-purged-successfully": "Le cache de la page a été effacé",
+	"bs-calumma-purge-failed": "Une erreur s’est produite lors de l’effacement du cache de la page"
 }

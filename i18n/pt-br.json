@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Jaideraf",
+			"Luk3"
 		]
 	},
-	"bluespicecalumma-desc": "Pele BlueSpice",
+	"bluespicecalumma-desc": "Tema BlueSpice",
 	"bluespicecalumma-skin": "BlueSpiceCalumma",
 	"prefs-bs-calumma": "Configurações do BlueSpice Calumma",
 	"bs-calumma-pref-toggle-navigaiton-main": "Ocultar automaticamente o menu principal",
@@ -88,7 +90,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Subpágina|Subpáginas}} de \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Subpágina|$1 subpáginas}} de \"$2\"",
 	"bs-calumma-category-no-categories": "Não foi atribuída nenhuma categoria",
-	"bs-calumma-page-last-edit-text": "Última edição $1 atrás por $2",
+	"bs-calumma-page-last-edit-text": "Última edição $1 por $2",
 	"bs-calumma-page-watch-title": "Vigiar \"$1\"",
 	"bs-calumma-page-watch-text": "Vigiar",
 	"bs-calumma-page-unwatch-title": "Não vigiar mais \"$1\"",
@@ -112,5 +114,11 @@
 	"bs-calumma-context-pagebutton-tooltip": "Mostrar a atual página do assunto",
 	"bs-calumma-context-discussionbutton-label": "Discussão",
 	"bs-calumma-context-discussionbutton-tooltip": "Mostrar a atual página de discussão",
-	"bs-calumma-search-button-label": "Pesquisar"
+	"bs-calumma-search-button-label": "Pesquisar",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Abrir o menu esquerdo",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Fechar menu esquerdo",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Abrir o menu direito",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Fechar menu direito",
+	"bs-calumma-purged-successfully": "O cache da página foi limpo",
+	"bs-calumma-purge-failed": "Um erro ocorreu ao limpar o cache da página"
 }

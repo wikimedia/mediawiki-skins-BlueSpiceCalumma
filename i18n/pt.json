@@ -88,7 +88,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Subpágina|Subpáginas}} de \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Subpágina|$1 subpáginas}} de \"$2\"",
 	"bs-calumma-category-no-categories": "Não foi atribuída nenhuma categoria",
-	"bs-calumma-page-last-edit-text": "Última edição há $1 de $2",
+	"bs-calumma-page-last-edit-text": "Última edição às $1 de $2",
 	"bs-calumma-page-watch-title": "Vigiar \"$1\"",
 	"bs-calumma-page-watch-text": "Vigiar",
 	"bs-calumma-page-unwatch-title": "Deixar de vigiar \"$1\"",
@@ -112,5 +112,11 @@
 	"bs-calumma-context-pagebutton-tooltip": "Mostrar a página atual",
 	"bs-calumma-context-discussionbutton-label": "Discussão",
 	"bs-calumma-context-discussionbutton-tooltip": "Mostrar a página de discussão atual",
-	"bs-calumma-search-button-label": "Pesquisar"
+	"bs-calumma-search-button-label": "Pesquisar",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Abrir menu esquerdo",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Fechar menu esquerdo",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Abrir menu direito",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Fechar menu direito",
+	"bs-calumma-purged-successfully": "A cache da página foi limpa",
+	"bs-calumma-purge-failed": "Ocorreu uma falha ao limpar a cache da página"
 }
