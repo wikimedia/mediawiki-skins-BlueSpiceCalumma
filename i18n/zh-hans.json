@@ -8,6 +8,7 @@
 			"Looong",
 			"Viztor",
 			"VulpesVulpes825",
+			"沈澄心",
 			"科劳"
 		]
 	},
@@ -93,5 +94,7 @@
 	"bs-calumma-version-pager-info-text": "[[用户:$2|$2]]提供的$1的版本",
 	"bs-calumma-assoclink-history-label": "历史",
 	"bs-calumma-context-pagebutton-label": "页",
-	"bs-calumma-context-discussionbutton-label": "讨论"
+	"bs-calumma-context-discussionbutton-label": "讨论",
+	"bs-calumma-purged-successfully": "本页面的缓存已清除",
+	"bs-calumma-purge-failed": "清除本页面的缓存时发生错误"
 }

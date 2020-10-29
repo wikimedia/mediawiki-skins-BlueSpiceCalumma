@@ -5,8 +5,10 @@
 			"Diman Russkov",
 			"Facenapalm",
 			"Katunchik",
+			"Megakott",
 			"Nk88",
 			"Okras",
+			"Pacha Tchernof",
 			"Vlad5250"
 		]
 	},
@@ -107,5 +109,8 @@
 	"bs-calumma-context-pagebutton-label": "Страница",
 	"bs-calumma-context-discussionbutton-label": "Обсуждение",
 	"bs-calumma-context-discussionbutton-tooltip": "Показать текущую страницу обсуждения",
-	"bs-calumma-search-button-label": "Поиск"
+	"bs-calumma-search-button-label": "Поиск",
+	"bs-calumma-page-last-edit-text": "Последняя правка от $2, $1",
+	"bs-calumma-purged-successfully": "Кэш страницы очищен",
+	"bs-calumma-purge-failed": "Произошла ошибка при очистке кэша страницы"
 }
