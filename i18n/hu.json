@@ -106,5 +106,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Az aktuális tartalmi lap megjelenítése",
 	"bs-calumma-context-discussionbutton-label": "Vitalap",
 	"bs-calumma-context-discussionbutton-tooltip": "Az aktuális vitalap megjelenítése",
-	"bs-calumma-search-button-label": "Keresés"
+	"bs-calumma-search-button-label": "Keresés",
+	"bs-calumma-purged-successfully": "Oldal gyorsítótára törölve",
+	"bs-calumma-purge-failed": "Hiba történt a gyorsítótár törlése közben"
 }
