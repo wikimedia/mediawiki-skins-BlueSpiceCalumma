@@ -3,7 +3,6 @@
 namespace BlueSpice\Calumma;
 
 use ExtensionRegistry;
-use Hooks;
 use MediaWiki\MediaWikiServices;
 
 /**
@@ -219,7 +218,13 @@ class Skin extends \SkinChameleon {
 			wfDebugLog( 'bluespice-deprecations', __METHOD__, 'private' );
 			return $tpl;
 		}
-		Hooks::run( 'ChameleonSkinTemplateOutputPageBeforeExec', [ $this, $tpl ] );
+		MediaWikiServices::getInstance()->getHookContainer()->run(
+			'ChameleonSkinTemplateOutputPageBeforeExec',
+			[
+				$this,
+				$tpl
+			]
+		);
 		return $tpl;
 	}
 
