@@ -101,5 +101,6 @@
 	"bs-calumma-assoclink-history-label": "역사",
 	"bs-calumma-context-pagebutton-label": "문서",
 	"bs-calumma-context-discussionbutton-label": "토론",
-	"bs-calumma-search-button-label": "검색"
+	"bs-calumma-search-button-label": "검색",
+	"bs-calumma-purged-successfully": "문서 캐시를 새로 고쳤습니다"
 }
