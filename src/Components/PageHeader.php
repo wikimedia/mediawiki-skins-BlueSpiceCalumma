@@ -2,9 +2,9 @@
 
 namespace BlueSpice\Calumma\Components;
 
+use BlueSpice\Calumma\Renderer\PageHeader as PageHeaderRenderer;
 use BlueSpice\Calumma\Renderer\PageHeader\Category;
 use BlueSpice\Calumma\Renderer\PageHeader\LastEdit;
-use BlueSpice\Calumma\Renderer\PageHeader as PageHeaderRenderer;
 use BlueSpice\Calumma\TemplateComponent;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Renderer\NullRenderer;
