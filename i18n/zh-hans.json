@@ -8,6 +8,7 @@
 			"Looong",
 			"Viztor",
 			"VulpesVulpes825",
+			"沈澄心",
 			"科劳"
 		]
 	},
@@ -93,5 +94,7 @@
 	"prefs-bs-calumma": "BlueSpice Calumma设置",
 	"bs-sitetools-associated-links": "相关链接",
 	"bs-calumma-breadcrumbs-nstab-main": "所有页面",
-	"bs-calumma-breadcrumbs-pages": "你在这里"
+	"bs-calumma-breadcrumbs-pages": "你在这里",
+	"bs-calumma-purged-successfully": "本页面的缓存已清除",
+	"bs-calumma-purge-failed": "清除本页面的缓存时发生错误"
 }

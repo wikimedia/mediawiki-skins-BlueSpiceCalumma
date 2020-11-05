@@ -119,5 +119,7 @@
 	"bs-calumma-navigation-toggle-tooltip-left-open": "Öppna vänster meny",
 	"bs-calumma-navigation-toggle-tooltip-left-close": "Stäng vänster meny",
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Öppna höger meny",
-	"bs-calumma-navigation-toggle-tooltip-right-close": "Stäng höger meny"
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Stäng höger meny",
+	"bs-calumma-purged-successfully": "Sidans cache har rensats",
+	"bs-calumma-purge-failed": "Ett fel uppstod när sidans cache skulle rensas"
 }

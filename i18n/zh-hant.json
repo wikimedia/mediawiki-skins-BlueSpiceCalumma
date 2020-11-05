@@ -117,5 +117,7 @@
 	"bs-calumma-navigation-toggle-tooltip-left-open": "開啟左側選單",
 	"bs-calumma-navigation-toggle-tooltip-left-close": "關閉左側選單",
 	"bs-calumma-navigation-toggle-tooltip-right-open": "開啟右側選單",
-	"bs-calumma-navigation-toggle-tooltip-right-close": "關閉右側選單"
+	"bs-calumma-navigation-toggle-tooltip-right-close": "關閉右側選單",
+	"bs-calumma-purged-successfully": "頁面的快取已被清除",
+	"bs-calumma-purge-failed": "清除頁面快取時出現錯誤"
 }

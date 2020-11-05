@@ -5,6 +5,7 @@
 			"Diman Russkov",
 			"Facenapalm",
 			"Katunchik",
+			"Megakott",
 			"Nk88",
 			"Okras",
 			"Pacha Tchernof",
@@ -109,5 +110,7 @@
 	"bs-calumma-breadcrumbs-pages-title": "Вы просматриваете \"$1\"",
 	"bs-calumma-page-watch-title": "Смотреть \"$1\"",
 	"bs-calumma-full-screen-button-tooltip": "Полноэкранный/Нормальный режим",
-	"bs-calumma-page-last-edit-text": "Последняя правка от $2, $1"
+	"bs-calumma-page-last-edit-text": "Последняя правка от $2, $1",
+	"bs-calumma-purged-successfully": "Кэш страницы очищен",
+	"bs-calumma-purge-failed": "Произошла ошибка при очистке кэша страницы"
 }

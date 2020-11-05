@@ -117,5 +117,7 @@
 	"bs-calumma-navigation-toggle-tooltip-left-open": "Отвори лево мени",
 	"bs-calumma-navigation-toggle-tooltip-left-close": "Затвори лево мени",
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Отвори десно мени",
-	"bs-calumma-navigation-toggle-tooltip-right-close": "Затвори десно мени"
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Затвори десно мени",
+	"bs-calumma-purged-successfully": "Меѓускладот на страницата е исчистен",
+	"bs-calumma-purge-failed": "Се појави грешка при чистењето на меѓускладот на страницата"
 }

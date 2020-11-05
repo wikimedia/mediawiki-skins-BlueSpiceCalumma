@@ -82,7 +82,7 @@
 	"bs-edit-mediawiki-sidebar-link-title": "Seitenleiste bearbeiten",
 	"bs-sidebar-override": "\n* navigation\n** mainpage|mainpage-description\n** bs-allpages-url|bs-allpages-description\n** recentchanges-url|recentchanges\n** bs-support-url|bs-support-description",
 	"bs-allpages-url": "Special:AllPages",
-	"bs-allpages-description": "Artikel von A-Z",
+	"bs-allpages-description": "Alle Seiten",
 	"bs-support-url": "https://bluespice.com/services/support",
 	"bs-support-description": "Support",
 	"bs-calumma-navigation-toggle-tooltip": "Öffnen/Schließen",
@@ -98,7 +98,7 @@
 	"bs-calumma-page-last-edit-text": "$1 zuletzt von $2 bearbeitet",
 	"bs-calumma-page-watch-title": "„$1“ beobachten",
 	"bs-calumma-page-watch-text": "Beobachten",
-	"bs-calumma-page-unwatch-title": "Artikel „$1“ nicht mehr beobachten",
+	"bs-calumma-page-unwatch-title": "„$1“ nicht mehr beobachten",
 	"bs-calumma-page-unwatch-text": "Nicht mehr beobachten",
 	"bs-calumma-pageinfo-qm-button-tooltip": "Die Qualitätsmanagement-Ansicht öffnen",
 	"bs-calumma-pageinfosentence-no-item-label": "Keine Statusinformation",
@@ -124,5 +124,11 @@
 	"bs-calumma-context-pagebutton-tooltip": "Zeige die aktuelle Seite",
 	"bs-calumma-context-discussionbutton-label": "Diskussion",
 	"bs-calumma-context-discussionbutton-tooltip": "Zeige die aktuelle Diskussionsseite",
-	"bs-calumma-search-button-label": "Suchen"
+	"bs-calumma-search-button-label": "Suchen",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Linkes Menü öffnen",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Linkes Menü schließen",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Rechtes Menü öffnen",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Rechtes Menü schließen",
+	"bs-calumma-purged-successfully": "Der Seitencache wurde gelöscht",
+	"bs-calumma-purge-failed": "Beim Leeren des Seitencaches ist ein Fehler aufgetreten"
 }

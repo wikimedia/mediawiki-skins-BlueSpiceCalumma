@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hanna Tardos",
 			"Tacsipacsi"
 		]
 	},
@@ -101,5 +102,11 @@
 	"bs-calumma-context-pagebutton-tooltip": "Az aktuális tartalmi lap megjelenítése",
 	"bs-calumma-context-discussionbutton-label": "Vitalap",
 	"bs-calumma-context-discussionbutton-tooltip": "Az aktuális vitalap megjelenítése",
-	"bs-calumma-search-button-label": "Keresés"
+	"bs-calumma-search-button-label": "Keresés",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Bal menü megnyitása",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Bal menü bezárása",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Jobb menü megnyitása",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Jobb menü bezárása",
+	"bs-calumma-purged-successfully": "Oldal gyorsítótára törölve",
+	"bs-calumma-purge-failed": "Hiba történt a gyorsítótár törlése közben"
 }

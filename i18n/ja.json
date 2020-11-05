@@ -3,6 +3,7 @@
 		"authors": [
 			"Aefgh39622",
 			"Kkairri",
+			"Omotecho",
 			"Otokoume",
 			"Shirayuki",
 			"Suchichi02",
@@ -106,5 +107,6 @@
 	"bs-calumma-version-pager-next-tooltip": "次の版に切り替える",
 	"bs-calumma-version-pager-info-text": "[[User:$2|$2]]による$1の版",
 	"bs-calumma-assoclink-history-tooltip": "ページ「$1」のリビジョン履歴を見る",
-	"bs-calumma-context-discussionbutton-label": "議論"
+	"bs-calumma-context-discussionbutton-label": "議論",
+	"bs-calumma-page-last-edit-by-system-user": "システム利用者"
 }

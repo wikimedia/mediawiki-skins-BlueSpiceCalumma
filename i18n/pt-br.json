@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"Jaideraf"
+			"Jaideraf",
+			"Luk3"
 		]
 	},
 	"bluespicecalumma-desc": "Tema BlueSpice",
@@ -117,5 +118,7 @@
 	"bs-calumma-navigation-toggle-tooltip-left-open": "Abrir o menu esquerdo",
 	"bs-calumma-navigation-toggle-tooltip-left-close": "Fechar menu esquerdo",
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Abrir o menu direito",
-	"bs-calumma-navigation-toggle-tooltip-right-close": "Fechar menu direito"
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Fechar menu direito",
+	"bs-calumma-purged-successfully": "O cache da página foi limpo",
+	"bs-calumma-purge-failed": "Um erro ocorreu ao limpar o cache da página"
 }
