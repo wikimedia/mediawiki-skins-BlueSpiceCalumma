@@ -87,6 +87,10 @@
 	"bs-allpages-description": "Alle Seiten",
 	"bs-support-description": "Support",
 	"bs-calumma-navigation-toggle-tooltip": "Öffnen/Schließen",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Linkes Menü öffnen",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Linkes Menü schließen",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Rechtes Menü öffnen",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Rechtes Menü schließen",
 	"bs-edit-custom-menu-link-title": "Menü bearbeiten",
 	"bs-edit-custom-menu-link-text": "Menü bearbeiten",
 	"bs-calumma-toggle-button-tooltip": "Öffnen/Schließen",
@@ -121,5 +125,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Zeige die aktuelle Seite",
 	"bs-calumma-context-discussionbutton-label": "Diskussion",
 	"bs-calumma-context-discussionbutton-tooltip": "Zeige die aktuelle Diskussionsseite",
-	"bs-calumma-search-button-label": "Suchen"
+	"bs-calumma-search-button-label": "Suchen",
+	"bs-calumma-purged-successfully": "Der Seitencache wurde gelöscht",
+	"bs-calumma-purge-failed": "Beim Leeren des Seitencaches ist ein Fehler aufgetreten"
 }
