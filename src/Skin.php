@@ -33,19 +33,6 @@ class Skin extends \SkinChameleon {
 	}
 
 	/**
-	 * @param OutputPage $out
-	 */
-	public function setupSkinUserCss( \OutputPage $out ) {
-		parent::setupSkinUserCss( $out );
-		$out->addModuleStyles( [
-			'skin.bluespicecalumma.styles',
-			'skin.bluespicecalumma.dynamicoffcanvas.styles',
-			'skin.bluespicecalumma.theme.default',
-			'skin.bluespicecalumma.legacy',
-		] );
-	}
-
-	/**
 	 * This will be called by OutputPage::headElement when it is creating the
 	 * "<body>" tag, - adds output property bodyClassName to the existing classes
 	 * @param OutputPage $out
@@ -111,7 +98,13 @@ class Skin extends \SkinChameleon {
 	 */
 	public function getDefaultModules() {
 		$modules = parent::getDefaultModules();
-		unset( $modules[ 'search' ] );
+		if ( !isset( $modules['styles']['skin'] ) ) {
+			$modules['styles']['skin'] = [];
+		}
+		array_unshift( $modules['styles']['skin'], 'ext.bootstrap.styles' );
+		if ( isset( $modules[ 'search' ] ) ) {
+			unset( $modules[ 'search' ] );
+		}
 		return $modules;
 	}
 
