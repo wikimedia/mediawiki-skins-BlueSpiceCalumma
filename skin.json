@@ -74,7 +74,18 @@
 		}
 	},
 	"ValidSkinNames": {
-		"bluespicecalumma": "BlueSpiceCalumma"
+		"bluespicecalumma": {
+			"class": "\\BlueSpice\\Calumma\\Skin",
+			"args": [ {
+				"name": "bluespicecalumma",
+				"styles": [
+					"skin.bluespicecalumma.styles",
+					"skin.bluespicecalumma.dynamicoffcanvas.styles",
+					"skin.bluespicecalumma.theme.default",
+					"skin.bluespicecalumma.legacy"
+				] }
+			]
+		}
 	},
 	"MessagesDirs": {
 		"BlueSpiceCalumma": [
