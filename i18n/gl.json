@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"ArenaL5",
 			"Banjo",
 			"Elisardojm"
 		]
@@ -44,7 +45,7 @@
 	"bs-sitetools-edit": "Editar",
 	"bs-sitetools-categories": "Categorías",
 	"bs-calumma-recentchanges-title": "Cambios recentes",
-	"bs-to-top-desc": "Desprazarse ó principio da páxina",
+	"bs-to-top-desc": "Volver arriba",
 	"bs-calumma-pagetool-view-tooltip": "Ver",
 	"bs-calumma-pagetool-watch-tooltip": "Vixiar",
 	"bs-calumma-pagetool-unwatch-tooltip": "Deixar de vixiar",
