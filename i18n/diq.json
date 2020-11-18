@@ -81,6 +81,10 @@
 	"bs-allpages-description": "Peli pêro",
 	"bs-support-description": "Destek",
 	"bs-calumma-navigation-toggle-tooltip": "Akerê / Kip kerê",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Menuya çepi ake",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Menuya çepi bıqefelne",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Menuya raşti ake",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Menuya raşti bıqefelne",
 	"bs-edit-custom-menu-link-title": "Menuyi bıvurne",
 	"bs-edit-custom-menu-link-text": "Menuyi bıvurne",
 	"bs-calumma-toggle-button-tooltip": "Ake/Kip ke",
@@ -114,5 +118,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Ravêrde pela mewzuy bımocne",
 	"bs-calumma-context-discussionbutton-label": "Werênayış",
 	"bs-calumma-context-discussionbutton-tooltip": "Ravêrde pela qıse kerdışi bımocne",
-	"bs-calumma-search-button-label": "Cı geyre"
+	"bs-calumma-search-button-label": "Cı geyre",
+	"bs-calumma-purged-successfully": "Verhafızay pela esteriyê",
+	"bs-calumma-purge-failed": "Verhafızay pela esterıtış de xeta veciyê"
 }
