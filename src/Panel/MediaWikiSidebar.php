@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Calumma\Panel;
 
-use BlueSpice\Calumma\Components\SimpleLinkListGroup;
 use BlueSpice\Calumma\Components\CollapsibleGroup;
+use BlueSpice\Calumma\Components\SimpleLinkListGroup;
 
 class MediaWikiSidebar extends BasePanel {
 
@@ -266,7 +266,7 @@ class MediaWikiSidebar extends BasePanel {
 	 * @param string $sectionId
 	 * @return bool
 	 */
-	protected function getGroupCollapseState( $sectionId ) {
+	public function getGroupCollapseState( $sectionId ) {
 		$cookiePrefix = $this->getCookiePrefix();
 		$cookieName = $cookiePrefix . 'collapse-' . $sectionId;
 		$request = $this->skintemplate->getSkin()->getRequest();
