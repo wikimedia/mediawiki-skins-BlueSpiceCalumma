@@ -116,5 +116,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Fà 'ndrucà l'oggette de mò d'a pàgene",
 	"bs-calumma-context-discussionbutton-label": "'Ngazzamende",
 	"bs-calumma-context-discussionbutton-tooltip": "Fà 'ndrucà 'a pàgene de le 'ngazzaminde de mò",
-	"bs-calumma-search-button-label": "Cirche"
+	"bs-calumma-search-button-label": "Cirche",
+	"bs-calumma-purged-successfully": "'A cache d'à pàgene ha state sdevacate",
+	"bs-calumma-purge-failed": "Ha assute 'n'errore mendre ca se sdevacave 'a cache d'a pàgene"
 }
