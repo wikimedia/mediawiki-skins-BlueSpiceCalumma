@@ -114,5 +114,11 @@
 	"bs-calumma-version-pager-info-text": "Versiyonê $1 kerdoğ [[User:$2|$2]]",
 	"bs-calumma-assoclink-history-tooltip": "Revizyonê verorê pela \"$1\" bımocne",
 	"bs-calumma-context-pagebutton-tooltip": "Ravêrde pela mewzuy bımocne",
-	"bs-calumma-context-discussionbutton-tooltip": "Ravêrde pela qıse kerdışi bımocne"
+	"bs-calumma-context-discussionbutton-tooltip": "Ravêrde pela qıse kerdışi bımocne",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Menuya çepi ake",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Menuya çepi bıqefelne",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Menuya raşti ake",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Menuya raşti bıqefelne",
+	"bs-calumma-purged-successfully": "Verhafızay pela esteriyê",
+	"bs-calumma-purge-failed": "Verhafızay pela esterıtış de xeta veciyê"
 }

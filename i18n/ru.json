@@ -4,6 +4,7 @@
 			"Cronolio",
 			"Diman Russkov",
 			"Facenapalm",
+			"Helpau",
 			"Katunchik",
 			"Megakott",
 			"Nk88",
@@ -112,5 +113,12 @@
 	"bs-calumma-full-screen-button-tooltip": "Полноэкранный/Нормальный режим",
 	"bs-calumma-page-last-edit-text": "Последняя правка от $2, $1",
 	"bs-calumma-purged-successfully": "Кэш страницы очищен",
-	"bs-calumma-purge-failed": "Произошла ошибка при очистке кэша страницы"
+	"bs-calumma-purge-failed": "Произошла ошибка при очистке кэша страницы",
+	"notifications-badge-counter-gt-100": "99+",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Открыть левое меню",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Закрыть левое меню",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Открыть правое меню",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Закрыть правое меню",
+	"bs-calumma-pageinfosentence-item-separator-greater-two": ",",
+	"bs-calumma-notification-logged-in": "Вы вошли в систему"
 }

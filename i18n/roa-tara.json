@@ -116,5 +116,7 @@
 	"bs-calumma-navigation-toggle-tooltip-left-open": "Iapre 'u menù de sinistre",
 	"bs-calumma-navigation-toggle-tooltip-left-close": "Achiude 'u menù de sinistre",
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Iapre 'u menù de destre",
-	"bs-calumma-navigation-toggle-tooltip-right-close": "Achiude 'u menù de destre"
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Achiude 'u menù de destre",
+	"bs-calumma-purged-successfully": "'A cache d'à pàgene ha state sdevacate",
+	"bs-calumma-purge-failed": "Ha assute 'n'errore mendre ca se sdevacave 'a cache d'a pàgene"
 }
