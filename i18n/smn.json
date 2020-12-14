@@ -1,9 +1,41 @@
 {
 	"@metadata": {
 		"authors": [
+			"Seipinne",
 			"Yupik"
 		]
 	},
+	"bs-action-edit-edit-title": "Mute käldee",
+	"bs-action-edit-ve-edit-title": "Mute",
+	"bs-action-new-page-text": "Uđđâ sijđo",
+	"bs-action-new-page-title": "Lasseet uđđâ siijđo",
+	"bs-mobilemoremenu-view-title": "Čääiti",
+	"bs-mobilemoremenu-view-text": "Čääiti",
+	"bs-mobilemoremenu-edit-title": "Mute",
+	"bs-mobilemoremenu-edit-text": "Mute",
+	"bs-mobilemoremenu-history-title": "Historjá",
+	"bs-mobilemoremenu-history-text": "Historjá",
+	"bs-sitenav-navigation-section-mobileusercontainer": "Kevttee",
+	"bs-sitenav-navigation-section-mediawikisidebar": "Wiki",
+	"bs-sitetools-pagetools-title": "Tyejiniävuh",
+	"bs-calumma-graphicallist-recentchanges-preview-btn-history": "Historjá",
+	"bs-sitetools-namespaces": "Nommâkomovuotâ",
+	"bs-sitetools-edit": "Mute",
+	"bs-sitetools-categories": "Luokah",
 	"bs-calumma-recentchanges-title": "Vorâs nubástusah",
-	"bs-calumma-recentchanges-column-header-title": "Vorâs nubástusah"
+	"bs-calumma-recentchanges-column-header-title": "Vorâs nubástusah",
+	"bs-calumma-recentchanges-history": "Historjá",
+	"bs-calumma-recentchanges-diff": "Iäru",
+	"bs-all-templates-link-text": "Puoh myenstereh",
+	"bs-all-templates-link-title": "Puoh myenstereh",
+	"bs-calumma-pagetool-history-tooltip": "Siijđo historjá",
+	"bs-calumma-pagetool-talk-tooltip": "Savâstâllâm",
+	"bs-calumma-pagetool-view-tooltip": "Čääiti",
+	"bs-calumma-pagetool-watch-tooltip": "Tarkkuustâl",
+	"bs-calumma-pagetool-unwatch-tooltip": "Jooskâ tarkkuustâllâm",
+	"bs-allpages-description": "Puoh siijđoh",
+	"bs-calumma-breadcrumbs-nstab-main": "Puoh siijđoh",
+	"bs-calumma-assoclink-history-label": "Historjá",
+	"bs-calumma-context-pagebutton-label": "Sijđo",
+	"bs-calumma-context-discussionbutton-label": "Savâstâllâm"
 }

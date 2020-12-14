@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Andrew J.Kurbiko",
+			"Base",
 			"Piramidion",
 			"Vlad5250",
 			"Ата"
@@ -82,6 +83,10 @@
 	"bs-allpages-description": "Усі сторінки",
 	"bs-support-description": "Підтримка",
 	"bs-calumma-navigation-toggle-tooltip": "Відкрити / закрити",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Відкрити ліве меню",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Закрити ліве меню",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Відкрити праве меню",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Закрити праве меню",
 	"bs-edit-custom-menu-link-title": "Редагувати меню",
 	"bs-edit-custom-menu-link-text": "Редагувати меню",
 	"bs-calumma-toggle-button-tooltip": "Відкрити/закрити",
@@ -115,5 +120,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Показати поточну основну сторінку",
 	"bs-calumma-context-discussionbutton-label": "Обговорення",
 	"bs-calumma-context-discussionbutton-tooltip": "Показати поточну сторінку обговорення",
-	"bs-calumma-search-button-label": "Шукати"
+	"bs-calumma-search-button-label": "Шукати",
+	"bs-calumma-purged-successfully": "Кеш сторінки було очищено",
+	"bs-calumma-purge-failed": "Сталась помилка при очищенні кешу сторінки"
 }
