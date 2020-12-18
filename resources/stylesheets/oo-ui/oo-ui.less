@@ -130,6 +130,16 @@ body.mediawiki #content #bodyContent{
 				color: @color-layout-link-hover;
 				text-decoration: none;
 			}
+			&.stub,
+			&.stub:link {
+				color: @theme-content-stub-link-color;
+				&:hover {
+					color: @theme-content-stub-link-color-hover;
+				}
+				&:visited {
+					color: @theme-content-stub-link-color;
+				}
+			}
 		}
 		.oo-ui-progressBarWidget{
 			.oo-ui-progressBarWidget-bar {
