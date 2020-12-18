@@ -266,6 +266,7 @@
 		"BreadcrumbRootNodeEnabledProviders": {
 			"value": [
 				"namespace-mainpage",
+				"special-allpages",
 				"special-specialpages"
 			]
 		},
