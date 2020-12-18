@@ -6,6 +6,7 @@ use PHPUnit\Framework\TestCase;
 use BlueSpice\Calumma\BreadcrumbRootNode\NamespaceMainPage;
 use BlueSpice\Calumma\IBreadcrumbRootNode;
 use HashConfig;
+use Message;
 use SpecialPageFactory;
 use Title;
 
@@ -48,7 +49,25 @@ class NamespaceMainPageTest extends TestCase {
 	/**
 	 * @covers NamespaceMainPage::getHtml
 	 */
-	public function testGetHtmlOnWikiPage() {
+	public function testGetHtmlOnWikiPageNsMain() {
+		$config = new HashConfig( [] );
+
+		$node = NamespaceMainPage::factory( $config );
+
+		$title = Title::makeTitle( NS_MAIN, 'SomePage' );
+
+		$html = $node->getHtml( $title );
+
+		$nsText = Message::newFromKey( 'bs-ns_main' )->text();
+
+		$this->assertNotEmpty( $html, 'Should not be empty' );
+		$this->assertContains( $nsText, $html, 'Should have namespace prefix' );
+	}
+
+	/**
+	 * @covers NamespaceMainPage::getHtml
+	 */
+	public function testGetHtmlOnWikiPageNsHelp() {
 		$config = new HashConfig( [] );
 
 		$node = NamespaceMainPage::factory( $config );
@@ -57,7 +76,6 @@ class NamespaceMainPageTest extends TestCase {
 
 		$html = $node->getHtml( $title );
 
-		$this->assertNotEmpty( $html, 'Should not be empty' );
-		$this->assertContains( $title->getNsText() . ':', $html, 'Should have namespace prefix' );
+		$this->assertEmpty( $html, 'Should be empty' );
 	}
 }

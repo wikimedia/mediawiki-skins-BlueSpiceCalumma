@@ -18,6 +18,12 @@ class NamespaceMainPage extends BreadcrumbRootNodeBase {
 			return '';
 		}
 
+		// system namespaces with certain functionality
+		$nsId = $title->getNamespace();
+		if ( NS_MAIN < $nsId && $nsId < 3000 ) {
+			return '';
+		}
+
 		$namespaceMainPage = Title::makeTitle(
 			$title->getNamespace(),
 			Title::newMainPage()->getText()

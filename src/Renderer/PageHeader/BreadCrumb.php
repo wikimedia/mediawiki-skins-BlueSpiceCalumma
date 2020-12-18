@@ -46,7 +46,6 @@ class BreadCrumb extends PageHeader {
 			'BlueSpiceCalummaBreadcrumbRootNodeEnabledProviders'
 		);
 
-		$breadcrumbRootNodes = [];
 		foreach ( $registry->getAllValues() as $callbackKey => $callback ) {
 			if ( !in_array( $callbackKey, $enabledProviders ) ) {
 				continue;
@@ -79,12 +78,16 @@ class BreadCrumb extends PageHeader {
 	 */
 	private function makeTitleLinks( Title $title ) {
 		$titleParts = explode( '/', $title->getText() );
+		if ( $title->isSpecialPage() ) {
+			// A specialpage can never have subpages
+			$titleParts = [ $titleParts[0] ];
+		}
 		$splitButtons = [];
 
 		$root = '';
 		foreach ( $titleParts as $titlePart ) {
 			$root .= $titlePart;
-			$part = Title::newFromText( $root, $title->getNamespace() );
+			$part = Title::makeTitle( $title->getNamespace(), $root );
 			$root .= '/';
 
 			$path = '';
@@ -97,14 +100,18 @@ class BreadCrumb extends PageHeader {
 				$classes[] = 'new';
 			}
 
+			// Not using `Title::getSubpageText` as we do not care about
+			// whether the namspace actually has subpages enabled
+			$text = wfBaseName( $part->getText() );
 			$splitButtons[] = new SplitButtonDropdown( $this->skinTemplate, [
 				'classes' => $classes,
 				'href' => $part->getLinkURL(),
-				'text' => $part->getSubpageText(),
+				'text' => $text,
 				'title' => $part->getPrefixedText(),
 				// We assume that _all_ nodes have subpages, as also non existing ones will be listed
 				// Only the leaf node must be checked explicitly
-				'hasItems' => $title->equals( $part ) ? $part->hasSubpages() : true,
+				// A specialpage can never have subpages
+				'hasItems' => $title->equals( $part ) ? $part->hasSubpages() : !$title->isSpecialPage(),
 				'data' => [
 					[
 						'key' => 'bs-path',
@@ -148,7 +155,11 @@ class BreadCrumb extends PageHeader {
 		$titleParts = explode( '/', $title->getPrefixedText(), 2 );
 		if ( !empty( $titleParts[1] ) ) {
 			// e.g. "Help:Some/Page/With/Subpage"
-			$newTitle = Title::newFromText( $titleParts[1] );
+			$suffixTitle = Title::newFromText( $titleParts[1] );
+			// e.g. "Special:Review/WikiSysop"
+			if ( $suffixTitle->exists() ) {
+				$newTitle = $suffixTitle;
+			}
 		}
 
 		// e.g. Special:Browse/:Main-5FPage

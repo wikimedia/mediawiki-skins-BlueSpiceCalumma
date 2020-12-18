@@ -19,13 +19,10 @@ class SpecialSpecialPages extends BreadcrumbRootNodeBase {
 		}
 
 		$specialSpecialpages = SpecialPageFactory::getTitleForAlias( 'Specialpages' );
-		if ( $title->equals( $specialSpecialpages ) ) {
-			return '';
-		}
 
 		return $this->linkRenderer->makeLink(
 			$specialSpecialpages,
-			$specialSpecialpages->getText(),
+			$specialSpecialpages->getNsText(),
 			[
 				'class' => 'btn',
 				'role' => 'button'
