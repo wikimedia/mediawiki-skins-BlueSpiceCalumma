@@ -1,6 +1,7 @@
 #content  {
 	color: @theme-content-fg-color;
 
+	#mw-content-text a,
 	[class^="mw-content-"] a {
 		.mixin-link-title-color(
 			@theme-content-link-fg,
@@ -8,6 +9,17 @@
 			@theme-content-link-new-fg,
 			@theme-content-link-new-fg-hover,
 		);
+
+		&.stub,
+		&.stub:link {
+			color: @theme-content-stub-link-color;
+			&:hover {
+				color: @theme-content-stub-link-color-hover;
+			}
+			&:visited {
+				color: @theme-content-stub-link-color;
+			}
+		}
 
 		&.external {
 			@color1: escape( '@{content-bg}' );
