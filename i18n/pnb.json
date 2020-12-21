@@ -6,5 +6,7 @@
 	},
 	"bs-action-new-page-text": "نواں صفحہ",
 	"bs-action-new-page-title": "اک نواں صفحہ رلاؤ",
-	"bs-sitetools-default": "ہور"
+	"bs-sitetools-default": "ہور",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "کھبا مینو بند کرو",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "سجا مینو بند کرو"
 }
