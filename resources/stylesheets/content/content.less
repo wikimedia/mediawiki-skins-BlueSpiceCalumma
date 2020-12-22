@@ -49,6 +49,7 @@ pre {
 [class^="mw-content-"] .floatleft + ol {
 	display: inline-block;
 }
+#mw-content-text a,
 [class^="mw-content-"] a {
 	.mixin-link-title-color(
 		@link-color,
@@ -56,6 +57,16 @@ pre {
 		@link-color-new,
 		@link-color-new-hover
 	);
+	&.stub,
+	&.stub:link {
+		color: @stub-link-color;
+		&:hover {
+			color: @stub-link-color-hover;
+		}
+		&:visited {
+			color: @stub-link-color;
+		}
+	}
 }
 .external {
 	background-position: center right;
