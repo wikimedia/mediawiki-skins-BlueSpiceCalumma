@@ -31,8 +31,7 @@ class SpecialSpecialPages extends BreadcrumbRootNodeBase {
 			->getSpecialPageFactory()
 			->getTitleForAlias( 'Login' );
 
-		if ( $title->equals( $specialSpecialpages )
-			|| $title->equals( $specialBadtitle )
+		if ( $title->equals( $specialBadtitle )
 			|| $title->equals( $specialLogin ) ) {
 			return '';
 		}
