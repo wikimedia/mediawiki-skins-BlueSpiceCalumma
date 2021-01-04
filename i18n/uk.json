@@ -96,7 +96,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Підсторінка|Підсторінки}} «$2»",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|$1 підсторінка|$1 підсторінки|$1 підсторінок}} «$2»",
 	"bs-calumma-category-no-categories": "Нема призначених категорій",
-	"bs-calumma-page-last-edit-text": "Востаннє відредаговано $1 користувачем $2",
+	"bs-calumma-page-last-edit-text": "Востаннє відредаговано $1 {{GENDER:$2|користувачем|користувачкою}} $2",
 	"bs-calumma-page-watch-title": "Спостерігати за «$1»",
 	"bs-calumma-page-watch-text": "Спостерігати",
 	"bs-calumma-page-unwatch-title": "Припинити спостерігати за «$1»",

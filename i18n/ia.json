@@ -88,7 +88,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Subpagina|Subpaginas}} de \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Subpagina|$1 subpaginas}} de \"$2\"",
 	"bs-calumma-category-no-categories": "Nulle categoria assignate",
-	"bs-calumma-page-last-edit-text": "Ultime modification $1 retro per $2",
+	"bs-calumma-page-last-edit-text": "Ultime modification $1 per $2",
 	"bs-calumma-page-watch-title": "Observar \"$1\"",
 	"bs-calumma-page-watch-text": "Observar",
 	"bs-calumma-page-unwatch-title": "Non plus observar \"$1\"",
