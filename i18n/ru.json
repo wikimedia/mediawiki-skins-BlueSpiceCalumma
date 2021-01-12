@@ -99,6 +99,8 @@
 	"bs-calumma-breadcrumbs-nstab-main": "Все страницы",
 	"bs-calumma-breadcrumbs-pages": "Вы здесь",
 	"bs-calumma-breadcrumbs-pages-title": "Вы просматриваете \"$1\"",
+	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Подстраница|Подстраницы}} «$2»",
+	"bs-calumma-breadcrumbs-subpages-title": "$1 {{PLURAL:$1|подстраница|подстраницы|подстраниц}} «$2»",
 	"bs-calumma-category-no-categories": "Нет назначенных категорий",
 	"bs-calumma-page-last-edit-text": "Последняя правка от $2, $1",
 	"bs-calumma-page-watch-title": "Смотреть \"$1\"",
