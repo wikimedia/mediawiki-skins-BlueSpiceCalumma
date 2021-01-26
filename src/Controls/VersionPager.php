@@ -96,7 +96,9 @@ class VersionPager extends TemplateControl {
 		$user = $this->currentRevision->getUser();
 		$timestamp = $this->currentRevision->getTimestamp();
 
-		$userName = $user->getName();
+		$userName = $user
+			? $user->getName()
+			: Message::newFromKey( 'rev-deleted-user' )->plain();
 		$formattedTimestamp = $this->userLang->timeanddate( $timestamp, true );
 
 		$message = Message::newFromKey( 'bs-calumma-version-pager-info-text' );
