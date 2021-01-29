@@ -14,7 +14,7 @@ class Setup {
 		$GLOBALS[ 'wgUseMediaWikiUIEverywhere' ] = true;
 
 		$GLOBALS[ 'wgVisualEditorSupportedSkins' ][] = 'bluespicecalumma';
-		$GLOBALS[ 'wgVisualEditorSkinToolbarScrollOffset' ][ 'bluespicecalumma' ] = 64;
+		$GLOBALS[ 'wgVisualEditorSkinToolbarScrollOffset' ][ 'bluespicecalumma' ] = 100;
 
 		// force overwrite of the custom header registry even when the skin is
 		// loaded before the BlueSpiceCustomMenu extension. ERM:16808
