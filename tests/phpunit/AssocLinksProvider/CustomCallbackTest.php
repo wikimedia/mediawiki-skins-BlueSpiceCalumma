@@ -33,7 +33,7 @@ class CustomCallbackTest extends TestCase {
 		] );
 		$links = CustomCallback::factory( null, $config );
 
-		$this->assertSame( 1, count( $links ), "Should create one item" );
+		$this->assertCount( 1, $links, "Should create one item" );
 		$this->assertInstanceOf( ILink::class, $links[0],  "First item should implement ILink" );
 		$this->assertEquals(
 			'Some Label',

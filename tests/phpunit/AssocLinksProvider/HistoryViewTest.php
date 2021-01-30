@@ -72,7 +72,7 @@ class HistoryViewTest extends MediaWikiTestCase {
 
 		$links = HistoryView::factory( $contextMock, $config );
 
-		$this->assertSame( 0, count( $links ), "Should not contain an item" );
+		$this->assertCount( 0, $links, "Should not contain an item" );
 	}
 
 	/**
@@ -97,7 +97,7 @@ class HistoryViewTest extends MediaWikiTestCase {
 
 		$links = HistoryView::factory( $contextMock, $config );
 
-		$this->assertSame( 0, count( $links ), "Should not contain an item" );
+		$this->assertCount( 0, $links, "Should not contain an item" );
 	}
 
 	/**
@@ -122,6 +122,6 @@ class HistoryViewTest extends MediaWikiTestCase {
 
 		$links = HistoryView::factory( $contextMock, $config );
 
-		$this->assertSame( 0, count( $links ), "Should not contain an item" );
+		$this->assertCount( 0, $links, "Should not contain an item" );
 	}
 }
