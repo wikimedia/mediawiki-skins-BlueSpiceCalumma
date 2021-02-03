@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"BaRaN6161 TURK",
 			"Captantrips",
 			"Hedda",
+			"MuratTheTurkish",
 			"Sayginer",
-			"Sucsuzz",
-			"BaRaN6161 TURK"
+			"Sucsuzz"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice Teması",
@@ -50,7 +51,7 @@
 	"bs-calumma-graphicallist-recentchanges-preview-btn-edit": "Düzenle",
 	"bs-calumma-graphicallist-recentchanges-preview-btn-history": "Geçmiş",
 	"bs-sitetools-namespaces": "Ad alanı",
-	"bs-sitetools-pageactions": "Sayfa işlemleri",
+	"bs-sitetools-pageactions": "Sayfa eylemleri",
 	"bs-sitetools-default": "Daha fazla",
 	"bs-sitetools-qm": "Kalite yönetimi",
 	"bs-sitetools-toolbox": "Araç kutusu",
@@ -98,7 +99,7 @@
 	"bs-calumma-breadcrumbs-subpages": "\"$2\"'nin {{PLURAL:$1|alt sayfası|alt sayfası}}",
 	"bs-calumma-breadcrumbs-subpages-title": "\"$2\"'nin {{PLURAL:$1|alt sayfası|$1 alt sayfası}}",
 	"bs-calumma-category-no-categories": "Hiçbir kategori atanmadı",
-	"bs-calumma-page-last-edit-text": "Son düzenleme $1 önce $2",
+	"bs-calumma-page-last-edit-text": "Son düzenleme $1 - $2",
 	"bs-calumma-page-watch-title": "\"$1\" izle",
 	"bs-calumma-page-watch-text": "İzle",
 	"bs-calumma-page-unwatch-title": "Artık \"$1\" izlemeyin",
@@ -116,5 +117,11 @@
 	"bs-calumma-version-pager-prev-tooltip": "Önceki sürüme geç",
 	"bs-calumma-version-pager-next-tooltip": "Bir sonraki sürüme geç",
 	"bs-calumma-version-pager-info-text": "$1 sürümü yapan [[User:$2|$2]]",
-	"bs-calumma-search-button-label": "Ara"
+	"bs-calumma-search-button-label": "Ara",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Sol menüyü aç",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Sol menüyü kapat",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Sağ menüyü aç",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Sağ menüyü kapat",
+	"bs-calumma-purged-successfully": "Sayfa önbelleği temizlendi",
+	"bs-calumma-purge-failed": "Sayfanın önbelleğini temizlerken bir hata oluştu"
 }

@@ -97,5 +97,10 @@
 	"bs-calumma-assoclink-history-label": "역사",
 	"bs-calumma-context-pagebutton-label": "문서",
 	"bs-calumma-context-discussionbutton-label": "토론",
-	"bs-calumma-search-button-label": "검색"
+	"bs-calumma-search-button-label": "검색",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "왼쪽 메뉴 열기",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "왼쪽 메뉴 닫기",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "오른쪽 메뉴 열기",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "오른쪽 메뉴 닫기",
+	"bs-calumma-purged-successfully": "문서 캐시를 새로 고쳤습니다"
 }

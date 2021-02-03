@@ -3,8 +3,8 @@
 		"authors": [
 			"McSalama",
 			"Nike",
-			"Valtlait",
-			"Pyscowicz"
+			"Pyscowicz",
+			"Valtlait"
 		]
 	},
 	"prefs-bs-calumma": "BlueSpice Calumma -asetukset",
@@ -61,5 +61,26 @@
 	"bs-calumma-navigation-toggle-tooltip": "Avaa / sulje",
 	"bs-mobilemoremenu-new-section-text": "Uusi osio",
 	"bs-calumma-recentchanges-diff": "Ero",
-	"bs-calumma-toggle-button-tooltip": "Avaa/Sulje"
+	"bs-calumma-toggle-button-tooltip": "Avaa/Sulje",
+	"bluespicecalumma-desc": "BlueSpice-ulkoasu",
+	"bs-action-new-please-login-title": "Kirjaudu lisätäksesi uuden sivun",
+	"bs-action-edit-please-login-title": "Kirjaudu muokataksesi tätä sivua",
+	"bs-action-new-subpage-title": "Lisää uusi alasivu sivulle $1",
+	"bs-action-new-file-text": "Tallenna uusi tiedosto",
+	"bs-sitenav-globalactions-section-globalactions": "Globaalit toiminnot",
+	"bs-sitetools-pageactions": "Sivun toiminnot",
+	"bs-sitetools-qm": "Laadunhallinta",
+	"bs-sitetools-view-mode": "Tila",
+	"bs-sitetools-manage-page": "Hallinnoi sivua",
+	"bs-all-templates-link-title": "Kaikki mallineet",
+	"bs-calumma-pagetool-view-tooltip": "Näytä",
+	"bs-calumma-pagetool-watch-tooltip": "Tarkkaile",
+	"bs-calumma-pagetool-unwatch-tooltip": "Lopeta tarkkailu",
+	"bs-edit-custom-menu-link-title": "Muokkaa valikkoa",
+	"bs-edit-custom-menu-link-text": "Muokkaa valikkoa",
+	"bs-calumma-breadcrumbs-nstab-main": "Kaikki sivut",
+	"bs-calumma-breadcrumbs-pages": "Olet täällä",
+	"bs-calumma-assoclink-history-label": "Historia",
+	"bs-calumma-context-pagebutton-label": "Sivu",
+	"bs-calumma-context-discussionbutton-label": "Keskustelu"
 }

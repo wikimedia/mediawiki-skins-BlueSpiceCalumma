@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"bluespicecalumma-desc": "Tema BlueSpice-a",
 	"bluespicecalumma-skin": "BlueSpiceCalumma",
 	"prefs-bs-calumma": "Podešavanja BlueSpice Calumma-e",

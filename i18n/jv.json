@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"NoiX180"
+			"Diki Ananta",
+			"NoiX180",
+			"Sumbukompor"
 		]
 	},
 	"bs-action-edit-view-title": "Rampungi mbesut",
@@ -14,7 +16,7 @@
 	"bs-action-new-page-title": "Wuwuh kaca anyar",
 	"bs-action-new-subpage-text": "Anak-kaca anyar",
 	"bs-action-new-subpage-title": "Wuwuh anak-kaca anyar marang $1",
-	"bs-action-new-file-text": "Barkas unggahan anyar",
+	"bs-action-new-file-text": "Unggah barkas anyar",
 	"bs-action-new-file-title": "Unggah barkas anyar",
 	"bs-userbutton-notifications-link-text": "Pambiwara",
 	"bs-userbutton-userpage-link-text": "Profilku",
@@ -27,7 +29,7 @@
 	"bs-mobilemoremenu-history-title": "Sajarah",
 	"bs-mobilemoremenu-history-text": "Sajarah",
 	"bs-sitenav-navigation-title": "Napigasi pokok",
-	"bs-sitenav-navigation-section-mobileusercontainer": "Panganggo",
+	"bs-sitenav-navigation-section-mobileusercontainer": "Naraguna",
 	"bs-sitenav-navigation-section-mediawikisidebar": "Wiki",
 	"bs-sitenav-globalactions-title": "Laku sajagat",
 	"bs-sitenav-globalactions-section-globalactions": "Laku sajagat",

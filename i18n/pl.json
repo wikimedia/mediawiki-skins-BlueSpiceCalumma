@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
-			"Railfail536",
 			"Rail",
+			"Railfail536",
 			"WaldiSt"
 		]
 	},
@@ -80,7 +80,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Podstrona|Podstrony}} „$2”",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Podstrona|$1 podstrony|$1 podstron}} „$2”",
 	"bs-calumma-category-no-categories": "Brak przypisanych kategorii",
-	"bs-calumma-page-last-edit-text": "Ostatnio edytowano $1 temu przez $2",
+	"bs-calumma-page-last-edit-text": "Ostatnio edytowano $1 przez $2",
 	"bs-calumma-page-watch-title": "Obserwuj stronę „$1”",
 	"bs-calumma-page-watch-text": "Obserwuj",
 	"bs-calumma-page-unwatch-title": "Nie obserwuj więcej strony „$1”",
@@ -104,5 +104,12 @@
 	"bs-calumma-context-discussionbutton-label": "Dyskusja",
 	"bs-calumma-search-button-label": "Szukaj",
 	"bs-action-edit-view-title": "Wyjdź z edycji",
-	"bs-action-edit-view-text": "Wyjdź z edycji"
+	"bs-action-edit-view-text": "Wyjdź z edycji",
+	"bs-sitetools-view-mode": "Tryb",
+	"bs-calumma-pageinfosentence-no-item-label": "Brak informacji o statusie",
+	"bs-calumma-pageinfosentence-no-item-tooltip": "Brak informacji o statusie tej strony",
+	"bs-calumma-page-last-edit-by-system-user": "użytkownik systemu",
+	"bs-calumma-alert-oldpage": "Widzisz starszą wersję tej strony. [[Special:Redirect/page/$1|Wróć do najnowszej wersji]].",
+	"bs-calumma-assoclink-history-tooltip": "Pokaż historię wersji strony „$1”",
+	"bs-calumma-context-discussionbutton-tooltip": "Pokaż obecną stronę dyskusji"
 }

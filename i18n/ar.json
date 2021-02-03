@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"HitomiAkane",
 			"Meno25",
 			"ديفيد",
-			"HitomiAkane"
+			"زكريا"
 		]
 	},
 	"bluespicecalumma-desc": "واجهة بلو سبيس",
@@ -77,7 +78,7 @@
 	"bs-edit-custom-menu-link-title": "عدل القائمة",
 	"bs-edit-custom-menu-link-text": "عدل القائمة",
 	"bs-calumma-toggle-button-tooltip": "فتح/إغلاق",
-	"bs-action-new-please-login-title": "يُرجَى تسجيل الدخول لإضافة صفحة جديدة",
+	"bs-action-new-please-login-title": "يرجى تسجيل الدخول لإضافة صفحة جديدة",
 	"bs-action-edit-please-login-title": "يُرجَى تسجيل الدخول لتعديل هذه الصفحة",
 	"bs-action-new-disabled-title": "ليست {{GENDER:|لديك}} صلاحية إنشاء صفحة جديدة",
 	"bs-action-edit-disabled-title": "ليست {{GENDER:|لديك}} صلاحية تعديل صفحة جديدة",
@@ -87,7 +88,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|صفحة فرعية|صفحات فرعية}} ل$2",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|صفحة فرعية|$1 صفحات فرعية}} ل$2",
 	"bs-calumma-category-no-categories": "لا توجد تصنيفات معينة",
-	"bs-calumma-page-last-edit-text": "آخر تعديل منذ $1 بواسطة $2",
+	"bs-calumma-page-last-edit-text": "آخر من عدل $2 قبل $1",
 	"bs-calumma-page-watch-title": "راقب \"$1\"",
 	"bs-calumma-page-watch-text": "راقب",
 	"bs-calumma-page-unwatch-title": "لا تراقب \"$1\" بعد الآن",

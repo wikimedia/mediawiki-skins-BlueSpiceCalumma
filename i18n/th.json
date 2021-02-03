@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Geonuch"
+			"Aefgh39622",
+			"Geonuch",
+			"Patsagorn Y."
 		]
 	},
 	"bluespicecalumma-desc": "สกินบลูสไปซ์",
@@ -19,9 +21,9 @@
 	"bs-action-new-page-title": "เพิ่มหน้าใหม่",
 	"bs-action-new-subpage-text": "ส่วนย่อยใหม่",
 	"bs-action-new-subpage-title": "เพิ่มส่วนย่อยใหม่ไปยัง $1",
-	"bs-action-new-file-text": "ไฟล์อัปโหลดใหม่",
+	"bs-action-new-file-text": "อัปโหลดไฟล์ใหม่",
 	"bs-action-new-file-title": "อัปโหลดไฟล์ใหม่",
-	"bs-userbutton-notifications-link-text": "การแจ้งความ",
+	"bs-userbutton-notifications-link-text": "การแจ้งเตือน",
 	"bs-userbutton-userpage-link-text": "โปรไฟล์ของฉัน",
 	"bs-mobilemoremenu-view-title": "ดู",
 	"bs-mobilemoremenu-view-text": "ดู",
@@ -71,5 +73,20 @@
 	"bs-edit-mediawiki-sidebar-link-title": "แก้ไขแถบด้านข้าง",
 	"bs-allpages-description": "หน้าทั้งหมด",
 	"bs-support-description": "สนับสนุน",
-	"bs-calumma-navigation-toggle-tooltip": "เปิด / ปิด"
+	"bs-calumma-navigation-toggle-tooltip": "เปิด / ปิด",
+	"bs-sitetools-view-mode": "โหมด",
+	"bs-calumma-toggle-button-tooltip": "เปิด/ปิด",
+	"bs-calumma-breadcrumbs-nstab-main": "หน้าทั้งหมด",
+	"bs-calumma-breadcrumbs-pages": "คุณอยู่ที่นี่",
+	"bs-calumma-category-no-categories": "ไม่ได้กำหนดหมวดหมู่ใด ๆ",
+	"bs-calumma-page-watch-title": "เฝ้าดู \"$1\"",
+	"bs-calumma-page-watch-text": "เฝ้าดู",
+	"bs-calumma-page-unwatch-title": "ไม่ต้องเฝ้าดู \"$1\" อีกต่อไป",
+	"bs-calumma-page-unwatch-text": "เลิกเฝ้าดู",
+	"bs-calumma-pageinfosentence": "หน้านี้คือ $1",
+	"bs-calumma-pageinfosentence-item-separator": "และ",
+	"bs-calumma-pageinfosentence-item-class-separator": "แต่",
+	"bs-calumma-full-screen-button-tooltip": "โหมดเต็มหน้าจอ/ปกติ",
+	"bs-calumma-notification-logged-in": "คุณเข้าสู่ระบบแล้วตอนนี้",
+	"bs-calumma-search-button-label": "ค้นหา"
 }

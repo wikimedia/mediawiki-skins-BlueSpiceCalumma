@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Annibale covini gerolamo",
 			"Beta16",
-			"Daimona Eaytoy",
-			"Annibale covini gerolamo"
+			"Daimona Eaytoy"
 		]
 	},
 	"bluespicecalumma-desc": "Tema BlueSpice",
@@ -70,7 +70,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Sottopagina|Sottopagine}} di \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Sottopagina|$1 sottopagine}} di \"$2\"",
 	"bs-calumma-category-no-categories": "Nessuna categoria assegnata",
-	"bs-calumma-page-last-edit-text": "Ultima modifica $1 fa da $2",
+	"bs-calumma-page-last-edit-text": "Ultima modifica $1 da $2",
 	"bs-calumma-page-watch-title": "Segui \"$1\"",
 	"bs-calumma-page-watch-text": "Segui",
 	"bs-calumma-page-unwatch-title": "Non seguire più \"$1\"",

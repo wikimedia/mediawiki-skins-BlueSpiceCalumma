@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BadDog",
+			"Kizule",
 			"Zoranzoki21"
 		]
 	},
@@ -89,7 +90,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Подстраница|Подстранице}} странице \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Подстраница|$1 подстранице}} странице \"$2\"",
 	"bs-calumma-category-no-categories": "Нема додељених категорија",
-	"bs-calumma-page-last-edit-text": "Последњи пут уређено пре $1 од стране $2",
+	"bs-calumma-page-last-edit-text": "Последњи пут уредио уредник $2 $1",
 	"bs-calumma-page-watch-title": "Надгледање \"$1\"",
 	"bs-calumma-page-watch-text": "Надгледање",
 	"bs-calumma-page-unwatch-title": "Не надгледај више \"$1\"",

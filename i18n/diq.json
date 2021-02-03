@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"1917 Ekim Devrimi",
 			"Mirzali",
-			"Orbot707",
-			"1917 Ekim Devrimi"
+			"Orbot707"
 		]
 	},
 	"bs-to-top-desc": "Şo serê pele",
@@ -89,5 +89,36 @@
 	"bs-calumma-page-last-edit-by-system-user": "Karberê sistemi",
 	"bs-calumma-assoclink-history-label": "Terix",
 	"bs-calumma-context-pagebutton-label": "Pele",
-	"bs-calumma-context-discussionbutton-label": "Werênayış"
+	"bs-calumma-context-discussionbutton-label": "Werênayış",
+	"bs-action-new-disabled-title": "{{GENDER:|Şıma}} nêşenê ke yew pela newiye vırazê.",
+	"bs-action-edit-disabled-title": "{{GENDER:|Şıma}} nêşenê ke pela bıvurnê .",
+	"bs-calumma-recentchanges-intro": "Ena lasta ra pelanê neweyan u vurnayışanê pelan şenê bıvênê",
+	"bs-calumma-recentchanges-specialpage-link": "Serva asayışê klasiki rê  [[Special:RecentChanges|tiyay ]] bıploğnê",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Menuya çepi ake",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Menuya çepi bıqefelne",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Menuya raşti ake",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Menuya raşti bıqefelne",
+	"bs-calumma-breadcrumbs-pages-title": "Şımayê enewke $1 vinenê",
+	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Bın pelay|Bın peleyê }} \"$2\"",
+	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Bın pelay|$1 Bın peleyê }} \"$2\"",
+	"bs-calumma-category-no-categories": "Qet yew kategoriye bêerziyaya",
+	"bs-calumma-page-last-edit-text": "Vurnayışo peyên $1 de be terefê $2",
+	"bs-calumma-page-watch-title": "$1 seyr kerê",
+	"bs-calumma-page-watch-text": "Seyr kerê",
+	"bs-calumma-page-unwatch-title": "Hıni \"$1\" seyr mekerê",
+	"bs-calumma-page-unwatch-text": "Seyri vındarne",
+	"bs-calumma-pageinfo-qm-button-tooltip": "Panela idarey qelitey akerdey",
+	"bs-calumma-pageinfosentence-no-item-label": "Melumatê weziyeti çıniyo",
+	"bs-calumma-pageinfosentence-no-item-tooltip": "Heqê ena pela de weziyetê melumati çıniyo",
+	"bs-calumma-pageinfosentence": "Nê pela $1 ya/yo",
+	"bs-calumma-notification-logged-in": "Şıma ronıştış akerdo",
+	"bs-calumma-alert-oldpage": "Şımayê kehan versiyonê ena pele vinenê. [[Special:Redirect/page/$1|Ravêrê versiyonê neweyi ]].",
+	"bs-calumma-version-pager-prev-tooltip": "Ravêr versiyonê verêni",
+	"bs-calumma-version-pager-next-tooltip": "Ravêr versiyonê bahdoyêni",
+	"bs-calumma-version-pager-info-text": "Versiyonê $1 kerdoğ [[User:$2|$2]]",
+	"bs-calumma-assoclink-history-tooltip": "Revizyonê verorê pela \"$1\" bımocne",
+	"bs-calumma-context-pagebutton-tooltip": "Ravêrde pela mewzuy bımocne",
+	"bs-calumma-context-discussionbutton-tooltip": "Ravêrde pela qıse kerdışi bımocne",
+	"bs-calumma-purged-successfully": "Verhafızay pela esteriyê",
+	"bs-calumma-purge-failed": "Verhafızay pela esterıtış de xeta veciyê"
 }

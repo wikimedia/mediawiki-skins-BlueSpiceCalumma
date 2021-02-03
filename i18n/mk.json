@@ -86,7 +86,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Потстраница|Потстраници}} на „$2“",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Потстраница|$1 потстраници}} на „$2“",
 	"bs-calumma-category-no-categories": "Нема доделено категории",
-	"bs-calumma-page-last-edit-text": "Последно уредено пред $1 од $2",
+	"bs-calumma-page-last-edit-text": "Последно уредено на $1 од $2",
 	"bs-calumma-page-watch-title": "Набљудувај го „$1“",
 	"bs-calumma-page-watch-text": "Набљудувај",
 	"bs-calumma-page-unwatch-title": "Повеќе не го набљудувај „$1“",
@@ -113,5 +113,11 @@
 	"bs-calumma-context-pagebutton-tooltip": "Прикажи ја тековната предметна страница",
 	"bs-calumma-context-discussionbutton-label": "Разговор",
 	"bs-calumma-context-discussionbutton-tooltip": "Прикажи ја тековната разговорна страница",
-	"bs-calumma-search-button-label": "Пребарај"
+	"bs-calumma-search-button-label": "Пребарај",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Отвори лево мени",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Затвори лево мени",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Отвори десно мени",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Затвори десно мени",
+	"bs-calumma-purged-successfully": "Меѓускладот на страницата е исчистен",
+	"bs-calumma-purge-failed": "Се појави грешка при чистењето на меѓускладот на страницата"
 }
