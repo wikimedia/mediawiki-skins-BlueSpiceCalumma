@@ -103,7 +103,6 @@ abstract class TabPanelStructure extends TemplateStructure {
 	/**
 	 *
 	 * @param array &$tabs
-	 * @return null
 	 */
 	protected function ensureActiveTab( &$tabs ) {
 		if ( empty( $tabs ) ) {

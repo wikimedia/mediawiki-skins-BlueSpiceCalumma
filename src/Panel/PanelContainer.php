@@ -76,10 +76,6 @@ abstract class PanelContainer extends BasePanel {
 	 */
 	protected $alreadyInitialized = false;
 
-	/**
-	 *
-	 * @return null
-	 */
 	protected function initPanels() {
 		if ( $this->alreadyInitialized ) {
 			return;

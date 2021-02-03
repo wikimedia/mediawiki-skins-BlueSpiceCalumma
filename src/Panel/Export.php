@@ -35,7 +35,6 @@ class Export extends BasePanel {
 	/**
 	 *
 	 * @param type &$linkDefs
-	 * @return null
 	 */
 	protected function maybeAddPrint( &$linkDefs ) {
 		foreach ( $linkDefs as $linkDef ) {
