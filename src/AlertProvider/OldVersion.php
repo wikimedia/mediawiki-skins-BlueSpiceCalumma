@@ -14,7 +14,7 @@ class OldVersion extends AlertProviderBase {
 	 *
 	 * @var int
 	 */
-	protected $oldId = -1;
+	protected $oldRevisionRecord = null;
 
 	/**
 	 *
@@ -48,17 +48,11 @@ class OldVersion extends AlertProviderBase {
 	 * @return bool
 	 */
 	private function isOldVersion() {
-		if ( $this->oldId < 1 ) {
+		if ( $this->oldRevisionRecord === null ) {
 			return false;
 		}
 		$currentRevId = $this->skin->getTitle()->getLatestRevID();
-		if ( $this->oldId === $currentRevId ) {
-			return false;
-		}
-		$revision = MediaWikiServices::getInstance()->getRevisionLookup()->getRevisionById(
-			$this->oldId
-		);
-		if ( !$revision ) {
+		if ( $this->oldRevisionRecord->getId() === $currentRevId ) {
 			return false;
 		}
 
@@ -74,24 +68,26 @@ class OldVersion extends AlertProviderBase {
 		$userLang = $this->skin->getLanguage();
 		$title = $this->skin->getTitle();
 
-		$versionPager = new VersionPager( $revisionLookup, $userLang, $title, $this->oldId );
+		$oldId = $this->oldRevisionRecord ? $this->oldRevisionRecord->getId() : -1;
+		$versionPager = new VersionPager( $revisionLookup, $userLang, $title, $oldId );
 
 		return $versionPager->getHtml();
 	}
 
 	/**
-	 * Resolves the currently displayed "oldid" from the "old revision view" URL parameters
+	 * Resolves the currently displayed "oldRevisionRecord" from the "old revision view" URL parameters
 	 */
 	private function initOldId() {
-		$this->oldId = $this->skin->getRequest()->getInt( 'oldid', -1 );
-
-		if ( $this->oldId !== -1 ) {
+		$oldId = $this->skin->getRequest()->getInt( 'oldid', -1 );
+		$revisionLookup = MediaWikiServices::getInstance()->getRevisionLookup();
+		$this->oldRevisionRecord = $revisionLookup->getRevisionById( $oldId );
+		if ( $this->oldRevisionRecord !== null ) {
 			$direction = $this->skin->getRequest()->getVal( 'direction', '' );
 			if ( $direction === 'next' ) {
-				$this->oldId = $this->skin->getTitle()->getNextRevisionID( $this->oldId );
+				$this->oldRevisionRecord = $revisionLookup->getNextRevision( $this->oldRevisionRecord );
 			}
 			if ( $direction === 'prev' ) {
-				$this->oldId = $this->skin->getTitle()->getPreviousRevisionID( $this->oldId );
+				$this->oldRevisionRecord = $revisionLookup->getPreviousRevision( $this->oldRevisionRecord );
 			}
 		}
 	}
