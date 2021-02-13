@@ -300,7 +300,7 @@
 			"description": "Defaults to NS_PROJECT",
 			"value": 4
 		},
-		"PanelCollapseState":{
+		"PanelCollapseState": {
 			"value": {
 				"bs-associated-links": true,
 				"bs-manage-page-panel": false,
