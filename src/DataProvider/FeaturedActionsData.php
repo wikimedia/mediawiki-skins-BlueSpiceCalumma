@@ -175,7 +175,7 @@ class FeaturedActionsData {
 		}
 
 		$defaultNewActions['new-page'] = [
-			'classes' => [ 'selected', 'bs-fa-new-page' ],
+			'classes' => [ 'bs-fa-new-page' ],
 			'primary' => true,
 			'id' => 'new-page',
 			'position' => '01',
