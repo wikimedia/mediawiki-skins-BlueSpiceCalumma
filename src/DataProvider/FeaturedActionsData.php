@@ -1,9 +1,9 @@
 <?php
 namespace BlueSpice\Calumma\DataProvider;
 
-use QuickTemplate;
-use BlueSpice\SkinData;
 use BlueSpice\Calumma\SkinDataFieldDefinition as SDFD;
+use BlueSpice\SkinData;
+use QuickTemplate;
 
 class FeaturedActionsData {
 
@@ -167,7 +167,7 @@ class FeaturedActionsData {
 		}
 
 		$defaultNewActions['new-page'] = [
-			'classes' => [ 'selected', 'bs-fa-new-page' ],
+			'classes' => [ 'bs-fa-new-page' ],
 			'primary' => true,
 			'id' => 'new-page',
 			'position' => '01',
