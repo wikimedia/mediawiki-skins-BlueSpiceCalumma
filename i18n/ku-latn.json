@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bikarhêner"
+		]
+	},
+	"bs-action-edit-view-title": "Ji guherandinê derkeve",
+	"bs-action-edit-view-text": "Ji guherandinê derkeve",
+	"bs-action-edit-edit-title": "Çavkaniyê biguherîne",
+	"bs-action-edit-ve-edit-title": "Biguherîne",
+	"bs-action-new-section-text": "Beşa nû",
+	"bs-action-new-section-title": "Beşeke nû tevlî vê rûpelê bike",
+	"bs-action-new-page-text": "Rûpela nû",
+	"bs-action-new-please-login-title": "Ji bo tevlîkirina rûpeleke nû xêra xwe têkeve",
+	"bs-action-edit-please-login-title": "Ji bo guherandina vê rûpelê ji kerema xwe têkeve",
+	"bs-userbutton-notifications-link-text": "Agahdarî",
+	"bs-userbutton-userpage-link-text": "Profîla min",
+	"bs-mobilemoremenu-view-title": "Bibîne",
+	"bs-mobilemoremenu-view-text": "Bibîne",
+	"bs-mobilemoremenu-edit-title": "Biguherîne",
+	"bs-mobilemoremenu-edit-text": "Biguherîne",
+	"bs-mobilemoremenu-new-section-title": "Beşa nû",
+	"bs-mobilemoremenu-new-section-text": "Beşa nû",
+	"bs-mobilemoremenu-history-title": "Dîrok",
+	"bs-mobilemoremenu-history-text": "Dîrok",
+	"bs-sitenav-navigation-title": "Nagîvasyona sereke",
+	"bs-sitenav-navigation-section-mobileusercontainer": "Bikarhêner",
+	"bs-sitenav-navigation-section-mediawikisidebar": "Wîkî",
+	"bs-sitenav-globalactions-title": "Kiryarên global",
+	"bs-sitenav-globalactions-section-globalactions": "Kiryarên global",
+	"bs-sitenav-globalactions-section-management": "Rêvebirî",
+	"bs-sitenav-usersidebar-title": "Navîgasyona şexsî",
+	"bs-sitetools-pageinfo-title": "Agahî"
+}
