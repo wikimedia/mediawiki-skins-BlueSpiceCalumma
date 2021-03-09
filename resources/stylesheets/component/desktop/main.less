@@ -1,0 +1,51 @@
+body.mediawiki.bs-full-screen-mode,
+body.mediawiki.x-body.bs-full-screen-mode {
+	@btn-width: 4rem;
+	@wrapper-padding: 0.3125rem;
+
+	&.navigation-main-collapse:not( .sitetools-main-collapse ) {
+		.wrapper {
+			.content-wrapper {
+				.bs-content.container {
+					max-width: calc(~"100vw - 2 * @{btn-width} - @{sitetools-main-width}");
+					margin-left: @btn-width + @wrapper-padding;
+					width: calc(~"100vw - 2 * @{btn-width} - 2 * @{wrapper-padding}");
+				}
+			}
+		}
+	}
+
+	&.sitetools-main-collapse:not( .navigation-main-collapse ) {
+		.wrapper {
+			.content-wrapper {
+				.bs-content.container {
+					max-width: calc(~"100vw - 2 * @{btn-width} - @{navigation-main-width}");
+					margin-left: calc(~"@{navigation-main-width} + @{btn-width} + @{wrapper-padding}");
+					width: calc(~"100vw - 2 * @{btn-width} - 2 * @{wrapper-padding}");
+				}
+			}
+		}
+	}
+
+	&.navigation-main-collapse.sitetools-main-collapse {
+		.wrapper {
+			.content-wrapper {
+				.bs-content.container {
+					max-width: calc(~"100vw - 2 * @{btn-width}");
+					margin-left: @btn-width + @wrapper-padding;
+					width: calc(~"100vw - 2 * @{btn-width} - 2 * @{wrapper-padding} + @{wrapper-padding}");
+				}
+			}
+		}
+	}
+
+	.wrapper {
+		.content-wrapper {
+			.bs-content.container {
+				max-width: calc(~"100vw - 2 * @{btn-width} - @{navigation-main-width} - @{sitetools-main-width}");
+				margin-left: calc(~"@{navigation-main-width} + @{btn-width}");
+				width: calc(~"100vw - 2 * @{btn-width} - 2 * @{wrapper-padding} + @{wrapper-padding}");
+			}
+		}
+	}
+}
