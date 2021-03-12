@@ -24,7 +24,7 @@ use Exception;
  */
 abstract class PageHeader extends Renderer {
 
-	public const SKIN_TEMPLATE = 'skintemplate';
+	const SKIN_TEMPLATE = 'skintemplate';
 
 	/**
 	 *
