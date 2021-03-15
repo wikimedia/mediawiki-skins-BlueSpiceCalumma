@@ -71,6 +71,7 @@ class Skin extends \SkinChameleon {
 		}
 
 		$bodyAttrs[ 'class' ] .= $this->checkCustomMenuState( 'header' );
+		$bodyAttrs['class'] .= ' navigation-main-fixed sitetools-main-fixed ' . $classes;
 
 		if ( ( $desktopView === true ) && ( $fullScreenMode === false ) ) {
 			$cookieNavigationMainSticky =
@@ -99,7 +100,6 @@ class Skin extends \SkinChameleon {
 		} else {
 			$bodyAttrs[ 'class' ] .= ' navigation-main-collapse sitetools-main-collapse ';
 		}
-		$bodyAttrs[ 'class' ] .= ' navigation-main-fixed sitetools-main-fixed ' . $classes;
 	}
 
 	/**
@@ -149,9 +149,9 @@ class Skin extends \SkinChameleon {
 
 		$class = '';
 		if ( !$userIsLoggedIn ) {
-			$class = $userSettingClass;
-		} elseif ( $userSettingClass !== '' ) {
 			$class = $nav . '-main-collapse ';
+		} elseif ( $userSettingClass !== '' ) {
+			$class = $userSettingClass;
 		} else {
 			$class = $cookieStateClass;
 		}
