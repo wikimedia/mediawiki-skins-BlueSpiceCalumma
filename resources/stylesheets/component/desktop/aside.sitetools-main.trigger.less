@@ -2,12 +2,14 @@ body .sitetools-main {
 	.sidebar-toggle[data-toggle~="sitetools-main-collapse"]{
 		display: block;
 		position: fixed;
-		width: 48px;
-		padding: 1em;
+		width: 4rem;
+		height: 4rem;
+		padding: 0.875rem;
 		right: @sitetools-main-width;
 		top: @theme-header-height;
 		transition: right .3s;
 		z-index: 11;
+		text-align: center;
 		i.sitetools-main-collapse::before{
 			font-family: 'entypo';
 			content: "\e93c";
@@ -16,7 +18,6 @@ body .sitetools-main {
 			line-height: 33px;
 			transition: font-size .1s;
 			transition-delay: .3s;
-			float: right;
 			font-style: normal;
 		}
 		&:hover{
@@ -33,10 +34,8 @@ body.sitetools-main-collapse {
 	.sidebar-toggle[data-toggle~="sitetools-main-collapse"]{
 		right: 0;
 		transition: right .3s;
-		width: 80px;
 		i.sitetools-main-collapse::before{
 			font-size: 31px;
-			float: left;
 			transition: font-size .1s;
 			transition-delay: .3s;
 		}

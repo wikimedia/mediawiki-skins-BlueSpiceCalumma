@@ -24,13 +24,13 @@
 		</component>
 		<grid class="main-content">
 			<row>
-				<cell class="west-col" span="1">
+				<cell class="west-col">
 					<component type="\BlueSpice\Calumma\Components\Aside" data-toggle-by='navigation-main-collapse' class="navigation-main" hide-if-noread="true">
 						<component type="\BlueSpice\Calumma\Components\SidebarToggle" data-toggle="navigation-main-collapse" class="calumma-desktop-visible calumma-mobile-visible-close-only"/>
 						<component type="BlueSpice\Calumma\Components\SiteNavTabs" data-flyout-direction="east" />
 					</component>
 				</cell>
-				<cell class="center-col" span="6">
+				<cell class="center-col">
 				<component type="\BlueSpice\Calumma\Components\Content">
 						<row>
 							<cell span="12" class="bs-content">
@@ -54,7 +54,7 @@
 						</row>
 					</component>
 				</cell>
-				<cell class="east-col" span="1">
+				<cell class="east-col">
 					<component type="\BlueSpice\Calumma\Components\Aside" data-toggle-by='sitetools-main-collapse' class="sitetools-main calumma-mobile-hidden" hide-if-noread="true">
 						<component type="\BlueSpice\Calumma\Components\SidebarToggle" data-toggle="sitetools-main-collapse" class="calumma-desktop-visible"/>
 						<component type="BlueSpice\Calumma\Components\ToolPaneTabs" data-flyout-direction="west" />

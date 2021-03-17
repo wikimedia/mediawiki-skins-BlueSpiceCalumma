@@ -1,23 +1,23 @@
 /* fullscreen */
 
 .calumma-full-screen-button {
-	height: 15px;
+	height: 1rem;
+	width: 4rem;
 	line-height: 10px;
-	padding-top: 2px;
+	padding: 0 0.875rem;
 	top: 22px;
 	position: absolute;
 	z-index: 101;
 	cursor: pointer;
 	display: block;
-	right: 40px;
+	right: 0;
+	text-align: center;
 
 	&.bs-full-screen-mode {
 		i::before {
 			content: "\f066";
 			font-family: "fontawesome" !important;
 			font-style: normal;
-			padding-left: 3px;
-			padding-right: 3px;
 		}
 
 		&:hover {
@@ -34,8 +34,6 @@
 		content: "\f065";
 		font-family: "fontawesome" !important;
 		font-style: normal;
-		padding-left: 3px;
-		padding-right: 3px;
 	}
 
 	&:hover {
@@ -45,8 +43,4 @@
 	&:focus {
 		text-decoration: none;
 	}
-}
-
-body.mediawiki.bs-full-screen-mode .center-col {
-	width: 100vw !important;
 }
