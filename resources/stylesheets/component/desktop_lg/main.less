@@ -1,19 +1,20 @@
-body.mediawiki,
-body.mediawiki.x-body {
-	.center-col {
-		width: @theme-content-width;
-		padding: 0;
-	}
+body.mediawiki:not( .bs-full-screen-mode ),
+body.mediawiki.x-body:not( .bs-full-screen-mode ) {
+	@btn-width: 4rem;
+	@center-col-clearance: 0.3125rem;
+
 	&:not( .navigation-main-collapse ):not( .sitetools-main-collapse ),
 	&.navigation-main-collapse.sitetools-main-collapse,
 	&:not( .navigation-main-collapse ).sitetools-main-collapse,
 	&:not( .sitetools-main-collapse ).navigation-main-collapse {
-		.west-col,
-		.east-col {
-			min-width: 380px;
-		}
+		.west-col {
+				width: @navigation-main-width + @btn-width;
+			}
 		.center-col {
-			max-width: calc(~"100vw - 760px");
+			width: calc(~"100vw - @{navigation-main-width} - @{sitetools-main-width} - 2 * @{btn-width} - 2 * @{center-col-clearance}");
+		}
+		.east-col {
+			width: @sitetools-main-width + @btn-width;
 		}
 	}
 }

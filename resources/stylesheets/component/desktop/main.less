@@ -1,52 +1,63 @@
-body.mediawiki,
-body.mediawiki.x-body {
-
-	.center-col {
+body.mediawiki:not( .bs-full-screen-mode ),
+body.mediawiki.x-body:not( .bs-full-screen-mode ) {
+	.center-col .content-wrapper {
 		width: @theme-content-width;
-		padding: 0;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
+}
+
+body.mediawiki:not( .bs-full-screen-mode ),
+body.mediawiki.x-body:not( .bs-full-screen-mode ),
+body.mediawiki.bs-full-screen-mode,
+body.mediawiki.x-body.bs-full-screen-mode {
+	@btn-width: 4rem;
+	@center-col-clearance: 0.3125rem;
+
 	&:not( .navigation-main-collapse ):not( .sitetools-main-collapse ) {
-		.west-col,
-		.east-col {
-			min-width: 380px;
+		.west-col {
+			width: @navigation-main-width + @btn-width;
 		}
 		.center-col {
-			max-width: calc(~"100vw - 760px");
+			width: calc(~"100vw - @{navigation-main-width} - @{sitetools-main-width} - 2 * @{btn-width} - 2 * @{center-col-clearance}");
+		}
+		.east-col {
+			width: @sitetools-main-width + @btn-width;
 		}
 	}
 
-	/* collapsing elements */
 	&.navigation-main-collapse.sitetools-main-collapse {
 		.west-col,
 		.east-col {
-			min-width: 80px;
+			width: @btn-width;
 		}
 		.center-col {
-			max-width: calc(~"100vw - 160px");
+			width: calc(~"100vw - 2 * @{btn-width} - 2 * @{center-col-clearance}");
 		}
 	}
 
 	&:not( .navigation-main-collapse ).sitetools-main-collapse {
 		.west-col {
-			min-width: 380px;
-		}
-		.east-col {
-			min-width: 80px;
+			width: @navigation-main-width + @btn-width;
 		}
 		.center-col {
-			max-width: calc(~"100vw - 460px");
+			width: calc(~"100vw - @{navigation-main-width} - 2 * @{btn-width} - 2 * @{center-col-clearance}");
+		}
+		.east-col {
+			width: @btn-width;
 		}
 	}
 
 	&:not( .sitetools-main-collapse ).navigation-main-collapse {
 		.west-col {
-			min-width: 80px;
-		}
-		.east-col {
-			min-width: 380px;
+			width: @btn-width;
 		}
 		.center-col {
-			max-width: calc(~"100vw - 460px");
+			width: calc(~"100vw - @{sitetools-main-width} - 2 * @{btn-width} - 2 * @{center-col-clearance}");
+		}
+		.east-col {
+			width: @sitetools-main-width + @btn-width;
 		}
 	}
 }
