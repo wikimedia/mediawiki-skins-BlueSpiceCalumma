@@ -1,9 +1,9 @@
 <?php
 namespace BlueSpice\Calumma\DataProvider;
 
-use QuickTemplate;
-use BlueSpice\SkinData;
 use BlueSpice\Calumma\SkinDataFieldDefinition as SDFD;
+use BlueSpice\SkinData;
+use QuickTemplate;
 
 class FeaturedActionsData {
 
@@ -106,7 +106,7 @@ class FeaturedActionsData {
 		if ( !$curTitle->isSpecialPage() ) {
 			$defaultEditActions['new-section'] = [
 				'position' => '10',
-				'id' => 'new-section',
+				'id' => 'new-section-edit',
 				'text' => wfMessage( 'bs-action-new-section-text' )->plain(),
 				'title' => wfMessage( 'bs-action-new-section-title' )->plain(),
 				'href' => $curTitle->getLocalURL( [
@@ -167,7 +167,7 @@ class FeaturedActionsData {
 		}
 
 		$defaultNewActions['new-page'] = [
-			'classes' => [ 'selected', 'bs-fa-new-page' ],
+			'classes' => [ 'bs-fa-new-page' ],
 			'primary' => true,
 			'id' => 'new-page',
 			'position' => '01',
