@@ -17,21 +17,22 @@
 }
 
 
-/* Special:AllPages */
-body.ns-special .mw-allpages-body {
-	columns: 32em 2;
-	-moz-columns: 32em 2;
-	-webkit-columns: 32em 2;
 
-	ul > li {
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-}
-
-/* Special:Specialpages */
 body.ns-special {
+	/* Special:AllPages */
+	.mw-allpages-body {
+		columns: 32em 2;
+		-moz-columns: 32em 2;
+		-webkit-columns: 32em 2;
+
+		ul > li {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+
+	/* Special:Specialpages */
 	#content #bodyContent {
 		li.mw-specialpagerestricted {
 			& > a {
@@ -39,16 +40,22 @@ body.ns-special {
 			}
 		}
 	}
+
+	/* Special:CategoryTree */
+	&.mw-special-CategoryTree .oo-ui-defaultOverlay {
+		z-index: 200;
+	}
+
+	/* Special:Preferences */
+	&.mw-special-Preferences #mw-prefs-form .oo-ui-fieldLayout-field label {
+		font-weight: normal;
+	}
 }
 
 .mw-userlogin-help {
 	display: none;
 }
 
-/*Special:CategoryTree*/
-body.mw-special-CategoryTree .oo-ui-defaultOverlay {
-	z-index: 200;
-}
 
 form[id^=mw] table {
 	border-collapse: separate;
