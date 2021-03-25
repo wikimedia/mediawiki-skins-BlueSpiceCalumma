@@ -134,7 +134,9 @@
 				"js/mobile.content.js",
 				"js/skin.bluespicecalumma.featuredActions.js",
 				"js/skin.bluespicecalumma.customMenu.header.js",
-				"js/purgeLink.js"
+				"js/purgeLink.js",
+				"js/sidebar.scroll.touch.js",
+				"js/sidebar.scroll.mouse.js"
 			],
 			"dependencies": [
 				"mediawiki.cookie",
