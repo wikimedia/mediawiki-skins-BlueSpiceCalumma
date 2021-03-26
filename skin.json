@@ -331,7 +331,8 @@
 			"\\BlueSpice\\Calumma\\Hook\\BeforePageDisplay\\AddFoucFix::callback"
 		],
 		"UserLoggedIn": "\\BlueSpice\\Calumma\\Hook\\UserLoggedIn\\AddNotification::callback",
-		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\Calumma\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback"
+		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\Calumma\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback",
+		"OutputPageBodyAttributes": "\\BlueSpice\\Calumma\\Hook\\OutputPageBodyAttributes\\AddToBodyAttributes::callback"
 	},
 	"DefaultUserOptions": {
 		"bs-calumma-settings-navigation-main-collapse": false,
