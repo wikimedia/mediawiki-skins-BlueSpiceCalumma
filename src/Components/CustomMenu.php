@@ -107,7 +107,8 @@ class CustomMenu extends \Skins\Chameleon\Components\Structure {
 	}
 
 	/**
-	 * ATTENTION: There is related code in BlueSpice\Calumma\Skin::checkCustomMenuState
+	 * ATTENTION: There is related code in
+	 * BlueSpice\Calumma\Hook\OutputPageBodyAttributes::checkCustomMenuState
 	 * @return bool
 	 */
 	protected function skipRendering() {
