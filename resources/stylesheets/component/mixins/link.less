@@ -1,7 +1,10 @@
 .mixin-link-color( @color, @color-hover ) {
-	color: @color;
+	&,
+	&:visited {
+		color: @color;
+	}
 
-	&:hover{
+	&:hover {
 		color: @color-hover;
 	}
 
@@ -15,7 +18,10 @@
 	&,
 	&:link {
 		&:not( .new ) {
-			color: @color;
+			&,
+			&:visited {
+				color: @color;
+			}
 
 			&:hover {
 				color: @color-hover;
@@ -23,7 +29,10 @@
 		}
 
 		&.new {
-			color: @color-new;
+			&,
+			&:visited {
+				color: @color-new;
+			}
 
 			&:hover{
 				color: @color-new-hover;
