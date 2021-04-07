@@ -3,6 +3,7 @@
 namespace BlueSpice\Calumma;
 
 use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 /**
  *
@@ -13,6 +14,11 @@ class Skin extends \SkinChameleon {
 	public $stylename = 'bluespicecalumma';
 	public $template = '\BlueSpice\Calumma\Template';
 	public $useHeadElement = true;
+
+	/**
+	 * @var Config $config
+	 */
+	protected $config = null;
 
 	/**
 	 * Add CSS via ResourceLoader
@@ -71,7 +77,7 @@ class Skin extends \SkinChameleon {
 		}
 
 		$bodyAttrs[ 'class' ] .= $this->checkCustomMenuState( 'header' );
-		$bodyAttrs['class'] .= ' navigation-main-fixed sitetools-main-fixed ' . $classes;
+		$bodyAttrs[ 'class' ] .= ' navigation-main-fixed sitetools-main-fixed ' . $classes;
 
 		if ( ( $desktopView === true ) && ( $fullScreenMode === false ) ) {
 			$cookieNavigationMainSticky =
@@ -166,14 +172,33 @@ class Skin extends \SkinChameleon {
 	 */
 	protected function checkCustomMenuState( $menu ) {
 		$className = 'bs-custom-menu-' . $menu . '-container-collapse';
+
 		$cookieName = "Calumma_$className";
 		$cookieHandler = new CookieHandler( $this->getRequest() );
-		$cookieValue = $cookieHandler->getCookie( $cookieName, 'false' );
-		$userHasReadPermissionsAtAll = $this->getUser()->isAllowed( 'read' );
+		if ( $this->config === null ) {
+			$this->config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		}
 
-		if ( $cookieValue !== 'false' || !$userHasReadPermissionsAtAll ) {
+		$cookieValue = $cookieHandler->getCookie( $cookieName, 'null' );
+		$userHasReadPermissionsAtAll = $this->getUser()->isAllowed( 'read' );
+		if ( $cookieValue === 'true' || !$userHasReadPermissionsAtAll ) {
 			return " $className ";
 		}
+
+		if ( $cookieValue === 'false' ) {
+			return "";
+		}
+
+		$customMenuConfig = false;
+		if ( $this->config !== null ) {
+			$customMenuConfig = $this->config->get( 'BlueSpiceCalummaCustomMenuHeaderCollapse' );
+		}
+
+		if ( ( $customMenuConfig === true ) || ( $customMenuConfig === 1 ) ) {
+			return " $className ";
+		}
+
+		return "";
 	}
 
 	/**
@@ -196,5 +221,4 @@ class Skin extends \SkinChameleon {
 		}
 		parent::addToSidebar( $bar, $message );
 	}
-
 }
