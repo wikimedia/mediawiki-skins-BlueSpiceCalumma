@@ -123,5 +123,7 @@
 	"bs-calumma-context-discussionbutton-tooltip": "Show the current talk page",
 	"bs-calumma-search-button-label": "Search",
 	"bs-calumma-purged-successfully": "The page cache has been cleared",
-	"bs-calumma-purge-failed": "An error occured while clearing the page's cache"
+	"bs-calumma-purge-failed": "An error occured while clearing the page's cache",
+	"bs-calumma-pref-collapse-custommenu-header": "Automatically hide CustomMenu/Header",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Hides the supplemental custom menu at the top by default. Users can open the menu using the toggle button."
 }

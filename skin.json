@@ -51,6 +51,9 @@
 				"special-categories": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialCategories::factory",
 				"special-filelist": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialFilelist::factory",
 				"special-specialpages": "\\BlueSpice\\Calumma\\BreadcrumbRootNode\\SpecialSpecialPages::factory"
+			},
+			"ConfigDefinitionRegistry": {
+				"BlueSpiceCalummaCustomMenuHeaderCollapse": "\\BlueSpice\\Calumma\\ConfigDefinition\\BlueSpiceCalummaCustomMenuHeaderCollapse::getInstance"
 			}
 		},
 		"BlueSpiceCustomMenu": {
@@ -312,6 +315,11 @@
 				"bs-sitenav-globalactions-section-management": false,
 				"bs-sitenav-globalactions-section-globalactions": false
 			}
+		},
+		"CustomMenuHeaderCollapse": {
+			"descriptionmsg": "bs-calumma-pref-collapse-custommenu-header",
+			"public": true,
+			"value": false
 		}
 	},
 	"callback": "BlueSpice\\Calumma\\Setup::onCallback",
