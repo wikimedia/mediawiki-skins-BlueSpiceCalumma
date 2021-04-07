@@ -44,6 +44,16 @@
 	margin-top: 0;
 	color: @page-header-metaband-color;
 
+	a {
+		.mixin-link-title-color(
+			@link-color,
+			@link-color-hover,
+			@link-color-new,
+			@link-color-new-hover
+		);
+	}
+
+
 	ul {
 		padding: 0;
 		list-style: none;
