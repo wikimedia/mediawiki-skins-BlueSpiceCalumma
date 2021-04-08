@@ -66,5 +66,6 @@
 	"bs-calumma-context-pagebutton-label": "Side",
 	"bs-calumma-context-discussionbutton-label": "Diskussion",
 	"bs-calumma-search-button-label": "Søg",
-	"bs-calumma-page-watch-text": "Overvåg"
+	"bs-calumma-page-watch-text": "Overvåg",
+	"bs-calumma-page-last-edit-by-system-user": "systembruger"
 }
