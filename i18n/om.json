@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ahrada2016",
 			"Maammee",
 			"Oromoo"
 		]
@@ -35,13 +36,13 @@
 	"bs-calumma-graphicallist-recentchanges-preview-btn-history": "Seenaa",
 	"bs-sitetools-default": "Dabalata",
 	"bs-sitetools-manage-page": "Fuula qindeessi",
-	"bs-calumma-recentchanges-title": "Jijjiirama dhihoo",
-	"bs-calumma-recentchanges-intro": "Tarree kana keessatti gulaalli fuulaa dhihoo maraa fi fuula haara uumame argatta.",
-	"bs-calumma-recentchanges-column-header-title": "Jijjiirama dhihoo",
+	"bs-calumma-recentchanges-title": "Jijjiiramoota reefuuti",
+	"bs-calumma-recentchanges-intro": "Tarree kana keessatti gulaalli fuulbarruu reefuu maraa fi fuula haara uumame argatta.",
+	"bs-calumma-recentchanges-column-header-title": "Jijjiiramoota reefuuti",
 	"bs-calumma-recentchanges-diff": "Garaagarumma",
-	"bs-all-templates-link-text": "Qajojii galchi mara",
+	"bs-all-templates-link-text": "Qajojiiwwan mara",
 	"bs-to-top-desc": "Gara olii utaali",
-	"bs-calumma-pagetool-history-tooltip": "Seenaa fuulaa",
+	"bs-calumma-pagetool-history-tooltip": "Seenaa fuulbarruu",
 	"bs-calumma-pagetool-talk-tooltip": "Marii",
 	"bs-calumma-pagetool-view-tooltip": "Laali",
 	"bs-calumma-pagetool-watch-tooltip": "Daawwadhu",
@@ -54,13 +55,13 @@
 	"bs-calumma-breadcrumbs-nstab-main": "Fuula hunda",
 	"bs-calumma-breadcrumbs-pages": "As geesse",
 	"bs-calumma-breadcrumbs-pages-title": "Amma kan daawwachaa jirtu \"$1\"",
-	"bs-calumma-page-last-edit-text": "$1 dura $2 dhan dhuma irratti kan gulaalame",
+	"bs-calumma-page-last-edit-text": "Gulaalliin dhumaa gafa $1 $2 dhaan gulaalame",
 	"bs-calumma-page-watch-title": "\"$1\" daawwadhu",
 	"bs-calumma-page-watch-text": "Eegi",
 	"bs-calumma-page-unwatch-text": "Daawwachu dhiisi",
 	"bs-calumma-pageinfosentence-item-separator": "fi",
 	"bs-calumma-pageinfosentence-item-class-separator": "garuu",
-	"bs-calumma-context-pagebutton-label": "Fuula",
+	"bs-calumma-context-pagebutton-label": "Fuulbarruu",
 	"bs-calumma-context-discussionbutton-label": "Marii",
 	"bs-calumma-context-discussionbutton-tooltip": "Fuula haasaa waqtaawaa agarsiisi",
 	"bs-calumma-search-button-label": "Barbaadi"

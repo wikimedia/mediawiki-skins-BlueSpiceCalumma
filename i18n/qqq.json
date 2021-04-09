@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ahrada2016",
 			"Daniel Vogel",
 			"Nike",
 			"Raymond",
@@ -65,10 +66,10 @@
 	"bs-sitetools-manage-page": "The heading of a panel containing links to actions to manage page",
 	"bs-sitetools-categories": "The heading of a panel containing links to categories the page is assigned to\n{{Identical|Category}}",
 	"bs-sitetools-associated-links": "The heading of a panel containing links to various assiciated resources of the page",
-	"bs-calumma-recentchanges-title": "The heading of a flyout that displays a list of recent changes. Similar to [[Special:RecentChanges]]",
+	"bs-calumma-recentchanges-title": "Matoomni matdureewwanii mul'achaa jiran tarreeffama jijjiiramoota reefuuti. [[Addatti:JijjiiramootaReefuu]] waliin walfakkaata.",
 	"bs-calumma-recentchanges-intro": "A introductional text within a flyout that displays a list of recent changes",
 	"bs-calumma-recentchanges-specialpage-link": "A text containing a link to [[Special:RecentChanges]] within a flyout that displays a list of recent changes.",
-	"bs-calumma-recentchanges-column-header-title": "The text of a column in a grid view of recent changes",
+	"bs-calumma-recentchanges-column-header-title": "Barruun goleewwanii tarsaa keessaa mul'atu kan jijjiiramoota reefuuti",
 	"bs-calumma-recentchanges-history": "The label of a menu entry that opens the history view of a page. The menu is attached to a preview image of that page",
 	"bs-calumma-recentchanges-diff": "The label of a menu entry that opens the diff view of a page. The menu is attached to a preview image of that page",
 	"bs-all-templates-link-text": "The text for a link to [[Special:AllPages]] with preselection for namespace 10",
