@@ -10,6 +10,7 @@
 			"Nk88",
 			"Okras",
 			"Pacha Tchernof",
+			"Urfiner",
 			"Vlad5250"
 		]
 	},
@@ -112,11 +113,14 @@
 	"bs-calumma-pageinfosentence-item-separator-greater-two": ",",
 	"bs-calumma-pageinfosentence-item-class-separator": "но",
 	"bs-calumma-full-screen-button-tooltip": "Полноэкранный/Нормальный режим",
+	"bs-calumma-page-last-edit-by-system-user": "системный пользователь",
 	"bs-calumma-notification-logged-in": "Вы вошли в систему",
+	"bs-calumma-alert-oldpage": "Вы просматриваете старую версию страницы. [[Special:Redirect/page/$1|Вернуться к последней версии]].",
 	"bs-calumma-version-pager-prev-tooltip": "Переключиться на предыдущую версию",
 	"bs-calumma-version-pager-next-tooltip": "Переключиться на следующую версию",
 	"bs-calumma-version-pager-info-text": "Версия от $1, сделанная [[User:$2|$2]]",
 	"bs-calumma-assoclink-history-label": "История",
+	"bs-calumma-assoclink-history-tooltip": "Показать историю правок страницы \"$1\"",
 	"bs-calumma-context-pagebutton-label": "Страница",
 	"bs-calumma-context-discussionbutton-label": "Обсуждение",
 	"bs-calumma-context-discussionbutton-tooltip": "Показать текущую страницу обсуждения",
