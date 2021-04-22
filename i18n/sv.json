@@ -121,5 +121,7 @@
 	"bs-calumma-context-discussionbutton-tooltip": "Visa den nuvarande diskussionssidan",
 	"bs-calumma-search-button-label": "Sök",
 	"bs-calumma-purged-successfully": "Sidans cache har rensats",
-	"bs-calumma-purge-failed": "Ett fel uppstod när sidans cache skulle rensas"
+	"bs-calumma-purge-failed": "Ett fel uppstod när sidans cache skulle rensas",
+	"bs-calumma-pref-collapse-custommenu-header": "Dölj anpassad meny/sidhuvud automatiskt",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Döljer den anpassade menyn längst upp som standard. Användare kan öppna menyn med visa/dölj-knappen."
 }
