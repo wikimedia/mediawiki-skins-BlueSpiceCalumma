@@ -102,5 +102,6 @@
 	"bs-calumma-context-pagebutton-label": "문서",
 	"bs-calumma-context-discussionbutton-label": "토론",
 	"bs-calumma-search-button-label": "검색",
-	"bs-calumma-purged-successfully": "문서 캐시를 새로 고쳤습니다"
+	"bs-calumma-purged-successfully": "문서 캐시를 새로 고쳤습니다",
+	"bs-calumma-pref-collapse-custommenu-header": "사용자 지정 메뉴/헤더를 자동으로 숨기기"
 }
