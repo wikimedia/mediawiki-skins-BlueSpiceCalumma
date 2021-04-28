@@ -79,6 +79,10 @@
 	"bs-allpages-description": "Tote le paginas",
 	"bs-support-description": "Assistentia",
 	"bs-calumma-navigation-toggle-tooltip": "Aperir / clauder",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Aperir le menu sinistre",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Clauder le menu sinistre",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Aperir le menu dextre",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Clauder le menu dextre",
 	"bs-edit-custom-menu-link-title": "Modificar menu",
 	"bs-edit-custom-menu-link-text": "Modificar menu",
 	"bs-calumma-toggle-button-tooltip": "Aperir/clauder",
@@ -112,5 +116,9 @@
 	"bs-calumma-context-pagebutton-tooltip": "Monstrar le pagina de subjecto actual",
 	"bs-calumma-context-discussionbutton-label": "Discussion",
 	"bs-calumma-context-discussionbutton-tooltip": "Monstrar le pagina de discussion actual",
-	"bs-calumma-search-button-label": "Cercar"
+	"bs-calumma-search-button-label": "Cercar",
+	"bs-calumma-purged-successfully": "Le cache del pagina ha essite radite",
+	"bs-calumma-purge-failed": "Un error ha occurrite durante le radimento del cache del pagina",
+	"bs-calumma-pref-collapse-custommenu-header": "Automaticamente celar CustomMenu/Header",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Cela per predefinition le menu supplementari personalisate in le alto. Usatores pote aperir le menu usante le button Alternar."
 }
