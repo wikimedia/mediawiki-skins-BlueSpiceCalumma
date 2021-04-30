@@ -2,12 +2,14 @@ body .navigation-main {
 	.sidebar-toggle[data-toggle~="navigation-main-collapse"]{
 		display: block;
 		position: fixed;
-		width: 48px;
-		padding: 1em;
+		width: 4rem;
+		height: 4rem;
+		padding: 0.875rem;
 		left: @navigation-main-width;
 		top: @theme-header-height;
 		transition: left .3s;
 		z-index: 12;
+		text-align: center;
 		i.navigation-main-collapse::before{
 			font-family: 'bs-button';
 			content: "\e902";
@@ -16,7 +18,6 @@ body .navigation-main {
 			line-height: 33px;
 			transition: font-size .1s;
 			transition-delay: .3s;
-			float: left;
 		}
 		&:hover{
 			text-decoration: none;
