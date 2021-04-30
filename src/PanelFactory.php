@@ -44,7 +44,7 @@ class PanelFactory {
 	 * @param array $panelDefs
 	 * @param QuickTemplate $sktemplate
 	 */
-	public function __construct( $panelDefs, QuickTemplate $sktemplate ) {
+	public function __construct( array $panelDefs, QuickTemplate $sktemplate ) {
 		$this->panelDefinitions = $panelDefs;
 		$this->sktemplate = $sktemplate;
 	}

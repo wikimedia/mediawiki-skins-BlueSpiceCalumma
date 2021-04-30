@@ -17,7 +17,7 @@ class FeaturedActions extends Component {
 			return '';
 		}
 
-		$data = $this->getSkinTemplate()->get( SkinData::FEATURED_ACTIONS );
+		$data = $this->getSkinTemplate()->get( SkinData::FEATURED_ACTIONS, [] );
 		$items = [];
 
 		foreach ( $data as $dataKey => $dataDef ) {

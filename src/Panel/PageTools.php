@@ -67,7 +67,7 @@ class PageTools extends PanelContainer {
 				}
 			]
 		];
-		$panelDefs = $this->skintemplate->get( SkinData::PAGE_TOOLS_PANEL );
+		$panelDefs = $this->skintemplate->get( SkinData::PAGE_TOOLS_PANEL, [] );
 
 		$combinedPanelDefs = array_merge_recursive(
 			$defaultPanelDefs,

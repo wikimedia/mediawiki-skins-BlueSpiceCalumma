@@ -20,7 +20,7 @@ class SiteNavTabs extends TabPanelStructure {
 		$activeTabId = $this->getActiveTabId();
 
 		$panelFactory = new PanelFactory(
-			$this->getSkinTemplate()->get( SkinData::SITE_NAV ),
+			$this->getSkinTemplate()->get( SkinData::SITE_NAV, [] ),
 			$this->getSkinTemplate()
 		);
 

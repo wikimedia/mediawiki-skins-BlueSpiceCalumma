@@ -39,7 +39,7 @@ class QualityManagement extends PanelContainer implements IActiveStateProvider {
 	protected function makePanels() {
 		$defaultPanelDefs = [];
 
-		$panelDefs = $this->skintemplate->get( SkinData::PAGE_DOCUMENTS_PANEL );
+		$panelDefs = $this->skintemplate->get( SkinData::PAGE_DOCUMENTS_PANEL, [] );
 
 		$combinedPanelDefs = array_merge_recursive(
 			$defaultPanelDefs,
