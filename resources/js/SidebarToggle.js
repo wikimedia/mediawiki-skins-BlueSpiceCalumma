@@ -14,8 +14,10 @@
 		var sideAction = '';
 		if( $( 'body' ).hasClass( target ) ){
 			sideAction = 'close';
+			$( this ).attr( 'aria-expanded', 'true' );
 		} else {
 			sideAction = 'open';
+			$( this ).attr( 'aria-expanded', 'false' );
 		}
 
 		// Give grep a chance:
@@ -93,25 +95,6 @@
 				$( 'body.sitetools-main-collapse' ).removeClass( 'sitetools-main-collapse' );
 			}
 		}
-
-		var leftButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-left-close';
-		var rightButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-right-close';
-
-		if( $( 'body' ).hasClass( 'navigation-main-collapse' ) ){
-			leftButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-left-open';
-		}
-		if( $( 'body' ).hasClass( 'sitetools-main-collapse' ) ){
-			rightButtonMsgKey = 'bs-calumma-navigation-toggle-tooltip-right-open';
-		}
-
-		var $mainNavToggle = $(".sidebar-toggle .navigation-main-collapse").parent( '.sidebar-toggle' );
-		$mainNavToggle.attr('title', mw.message( leftButtonMsgKey ).plain());
-		$mainNavToggle.attr('aria-label', mw.message( leftButtonMsgKey ).plain());
-
-		var $siteToolsToggle = $(".sidebar-toggle .sitetools-main-collapse").parent( '.sidebar-toggle' );
-		$siteToolsToggle.attr('title', mw.message( rightButtonMsgKey ).plain());
-		$siteToolsToggle.attr('aria-label', mw.message( rightButtonMsgKey ).plain());
-
 
 	});
 })( document, jQuery, mediaWiki );
