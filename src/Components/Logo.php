@@ -19,7 +19,7 @@ class Logo extends TemplateComponent {
 	 * @return array
 	 */
 	protected function getTemplateArgs() {
-		$logo = $this->getSkinTemplate()->get( SDFD::LOGO );
+		$logo = $this->getSkinTemplate()->get( SDFD::LOGO, [] );
 
 		$args = parent::getTemplateArgs();
 

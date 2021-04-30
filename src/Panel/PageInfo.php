@@ -29,7 +29,7 @@ class PageInfo extends PanelContainer {
 	 */
 	protected function makePanels() {
 		$panelFactory = new PanelFactory(
-			$this->skintemplate->get( SkinData::PAGE_INFOS_PANEL ),
+			$this->skintemplate->get( SkinData::PAGE_INFOS_PANEL, [] ),
 			$this->skintemplate
 		);
 		return $panelFactory->makePanels();
