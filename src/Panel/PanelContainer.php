@@ -97,7 +97,7 @@ abstract class PanelContainer extends BasePanel {
 	 * @return array
 	 */
 	protected function sortPanel( $panelArray ) {
-		usort( $panelArray, function ( $a, $b ) {
+		usort( $panelArray, static function ( $a, $b ) {
 			$a['position'] = isset( $a['position'] ) ? $a['position'] : 0;
 			$b['position'] = isset( $b['position'] ) ? $b['position'] : 0;
 			return $a['position'] > $b['position'];

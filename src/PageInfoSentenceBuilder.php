@@ -123,7 +123,7 @@ class PageInfoSentenceBuilder {
 			}
 		}
 
-		usort( $pro, function ( $a, $b ) {
+		usort( $pro, static function ( $a, $b ) {
 			if ( !isset( $a['position'] ) ) {
 				return false;
 			}
@@ -133,7 +133,7 @@ class PageInfoSentenceBuilder {
 			return $a['position'] > $b['position'];
 		} );
 
-		usort( $contra, function ( $a, $b ) {
+		usort( $contra, static function ( $a, $b ) {
 			if ( !isset( $a['position'] ) ) {
 				return false;
 			}

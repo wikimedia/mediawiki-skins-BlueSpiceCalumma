@@ -283,13 +283,13 @@ class SkinDataFieldDefinition {
 		$this->data[SkinData::SITE_NAV] += [
 			'navigation' => [
 				'position' => 10,
-				'callback' => function ( $skintemplate ) {
+				'callback' => static function ( $skintemplate ) {
 					return new SiteNavigation( $skintemplate );
 				}
 			],
 			'globalactions' => [
 				'position' => 100,
-				'callback' => function ( $skintemplate ) {
+				'callback' => static function ( $skintemplate ) {
 					return new GlobalActions( $skintemplate );
 				}
 			]
@@ -300,7 +300,7 @@ class SkinDataFieldDefinition {
 		$this->data[SkinData::SITE_TOOLS] = [
 			'quality-management' => [
 				'position' => 30,
-				'callback' => function ( $skintemplate ) {
+				'callback' => static function ( $skintemplate ) {
 					return new QualityManagement( $skintemplate );
 				}
 			]
@@ -309,7 +309,7 @@ class SkinDataFieldDefinition {
 		$this->data[SkinData::SITE_TOOLS] += [
 			'page-tools' => [
 				'position' => 20,
-				'callback' => function ( $skintemplate ) {
+				'callback' => static function ( $skintemplate ) {
 					return new PageTools( $skintemplate );
 				}
 			]

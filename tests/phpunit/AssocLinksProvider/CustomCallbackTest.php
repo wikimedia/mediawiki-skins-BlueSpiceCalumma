@@ -18,7 +18,7 @@ class CustomCallbackTest extends TestCase {
 	 * @covers CustomCallback::factory
 	 */
 	public function testFactory() {
-		$callback = function ( $context, $config ) {
+		$callback = static function ( $context, $config ) {
 			return [
 				[
 					'href' => '#',
@@ -48,7 +48,7 @@ class CustomCallbackTest extends TestCase {
 	public function testFactoryException() {
 		$this->expectException( Exception::class );
 		$this->expectExceptionMessage( "Field 'label' must be provided!" );
-		$callback = function ( $context, $config ) {
+		$callback = static function ( $context, $config ) {
 			return [
 				[
 					'href' => '#',
