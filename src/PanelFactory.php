@@ -113,7 +113,7 @@ class PanelFactory {
 	 * Sorts the panels
 	 */
 	protected function sortPanels() {
-		uasort( $this->panelDefinitions, function ( $a, $b ) {
+		uasort( $this->panelDefinitions, static function ( $a, $b ) {
 			$posA = isset( $a['position'] ) ? $a['position'] : 0;
 			$posB = isset( $b['position'] ) ? $b['position'] : 0;
 			return $posA > $posB;

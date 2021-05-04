@@ -117,7 +117,7 @@ class FeaturedActions extends Component {
 	}
 
 	private function sortFeaturedActions( $faArray ) {
-		usort( $faArray, function ( $a, $b ) {
+		usort( $faArray, static function ( $a, $b ) {
 			if ( !isset( $a['position'] ) ) {
 				return false;
 			}

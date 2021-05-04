@@ -38,31 +38,31 @@ class PageTools extends PanelContainer {
 			],*/
 			'edit' => [
 				'position' => 20,
-				'callback' => function ( $sktemplate ) {
+				'callback' => static function ( $sktemplate ) {
 					return new Edit( $sktemplate );
 				}
 			],
 			'assoc-links' => [
 				'position' => 30,
-				'callback' => function ( $sktemplate ) {
+				'callback' => static function ( $sktemplate ) {
 					return new AssocLinks( $sktemplate );
 				}
 			],
 			'export' => [
 				'position' => 80,
-				'callback' => function ( $sktemplate ) {
+				'callback' => static function ( $sktemplate ) {
 					return new Export( $sktemplate );
 				}
 			],
 			'toolbox' => [
 				'position' => 100,
-				'callback' => function ( $sktemplate ) {
+				'callback' => static function ( $sktemplate ) {
 					return new Toolbox( $sktemplate );
 				}
 			],
 			'views' => [
 				'position' => 120,
-				'callback' => function ( $sktemplate ) {
+				'callback' => static function ( $sktemplate ) {
 					return new Views( $sktemplate );
 				}
 			]

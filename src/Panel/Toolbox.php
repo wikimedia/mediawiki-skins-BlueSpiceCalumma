@@ -48,7 +48,7 @@ class Toolbox extends StandardSkinDataLinkList {
 			unset( $toolbox[$key] );
 			$sorter++;
 		}
-		uksort( $toolbox, function ( $a, $b ) use ( $sortKeys ) {
+		uksort( $toolbox, static function ( $a, $b ) use ( $sortKeys ) {
 			if ( $sortKeys[$a] === $sortKeys[$b] ) {
 				return 0;
 			}
