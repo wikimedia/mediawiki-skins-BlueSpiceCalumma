@@ -23,7 +23,8 @@ class OldVersion extends AlertProviderBase {
 	public function getHTML() {
 		$this->initOldId();
 
-		if ( $this->isOldVersion() ) {
+		$isBadTitle = $this->skin->getTitle()->getArticleID() === 0;
+		if ( $this->isOldVersion() && !$isBadTitle ) {
 			$message = Message::newFromKey( 'bs-calumma-alert-oldpage' );
 			$message->params( $this->skin->getTitle()->getArticleID() );
 
