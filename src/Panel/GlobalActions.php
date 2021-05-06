@@ -52,7 +52,7 @@ class GlobalActions extends BasePanel {
 			'bs-sitenav-globalactions-section-globalactions' => $globalActions
 		];
 
-		if ( $this->skintemplate->getSkin()->getUser()->isLoggedIn() ) {
+		if ( $this->skintemplate->getSkin()->getUser()->isRegistered() ) {
 			$management = $this->sortLinksAlphabetically(
 					$this->skintemplate->get( SkinData::ADMIN_LINKS )
 				);

@@ -24,7 +24,7 @@ class UserButton extends TemplateComponent {
 	 */
 	protected function getTemplateArgs() {
 		$args = parent::getTemplateArgs();
-		if ( $this->getSkin()->getUser()->isLoggedIn() ) {
+		if ( $this->getSkin()->getUser()->isRegistered() ) {
 			$args['user'] = $this->getUserButton();
 		} else {
 			$args['anon'] = $this->getLoginButton();
