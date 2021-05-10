@@ -43,7 +43,7 @@ class MobileNotificationsButton extends \Skins\Chameleon\Components\Structure {
 	 * @return bool
 	 */
 	protected function skipRendering() {
-		if ( !$this->getSkin()->getUser()->isLoggedIn() ) {
+		if ( !$this->getSkin()->getUser()->isRegistered() ) {
 			return true;
 		}
 		// TODO: This should either be provided by BlueSpiceEchoConnector or there

@@ -26,7 +26,7 @@ class UserSidebar extends BasePanel {
 	 */
 	public function isEmpty() {
 		$user = $this->skintemplate->getSkin()->getUser();
-		if ( !$user->isLoggedIn() ) {
+		if ( !$user->isRegistered() ) {
 			return true;
 		}
 		return false;
@@ -38,7 +38,7 @@ class UserSidebar extends BasePanel {
 	 */
 	public function getBody() {
 		$user = $this->skintemplate->getSkin()->getUser();
-		if ( !$user->isLoggedIn() ) {
+		if ( !$user->isRegistered() ) {
 			return '';
 		}
 

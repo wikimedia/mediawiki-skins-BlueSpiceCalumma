@@ -36,7 +36,7 @@ class MobileUserContainer extends BasePanel {
 		$html =
 			'<div class="bs-mobile-user-button dropdown calumma-mobile-visible calumma-tablet-visible">';
 
-		if ( $template->getSkin()->getUser()->isLoggedIn() ) {
+		if ( $template->getSkin()->getUser()->isRegistered() ) {
 			$imageUrlBuilder = MediaWikiServices::getInstance()->getService(
 				'BSDynamicFileDispatcherUrlBuilder'
 			);
