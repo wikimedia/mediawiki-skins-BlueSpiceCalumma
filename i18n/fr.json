@@ -127,5 +127,7 @@
 	"bs-calumma-navigation-toggle-tooltip-right-close": "Fermer le menu de droite",
 	"bs-calumma-pageinfosentence-item-separator-greater-two": ",",
 	"bs-calumma-purged-successfully": "Le cache de la page a été effacé",
-	"bs-calumma-purge-failed": "Une erreur s’est produite lors de l’effacement du cache de la page"
+	"bs-calumma-purge-failed": "Une erreur s’est produite lors de l’effacement du cache de la page",
+	"bs-calumma-pref-collapse-custommenu-header": "Masquer automatiquement le menu ou entête personnalisé",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Cache par défaut le menu personnalisé ajouté en haut. Les utilisateurs peuvent ouvrir le menu en utilisant le bouton de bascule."
 }

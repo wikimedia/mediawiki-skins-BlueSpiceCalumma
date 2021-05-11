@@ -4,6 +4,7 @@
 			"BaRaN6161 TURK",
 			"Captantrips",
 			"Hedda",
+			"Joseph",
 			"MuratTheTurkish",
 			"Sayginer",
 			"Sucsuzz"
@@ -123,5 +124,7 @@
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Sağ menüyü aç",
 	"bs-calumma-navigation-toggle-tooltip-right-close": "Sağ menüyü kapat",
 	"bs-calumma-purged-successfully": "Sayfa önbelleği temizlendi",
-	"bs-calumma-purge-failed": "Sayfanın önbelleğini temizlerken bir hata oluştu"
+	"bs-calumma-purge-failed": "Sayfanın önbelleğini temizlerken bir hata oluştu",
+	"bs-calumma-pref-collapse-custommenu-header": "ÖzelMenü/Başlığı kendiliğinden gizle",
+	"bs-calumma-pref-collapse-custommenu-header-help": "En üstteki ek özel menüyü varsayılan olarak gizler. Kullanıcılar aç/kapa düğmesini kullanarak menüyü açabilir."
 }

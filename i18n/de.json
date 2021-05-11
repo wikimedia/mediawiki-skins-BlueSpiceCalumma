@@ -129,5 +129,7 @@
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Rechtes Menü öffnen",
 	"bs-calumma-navigation-toggle-tooltip-right-close": "Rechtes Menü schließen",
 	"bs-calumma-purged-successfully": "Der Seitencache wurde gelöscht",
-	"bs-calumma-purge-failed": "Beim Leeren des Seitencaches ist ein Fehler aufgetreten"
+	"bs-calumma-purge-failed": "Beim Leeren des Seitencaches ist ein Fehler aufgetreten",
+	"bs-calumma-pref-collapse-custommenu-header": "Topmenü automatisch ausblenden",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Blendet das zusätzliche Topmenü automatisch aus. Die Nutzer können es über einen Toggle-Knopf öffnen."
 }

@@ -119,5 +119,7 @@
 	"bs-calumma-navigation-toggle-tooltip-right-open": "開啟右側選單",
 	"bs-calumma-navigation-toggle-tooltip-right-close": "關閉右側選單",
 	"bs-calumma-purged-successfully": "頁面的快取已被清除",
-	"bs-calumma-purge-failed": "清除頁面快取時出現錯誤"
+	"bs-calumma-purge-failed": "清除頁面快取時出現錯誤",
+	"bs-calumma-pref-collapse-custommenu-header": "自動隱藏自定義選單/標頭",
+	"bs-calumma-pref-collapse-custommenu-header-help": "在預設情況下會隱藏在頂端的補充自定義選單。使用者可以用切換鈕來開啟選單。"
 }

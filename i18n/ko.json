@@ -102,5 +102,6 @@
 	"bs-calumma-navigation-toggle-tooltip-left-close": "왼쪽 메뉴 닫기",
 	"bs-calumma-navigation-toggle-tooltip-right-open": "오른쪽 메뉴 열기",
 	"bs-calumma-navigation-toggle-tooltip-right-close": "오른쪽 메뉴 닫기",
-	"bs-calumma-purged-successfully": "문서 캐시를 새로 고쳤습니다"
+	"bs-calumma-purged-successfully": "문서 캐시를 새로 고쳤습니다",
+	"bs-calumma-pref-collapse-custommenu-header": "사용자 지정 메뉴/헤더를 자동으로 숨기기"
 }

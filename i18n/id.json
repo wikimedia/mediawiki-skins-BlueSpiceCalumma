@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"AJBot2",
 			"Bangjapra",
 			"Daud I.F. Argana",
 			"Kenrick95",
@@ -121,5 +122,6 @@
 	"bs-calumma-context-discussionbutton-tooltip": "Tampilkan halaman pembicaraan yang sekarang",
 	"bs-calumma-search-button-label": "Cari",
 	"bs-calumma-purged-successfully": "Singgahan halaman telah dihapus",
-	"bs-calumma-purge-failed": "Terjadi galat ketika menghapus singgahan halaman"
+	"bs-calumma-purge-failed": "Terjadi galat ketika menghapus singgahan halaman",
+	"bs-calumma-pref-collapse-custommenu-header": "Sembunyikan CustomMenu secara otomatis/Header"
 }

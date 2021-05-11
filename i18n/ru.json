@@ -10,6 +10,7 @@
 			"Nk88",
 			"Okras",
 			"Pacha Tchernof",
+			"Urfiner",
 			"Vlad5250"
 		]
 	},
@@ -122,5 +123,8 @@
 	"bs-calumma-full-screen-button-tooltip": "Полноэкранный/Нормальный режим",
 	"bs-calumma-notification-logged-in": "Вы вошли в систему",
 	"bs-calumma-purged-successfully": "Кэш страницы очищен",
-	"bs-calumma-purge-failed": "Произошла ошибка при очистке кэша страницы"
+	"bs-calumma-purge-failed": "Произошла ошибка при очистке кэша страницы",
+	"bs-calumma-page-last-edit-by-system-user": "системный пользователь",
+	"bs-calumma-alert-oldpage": "Вы просматриваете старую версию страницы. [[Special:Redirect/page/$1|Вернуться к последней версии]].",
+	"bs-calumma-assoclink-history-tooltip": "Показать историю правок страницы \"$1\""
 }
