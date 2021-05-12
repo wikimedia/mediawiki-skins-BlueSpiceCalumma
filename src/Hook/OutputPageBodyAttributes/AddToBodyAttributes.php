@@ -101,7 +101,6 @@ class AddToBodyAttributes extends OutputPageBodyAttributes {
 	protected function checkToggleState( $cookie_sticky, $cookie_state, $nav ) {
 		$option = 'bs-calumma-settings-' . $nav . '-main-collapse';
 		$userSetting = $this->skin->getUser()->getOption( $option, null );
-		$userIsLoggedIn = $this->skin->getUser()->isRegistered();
 
 		$userSettingClass = '';
 		if ( $userSetting === null || (bool)$userSetting === true ) {
@@ -114,9 +113,7 @@ class AddToBodyAttributes extends OutputPageBodyAttributes {
 		}
 
 		$class = '';
-		if ( !$userIsLoggedIn ) {
-			$class = $nav . '-main-collapse ';
-		} elseif ( $userSettingClass !== '' ) {
+		if ( $userSettingClass !== '' ) {
 			$class = $userSettingClass;
 		} else {
 			$class = $cookieStateClass;
@@ -124,5 +121,4 @@ class AddToBodyAttributes extends OutputPageBodyAttributes {
 
 		return ' ' . $class . ' ';
 	}
-
 }
