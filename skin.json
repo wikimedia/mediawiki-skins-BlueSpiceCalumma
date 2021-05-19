@@ -111,6 +111,7 @@
 				"stylesheets/fixes/tablet.specialpages.less": { "media": "all and ( min-width: 721px ) and ( max-width: 1000px )" },
 				"stylesheets/fixes/desktop.specialpages.less": { "media": "all and ( min-width: 1001px )" },
 				"stylesheets/fixes/IEFixes.css": {},
+				"stylesheets/fixes/bootstrap.less": {},
 				"stylesheets/icons.less": {},
 				"stylesheets/common.less": {},
 				"stylesheets/mobile.less": { "media": "all and ( max-width: 720px )" },
