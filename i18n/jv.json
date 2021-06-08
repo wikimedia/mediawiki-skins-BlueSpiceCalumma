@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bennylin",
 			"Diki Ananta",
 			"NoiX180",
 			"Sumbukompor"
@@ -43,7 +44,7 @@
 	"bs-sitetools-pageactions": "Laku kaca",
 	"bs-sitetools-default": "Liyané",
 	"bs-sitetools-edit": "Besut",
-	"bs-sitetools-categories": "Kategori",
+	"bs-sitetools-categories": "Katégori",
 	"bs-calumma-recentchanges-title": "Owah-owahan anyar",
 	"bs-calumma-recentchanges-column-header-title": "Owah-owahan anyar",
 	"bs-calumma-recentchanges-history": "Sajarah",

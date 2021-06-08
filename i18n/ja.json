@@ -8,6 +8,7 @@
 			"Otokoume",
 			"Shirayuki",
 			"Suchichi02",
+			"UsagiNeko",
 			"Yusuke1109",
 			"珍庵"
 		]
@@ -125,5 +126,6 @@
 	"bs-calumma-context-discussionbutton-tooltip": "現在のトークページを表示",
 	"bs-calumma-search-button-label": "検索",
 	"bs-calumma-purged-successfully": "ページのキャッシュが消去されました",
-	"bs-calumma-purge-failed": "ページのキャッシュ消去中にエラーが発生しました"
+	"bs-calumma-purge-failed": "ページのキャッシュ消去中にエラーが発生しました",
+	"bs-calumma-pref-collapse-custommenu-header": "カスタムメニュー・ヘッダーを自動的に隠す"
 }
