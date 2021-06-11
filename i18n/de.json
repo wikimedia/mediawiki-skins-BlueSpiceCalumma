@@ -121,5 +121,13 @@
 	"bs-calumma-context-pagebutton-tooltip": "Zeige die aktuelle Seite",
 	"bs-calumma-context-discussionbutton-label": "Diskussion",
 	"bs-calumma-context-discussionbutton-tooltip": "Zeige die aktuelle Diskussionsseite",
-	"bs-calumma-search-button-label": "Suchen"
+	"bs-calumma-search-button-label": "Suchen",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Linkes Menü öffnen",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Linkes Menü schließen",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Rechtes Menü öffnen",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Rechtes Menü schließen",
+	"bs-calumma-purged-successfully": "Der Seitencache wurde gelöscht",
+	"bs-calumma-purge-failed": "Beim Leeren des Seitencaches ist ein Fehler aufgetreten",
+	"bs-calumma-pref-collapse-custommenu-header": "Topmenü automatisch ausblenden",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Blendet das zusätzliche Topmenü automatisch aus. Die Nutzer können es über einen Toggle-Knopf öffnen."
 }

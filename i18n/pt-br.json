@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
 			"Jaideraf",
 			"Luk3"
 		]
@@ -120,5 +121,6 @@
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Abrir o menu direito",
 	"bs-calumma-navigation-toggle-tooltip-right-close": "Fechar menu direito",
 	"bs-calumma-purged-successfully": "O cache da página foi limpo",
-	"bs-calumma-purge-failed": "Um erro ocorreu ao limpar o cache da página"
+	"bs-calumma-purge-failed": "Um erro ocorreu ao limpar o cache da página",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Oculta o menu personalizado suplementar na parte superior por padrão. Os usuários podem abrir o menu usando o botão de alternância."
 }

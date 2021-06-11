@@ -1,6 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
+			"Giannaras99",
+			"NikosLikomitros",
 			"Nikosgranturismogt"
 		]
 	},
@@ -32,7 +34,7 @@
 	"bs-sitetools-categories": "Κατηγορίες",
 	"bs-calumma-recentchanges-history": "Ιστορικό",
 	"bs-calumma-recentchanges-diff": "Διαφορά",
-	"bs-to-top-desc": "Πήδηση στην κορυφή της σελίδας",
+	"bs-to-top-desc": "Μετάβαση στην κορυφή",
 	"bs-calumma-pagetool-history-tooltip": "Ιστορικό σελίδας",
 	"bs-calumma-pagetool-talk-tooltip": "Συζήτηση",
 	"bs-calumma-pagetool-view-tooltip": "Προβολή",

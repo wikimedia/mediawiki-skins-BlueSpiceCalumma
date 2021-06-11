@@ -4,11 +4,13 @@
 			"Cronolio",
 			"Diman Russkov",
 			"Facenapalm",
+			"Helpau",
 			"Katunchik",
 			"Megakott",
 			"Nk88",
 			"Okras",
 			"Pacha Tchernof",
+			"Urfiner",
 			"Vlad5250"
 		]
 	},
@@ -112,5 +114,17 @@
 	"bs-calumma-search-button-label": "Поиск",
 	"bs-calumma-page-last-edit-text": "Последняя правка от $2, $1",
 	"bs-calumma-purged-successfully": "Кэш страницы очищен",
-	"bs-calumma-purge-failed": "Произошла ошибка при очистке кэша страницы"
+	"bs-calumma-purge-failed": "Произошла ошибка при очистке кэша страницы",
+	"notifications-badge-counter-gt-100": "99+",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Открыть левое меню",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Закрыть левое меню",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Открыть правое меню",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Закрыть правое меню",
+	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Подстраница|Подстраницы}} «$2»",
+	"bs-calumma-breadcrumbs-subpages-title": "$1 {{PLURAL:$1|подстраница|подстраницы|подстраниц}} «$2»",
+	"bs-calumma-pageinfosentence-item-separator-greater-two": ",",
+	"bs-calumma-page-last-edit-by-system-user": "системный пользователь",
+	"bs-calumma-notification-logged-in": "Вы вошли в систему",
+	"bs-calumma-alert-oldpage": "Вы просматриваете старую версию страницы. [[Special:Redirect/page/$1|Вернуться к последней версии]].",
+	"bs-calumma-assoclink-history-tooltip": "Показать историю правок страницы \"$1\""
 }

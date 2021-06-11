@@ -3,10 +3,12 @@
 		"authors": [
 			"Aefgh39622",
 			"Kkairri",
+			"LaMagiaaa",
 			"Omotecho",
 			"Otokoume",
 			"Shirayuki",
 			"Suchichi02",
+			"UsagiNeko",
 			"Yusuke1109",
 			"珍庵"
 		]
@@ -87,7 +89,7 @@
 	"bs-calumma-breadcrumbs-subpages": "「$2」の{{PLURAL:$1|下位ページ}}",
 	"bs-calumma-breadcrumbs-subpages-title": "「$2」の {{PLURAL:$1|$1 件の下位ページ}}",
 	"bs-calumma-category-no-categories": "カテゴリが割り当てられていません",
-	"bs-calumma-page-last-edit-text": "最終編集: $1前、$2",
+	"bs-calumma-page-last-edit-text": "最終編集: $1時点、$2さんによる",
 	"bs-calumma-page-watch-title": "「$1」をウォッチ",
 	"bs-calumma-page-watch-text": "ウォッチ",
 	"bs-calumma-page-unwatch-title": "今後「$1」を監視しない",
@@ -108,5 +110,22 @@
 	"bs-calumma-version-pager-next-tooltip": "次の版に切り替える",
 	"bs-calumma-version-pager-info-text": "[[User:$2|$2]]による$1の版",
 	"bs-calumma-assoclink-history-tooltip": "ページ「$1」のリビジョン履歴を見る",
-	"bs-calumma-context-discussionbutton-label": "議論"
+	"bs-calumma-context-discussionbutton-label": "議論",
+	"prefs-bs-calumma": "BlueSpice Calumma 設定",
+	"bs-calumma-pref-toggle-sitetools-main": "ツールメニューを自動的に非表示にする",
+	"bs-sitetools-views": "閲覧数",
+	"bs-sitetools-manage-page": "ページの管理",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "左側のメニューを開く",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "左側のメニューを閉じる",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "右側のメニューを開く",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "右側のメニューを閉じる",
+	"bs-calumma-pageinfo-qm-button-tooltip": "品質管理パネルを開く",
+	"bs-calumma-pageinfosentence-no-item-label": "状態の情報がありません",
+	"bs-calumma-pageinfosentence-no-item-tooltip": "このページについての詳細情報がありません",
+	"bs-calumma-context-pagebutton-label": "ページ",
+	"bs-calumma-context-pagebutton-tooltip": "現在の主題のページを表示",
+	"bs-calumma-context-discussionbutton-tooltip": "現在のトークページを表示",
+	"bs-calumma-purged-successfully": "ページのキャッシュが消去されました",
+	"bs-calumma-purge-failed": "ページのキャッシュ消去中にエラーが発生しました",
+	"bs-calumma-pref-collapse-custommenu-header": "カスタムメニュー・ヘッダーを自動的に隠す"
 }

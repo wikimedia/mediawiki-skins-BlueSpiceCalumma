@@ -66,5 +66,8 @@
 	"bs-calumma-assoclink-history-label": "Historik",
 	"bs-calumma-context-pagebutton-label": "Side",
 	"bs-calumma-context-discussionbutton-label": "Diskussion",
-	"bs-calumma-search-button-label": "Søg"
+	"bs-calumma-search-button-label": "Søg",
+	"bs-calumma-page-watch-title": "Overvåg \"$1\"",
+	"bs-calumma-page-unwatch-title": "Overvåg ikke længere \"$1\"",
+	"bs-calumma-page-last-edit-by-system-user": "systembruger"
 }

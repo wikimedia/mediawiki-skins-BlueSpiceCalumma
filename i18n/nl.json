@@ -110,5 +110,9 @@
 	"bs-calumma-context-pagebutton-label": "Pagina",
 	"bs-calumma-context-discussionbutton-label": "Overleg",
 	"bs-calumma-context-discussionbutton-tooltip": "Toon de huidige overlegpagina",
-	"bs-calumma-search-button-label": "Zoeken"
+	"bs-calumma-search-button-label": "Zoeken",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Linker menu openen",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Linker menu sluiten",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Rechter menu openen",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Rechter menu sluiten"
 }

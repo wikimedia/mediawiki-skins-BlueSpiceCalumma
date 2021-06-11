@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Andrew J.Kurbiko",
+			"Base",
 			"Piramidion",
 			"Vlad5250",
 			"Ата"
@@ -91,7 +92,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Підсторінка|Підсторінки}} «$2»",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|$1 підсторінка|$1 підсторінки|$1 підсторінок}} «$2»",
 	"bs-calumma-category-no-categories": "Нема призначених категорій",
-	"bs-calumma-page-last-edit-text": "Востаннє відредаговано $1 користувачем $2",
+	"bs-calumma-page-last-edit-text": "Востаннє відредаговано $1 {{GENDER:$2|користувачем|користувачкою}} $2",
 	"bs-calumma-page-watch-title": "Спостерігати за «$1»",
 	"bs-calumma-page-watch-text": "Спостерігати",
 	"bs-calumma-page-unwatch-title": "Припинити спостерігати за «$1»",
@@ -115,5 +116,11 @@
 	"bs-calumma-context-pagebutton-tooltip": "Показати поточну основну сторінку",
 	"bs-calumma-context-discussionbutton-label": "Обговорення",
 	"bs-calumma-context-discussionbutton-tooltip": "Показати поточну сторінку обговорення",
-	"bs-calumma-search-button-label": "Шукати"
+	"bs-calumma-search-button-label": "Шукати",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Відкрити ліве меню",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Закрити ліве меню",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Відкрити праве меню",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Закрити праве меню",
+	"bs-calumma-purged-successfully": "Кеш сторінки було очищено",
+	"bs-calumma-purge-failed": "Сталась помилка при очищенні кешу сторінки"
 }

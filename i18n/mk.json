@@ -119,5 +119,7 @@
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Отвори десно мени",
 	"bs-calumma-navigation-toggle-tooltip-right-close": "Затвори десно мени",
 	"bs-calumma-purged-successfully": "Меѓускладот на страницата е исчистен",
-	"bs-calumma-purge-failed": "Се појави грешка при чистењето на меѓускладот на страницата"
+	"bs-calumma-purge-failed": "Се појави грешка при чистењето на меѓускладот на страницата",
+	"bs-calumma-pref-collapse-custommenu-header": "Автоматски скриј прилагодено мени/заглавие",
+	"bs-calumma-pref-collapse-custommenu-header-help": "По основно го скрива дополнителното прилагодено мени најгоре. КОрисниците можат да го отворат менито со копчето за префрлање."
 }

@@ -116,5 +116,11 @@
 	"bs-calumma-navigation-toggle-tooltip-left-open": "Iapre 'u menù de sinistre",
 	"bs-calumma-navigation-toggle-tooltip-left-close": "Achiude 'u menù de sinistre",
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Iapre 'u menù de destre",
-	"bs-calumma-navigation-toggle-tooltip-right-close": "Achiude 'u menù de destre"
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Achiude 'u menù de destre",
+	"notifications-badge-counter-gt-100": "99+",
+	"bs-calumma-pageinfosentence-item-separator-greater-two": ",",
+	"bs-calumma-purged-successfully": "'A cache d'à pàgene ha state sdevacate",
+	"bs-calumma-purge-failed": "Ha assute 'n'errore mendre ca se sdevacave 'a cache d'a pàgene",
+	"bs-calumma-pref-collapse-custommenu-header": "Scunne automatecamende CustomMenu/Header",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Scunne le menù personalizzate supplemendare jndr'à barre de sus. Le utinde ponne aprè 'u menù ausanne 'u buttone iapre e chiude."
 }

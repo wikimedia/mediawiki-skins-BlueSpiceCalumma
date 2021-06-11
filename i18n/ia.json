@@ -88,7 +88,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Subpagina|Subpaginas}} de \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Subpagina|$1 subpaginas}} de \"$2\"",
 	"bs-calumma-category-no-categories": "Nulle categoria assignate",
-	"bs-calumma-page-last-edit-text": "Ultime modification $1 retro per $2",
+	"bs-calumma-page-last-edit-text": "Ultime modification $1 per $2",
 	"bs-calumma-page-watch-title": "Observar \"$1\"",
 	"bs-calumma-page-watch-text": "Observar",
 	"bs-calumma-page-unwatch-title": "Non plus observar \"$1\"",
@@ -112,5 +112,13 @@
 	"bs-calumma-context-pagebutton-tooltip": "Monstrar le pagina de subjecto actual",
 	"bs-calumma-context-discussionbutton-label": "Discussion",
 	"bs-calumma-context-discussionbutton-tooltip": "Monstrar le pagina de discussion actual",
-	"bs-calumma-search-button-label": "Cercar"
+	"bs-calumma-search-button-label": "Cercar",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Aperir le menu sinistre",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Clauder le menu sinistre",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Aperir le menu dextre",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Clauder le menu dextre",
+	"bs-calumma-purged-successfully": "Le cache del pagina ha essite radite",
+	"bs-calumma-purge-failed": "Un error ha occurrite durante le radimento del cache del pagina",
+	"bs-calumma-pref-collapse-custommenu-header": "Automaticamente celar CustomMenu/Header",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Cela per predefinition le menu supplementari personalisate in le alto. Usatores pote aperir le menu usante le button Alternar."
 }
