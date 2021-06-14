@@ -157,14 +157,14 @@ class BreadCrumb extends PageHeader {
 			// e.g. "Help:Some/Page/With/Subpage"
 			$suffixTitle = Title::newFromText( $titleParts[1] );
 			// e.g. "Special:Review/WikiSysop"
-			if ( $suffixTitle->exists() ) {
+			if ( $suffixTitle instanceof Title && $suffixTitle->exists() ) {
 				$newTitle = $suffixTitle;
 			}
 		}
 
 		// e.g. Special:Browse/:Main-5FPage
 		// TODO: This should be in `BlueSpiceSMWConnector`
-		if ( $newTitle && class_exists( 'SMW\Encoder' ) ) {
+		if ( $newTitle instanceof Title && class_exists( 'SMW\Encoder' ) ) {
 			$newTitle = Title::newFromText(
 				\SMW\Encoder::decode( $newTitle->getPrefixedText() )
 			);
