@@ -16,6 +16,7 @@ $( document ).ready( function() {
 			}
 	}
 	$('table.hw-responsive-data-table').wrap('<div class="hw-responsive-table-scrollable"></div>');
+	$('table.hw-responsive-gallery-table').wrap('<div class="hw-responsive-table-scrollable"></div>');
 
 	var $docimages = $( '#content img' );
 
