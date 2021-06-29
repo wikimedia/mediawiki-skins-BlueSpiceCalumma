@@ -107,6 +107,7 @@
 	"ResourceModules": {
 		"skin.bluespicecalumma.styles": {
 			"styles": {
+				"stylesheets/fixes/mobile-xxs.less": { "media": "all and ( max-width: 360px )" },
 				"stylesheets/fixes/mobile.less": { "media": "all and ( max-width: 720px )" },
 				"stylesheets/fixes/tablet.less": { "media": "all and ( min-width: 721px ) and ( max-width: 1000px )" },
 				"stylesheets/fixes/desktop.less": { "media": "all and ( min-width: 1001px )" },
