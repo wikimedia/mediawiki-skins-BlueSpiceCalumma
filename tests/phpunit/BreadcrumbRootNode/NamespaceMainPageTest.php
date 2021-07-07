@@ -62,7 +62,7 @@ class NamespaceMainPageTest extends MediaWikiTestCase {
 		$nsText = Message::newFromKey( 'bs-ns_main' )->text();
 
 		$this->assertNotEmpty( $html, 'Should not be empty' );
-		$this->assertContains( $nsText, $html, 'Should have namespace prefix' );
+		$this->assertStringContainsString( $nsText, $html, 'Should have namespace prefix' );
 	}
 
 	/**
