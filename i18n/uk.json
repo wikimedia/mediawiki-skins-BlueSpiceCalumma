@@ -122,5 +122,7 @@
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Відкрити праве меню",
 	"bs-calumma-navigation-toggle-tooltip-right-close": "Закрити праве меню",
 	"bs-calumma-purged-successfully": "Кеш сторінки було очищено",
-	"bs-calumma-purge-failed": "Сталась помилка при очищенні кешу сторінки"
+	"bs-calumma-purge-failed": "Сталась помилка при очищенні кешу сторінки",
+	"bs-calumma-pref-collapse-custommenu-header": "Автоматично приховати CustomMenu/Header",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Приховує додаткове користувацьке меню угорі за замовчуванням. Користувачі можуть відкрити меню з допомогою кнопки перемикача."
 }
