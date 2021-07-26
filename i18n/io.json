@@ -10,5 +10,6 @@
 	"bs-calumma-alert-oldpage": "To esas anciena versiono de ca pagino. [[Special:Redirect/page/$1|Retroirar a la nuna versiono]].",
 	"bs-calumma-search-button-label": "Serchar",
 	"bs-calumma-pagetool-history-tooltip": "Pagino-versionaro",
-	"bs-calumma-pageinfosentence-no-item-tooltip": "Nula informo pri la stando di ca pagino"
+	"bs-calumma-pageinfosentence-no-item-tooltip": "Nula informo pri la stando di ca pagino",
+	"bs-calumma-breadcrumbs-pages-title": "Vu nun vidas \"$1\""
 }
