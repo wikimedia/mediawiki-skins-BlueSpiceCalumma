@@ -10,5 +10,6 @@
 	"bs-calumma-search-button-label": "Serchar",
 	"bs-calumma-breadcrumbs-pages": "Vu esas hike",
 	"bs-calumma-pageinfosentence-no-item-tooltip": "Nula informo pri la stando di ca pagino",
-	"bs-calumma-pagetool-history-tooltip": "Pagino-versionaro"
+	"bs-calumma-pagetool-history-tooltip": "Pagino-versionaro",
+	"bs-calumma-breadcrumbs-pages-title": "Vu nun vidas \"$1\""
 }
