@@ -11,8 +11,12 @@
 			"Siebrand"
 		]
 	},
+	"bluespicecalumma-desc": "BlueSpice-uiterlijk",
+	"prefs-bs-calumma": "Instellingen van BlueSpice Calumma",
 	"bs-calumma-pref-toggle-navigaiton-main": "Verberg automatisch het hoofdmenu",
 	"bs-calumma-pref-toggle-sitetools-main": "Verberg automatisch het hulpmiddelenmenu",
+	"bs-action-edit-view-title": "Bewerking beëindigen",
+	"bs-action-edit-view-text": "Bewerking beëindigen",
 	"bs-action-edit-edit-title": "Brontekst bewerken",
 	"bs-action-edit-ve-edit-title": "Bewerken",
 	"bs-action-new-section-text": "Nieuw kopje",
@@ -40,6 +44,8 @@
 	"bs-sitenav-navigation-title": "Hoofdnavigatie",
 	"bs-sitenav-navigation-section-mobileusercontainer": "Gebruiker",
 	"bs-sitenav-navigation-section-mediawikisidebar": "Wiki",
+	"bs-sitenav-globalactions-title": "Globale acties",
+	"bs-sitenav-globalactions-section-globalactions": "Globale acties",
 	"bs-sitenav-globalactions-section-management": "Beheer",
 	"bs-sitenav-usersidebar-title": "Persoonlijke navigatie",
 	"bs-sitetools-pageinfo-title": "Informatie",
@@ -113,7 +119,12 @@
 	"bs-calumma-assoclink-history-label": "Geschiedenis",
 	"bs-calumma-assoclink-history-tooltip": "Toon de versiegeschiedenis van de pagina \"$1\"",
 	"bs-calumma-context-pagebutton-label": "Pagina",
+	"bs-calumma-context-pagebutton-tooltip": "De huidige onderwerppagina tonen",
 	"bs-calumma-context-discussionbutton-label": "Overleg",
 	"bs-calumma-context-discussionbutton-tooltip": "Toon de huidige overlegpagina",
-	"bs-calumma-search-button-label": "Zoeken"
+	"bs-calumma-search-button-label": "Zoeken",
+	"bs-calumma-purged-successfully": "De paginacache is gewist",
+	"bs-calumma-purge-failed": "Er is een fout opgetreden tijdens het wissen van de cache van de pagina",
+	"bs-calumma-pref-collapse-custommenu-header": "CustomMenu/Header automatisch verbergen",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Hiermee wordt het extra menu bovenaan verborgen. Gebruikers kunnen het menu dan openen met de schakelknop."
 }
