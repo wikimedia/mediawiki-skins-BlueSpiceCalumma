@@ -115,5 +115,16 @@
 	"bs-calumma-navigation-toggle-tooltip-left-open": "Linker menu openen",
 	"bs-calumma-navigation-toggle-tooltip-left-close": "Linker menu sluiten",
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Rechter menu openen",
-	"bs-calumma-navigation-toggle-tooltip-right-close": "Rechter menu sluiten"
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Rechter menu sluiten",
+	"bluespicecalumma-desc": "BlueSpice-uiterlijk",
+	"prefs-bs-calumma": "Instellingen van BlueSpice Calumma",
+	"bs-action-edit-view-title": "Bewerking beëindigen",
+	"bs-action-edit-view-text": "Bewerking beëindigen",
+	"bs-sitenav-globalactions-title": "Globale acties",
+	"bs-sitenav-globalactions-section-globalactions": "Globale acties",
+	"bs-calumma-context-pagebutton-tooltip": "De huidige onderwerppagina tonen",
+	"bs-calumma-purged-successfully": "De paginacache is gewist",
+	"bs-calumma-purge-failed": "Er is een fout opgetreden tijdens het wissen van de cache van de pagina",
+	"bs-calumma-pref-collapse-custommenu-header": "CustomMenu/Header automatisch verbergen",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Hiermee wordt het extra menu bovenaan verborgen. Gebruikers kunnen het menu dan openen met de schakelknop."
 }

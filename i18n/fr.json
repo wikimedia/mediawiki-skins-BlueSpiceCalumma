@@ -3,6 +3,7 @@
 		"authors": [
 			"Djiboun",
 			"Gomoko",
+			"McDutchie",
 			"Tartare",
 			"Thibaut120094",
 			"Urhixidur",
@@ -16,8 +17,8 @@
 	"prefs-bs-calumma": "Paramètres de BlueSpice Calumma",
 	"bs-calumma-pref-toggle-navigaiton-main": "Cacher automatiquement le menu principal",
 	"bs-calumma-pref-toggle-sitetools-main": "Masquer automatiquement le menu des outils",
-	"bs-action-edit-view-title": "Modification rapide",
-	"bs-action-edit-view-text": "Modification rapide",
+	"bs-action-edit-view-title": "Quitter la modification",
+	"bs-action-edit-view-text": "Quitter la modification",
 	"bs-action-edit-edit-title": "Modifier le wikicode",
 	"bs-action-edit-ve-edit-title": "Modifier",
 	"bs-action-new-section-text": "Nouvelle section",
