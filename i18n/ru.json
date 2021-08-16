@@ -106,6 +106,7 @@
 	"bs-calumma-page-last-edit-text": "Последняя правка от $2, $1",
 	"bs-calumma-page-watch-title": "Смотреть \"$1\"",
 	"bs-calumma-page-watch-text": "Следить",
+	"bs-calumma-page-unwatch-title": "Больше не отслеживать «$1»",
 	"bs-calumma-page-unwatch-text": "Не следить",
 	"bs-calumma-pageinfosentence-no-item-label": "Нет информации о статусе",
 	"bs-calumma-pageinfosentence-no-item-tooltip": "Нет информации о статусе для этой страницы",
@@ -126,5 +127,6 @@
 	"bs-calumma-context-discussionbutton-tooltip": "Показать текущую страницу обсуждения",
 	"bs-calumma-search-button-label": "Поиск",
 	"bs-calumma-purged-successfully": "Кэш страницы очищен",
-	"bs-calumma-purge-failed": "Произошла ошибка при очистке кэша страницы"
+	"bs-calumma-purge-failed": "Произошла ошибка при очистке кэша страницы",
+	"bs-calumma-pref-collapse-custommenu-header": "Автоматически скрывать CustomMenu/Header"
 }
