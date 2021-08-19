@@ -98,15 +98,19 @@
 		.bs-calumma-sidebar-edit-link {
 			text-align: right;
 			padding: 0 16px;
-			display: none;
+			display: block;
+			height: 0;
+			overflow: hidden;
 
 			span {
 				color: @navigation-tab-color;
 			}
 
-			&:hover {
+			&:hover,
+			&:focus {
 				background-color: transparent;
 				text-decoration: none;
+				height: inherit;
 
 				span {
 					background-color: transparent;
