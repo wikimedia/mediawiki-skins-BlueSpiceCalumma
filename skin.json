@@ -226,8 +226,7 @@
 		},
 		"skin.bluespicecalumma.dynamicoffcanvas": {
 			"scripts": [
-				"js/DynamicGraphicalList.js",
-				"js/GraphicalList.js"
+				"js/DynamicGraphicalList.js"
 			],
 			"messages": [
 				"bs-graphicallist-action-close",
