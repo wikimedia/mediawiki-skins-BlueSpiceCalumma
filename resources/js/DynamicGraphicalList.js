@@ -23,7 +23,7 @@
 			.appendTo( this.$inner );
 		this.$titlebox = $('<div>')
 			.appendTo( this.$header );
-		this.$title = $('<h1>')
+		this.$title = $('<h1 tabindex=0>')
 			.addClass( 'dynamic-graphical-list-title' )
 			.appendTo( this.$titlebox );
 		this.$intro = $('<div>')
@@ -66,6 +66,8 @@
 		this.$element.addClass( 'dynamic-graphical-list-visible' );
 		this.$element.parents('.dynamic-graphical-list-link-wrapper').first().addClass( 'dynamic-graphical-list-visible' );
 
+		$title = this.$title.focus();
+
 		if( this.isRendered ) {
 			return;
 		}
@@ -89,7 +91,11 @@
 				{
 					'class': 'icon-' + action.icon,
 					'data-target': 'graphical-list-action-' + action.action,
-					'title': action.text
+					'title': action.text,
+					'aria-label': action.text,
+					'tabindex': '0',
+					'role': 'button',
+					'accesskey': "Esc"
 				}
 			);
 		}

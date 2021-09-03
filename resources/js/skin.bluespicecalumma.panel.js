@@ -1,7 +1,6 @@
 (function( mw, $, d, bs, undefined ) {
 	$(d).on( 'click', '.bs-panel a.title, .panel a.title', function() {
 		var $title = $(this);
-		var $panel = $title.parent();
 		var collapeState = false;
 		var collapsingPanel = $title.attr( 'aria-controls' );
 
@@ -14,7 +13,8 @@
 
 
 (function( mw, $, d, bs, undefined ) {
-	$(d).on( 'click', '.bs-panel a.title', function() {
+	$(d).on( 'click', '.bs-panel a.title', function( e ) {
+		e.preventDefault();
 		var $title = $(this);
 		var $panel = $title.parents( '.bs-panel' );
 
@@ -55,6 +55,8 @@
 			},
 			direction: direction
 		}).toggle();
+
+		return false;
 	}
 
 	function _calcFlyoutDirection( $panel ) {
