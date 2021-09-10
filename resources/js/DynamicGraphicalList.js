@@ -95,7 +95,7 @@
 					'aria-label': action.text,
 					'tabindex': '0',
 					'role': 'button',
-					'accesskey': "Esc"
+					'href': ''
 				}
 			);
 		}
