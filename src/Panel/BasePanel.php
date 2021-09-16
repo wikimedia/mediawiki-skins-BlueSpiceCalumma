@@ -109,9 +109,9 @@ abstract class BasePanel implements IPanel {
 		$cookieHandler = new CookieHandler( $this->skintemplate->getSkin()->getRequest() );
 		$cookie = $cookieHandler->getCookie( $cookiePrefix . $htmlId );
 
-		if ( $cookie === 'false' ) {
+		if ( ( $cookie === 'false' ) || ( $cookie === false ) ) {
 			return false;
-		} elseif ( $cookie === 'true' ) {
+		} elseif ( ( $cookie === 'true' ) || ( $cookie === true ) ) {
 			return true;
 		} else {
 			$states = $this->skintemplate->getSkin()->getConfig()->get(
