@@ -283,9 +283,14 @@ class PageHeader extends TemplateComponent {
 		// level, as tracking categories do not have any metadata to
 		// identify them.
 		if ( !$showHiddenCategories ) {
-			$trackingCategories = new \TrackingCategories(
-				MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'main' )
-			);
+			if ( method_exists( MediaWikiServices::class, 'getTrackingCategories' ) ) {
+				// MW 1.38+
+				$trackingCategories = MediaWikiServices::getInstance()->getTrackingCategories();
+			} else {
+				$trackingCategories = new \TrackingCategories(
+					MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'main' )
+				);
+			}
 			$trackingCategoryList = $trackingCategories->getTrackingCategories();
 			foreach ( $trackingCategoryList as $category ) {
 				$trackingCategoryNames[] = $category['cats'][0]->mTextform;
