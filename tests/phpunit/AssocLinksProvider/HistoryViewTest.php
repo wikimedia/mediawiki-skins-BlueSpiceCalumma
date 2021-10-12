@@ -6,7 +6,7 @@ use BlueSpice\Calumma\AssocLinksProvider\HistoryView;
 use BlueSpice\Html\Descriptor\ILink;
 use HashConfig;
 use IContextSource;
-use MediaWikiTestCase;
+use MediaWikiIntegrationTestCase;
 use Title;
 use WebRequest;
 
@@ -14,7 +14,7 @@ use WebRequest;
  * @group BlueSpice
  * @group BlueSpiceCalumma
  */
-class HistoryViewTest extends MediaWikiTestCase {
+class HistoryViewTest extends MediaWikiIntegrationTestCase {
 
 	/**
 	 * @covers BlueSpice\Calumma\AssocLinksProvider\HistoryView::factory

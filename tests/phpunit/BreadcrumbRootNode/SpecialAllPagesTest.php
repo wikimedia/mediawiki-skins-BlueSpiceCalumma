@@ -5,14 +5,14 @@ namespace BlueSpice\Calumma\Tests\BreadcrumbRootNode;
 use BlueSpice\Calumma\BreadcrumbRootNode\SpecialAllPages;
 use BlueSpice\Calumma\IBreadcrumbRootNode;
 use HashConfig;
-use MediaWikiTestCase;
+use MediaWikiIntegrationTestCase;
 use Title;
 
 /**
  * @group BlueSpice
  * @group BlueSpiceCalumma
  */
-class SpecialAllPagesTest extends MediaWikiTestCase {
+class SpecialAllPagesTest extends MediaWikiIntegrationTestCase {
 
 	/**
 	 * @covers \BlueSpice\Calumma\BreadcrumbRootNode\SpecialAllPages::factory

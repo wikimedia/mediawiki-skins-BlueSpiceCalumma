@@ -5,7 +5,7 @@ namespace BlueSpice\Calumma\Tests\BreadcrumbRootNode;
 use BlueSpice\Calumma\BreadcrumbRootNode\NamespaceMainPage;
 use BlueSpice\Calumma\IBreadcrumbRootNode;
 use HashConfig;
-use MediaWikiTestCase;
+use MediaWikiIntegrationTestCase;
 use Message;
 use Title;
 
@@ -13,7 +13,7 @@ use Title;
  * @group BlueSpice
  * @group BlueSpiceCalumma
  */
-class NamespaceMainPageTest extends MediaWikiTestCase {
+class NamespaceMainPageTest extends MediaWikiIntegrationTestCase {
 
 	/**
 	 * @covers \BlueSpice\Calumma\BreadcrumbRootNode\NamespaceMainPage::factory

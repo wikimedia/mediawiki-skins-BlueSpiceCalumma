@@ -5,14 +5,14 @@ namespace BlueSpice\Calumma\Tests\BreadcrumbRootNode;
 use BlueSpice\Calumma\BreadcrumbRootNode\NamespacePortalPage;
 use BlueSpice\Calumma\IBreadcrumbRootNode;
 use HashConfig;
-use MediaWikiTestCase;
+use MediaWikiIntegrationTestCase;
 use Title;
 
 /**
  * @group BlueSpice
  * @group BlueSpiceCalumma
  */
-class NamespacePortalPageTest extends MediaWikiTestCase {
+class NamespacePortalPageTest extends MediaWikiIntegrationTestCase {
 
 	/**
 	 * @covers \BlueSpice\Calumma\BreadcrumbRootNode\NamespacePortalPage::factory
