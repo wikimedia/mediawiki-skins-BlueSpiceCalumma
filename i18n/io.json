@@ -12,5 +12,7 @@
 	"bs-calumma-pageinfosentence-no-item-tooltip": "Nula informo pri la stando di ca pagino",
 	"bs-calumma-pagetool-history-tooltip": "Pagino-versionaro",
 	"bs-calumma-breadcrumbs-pages-title": "Vu nun vidas \"$1\"",
-	"bs-to-top-desc": "Irar adsupre"
+	"bs-to-top-desc": "Irar adsupre",
+	"bs-calumma-recentchanges-title": "Maxim recenta modifikuri",
+	"bs-calumma-recentchanges-column-header-title": "Maxim recenta modifikuri"
 }
