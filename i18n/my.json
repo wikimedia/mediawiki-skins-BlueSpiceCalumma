@@ -57,5 +57,12 @@
 	"bs-calumma-pagetool-unwatch-tooltip": "စောင့်မကြည့်ပါနှင့်",
 	"bs-allpages-description": "စာမျက်နှာအားလုံး",
 	"bs-support-description": "ထောက်ပံ့မှု",
-	"bs-calumma-search-button-label": "ရှာဖွေရန်"
+	"bs-calumma-search-button-label": "ရှာဖွေရန်",
+	"bs-calumma-pagetool-view-tooltip": "ကြည့်ရန်",
+	"bs-calumma-breadcrumbs-nstab-main": "စာမျက်နှာအားလုံး",
+	"bs-calumma-page-watch-text": "စောင့်ကြည့်ရန်",
+	"bs-calumma-page-unwatch-text": "စောင့်မကြည့်ပါနှင့်",
+	"bs-calumma-assoclink-history-label": "ရာဇဝင်",
+	"bs-calumma-context-pagebutton-label": "စာမျက်နှာ",
+	"bs-calumma-context-discussionbutton-label": "ဆွေးနွေးချက်"
 }

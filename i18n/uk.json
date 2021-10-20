@@ -3,6 +3,7 @@
 		"authors": [
 			"Andrew J.Kurbiko",
 			"Base",
+			"DDPAT",
 			"Piramidion",
 			"Vlad5250",
 			"Ата"
@@ -124,5 +125,7 @@
 	"bs-calumma-purged-successfully": "Кеш сторінки було очищено",
 	"bs-calumma-purge-failed": "Сталась помилка при очищенні кешу сторінки",
 	"bs-calumma-pref-collapse-custommenu-header": "Автоматично приховати CustomMenu/Header",
-	"bs-calumma-pref-collapse-custommenu-header-help": "Приховує додаткове користувацьке меню угорі за замовчуванням. Користувачі можуть відкрити меню з допомогою кнопки перемикача."
+	"bs-calumma-pref-collapse-custommenu-header-help": "Приховує додаткове користувацьке меню угорі за замовчуванням. Користувачі можуть відкрити меню з допомогою кнопки перемикача.",
+	"notifications-badge-counter-gt-100": "99+",
+	"bs-calumma-pageinfosentence-item-separator-greater-two": ","
 }
