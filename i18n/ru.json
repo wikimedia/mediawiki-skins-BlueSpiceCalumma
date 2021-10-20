@@ -126,5 +126,7 @@
 	"bs-calumma-page-last-edit-by-system-user": "системный пользователь",
 	"bs-calumma-notification-logged-in": "Вы вошли в систему",
 	"bs-calumma-alert-oldpage": "Вы просматриваете старую версию страницы. [[Special:Redirect/page/$1|Вернуться к последней версии]].",
-	"bs-calumma-assoclink-history-tooltip": "Показать историю правок страницы \"$1\""
+	"bs-calumma-assoclink-history-tooltip": "Показать историю правок страницы \"$1\"",
+	"bs-calumma-page-unwatch-title": "Больше не отслеживать «$1»",
+	"bs-calumma-pref-collapse-custommenu-header": "Автоматически скрывать CustomMenu/Header"
 }
