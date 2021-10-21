@@ -326,7 +326,6 @@
 	"callback": "BlueSpice\\Calumma\\Setup::onCallback",
 	"Hooks": {
 		"GetPreferences": "\\BlueSpice\\Calumma\\Hook\\GetPreferences\\UserPreferences::callback",
-		"MessageCache::get": "\\BlueSpice\\Calumma\\Hook\\MessageCacheGet\\ReplaceMWSidebar::callback",
 		"BeforePageDisplay": [
 			"\\BlueSpice\\Calumma\\Hook\\BeforePageDisplay\\HistoryBacklink::callback",
 			"\\BlueSpice\\Calumma\\Hook\\BeforePageDisplay\\AddFoucFix::callback"
