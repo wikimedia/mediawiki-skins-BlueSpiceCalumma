@@ -6,7 +6,7 @@ interface IActiveStateProvider {
 
 	/**
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function isActive();
 
