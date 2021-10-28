@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ioe2015",
+			"Minh Nguyen"
+		]
+	},
+	"bs-calumma-pref-toggle-navigaiton-main": "Tự động ẩn bảng chọn",
+	"bs-to-top-desc": "Cuộn lên đầu trang",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Mở bảng chọn bên trái",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Mở bảng chọn bên phải",
+	"bs-edit-custom-menu-link-title": "Sửa đổi bảng chọn"
+}
