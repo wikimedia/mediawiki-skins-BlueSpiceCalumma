@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Avengium",
 			"Carlosmg.dg",
 			"DannyS712",
 			"Fitoschido",
@@ -98,5 +99,29 @@
 	"bs-calumma-navigation-toggle-tooltip-left-open": "Abrir menú izquierdo",
 	"bs-calumma-navigation-toggle-tooltip-left-close": "Cerrar menú izquierdo",
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Abrir menú derecho",
-	"bs-calumma-navigation-toggle-tooltip-right-close": "Cerrar menú derecho"
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Cerrar menú derecho",
+	"bs-action-edit-view-title": "Salir editar",
+	"bs-action-edit-view-text": "Salir editar",
+	"bs-action-new-please-login-title": "Inicia sesión para agregar una nueva página",
+	"bs-action-edit-please-login-title": "Inicia sesión para editar esta página",
+	"bs-action-new-disabled-title": "{{GENDER:|Tú}} no tienes permiso para crear una nueva página",
+	"bs-action-edit-disabled-title": "{{GENDER:|Tú}} no tienes permiso para editar esta página",
+	"bs-action-new-file-title": "Subir un archivo nuevo",
+	"bs-sitetools-toolbox": "Caja de herramientas",
+	"bs-sitetools-views": "Visualizaciones",
+	"bs-sitetools-manage-page": "Gestionar la página",
+	"bs-edit-mediawiki-sidebar-link-text": "Editar barra lateral",
+	"bs-edit-mediawiki-sidebar-link-title": "Editar barra lateral",
+	"bs-edit-custom-menu-link-title": "Editar menú",
+	"bs-edit-custom-menu-link-text": "Editar menú",
+	"bs-calumma-pageinfo-qm-button-tooltip": "Abrir panel de gestión de calidad",
+	"bs-calumma-pageinfosentence-no-item-label": "Ninguna información de estado",
+	"bs-calumma-pageinfosentence-no-item-tooltip": "Ninguna información de estado sobre esta página",
+	"bs-calumma-alert-oldpage": "Estás viendo una versión antigua de esta página. [[Special:Redirect/page/$1|Volver a la última versión]].",
+	"bs-calumma-context-pagebutton-tooltip": "Mostrar la página del tema actual",
+	"bs-calumma-context-discussionbutton-tooltip": "Mostrar la página de discusión actual",
+	"bs-calumma-purged-successfully": "La caché de la página ha sido borrada",
+	"bs-calumma-purge-failed": "Ocurrió un error al borrar la caché de la página.",
+	"bs-calumma-pref-collapse-custommenu-header": "Ocultar automáticamente CustomMenu/Header",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Oculta el menú personalizado complementario en la parte superior de forma predeterminada. Los usuarios pueden abrir el menú con el botón de alternancia."
 }
