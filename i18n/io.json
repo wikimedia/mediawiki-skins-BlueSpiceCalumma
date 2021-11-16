@@ -4,6 +4,8 @@
 			"Joao Xavier"
 		]
 	},
+	"bs-calumma-recentchanges-title": "Maxim recenta modifikuri",
+	"bs-calumma-recentchanges-column-header-title": "Maxim recenta modifikuri",
 	"bs-to-top-desc": "Irar adsupre",
 	"bs-calumma-pagetool-history-tooltip": "Pagino-versionaro",
 	"bs-calumma-breadcrumbs-pages": "Vu esas hike",
@@ -12,5 +14,6 @@
 	"bs-calumma-page-unwatch-text": "Ne plus surveyar",
 	"bs-calumma-pageinfosentence-no-item-tooltip": "Nula informo pri la stando di ca pagino",
 	"bs-calumma-alert-oldpage": "To esas anciena versiono de ca pagino. [[Special:Redirect/page/$1|Retroirar a la nuna versiono]].",
+	"bs-calumma-version-pager-info-text": "Versiono di $1, dal uzero [[User:$2|$2]]",
 	"bs-calumma-search-button-label": "Serchar"
 }

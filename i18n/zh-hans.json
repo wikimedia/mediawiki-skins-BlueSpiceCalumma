@@ -10,7 +10,9 @@
 			"Viztor",
 			"VulpesVulpes825",
 			"沈澄心",
-			"科劳"
+			"科劳",
+			"Xiplus",
+			"落花有意12138"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice皮肤",
@@ -57,7 +59,7 @@
 	"bs-sitetools-panel-section-export-label": "导出",
 	"bs-calumma-graphicallist-recentchanges-preview-btn-edit": "编辑",
 	"bs-calumma-graphicallist-recentchanges-preview-btn-history": "历史",
-	"bs-sitetools-namespaces": "名字空间",
+	"bs-sitetools-namespaces": "命名空间",
 	"bs-sitetools-pageactions": "页面操作",
 	"bs-sitetools-default": "更多",
 	"bs-sitetools-qm": "质量管理",
@@ -126,5 +128,7 @@
 	"bs-calumma-context-discussionbutton-tooltip": "显示当前讨论页",
 	"bs-calumma-search-button-label": "搜索",
 	"bs-calumma-purged-successfully": "本页面的缓存已清除",
-	"bs-calumma-purge-failed": "清除本页面的缓存时发生错误"
+	"bs-calumma-purge-failed": "清除本页面的缓存时发生错误",
+	"bs-calumma-pref-collapse-custommenu-header": "自动隐藏CustomMenu/Header",
+	"bs-calumma-pref-collapse-custommenu-header-help": "默认隐藏填充的顶部的自定义菜单。用户可以通过切换按钮打开菜单。"
 }
