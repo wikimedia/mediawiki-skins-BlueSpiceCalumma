@@ -1,13 +1,15 @@
 (function( mw, $, d, bs, undefined ) {
-	$(d).on( 'click', '.bs-panel a.title, .panel a.title', function() {
+	$(d).on( 'click', '.bs-panel a.title, .panel a.title', function( e ) {
 		var $title = $(this);
 		var collapeState = false;
-		var collapsingPanel = $title.attr( 'aria-controls' );
-
-		if ( $title.hasClass( 'collapsed' ) ) {
-			collapeState = true;
-		}
-		bs.calumma.cookie.set( 'Calumma_CollapsePanel_'+ collapsingPanel, collapeState );
+		setTimeout( function() {
+			var collapsingPanel = $title.attr( 'aria-controls' );
+			if ( $title.attr( 'aria-expanded' ) === 'false' ) {
+				collapeState = true;
+			}
+			bs.calumma.cookie.set( 'Calumma_CollapsePanel_'+ collapsingPanel, collapeState );
+		},
+		500 )
 	} );
 })( mediaWiki, jQuery, document, blueSpice );
 
