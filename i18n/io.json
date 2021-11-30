@@ -14,5 +14,6 @@
 	"bs-calumma-breadcrumbs-pages-title": "Vu nun vidas \"$1\"",
 	"bs-calumma-recentchanges-title": "Maxim recenta modifikuri",
 	"bs-calumma-recentchanges-column-header-title": "Maxim recenta modifikuri",
-	"bs-to-top-desc": "Irar adsupre"
+	"bs-to-top-desc": "Irar adsupre",
+	"bs-calumma-version-pager-info-text": "Versiono di $1, dal uzero [[User:$2|$2]]"
 }
