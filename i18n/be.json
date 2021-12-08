@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Artsiom91"
+			"Artsiom91",
+			"ZlyiLev"
 		]
 	},
-	"bs-action-new-section-text": "Новы раздзел"
+	"bs-action-new-section-text": "Новы раздзел",
+	"bs-edit-mediawiki-sidebar-link-text": "Правіць бакавую панель",
+	"bs-edit-mediawiki-sidebar-link-title": "Правіць бакавую панель"
 }
