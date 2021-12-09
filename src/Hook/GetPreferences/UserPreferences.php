@@ -2,6 +2,7 @@
 namespace BlueSpice\Calumma\Hook\GetPreferences;
 
 use BlueSpice\Hook\GetPreferences;
+use RequestContext;
 
 class UserPreferences extends GetPreferences {
 
@@ -10,6 +11,11 @@ class UserPreferences extends GetPreferences {
 	 * @return bool
 	 */
 	protected function doProcess() {
+		$skin = RequestContext::getMain()->getSkin();
+		if ( $skin->getSkinName() != 'bluespicecalumma' ) {
+			return false;
+		}
+
 		/* navigation-main */
 		$this->preferences['bs-calumma-settings-navigation-main-collapse'] = [
 			'section' => 'rendering/bs-calumma',
