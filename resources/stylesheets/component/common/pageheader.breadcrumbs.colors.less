@@ -1,14 +1,5 @@
 .bs-page-breadcrumbs {
 	.dropdown {
-		& > a {
-			.mixin-link-title-color(
-				@theme-page-header-link-fg-color,
-				@theme-page-header-link-fg-color-hover,
-				@theme-page-header-new-link-fg-color,
-				@theme-page-header-new-link-fg-color-hover
-			);
-		}
-
 		& > a.dropdown-toggle {
 			.mixin-link-color(
 				@theme-content-fg-color,
@@ -32,16 +23,5 @@
 				}
 			}
 		}
-	}
-}
-
-#bs-breadcrumb-rootnode {
-	a {
-		.mixin-link-title-color(
-			@theme-page-header-link-fg-color,
-			@theme-page-header-link-fg-color-hover,
-			@theme-page-header-new-link-fg-color,
-			@theme-page-header-new-link-fg-color-hover
-		);
 	}
 }
