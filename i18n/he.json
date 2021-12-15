@@ -94,7 +94,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|דף משנה|דפי משנה}} של \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|דף משנה אחד|$1 דפי המשנה}} של \"$2\"",
 	"bs-calumma-category-no-categories": "אין קטגוריות משויכות",
-	"bs-calumma-page-last-edit-text": "נערך לפני $1 על ידי $2",
+	"bs-calumma-page-last-edit-text": "נערך לאחרונה $1 על־ידי $2",
 	"bs-calumma-page-watch-title": "מעקב אחר \"$1\"",
 	"bs-calumma-page-watch-text": "מעקב",
 	"bs-calumma-page-unwatch-title": "הפסקת המעקב אחר \"$1\"",
