@@ -82,6 +82,10 @@
 	"bs-allpages-description": "Alle sider",
 	"bs-support-description": "Støtte",
 	"bs-calumma-navigation-toggle-tooltip": "Åpne / lukk",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Åpne venstre meny",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Lukk venstre meny",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Åpne høyre meny",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Lukk høyre meny",
 	"bs-edit-custom-menu-link-title": "Rediger meny",
 	"bs-edit-custom-menu-link-text": "Rediger meny",
 	"bs-calumma-toggle-button-tooltip": "Åpne/lukk",
@@ -116,10 +120,8 @@
 	"bs-calumma-context-discussionbutton-label": "Diskusjon",
 	"bs-calumma-context-discussionbutton-tooltip": "Vis den nåværende diskusjonssiden",
 	"bs-calumma-search-button-label": "Søk",
-	"bs-calumma-navigation-toggle-tooltip-left-open": "Åpne venstre meny",
-	"bs-calumma-navigation-toggle-tooltip-left-close": "Lukk venstre meny",
-	"bs-calumma-navigation-toggle-tooltip-right-open": "Åpne høyre meny",
-	"bs-calumma-navigation-toggle-tooltip-right-close": "Lukk høyre meny",
 	"bs-calumma-purged-successfully": "Sidens mellomlager har blitt tømt",
-	"bs-calumma-purge-failed": "En feil oppsto under tømming av sidens mellomlager"
+	"bs-calumma-purge-failed": "En feil oppsto under tømming av sidens mellomlager",
+	"bs-calumma-pref-collapse-custommenu-header": "Skjul tilpasset meny/topp automatisk",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Skjuler den tilpassede menyen i toppen som standard. Brukerne kan åpne menyen med vis/skjul-knappen"
 }
