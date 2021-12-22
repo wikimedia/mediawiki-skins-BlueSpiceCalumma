@@ -57,6 +57,7 @@
 	"bs-calumma-pageinfosentence": "Sta pàggina è $1",
 	"bs-calumma-pageinfosentence-item-separator": "e",
 	"bs-calumma-pageinfosentence-item-class-separator": "ma",
+	"bs-calumma-page-last-edit-by-system-user": "utenti sistema",
 	"bs-calumma-assoclink-history-label": "Crunuluggìa",
 	"bs-calumma-context-pagebutton-label": "Pàggina",
 	"bs-calumma-context-discussionbutton-label": "Discussioni"
