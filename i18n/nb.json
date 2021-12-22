@@ -121,5 +121,7 @@
 	"bs-calumma-context-discussionbutton-tooltip": "Vis den nåværende diskusjonssiden",
 	"bs-calumma-search-button-label": "Søk",
 	"bs-calumma-purged-successfully": "Sidens mellomlager har blitt tømt",
-	"bs-calumma-purge-failed": "En feil oppsto under tømming av sidens mellomlager"
+	"bs-calumma-purge-failed": "En feil oppsto under tømming av sidens mellomlager",
+	"bs-calumma-pref-collapse-custommenu-header": "Skjul tilpasset meny/topp automatisk",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Skjuler den tilpassede menyen i toppen som standard. Brukerne kan åpne menyen med vis/skjul-knappen"
 }
