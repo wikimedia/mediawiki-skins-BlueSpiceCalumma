@@ -4,11 +4,15 @@
 			"Yupik"
 		]
 	},
-	"bs-calumma-recentchanges-title": "Võõrâs muttâz",
-	"bs-calumma-recentchanges-column-header-title": "Võõrâs muttâz",
-	"bs-allpages-description": "Puk seeid",
-	"bs-calumma-breadcrumbs-nstab-main": "Puk seeid",
 	"bs-action-new-subpage-text": "Ođđ vueʹllseidd",
 	"bs-action-new-subpage-title": "Lââʹzzet ođđ vueʹllseeid sijddu $1",
-	"bs-calumma-breadcrumbs-subpages": "\"$2\" {{PLURAL:$1|vueʹllseidd|vueʹllseeid|vueʹllseiddad}}"
+	"bs-calumma-recentchanges-title": "Võõrâs muttâz",
+	"bs-calumma-recentchanges-column-header-title": "Võõrâs muttâz",
+	"bs-calumma-pagetool-watch-tooltip": "Vaalv",
+	"bs-allpages-description": "Puk seeid",
+	"bs-calumma-breadcrumbs-nstab-main": "Puk seeid",
+	"bs-calumma-breadcrumbs-subpages": "\"$2\" {{PLURAL:$1|vueʹllseidd|vueʹllseeid|vueʹllseiddad}}",
+	"bs-calumma-page-watch-title": "Vaalv \"$1\"",
+	"bs-calumma-page-watch-text": "Vaalv",
+	"bs-calumma-pageinfosentence": "Tät seidd lij $1"
 }
