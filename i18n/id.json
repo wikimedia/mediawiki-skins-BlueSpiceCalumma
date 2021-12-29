@@ -123,5 +123,6 @@
 	"bs-calumma-search-button-label": "Cari",
 	"bs-calumma-purged-successfully": "Singgahan halaman telah dihapus",
 	"bs-calumma-purge-failed": "Terjadi galat ketika menghapus singgahan halaman",
-	"bs-calumma-pref-collapse-custommenu-header": "Sembunyikan CustomMenu secara otomatis/Header"
+	"bs-calumma-pref-collapse-custommenu-header": "Sembunyikan CustomMenu secara otomatis/Header",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Sembunyikan menu kustom tambahan di atas secara baku. Pengguna bisa membuka menu menggunakan tombol."
 }
