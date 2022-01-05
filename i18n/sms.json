@@ -14,5 +14,6 @@
 	"bs-calumma-breadcrumbs-subpages": "\"$2\" {{PLURAL:$1|vueʹllseidd|vueʹllseeid|vueʹllseiddad}}",
 	"bs-calumma-page-watch-title": "Vaalv \"$1\"",
 	"bs-calumma-page-watch-text": "Vaalv",
-	"bs-calumma-pageinfosentence": "Tät seidd lij $1"
+	"bs-calumma-pageinfosentence": "Tät seidd lij $1",
+	"bs-calumma-context-pagebutton-label": "Seidd"
 }
