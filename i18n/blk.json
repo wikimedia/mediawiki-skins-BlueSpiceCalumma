@@ -1,9 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
+			"Khun Kt",
 			"咽頭べさ"
 		]
 	},
+	"bs-action-edit-view-title": "ထန်ႏထိုꩻမွဉ်းဖျင်မုꩻ",
+	"bs-action-edit-view-text": "ထန်ႏထိုꩻမွဉ်းဖျင်မုꩻ",
+	"bs-action-edit-edit-title": "ခြပ်ချော်ꩻ အရွီးအခိုႏ",
+	"bs-action-edit-ve-edit-title": "မွဉ်းဖျင်",
+	"bs-action-new-section-text": "အကွို့ꩻတသာ",
+	"bs-action-new-section-title": "ရောမ်ဖြုဲင်ꩻယိုအကို ထဲမ်သော့ꩻလွေꩻ အကွို့ꩻတသာတဗာႏ",
+	"bs-action-new-page-text": "လိတ်မဲ့ငါတသာ",
+	"bs-action-new-please-login-title": "အီႏထဲမ်သော့ꩻလိတ်မဲ့ငါတသာတာႏ နွို့သွော့အကောက်သြ",
+	"bs-action-edit-please-login-title": "အီႏမွဉ်းဖျင်လိတ်မဲ့ငါယိုတာႏ နွို့သွော့အကောက်သြ",
 	"bs-calumma-recentchanges-title": "ထွာပြောင်ꩻယိုခါကျာꩻ",
 	"bs-calumma-recentchanges-column-header-title": "ထွာပြောင်ꩻယိုခါကျာꩻ"
 }
