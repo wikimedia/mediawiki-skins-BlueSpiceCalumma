@@ -81,6 +81,10 @@
 	"bs-allpages-description": "Све странице",
 	"bs-support-description": "Подршка",
 	"bs-calumma-navigation-toggle-tooltip": "Отвори / затвори",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Отвори леви мени",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Затвори леви мени",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Отвори десни мени",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Затвори деси мени",
 	"bs-edit-custom-menu-link-title": "Уређивање менија",
 	"bs-edit-custom-menu-link-text": "Уређивање менија",
 	"bs-calumma-toggle-button-tooltip": "Отвори/Затвори",
@@ -114,5 +118,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Прикажи тренутну страницу теме",
 	"bs-calumma-context-discussionbutton-label": "Дискусија",
 	"bs-calumma-context-discussionbutton-tooltip": "Прикажи тренутну страницу за разговор",
-	"bs-calumma-search-button-label": "Претрага"
+	"bs-calumma-search-button-label": "Претрага",
+	"bs-calumma-purged-successfully": "Кеш меморија странице је очишћена",
+	"bs-calumma-purge-failed": "Дошло је до грешке приликом чишћења кеш меморије странице"
 }
