@@ -330,7 +330,6 @@
 			"\\BlueSpice\\Calumma\\Hook\\BeforePageDisplay\\HistoryBacklink::callback",
 			"\\BlueSpice\\Calumma\\Hook\\BeforePageDisplay\\AddFoucFix::callback"
 		],
-		"UserLoggedIn": "\\BlueSpice\\Calumma\\Hook\\UserLoggedIn\\AddNotification::callback",
 		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\Calumma\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback",
 		"OutputPageBodyAttributes": "\\BlueSpice\\Calumma\\Hook\\OutputPageBodyAttributes\\AddToBodyAttributes::callback"
 	},

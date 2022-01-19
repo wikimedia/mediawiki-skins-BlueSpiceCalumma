@@ -111,7 +111,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "Separator for page information items (BUT)",
 	"bs-calumma-full-screen-button-tooltip": "Tool tip for full screen button",
 	"bs-calumma-page-last-edit-by-system-user": "Label for system user as editor",
-	"bs-calumma-notification-logged-in": "Message in a notification box, displayed after a user successfully logged into the wiki",
 	"bs-calumma-alert-oldpage": "Text that is shown in a warning box above the page content when a user views an old version of a page\n\nParameters:\n* $1 - The ID of the current page",
 	"bs-calumma-version-pager-prev-tooltip": "Tooltip for an icon link, when a user is viewing an old version of a page",
 	"bs-calumma-version-pager-next-tooltip": "Tooltip for an icon link, when a user is viewing an old version of a page",
