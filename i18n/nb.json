@@ -108,7 +108,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "men",
 	"bs-calumma-full-screen-button-tooltip": "Fullskjerm/normal modus",
 	"bs-calumma-page-last-edit-by-system-user": "systembruker",
-	"bs-calumma-notification-logged-in": "Du er nå innlogget",
 	"bs-calumma-alert-oldpage": "Du viser en gammel versjon av denne siden. [[Special:Redirect/page/$1|Tilbake til den nyeste versjonen]].",
 	"bs-calumma-version-pager-prev-tooltip": "Bytt til forrige versjon",
 	"bs-calumma-version-pager-next-tooltip": "Bytt til neste versjon",

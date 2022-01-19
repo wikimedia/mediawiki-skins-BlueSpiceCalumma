@@ -99,7 +99,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "ali",
 	"bs-calumma-full-screen-button-tooltip": "Ceo ekran/Normalni mod",
 	"bs-calumma-page-last-edit-by-system-user": "sistemski korisnik",
-	"bs-calumma-notification-logged-in": "Sada ste prijavljeni",
 	"bs-calumma-alert-oldpage": "Gledate stariju ove stranice. [[Special:Redirect/page/$1|Vratite se na najnoviju verziju]].",
 	"bs-calumma-version-pager-prev-tooltip": "Vratite se na prethodnu verziju",
 	"bs-calumma-version-pager-next-tooltip": "Vratite se na novu stranicu",

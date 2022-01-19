@@ -111,7 +111,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "ancak",
 	"bs-calumma-full-screen-button-tooltip": "Tam Ekran/Normal mod",
 	"bs-calumma-page-last-edit-by-system-user": "sistem kullanıcı",
-	"bs-calumma-notification-logged-in": "Giriş yaptınız",
 	"bs-calumma-alert-oldpage": "Bu sayfanın eski bir versiyonunu görüntülüyorsunuz. [[Special:Redirect/page/$1|En son sürümüne dön]].",
 	"bs-calumma-version-pager-prev-tooltip": "Önceki sürüme geç",
 	"bs-calumma-version-pager-next-tooltip": "Bir sonraki sürüme geç",

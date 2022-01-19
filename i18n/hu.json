@@ -96,7 +96,6 @@
 	"bs-calumma-pageinfosentence-no-item-tooltip": "Nincs állapotinformáció erről a lapról",
 	"bs-calumma-full-screen-button-tooltip": "Teljes képernyő/Normál mód",
 	"bs-calumma-page-last-edit-by-system-user": "rendszerfelhasználó",
-	"bs-calumma-notification-logged-in": "Mostantól be vagy jelentkezve",
 	"bs-calumma-alert-oldpage": "A lap egy régebbi változatát nézed. [[Special:Redirect/page/$1|Visszatérés a legfrissebb verzióhoz]].",
 	"bs-calumma-version-pager-prev-tooltip": "Váltás az előző verzióra",
 	"bs-calumma-version-pager-next-tooltip": "Váltás a következő verzióra",

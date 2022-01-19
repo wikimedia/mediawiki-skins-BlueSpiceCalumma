@@ -105,7 +105,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "ma",
 	"bs-calumma-full-screen-button-tooltip": "Schermo complete/Modo normal",
 	"bs-calumma-page-last-edit-by-system-user": "usator de systema",
-	"bs-calumma-notification-logged-in": "Tu ha aperite session",
 	"bs-calumma-alert-oldpage": "Tu vide un ancian version de iste pagina. [[Special:Redirect/page/$1|Retornar al ultime version]].",
 	"bs-calumma-version-pager-prev-tooltip": "Cambiar al version anterior",
 	"bs-calumma-version-pager-next-tooltip": "Cambiar al version sequente",

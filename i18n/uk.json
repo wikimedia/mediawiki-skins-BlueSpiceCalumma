@@ -112,7 +112,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "але",
 	"bs-calumma-full-screen-button-tooltip": "Повноекранний/Звичайний режим",
 	"bs-calumma-page-last-edit-by-system-user": "системний користувач",
-	"bs-calumma-notification-logged-in": "Тепер Ви ввійшли в систему",
 	"bs-calumma-alert-oldpage": "Ви переглядаєте стару версію цієї сторінки. [[Special:Redirect/page/$1|Поверніться до її найновішої версії]].",
 	"bs-calumma-version-pager-prev-tooltip": "Перейти до попередньої версії",
 	"bs-calumma-version-pager-next-tooltip": "Перейти до наступної версії",

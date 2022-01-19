@@ -115,7 +115,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "但",
 	"bs-calumma-full-screen-button-tooltip": "全屏/普通模式",
 	"bs-calumma-page-last-edit-by-system-user": "系统用户",
-	"bs-calumma-notification-logged-in": "您已登录",
 	"bs-calumma-alert-oldpage": "您正在查看该页面的旧版本。[[Special:Redirect/page/$1|回到最新版本]]。",
 	"bs-calumma-version-pager-prev-tooltip": "切换到上一个版本",
 	"bs-calumma-version-pager-next-tooltip": "切换到下一个版本",

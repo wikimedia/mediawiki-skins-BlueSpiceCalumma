@@ -107,7 +107,6 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "али",
 	"bs-calumma-full-screen-button-tooltip": "Цео екран/Нормални мод",
 	"bs-calumma-page-last-edit-by-system-user": "системски корисник",
-	"bs-calumma-notification-logged-in": "Сада сте пријављени",
 	"bs-calumma-alert-oldpage": "Гледате старију ове странице. [[Special:Redirect/page/$1|Вратите се на најновију верзију]].",
 	"bs-calumma-version-pager-prev-tooltip": "Вратите се на претходну верзију",
 	"bs-calumma-version-pager-next-tooltip": "Вратите се на нову страницу",
