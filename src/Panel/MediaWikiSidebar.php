@@ -38,6 +38,9 @@ class MediaWikiSidebar extends BasePanel {
 	public function getBody() {
 		$data = $this->skintemplate->get( 'sidebar' );
 
+		if ( !isset( $data['navigation'] ) || !is_array( $data['navigation'] ) ) {
+			$data['navigation'] = [];
+		}
 		$this->extendDefaultNavigation( $data['navigation'] );
 
 		$html = '';
