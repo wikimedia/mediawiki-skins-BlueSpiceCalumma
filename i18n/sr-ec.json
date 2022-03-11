@@ -114,5 +114,11 @@
 	"bs-calumma-context-pagebutton-tooltip": "Прикажи тренутну страницу теме",
 	"bs-calumma-context-discussionbutton-label": "Дискусија",
 	"bs-calumma-context-discussionbutton-tooltip": "Прикажи тренутну страницу за разговор",
-	"bs-calumma-search-button-label": "Претрага"
+	"bs-calumma-search-button-label": "Претрага",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Отвори леви мени",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Затвори леви мени",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Отвори десни мени",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Затвори деси мени",
+	"bs-calumma-purged-successfully": "Кеш меморија странице је очишћена",
+	"bs-calumma-purge-failed": "Дошло је до грешке приликом чишћења кеш меморије странице"
 }

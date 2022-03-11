@@ -3,7 +3,8 @@
 		"authors": [
 			"Aefgh39622",
 			"Geonuch",
-			"Patsagorn Y."
+			"Patsagorn Y.",
+			"Prame Tan"
 		]
 	},
 	"bluespicecalumma-desc": "สกินบลูสไปซ์",
@@ -26,7 +27,7 @@
 	"bs-userbutton-notifications-link-text": "การแจ้งเตือน",
 	"bs-userbutton-userpage-link-text": "โปรไฟล์ของฉัน",
 	"bs-mobilemoremenu-view-title": "ดู",
-	"bs-mobilemoremenu-view-text": "ดู",
+	"bs-mobilemoremenu-view-text": "ดูหน้า",
 	"bs-mobilemoremenu-edit-title": "แก้ไข",
 	"bs-mobilemoremenu-edit-text": "แก้ไข",
 	"bs-mobilemoremenu-new-section-title": "ส่วนย่อยใหม่",
@@ -88,5 +89,15 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "แต่",
 	"bs-calumma-full-screen-button-tooltip": "โหมดเต็มหน้าจอ/ปกติ",
 	"bs-calumma-notification-logged-in": "คุณเข้าสู่ระบบแล้วตอนนี้",
-	"bs-calumma-search-button-label": "ค้นหา"
+	"bs-calumma-search-button-label": "ค้นหา",
+	"bs-action-new-please-login-title": "กรุณาลงชื่อเข้าใช้เพื่อเพิ่มหน้าใหม่",
+	"bs-action-edit-please-login-title": "กรุณาลงชื่อเข้าใช้เพื่อแก้ไขหน้านี้",
+	"bs-action-new-disabled-title": "{{GENDER:|คุณ}}ไม่ได้รับอนุญาตให้สร้างหน้าใหม่",
+	"bs-action-edit-disabled-title": "{{GENDER:|คุณ}}ไม่ได้รับอนุญาตให้แก้ไขหน้านี้",
+	"bs-sitetools-manage-page": "จัดการหน้า",
+	"bs-sitetools-associated-links": "ลิงก์ที่เกี่ยวข้อง",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "เปิดเมนูทางซ้าย",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "ปิดเมนูทางซ้าย",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "เปิดเมนูทางขวา",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "ปิดเมนูทางขวา"
 }
