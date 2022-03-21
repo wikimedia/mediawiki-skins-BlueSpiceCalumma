@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"FarsiNevis",
-			"Reza1615"
+			"Reza1615",
+			"Beginneruser"
 		]
 	},
 	"bluespicecalumma-desc": "پوستهٔ چاشنی آبی",
@@ -38,8 +39,8 @@
 	"bs-sitetools-pageinfo-title": "اطلاعات",
 	"bs-sitetools-qualitymanagement-title": "مدیریتت کیفیت",
 	"bs-sitetools-pagetools-title": "ابزارها",
-	"bs-sitetools-panel-section-export-title": "برون‌ریزی",
-	"bs-sitetools-panel-section-export-label": "برون‌ریزی",
+	"bs-sitetools-panel-section-export-title": "برون‌بری",
+	"bs-sitetools-panel-section-export-label": "برون‌بری",
 	"bs-calumma-graphicallist-recentchanges-preview-btn-edit": "ویرایش",
 	"bs-calumma-graphicallist-recentchanges-preview-btn-history": "تاریخچه",
 	"bs-sitetools-namespaces": "فضای نام",
@@ -84,7 +85,6 @@
 	"bs-calumma-pageinfosentence-item-separator": "و",
 	"bs-calumma-pageinfosentence-item-class-separator": "ولی",
 	"bs-calumma-page-last-edit-by-system-user": "کاربر سامانه‌ای",
-	"bs-calumma-notification-logged-in": "شما وارد نشده‌ايد",
 	"bs-calumma-assoclink-history-label": "تاریخچه",
 	"bs-calumma-context-pagebutton-label": "صفحه",
 	"bs-calumma-context-discussionbutton-label": "بحث",
