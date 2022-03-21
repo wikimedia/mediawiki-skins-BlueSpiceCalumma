@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Fitoschido",
 			"Xuacu"
 		]
 	},
@@ -60,7 +61,7 @@
 	"bs-sitetools-manage-page": "Alministrar páxina",
 	"bs-sitetools-categories": "Categoríes",
 	"bs-sitetools-associated-links": "Enllaces asociaos",
-	"bs-calumma-recentchanges-title": "Cambios recientes",
+	"bs-calumma-recentchanges-title": "Cambeos recién",
 	"bs-calumma-recentchanges-intro": "Esta llista contien les ediciones más recién y les creaciones de páxines nueves.",
 	"bs-calumma-recentchanges-specialpage-link": "Pa la vista clásica pulsia [[Special:RecentChanges|equí]].",
 	"bs-calumma-recentchanges-column-header-title": "Cambios recientes",
