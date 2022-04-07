@@ -102,7 +102,7 @@
 	"bs-calumma-pageinfo-qm-button-tooltip": "פתיחת חלונית ניהול האיכות",
 	"bs-calumma-pageinfosentence-no-item-label": "אין פירוט מצב",
 	"bs-calumma-pageinfosentence-no-item-tooltip": "אין פירוט על מצב הדף הזה",
-	"bs-calumma-pageinfosentence": "דף זה הוא $1",
+	"bs-calumma-pageinfosentence": "הדף הזה הוא $1",
 	"bs-calumma-pageinfosentence-item-separator": "וגם",
 	"bs-calumma-pageinfosentence-item-class-separator": "אבל",
 	"bs-calumma-full-screen-button-tooltip": "מסך מלא/מצב רגיל",
