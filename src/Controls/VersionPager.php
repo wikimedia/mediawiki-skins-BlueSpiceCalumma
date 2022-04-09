@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Calumma\Controls;
 
-use MediaWiki\Storage\RevisionRecord;
+use MediaWiki\Revision\RevisionRecord;
 use Message;
 
 class VersionPager extends TemplateControl {
@@ -15,7 +15,7 @@ class VersionPager extends TemplateControl {
 
 	/**
 	 *
-	 * @var \MediaWiki\Storage\RevisionLookup
+	 * @var \MediaWiki\Revision\RevisionLookup
 	 */
 	protected $revisionLookup = null;
 
@@ -38,7 +38,7 @@ class VersionPager extends TemplateControl {
 	protected $currentRevision = null;
 
 	/**
-	 * @param \MediaWiki\Storage\RevisionLookup $revisionLookup
+	 * @param \MediaWiki\Revision\RevisionLookup $revisionLookup
 	 * @param \Language $userLang
 	 * @param \Title $title
 	 * @param int $oldId
