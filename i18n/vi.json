@@ -3,7 +3,8 @@
 		"authors": [
 			"Ioe2015",
 			"Minh Nguyen",
-			"Phjtieudoc"
+			"Phjtieudoc",
+			"NguoiDungKhongDinhDanh"
 		]
 	},
 	"bs-calumma-pref-toggle-navigaiton-main": "Tự động ẩn bảng chọn",
@@ -11,8 +12,8 @@
 	"bs-action-edit-view-text": "Thoát sửa đổi",
 	"bs-action-edit-edit-title": "Sửa mã nguồn",
 	"bs-action-edit-ve-edit-title": "Sửa đổi",
-	"bs-action-new-section-text": "Đề mục mới",
-	"bs-action-new-section-title": "Thêm một đề mục mới vào trang này",
+	"bs-action-new-section-text": "Mục mới",
+	"bs-action-new-section-title": "Thêm một mục mới vào trang này",
 	"bs-action-new-page-text": "Trang mới",
 	"bs-action-new-please-login-title": "Hãy đăng nhập để thêm một trang mới",
 	"bs-action-edit-please-login-title": "Hãy đăng nhập để sửa trang này",
@@ -29,8 +30,8 @@
 	"bs-mobilemoremenu-view-text": "Xem",
 	"bs-mobilemoremenu-edit-title": "Sửa đổi",
 	"bs-mobilemoremenu-edit-text": "Sửa đổi",
-	"bs-mobilemoremenu-new-section-title": "Đề mục mới",
-	"bs-mobilemoremenu-new-section-text": "Đề mục mới",
+	"bs-mobilemoremenu-new-section-title": "Mục mới",
+	"bs-mobilemoremenu-new-section-text": "Mục mới",
 	"bs-mobilemoremenu-history-title": "Lịch sử",
 	"bs-mobilemoremenu-history-text": "Lịch sử",
 	"bs-sitenav-navigation-title": "Điều hướng chính",
