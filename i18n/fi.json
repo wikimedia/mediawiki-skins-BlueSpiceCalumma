@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Korjaus1",
 			"McSalama",
 			"Nike",
 			"Pyscowicz",
@@ -82,5 +83,12 @@
 	"bs-calumma-breadcrumbs-pages": "Olet täällä",
 	"bs-calumma-assoclink-history-label": "Historia",
 	"bs-calumma-context-pagebutton-label": "Sivu",
-	"bs-calumma-context-discussionbutton-label": "Keskustelu"
+	"bs-calumma-context-discussionbutton-label": "Keskustelu",
+	"bs-action-edit-disabled-title": "{{GENDER:|Sinulla}} ei ole oikeuksia muokata tätä sivua",
+	"bs-calumma-page-watch-text": "Tarkkaile",
+	"bs-calumma-page-unwatch-text": "Lopeta tarkkailu",
+	"bs-calumma-pageinfosentence": "Tämä sivu on $1",
+	"bs-calumma-pageinfosentence-item-separator": "ja",
+	"bs-calumma-assoclink-history-tooltip": "Näytä sivun ”$1” muutoshistoria",
+	"bs-calumma-context-discussionbutton-tooltip": "Näytä nykyinen keskustelusivu"
 }

@@ -118,5 +118,7 @@
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Abrir menu direito",
 	"bs-calumma-navigation-toggle-tooltip-right-close": "Fechar menu direito",
 	"bs-calumma-purged-successfully": "A cache da página foi limpa",
-	"bs-calumma-purge-failed": "Ocorreu uma falha ao limpar a cache da página"
+	"bs-calumma-purge-failed": "Ocorreu uma falha ao limpar a cache da página",
+	"bs-calumma-pref-collapse-custommenu-header": "Esconder automaticamente o menu/cabeçalho personalizado",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Por padrão, esconde o menu personalizado suplementar. Os utilizadores podem abrir o menu usando o botão de alternância."
 }

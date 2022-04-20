@@ -45,8 +45,8 @@
 	"bs-calumma-pref-toggle-sitetools-main": "Čievâ tyejiniävvuvaljiittâh automaatlávt",
 	"bs-action-new-section-text": "Uđđâ uási",
 	"bs-action-new-section-title": "Lasseet uđđâ uási taan siijđon",
-	"bs-action-new-please-login-title": "Čäälit siisâ te puávtáh lasettiđ uđđâ siijđo",
-	"bs-action-edit-please-login-title": "Čäälit siisâ te puávtáh hammiđ taam siijđo",
+	"bs-action-new-please-login-title": "Čáládât siisâ te puávtáh lasettiđ uđđâ siijđo",
+	"bs-action-edit-please-login-title": "Čáládât siisâ te puávtáh hammiđ taam siijđo",
 	"bs-action-new-subpage-text": "Uđđâ vyelisijđo",
 	"bs-action-new-subpage-title": "Lasseet uđđp vyelisijđo siijđon $1",
 	"bs-action-new-file-text": "Vuorkkii uđđâ tiätuvuárhá",
@@ -80,5 +80,8 @@
 	"bs-calumma-toggle-button-tooltip": "Leehâst/Toopâ",
 	"bs-calumma-breadcrumbs-pages": "Lah tääbbin",
 	"bs-calumma-pageinfosentence-item-separator": "já",
-	"bs-calumma-pageinfosentence-item-class-separator": "mutâ"
+	"bs-calumma-pageinfosentence-item-class-separator": "mutâ",
+	"bs-calumma-page-watch-title": "Tarkkuustâl \"$1\"",
+	"bs-calumma-page-watch-text": "Tarkkuustâl",
+	"bs-calumma-page-unwatch-text": "Jooskâ tarkkuustâllâm"
 }
