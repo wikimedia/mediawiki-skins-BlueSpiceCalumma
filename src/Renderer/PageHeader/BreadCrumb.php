@@ -126,9 +126,9 @@ class BreadCrumb extends PageHeader {
 			$html[] = $splitButton->getHtml();
 		}
 
-		$seperator = '';
+		$separator = '';
 
-		return implode( $seperator, $html );
+		return implode( $separator, $html );
 	}
 
 	/**
