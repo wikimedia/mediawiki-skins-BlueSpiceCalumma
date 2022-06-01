@@ -11,7 +11,8 @@
 			"Okras",
 			"Pacha Tchernof",
 			"Urfiner",
-			"Vlad5250"
+			"Vlad5250",
+			"Gulka.nik"
 		]
 	},
 	"bluespicecalumma-desc": "Тема BlueSpice",
@@ -110,6 +111,7 @@
 	"bs-calumma-page-unwatch-text": "Не следить",
 	"bs-calumma-pageinfosentence-no-item-label": "Нет информации о статусе",
 	"bs-calumma-pageinfosentence-no-item-tooltip": "Нет информации о статусе для этой страницы",
+	"bs-calumma-pageinfosentence": "Эта страница $1",
 	"bs-calumma-pageinfosentence-item-separator": "и",
 	"bs-calumma-pageinfosentence-item-separator-greater-two": ",",
 	"bs-calumma-pageinfosentence-item-class-separator": "но",
@@ -123,10 +125,12 @@
 	"bs-calumma-assoclink-history-label": "История",
 	"bs-calumma-assoclink-history-tooltip": "Показать историю правок страницы \"$1\"",
 	"bs-calumma-context-pagebutton-label": "Страница",
+	"bs-calumma-context-pagebutton-tooltip": "Показать текущую тематическую страницу",
 	"bs-calumma-context-discussionbutton-label": "Обсуждение",
 	"bs-calumma-context-discussionbutton-tooltip": "Показать текущую страницу обсуждения",
 	"bs-calumma-search-button-label": "Поиск",
 	"bs-calumma-purged-successfully": "Кэш страницы очищен",
 	"bs-calumma-purge-failed": "Произошла ошибка при очистке кэша страницы",
-	"bs-calumma-pref-collapse-custommenu-header": "Автоматически скрывать CustomMenu/Header"
+	"bs-calumma-pref-collapse-custommenu-header": "Автоматически скрывать CustomMenu/Header",
+	"bs-calumma-pref-collapse-custommenu-header-help": "По умолчанию скрывает дополнительное пользовательское меню сверху.  Пользователи могут открывать меню с помощью кнопки-переключателя."
 }
