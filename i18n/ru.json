@@ -4,6 +4,7 @@
 			"Cronolio",
 			"Diman Russkov",
 			"Facenapalm",
+			"Gulka.nik",
 			"Helpau",
 			"Katunchik",
 			"Megakott",
@@ -37,8 +38,8 @@
 	"bs-action-new-file-title": "Загрузить новый файл",
 	"bs-userbutton-notifications-link-text": "Уведомления",
 	"bs-userbutton-userpage-link-text": "Мой профиль",
-	"bs-mobilemoremenu-view-title": "Просмотр",
-	"bs-mobilemoremenu-view-text": "Просмотр",
+	"bs-mobilemoremenu-view-title": "Посмотреть",
+	"bs-mobilemoremenu-view-text": "Посмотреть",
 	"bs-mobilemoremenu-edit-title": "Править",
 	"bs-mobilemoremenu-edit-text": "Править",
 	"bs-mobilemoremenu-new-section-title": "Новый раздел",
@@ -81,7 +82,7 @@
 	"bs-to-top-desc": "Перейти наверх",
 	"bs-calumma-pagetool-history-tooltip": "История страницы",
 	"bs-calumma-pagetool-talk-tooltip": "Обсуждение",
-	"bs-calumma-pagetool-view-tooltip": "Просмотр",
+	"bs-calumma-pagetool-view-tooltip": "Посмотреть",
 	"bs-calumma-pagetool-watch-tooltip": "Следить",
 	"bs-calumma-pagetool-unwatch-tooltip": "Не следить",
 	"bs-edit-mediawiki-sidebar-link-text": "Править боковую панель",
@@ -128,5 +129,8 @@
 	"bs-calumma-alert-oldpage": "Вы просматриваете старую версию страницы. [[Special:Redirect/page/$1|Вернуться к последней версии]].",
 	"bs-calumma-assoclink-history-tooltip": "Показать историю правок страницы \"$1\"",
 	"bs-calumma-page-unwatch-title": "Больше не отслеживать «$1»",
-	"bs-calumma-pref-collapse-custommenu-header": "Автоматически скрывать CustomMenu/Header"
+	"bs-calumma-pref-collapse-custommenu-header": "Автоматически скрывать CustomMenu/Header",
+	"bs-calumma-pageinfosentence": "Эта страница $1",
+	"bs-calumma-context-pagebutton-tooltip": "Показать текущую тематическую страницу",
+	"bs-calumma-pref-collapse-custommenu-header-help": "По умолчанию скрывает дополнительное пользовательское меню сверху.  Пользователи могут открывать меню с помощью кнопки-переключателя."
 }

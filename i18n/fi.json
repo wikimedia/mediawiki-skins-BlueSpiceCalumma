@@ -5,6 +5,7 @@
 			"McSalama",
 			"Nike",
 			"Pyscowicz",
+			"Rönttönen",
 			"Valtlait"
 		]
 	},
@@ -90,5 +91,18 @@
 	"bs-calumma-pageinfosentence": "Tämä sivu on $1",
 	"bs-calumma-pageinfosentence-item-separator": "ja",
 	"bs-calumma-assoclink-history-tooltip": "Näytä sivun ”$1” muutoshistoria",
-	"bs-calumma-context-discussionbutton-tooltip": "Näytä nykyinen keskustelusivu"
+	"bs-calumma-context-discussionbutton-tooltip": "Näytä nykyinen keskustelusivu",
+	"bs-sitetools-views": "Näkymät",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Avaa vasemmanpuoleinen valikko",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Sulje vasemmanpuoleinen valikko",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Avaa oikeanpuoleinen valikko",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Sulje oikeanpuoleinen valikko",
+	"bs-calumma-page-last-edit-text": "Viimeksi muokannut $2 kello $1",
+	"bs-calumma-page-watch-title": "Tarkkaile \"$1\"",
+	"bs-calumma-page-unwatch-title": "Älä enää tarkkaile \"$1\"",
+	"bs-calumma-version-pager-prev-tooltip": "Vaihda edelliseen versioon",
+	"bs-calumma-version-pager-next-tooltip": "Vaihda seuraavaan versioon",
+	"bs-calumma-search-button-label": "Etsi",
+	"bs-calumma-purged-successfully": "Sivun välimuisti on tyhjennetty",
+	"bs-calumma-purge-failed": "Sivun välimuistia tyhjennettäessä tapahtui virhe"
 }
