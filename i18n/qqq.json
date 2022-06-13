@@ -7,7 +7,8 @@
 			"Nike",
 			"Raymond",
 			"Robby",
-			"Umherirrender"
+			"Umherirrender",
+			"Verdy p"
 		]
 	},
 	"bluespicecalumma-desc": "Descripton text for the skin on [[Special:Version]]",
@@ -49,7 +50,7 @@
 	"bs-sitenav-globalactions-section-globalactions": "The title of a section within the main navigation tab containing special page links",
 	"bs-sitenav-globalactions-section-management": "The title of a section within the main navigation tab containing admin links",
 	"bs-sitenav-usersidebar-title": "The title of the main navigation tab containing a personalized navigation",
-	"bs-sitetools-pageinfo-title": "The title of the tools panel tab containing information about the current page",
+	"bs-sitetools-pageinfo-title": "The title of the tools panel tab containing information about the current page\n{{Identical|Information}}",
 	"bs-sitetools-qualitymanagement-title": "The title of the tools panel tab containing tools for quality management of the current page",
 	"bs-sitetools-pagetools-title": "The title of the tools panel tab containing action links for the current page",
 	"bs-sitetools-panel-section-export-title": "The title of a panel containing export links",
@@ -88,8 +89,8 @@
 	"bs-support-url": "{{notranslate}}",
 	"bs-support-description": "Label for HW support page in MW Sidebar (external link)",
 	"bs-calumma-navigation-toggle-tooltip": "Tool tip for the icon of the sidebar togglers",
-	"bs-edit-custom-menu-link-title": "The title for a link to edit a menu of type BlueSpiceCustomMenu",
-	"bs-edit-custom-menu-link-text": "The text for a link to edit a menu of type BlueSpiceCustomMenu",
+	"bs-edit-custom-menu-link-title": "The title for a link to edit a menu of type BlueSpiceCustomMenu\n{{Identical|Edit menu}}",
+	"bs-edit-custom-menu-link-text": "The text for a link to edit a menu of type BlueSpiceCustomMenu\n{{Identical|Edit menu}}",
 	"bs-calumma-toggle-button-tooltip": "Tool tip for togglers",
 	"bs-calumma-breadcrumbs-nstab-main": "Label for nstab-main to avoid misunderstaning in NS_MAIN",
 	"bs-calumma-breadcrumbs-pages": "Label for dropdown button for the page you are currently viewing",

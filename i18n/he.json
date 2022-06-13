@@ -118,7 +118,7 @@
 	"bs-calumma-alert-oldpage": "{{GENDER:|אתה צופה|את צופה}} בגרסה ישנה של הדף הזה. [[Special:Redirect/page/$1|חזרה לגרסה החדשה ביותר]].",
 	"bs-calumma-version-pager-info-text": "גרסה של $1 מאת [[User:$2|$2]]",
 	"bs-calumma-assoclink-history-tooltip": "הצגת היסטוריית הגרסאות של הדף \"$1\"",
-	"bs-calumma-context-pagebutton-tooltip": "הצגת דך הנושא הנוכחי",
+	"bs-calumma-context-pagebutton-tooltip": "הצגת דף הנושא הנוכחי",
 	"bs-calumma-purged-successfully": "מטמון הדף נוקה",
 	"bs-calumma-purge-failed": "אירעה שגיאה בעת ניקוי מטמון הדף",
 	"bs-calumma-pref-collapse-custommenu-header": "להסתיר אוטומטית את CustomMenu/Header",
