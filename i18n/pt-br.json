@@ -122,5 +122,6 @@
 	"bs-calumma-search-button-label": "Pesquisar",
 	"bs-calumma-purged-successfully": "O cache da página foi limpo",
 	"bs-calumma-purge-failed": "Um erro ocorreu ao limpar o cache da página",
+	"bs-calumma-pref-collapse-custommenu-header": "Esconder automaticamente o menu/cabeçalho personalizado",
 	"bs-calumma-pref-collapse-custommenu-header-help": "Oculta o menu personalizado suplementar na parte superior por padrão. Os usuários podem abrir o menu usando o botão de alternância."
 }
