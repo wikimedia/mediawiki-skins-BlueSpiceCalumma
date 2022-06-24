@@ -15,7 +15,6 @@ use Html;
 use MediaWiki\MediaWikiServices;
 use Sanitizer;
 use Title;
-use WikiPage;
 use WikiTextContent;
 
 class PageHeader extends TemplateComponent {
@@ -473,7 +472,8 @@ class PageHeader extends TemplateComponent {
 		if ( !$this->getSkin()->getTitle()->exists() ) {
 			return false;
 		}
-		$wikiPage = WikiPage::factory( $this->getSkin()->getTitle() );
+		$wikiPage = MediaWikiServices::getInstance()->getWikiPageFactory()
+			->newFromTitle( $this->getSkin()->getTitle() );
 		if ( !$wikiPage ) {
 			return false;
 		}

@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Calumma\Panel;
 
+use MediaWiki\MediaWikiServices;
 use QuickTemplate;
 
 class UserSidebar extends BasePanel {
@@ -88,7 +89,7 @@ class UserSidebar extends BasePanel {
 		if ( $title->exists() === false ) {
 			return [];
 		}
-		$wikiPage = \WikiPage::factory( $title );
+		$wikiPage = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
 		$content = $wikiPage->getContent()->getNativeData();
 
 		$content = preg_replace( '#<noinclude>.*?<\/noinclude>#si', '', $content );
