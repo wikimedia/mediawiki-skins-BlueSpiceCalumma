@@ -3,7 +3,8 @@
 		"authors": [
 			"Annibale covini gerolamo",
 			"Beta16",
-			"Daimona Eaytoy"
+			"Daimona Eaytoy",
+			"GpieroMW"
 		]
 	},
 	"bluespicecalumma-desc": "Tema BlueSpice",
@@ -81,6 +82,8 @@
 	"bs-calumma-pageinfosentence-item-separator": "e",
 	"bs-calumma-pageinfosentence-item-class-separator": "ma",
 	"bs-calumma-full-screen-button-tooltip": "Schermo intero/modalità normale",
-	"bs-calumma-notification-logged-in": "Ora hai effettuato l'accesso",
+	"bs-calumma-assoclink-history-tooltip": "Mostra la cronologia versioni della pagina «$1»",
+	"bs-calumma-context-pagebutton-label": "Pagina",
+	"bs-calumma-context-discussionbutton-label": "Discussione",
 	"bs-calumma-search-button-label": "Ricerca"
 }
