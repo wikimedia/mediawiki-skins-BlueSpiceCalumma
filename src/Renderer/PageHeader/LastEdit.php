@@ -122,7 +122,7 @@ class LastEdit extends PageHeader {
 			return $html;
 		}
 
-		$wikiPage = WikiPage::factory( $title );
+		$wikiPage = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
 		$currentRevision = $this->getCurrentRevision( $wikiPage );
 
 		if ( !$currentRevision ) {
