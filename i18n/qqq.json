@@ -18,7 +18,7 @@
 	"bs-calumma-pref-toggle-sitetools-main": "The label of a input element on [[Special:Preferences]] allowing users to set their preference for the toggle behavior of the tools panel sidebar",
 	"bs-action-edit-view-title": "The title of the 'view page' link",
 	"bs-action-edit-view-text": "FIXME: The text of the 'view page' link",
-	"bs-action-edit-edit-title": "The title of the 'edit page' link",
+	"bs-action-edit-edit-title": "The title of the 'edit page' link.\n{{Identical|Edit source}}",
 	"bs-action-edit-ve-edit-title": "The title of the 'edit page with visual editor' link",
 	"bs-action-new-section-text": "The text of the 'create new section' link",
 	"bs-action-new-section-title": "The title of the 'create new section' link",
