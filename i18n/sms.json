@@ -12,9 +12,14 @@
 	"bs-action-new-file-title": "Ruõkk ođđ teâttõõzz",
 	"bs-mobilemoremenu-view-title": "Čuäʹjet",
 	"bs-mobilemoremenu-view-text": "Čuäʹjet",
+	"bs-mobilemoremenu-history-title": "Historia",
+	"bs-mobilemoremenu-history-text": "Historia",
+	"bs-calumma-graphicallist-recentchanges-preview-btn-history": "Historia",
 	"bs-sitetools-categories": "Kategoria",
 	"bs-calumma-recentchanges-title": "Võõrâs muttâz",
 	"bs-calumma-recentchanges-column-header-title": "Võõrâs muttâz",
+	"bs-calumma-recentchanges-history": "Historia",
+	"bs-calumma-pagetool-history-tooltip": "Seeid historia",
 	"bs-calumma-pagetool-view-tooltip": "Čuäʹjet",
 	"bs-calumma-pagetool-watch-tooltip": "Vaalv",
 	"bs-allpages-description": "Puk seeid",
@@ -25,6 +30,7 @@
 	"bs-calumma-page-watch-title": "Vaalv \"$1\"",
 	"bs-calumma-page-watch-text": "Vaalv",
 	"bs-calumma-pageinfosentence": "Tät seidd lij $1",
+	"bs-calumma-assoclink-history-label": "Historia",
 	"bs-calumma-context-pagebutton-label": "Seidd",
 	"bs-calumma-search-button-label": "Ooʒʒ"
 }
