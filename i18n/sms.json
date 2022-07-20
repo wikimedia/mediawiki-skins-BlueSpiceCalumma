@@ -4,15 +4,22 @@
 			"Yupik"
 		]
 	},
+	"bs-action-new-please-login-title": "Ǩeeʹrjtõõđ sizz, jõs haaʹlääk lââʹzzted ođđ seeid.",
+	"bs-action-edit-please-login-title": "Ǩeeʹrjtõõđ sizz, jõs haaʹlääk muʹtted tän seeid.",
 	"bs-action-new-subpage-text": "Ođđ vueʹllseidd",
 	"bs-action-new-subpage-title": "Lââʹzzet ođđ vueʹllseeid sijddu $1",
 	"bs-action-new-file-text": "Ruõkk ođđ teâttõõzz",
 	"bs-action-new-file-title": "Ruõkk ođđ teâttõõzz",
 	"bs-mobilemoremenu-view-title": "Čuäʹjet",
 	"bs-mobilemoremenu-view-text": "Čuäʹjet",
+	"bs-mobilemoremenu-history-title": "Historia",
+	"bs-mobilemoremenu-history-text": "Historia",
+	"bs-calumma-graphicallist-recentchanges-preview-btn-history": "Historia",
 	"bs-sitetools-categories": "Kategoria",
 	"bs-calumma-recentchanges-title": "Võõrâs muttâz",
 	"bs-calumma-recentchanges-column-header-title": "Võõrâs muttâz",
+	"bs-calumma-recentchanges-history": "Historia",
+	"bs-calumma-pagetool-history-tooltip": "Seeid historia",
 	"bs-calumma-pagetool-view-tooltip": "Čuäʹjet",
 	"bs-calumma-pagetool-watch-tooltip": "Vaalv",
 	"bs-allpages-description": "Puk seeid",
@@ -23,6 +30,8 @@
 	"bs-calumma-page-watch-title": "Vaalv \"$1\"",
 	"bs-calumma-page-watch-text": "Vaalv",
 	"bs-calumma-pageinfosentence": "Tät seidd lij $1",
+	"bs-calumma-assoclink-history-label": "Historia",
+	"bs-calumma-assoclink-history-tooltip": "Čuäʹjet seeid \"$1\" muʹttemhistoria",
 	"bs-calumma-context-pagebutton-label": "Seidd",
 	"bs-calumma-search-button-label": "Ooʒʒ"
 }
