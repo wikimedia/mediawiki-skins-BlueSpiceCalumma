@@ -5,7 +5,8 @@
 		]
 	},
 	"bs-action-new-please-login-title": "Ǩeeʹrjtõõđ sizz, jõs haaʹlääk lââʹzzted ođđ seeid.",
-	"bs-action-edit-please-login-title": "Ǩeeʹrjtõõđ sizz, jõs haaʹlääk muʹtted tän seeid.",
+	"bs-action-edit-please-login-title": "Ǩeeʹrjtõõđ sizz, jõs haaʹlääk tän seeid muʹtted.",
+	"bs-action-new-page-title": "Lââʹzzet ođđ seeid",
 	"bs-action-new-subpage-text": "Ođđ vueʹllseidd",
 	"bs-action-new-subpage-title": "Lââʹzzet ođđ vueʹllseeid sijddu $1",
 	"bs-action-new-file-text": "Ruõkk ođđ teâttõõzz",
@@ -14,6 +15,7 @@
 	"bs-mobilemoremenu-view-text": "Čuäʹjet",
 	"bs-mobilemoremenu-history-title": "Historia",
 	"bs-mobilemoremenu-history-text": "Historia",
+	"bs-sitenav-navigation-section-mobileusercontainer": "Õõʹnni",
 	"bs-calumma-graphicallist-recentchanges-preview-btn-history": "Historia",
 	"bs-sitetools-categories": "Kategoria",
 	"bs-calumma-recentchanges-title": "Võõrâs muttâz",
