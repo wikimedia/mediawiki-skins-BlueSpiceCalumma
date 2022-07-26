@@ -26,7 +26,7 @@
 	"bs-action-new-page-text": "Nouvelle page",
 	"bs-action-new-please-login-title": "Veuillez vous connecter pour ajouter une nouvelle page",
 	"bs-action-edit-please-login-title": "Veuillez vous connecter pour modifier cette page",
-	"bs-action-new-disabled-title": "{{GENDER:|}}Vous n’avez pas le droit de créer une nouvelle page",
+	"bs-action-new-disabled-title": "{{GENDER:|}}Vous n’avez pas la permission de créer une nouvelle page",
 	"bs-action-edit-disabled-title": "{{GENDER:|}}Vous n’avez pas le droit de modifier cette page",
 	"bs-action-new-page-title": "Ajouter une nouvelle page",
 	"bs-action-new-subpage-text": "Nouvelle sous-page",
