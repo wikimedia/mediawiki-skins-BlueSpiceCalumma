@@ -5,7 +5,8 @@
 		]
 	},
 	"bs-action-new-please-login-title": "Ǩeeʹrjtõõđ sizz, jõs haaʹlääk lââʹzzted ođđ seeid.",
-	"bs-action-edit-please-login-title": "Ǩeeʹrjtõõđ sizz, jõs haaʹlääk muʹtted tän seeid.",
+	"bs-action-edit-please-login-title": "Ǩeeʹrjtõõđ sizz, jõs haaʹlääk tän seeid muʹtted.",
+	"bs-action-new-page-title": "Lââʹzzet ođđ seeid",
 	"bs-action-new-subpage-text": "Ođđ vueʹllseidd",
 	"bs-action-new-subpage-title": "Lââʹzzet ođđ vueʹllseeid sijddu $1",
 	"bs-action-new-file-text": "Ruõkk ođđ teâttõõzz",
@@ -14,12 +15,14 @@
 	"bs-mobilemoremenu-view-text": "Čuäʹjet",
 	"bs-mobilemoremenu-history-title": "Historia",
 	"bs-mobilemoremenu-history-text": "Historia",
+	"bs-sitenav-navigation-section-mobileusercontainer": "Õõʹnni",
 	"bs-calumma-graphicallist-recentchanges-preview-btn-history": "Historia",
 	"bs-sitetools-categories": "Kategoria",
-	"bs-calumma-recentchanges-title": "Võõrâs muttâz",
-	"bs-calumma-recentchanges-column-header-title": "Võõrâs muttâz",
+	"bs-calumma-recentchanges-title": "Ođđsumus muttâz",
+	"bs-calumma-recentchanges-column-header-title": "Ođđsumus muttâz",
 	"bs-calumma-recentchanges-history": "Historia",
 	"bs-calumma-pagetool-history-tooltip": "Seeid historia",
+	"bs-calumma-pagetool-talk-tooltip": "Saǥstõõllmõš",
 	"bs-calumma-pagetool-view-tooltip": "Čuäʹjet",
 	"bs-calumma-pagetool-watch-tooltip": "Vaalv",
 	"bs-allpages-description": "Puk seeid",
@@ -33,5 +36,6 @@
 	"bs-calumma-assoclink-history-label": "Historia",
 	"bs-calumma-assoclink-history-tooltip": "Čuäʹjet seeid \"$1\" muʹttemhistoria",
 	"bs-calumma-context-pagebutton-label": "Seidd",
+	"bs-calumma-context-discussionbutton-label": "Saǥstõõllmõš",
 	"bs-calumma-search-button-label": "Ooʒʒ"
 }
