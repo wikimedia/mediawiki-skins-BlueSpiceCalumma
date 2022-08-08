@@ -3,7 +3,8 @@
 		"authors": [
 			"Nirjal stha",
 			"पर्वत सुबेदी",
-			"हिमाल सुबेदी"
+			"हिमाल सुबेदी",
+			"Bada Kaji"
 		]
 	},
 	"bs-action-edit-edit-title": "स्रोत सम्पादन गर्नुहाेस्",
@@ -15,8 +16,8 @@
 	"bs-action-new-disabled-title": "{{GENDER:|You}} यो पृष्ठ सम्पादन गर्न तपाईसँग अनुमति छैन।",
 	"bs-action-edit-disabled-title": "{{GENDER:|You}} यो पृष्ठ सम्पादन गर्न तपाईसँग अनुमति छैन।",
 	"bs-action-new-subpage-text": "नयाँ उपपृष्ठ",
-	"bs-action-new-file-text": "नयाँ फाइलहरू उर्ध्वभरण गर्नुहोस्",
-	"bs-action-new-file-title": "नयाँ फाइलहरू उर्ध्वभरण गर्नुहोस्",
+	"bs-action-new-file-text": "नयाँ चित्र उर्ध्वभरण गर्नुहोस्",
+	"bs-action-new-file-title": "नयाँ चित्र उर्ध्वभरण गर्नुहोस्",
 	"notifications-badge-counter-gt-100": "९९+",
 	"bs-userbutton-notifications-link-text": "सूचनाहरू",
 	"bs-userbutton-userpage-link-text": "मेरो प्रोफाइल",
