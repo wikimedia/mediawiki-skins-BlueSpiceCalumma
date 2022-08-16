@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Eleassar"
 		]
 	},
+	"bs-sitetools-namespaces": "Imenski prostor",
 	"bs-to-top-desc": "Skoči na vrh"
 }
