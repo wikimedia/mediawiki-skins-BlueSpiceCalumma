@@ -4,6 +4,7 @@
 			"Yupik"
 		]
 	},
+	"bs-action-edit-edit-title": "Muuʹtt wikiteeʹkst",
 	"bs-action-new-please-login-title": "Ǩeeʹrjtõõđ sizz, jõs haaʹlääk lââʹzzted ođđ seeid.",
 	"bs-action-edit-please-login-title": "Ǩeeʹrjtõõđ sizz, jõs haaʹlääk tän seeid muʹtted.",
 	"bs-action-new-page-title": "Lââʹzzet ođđ seeid",
@@ -22,6 +23,7 @@
 	"bs-calumma-recentchanges-title": "Ođđsumus muttâz",
 	"bs-calumma-recentchanges-column-header-title": "Ođđsumus muttâz",
 	"bs-calumma-recentchanges-history": "Historia",
+	"bs-calumma-recentchanges-diff": "Jeäʹrdõs",
 	"bs-calumma-pagetool-history-tooltip": "Seeid historia",
 	"bs-calumma-pagetool-talk-tooltip": "Saǥstõõllmõš",
 	"bs-calumma-pagetool-view-tooltip": "Čuäʹjet",
