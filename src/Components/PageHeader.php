@@ -268,8 +268,8 @@ class PageHeader extends TemplateComponent {
 
 		// If user has set preference not to show hidden cats,
 		// do not retrieve them.
-		$showHiddenCategories = \RequestContext::getMain()->getUser()
-			->getOption( "showhiddencats" );
+		$showHiddenCategories = MediaWikiServices::getInstance()->getUserOptionsLookup()
+			->getOption( \RequestContext::getMain()->getUser(), "showhiddencats" );
 		$categoryRequestType = "normal";
 		if ( $showHiddenCategories ) {
 			$categoryRequestType = "all";

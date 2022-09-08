@@ -4,6 +4,7 @@ namespace BlueSpice\Calumma\Hook\OutputPageBodyAttributes;
 
 use BlueSpice\Calumma\CookieHandler;
 use BlueSpice\Hook\OutputPageBodyAttributes;
+use MediaWiki\MediaWikiServices;
 
 class AddToBodyAttributes extends OutputPageBodyAttributes {
 
@@ -100,7 +101,8 @@ class AddToBodyAttributes extends OutputPageBodyAttributes {
 	 */
 	protected function checkToggleState( $cookie_sticky, $cookie_state, $nav ) {
 		$option = 'bs-calumma-settings-' . $nav . '-main-collapse';
-		$userSetting = $this->skin->getUser()->getOption( $option, null );
+		$userSetting = MediaWikiServices::getInstance()->getUserOptionsLookup()
+			->getOption( $this->skin->getUser(), $option, null );
 
 		$userSettingClass = '';
 		if ( $userSetting === null || (bool)$userSetting === true ) {
