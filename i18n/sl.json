@@ -2,10 +2,18 @@
 	"@metadata": {
 		"authors": [
 			"Dbc334",
-			"Eleassar"
+			"Eleassar",
+			"Pinky sl"
 		]
 	},
 	"bs-action-edit-edit-title": "Uredi vir",
+	"bs-action-new-page-text": "Nova stran",
+	"bs-action-new-please-login-title": "Če želite dodati novo stran, se prijavite",
+	"bs-action-edit-please-login-title": "Za urejanje te strani se prijavite",
+	"bs-action-new-disabled-title": "Za ustvaritev nove strani {{GENDER:|nimate}} dovoljenja",
+	"bs-action-edit-disabled-title": "Za urejanje te strani {{GENDER:|nimate}} dovoljenja",
+	"bs-action-new-page-title": "Dodajanje nove strani",
+	"bs-action-new-subpage-text": "Nova podstran",
 	"bs-sitenav-navigation-section-mobileusercontainer": "Uporabnik",
 	"bs-sitetools-panel-section-export-label": "Izvoz",
 	"bs-sitetools-namespaces": "Imenski prostor",
