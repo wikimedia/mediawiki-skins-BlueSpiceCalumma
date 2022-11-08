@@ -82,6 +82,10 @@
 	"bs-allpages-description": "كل الصفحات",
 	"bs-support-description": "الدعم",
 	"bs-calumma-navigation-toggle-tooltip": "فتح / إغلاق",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "فتح القائمة اليسرى",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "إغلاق القائمة اليسرى",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "افتح القائمة اليمنى",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "إغلاق القائمة اليمنى",
 	"bs-edit-custom-menu-link-title": "عدل القائمة",
 	"bs-edit-custom-menu-link-text": "عدل القائمة",
 	"bs-calumma-toggle-button-tooltip": "فتح/إغلاق",
@@ -91,7 +95,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|صفحة فرعية|صفحات فرعية}} ل$2",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|صفحة فرعية|$1 صفحات فرعية}} ل$2",
 	"bs-calumma-category-no-categories": "لا توجد تصنيفات معينة",
-	"bs-calumma-page-last-edit-text": "آخر من عدل $2 قبل $1",
+	"bs-calumma-page-last-edit-text": "تم التعديل الأخير $1 بواسطة $2",
 	"bs-calumma-page-watch-title": "راقب \"$1\"",
 	"bs-calumma-page-watch-text": "راقب",
 	"bs-calumma-page-unwatch-title": "لا تراقب \"$1\" بعد الآن",
@@ -115,5 +119,9 @@
 	"bs-calumma-context-pagebutton-tooltip": "عرض صفحة الموضوع الحالية",
 	"bs-calumma-context-discussionbutton-label": "نقاش",
 	"bs-calumma-context-discussionbutton-tooltip": "عرض صفحة النقاش الحالية",
-	"bs-calumma-search-button-label": "بحث"
+	"bs-calumma-search-button-label": "بحث",
+	"bs-calumma-purged-successfully": "تم مسح ذاكرة التخزين المؤقت للصفحة",
+	"bs-calumma-purge-failed": "حدث خطأ أثناء مسح ذاكرة التخزين المؤقت للصفحة",
+	"bs-calumma-pref-collapse-custommenu-header": "إخفاء CustomMenu / Header تلقائيًا",
+	"bs-calumma-pref-collapse-custommenu-header-help": "يخفي القائمة المخصصة الإضافية في الأعلى افتراضيًا. يمكن للمستخدمين فتح القائمة باستخدام زر التبديل."
 }
