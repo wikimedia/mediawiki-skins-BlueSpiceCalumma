@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bikarhêner"
+			"Bikarhêner",
+			"Balyozxane"
 		]
 	},
 	"bs-action-edit-view-title": "Ji guherandinê derkeve",
 	"bs-action-edit-view-text": "Ji guherandinê derkeve",
-	"bs-action-edit-edit-title": "Çavkaniyê biguherîne",
-	"bs-action-edit-ve-edit-title": "Biguherîne",
+	"bs-action-edit-edit-title": "Çavkaniyê biguhêre",
+	"bs-action-edit-ve-edit-title": "Biguhêre",
 	"bs-action-new-section-text": "Beşa nû",
 	"bs-action-new-section-title": "Beşeke nû tevlî vê rûpelê bike",
 	"bs-action-new-page-text": "Rûpela nû",
@@ -17,8 +18,8 @@
 	"bs-userbutton-userpage-link-text": "Profîla min",
 	"bs-mobilemoremenu-view-title": "Bibîne",
 	"bs-mobilemoremenu-view-text": "Bibîne",
-	"bs-mobilemoremenu-edit-title": "Biguherîne",
-	"bs-mobilemoremenu-edit-text": "Biguherîne",
+	"bs-mobilemoremenu-edit-title": "Biguhêre",
+	"bs-mobilemoremenu-edit-text": "Biguhêre",
 	"bs-mobilemoremenu-new-section-title": "Beşa nû",
 	"bs-mobilemoremenu-new-section-text": "Beşa nû",
 	"bs-mobilemoremenu-history-title": "Dîrok",
