@@ -64,6 +64,6 @@ class SpecialSpecialPagesTest extends MediaWikiIntegrationTestCase {
 
 		$html = $node->getHtml( $title );
 
-		$this->assertEmpty( $html, 'Should be empty' );
+		$this->assertSame( '', $html, 'Should be empty' );
 	}
 }
