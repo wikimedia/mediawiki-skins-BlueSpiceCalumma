@@ -15,7 +15,7 @@ use Html;
 use MediaWiki\MediaWikiServices;
 use Sanitizer;
 use Title;
-use WikiTextContent;
+use WikitextContent;
 
 class PageHeader extends TemplateComponent {
 
@@ -454,7 +454,7 @@ class PageHeader extends TemplateComponent {
 		if ( $this->isDiffView() ) {
 			return true;
 		}
-		$isInstanceOf = $this->isInstanceOfContent( WikiTextContent::class );
+		$isInstanceOf = $this->isInstanceOfContent( WikitextContent::class );
 		$isContentModel = $this->isContentModel( CONTENT_MODEL_WIKITEXT );
 		if ( !$isInstanceOf && !$isContentModel ) {
 			return true;
