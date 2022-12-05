@@ -4,7 +4,7 @@
 			"Vlad5250"
 		]
 	},
-	"bluespicecalumma-desc": "Izgled „BlueSpice“",
+	"bluespicecalumma-desc": "Tema BlueSpice-a",
 	"bluespicecalumma-skin": "BlueSpice Kaluma",
 	"prefs-bs-calumma": "Postavke za BlueSpice Kaluma",
 	"bs-calumma-pref-toggle-navigaiton-main": "Automatsko sakrivanje glavnog menija",
@@ -15,7 +15,7 @@
 	"bs-action-edit-ve-edit-title": "Uredi",
 	"bs-action-new-section-text": "Novi odeljak",
 	"bs-action-new-section-title": "Dodaj novi odeljak u ovoj stranici",
-	"bs-action-new-page-text": "Nova stranica / Нова страница",
+	"bs-action-new-page-text": "Nova stranica",
 	"bs-action-new-please-login-title": "Prijavite se da biste dodali novu stranicu",
 	"bs-action-edit-please-login-title": "Prijavite se da biste uredili ovu stranicu",
 	"bs-action-new-disabled-title": "{{GENDER:|Nemate}} dopuštenje za stvaranje novih stranica",
