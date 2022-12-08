@@ -147,7 +147,8 @@ class LastEdit extends PageHeader {
 			$wikiPage->getTitle(),
 			new HtmlArmor( $formattedPeriod ),
 			[
-				'title' => $formattedDate
+				'title' => $formattedDate,
+				'rel' => 'nofollow',
 			],
 			[
 				'oldid' => $currentRevision->getId(),
