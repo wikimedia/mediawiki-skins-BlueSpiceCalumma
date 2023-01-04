@@ -20,5 +20,8 @@
 	"bs-sitetools-pageinfo-title": "Informacije",
 	"bs-sitetools-panel-section-export-label": "Izvoz",
 	"bs-sitetools-namespaces": "Imenski prostor",
-	"bs-to-top-desc": "Skoči na vrh"
+	"bs-to-top-desc": "Skoči na vrh",
+	"bs-edit-custom-menu-link-title": "Uredi meni",
+	"bs-edit-custom-menu-link-text": "Uredi meni",
+	"bs-calumma-search-button-label": "Išči"
 }
