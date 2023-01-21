@@ -39,5 +39,10 @@
 			"BlueSpice\\Calumma\\Tests\\": "tests/phpunit",
 			"BlueSpice\\Calumma\\": "src"
 		}
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
 	}
 }
