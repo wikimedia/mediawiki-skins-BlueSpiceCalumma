@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Սերգեյ Սաֆարյան"
 		]
 	},
+	"bs-calumma-pref-toggle-navigaiton-main": "Ինքնաշխատորեն թաքցնել հիմնական ընտրացանկը",
 	"bs-sitetools-edit": "Խմբագրել",
 	"bs-sitetools-categories": "Կատեգորիաներ"
 }
