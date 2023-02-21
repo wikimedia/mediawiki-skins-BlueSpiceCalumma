@@ -77,6 +77,10 @@
 	"bs-allpages-description": "Sve stranice",
 	"bs-support-description": "Podrška",
 	"bs-calumma-navigation-toggle-tooltip": "Otvori / zatvori",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Otvori levi meni",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Zatvori levi meni",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Otvori desni meni",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Zatvori desi meni",
 	"bs-edit-custom-menu-link-title": "Uređivanje menija",
 	"bs-edit-custom-menu-link-text": "Uređivanje menija",
 	"bs-calumma-toggle-button-tooltip": "Otvori/Zatvori",
@@ -86,7 +90,7 @@
 	"bs-calumma-breadcrumbs-subpages": "{{PLURAL:$1|Podstranica|Podstranice}} stranice \"$2\"",
 	"bs-calumma-breadcrumbs-subpages-title": "{{PLURAL:$1|Podstranica|$1 podstranice}} stranice \"$2\"",
 	"bs-calumma-category-no-categories": "Nema dodeljenih kategorija",
-	"bs-calumma-page-last-edit-text": "Poslednji put uređeno pre $1 od strane $2",
+	"bs-calumma-page-last-edit-text": "Poslednji put uredio urednik $2 $1",
 	"bs-calumma-page-watch-title": "Nadgledanje \"$1\"",
 	"bs-calumma-page-watch-text": "Nadgledanje",
 	"bs-calumma-page-unwatch-title": "Ne nadgledaj više \"$1\"",
@@ -109,5 +113,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Prikaži trenutnu stranicu teme",
 	"bs-calumma-context-discussionbutton-label": "Diskusija",
 	"bs-calumma-context-discussionbutton-tooltip": "Prikaži trenutnu stranicu za razgovor",
-	"bs-calumma-search-button-label": "Pretraga"
+	"bs-calumma-search-button-label": "Pretraga",
+	"bs-calumma-purged-successfully": "Keš memorija stranice je očišćena",
+	"bs-calumma-purge-failed": "Došlo je do greške prilikom čišćenja keš memorije stranice"
 }
