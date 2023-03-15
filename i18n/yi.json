@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"פוילישער"
+			"פוילישער",
+			"Pacha Tchernof"
 		]
 	},
-	"bs-allpages-description": "אַלע בלעטער"
+	"bs-sitetools-namespaces": "נאָמענטייל",
+	"bs-allpages-description": "אַלע בלעטער",
+	"bs-calumma-context-pagebutton-label": "בלאַט"
 }
