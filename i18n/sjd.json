@@ -4,5 +4,17 @@
 			"Merrahtar"
 		]
 	},
-	"bs-userbutton-notifications-link-text": "Тӣдҍхэмуж"
+	"bs-action-new-page-text": "О̄дт лысст",
+	"bs-userbutton-notifications-link-text": "Тӣдҍхэмуж",
+	"bs-userbutton-userpage-link-text": "Мӯн про̄фэль",
+	"bs-mobilemoremenu-view-title": "Кӣһче",
+	"bs-mobilemoremenu-view-text": "Кӣһче",
+	"bs-mobilemoremenu-edit-title": "Вуайхэ",
+	"bs-mobilemoremenu-edit-text": "Вуайхэ",
+	"bs-calumma-graphicallist-recentchanges-preview-btn-edit": "Вуайхэ",
+	"bs-calumma-graphicallist-recentchanges-preview-btn-history": "Исторья",
+	"bs-calumma-breadcrumbs-nstab-main": "Пугк лыст",
+	"bs-calumma-pageinfosentence-item-separator": "я",
+	"bs-calumma-pageinfosentence-item-class-separator": "ноа",
+	"bs-calumma-search-button-label": "О̄дзэ"
 }
