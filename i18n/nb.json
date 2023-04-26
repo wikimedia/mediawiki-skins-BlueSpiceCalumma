@@ -113,7 +113,7 @@
 	"bs-calumma-version-pager-next-tooltip": "Bytt til neste versjon",
 	"bs-calumma-version-pager-info-text": "Versjon av $1 av [[User:$2|$2]]",
 	"bs-calumma-assoclink-history-label": "Historikk",
-	"bs-calumma-assoclink-history-tooltip": "Vis revisjonshistorikk for siden «$1»",
+	"bs-calumma-assoclink-history-tooltip": "Vis sideversjonshistorikk for siden «$1»",
 	"bs-calumma-context-pagebutton-label": "Side",
 	"bs-calumma-context-pagebutton-tooltip": "Vis den nåværende subjektsiden",
 	"bs-calumma-context-discussionbutton-label": "Diskusjon",
