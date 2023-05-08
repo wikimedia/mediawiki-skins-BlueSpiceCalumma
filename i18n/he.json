@@ -107,7 +107,7 @@
 	"bs-calumma-pageinfosentence-item-class-separator": "אבל",
 	"bs-calumma-full-screen-button-tooltip": "מסך מלא/מצב רגיל",
 	"bs-calumma-page-last-edit-by-system-user": "משתמש מערכת",
-	"bs-calumma-alert-oldpage": "{{GENDER:|אתה צופה|את צופה}} בגרסה ישנה של הדף הזה. [[Special:Redirect/page/$1|חזרה לגרסה החדשה ביותר]].",
+	"bs-calumma-alert-oldpage": "{{GENDER:|אתה|את}} צופה בגרסה ישנה של הדף הזה. [[Special:Redirect/page/$1|חזרה לגרסה החדשה ביותר]].",
 	"bs-calumma-version-pager-prev-tooltip": "חזרה לגרסה קודמת",
 	"bs-calumma-version-pager-next-tooltip": "מעבר לגרסה הבאה",
 	"bs-calumma-version-pager-info-text": "גרסה של $1 מאת [[User:$2|$2]]",
