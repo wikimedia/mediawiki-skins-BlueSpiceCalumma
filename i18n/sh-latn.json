@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Vlad5250",
 			"Winston Sung"
 		]
 	},
@@ -79,6 +80,10 @@
 	"bs-allpages-description": "Sve stranice / Све странице",
 	"bs-support-description": "Podrška",
 	"bs-calumma-navigation-toggle-tooltip": "Otvori / zatvori",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Otvori lijevi meni",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Zatvori lijevi meni",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Otvori desni meni",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Zatvori desi meni",
 	"bs-edit-custom-menu-link-title": "Uredi meni",
 	"bs-edit-custom-menu-link-text": "Uredi meni",
 	"bs-calumma-toggle-button-tooltip": "Otvori/Zatvori",
@@ -111,5 +116,7 @@
 	"bs-calumma-context-pagebutton-tooltip": "Prikaži trenutnu predmetnu stranicu",
 	"bs-calumma-context-discussionbutton-label": "Razgovor",
 	"bs-calumma-context-discussionbutton-tooltip": "Prikaži trenutnu razgovornu stranicu",
-	"bs-calumma-search-button-label": "Traži"
+	"bs-calumma-search-button-label": "Traži",
+	"bs-calumma-purged-successfully": "Keš memorija stranice je očišćena",
+	"bs-calumma-purge-failed": "Došlo je do greške prilikom čišćenja keš memorije stranice"
 }
