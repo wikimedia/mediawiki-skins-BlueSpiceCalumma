@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Xuacu",
-			"Fitoschido"
+			"Fitoschido",
+			"YoaR"
 		]
 	},
 	"bluespicecalumma-desc": "Aspeutu BlueSpice",
@@ -62,7 +63,7 @@
 	"bs-sitetools-categories": "Categoríes",
 	"bs-sitetools-associated-links": "Enllaces asociaos",
 	"bs-calumma-recentchanges-title": "Cambeos recién",
-	"bs-calumma-recentchanges-intro": "Esta llista contien les ediciones más recién y les creaciones de páxines nueves.",
+	"bs-calumma-recentchanges-intro": "Esta llista contién les ediciones más recién y les creaciones de páxines nueves.",
 	"bs-calumma-recentchanges-specialpage-link": "Pa la vista clásica pulsia [[Special:RecentChanges|equí]].",
 	"bs-calumma-recentchanges-column-header-title": "Cambios recientes",
 	"bs-calumma-recentchanges-history": "Historial",
