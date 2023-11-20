@@ -3,7 +3,8 @@
 		"authors": [
 			"Les Meloures",
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Volvox"
 		]
 	},
 	"bs-action-edit-edit-title": "Quell änneren",
@@ -34,7 +35,7 @@
 	"bs-calumma-graphicallist-recentchanges-preview-btn-edit": "Änneren",
 	"bs-sitetools-namespaces": "Nummraum",
 	"bs-sitetools-default": "Méi",
-	"bs-sitetools-qm": "Qualitéits Management",
+	"bs-sitetools-qm": "Qualitéitsmanagement",
 	"bs-sitetools-toolbox": "Geschierkëscht",
 	"bs-sitetools-views": "Säitenofruffer",
 	"bs-sitetools-edit": "Änneren",
@@ -55,6 +56,10 @@
 	"bs-allpages-description": "All Säiten",
 	"bs-support-description": "Ënnerstëtzung",
 	"bs-calumma-navigation-toggle-tooltip": "Opmaachen / zoumaachen",
+	"bs-calumma-navigation-toggle-tooltip-left-open": "Lénke Menü opmaachen",
+	"bs-calumma-navigation-toggle-tooltip-left-close": "Lénke Menü zoumaachen",
+	"bs-calumma-navigation-toggle-tooltip-right-open": "Rietse Menü opmaachen",
+	"bs-calumma-navigation-toggle-tooltip-right-close": "Rietse Menü zoumaacchen",
 	"bs-edit-custom-menu-link-title": "Menü änneren",
 	"bs-edit-custom-menu-link-text": "Menü änneren",
 	"bs-calumma-toggle-button-tooltip": "Opmaachen / Zoumaachen",
@@ -66,15 +71,10 @@
 	"bs-calumma-page-unwatch-text": "Net méi iwwerwaachen",
 	"bs-calumma-pageinfosentence": "Dës Säit ass $1",
 	"bs-calumma-pageinfosentence-item-class-separator": "awer",
-	"bs-calumma-notification-logged-in": "Dir sidd elo ageloggt",
 	"bs-calumma-version-pager-next-tooltip": "Op déi nächst Versioun wiesselen",
 	"bs-calumma-version-pager-info-text": "Versioun vu(n) $1 vum [[User:$2|$2]]",
 	"bs-calumma-assoclink-history-label": "Versiounen",
 	"bs-calumma-context-pagebutton-label": "Säit",
 	"bs-calumma-context-discussionbutton-label": "Diskussioun",
-	"bs-calumma-search-button-label": "Sichen",
-	"bs-calumma-navigation-toggle-tooltip-left-open": "Lénke Menü opmaachen",
-	"bs-calumma-navigation-toggle-tooltip-left-close": "Lénke Menü zoumaachen",
-	"bs-calumma-navigation-toggle-tooltip-right-open": "Rietse Menü opmaachen",
-	"bs-calumma-navigation-toggle-tooltip-right-close": "Rietse Menü zoumaacchen"
+	"bs-calumma-search-button-label": "Sichen"
 }
