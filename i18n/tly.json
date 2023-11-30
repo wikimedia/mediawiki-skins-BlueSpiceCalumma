@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patriot Kor"
+			"Patriot Kor",
+			"Гусейн"
 		]
 	},
+	"bs-sitetools-pageinfo-title": "Məlumot",
 	"bs-sitetools-panel-section-export-title": "İxroc",
-	"bs-sitetools-panel-section-export-label": "İxroc"
+	"bs-sitetools-panel-section-export-label": "İxroc",
+	"bs-sitetools-categories": "Kategorijon"
 }
