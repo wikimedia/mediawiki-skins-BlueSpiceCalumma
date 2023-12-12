@@ -4,7 +4,8 @@
 			"ArenaL5",
 			"Banjo",
 			"Elisardojm",
-			"Toliño"
+			"Toliño",
+			"O Breixo"
 		]
 	},
 	"bluespicecalumma-desc": "Aparencia BlueSpice",
@@ -64,7 +65,7 @@
 	"bs-sitetools-categories": "Categorías",
 	"bs-sitetools-associated-links": "Ligazóns asociadas",
 	"bs-calumma-recentchanges-title": "Cambios recentes",
-	"bs-calumma-recentchanges-intro": "Nesta lista atoparás todas as edicións recentes nas páxinas e as novas páxinas creadas.",
+	"bs-calumma-recentchanges-intro": "Nesta lista atoparás todas as edicións recentes e as novas páxinas creadas.",
 	"bs-calumma-recentchanges-specialpage-link": "Para a vista clásica fai clic [[Special:RecentChanges|aquí]].",
 	"bs-calumma-recentchanges-column-header-title": "Cambios recentes",
 	"bs-calumma-recentchanges-history": "Historial",
@@ -81,7 +82,7 @@
 	"bs-edit-mediawiki-sidebar-link-title": "Editar a barra lateral",
 	"bs-allpages-description": "Todas as páxinas",
 	"bs-support-description": "Axuda",
-	"bs-calumma-navigation-toggle-tooltip": "Abrir/pechar",
+	"bs-calumma-navigation-toggle-tooltip": "Abrir / pechar",
 	"bs-calumma-navigation-toggle-tooltip-left-open": "Abrir o menú esquerdo",
 	"bs-calumma-navigation-toggle-tooltip-left-close": "Pechar o menú esquerdo",
 	"bs-calumma-navigation-toggle-tooltip-right-open": "Abrir o menú dereito",
