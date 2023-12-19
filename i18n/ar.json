@@ -4,7 +4,8 @@
 			"HitomiAkane",
 			"Meno25",
 			"ديفيد",
-			"زكريا"
+			"زكريا",
+			"علاء"
 		]
 	},
 	"bluespicecalumma-desc": "واجهة بلو سبيس",
@@ -21,8 +22,8 @@
 	"bs-action-new-page-text": "صفحة جديدة",
 	"bs-action-new-please-login-title": "يرجى تسجيل الدخول لإضافة صفحة جديدة",
 	"bs-action-edit-please-login-title": "يُرجَى تسجيل الدخول لتعديل هذه الصفحة",
-	"bs-action-new-disabled-title": "ليست {{GENDER:|لديك}} صلاحية إنشاء صفحة جديدة",
-	"bs-action-edit-disabled-title": "ليست {{GENDER:|لديك}} صلاحية تعديل صفحة جديدة",
+	"bs-action-new-disabled-title": "ليس {{GENDER:|لديك}} صلاحية إنشاء صفحة جديدة",
+	"bs-action-edit-disabled-title": "ليس {{GENDER:|لديك}} صلاحية تعديل صفحة جديدة",
 	"bs-action-new-page-title": "إضافة صفحة جديدة",
 	"bs-action-new-subpage-text": "صفحة فرعية جديدة",
 	"bs-action-new-subpage-title": "إضافة صفحة فرعية جديدة إلى $1",
