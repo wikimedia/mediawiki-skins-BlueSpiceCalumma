@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Aefgh39622",
+			"Ekminarin",
 			"Geonuch",
 			"Patsagorn Y.",
 			"Prame Tan"
@@ -65,7 +66,7 @@
 	"bs-sitetools-associated-links": "ลิงก์ที่เกี่ยวข้อง",
 	"bs-calumma-recentchanges-title": "ปรับปรุงล่าสุด",
 	"bs-calumma-recentchanges-intro": "ในรายชื่อนี้คุณจะพบการแก้ไขในแก้ไขหน้าล่าสุดและหน้าที่ถูกสร้างใหม่ทั้งหมด",
-	"bs-calumma-recentchanges-specialpage-link": "สำหรับมุมมองคลาสสิกคลิก[[Special:RecentChanges|ที่นี้]]",
+	"bs-calumma-recentchanges-specialpage-link": "สำหรับมุมมองคลาสสิกคลิก[[Special:RecentChanges|ที่นี่]]",
 	"bs-calumma-recentchanges-column-header-title": "ปรับปรุงล่าสุด",
 	"bs-calumma-recentchanges-history": "ประวัติ",
 	"bs-calumma-recentchanges-diff": "ความแตกต่าง",
