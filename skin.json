@@ -257,7 +257,7 @@
 			]
 		},
 		"skin.bluespicecalumma.legacy": {
-			"class": "ResourceLoaderSkinModule"
+			"class": "MediaWiki\\ResourceLoader\\SkinModule"
 		}
 	},
 	"ResourceFileModulePaths": {
