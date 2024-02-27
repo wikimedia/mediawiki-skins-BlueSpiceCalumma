@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dj",
 			"Hanna Tardos",
 			"Krisztina",
 			"Tacsipacsi"
 		]
 	},
+	"bluespicecalumma-desc": "BlueSpice felület",
+	"prefs-bs-calumma": "BlueSpice Calumma beállítások",
 	"bs-calumma-pref-toggle-navigaiton-main": "Főmenü automatikus elrejtése",
 	"bs-calumma-pref-toggle-sitetools-main": "Eszközmenü automatikus elrejtése",
 	"bs-action-edit-view-title": "Kilépés a szerkesztésből",
