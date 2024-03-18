@@ -243,7 +243,7 @@ class SkinDataFieldDefinition {
 							$value[$param] = $param_value;
 						}
 					}
-				$linklist[$key] = $value;
+					$linklist[$key] = $value;
 				}
 			}
 		}

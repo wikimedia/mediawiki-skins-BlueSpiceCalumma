@@ -23,7 +23,8 @@ class ContentActions extends BasePanel {
 
 		$list = [];
 		foreach ( $content_navigation_data as $key => $value ) {
-			if ( $value['bs-group'] !== 'default' ) { continue;
+			if ( $value['bs-group'] !== 'default' ) {
+				continue;
 			}
 			$list[] = $value;
 		}

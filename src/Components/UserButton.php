@@ -166,15 +166,15 @@ class UserButton extends TemplateComponent {
 	protected function getLoginButton() {
 			$returnToPage = $this->getSkin()->getTitle();
 
-			if ( $returnToPage->equals( \SpecialPage::getTitleFor( 'Badtitle' ) ) ) {
-				$request = $this->getSkin()->getRequest();
-				$requestTitle = \Title::newFromText( $request->getVal( 'title', '' ) );
-				if ( $requestTitle instanceof \Title ) {
-					$returnToPage = $requestTitle;
-				} else {
-					$returnToPage = \Title::newMainPage();
-				}
+		if ( $returnToPage->equals( \SpecialPage::getTitleFor( 'Badtitle' ) ) ) {
+			$request = $this->getSkin()->getRequest();
+			$requestTitle = \Title::newFromText( $request->getVal( 'title', '' ) );
+			if ( $requestTitle instanceof \Title ) {
+				$returnToPage = $requestTitle;
+			} else {
+				$returnToPage = \Title::newMainPage();
 			}
+		}
 
 			$returnTarget = 'returnto=' . $returnToPage->getPrefixedDBkey();
 

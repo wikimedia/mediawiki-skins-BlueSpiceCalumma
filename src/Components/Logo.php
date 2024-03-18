@@ -24,7 +24,7 @@ class Logo extends TemplateComponent {
 		$args = parent::getTemplateArgs();
 
 		foreach ( $logo as $key => $value ) {
-		$args['items'][] = $value;
+			$args['items'][] = $value;
 		}
 
 		return $args;

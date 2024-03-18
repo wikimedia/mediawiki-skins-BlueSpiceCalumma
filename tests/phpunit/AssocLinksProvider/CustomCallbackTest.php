@@ -15,7 +15,7 @@ use PHPUnit\Framework\TestCase;
 class CustomCallbackTest extends TestCase {
 
 	/**
-	 * @covers CustomCallback::factory
+	 * @covers \BlueSpice\Calumma\AssocLinksProvider\CustomCallback::factory
 	 */
 	public function testFactory() {
 		$callback = static function ( $context, $config ) {
@@ -34,7 +34,7 @@ class CustomCallbackTest extends TestCase {
 		$links = CustomCallback::factory( null, $config );
 
 		$this->assertCount( 1, $links, "Should create one item" );
-		$this->assertInstanceOf( ILink::class, $links[0],  "First item should implement ILink" );
+		$this->assertInstanceOf( ILink::class, $links[0], "First item should implement ILink" );
 		$this->assertEquals(
 			'Some Label',
 			$links[0]->getLabel()->plain(),
@@ -43,7 +43,7 @@ class CustomCallbackTest extends TestCase {
 	}
 
 	/**
-	 * @covers CustomCallback::factory
+	 * @covers \BlueSpice\Calumma\AssocLinksProvider\CustomCallback::factory
 	 */
 	public function testFactoryException() {
 		$this->expectException( Exception::class );
