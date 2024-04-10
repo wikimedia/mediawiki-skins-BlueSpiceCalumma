@@ -102,6 +102,7 @@
 	"bs-calumma-pageinfo-qm-button-tooltip": "Minőségkezelő panel megnyitása",
 	"bs-calumma-pageinfosentence-no-item-label": "Nincs állapotinformáció",
 	"bs-calumma-pageinfosentence-no-item-tooltip": "Nincs állapotinformáció erről a lapról",
+	"bs-calumma-pageinfosentence": "Ez a oldal $1",
 	"bs-calumma-pageinfosentence-item-separator": "és",
 	"bs-calumma-pageinfosentence-item-class-separator": "de",
 	"bs-calumma-full-screen-button-tooltip": "Teljes képernyő/Normál mód",
