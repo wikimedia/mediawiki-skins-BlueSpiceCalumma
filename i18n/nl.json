@@ -125,5 +125,5 @@
 	"bs-calumma-purged-successfully": "De paginacache is gewist",
 	"bs-calumma-purge-failed": "Er is een fout opgetreden tijdens het wissen van de cache van de pagina",
 	"bs-calumma-pref-collapse-custommenu-header": "CustomMenu/Header automatisch verbergen",
-	"bs-calumma-pref-collapse-custommenu-header-help": "Hiermee wordt het extra menu bovenaan verborgen. Gebruikers kunnen het menu dan openen met de schakelknop."
+	"bs-calumma-pref-collapse-custommenu-header-help": "Hiermee wordt het extra menu bovenaan verborgen. Gebruikers kunnen het menu dan openen met de knop Omschakelen."
 }
