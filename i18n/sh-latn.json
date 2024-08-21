@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"BadDog",
 			"Vlad5250",
 			"Winston Sung"
 		]
@@ -60,7 +61,7 @@
 	"bs-sitetools-edit": "Uredi",
 	"bs-sitetools-manage-page": "Upravljanje stranicom",
 	"bs-sitetools-categories": "Kategorije",
-	"bs-sitetools-associated-links": "Povezani linkovi",
+	"bs-sitetools-associated-links": "Povezane veze",
 	"bs-calumma-recentchanges-title": "Nedavne izmjene",
 	"bs-calumma-recentchanges-intro": "Na spisku ćete naći sve nedavne izmjene stranica i novonapravljene stranice.",
 	"bs-calumma-recentchanges-specialpage-link": "Kliknite [[Special:RecentChanges|ovdje]] za klasičan prikaz.",
