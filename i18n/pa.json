@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bgo eiu"
+			"Bgo eiu",
+			"Cabal"
 		]
 	},
+	"bs-sitenav-navigation-section-mobileusercontainer": "ਵਰਤੋਂਕਾਰ",
+	"bs-sitetools-toolbox": "ਸੰਦੂਕੜੀ",
 	"bs-sitetools-categories": "ਸ਼੍ਰੇਣੀਆਂ"
 }
