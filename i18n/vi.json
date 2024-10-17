@@ -4,10 +4,14 @@
 			"Ioe2015",
 			"Minh Nguyen",
 			"NguoiDungKhongDinhDanh",
-			"Phjtieudoc"
+			"Phjtieudoc",
+			"SongNgu.xyz"
 		]
 	},
+	"bluespicecalumma-desc": "Giao diện BlueSpice",
+	"prefs-bs-calumma": "Cài đặt BlueSpice Calumma",
 	"bs-calumma-pref-toggle-navigaiton-main": "Tự động ẩn bảng chọn",
+	"bs-calumma-pref-toggle-sitetools-main": "Tự động ẩn menu công cụ",
 	"bs-action-edit-view-title": "Thoát sửa đổi",
 	"bs-action-edit-view-text": "Thoát sửa đổi",
 	"bs-action-edit-edit-title": "Sửa mã nguồn",
@@ -103,7 +107,7 @@
 	"bs-calumma-pageinfosentence-item-separator": "và",
 	"bs-calumma-pageinfosentence-item-class-separator": "nhưng",
 	"bs-calumma-full-screen-button-tooltip": "Chế độ toàn màn hình/bình thường",
-	"bs-calumma-page-last-edit-by-system-user": "thành viên hệ thống",
+	"bs-calumma-page-last-edit-by-system-user": "người dùng hệ thống",
 	"bs-calumma-alert-oldpage": "Bạn đang xem một phiên bản cũ của trang này. [[Special:Redirect/page/$1|Trở về phiên bản mới nhất]].",
 	"bs-calumma-version-pager-prev-tooltip": "Chuyển sang phiên bản trước",
 	"bs-calumma-version-pager-next-tooltip": "Chuyển sang phiên bản sau",
@@ -112,5 +116,11 @@
 	"bs-calumma-assoclink-history-tooltip": "Hiện lịch sử phiên bản của trang “$1”",
 	"bs-calumma-context-pagebutton-label": "Trang",
 	"bs-calumma-context-pagebutton-tooltip": "Hiện trang chủ đề hiện tại",
-	"bs-calumma-context-discussionbutton-label": "Thảo luận"
+	"bs-calumma-context-discussionbutton-label": "Thảo luận",
+	"bs-calumma-context-discussionbutton-tooltip": "Hiện trang thảo luận hiện tại",
+	"bs-calumma-search-button-label": "Tìm kiếm",
+	"bs-calumma-purged-successfully": "Bộ nhớ đệm trang đã được xóa",
+	"bs-calumma-purge-failed": "Đã xảy ra lỗi khi xóa bộ nhớ đệm của trang",
+	"bs-calumma-pref-collapse-custommenu-header": "Tự động ẩn Danh sách/Đề mục tùy chỉnh",
+	"bs-calumma-pref-collapse-custommenu-header-help": "Ẩn menu tùy chỉnh bổ sung ở trên cùng theo mặc định. Người dùng có thể mở menu bằng nút chuyển đổi."
 }
