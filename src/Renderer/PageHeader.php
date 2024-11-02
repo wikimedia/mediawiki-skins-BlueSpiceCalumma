@@ -42,8 +42,8 @@ abstract class PageHeader extends Renderer {
 	 * @param QuickTemplate|null $skinTemplate
 	 */
 	protected function __construct( Config $config, Params $params,
-		LinkRenderer $linkRenderer = null, IContextSource $context = null,
-		$name = '', QuickTemplate $skinTemplate = null ) {
+		?LinkRenderer $linkRenderer = null, ?IContextSource $context = null,
+		$name = '', ?QuickTemplate $skinTemplate = null ) {
 		parent::__construct( $config, $params, $linkRenderer, $context, $name );
 		$this->skinTemplate = $skinTemplate;
 	}
@@ -60,8 +60,8 @@ abstract class PageHeader extends Renderer {
 	 * @return Renderer
 	 */
 	public static function factory( $name, MediaWikiServices $services, Config $config,
-		Params $params, IContextSource $context = null, LinkRenderer $linkRenderer = null,
-		QuickTemplate $skinTemplate = null ) {
+		Params $params, ?IContextSource $context = null, ?LinkRenderer $linkRenderer = null,
+		?QuickTemplate $skinTemplate = null ) {
 		if ( !$context ) {
 			$context = $params->get(
 				static::PARAM_CONTEXT,

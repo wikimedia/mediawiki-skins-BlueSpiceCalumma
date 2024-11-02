@@ -25,8 +25,8 @@ class EditButton extends PageHeader {
 	 * @param QuickTemplate|null $skinTemplate
 	 */
 	protected function __construct( Config $config, Params $params,
-		LinkRenderer $linkRenderer = null, IContextSource $context = null,
-		$name = '', QuickTemplate $skinTemplate = null ) {
+		?LinkRenderer $linkRenderer = null, ?IContextSource $context = null,
+		$name = '', ?QuickTemplate $skinTemplate = null ) {
 		parent::__construct( $config, $params, $linkRenderer, $context, $name, $skinTemplate );
 
 		$this->args[static::FEATURED_ACTIONS] = $params->get(

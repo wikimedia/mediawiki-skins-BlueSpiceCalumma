@@ -21,7 +21,7 @@ class Template extends \Skins\Chameleon\ChameleonTemplate {
 	 *
 	 * @param \Config|null $config
 	 */
-	public function __construct( \Config $config = null ) {
+	public function __construct( ?\Config $config = null ) {
 		parent::__construct( $config );
 
 		$this->skinDataFieldDefinition =

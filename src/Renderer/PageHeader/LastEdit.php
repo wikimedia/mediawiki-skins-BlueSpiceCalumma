@@ -46,9 +46,9 @@ class LastEdit extends PageHeader {
 	 * @param RevisionStore|null $revisionStore
 	 */
 	protected function __construct( Config $config, Params $params,
-		LinkRenderer $linkRenderer = null, IContextSource $context = null,
-		$name = '', QuickTemplate $skinTemplate = null, UtilityFactory $util = null,
-		RevisionStore $revisionStore = null ) {
+		?LinkRenderer $linkRenderer = null, ?IContextSource $context = null,
+		$name = '', ?QuickTemplate $skinTemplate = null, ?UtilityFactory $util = null,
+		?RevisionStore $revisionStore = null ) {
 		parent::__construct( $config, $params, $linkRenderer, $context, $name, $skinTemplate );
 
 		$this->util = $util;
@@ -69,9 +69,9 @@ class LastEdit extends PageHeader {
 	 * @return Renderer
 	 */
 	public static function factory( $name, MediaWikiServices $services, Config $config,
-		Params $params, IContextSource $context = null, LinkRenderer $linkRenderer = null,
-		QuickTemplate $skinTemplate = null, UtilityFactory $util = null,
-		RevisionStore $revisionStore = null ) {
+		Params $params, ?IContextSource $context = null, ?LinkRenderer $linkRenderer = null,
+		?QuickTemplate $skinTemplate = null, ?UtilityFactory $util = null,
+		?RevisionStore $revisionStore = null ) {
 		if ( !$context ) {
 			$context = $params->get(
 				static::PARAM_CONTEXT,

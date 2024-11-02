@@ -32,7 +32,7 @@ abstract class TemplateStructure extends \Skins\Chameleon\Components\Structure {
 	 * @param DOMElement|null $domElement
 	 * @param int $indent
 	 */
-	public function __construct( ChameleonTemplate $template, DOMElement $domElement = null,
+	public function __construct( ChameleonTemplate $template, ?DOMElement $domElement = null,
 			$indent = 0 ) {
 		parent::__construct( $template, $domElement, $indent );
 		$this->idRegistry = IdRegistry::getRegistry();
