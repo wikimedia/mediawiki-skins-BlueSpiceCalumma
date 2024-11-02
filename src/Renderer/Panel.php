@@ -39,9 +39,9 @@ class Panel extends TemplateRenderer {
 	 * @param TemplateFactory|null $templateFactory
 	 */
 	protected function __construct( Config $config, Params $params,
-		LinkRenderer $linkRenderer = null, IContextSource $context = null,
-		$name = '', CacheHelper $cacheHelper = null,
-		TemplateFactory $templateFactory = null ) {
+		?LinkRenderer $linkRenderer = null, ?IContextSource $context = null,
+		$name = '', ?CacheHelper $cacheHelper = null,
+		?TemplateFactory $templateFactory = null ) {
 		parent::__construct(
 			$config,
 			$params,
