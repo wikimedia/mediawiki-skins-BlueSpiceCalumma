@@ -91,6 +91,7 @@
 	"bs-calumma-breadcrumbs-subpages": "\"$2\"의 {{PLURAL:$1|하위 문서}}",
 	"bs-calumma-breadcrumbs-subpages-title": "\"$2\"의 {{PLURAL:$1|하위문서|하위문서 $1개}}",
 	"bs-calumma-category-no-categories": "할당된 분류 없음",
+	"bs-calumma-page-last-edit-text": "마지막 편집: $1님 ($2)",
 	"bs-calumma-page-watch-title": "\"$1\" 주시하기",
 	"bs-calumma-page-watch-text": "주시",
 	"bs-calumma-page-unwatch-title": "\"$1\"을(를) 더 이상 주시하지 않음",
