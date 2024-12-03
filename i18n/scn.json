@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
-			"Sarvaturi"
+			"Sarvaturi",
+			"GianAntonucci"
 		]
 	},
 	"bluespicecalumma-desc": "Peḍḍi BlueSpice",
@@ -60,7 +61,7 @@
 	"bs-all-templates-link-title": "Tutti li template",
 	"bs-to-top-desc": "Acchiana a l'accuminzagghia",
 	"bs-calumma-pagetool-history-tooltip": "Crunuluggìa dâ pàggina",
-	"bs-calumma-pagetool-talk-tooltip": "Discussioni",
+	"bs-calumma-pagetool-talk-tooltip": "Discurruta",
 	"bs-calumma-pagetool-view-tooltip": "Talìa",
 	"bs-calumma-pagetool-watch-tooltip": "Talìa",
 	"bs-calumma-pagetool-unwatch-tooltip": "Nun taliari cchiù",
@@ -82,5 +83,5 @@
 	"bs-calumma-page-last-edit-by-system-user": "utenti sistema",
 	"bs-calumma-assoclink-history-label": "Crunuluggìa",
 	"bs-calumma-context-pagebutton-label": "Pàggina",
-	"bs-calumma-context-discussionbutton-label": "Discussioni"
+	"bs-calumma-context-discussionbutton-label": "Discurruta"
 }
