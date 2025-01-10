@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Muotâ",
 			"Seipinne",
 			"Yupik"
 		]
 	},
 	"bluespicecalumma-desc": "BlueSpice-olgoldâshäämi",
 	"prefs-bs-calumma": "BlueSpice Calumma -asâttâsah",
-	"bs-calumma-pref-toggle-navigaiton-main": "Čievâ uáivivaljiittâh automaatlávt",
-	"bs-calumma-pref-toggle-sitetools-main": "Čievâ tyejiniävvuvaljiittâh automaatlávt",
+	"bs-calumma-pref-toggle-navigaiton-main": "Čievâ uáivivaljiittuv automaatlávt",
+	"bs-calumma-pref-toggle-sitetools-main": "Čievâ tyejiniävvuvaljiittuv automaatlávt",
 	"bs-action-edit-edit-title": "Mute käldee",
 	"bs-action-edit-ve-edit-title": "Mute",
 	"bs-action-new-section-text": "Uđđâ uási",
@@ -65,11 +66,11 @@
 	"bs-calumma-pagetool-talk-tooltip": "Savâstâllâm",
 	"bs-calumma-pagetool-view-tooltip": "Čääiti",
 	"bs-calumma-pagetool-watch-tooltip": "Tarkkuustâl",
-	"bs-calumma-pagetool-unwatch-tooltip": "Jooskâ tarkkuustâllâm",
+	"bs-calumma-pagetool-unwatch-tooltip": "Jooskâ tarkkuustâlmist",
 	"bs-edit-mediawiki-sidebar-link-text": "Mute sijđotuálbus",
 	"bs-edit-mediawiki-sidebar-link-title": "Mute sijđotuálbus",
 	"bs-allpages-description": "Puoh siijđoh",
-	"bs-support-description": "Torjâ",
+	"bs-support-description": "Toorjâ",
 	"bs-calumma-navigation-toggle-tooltip": "Leehâst/toopâ",
 	"bs-edit-custom-menu-link-title": "Mute valjiittuv",
 	"bs-edit-custom-menu-link-text": "Mute valjiittuv",
@@ -78,7 +79,7 @@
 	"bs-calumma-breadcrumbs-pages": "Lah tääbbin",
 	"bs-calumma-page-watch-title": "Tarkkuustâl \"$1\"",
 	"bs-calumma-page-watch-text": "Tarkkuustâl",
-	"bs-calumma-page-unwatch-text": "Jooskâ tarkkuustâllâm",
+	"bs-calumma-page-unwatch-text": "Jooskâ tarkkuustâlmist",
 	"bs-calumma-pageinfosentence-item-separator": "já",
 	"bs-calumma-pageinfosentence-item-class-separator": "mutâ",
 	"bs-calumma-assoclink-history-label": "Historjá",

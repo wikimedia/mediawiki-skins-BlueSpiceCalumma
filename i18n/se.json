@@ -5,6 +5,8 @@
 		]
 	},
 	"bs-action-edit-ve-edit-title": "Rievdat",
+	"bs-action-new-file-text": "Vurke ođđa fiilla",
+	"bs-action-new-file-title": "Vurke ođđa fiilla",
 	"bs-mobilemoremenu-view-title": "Čájet",
 	"bs-mobilemoremenu-view-text": "Čájet",
 	"bs-mobilemoremenu-edit-title": "Rievdat",
@@ -13,6 +15,7 @@
 	"bs-calumma-graphicallist-recentchanges-preview-btn-edit": "Rievdat",
 	"bs-sitetools-namespaces": "Nammagomuvuohta",
 	"bs-sitetools-edit": "Rievdat",
+	"bs-sitetools-categories": "Kategoriijat",
 	"bs-calumma-pagetool-view-tooltip": "Čájet",
 	"bs-calumma-search-button-label": "Oza"
 }
